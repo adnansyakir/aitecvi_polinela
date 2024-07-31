@@ -1,0 +1,154 @@
+ERROR - 2024-03-04 05:50:35 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''881834f4-c613-4e2f-9a4f-8baaf756cf06'
+AND `dosen`.`id` = '881834f4-c613-4e2f...' at line 13 in /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `jadwal_...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Models/Dosen/JadwalModel.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Controllers/DosenDashboard.php(27): App\Models\Dosen\JadwalModel->getJadwalByHariDash('senin')
+#6 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(942): App\Controllers\DosenDashboard->index()
+#7 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DosenDashboard))
+#8 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#11 {main}
+CRITICAL - 2024-03-04 05:50:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''881834f4-c613-4e2f-9a4f-8baaf756cf06'
+AND `dosen`.`id` = '881834f4-c613-4e2f...' at line 13
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_kuliah_dosen`.`id`, `tahun_akademik`.`nama` as `tahun_akademik_nama`, `jurusan`.`nama_jurusan`, `prodi`.`nama_prodi`, `kelas_master`.`kode_kelas` as `kelas_master_nama`, `gedung`.`nama` as `gedung_nama`, `matakuliah`.`nama_mk`, `matakuliah`.`kode_mk`, `jadwal_kuliah`.`semester`, `jadwal_kuliah`.`sks`, `jadwal_kuliah`.`jenis_jadwal`, `jadwal_kuliah`.`hari`, `jadwal_kuliah`.`jam_mulai`, `jadwal_kuliah`.`jam_selesai`, `jadwal_kuliah`.`id`, `jadwal_kuliah`.`tahun_akademik_id`, `jadwal_kuliah`.`matakuliah_id`
+FROM `jadwal_kuliah_dosen`
+JOIN `jadwal_kuliah` ON `jadwal_kuliah`.`id` = `jadwal_kuliah_dosen`.`jadwal_kuliah_id`
+JOIN `dosen` ON `jadwal_kuliah_dosen`.`dosen_id` = `dosen`.`id`
+JOIN `tahun_akademik` ON `tahun_akademik`.`id` = `jadwal_kuliah`.`tahun_akademik_id`
+JOIN `jurusan` ON `jurusan`.`id` = `jadwal_kuliah`.`jurusan_id`
+JOIN `prodi` ON `prodi`.`id` = `jadwal_kuliah`.`prodi_id`
+JOIN `kelas_master` ON `kelas_master`.`id` = `jadwal_kuliah`.`kelas_master_id`
+JOIN `gedung` ON `gedung`.`id` = `jadwal_kuliah`.`gedung_id`
+JOIN `matakuliah` ON `matakuliah`.`id` = `jadwal_kuliah`.`matakuliah_id`
+WHERE jadwal_kuliah.id IN ((SELECT jadwal_kuliah_id
+            FROM rencana_perkuliahan
+            WHERE rencana_perkuliahan.tanggal = \'2024-03-04\')) OR `jadwal_kuliah`.`hari` = \'senin\' AND jadwal_kuliah_dosen.dosen_id \'881834f4-c613-4e2f-9a4f-8baaf756cf06\'
+AND `dosen`.`id` = :dosen.id:
+AND `tahun_akademik`.`status` = :tahun_akademik.status:
+GROUP BY `jadwal_kuliah`.`id`
+ORDER BY `jadwal_kuliah`.`jenis_jadwal` DESC, `matakuliah`.`kode_mk` ASC', [...], false)
+ 2 APPPATH/Models/Dosen/JadwalModel.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/DosenDashboard.php(27): App\Models\Dosen\JadwalModel->getJadwalByHariDash('senin')
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\DosenDashboard->index()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DosenDashboard))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php')
+INFO - 2024-03-04 00:55:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-04 00:55:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-04 00:55:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-04 00:55:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-04 00:55:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-04 00:55:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-04 00:55:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-04 00:55:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-04 00:55:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-04 00:55:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-04 00:55:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-04 00:55:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-04 00:59:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-03-04 07:59:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'jadwal_kuliah.hari = 'senin'
+AND `dosen`.`id` = '1aadba85-8eb9-46b3-a4f6-2305...' at line 20 in /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `jadwal_...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Models/Dosen/JadwalModel.php(258): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Controllers/DosenDashboard.php(27): App\Models\Dosen\JadwalModel->getJadwalByHariDash('senin')
+#6 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(942): App\Controllers\DosenDashboard->index()
+#7 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DosenDashboard))
+#8 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#11 {main}
+CRITICAL - 2024-03-04 07:59:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'jadwal_kuliah.hari = 'senin'
+AND `dosen`.`id` = '1aadba85-8eb9-46b3-a4f6-2305...' at line 20
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_kuliah_dosen`.`id`, `tahun_akademik`.`nama` as `tahun_akademik_nama`, `jurusan`.`nama_jurusan`, `prodi`.`nama_prodi`, `kelas_master`.`kode_kelas` as `kelas_master_nama`, `gedung`.`nama` as `gedung_nama`, `matakuliah`.`nama_mk`, `matakuliah`.`kode_mk`, `jadwal_kuliah`.`semester`, `jadwal_kuliah`.`sks`, `jadwal_kuliah`.`jenis_jadwal`, `jadwal_kuliah`.`hari`, `jadwal_kuliah`.`jam_mulai`, `jadwal_kuliah`.`jam_selesai`, `jadwal_kuliah`.`id`, `jadwal_kuliah`.`tahun_akademik_id`, `jadwal_kuliah`.`matakuliah_id`
+FROM `jadwal_kuliah_dosen`
+JOIN `jadwal_kuliah` ON `jadwal_kuliah`.`id` = `jadwal_kuliah_dosen`.`jadwal_kuliah_id`
+JOIN `dosen` ON `jadwal_kuliah_dosen`.`dosen_id` = `dosen`.`id`
+JOIN `tahun_akademik` ON `tahun_akademik`.`id` = `jadwal_kuliah`.`tahun_akademik_id`
+JOIN `jurusan` ON `jurusan`.`id` = `jadwal_kuliah`.`jurusan_id`
+JOIN `prodi` ON `prodi`.`id` = `jadwal_kuliah`.`prodi_id`
+JOIN `kelas_master` ON `kelas_master`.`id` = `jadwal_kuliah`.`kelas_master_id`
+JOIN `gedung` ON `gedung`.`id` = `jadwal_kuliah`.`gedung_id`
+JOIN `matakuliah` ON `matakuliah`.`id` = `jadwal_kuliah`.`matakuliah_id`
+WHERE jadwal_kuliah.id IN ((SELECT rencana_perkuliahan.jadwal_kuliah_id
+            FROM perubahan_rencana
+            JOIN rencana_perkuliahan ON perubahan_rencana.rencana_perkuliahan_id = rencana_perkuliahan.id
+            JOIN jadwal_kuliah ON rencana_perkuliahan.jadwal_kuliah_id = jadwal_kuliah.id
+            JOIN jadwal_kuliah_dosen ON jadwal_kuliah.id = jadwal_kuliah_dosen.jadwal_kuliah_id
+            WHERE rencana_perkuliahan.tanggal = \'2024-03-04\' AND jadwal_kuliah_dosen.dosen_id = \'1aadba85-8eb9-46b3-a4f6-2305b1c8542d\')) OR jadwal_kuliah.id IN ((SELECT rencana_perkuliahan.jadwal_kuliah_id
+            FROM rencana_perkuliahan
+            JOIN jadwal_kuliah ON rencana_perkuliahan.jadwal_kuliah_id = jadwal_kuliah.id
+            JOIN jadwal_kuliah_dosen ON jadwal_kuliah.id = jadwal_kuliah_dosen.jadwal_kuliah_id
+            WHERE rencana_perkuliahan.tanggal = \'2024-03-04\' AND jadwal_kuliah_dosen.dosen_id = \'1aadba85-8eb9-46b3-a4f6-2305b1c8542d\')) jadwal_kuliah.hari = \'senin\'
+AND `dosen`.`id` = :dosen.id:
+AND `tahun_akademik`.`status` = :tahun_akademik.status:
+GROUP BY `jadwal_kuliah`.`id`
+ORDER BY `jadwal_kuliah`.`jenis_jadwal` DESC, `matakuliah`.`kode_mk` ASC', [...], false)
+ 2 APPPATH/Models/Dosen/JadwalModel.php(258): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/DosenDashboard.php(27): App\Models\Dosen\JadwalModel->getJadwalByHariDash('senin')
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\DosenDashboard->index()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DosenDashboard))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php')
+INFO - 2024-03-04 01:01:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-03-04 08:01:31 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'jadwal_kuliah.hari = 'senin'
+AND `dosen`.`id` = '1aadba85-8eb9-46b3-a4f6-2305...' at line 20 in /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `jadwal_...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jadwal_...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jadwal_...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Models/Dosen/JadwalModel.php(258): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Controllers/DosenDashboard.php(27): App\Models\Dosen\JadwalModel->getJadwalByHariDash('senin')
+#6 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(942): App\Controllers\DosenDashboard->index()
+#7 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DosenDashboard))
+#8 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Applications/XAMPP/xamppfiles/htdocs/pembelajaran/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#11 {main}
+CRITICAL - 2024-03-04 08:01:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'jadwal_kuliah.hari = 'senin'
+AND `dosen`.`id` = '1aadba85-8eb9-46b3-a4f6-2305...' at line 20
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `jadwal_kuliah_dosen`.`id`, `tahun_akademik`.`nama` as `tahun_akademik_nama`, `jurusan`.`nama_jurusan`, `prodi`.`nama_prodi`, `kelas_master`.`kode_kelas` as `kelas_master_nama`, `gedung`.`nama` as `gedung_nama`, `matakuliah`.`nama_mk`, `matakuliah`.`kode_mk`, `jadwal_kuliah`.`semester`, `jadwal_kuliah`.`sks`, `jadwal_kuliah`.`jenis_jadwal`, `jadwal_kuliah`.`hari`, `jadwal_kuliah`.`jam_mulai`, `jadwal_kuliah`.`jam_selesai`, `jadwal_kuliah`.`id`, `jadwal_kuliah`.`tahun_akademik_id`, `jadwal_kuliah`.`matakuliah_id`
+FROM `jadwal_kuliah_dosen`
+JOIN `jadwal_kuliah` ON `jadwal_kuliah`.`id` = `jadwal_kuliah_dosen`.`jadwal_kuliah_id`
+JOIN `dosen` ON `jadwal_kuliah_dosen`.`dosen_id` = `dosen`.`id`
+JOIN `tahun_akademik` ON `tahun_akademik`.`id` = `jadwal_kuliah`.`tahun_akademik_id`
+JOIN `jurusan` ON `jurusan`.`id` = `jadwal_kuliah`.`jurusan_id`
+JOIN `prodi` ON `prodi`.`id` = `jadwal_kuliah`.`prodi_id`
+JOIN `kelas_master` ON `kelas_master`.`id` = `jadwal_kuliah`.`kelas_master_id`
+JOIN `gedung` ON `gedung`.`id` = `jadwal_kuliah`.`gedung_id`
+JOIN `matakuliah` ON `matakuliah`.`id` = `jadwal_kuliah`.`matakuliah_id`
+WHERE jadwal_kuliah.id IN ((SELECT rencana_perkuliahan.jadwal_kuliah_id
+            FROM perubahan_rencana
+            JOIN rencana_perkuliahan ON perubahan_rencana.rencana_perkuliahan_id = rencana_perkuliahan.id
+            JOIN jadwal_kuliah ON rencana_perkuliahan.jadwal_kuliah_id = jadwal_kuliah.id
+            JOIN jadwal_kuliah_dosen ON jadwal_kuliah.id = jadwal_kuliah_dosen.jadwal_kuliah_id
+            WHERE perubahan_rencana.tanggal = \'2024-03-04\' AND jadwal_kuliah_dosen.dosen_id = \'1aadba85-8eb9-46b3-a4f6-2305b1c8542d\')) OR jadwal_kuliah.id IN ((SELECT rencana_perkuliahan.jadwal_kuliah_id
+            FROM rencana_perkuliahan
+            JOIN jadwal_kuliah ON rencana_perkuliahan.jadwal_kuliah_id = jadwal_kuliah.id
+            JOIN jadwal_kuliah_dosen ON jadwal_kuliah.id = jadwal_kuliah_dosen.jadwal_kuliah_id
+            WHERE rencana_perkuliahan.tanggal = \'2024-03-04\' AND jadwal_kuliah_dosen.dosen_id = \'1aadba85-8eb9-46b3-a4f6-2305b1c8542d\')) jadwal_kuliah.hari = \'senin\'
+AND `dosen`.`id` = :dosen.id:
+AND `tahun_akademik`.`status` = :tahun_akademik.status:
+GROUP BY `jadwal_kuliah`.`id`
+ORDER BY `jadwal_kuliah`.`jenis_jadwal` DESC, `matakuliah`.`kode_mk` ASC', [...], false)
+ 2 APPPATH/Models/Dosen/JadwalModel.php(258): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/DosenDashboard.php(27): App\Models\Dosen\JadwalModel->getJadwalByHariDash('senin')
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\DosenDashboard->index()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DosenDashboard))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php')

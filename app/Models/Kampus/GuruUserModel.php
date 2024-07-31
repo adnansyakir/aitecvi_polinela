@@ -1,0 +1,54 @@
+<?php
+
+namespace App\Models\Kampus;
+
+use CodeIgniter\Model;
+
+class GuruUserModel extends Model
+{
+    protected $table      = 'users';
+    protected $primaryKey = 'id';
+    protected $allowedFields = ['id', 'username', 'email', 'password', 'role_id', 'created_at', 'updated_at', 'status'];
+
+    public function getAllUsers()
+    {
+        return $this->select('users.*, role.role')
+            ->join('role', 'role.id = users.role_id')
+            ->orderBy('status', '0')
+            ->get()
+
+            ->getResultArray();
+    }
+
+    public function countUser()
+    {
+        return $this->db->table('users')
+            ->countAllResults();
+    }
+
+    public function activateUsers($id, $status)
+    {
+        $builder = $this->db->table($this->table);
+        $builder->where('id', $id);
+        $builder->set('status', $status);
+
+        $builder->update();
+    }
+
+    public function change($id, $password)
+    {
+        // Lakukan query untuk mengupdate password berdasarkan id pengguna
+        $builder = $this->db->table($this->table);
+        $builder->set('password',  hash('sha256', sha1($password)));
+        $builder->where('id', $id);
+        $builder->update();
+
+        return $this->db->affectedRows(); // Mengembalikan jumlah baris yang terpengaruh oleh operasi update
+    }
+    public function getUsersById($id)
+    {
+
+        return $this->where("id", $id)->get()->getRow();
+    }
+}
+

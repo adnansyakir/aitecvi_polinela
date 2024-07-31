@@ -1,0 +1,1465 @@
+INFO - 2024-07-18 01:28:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:28:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:28:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:28:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:30:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:30:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:31:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:32:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:32:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:32:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:32:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:33:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:33:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:33:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:33:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:34:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:34:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:35:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:35:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-18 01:35:05 --> Cannot use object of type stdClass as array
+in APPPATH\Views\konten\admin\sertifikat\edit.php on line 9.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/admin/sertifikat/edit', [], true)
+ 4 APPPATH\Controllers\AdminSertifikat.php(114): view('konten/admin/sertifikat/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminSertifikat->editSertifikat('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminSertifikat))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 01:35:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-18 01:35:50 --> Cannot use object of type stdClass as array
+in APPPATH\Views\konten\admin\sertifikat\edit.php on line 13.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/admin/sertifikat/edit', [], true)
+ 4 APPPATH\Controllers\AdminSertifikat.php(114): view('konten/admin/sertifikat/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminSertifikat->editSertifikat('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminSertifikat))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 01:38:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-18 01:38:44 --> Undefined property: stdClass::$nama_peserta
+in APPPATH\Views\konten\admin\sertifikat\edit.php on line 13.
+ 1 APPPATH\Views\konten\admin\sertifikat\edit.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_peserta', 'C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\sertifikat\\edit.php', 13)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\sertifikat\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/admin/sertifikat/edit', [], true)
+ 5 APPPATH\Controllers\AdminSertifikat.php(114): view('konten/admin/sertifikat/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminSertifikat->editSertifikat('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminSertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 01:39:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-18 01:39:26 --> Cannot use object of type stdClass as array
+in APPPATH\Views\konten\admin\sertifikat\edit.php on line 45.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/admin/sertifikat/edit', [], true)
+ 4 APPPATH\Controllers\AdminSertifikat.php(114): view('konten/admin/sertifikat/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminSertifikat->editSertifikat('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminSertifikat))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 01:39:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-18 01:39:53 --> Undefined property: stdClass::$nama_perlombaan
+in APPPATH\Views\konten\admin\sertifikat\edit.php on line 53.
+ 1 APPPATH\Views\konten\admin\sertifikat\edit.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_perlombaan', 'C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\sertifikat\\edit.php', 53)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\sertifikat\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/admin/sertifikat/edit', [], true)
+ 5 APPPATH\Controllers\AdminSertifikat.php(114): view('konten/admin/sertifikat/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminSertifikat->editSertifikat('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminSertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 01:40:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:45:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-18 01:45:57 --> Too few arguments to function App\Models\Admin\SertifikatModel::getSertifikat(), 1 passed in C:\xampp\htdocs\aitecvi_polinela\app\Controllers\AdminSertifikat.php on line 106 and exactly 2 expected
+in APPPATH\Models\Admin\SertifikatModel.php on line 83.
+ 1 APPPATH\Controllers\AdminSertifikat.php(106): App\Models\Admin\SertifikatModel->getSertifikat('1')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminSertifikat->editSertifikat('1')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminSertifikat))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 01:47:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-18 01:47:12 --> Undefined variable $cabang_perlombaan
+in APPPATH\Views\konten\admin\sertifikat\edit.php on line 78.
+ 1 APPPATH\Views\konten\admin\sertifikat\edit.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cabang_perlombaan', 'C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\sertifikat\\edit.php', 78)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\sertifikat\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/admin/sertifikat/edit', [], true)
+ 5 APPPATH\Controllers\AdminSertifikat.php(114): view('konten/admin/sertifikat/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminSertifikat->editSertifikat('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminSertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 01:47:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:48:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:48:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:49:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:49:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:49:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:49:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:49:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:50:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:51:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:51:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:51:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:51:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:52:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:52:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:52:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:52:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:55:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-18 01:55:46 --> Attempt to read property "id" on array
+in APPPATH\Views\konten\admin\sertifikat\edit.php on line 17.
+ 1 APPPATH\Views\konten\admin\sertifikat\edit.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\sertifikat\\edit.php', 17)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\sertifikat\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/admin/sertifikat/edit', [], true)
+ 5 APPPATH\Controllers\AdminSertifikat.php(115): view('konten/admin/sertifikat/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminSertifikat->editSertifikat('0')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminSertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 01:55:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:57:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:57:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:57:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:57:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:58:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:58:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:58:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:58:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:58:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:58:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:58:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:58:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:58:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-18 01:58:54 --> Attempt to read property "id" on array
+in APPPATH\Views\konten\admin\sertifikat\edit.php on line 17.
+ 1 APPPATH\Views\konten\admin\sertifikat\edit.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\sertifikat\\edit.php', 17)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\sertifikat\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/admin/sertifikat/edit', [], true)
+ 5 APPPATH\Controllers\AdminSertifikat.php(116): view('konten/admin/sertifikat/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminSertifikat->editSertifikat('9224')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminSertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 01:59:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 01:59:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-18 01:59:46 --> Undefined array key "id"
+in APPPATH\Views\konten\admin\sertifikat\edit.php on line 17.
+ 1 APPPATH\Views\konten\admin\sertifikat\edit.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\sertifikat\\edit.php', 17)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\sertifikat\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/admin/sertifikat/edit', [], true)
+ 5 APPPATH\Controllers\AdminSertifikat.php(116): view('konten/admin/sertifikat/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminSertifikat->editSertifikat('9224')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminSertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 01:59:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-18 01:59:53 --> Undefined array key "id"
+in APPPATH\Views\konten\admin\sertifikat\edit.php on line 17.
+ 1 APPPATH\Views\konten\admin\sertifikat\edit.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\sertifikat\\edit.php', 17)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\sertifikat\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/admin/sertifikat/edit', [], true)
+ 5 APPPATH\Controllers\AdminSertifikat.php(116): view('konten/admin/sertifikat/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminSertifikat->editSertifikat('9224')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminSertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 02:00:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-18 02:00:19 --> Undefined array key "id"
+in APPPATH\Views\konten\admin\sertifikat\edit.php on line 17.
+ 1 APPPATH\Views\konten\admin\sertifikat\edit.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\sertifikat\\edit.php', 17)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\sertifikat\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/admin/sertifikat/edit', [], true)
+ 5 APPPATH\Controllers\AdminSertifikat.php(116): view('konten/admin/sertifikat/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminSertifikat->editSertifikat('9224')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminSertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 02:00:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 11:22:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 11:22:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 11:23:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 11:23:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 11:34:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 11:34:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 11:34:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 11:34:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 11:35:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 11:35:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-18 11:35:12 --> Undefined array key "id"
+in APPPATH\Views\konten\admin\sertifikat\edit.php on line 17.
+ 1 APPPATH\Views\konten\admin\sertifikat\edit.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\sertifikat\\edit.php', 17)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\sertifikat\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/admin/sertifikat/edit', [], true)
+ 5 APPPATH\Controllers\AdminSertifikat.php(116): view('konten/admin/sertifikat/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminSertifikat->editSertifikat('9224')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminSertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 11:43:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 11:43:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 11:43:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-18 11:43:48 --> Undefined array key "id"
+in APPPATH\Views\konten\admin\sertifikat\edit.php on line 17.
+ 1 APPPATH\Views\konten\admin\sertifikat\edit.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\sertifikat\\edit.php', 17)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\sertifikat\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/admin/sertifikat/edit', [], true)
+ 5 APPPATH\Controllers\AdminSertifikat.php(116): view('konten/admin/sertifikat/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminSertifikat->editSertifikat('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminSertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 11:44:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 11:45:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-18 11:45:47 --> syntax error, unexpected variable "$sertifikat", expecting "," or ";"
+in APPPATH\Views\konten\admin\sertifikat\edit.php on line 36.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/admin/sertifikat/edit', [], true)
+ 3 APPPATH\Controllers\AdminSertifikat.php(116): view('konten/admin/sertifikat/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminSertifikat->editSertifikat('1')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminSertifikat))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 11:46:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-18 11:46:16 --> Attempt to read property "kode_peserta" on array
+in APPPATH\Views\konten\admin\sertifikat\edit.php on line 36.
+ 1 APPPATH\Views\konten\admin\sertifikat\edit.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "kode_peserta" on array', 'C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\sertifikat\\edit.php', 36)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\sertifikat\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/admin/sertifikat/edit', [], true)
+ 5 APPPATH\Controllers\AdminSertifikat.php(116): view('konten/admin/sertifikat/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminSertifikat->editSertifikat('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminSertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 11:46:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-18 11:46:46 --> Undefined array key "kode_peserta"
+in APPPATH\Views\konten\admin\sertifikat\edit.php on line 36.
+ 1 APPPATH\Views\konten\admin\sertifikat\edit.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kode_peserta"', 'C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\sertifikat\\edit.php', 36)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\sertifikat\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/admin/sertifikat/edit', [], true)
+ 5 APPPATH\Controllers\AdminSertifikat.php(116): view('konten/admin/sertifikat/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminSertifikat->editSertifikat('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminSertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 11:49:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-18 11:49:32 --> Undefined variable $pendaftaran
+in APPPATH\Views\konten\admin\sertifikat\edit.php on line 17.
+ 1 APPPATH\Views\konten\admin\sertifikat\edit.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pendaftaran', 'C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\sertifikat\\edit.php', 17)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\sertifikat\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/admin/sertifikat/edit', [], true)
+ 5 APPPATH\Controllers\AdminSertifikat.php(120): view('konten/admin/sertifikat/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminSertifikat->editSertifikat('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminSertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 11:49:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 11:51:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 11:51:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 11:52:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-18 11:52:36 --> Undefined variable $pendaftaran
+in APPPATH\Views\konten\admin\sertifikat\edit.php on line 63.
+ 1 APPPATH\Views\konten\admin\sertifikat\edit.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pendaftaran', 'C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\sertifikat\\edit.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\sertifikat\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/admin/sertifikat/edit', [], true)
+ 5 APPPATH\Controllers\AdminSertifikat.php(120): view('konten/admin/sertifikat/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminSertifikat->editSertifikat('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminSertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 11:53:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 11:53:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 11:54:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 11:55:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-18 11:55:38 --> Undefined array key "nama_prodi"
+in APPPATH\Views\konten\admin\sertifikat\edit.php on line 48.
+ 1 APPPATH\Views\konten\admin\sertifikat\edit.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_prodi"', 'C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\sertifikat\\edit.php', 48)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\sertifikat\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/admin/sertifikat/edit', [], true)
+ 5 APPPATH\Controllers\AdminSertifikat.php(120): view('konten/admin/sertifikat/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminSertifikat->editSertifikat('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminSertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 11:55:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 11:56:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 11:57:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 11:57:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 11:57:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 11:57:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 11:57:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 11:57:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 11:57:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 11:58:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 11:58:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-18 11:58:10 --> Undefined variable $kelompok
+in APPPATH\Views\konten\admin\peserta\edit.php on line 85.
+ 1 APPPATH\Views\konten\admin\peserta\edit.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kelompok', 'C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\peserta\\edit.php', 85)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\peserta\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/admin/peserta/edit', [], true)
+ 5 APPPATH\Controllers\AdminMaster.php(509): view('konten/admin/peserta/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminMaster->editPeserta('4')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminMaster))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 12:00:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:01:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-18 12:01:02 --> Cannot use object of type stdClass as array
+in APPPATH\Views\konten\admin\peserta\edit.php on line 85.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/admin/peserta/edit', [], true)
+ 4 APPPATH\Controllers\AdminMaster.php(509): view('konten/admin/peserta/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminMaster->editPeserta('7')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminMaster))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 12:01:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:01:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:02:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:02:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:02:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:02:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:02:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:02:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:02:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:02:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:02:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:02:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:03:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:04:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:12:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:12:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:12:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:12:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:13:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:15:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:15:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:15:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:15:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:15:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:16:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:16:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:16:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:16:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:16:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:16:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:16:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:16:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:16:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:16:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:22:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-18 12:22:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\KoordinatorProfil::$user is deprecated in APPPATH\Controllers\KoordinatorProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KoordinatorProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 12:22:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\KoordinatorProfil::$session is deprecated in APPPATH\Controllers\KoordinatorProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KoordinatorProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 12:22:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\KoordinatorProfil::$validation is deprecated in APPPATH\Controllers\KoordinatorProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KoordinatorProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 12:22:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\KoordinatorProfil::$db is deprecated in APPPATH\Controllers\KoordinatorProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KoordinatorProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+CRITICAL - 2024-07-18 12:22:05 --> Undefined variable $pendamping
+in APPPATH\Views\konten\pendamping\user\index.php on line 27.
+ 1 APPPATH\Views\konten\pendamping\user\index.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pendamping', 'C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\pendamping\\user\\index.php', 27)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\pendamping\\user\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/pendamping/user/index', [], true)
+ 5 APPPATH\Controllers\KoordinatorProfil.php(27): view('konten/pendamping/user/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KoordinatorProfil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KoordinatorProfil))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 12:22:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-18 12:22:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\KoordinatorProfil::$user is deprecated in APPPATH\Controllers\KoordinatorProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KoordinatorProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 12:22:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\KoordinatorProfil::$session is deprecated in APPPATH\Controllers\KoordinatorProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KoordinatorProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 12:22:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\KoordinatorProfil::$validation is deprecated in APPPATH\Controllers\KoordinatorProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KoordinatorProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 12:22:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\KoordinatorProfil::$db is deprecated in APPPATH\Controllers\KoordinatorProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KoordinatorProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 12:22:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:22:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:22:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:22:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:22:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:22:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:22:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:22:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:22:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-18 12:22:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$user is deprecated in APPPATH\Controllers\KampusProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 12:22:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$session is deprecated in APPPATH\Controllers\KampusProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 12:22:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$validation is deprecated in APPPATH\Controllers\KampusProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 12:22:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$db is deprecated in APPPATH\Controllers\KampusProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 12:22:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:22:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:23:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:24:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:24:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-18 12:24:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$user is deprecated in APPPATH\Controllers\KampusProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 12:24:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$session is deprecated in APPPATH\Controllers\KampusProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 12:24:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$validation is deprecated in APPPATH\Controllers\KampusProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 12:24:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$db is deprecated in APPPATH\Controllers\KampusProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 12:24:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:24:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:24:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:24:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:24:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-18 12:24:28 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$user is deprecated in APPPATH\Controllers\JuriProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 12:24:28 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$session is deprecated in APPPATH\Controllers\JuriProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 12:24:28 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$validation is deprecated in APPPATH\Controllers\JuriProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 12:24:28 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$db is deprecated in APPPATH\Controllers\JuriProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 12:27:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:27:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:27:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-18 12:27:27 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$user is deprecated in APPPATH\Controllers\JuriProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 12:27:27 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$session is deprecated in APPPATH\Controllers\JuriProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 12:27:27 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$validation is deprecated in APPPATH\Controllers\JuriProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 12:27:27 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$db is deprecated in APPPATH\Controllers\JuriProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 12:27:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:27:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:27:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:27:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:27:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:28:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:28:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:28:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:28:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:33:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-18 12:33:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminProfil::$user is deprecated in APPPATH\Controllers\AdminProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 12:33:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminProfil::$session is deprecated in APPPATH\Controllers\AdminProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 12:33:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminProfil::$validation is deprecated in APPPATH\Controllers\AdminProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 12:33:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminProfil::$db is deprecated in APPPATH\Controllers\AdminProfil.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+CRITICAL - 2024-07-18 12:33:46 --> Invalid file: "konten/admin/user/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('konten/admin/user/index.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/admin/user/index', [], true)
+ 3 APPPATH\Controllers\AdminProfil.php(28): view('konten/admin/user/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminProfil->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProfil))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 12:34:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-18 12:34:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminProfil::$user is deprecated in APPPATH\Controllers\AdminProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 12:34:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminProfil::$session is deprecated in APPPATH\Controllers\AdminProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 12:34:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminProfil::$validation is deprecated in APPPATH\Controllers\AdminProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 12:34:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminProfil::$db is deprecated in APPPATH\Controllers\AdminProfil.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 12:49:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-18 12:49:56 --> Undefined property: stdClass::$user_id
+in APPPATH\Controllers\AdminProfil.php on line 24.
+ 1 APPPATH\Controllers\AdminProfil.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$user_id', 'C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Controllers\\AdminProfil.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminProfil->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProfil))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 12:50:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-18 12:50:12 --> Undefined variable $users
+in APPPATH\Views\konten\admin\profil\index.php on line 27.
+ 1 APPPATH\Views\konten\admin\profil\index.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\profil\\index.php', 27)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\profil\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/admin/profil/index', [], true)
+ 5 APPPATH\Controllers\AdminProfil.php(30): view('konten/admin/profil/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminProfil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProfil))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 12:52:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-18 12:52:05 --> syntax error, unexpected token "endforeach", expecting end of file
+in APPPATH\Views\konten\admin\profil\index.php on line 62.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/admin/profil/index', [], true)
+ 3 APPPATH\Controllers\AdminProfil.php(30): view('konten/admin/profil/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminProfil->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProfil))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 12:52:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:52:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:52:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:53:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:54:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:57:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:58:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 12:59:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-18 12:59:27 --> syntax error, unexpected token "=", expecting "function" or "const"
+in APPPATH\Controllers\AdminKoordinator.php on line 9.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Controllers\\AdminKoordinator.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminKoordinator')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminKoordinator')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\AdminKoordinator', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 12:59:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-18 12:59:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$user is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+CRITICAL - 2024-07-18 12:59:46 --> Undefined array key "nama_pt"
+in APPPATH\Views\konten\admin\koordinator\index.php on line 36.
+ 1 APPPATH\Views\konten\admin\koordinator\index.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_pt"', 'C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\koordinator\\index.php', 36)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\koordinator\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/admin/koordinator/index', [], true)
+ 5 APPPATH\Controllers\AdminKoordinator.php(24): view('konten/admin/koordinator/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminKoordinator->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminKoordinator))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 13:00:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-18 13:00:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$user is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 13:00:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-18 13:00:39 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$user is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 13:00:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:01:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:01:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-18 13:01:18 --> Call to undefined method App\Models\Admin\PendampingModel::getAllPendamping
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\AdminPendamping.php(36): CodeIgniter\Model->__call('getAllPendamping', [])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminPendamping->addPendamping()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPendamping))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 13:02:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:02:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:02:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:03:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:03:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:03:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:03:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:04:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:04:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:04:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:04:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:04:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:04:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-18 13:04:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$user is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 13:05:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-18 13:05:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$user is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 13:05:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:05:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:05:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:05:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:05:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:05:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:05:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:05:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:05:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:05:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:05:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-18 13:05:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\KoordinatorProfil::$user is deprecated in APPPATH\Controllers\KoordinatorProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KoordinatorProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 13:05:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\KoordinatorProfil::$session is deprecated in APPPATH\Controllers\KoordinatorProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KoordinatorProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 13:05:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\KoordinatorProfil::$validation is deprecated in APPPATH\Controllers\KoordinatorProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KoordinatorProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 13:05:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\KoordinatorProfil::$db is deprecated in APPPATH\Controllers\KoordinatorProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KoordinatorProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 13:05:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:06:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:06:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:06:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:06:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:06:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-18 13:06:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$user is deprecated in APPPATH\Controllers\JuriProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 13:06:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$session is deprecated in APPPATH\Controllers\JuriProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 13:06:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$validation is deprecated in APPPATH\Controllers\JuriProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 13:06:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$db is deprecated in APPPATH\Controllers\JuriProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 13:06:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-18 13:06:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$user is deprecated in APPPATH\Controllers\JuriProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 13:06:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$session is deprecated in APPPATH\Controllers\JuriProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 13:06:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$validation is deprecated in APPPATH\Controllers\JuriProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 13:06:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$db is deprecated in APPPATH\Controllers\JuriProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 13:06:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:06:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:06:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:06:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:06:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:06:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-18 13:06:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$user is deprecated in APPPATH\Controllers\KampusProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 13:06:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$session is deprecated in APPPATH\Controllers\KampusProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 13:06:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$validation is deprecated in APPPATH\Controllers\KampusProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 13:06:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$db is deprecated in APPPATH\Controllers\KampusProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 13:06:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:06:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:06:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:06:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:07:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:07:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:07:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-18 13:07:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$user is deprecated in APPPATH\Controllers\KampusProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 13:07:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$session is deprecated in APPPATH\Controllers\KampusProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 13:07:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$validation is deprecated in APPPATH\Controllers\KampusProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 13:07:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$db is deprecated in APPPATH\Controllers\KampusProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 13:07:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:07:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-18 13:07:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$user is deprecated in APPPATH\Controllers\KampusProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 13:07:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$session is deprecated in APPPATH\Controllers\KampusProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 13:07:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$validation is deprecated in APPPATH\Controllers\KampusProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 13:07:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$db is deprecated in APPPATH\Controllers\KampusProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 13:07:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:07:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:07:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:07:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:07:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:07:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-18 13:07:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\KoordinatorProfil::$user is deprecated in APPPATH\Controllers\KoordinatorProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KoordinatorProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 13:07:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\KoordinatorProfil::$session is deprecated in APPPATH\Controllers\KoordinatorProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KoordinatorProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 13:07:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\KoordinatorProfil::$validation is deprecated in APPPATH\Controllers\KoordinatorProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KoordinatorProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 13:07:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\KoordinatorProfil::$db is deprecated in APPPATH\Controllers\KoordinatorProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KoordinatorProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 13:07:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:12:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:12:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:13:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:13:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:13:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:13:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:13:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:13:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-18 13:13:21 --> Class "App\Models\KoordinatorModel" not found
+in APPPATH\Controllers\AdminKoordinator.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 13:13:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-18 13:13:44 --> Class "App\Models\Admin\KoordinatorModel" not found
+in APPPATH\Controllers\AdminKoordinator.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 13:13:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-18 13:13:46 --> Class "App\Models\Admin\KoordinatorModel" not found
+in APPPATH\Controllers\AdminKoordinator.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 13:14:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-18 13:14:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$session is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 13:14:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$validation is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 13:14:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-18 13:14:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$session is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 13:14:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$validation is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+CRITICAL - 2024-07-18 13:14:21 --> Undefined variable $pendamping
+in APPPATH\Views\konten\admin\koordinator\edit.php on line 16.
+ 1 APPPATH\Views\konten\admin\koordinator\edit.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pendamping', 'C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\koordinator\\edit.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\koordinator\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/admin/koordinator/edit', [], true)
+ 5 APPPATH\Controllers\AdminKoordinator.php(53): view('konten/admin/koordinator/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminKoordinator->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminKoordinator))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 13:15:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-18 13:15:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$session is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 13:15:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$validation is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 13:15:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-18 13:15:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$session is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 13:15:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$validation is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 13:16:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-18 13:16:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$session is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 13:16:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$validation is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 13:16:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-18 13:16:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$session is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 13:16:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$validation is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 13:16:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-18 13:16:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$session is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 13:16:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$validation is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 13:16:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-18 13:16:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$session is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 13:16:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$validation is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+CRITICAL - 2024-07-18 13:16:12 --> Undefined variable $pendamping
+in APPPATH\Views\konten\admin\koordinator\edit.php on line 16.
+ 1 APPPATH\Views\konten\admin\koordinator\edit.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pendamping', 'C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\koordinator\\edit.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\koordinator\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/admin/koordinator/edit', [], true)
+ 5 APPPATH\Controllers\AdminKoordinator.php(53): view('konten/admin/koordinator/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminKoordinator->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminKoordinator))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 13:17:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-18 13:17:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$session is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 13:17:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$validation is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 13:18:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-18 13:18:43 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$session is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 13:18:43 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$validation is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 13:18:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-18 13:18:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$session is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 13:18:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$validation is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 13:18:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-18 13:18:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$session is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 13:18:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$validation is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 13:18:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-18 13:18:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$session is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 13:18:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$validation is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 13:18:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-18 13:18:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$session is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 13:18:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$validation is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 13:20:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:21:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:21:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:21:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:21:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:21:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:21:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:21:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:22:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:22:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:22:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:23:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:23:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:23:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:23:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:24:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:24:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:24:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:24:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:24:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:24:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:24:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:24:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:24:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:29:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:29:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:34:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:34:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:34:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:34:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:34:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:34:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:34:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-18 13:34:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$session is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 13:34:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$validation is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 13:34:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-18 13:34:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$session is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 13:34:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$validation is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 13:35:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-18 13:35:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$session is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 13:35:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$validation is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 13:35:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-18 13:35:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$session is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 13:35:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$validation is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 13:35:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-18 13:35:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$session is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 13:35:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$validation is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 13:35:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-18 13:35:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$session is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 13:35:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$validation is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 13:38:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:38:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:38:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:38:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:38:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:38:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:38:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:38:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:38:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:38:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:38:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:39:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:39:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:39:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:40:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:40:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-18 13:40:34 --> Undefined array key "_peserta_id"
+in APPPATH\Views\konten\admin\pendaftaran\edit.php on line 62.
+ 1 APPPATH\Views\konten\admin\pendaftaran\edit.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "_peserta_id"', 'C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\pendaftaran\\edit.php', 62)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\pendaftaran\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/admin/pendaftaran/edit', [], true)
+ 5 APPPATH\Controllers\AdminPendaftaran.php(110): view('konten/admin/pendaftaran/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Adminpendaftaran->editPendaftaran('663')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adminpendaftaran))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 13:40:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-18 13:40:45 --> Undefined array key "peserta_id"
+in APPPATH\Views\konten\admin\pendaftaran\edit.php on line 62.
+ 1 APPPATH\Views\konten\admin\pendaftaran\edit.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "peserta_id"', 'C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\pendaftaran\\edit.php', 62)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\pendaftaran\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/admin/pendaftaran/edit', [], true)
+ 5 APPPATH\Controllers\AdminPendaftaran.php(110): view('konten/admin/pendaftaran/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Adminpendaftaran->editPendaftaran('663')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adminpendaftaran))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 13:41:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:41:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:41:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:42:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:42:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:42:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:43:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:43:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:43:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:43:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:43:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:43:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:44:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:44:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:44:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:44:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-18 13:44:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$session is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-18 13:44:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$validation is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 13:44:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:44:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:44:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:47:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:47:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:48:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:48:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:48:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:48:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:48:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:49:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:49:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:49:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:49:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:49:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:50:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:50:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:50:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:50:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:50:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:50:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:50:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:53:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:53:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 13:53:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 14:00:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 23:45:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 23:45:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 23:45:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 23:45:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-18 23:45:28 --> mysqli_sql_exception: Unknown column 'hasillomba.pendaftaran_id' in 'on clause' in C:\xampp\htdocs\aitecvi_polinela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\aitecvi_polinela\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `hasillo...', 0)
+#1 C:\xampp\htdocs\aitecvi_polinela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `hasillo...')
+#2 C:\xampp\htdocs\aitecvi_polinela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `hasillo...')
+#3 C:\xampp\htdocs\aitecvi_polinela\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `hasillo...', Array, false)
+#4 C:\xampp\htdocs\aitecvi_polinela\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\aitecvi_polinela\app\Models\Admin\HasilLombaModel.php(22): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\aitecvi_polinela\app\Controllers\AdminHasillomba.php(27): App\Models\Admin\HasilLombaModel->Hasillombabypendaftaran()
+#7 C:\xampp\htdocs\aitecvi_polinela\system\CodeIgniter.php(942): App\Controllers\AdminHasillomba->index()
+#8 C:\xampp\htdocs\aitecvi_polinela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminHasillomba))
+#9 C:\xampp\htdocs\aitecvi_polinela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\aitecvi_polinela\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\aitecvi_polinela\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-07-18 23:45:28 --> Unknown column 'hasillomba.pendaftaran_id' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `hasillomba`.*, `pendaftaran`.`nama_team`
+FROM `hasillomba`
+JOIN `pendaftaran` ON `hasillomba`.`pendaftaran_id` = `pendaftaran`.`id`', [], false)
+ 2 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Models\Admin\HasilLombaModel.php(22): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH\Controllers\AdminHasillomba.php(27): App\Models\Admin\HasilLombaModel->Hasillombabypendaftaran()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminHasillomba->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminHasillomba))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 23:46:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 23:48:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 23:50:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-18 23:50:47 --> Undefined array key "catatan_nilai1"
+in APPPATH\Views\konten\admin\hasillomba\index.php on line 49.
+ 1 APPPATH\Views\konten\admin\hasillomba\index.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "catatan_nilai1"', 'C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\hasillomba\\index.php', 49)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\admin\\hasillomba\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/admin/hasillomba/index', [], true)
+ 5 APPPATH\Controllers\AdminHasillomba.php(30): view('konten/admin/hasillomba/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminHasillomba->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminHasillomba))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-18 23:51:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 23:51:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 23:57:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-18 23:58:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,0 +1,13 @@
+CRITICAL - 2024-02-26 05:53:20 --> DateTime::__construct(): Failed to parse time string (20186e28-e025-4834-92b2-81c0d6affc30) at position 4 (6): Unexpected character
+in APPPATH/Helpers/url_helper.php on line 1525.
+ 1 APPPATH/Helpers/url_helper.php(1525): DateTime->__construct('20186e28-e025-4834-92b2-81c0d6affc30')
+ 2 APPPATH/Views/konten/mahasiswa/kehadiran/detail.php(166): tglIndo('20186e28-e025-4834-92b2-81c0d6affc30')
+ 3 SYSTEMPATH/View/View.php(228): include('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/app/Views/konten/mahasiswa/kehadiran/detail.php')
+ 4 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('konten/mahasiswa/kehadiran/detail', [], true)
+ 6 APPPATH/Controllers/MahasiswaKehadiran.php(66): view('konten/mahasiswa/kehadiran/detail', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\MahasiswaKehadiran->detail('M2ZhYmQ0ZjgtMTdmMS00NzFjLTk2MWMtMzE1ZmU3NTQ3Zjlj')
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaKehadiran))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/pembelajaran/public/index.php')

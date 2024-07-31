@@ -1,0 +1,372 @@
+INFO - 2024-04-13 11:33:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:33:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:33:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:33:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:33:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:33:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:40:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:41:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:41:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:45:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:45:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:45:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:46:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:46:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:46:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:47:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:48:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-04-13 11:48:15 --> mysqli_sql_exception: Unknown column 'audit_rencana.tanggal_audit' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `upa`.`n...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `upa`.`n...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `upa`.`n...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `upa`.`n...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/ami/app/Controllers/AdminPelaksanaan.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/ami/system/CodeIgniter.php(942): App\Controllers\AdminPelaksanaan->getUpaById('f192a21e-5613-4...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/ami/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPelaksanaan))
+#7 /Applications/XAMPP/xamppfiles/htdocs/ami/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/XAMPP/xamppfiles/htdocs/ami/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#10 {main}
+CRITICAL - 2024-04-13 11:48:15 --> Unknown column 'audit_rencana.tanggal_audit' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `upa`.`nama_upa`, `audit_rencana`.`area_audit_id`, `audit_rencana`.`status`, `audit_rencana`.`tanggal_audit`, `audit_rencana`.`id`, `audit_rencana`.`upa_id`
+FROM `audit_rencana`
+JOIN `upa` ON `audit_rencana`.`upa_id` = `upa`.`id`
+JOIN `area_audit` ON `audit_rencana`.`area_audit_id` = `area_audit`.`id`
+WHERE `audit_rencana`.`id` = :audit_rencana.id:', [...], false)
+ 2 APPPATH/Controllers/AdminPelaksanaan.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AdminPelaksanaan->getUpaById('f192a21e-5613-45a4-bc84-c59699027f17')
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPelaksanaan))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/ami/public/index.php')
+INFO - 2024-04-13 11:48:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:48:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:48:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-04-13 11:48:16 --> mysqli_sql_exception: Unknown column 'audit_rencana.tanggal_audit' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `upa`.`n...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `upa`.`n...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `upa`.`n...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `upa`.`n...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/ami/app/Controllers/AdminPelaksanaan.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/ami/system/CodeIgniter.php(942): App\Controllers\AdminPelaksanaan->getUpaById('f192a21e-5613-4...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/ami/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPelaksanaan))
+#7 /Applications/XAMPP/xamppfiles/htdocs/ami/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/XAMPP/xamppfiles/htdocs/ami/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#10 {main}
+CRITICAL - 2024-04-13 11:48:16 --> Unknown column 'audit_rencana.tanggal_audit' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `upa`.`nama_upa`, `audit_rencana`.`area_audit_id`, `audit_rencana`.`status`, `audit_rencana`.`tanggal_audit`, `audit_rencana`.`id`, `audit_rencana`.`upa_id`
+FROM `audit_rencana`
+JOIN `upa` ON `audit_rencana`.`upa_id` = `upa`.`id`
+JOIN `area_audit` ON `audit_rencana`.`area_audit_id` = `area_audit`.`id`
+WHERE `audit_rencana`.`id` = :audit_rencana.id:', [...], false)
+ 2 APPPATH/Controllers/AdminPelaksanaan.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AdminPelaksanaan->getUpaById('f192a21e-5613-45a4-bc84-c59699027f17')
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPelaksanaan))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/ami/public/index.php')
+INFO - 2024-04-13 11:48:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:48:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:48:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-04-13 11:48:16 --> mysqli_sql_exception: Unknown column 'audit_rencana.tanggal_audit' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `upa`.`n...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `upa`.`n...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `upa`.`n...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `upa`.`n...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/ami/app/Controllers/AdminPelaksanaan.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/ami/system/CodeIgniter.php(942): App\Controllers\AdminPelaksanaan->getUpaById('d8768fe9-6921-4...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/ami/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPelaksanaan))
+#7 /Applications/XAMPP/xamppfiles/htdocs/ami/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/XAMPP/xamppfiles/htdocs/ami/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#10 {main}
+CRITICAL - 2024-04-13 11:48:16 --> Unknown column 'audit_rencana.tanggal_audit' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `upa`.`nama_upa`, `audit_rencana`.`area_audit_id`, `audit_rencana`.`status`, `audit_rencana`.`tanggal_audit`, `audit_rencana`.`id`, `audit_rencana`.`upa_id`
+FROM `audit_rencana`
+JOIN `upa` ON `audit_rencana`.`upa_id` = `upa`.`id`
+JOIN `area_audit` ON `audit_rencana`.`area_audit_id` = `area_audit`.`id`
+WHERE `audit_rencana`.`id` = :audit_rencana.id:', [...], false)
+ 2 APPPATH/Controllers/AdminPelaksanaan.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AdminPelaksanaan->getUpaById('d8768fe9-6921-41dd-923a-f7f8375989cf')
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPelaksanaan))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/ami/public/index.php')
+INFO - 2024-04-13 11:48:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:48:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:48:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-04-13 11:48:16 --> mysqli_sql_exception: Unknown column 'audit_rencana.tanggal_audit' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `upa`.`n...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `upa`.`n...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `upa`.`n...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `upa`.`n...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/ami/app/Controllers/AdminPelaksanaan.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/ami/system/CodeIgniter.php(942): App\Controllers\AdminPelaksanaan->getUpaById('d8768fe9-6921-4...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/ami/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPelaksanaan))
+#7 /Applications/XAMPP/xamppfiles/htdocs/ami/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/XAMPP/xamppfiles/htdocs/ami/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#10 {main}
+CRITICAL - 2024-04-13 11:48:16 --> Unknown column 'audit_rencana.tanggal_audit' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `upa`.`nama_upa`, `audit_rencana`.`area_audit_id`, `audit_rencana`.`status`, `audit_rencana`.`tanggal_audit`, `audit_rencana`.`id`, `audit_rencana`.`upa_id`
+FROM `audit_rencana`
+JOIN `upa` ON `audit_rencana`.`upa_id` = `upa`.`id`
+JOIN `area_audit` ON `audit_rencana`.`area_audit_id` = `area_audit`.`id`
+WHERE `audit_rencana`.`id` = :audit_rencana.id:', [...], false)
+ 2 APPPATH/Controllers/AdminPelaksanaan.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AdminPelaksanaan->getUpaById('d8768fe9-6921-41dd-923a-f7f8375989cf')
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPelaksanaan))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/ami/public/index.php')
+INFO - 2024-04-13 11:48:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:48:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:48:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-04-13 11:48:39 --> mysqli_sql_exception: Unknown column 'audit_rencana.tanggal_audit' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `upa`.`n...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `upa`.`n...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `upa`.`n...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `upa`.`n...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/ami/app/Controllers/AdminPelaksanaan.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/ami/system/CodeIgniter.php(942): App\Controllers\AdminPelaksanaan->getUpaById('d8768fe9-6921-4...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/ami/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPelaksanaan))
+#7 /Applications/XAMPP/xamppfiles/htdocs/ami/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/XAMPP/xamppfiles/htdocs/ami/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#10 {main}
+CRITICAL - 2024-04-13 11:48:39 --> Unknown column 'audit_rencana.tanggal_audit' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `upa`.`nama_upa`, `audit_rencana`.`area_audit_id`, `audit_rencana`.`status`, `audit_rencana`.`tanggal_audit`, `audit_rencana`.`id`, `audit_rencana`.`upa_id`
+FROM `audit_rencana`
+JOIN `upa` ON `audit_rencana`.`upa_id` = `upa`.`id`
+JOIN `area_audit` ON `audit_rencana`.`area_audit_id` = `area_audit`.`id`
+WHERE `audit_rencana`.`id` = :audit_rencana.id:', [...], false)
+ 2 APPPATH/Controllers/AdminPelaksanaan.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AdminPelaksanaan->getUpaById('d8768fe9-6921-41dd-923a-f7f8375989cf')
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPelaksanaan))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/ami/public/index.php')
+INFO - 2024-04-13 11:50:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:50:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:50:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:50:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:51:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:51:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:51:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:51:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:52:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:52:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:52:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:52:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:52:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:52:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:52:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:52:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:52:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:52:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:52:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:52:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:52:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:53:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:53:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:53:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:53:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:53:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:53:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:53:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:53:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:53:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:53:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:54:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:54:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:54:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:55:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:56:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:56:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:56:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:56:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:56:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:56:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:57:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:57:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 11:57:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 12:04:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-13 12:04:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-04-13 12:04:21 --> mysqli_sql_exception: Table 'ami_polinela.audit_rencana_auditor' doesn't exist in /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `audit_r...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `audit_r...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `audit_r...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `audit_r...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/ami/app/Helpers/url_helper.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/ami/app/Views/konten/admin/pelaksanaan/upa/index.php(45): auditorByJadwal('f192a21e-5613-4...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/ami/system/View/View.php(228): include('/Applications/X...')
+#7 /Applications/XAMPP/xamppfiles/htdocs/ami/system/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Common.php(1190): CodeIgniter\View\View->render('konten/admin/pe...', Array, true)
+#9 /Applications/XAMPP/xamppfiles/htdocs/ami/app/Controllers/AdminPelaksanaan.php(188): view('konten/admin/pe...', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/ami/system/CodeIgniter.php(942): App\Controllers\AdminPelaksanaan->index('$1')
+#11 /Applications/XAMPP/xamppfiles/htdocs/ami/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPelaksanaan))
+#12 /Applications/XAMPP/xamppfiles/htdocs/ami/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /Applications/XAMPP/xamppfiles/htdocs/ami/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#14 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#15 {main}
+CRITICAL - 2024-04-13 12:04:21 --> Table 'ami_polinela.audit_rencana_auditor' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `audit_rencana_auditor`.`id`, `auditor`.`nama_auditor`
+FROM `audit_rencana_auditor`
+JOIN `auditor` ON `audit_rencana_auditor`.`auditor_id` = `auditor`.`id`
+JOIN `audit_rencana` ON `audit_rencana_auditor`.`audit_rencana_id` = `audit_rencana`.`id`
+WHERE `audit_rencana`.`id` = :audit_rencana.id:', [...], false)
+ 2 APPPATH/Helpers/url_helper.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Views/konten/admin/pelaksanaan/upa/index.php(45): auditorByJadwal('f192a21e-5613-45a4-bc84-c59699027f17')
+ 4 SYSTEMPATH/View/View.php(228): include('/Applications/XAMPP/xamppfiles/htdocs/ami/app/Views/konten/admin/pelaksanaan/upa/index.php')
+ 5 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('konten/admin/pelaksanaan/upa/index', [], true)
+ 7 APPPATH/Controllers/AdminPelaksanaan.php(188): view('konten/admin/pelaksanaan/upa/index', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AdminPelaksanaan->index('$1')
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPelaksanaan))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/ami/public/index.php')
+INFO - 2024-04-13 12:09:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-04-13 12:09:38 --> mysqli_sql_exception: Unknown column 'auditor1.nama_auditor_1' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `audit_r...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `audit_r...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `audit_r...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `audit_r...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/ami/app/Helpers/url_helper.php(88): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/ami/app/Views/konten/admin/pelaksanaan/upa/index.php(33): aturJadwalPelaksanaanUPA('479182b7-9057-4...', '70ced1c4-b134-4...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/ami/system/View/View.php(228): include('/Applications/X...')
+#7 /Applications/XAMPP/xamppfiles/htdocs/ami/system/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Common.php(1190): CodeIgniter\View\View->render('konten/admin/pe...', Array, true)
+#9 /Applications/XAMPP/xamppfiles/htdocs/ami/app/Controllers/AdminPelaksanaan.php(188): view('konten/admin/pe...', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/ami/system/CodeIgniter.php(942): App\Controllers\AdminPelaksanaan->index('$1')
+#11 /Applications/XAMPP/xamppfiles/htdocs/ami/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPelaksanaan))
+#12 /Applications/XAMPP/xamppfiles/htdocs/ami/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /Applications/XAMPP/xamppfiles/htdocs/ami/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#14 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#15 {main}
+CRITICAL - 2024-04-13 12:09:38 --> Unknown column 'auditor1.nama_auditor_1' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `audit_rencana`.*, `area_audit`.`area_audit`, `auditor1`.`nama_auditor_1`, `auditor2`.`nama_auditor_2`
+FROM `audit_rencana`
+JOIN `area_audit` ON `audit_rencana`.`area_audit_id` = `area_audit`.`id`
+JOIN `auditor` as `auditor1` ON `audit_rencana`.`auditor_1` = `auditor`.`id`
+JOIN `auditor` as `auditor2` ON `audit_rencana`.`auditor_2` = `auditor`.`id`
+WHERE `upa_id` = :upa_id:
+AND `tahun_akademik_id` = :tahun_akademik_id:', [...], false)
+ 2 APPPATH/Helpers/url_helper.php(88): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Views/konten/admin/pelaksanaan/upa/index.php(33): aturJadwalPelaksanaanUPA('479182b7-9057-4f6b-8d77-65cd94293dfd', '70ced1c4-b134-40cc-9838-0d9887356096')
+ 4 SYSTEMPATH/View/View.php(228): include('/Applications/XAMPP/xamppfiles/htdocs/ami/app/Views/konten/admin/pelaksanaan/upa/index.php')
+ 5 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('konten/admin/pelaksanaan/upa/index', [], true)
+ 7 APPPATH/Controllers/AdminPelaksanaan.php(188): view('konten/admin/pelaksanaan/upa/index', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AdminPelaksanaan->index('$1')
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPelaksanaan))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/ami/public/index.php')
+INFO - 2024-04-13 12:10:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-04-13 12:10:05 --> mysqli_sql_exception: Unknown column 'auditor.id' in 'on clause' in /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `audit_r...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `audit_r...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `audit_r...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `audit_r...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/ami/app/Helpers/url_helper.php(88): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/ami/app/Views/konten/admin/pelaksanaan/upa/index.php(33): aturJadwalPelaksanaanUPA('479182b7-9057-4...', '70ced1c4-b134-4...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/ami/system/View/View.php(228): include('/Applications/X...')
+#7 /Applications/XAMPP/xamppfiles/htdocs/ami/system/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Common.php(1190): CodeIgniter\View\View->render('konten/admin/pe...', Array, true)
+#9 /Applications/XAMPP/xamppfiles/htdocs/ami/app/Controllers/AdminPelaksanaan.php(188): view('konten/admin/pe...', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/ami/system/CodeIgniter.php(942): App\Controllers\AdminPelaksanaan->index('$1')
+#11 /Applications/XAMPP/xamppfiles/htdocs/ami/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPelaksanaan))
+#12 /Applications/XAMPP/xamppfiles/htdocs/ami/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /Applications/XAMPP/xamppfiles/htdocs/ami/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#14 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#15 {main}
+CRITICAL - 2024-04-13 12:10:05 --> Unknown column 'auditor.id' in 'on clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `audit_rencana`.*, `area_audit`.`area_audit`, `auditor1`.`nama_auditor` as `nama_auditor_1`, `auditor2`.`nama_auditor` as `nama_auditor_2`
+FROM `audit_rencana`
+JOIN `area_audit` ON `audit_rencana`.`area_audit_id` = `area_audit`.`id`
+JOIN `auditor` as `auditor1` ON `audit_rencana`.`auditor_1` = `auditor`.`id`
+JOIN `auditor` as `auditor2` ON `audit_rencana`.`auditor_2` = `auditor`.`id`
+WHERE `upa_id` = :upa_id:
+AND `tahun_akademik_id` = :tahun_akademik_id:', [...], false)
+ 2 APPPATH/Helpers/url_helper.php(88): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Views/konten/admin/pelaksanaan/upa/index.php(33): aturJadwalPelaksanaanUPA('479182b7-9057-4f6b-8d77-65cd94293dfd', '70ced1c4-b134-40cc-9838-0d9887356096')
+ 4 SYSTEMPATH/View/View.php(228): include('/Applications/XAMPP/xamppfiles/htdocs/ami/app/Views/konten/admin/pelaksanaan/upa/index.php')
+ 5 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('konten/admin/pelaksanaan/upa/index', [], true)
+ 7 APPPATH/Controllers/AdminPelaksanaan.php(188): view('konten/admin/pelaksanaan/upa/index', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AdminPelaksanaan->index('$1')
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPelaksanaan))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/ami/public/index.php')
+INFO - 2024-04-13 12:10:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-04-13 12:10:06 --> mysqli_sql_exception: Unknown column 'auditor.id' in 'on clause' in /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `audit_r...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `audit_r...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `audit_r...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `audit_r...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/ami/app/Helpers/url_helper.php(88): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/ami/app/Views/konten/admin/pelaksanaan/upa/index.php(33): aturJadwalPelaksanaanUPA('479182b7-9057-4...', '70ced1c4-b134-4...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/ami/system/View/View.php(228): include('/Applications/X...')
+#7 /Applications/XAMPP/xamppfiles/htdocs/ami/system/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Common.php(1190): CodeIgniter\View\View->render('konten/admin/pe...', Array, true)
+#9 /Applications/XAMPP/xamppfiles/htdocs/ami/app/Controllers/AdminPelaksanaan.php(188): view('konten/admin/pe...', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/ami/system/CodeIgniter.php(942): App\Controllers\AdminPelaksanaan->index('$1')
+#11 /Applications/XAMPP/xamppfiles/htdocs/ami/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPelaksanaan))
+#12 /Applications/XAMPP/xamppfiles/htdocs/ami/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /Applications/XAMPP/xamppfiles/htdocs/ami/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#14 /Applications/XAMPP/xamppfiles/htdocs/ami/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#15 {main}
+CRITICAL - 2024-04-13 12:10:06 --> Unknown column 'auditor.id' in 'on clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `audit_rencana`.*, `area_audit`.`area_audit`, `auditor1`.`nama_auditor` as `nama_auditor_1`, `auditor2`.`nama_auditor` as `nama_auditor_2`
+FROM `audit_rencana`
+JOIN `area_audit` ON `audit_rencana`.`area_audit_id` = `area_audit`.`id`
+JOIN `auditor` as `auditor1` ON `audit_rencana`.`auditor_1` = `auditor`.`id`
+JOIN `auditor` as `auditor2` ON `audit_rencana`.`auditor_2` = `auditor`.`id`
+WHERE `upa_id` = :upa_id:
+AND `tahun_akademik_id` = :tahun_akademik_id:', [...], false)
+ 2 APPPATH/Helpers/url_helper.php(88): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Views/konten/admin/pelaksanaan/upa/index.php(33): aturJadwalPelaksanaanUPA('479182b7-9057-4f6b-8d77-65cd94293dfd', '70ced1c4-b134-40cc-9838-0d9887356096')
+ 4 SYSTEMPATH/View/View.php(228): include('/Applications/XAMPP/xamppfiles/htdocs/ami/app/Views/konten/admin/pelaksanaan/upa/index.php')
+ 5 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('konten/admin/pelaksanaan/upa/index', [], true)
+ 7 APPPATH/Controllers/AdminPelaksanaan.php(188): view('konten/admin/pelaksanaan/upa/index', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AdminPelaksanaan->index('$1')
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPelaksanaan))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/ami/public/index.php')
+INFO - 2024-04-13 12:10:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-13 12:10:20 --> Undefined variable $auditor
+in APPPATH/Views/konten/admin/pelaksanaan/upa/index.php on line 46.
+ 1 APPPATH/Views/konten/admin/pelaksanaan/upa/index.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $auditor', '/Applications/XAMPP/xamppfiles/htdocs/ami/app/Views/konten/admin/pelaksanaan/upa/index.php', 46)
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/XAMPP/xamppfiles/htdocs/ami/app/Views/konten/admin/pelaksanaan/upa/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('konten/admin/pelaksanaan/upa/index', [], true)
+ 5 APPPATH/Controllers/AdminPelaksanaan.php(188): view('konten/admin/pelaksanaan/upa/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AdminPelaksanaan->index('$1')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPelaksanaan))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/ami/public/index.php')
+INFO - 2024-04-13 12:10:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

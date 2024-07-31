@@ -1,0 +1,1232 @@
+INFO - 2024-07-21 06:21:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 06:21:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 06:21:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 06:21:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-21 06:21:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$user is deprecated in APPPATH\Controllers\KampusProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:21:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$session is deprecated in APPPATH\Controllers\KampusProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:21:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$validation is deprecated in APPPATH\Controllers\KampusProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:21:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$db is deprecated in APPPATH\Controllers\KampusProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+CRITICAL - 2024-07-21 06:21:41 --> Attempt to read property "kode_pt" on null
+in APPPATH\Controllers\KampusProfil.php on line 24.
+ 1 APPPATH\Controllers\KampusProfil.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "kode_pt" on null', 'C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Controllers\\KampusProfil.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KampusProfil->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KampusProfil))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-21 06:23:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-21 06:23:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$user is deprecated in APPPATH\Controllers\KampusProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:23:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$session is deprecated in APPPATH\Controllers\KampusProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:23:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$validation is deprecated in APPPATH\Controllers\KampusProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:23:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$db is deprecated in APPPATH\Controllers\KampusProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+CRITICAL - 2024-07-21 06:23:03 --> Attempt to read property "kode_pt" on null
+in APPPATH\Controllers\KampusProfil.php on line 24.
+ 1 APPPATH\Controllers\KampusProfil.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "kode_pt" on null', 'C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Controllers\\KampusProfil.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KampusProfil->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KampusProfil))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-21 06:23:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-21 06:23:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$user is deprecated in APPPATH\Controllers\KampusProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:23:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$session is deprecated in APPPATH\Controllers\KampusProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:23:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$validation is deprecated in APPPATH\Controllers\KampusProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:23:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$db is deprecated in APPPATH\Controllers\KampusProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+CRITICAL - 2024-07-21 06:23:06 --> Attempt to read property "kode_pt" on null
+in APPPATH\Controllers\KampusProfil.php on line 24.
+ 1 APPPATH\Controllers\KampusProfil.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "kode_pt" on null', 'C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Controllers\\KampusProfil.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KampusProfil->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KampusProfil))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-21 06:23:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 06:23:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-21 06:23:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$user is deprecated in APPPATH\Controllers\KampusProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:23:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$session is deprecated in APPPATH\Controllers\KampusProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:23:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$validation is deprecated in APPPATH\Controllers\KampusProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:23:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$db is deprecated in APPPATH\Controllers\KampusProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+CRITICAL - 2024-07-21 06:23:11 --> Attempt to read property "kode_pt" on null
+in APPPATH\Controllers\KampusProfil.php on line 24.
+ 1 APPPATH\Controllers\KampusProfil.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "kode_pt" on null', 'C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Controllers\\KampusProfil.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KampusProfil->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KampusProfil))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-21 06:23:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-21 06:23:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$user is deprecated in APPPATH\Controllers\KampusProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:23:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$session is deprecated in APPPATH\Controllers\KampusProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:23:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$validation is deprecated in APPPATH\Controllers\KampusProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:23:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$db is deprecated in APPPATH\Controllers\KampusProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+CRITICAL - 2024-07-21 06:23:38 --> Attempt to read property "kode_pt" on null
+in APPPATH\Controllers\KampusProfil.php on line 24.
+ 1 APPPATH\Controllers\KampusProfil.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "kode_pt" on null', 'C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Controllers\\KampusProfil.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KampusProfil->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KampusProfil))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-21 06:24:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-21 06:24:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$user is deprecated in APPPATH\Controllers\KampusProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:24:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$session is deprecated in APPPATH\Controllers\KampusProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:24:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$validation is deprecated in APPPATH\Controllers\KampusProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:24:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$db is deprecated in APPPATH\Controllers\KampusProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+CRITICAL - 2024-07-21 06:24:24 --> Attempt to read property "id" on null
+in APPPATH\Controllers\KampusProfil.php on line 25.
+ 1 APPPATH\Controllers\KampusProfil.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Controllers\\KampusProfil.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KampusProfil->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KampusProfil))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-21 06:25:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-21 06:25:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$user is deprecated in APPPATH\Controllers\KampusProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:25:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$session is deprecated in APPPATH\Controllers\KampusProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:25:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$validation is deprecated in APPPATH\Controllers\KampusProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:25:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$db is deprecated in APPPATH\Controllers\KampusProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+CRITICAL - 2024-07-21 06:25:07 --> Attempt to read property "kode_pt" on null
+in APPPATH\Controllers\KampusProfil.php on line 24.
+ 1 APPPATH\Controllers\KampusProfil.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "kode_pt" on null', 'C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Controllers\\KampusProfil.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KampusProfil->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KampusProfil))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-21 06:26:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-21 06:26:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$user is deprecated in APPPATH\Controllers\KampusProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:26:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$session is deprecated in APPPATH\Controllers\KampusProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:26:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$validation is deprecated in APPPATH\Controllers\KampusProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:26:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$db is deprecated in APPPATH\Controllers\KampusProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-21 06:35:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-21 06:35:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$user is deprecated in APPPATH\Controllers\KampusProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:35:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$session is deprecated in APPPATH\Controllers\KampusProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:35:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$validation is deprecated in APPPATH\Controllers\KampusProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:35:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$db is deprecated in APPPATH\Controllers\KampusProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+CRITICAL - 2024-07-21 06:35:57 --> Attempt to read property "email_pt" on null
+in APPPATH\Controllers\KampusProfil.php on line 24.
+ 1 APPPATH\Controllers\KampusProfil.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "email_pt" on null', 'C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Controllers\\KampusProfil.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KampusProfil->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KampusProfil))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-21 06:37:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-21 06:37:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$user is deprecated in APPPATH\Controllers\KampusProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:37:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$session is deprecated in APPPATH\Controllers\KampusProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:37:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$validation is deprecated in APPPATH\Controllers\KampusProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:37:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\KampusProfil::$db is deprecated in APPPATH\Controllers\KampusProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\KampusProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-21 06:37:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 06:37:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 06:49:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 06:49:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 06:50:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 06:50:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 06:50:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-21 06:50:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$user is deprecated in APPPATH\Controllers\JuriProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:50:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$session is deprecated in APPPATH\Controllers\JuriProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:50:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$validation is deprecated in APPPATH\Controllers\JuriProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:50:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$db is deprecated in APPPATH\Controllers\JuriProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+CRITICAL - 2024-07-21 06:50:37 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\JuriProfil.php on line 24.
+ 1 APPPATH\Controllers\JuriProfil.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Controllers\\JuriProfil.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\JuriProfil->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JuriProfil))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-21 06:51:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-21 06:51:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$user is deprecated in APPPATH\Controllers\JuriProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:51:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$session is deprecated in APPPATH\Controllers\JuriProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:51:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$validation is deprecated in APPPATH\Controllers\JuriProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:51:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$db is deprecated in APPPATH\Controllers\JuriProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-21 06:52:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 06:52:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-21 06:52:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$user is deprecated in APPPATH\Controllers\JuriProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:52:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$session is deprecated in APPPATH\Controllers\JuriProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:52:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$validation is deprecated in APPPATH\Controllers\JuriProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:52:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$db is deprecated in APPPATH\Controllers\JuriProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+CRITICAL - 2024-07-21 06:52:26 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\JuriProfil.php on line 24.
+ 1 APPPATH\Controllers\JuriProfil.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Controllers\\JuriProfil.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\JuriProfil->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JuriProfil))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-21 06:57:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-21 06:57:32 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$user is deprecated in APPPATH\Controllers\JuriProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:57:32 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$session is deprecated in APPPATH\Controllers\JuriProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:57:32 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$validation is deprecated in APPPATH\Controllers\JuriProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:57:32 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$db is deprecated in APPPATH\Controllers\JuriProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+CRITICAL - 2024-07-21 06:57:32 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\JuriProfil.php on line 24.
+ 1 APPPATH\Controllers\JuriProfil.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Controllers\\JuriProfil.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\JuriProfil->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JuriProfil))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-21 06:58:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-21 06:58:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$user is deprecated in APPPATH\Controllers\JuriProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:58:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$session is deprecated in APPPATH\Controllers\JuriProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:58:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$validation is deprecated in APPPATH\Controllers\JuriProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 06:58:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$db is deprecated in APPPATH\Controllers\JuriProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+CRITICAL - 2024-07-21 06:58:24 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\JuriProfil.php on line 24.
+ 1 APPPATH\Controllers\JuriProfil.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Controllers\\JuriProfil.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\JuriProfil->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JuriProfil))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-21 07:00:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-21 07:00:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$user is deprecated in APPPATH\Controllers\JuriProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:00:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$session is deprecated in APPPATH\Controllers\JuriProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:00:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$validation is deprecated in APPPATH\Controllers\JuriProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:00:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$db is deprecated in APPPATH\Controllers\JuriProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-21 07:04:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-21 07:04:01 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$user is deprecated in APPPATH\Controllers\JuriProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:04:01 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$session is deprecated in APPPATH\Controllers\JuriProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:04:01 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$validation is deprecated in APPPATH\Controllers\JuriProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:04:01 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$db is deprecated in APPPATH\Controllers\JuriProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-21 07:04:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-21 07:04:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$user is deprecated in APPPATH\Controllers\JuriProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:04:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$session is deprecated in APPPATH\Controllers\JuriProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:04:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$validation is deprecated in APPPATH\Controllers\JuriProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:04:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$db is deprecated in APPPATH\Controllers\JuriProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+CRITICAL - 2024-07-21 07:04:16 --> Undefined variable $juri
+in APPPATH\Views\konten\juri\user\index.php on line 27.
+ 1 APPPATH\Views\konten\juri\user\index.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $juri', 'C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\juri\\user\\index.php', 27)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Views\\konten\\juri\\user\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/juri/user/index', [], true)
+ 5 APPPATH\Controllers\JuriProfil.php(41): view('konten/juri/user/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\JuriProfil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JuriProfil))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-21 07:04:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-21 07:04:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$user is deprecated in APPPATH\Controllers\JuriProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:04:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$session is deprecated in APPPATH\Controllers\JuriProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:04:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$validation is deprecated in APPPATH\Controllers\JuriProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:04:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$db is deprecated in APPPATH\Controllers\JuriProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-21 07:04:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-21 07:04:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$user is deprecated in APPPATH\Controllers\JuriProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:04:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$session is deprecated in APPPATH\Controllers\JuriProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:04:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$validation is deprecated in APPPATH\Controllers\JuriProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:04:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$db is deprecated in APPPATH\Controllers\JuriProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-21 07:05:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-21 07:05:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$user is deprecated in APPPATH\Controllers\JuriProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:05:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$session is deprecated in APPPATH\Controllers\JuriProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:05:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$validation is deprecated in APPPATH\Controllers\JuriProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:05:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$db is deprecated in APPPATH\Controllers\JuriProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-21 07:08:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-21 07:08:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$user is deprecated in APPPATH\Controllers\JuriProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:08:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$session is deprecated in APPPATH\Controllers\JuriProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:08:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$validation is deprecated in APPPATH\Controllers\JuriProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:08:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$db is deprecated in APPPATH\Controllers\JuriProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-21 07:09:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-21 07:09:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$user is deprecated in APPPATH\Controllers\JuriProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:09:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$session is deprecated in APPPATH\Controllers\JuriProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:09:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$validation is deprecated in APPPATH\Controllers\JuriProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:09:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$db is deprecated in APPPATH\Controllers\JuriProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-21 07:12:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-21 07:12:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$user is deprecated in APPPATH\Controllers\JuriProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:12:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$session is deprecated in APPPATH\Controllers\JuriProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:12:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$validation is deprecated in APPPATH\Controllers\JuriProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:12:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$db is deprecated in APPPATH\Controllers\JuriProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-21 07:13:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-21 07:13:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$user is deprecated in APPPATH\Controllers\JuriProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:13:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$session is deprecated in APPPATH\Controllers\JuriProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:13:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$validation is deprecated in APPPATH\Controllers\JuriProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:13:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$db is deprecated in APPPATH\Controllers\JuriProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-21 07:13:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-21 07:13:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$user is deprecated in APPPATH\Controllers\JuriProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:13:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$session is deprecated in APPPATH\Controllers\JuriProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:13:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$validation is deprecated in APPPATH\Controllers\JuriProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:13:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$db is deprecated in APPPATH\Controllers\JuriProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-21 07:14:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-21 07:14:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$user is deprecated in APPPATH\Controllers\JuriProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:14:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$session is deprecated in APPPATH\Controllers\JuriProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:14:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$validation is deprecated in APPPATH\Controllers\JuriProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:14:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$db is deprecated in APPPATH\Controllers\JuriProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+CRITICAL - 2024-07-21 07:14:26 --> Undefined property: App\Controllers\JuriProfil::$juri
+in APPPATH\Controllers\JuriProfil.php on line 38.
+ 1 APPPATH\Controllers\JuriProfil.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\JuriProfil::$juri', 'C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Controllers\\JuriProfil.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\JuriProfil->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JuriProfil))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-21 07:14:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-21 07:14:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$user is deprecated in APPPATH\Controllers\JuriProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:14:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$session is deprecated in APPPATH\Controllers\JuriProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:14:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$validation is deprecated in APPPATH\Controllers\JuriProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:14:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$db is deprecated in APPPATH\Controllers\JuriProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+CRITICAL - 2024-07-21 07:14:41 --> Attempt to read property "id" on null
+in APPPATH\Controllers\JuriProfil.php on line 38.
+ 1 APPPATH\Controllers\JuriProfil.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Controllers\\JuriProfil.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\JuriProfil->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JuriProfil))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-21 07:15:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-21 07:15:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$user is deprecated in APPPATH\Controllers\JuriProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:15:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$session is deprecated in APPPATH\Controllers\JuriProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:15:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$validation is deprecated in APPPATH\Controllers\JuriProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:15:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$db is deprecated in APPPATH\Controllers\JuriProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-21 07:16:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-21 07:16:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$user is deprecated in APPPATH\Controllers\JuriProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:16:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$session is deprecated in APPPATH\Controllers\JuriProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:16:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$validation is deprecated in APPPATH\Controllers\JuriProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:16:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$db is deprecated in APPPATH\Controllers\JuriProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-21 07:17:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-21 07:17:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$user is deprecated in APPPATH\Controllers\JuriProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:17:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$session is deprecated in APPPATH\Controllers\JuriProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:17:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$validation is deprecated in APPPATH\Controllers\JuriProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 07:17:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$db is deprecated in APPPATH\Controllers\JuriProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-21 11:43:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 11:43:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 11:43:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 11:44:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 11:44:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 11:44:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 11:44:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 11:44:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 11:44:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 11:44:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-21 11:44:57 --> mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\aitecvi_polinela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\aitecvi_polinela\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `juri`.*...', 0)
+#1 C:\xampp\htdocs\aitecvi_polinela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `juri`.*...')
+#2 C:\xampp\htdocs\aitecvi_polinela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `juri`.*...')
+#3 C:\xampp\htdocs\aitecvi_polinela\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `juri`.*...', Array, false)
+#4 C:\xampp\htdocs\aitecvi_polinela\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\aitecvi_polinela\app\Models\Admin\JuriModel.php(22): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\aitecvi_polinela\app\Controllers\AdminJuri.php(27): App\Models\Admin\JuriModel->JuribyPt()
+#7 C:\xampp\htdocs\aitecvi_polinela\system\CodeIgniter.php(942): App\Controllers\AdminJuri->index()
+#8 C:\xampp\htdocs\aitecvi_polinela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminJuri))
+#9 C:\xampp\htdocs\aitecvi_polinela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\aitecvi_polinela\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\aitecvi_polinela\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-07-21 11:44:57 --> MySQL server has gone away
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `juri`.*, `pt`.`nama_pt`, `cabang_perlombaan`.`nama_perlombaan`
+FROM `juri`
+JOIN `pt` ON `juri`.`pt_id` = `pt`.`id`
+JOIN `cabang_perlombaan` ON `juri`.`cabang_perlombaan_id` = `cabang_perlombaan`.`id`', [], false)
+ 2 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Models\Admin\JuriModel.php(22): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH\Controllers\AdminJuri.php(27): App\Models\Admin\JuriModel->JuribyPt()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminJuri->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminJuri))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-21 11:45:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 11:45:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 11:45:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 11:45:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 11:45:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-21 11:45:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$session is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 11:45:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKoordinator::$validation is deprecated in APPPATH\Controllers\AdminKoordinator.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKoordinator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-21 11:45:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 11:45:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 11:46:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 11:46:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 11:46:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 11:48:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-21 11:48:27 --> syntax error, unexpected variable "$data"
+in APPPATH\Controllers\AdminProfil.php on line 27.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Controllers\\AdminProfil.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminProfil')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminProfil')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\AdminProfil', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-21 11:48:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 11:49:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 11:49:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 11:49:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 11:49:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 11:49:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 11:50:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-21 11:50:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$user is deprecated in APPPATH\Controllers\JuriProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 11:50:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$session is deprecated in APPPATH\Controllers\JuriProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 11:50:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$validation is deprecated in APPPATH\Controllers\JuriProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 11:50:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$db is deprecated in APPPATH\Controllers\JuriProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+CRITICAL - 2024-07-21 11:50:02 --> Attempt to read property "id" on null
+in APPPATH\Controllers\JuriProfil.php on line 23.
+ 1 APPPATH\Controllers\JuriProfil.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Controllers\\JuriProfil.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\JuriProfil->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JuriProfil))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-21 11:51:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-21 11:51:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$user is deprecated in APPPATH\Controllers\JuriProfil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 11:51:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$session is deprecated in APPPATH\Controllers\JuriProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 11:51:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$validation is deprecated in APPPATH\Controllers\JuriProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 11:51:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$db is deprecated in APPPATH\Controllers\JuriProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+CRITICAL - 2024-07-21 11:51:34 --> Attempt to read property "id" on null
+in APPPATH\Controllers\JuriProfil.php on line 24.
+ 1 APPPATH\Controllers\JuriProfil.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\xampp\\htdocs\\aitecvi_polinela\\app\\Controllers\\JuriProfil.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\JuriProfil->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JuriProfil))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-21 11:53:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-21 11:53:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$user is deprecated in APPPATH\Controllers\JuriProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 11:53:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$session is deprecated in APPPATH\Controllers\JuriProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 11:53:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$validation is deprecated in APPPATH\Controllers\JuriProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 11:53:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$db is deprecated in APPPATH\Controllers\JuriProfil.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-21 11:57:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-21 11:57:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$user is deprecated in APPPATH\Controllers\JuriProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 11:57:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$session is deprecated in APPPATH\Controllers\JuriProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 11:57:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$validation is deprecated in APPPATH\Controllers\JuriProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 11:57:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$db is deprecated in APPPATH\Controllers\JuriProfil.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-21 12:00:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-21 12:00:32 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$user is deprecated in APPPATH\Controllers\JuriProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 12:00:32 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$session is deprecated in APPPATH\Controllers\JuriProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 12:00:32 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$validation is deprecated in APPPATH\Controllers\JuriProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 12:00:32 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$db is deprecated in APPPATH\Controllers\JuriProfil.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-21 12:00:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-21 12:00:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$user is deprecated in APPPATH\Controllers\JuriProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 12:00:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$session is deprecated in APPPATH\Controllers\JuriProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 12:00:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$validation is deprecated in APPPATH\Controllers\JuriProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 12:00:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$db is deprecated in APPPATH\Controllers\JuriProfil.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-21 12:01:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 12:01:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-21 12:01:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$user is deprecated in APPPATH\Controllers\JuriProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 12:01:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$session is deprecated in APPPATH\Controllers\JuriProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 12:01:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$validation is deprecated in APPPATH\Controllers\JuriProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 12:01:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$db is deprecated in APPPATH\Controllers\JuriProfil.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-21 12:01:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-21 12:01:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$user is deprecated in APPPATH\Controllers\JuriProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 12:01:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$session is deprecated in APPPATH\Controllers\JuriProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 12:01:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$validation is deprecated in APPPATH\Controllers\JuriProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 12:01:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$db is deprecated in APPPATH\Controllers\JuriProfil.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-21 12:02:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 12:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-21 12:02:15 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$user is deprecated in APPPATH\Controllers\JuriProfil.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 12:02:15 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$session is deprecated in APPPATH\Controllers\JuriProfil.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 12:02:15 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$validation is deprecated in APPPATH\Controllers\JuriProfil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+WARNING - 2024-07-21 12:02:15 --> [DEPRECATED] Creation of dynamic property App\Controllers\JuriProfil::$db is deprecated in APPPATH\Controllers\JuriProfil.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JuriProfil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\aitecvi_polinela\\public\\index.php')
+INFO - 2024-07-21 12:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

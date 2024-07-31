@@ -1,0 +1,215 @@
+WARNING - 2024-06-10 04:52:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$informasi is deprecated in APPPATH\Controllers\Home.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\siakad-sd\\public\\index.php')
+INFO - 2024-06-10 04:52:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:52:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 04:52:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-10 04:52:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminDashboard::$db is deprecated in APPPATH\Controllers\AdminDashboard.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminDashboard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\siakad-sd\\public\\index.php')
+INFO - 2024-06-10 04:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-10 04:52:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKelas::$kelas is deprecated in APPPATH\Controllers\AdminKelas.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKelas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\siakad-sd\\public\\index.php')
+WARNING - 2024-06-10 04:52:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKelas::$db is deprecated in APPPATH\Controllers\AdminKelas.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKelas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\siakad-sd\\public\\index.php')
+INFO - 2024-06-10 04:52:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-10 04:52:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKelas::$kelas is deprecated in APPPATH\Controllers\AdminKelas.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKelas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\siakad-sd\\public\\index.php')
+WARNING - 2024-06-10 04:52:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKelas::$db is deprecated in APPPATH\Controllers\AdminKelas.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKelas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\siakad-sd\\public\\index.php')
+INFO - 2024-06-10 04:53:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-10 04:53:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKelas::$kelas is deprecated in APPPATH\Controllers\AdminKelas.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKelas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\siakad-sd\\public\\index.php')
+WARNING - 2024-06-10 04:53:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKelas::$db is deprecated in APPPATH\Controllers\AdminKelas.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKelas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\siakad-sd\\public\\index.php')
+INFO - 2024-06-10 04:53:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-10 04:53:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKelas::$kelas is deprecated in APPPATH\Controllers\AdminKelas.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKelas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\siakad-sd\\public\\index.php')
+WARNING - 2024-06-10 04:53:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKelas::$db is deprecated in APPPATH\Controllers\AdminKelas.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKelas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\siakad-sd\\public\\index.php')
+INFO - 2024-06-10 05:08:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-10 05:08:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminJadwal::$jadwal is deprecated in APPPATH\Controllers\AdminJadwal.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminJadwal->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\siakad-sd\\public\\index.php')
+WARNING - 2024-06-10 05:08:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminJadwal::$db is deprecated in APPPATH\Controllers\AdminJadwal.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminJadwal->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\siakad-sd\\public\\index.php')
+INFO - 2024-06-10 05:08:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-10 05:08:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminJadwal::$jadwal is deprecated in APPPATH\Controllers\AdminJadwal.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminJadwal->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\siakad-sd\\public\\index.php')
+WARNING - 2024-06-10 05:08:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminJadwal::$db is deprecated in APPPATH\Controllers\AdminJadwal.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminJadwal->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\siakad-sd\\public\\index.php')
+INFO - 2024-06-10 05:08:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-10 05:08:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminJadwal::$jadwal is deprecated in APPPATH\Controllers\AdminJadwal.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminJadwal->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\siakad-sd\\public\\index.php')
+WARNING - 2024-06-10 05:08:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminJadwal::$db is deprecated in APPPATH\Controllers\AdminJadwal.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminJadwal->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\siakad-sd\\public\\index.php')
+INFO - 2024-06-10 05:08:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-10 05:08:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminJadwal::$jadwal is deprecated in APPPATH\Controllers\AdminJadwal.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminJadwal->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\siakad-sd\\public\\index.php')
+WARNING - 2024-06-10 05:08:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminJadwal::$db is deprecated in APPPATH\Controllers\AdminJadwal.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminJadwal->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\siakad-sd\\public\\index.php')
+INFO - 2024-06-10 05:08:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-10 05:08:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminJadwal::$jadwal is deprecated in APPPATH\Controllers\AdminJadwal.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminJadwal->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\siakad-sd\\public\\index.php')
+WARNING - 2024-06-10 05:08:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminJadwal::$db is deprecated in APPPATH\Controllers\AdminJadwal.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminJadwal->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\siakad-sd\\public\\index.php')
+INFO - 2024-06-10 05:08:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-10 05:08:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKelas::$kelas is deprecated in APPPATH\Controllers\AdminKelas.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKelas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\siakad-sd\\public\\index.php')
+WARNING - 2024-06-10 05:08:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKelas::$db is deprecated in APPPATH\Controllers\AdminKelas.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKelas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\siakad-sd\\public\\index.php')
+INFO - 2024-06-10 05:08:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-10 05:08:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKelas::$kelas is deprecated in APPPATH\Controllers\AdminKelas.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKelas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\siakad-sd\\public\\index.php')
+WARNING - 2024-06-10 05:08:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminKelas::$db is deprecated in APPPATH\Controllers\AdminKelas.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminKelas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\siakad-sd\\public\\index.php')
+INFO - 2024-06-10 05:09:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-10 05:09:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\AdminDashboard::$db is deprecated in APPPATH\Controllers\AdminDashboard.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\AdminDashboard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\siakad-sd\\public\\index.php')
+INFO - 2024-06-10 05:09:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 05:09:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 05:09:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 05:09:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 05:09:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-10 05:09:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\GuruDashboard::$db is deprecated in APPPATH\Controllers\GuruDashboard.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\GuruDashboard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\siakad-sd\\public\\index.php')
+INFO - 2024-06-10 05:09:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-10 05:09:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\GuruJadwal::$jadwal is deprecated in APPPATH\Controllers\GuruJadwal.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\GuruJadwal->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\siakad-sd\\public\\index.php')
+WARNING - 2024-06-10 05:09:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\GuruJadwal::$db is deprecated in APPPATH\Controllers\GuruJadwal.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\GuruJadwal->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\siakad-sd\\public\\index.php')
+INFO - 2024-06-10 05:09:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-10 05:09:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\GuruJadwal::$jadwal is deprecated in APPPATH\Controllers\GuruJadwal.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\GuruJadwal->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\siakad-sd\\public\\index.php')
+WARNING - 2024-06-10 05:09:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\GuruJadwal::$db is deprecated in APPPATH\Controllers\GuruJadwal.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\GuruJadwal->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\siakad-sd\\public\\index.php')
+INFO - 2024-06-10 05:09:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-10 05:09:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\GuruJadwal::$jadwal is deprecated in APPPATH\Controllers\GuruJadwal.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\GuruJadwal->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\siakad-sd\\public\\index.php')
+WARNING - 2024-06-10 05:09:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\GuruJadwal::$db is deprecated in APPPATH\Controllers\GuruJadwal.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\GuruJadwal->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\siakad-sd\\public\\index.php')
