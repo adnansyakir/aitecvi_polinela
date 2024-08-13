@@ -16,6 +16,8 @@
 
 
     <link rel="shortcut icon" href="landing/assets/images/L2.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
 
 
     <!-- 
@@ -464,13 +466,13 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-lg-4" data-aos="fade-right">
-                            <div class="image" style="text-align:center">
-                                <img src="landing/assets/img/direktur.jpg" class="img-fluid" alt="">
-                            </div>
+                    <div class="col-lg-4" data-aos="fade-right">
+                        <div class="image">
+                            <img src="<?= base_url('landing/assets/images/direktur.png') ?>" class="img-fluid" alt="Direktur">
                         </div>
-                        <div class="col-lg-8" data-aos="fade-left">
-                            <div class="content pt-4 pt-lg-0 pl-0 pl-lg-3 ">
+                    </div>
+                    <div class="col-lg-8" data-aos="fade-left">
+                        <div class="content">
                                 <p>Salam Sejahtera,
                                 <p>
 
@@ -519,7 +521,7 @@
                                                        
 
                             Johanis A. Jeremias, S.Pt., M.Sc
-                    </pre>
+                            </pre>
                             </div>
                         </div>
                     </div>
@@ -540,13 +542,13 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-lg-4" data-aos="fade-right" id="bakorma">
-                            <div class="image" style="text-align:center">
-                                <img src="landing/assets/img/KetuaBakorma.jpg" class="img-fluid" alt="">
+                    <div class="col-lg-4" data-aos="fade-right">
+                            <div class="image">
+                                <img src="<?= base_url('landing/assets/images/ketua.png') ?>" class="img-fluid" alt="Direktur">
                             </div>
                         </div>
                         <div class="col-lg-8" data-aos="fade-left">
-                            <div class="content pt-4 pt-lg-0 pl-0 pl-lg-3 ">
+                            <div class="content">
                                 <p>Assalamualaikum Wr. Wb.
                                 <p>
 
@@ -609,13 +611,13 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-lg-4" data-aos="fade-right">
-                            <div class="image" style="text-align:center">
-                                <img src="landing/assets/img/KetuaPanitia.jpg" class="img-fluid" alt="">
+                    <div class="col-lg-4" data-aos="fade-right">
+                            <div class="image">
+                                <img src="<?= base_url('landing/assets/images/ketua.png') ?>" class="img-fluid" alt="Direktur">
                             </div>
                         </div>
                         <div class="col-lg-8" data-aos="fade-left">
-                            <div class="content pt-4 pt-lg-0 pl-0 pl-lg-3 ">
+                            <div class="content">
                                 <p>Salam Sejahtera,
                                 <p>
 
@@ -1609,10 +1611,10 @@
 
                 <div class="gallery-slider swiper">
                     <div class="swiper-wrapper align-items-center">
-                        <div class="swiper-slide"><a href="landing/assets/img/gallery/1.jpg" class="gallery-lightbox"><img src="landing/assets/img/gallery/1.jpg" class="img-fluid" alt=""></a></div>
-                        <div class="swiper-slide"><a href="landing/assets/img/gallery/2.jpg" class="gallery-lightbox"><img src="landing/assets/img/gallery/2.jpg" class="img-fluid" alt=""></a></div>
-                        <div class="swiper-slide"><a href="landing/assets/img/gallery/3.jpg" class="gallery-lightbox"><img src="landing/assets/img/gallery/3.jpg" class="img-fluid" alt=""></a></div>
-                        <div class="swiper-slide"><a href="landing/assets/img/gallery/4.jpg" class="gallery-lightbox"><img src="landing/assets/img/gallery/4.jpg" class="img-fluid" alt=""></a></div>
+                        <div class="swiper-slide"><a href="landing/assets/images/gallery/1.jpeg" class="gallery-lightbox"><img src="landing/assets/images/gallery/1.jpeg" class="img-fluid" alt=""></a></div>
+                        <div class="swiper-slide"><a href="landing/assets/images/gallery/2.jpeg" class="gallery-lightbox"><img src="landing/assets/images/gallery/2.jpeg" class="img-fluid" alt=""></a></div>
+                        <div class="swiper-slide"><a href="landing/assets/images/gallery/3.jpeg" class="gallery-lightbox"><img src="landing/assets/images/gallery/3.jpeg" class="img-fluid" alt=""></a></div>
+                        <div class="swiper-slide"><a href="landing/assets/images/gallery/4.jpeg" class="gallery-lightbox"><img src="landing/assets/images/gallery/4.jpeg" class="img-fluid" alt=""></a></div>
                         <div class="swiper-slide"><a href="landing/assets/img/gallery/5.jpg" class="gallery-lightbox"><img src="landing/assets/img/gallery/5.jpg" class="img-fluid" alt=""></a></div>
                         <div class="swiper-slide"><a href="landing/assets/img/gallery/6.jpg" class="gallery-lightbox"><img src="landing/assets/img/gallery/6.jpg" class="img-fluid" alt=""></a></div>
                         <div class="swiper-slide"><a href="landing/assets/img/gallery/7.jpg" class="gallery-lightbox"><img src="landing/assets/img/gallery/7.jpg" class="img-fluid" alt=""></a></div>
@@ -1922,6 +1924,26 @@
             }
         }
     </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper('.gallery-slider', {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 4,
+            },
+            1024: {
+                slidesPerView: 5,
+            },
+        }
+    });
+</script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 </body>
 
