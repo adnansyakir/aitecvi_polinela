@@ -185,71 +185,20 @@
                     <h2 class="h2 section-title">LATAR BELAKANG</h2>
 
                     <p>
-                        Sektor pertanian sering disebut sebagai tulang punggung
-                        perekonomian negara, karena pertanian merupakan komponen ekonomi
-                        nasional yang sangat strategis serta penting yang secara khusus
-                        berpengaruh pada kesejahteraan masyarakat. Hal ini disebabkan
-                        sebagian besar dari produk domestik bruto negara, sebagian besar
-                        pendapatan ekspor, dan lapangan pekerjaan bagi jutaan orang
-                        dihasilkan oleh sektor pertanian. Selain itu, sektor pertanian
-                        juga menghasilkan makanan dan bahan mentah untuk sektor ekonomi
-                        lainnya yang mendorong industrialisasi. Sehingga pertanian dan
-                        ketahanan pangan menjadi prioritas negara bagi pembangunan
-                        manusia.
+                    Upaya untuk meningkatkan minat, softskill, dan hardskill sumberdaya manusia dapat dilakukan melalui pendidikan formal dan pendidikan informal seperti pelatihan, penyuluhan, lokakarya, 
+                    dan sebagainya. Dalam hal penyelenggaraan pendidikan formal, Perguruan Tinggi Vokasi (PTV) menjadi institusi pendidikan yang berperan besar untuk menghasilkan output lulusan yang tidak hanya menguasai teori, tetapi mampu mengaplikasikan penguasaan keahlian terapan tertentu. Hal ini bertujuan untuk menyiapkan sumberdaya manusia dengan kemampuan dan keterampilan bidang tertentu yang siap terjun ke dunia kerja dan dapat bersaing secara global. Dalam hal mewujudkan tujuan tersebut, motivasi untuk senantiasa meningkatkan kompetensi dan keterampilan dinilai memiliki tingkat urgensi yang tinggi bagi mahasiswa.
                     </p><br>
                     <p>
-                        Di negara berkembang, pertanian menjadi mata pencaharian utama
-                        bagi sebagian orang, terutama penduduk di daerah pedesaan dengan
-                        penghasilan rendah dan menengah. Pertumbuhan pertanian di suatu
-                        daerah dipengaruhi oleh beberapa faktor, seperti keunggulan daya
-                        saing, keistimewaan wilayah, potensi pertanian yang dimiliki oleh
-                        daerah tersebut, dan sumber daya manusia (SDM). Faktor-faktor
-                        tersebut berpotensi tinggi yang harus menjadi prioritas utama
-                        untuk digali serta dikembangkan.
+                    Politeknik Negeri Lampung sebagai salah satu Perguruan Tinggi Vokasi senantiasa memprioritaskan kesempatan bagi mahasiswa untuk dapat terus memperbarui <i>(update)</i> dan meningkatkan <i>(upgrade)</i> kompetensi diri. Hal ini dilakukan karena adanya kesadaran penuh bahwa pendidikan vokasi berfokus pada pengembangan keterampilan yang merupakan modal utama yang dibutuhkan generasi muda untuk dapat bersaing. Di tahun 2024, Politeknik Negeri Lampung mengemban amanah sebagai tuan rumah penyelenggara event nasional, yaitu Kompetisi Inovasi Teknologi Bidang Pertanian ke-6 atau 6th <i>Agricultural Innovation Technology Competition</i> (AITeC VI) yang secara repetitif dilaksanakan di bawah pengawasan Badan Koordinasi Kemahasiswaan (BAKORMA) Politeknik se-Indonesia.
                     </p><br>
                     <p>
-                        Upaya untuk meningkatkan minat, softskill, dan hardskill sumber
-                        daya manusia dapat dilakukan melalui pendidikan formal seperti
-                        Sekolah Menengah Kejuruan (SMK) bidang pertanian dan perguruan
-                        tinggi bidang pertanian; dan pendidikan non-formal seperti
-                        pelatihan, penyuluhan, lokakarya, dsb. Perguruan tinggi vokasi
-                        bidang pertanian menjadi institusi pendidikan yang memiliki peran
-                        paling besar. Pada perguruan tinggi vokasi, selain meningkatkan
-                        softskill dan hardskill, adaptasi dan kreatifitas untuk berinovasi
-                        pada kemajuan teknologi menjadi fokus utama yang diterapkan kepada
-                        mahasiswa. Kemajuan teknologi yang dimaksud seperti penggunaan
-                        pupuk organik, pengelolaan limbah, dan pengendalian polusi, sangat
-                        diharapkan untuk menjaga keseimbangan ekosistem dan mencegah
-                        dampak negatif terhadap lingkungan. Selain itu, adaptasi pada
-                        teknologi ini diharapkan dapat menjawab tantangan terhadap
-                        peningkatan kualitas dan keamanan pangan dengan menghasilkan
-                        produk pangan yang aman, bebas dari bahan kimia berbahaya, dan
-                        berkualitas tinggi.
+                    Badan Koordinasi Kemahasiswaan (BAKORMA) Politeknik se-Indonesia memiliki tanggung jawab bidang kemahasiswaan di lingkup vokasi untuk pengembangan softskill mahasiswa pada tataran implementasi secara nasional. Salah satu program yang dimiliki oleh BAKORMA untuk pengembangan softskill tersebut adalah melalui penyelenggaraan Agricultural Innovation Technology Competition (AITeC) tingkat nasional yang dilakukan secara rutin untuk mahasiswa vokasi bidang pertanian. AITeC juga memfasilitasi mahasiswa untuk mengembangkan potensi diri, jiwa kompetitif yang sehat, dan kompetensi diri. Secara umum, selain untuk menjadi wadah bagi mahasiswa, kegiatan AITeC ini diarahkan untuk meningkatkan, produktivitas, efektivitas dan efisiensi, serta kualitas pertanian secara luas yang melalui suatu ide/gagasan, pemikiran kreatif, maupun inovasi-inovasi mutakhir yang mencakup pertanian pangan dan hortikultura, peternakan, perikanan, dan kehutanan. Tidak hanya itu, 
+                    penyelenggaraan AITeC diharapkan mampu melahirkan peningkatan akses teknologi pertanian bagi petani kecil dan masyarakat pedesaan dengan pendekatan yang inklusif dan berkelanjutan.
                     </p><br>
                     <p>
-                        Badan Koordinasi Kemahasiswaan (BAKORMA) memiliki tanggung jawab
-                        bidang kemahasiswaan di lingkup vokasi untuk pengembangan
-                        softskill mahasiswa pada tataran implementasi secara nasional.
-                        Salah satu program yang dimiliki oleh BAKORMA untuk pengembangan
-                        softskill adalah melalui penyelenggaraan Agriculture Innovation
-                        Technology Competition (Kompetisi Inovasi Teknologi Bidang
-                        Pertanian se Indonesia, AITeC) tingkat nasional bidang teknik,
-                        ekonomi, bahasa, olahraga, dan seni yang dilakukan secara rutin
-                        untuk mahasiswa vokasi bidang pertanian. AITeC juga memfasilitasi
-                        mahasiswa untuk mengembangkan potensi diri, jiwa kompetitif yang
-                        sehat, dan kompetensi diri. Secara umum, selain untuk menjadi
-                        wadah bagi mahasiswa, kegiatan AITeC ini diarahkan untuk
-                        meningkatkan, produktivitas, efektivitas dan efisiensi, serta
-                        kualitas pertanian secara luas yang mencakup pertanian pangan dan
-                        hortikultura, peternakan, perikanan, dan kehutanan.
+                    AITeC menjadi salah satu ajang tahunan bergengsi yang secara konsisten telah diselenggarakan selama 6 tahun berturut-turut dan berkontribusi dalam memberikan apresiasi (penghargaan) berskala nasional kepada mahasiswa yang berprestasi di AITeC. Hal ini sekaligus menunjukan komitmen BAKORMA untuk senantiasa mendukung dan memberikan peluang bagi Perguruan Tinggi untuk dapat meningkatkan persentase capaian Indikator Kinerja Utama (IKU) Perguruan Tinggi. Atas dasar pemikiran tersebut, AITeC VI Politeknik Negeri Lampung diharapkan mampu menjadi sebuah kompetisi bergengsi untuk meningkatkan kompetensi diri, menumbuhkan jiwa kompetitif yang sehat, sekaligus mempersiapkan diri untuk dapat bersaing di tingkat yang lebih tinggi lagi dan mengharumkan nama institusi atau Perguruan Tinggi.
                     </p><br>
-                    <p>
-                        Lebih lanjut, melalui AITeC, peningkatan akses teknologi pertanian
-                        bagi petani kecil dan masyarakat pedesaan dengan pendekatan yang
-                        inklusif dan berkelanjutan diharapkan akan muncul solusi-solusi
-                        yang kreatif dan efektif dalam mengatasi permasalahan di sektor
-                        pertanian.
-                    </p>
+                    
 
 
                 </div>
@@ -266,14 +215,13 @@
                                 <strong>TUJUAN</strong>
                                 <ol type="1">
                                     <li>
-                                        Memberikan wadah untuk mahasiswa dapat berinovasi, meningkatkan kompetensi diri, meningkatkan kreativitas, dan kualitas produksi
-                                        dibidang pertanian yang berwawasan lingkungan;
+                                    Memberikan wadah bagi mahasiswa untuk dapat berinovasi, meningkatkan kompetensi diri, kreativitas, dan kualitas produksi di bidang pertanian yang berwawasan lingkungan;
                                     </li>
                                     <li>
-                                        Memberikan penghargaan kepada mahasiswa yang berprestasi Tingkat Nasional Bidang Pertanian dalam kompetisi AITeC 2023;
+                                    Memberikan apresiasi (penghargaan) berskala nasional kepada mahasiswa yang berprestasi di AITeC;
                                     </li>
                                     <li>
-                                        Meningkatkan kualitas hubungan dan kerjasama antar perguruan tinggi vokasi bidang pertanian Indonesia.
+                                    Meningkatkan kualitas hubungan dan kerjasama antar Perguruan Tinggi Vokasi bidang pertanian di Indonesia.
                                         <br />
                                         <br />
                                     </li>
@@ -285,14 +233,13 @@
                                 <strong>MANFAAT</strong>
                                 <ol type="1">
                                     <li>
-                                        Tumbuhnya semangat dan motivasi dalam diri mahasiswa untuk berkompetisi yang sehat dalam lingkup kemahasiswaan politeknik
-                                        bidang pertanian;
+                                    Tumbuhnya semangat dan motivasi dalam diri mahasiswa untuk berkompetisi yang sehat di bawah naungan Badan Koordinasi Kemahasiswaan Politeknik bidang pertanian;
                                     </li>
                                     <li>
-                                        Terciptanya kreativitas, budaya berprestasi dan berinovasi dalam diri mahasiswa bidang pertanian;
+                                    Terciptanya kreativitas, budaya berprestasi dan berinovasi dalam diri mahasiswa yang berorientasi pada peningkatan kualitas di bidang pertanian;
                                     </li>
                                     <li>
-                                        Terbentuknya relasi dan silaturahmi yang baik antar civitas perguruan tinggi vokasi bidang pertanian Indonesia.
+                                    Terbentuknya relasi dan silaturahmi yang baik antar civitas Perguruan Tinggi Vokasi bidang pertanian di Indonesia.
                                     </li>
                                 </ol>
                             </li>
@@ -312,17 +259,12 @@
                             <li>
                                 <strong>TEMA KOMPETISI</strong>
                                 <p style="font-style:italic">
-                                    Tema untuk Kompetisi Inovasi Teknologi Bidang Pertanian Tahun 2024 Politeknik
-                                    Negeri Lampung adalah: <br /><br />
+                                Tema untuk Kompetisi Inovasi Teknologi Bidang Pertanian VI  atau <i>Agricultural Innovation Technology Competition</i> 6th (AITeC VI) Politeknik Negeri Lampung tahun 2024 adalah: <br /><br />
 
                                     <strong style="color:darkred; font-size:larger; font-style:normal;text-align:center">
-                                        Inovasi Teknologi Untuk Meningkatkan Mutu Produk dan Daya Saing Dalam
-                                        Bidang Pertanian Semi Ringkai Menuju Pertanian Berbasis Teknologi 4.0
+                                    “Pemantapan Ketahanan Pangan melalui Peningkatan Inovasi Teknologi Bidang Pertanian dalam Mengantisipasi Perubahan Iklim Menuju Indonesia Emas 2045”
                                     </strong>
                                 </p>
-                                <br>
-                                <br />
-                            </li>
 
                             <li>
                                 <strong>LOGO KOMPETISI</strong>
@@ -334,6 +276,62 @@
                                     <div class="col-lg-4 col-md-6">
                                         <img class="img-fluid" src="landing/assets/images/L4.png">
                                     </div>
+                                    <li>
+                                <p style="font-style:italic">
+                                Secara umum, terdapat 5 (lima) elemen yang mendasari filosofi konsep logo yang 
+                                digunakan pada penyelenggaraan AITeC VI Politeknik Negeri Lampung, yaitu: 
+                                <br /><br />
+
+                                <ol>
+                                    <strong><i><li>1. Warna Hijau dan Warna Kuning</li></i></strong>
+                                    <p>Warna hijau melambangkan kesuburan, pertumbuhan, dan keberlanjutan. Hal ini menunjukkan 
+                                    pentingnya pertanian dalam menjaga ketahanan pangan dan keseimbangan lingkungan. Warna kuning melambangkan kemakmuran, kehangatan, dan optimisme. 
+                                    Hal ini mencerminkan harapan dan potensi besar sektor pertanian di masa depan.
+                                </p>
+                                </ol>
+                                <ol>
+                                <strong><i><li>2. Elemen Tunas dan Daun</li></i></strong>
+                                    <p>Warna hijau melambangkan kesuburBentuk daun dan tunas melambangkan pertumbuhan dan 
+                                        inovasi dalam teknologi pertanian. Penggunaan elemen ini menekankan pentingnya inovasi 
+                                        teknologi untuk mendukung ketahanan pangan dan mengantisipasi perubahan iklim.
+                                </p>
+                                </ol>
+                                <ol>
+                                <strong><i><li>3. Pola Geometris dan Pola Tradisional</li></i></strong>
+                                    <p>Warna hijau melambangkan kesuburBentuk daun dan tunas melambangkan pertumbuhan dan 
+                                        inovasi dalam teknologi pertanian. Penggunaan elemen ini menekankan pentingnya inovasi 
+                                        teknologi untuk mendukung ketahanan pangan dan mengantisipasi perubahan iklim.
+                                </p>
+                                </ol>
+                                <ol>
+                                <strong><i><li>4. Konsep Simetris dan Kesatuan</li></i></strong>
+                                    <p>Konsep desain logo yang simetris melambangkan keseimbangan dan harmoni yang berperan 
+                                        penting untuk mencapai keberlanjutan dalam sektor pertanian. Selain itu, konsep kesatuan 
+                                        yang ditampilkan pada logo mencerminkan kerjasama dan sinergi antara berbagai pihak untuk mencapai tujuan bersama.
+                                </p>
+                                </ol>
+                                <ol>
+                                <strong><i><li>5. Inisial AITeC VI</li></i></strong>
+                                    <p>AITeC VI adalah singkatan dari <i>"Agricultural Innovation Technology Competition"</i> y
+                                        ang menunjukkan bahwa kegiatan ini adalah acara berkelanjutan yang sudah memasuki 
+                                        tahun keenam sekaligus menunjukkan bentuk komitmen Badan Koordinasi Kemahasiswaan 
+                                        Politeknik se-Indonesia untuk terus-menerus memberikan dukungan melalui penyelenggaraan 
+                                        kompetisi sehat yang berorientasi 
+                                        pada inovasi teknologi dan peningkatan kualitas produksi di sektor pertanian. </p>
+                                </ol>
+                                
+                                    <p>
+                                    Logo AITeC VI Politeknik Negeri Lampung dirancang dengan menggunakan elemen-elemen yang 
+                                    secara umum merepresentasikan pertumbuhan, inovasi, keberlanjutan, dan kesatuan yang 
+                                    selaras dengan tema “Pemantapan Ketahanan Pangan melalui Peningkatan 
+                                    Inovasi Teknologi Bidang Pertanian dalam Mengantisipasi Perubahan Iklim Menuju 
+                                    Indonesia Emas 2045”. Oleh karena itu, Politeknik Negeri Lampung selaku tuan
+                                     rumah penyelenggara AITeC VI berhadap logo ini tidak hanya berfungsi sebagai identitas visual, 
+                                    tetapi juga sebagai simbol dari visi dan misi kegiatan yang mendalam dan bermakna.
+                                    </p>
+                            
+
+                            <li>
 
                                     <div class="col-lg-4 col-md-3">
                                         &nbsp;
@@ -346,67 +344,152 @@
                             <li>
                                 <strong>BENTUK KOMPETISI</strong>
                                 <ol>
-                                    Kompetisi diselenggarakan dalam 2 (dua) kategori, yaitu:
+                                Secara umum, AITeC VI Politeknik Negeri Lampung tahun 2024 dilaksanakan dalam bentuk 3 (tiga) kategori kompetisi, yaitu:
                                     <li>
                                         <strong>
-                                            Kompetisi Inovasi Teknologi Bidang Pertanian (Agricultural Innovation
+                                            1. Kompetisi Inovasi Teknologi Bidang Pertanian (Agricultural Innovation
                                             Technology Competition),
                                         </strong>
-                                        yaitu suatu ajang unjuk kemampuan mahasiswa di bidang pertanian dengan menekankan pada kemampuan dasar
-                                        yang dilakukan seorang mahasiswa pada tahap pengetahuan, keterampilan, dan sikap dalam pencapaian
-                                        standar kompetensi di dalam mengembangkan teknologi yang inovatif gunamengatasi berbagai tantangan
-                                        di bidang pertanian yang meliputi sektor pertanian tanaman pangan dan hortikultura, perkebunan,
-                                        peternakan, kesehatan hewan, perikanan, kehutanan, ekonomi, industri, dan teknologi. <br />
+                                        Kompetisi ini merupakan suatu ajang unjuk kemampuan mahasiswa di bidang pertanian dengan 
+                                        menekankan pada kemampuan dasar yang dilakukan  seorang dan/atau kelompok mahasiswa 
+                                        pada tahap pengetahuan, keterampilan, dan sikap dalam pencapaian standar kompetensi 
+                                        di dalam mengembangkan teknologi yang inovatif guna mengatasi berbagai tantangan 
+                                        di bidang pertanian. Ruang lingkup kompetisi ini mencakup bidang pertanian pada 
+                                        sektor tanaman pangan dan hortikultura, perkebunan, peternakan, kesehatan hewan, 
+                                        perikanan, kehutanan, industri, ekonomi, dan teknologi. Kategori ini terdiri atas 2 (dua) cabang kompetisi, yaitu: <br />
+                                        <ol>
+                                        1. Inovasi Teknologi Bidang Pertanian sub-kategori Smart and Precision Farming
+                                        </ol>
+                                        <ol>
+                                        2. Inovasi Teknologi Bidang Pertanian sub-kategori Teknologi Tepat Guna
+                                        </ol><br>
                                     </li>
 
                                     <li>
                                         <strong>
-                                            Kontes Vokasi Bidang Pertanian (Agricultural Vocation Skill Contest),
+                                            2. Kontes Vokasi Bidang Pertanian (Agricultural Vocation Skill Contest),
                                         </strong>
-                                        yaitu suatu ajang unjuk kemampuan mahasiswa di bidang pertanian dengan menekankan peningkatan
-                                        keterampilan spesifik di bidang pertanian dalam arti luas dan kompetensi inovatif untuk dapat
-                                        meningkatkan efisiensi, produktivitas, kualitas pertanian yang berkelanjutan dengan tetap mengedepankan
-                                        sisi sosial budaya pertanian dan kearifan lokal di Indonesia. <br />
+                                        Kompetisi ini merupakan suatu ajang unjuk kemampuan mahasiswa dengan menekankan 
+                                        peningkatan keterampilan spesifik di bidang pertanian dan berkreasi dalam  mengembangkan 
+                                        kompetensi inovatif untuk dapat meningkatkan efisiensi, produktivitas, serta kualitas
+                                        pertanian yang berkelanjutan dengan tetap mengedepankan sisi sosial
+                                        budaya pertanian dan kearifan lokal di Indonesia.
+                                        Kategori ini terdiri atas 13 (tiga belas) cabang kompetisi, yaitu: <br />
+                                        <ol>
+                                            1.	Teknik Okulasi Tanaman 
+                                        </ol>
+                                        <ol>
+                                        2.	Sortasi Biji Kopi
+                                        </ol>
+                                        <ol>
+                                        3.	Handling Ternak
+                                        </ol>
+                                        <ol>
+                                        4.	Teknik Proses Karkas Ayam
+                                        </ol>
+                                        <ol>
+                                        5.	Teknik Pengambilan Sampel Darah Ayam
+                                        </ol>
+                                        <ol>
+                                        6.	Formulasi Pakan Ternak
+                                
+                                        </ol>
+                                        <ol>
+                                        7.	Formulasi Pakan Ikan
+                                        </ol>
+                                        <ol>
+                                        8.	Packing Benih Ikan
+                                        </ol>
+                                        <ol>
+                                        9.	Teknik Proses Fillet Ikan
+                                        </ol>
+                                        <ol>
+                                        10.	Teknik Pembuatan Bakso Ikan
+                                        </ol>
+                                        <ol>
+                                        11.	Survey Pemetaan Lahan
+                                        </ol>
+                                        <ol>
+                                        12.	Desain Alat dan Mesin Pertanian dengan AutoCAD
+                                        </ol>
+                                        <ol>
+                                        13.	Penyuluhan Pertanian
+                                        </ol><br>
+                                    </li>
+
+                                    <li>
+                                        <strong>
+                                            3. Eksibisi Fotografi (Photography Exhibition)
+                                        <p></strong>
+                                        Perlu disadari bahwa bakat dan talenta mahasiswa tidak hanya sebatas di bidang akademik, 
+                                        tetapi juga di bidang seni sehingga diperlukan suatu kompetisi yang dapat berperan sebagai
+                                        ajang unjuk kemampuan mahasiswa di bidang seni, terutama dalam lingkup fotografi dan videografi. 
+                                        Pada AITeC VI tahun 2024, Politeknik Negeri Lampung sebagai tuan rumah mengusulkan 
+                                        adanya 1 (satu) cabang kompetisi baru yaitu Eksibisi Fotografi (Photography Exhibition)
+                                        yang diharapkan mampu mendorong ranah pendidikan visual di Indonesia, khususnya fotografi,
+                                        mampu bergerak ke arah yang lebih baik dan selaras dengan capaian kemajuan teknologi saat ini. 
+                                    </p>
+                                    <p>
+                                    Tema kompetisi disesuaikan dengan tema penyelenggaraan AITeC secara umum, 
+                                    yaitu fotografi di bidang pertanian. Peserta akan diberikan kesempatan 
+                                    untuk mengeksplorasi pelaksanaan AITeC VI serta berbagai aktivitas yang ada 
+                                    di Politeknik Negeri Lampung sebagai objek foto. Hasil foto akan disajikan dan 
+                                    dipresentasikan di depan Tim Juri. Tim Juri akan memberikan penilaian terhadap hasil foto,
+                                     arti dan makna dari hasil foto yang disampaikan oleh fotografer, serta kemampuan fotografer 
+                                     untuk menceritakan arti fotonya untuk menarik perhatian audiens. Adanya Eksibisi Fotografi 
+                                     diharapkan mampu melahirkan dokumentasi yang memikat dari segi daya tarik visual dan kualitas
+                                      produksi, kreatif, informatif, serta memberikan nilai edukatif kepada para penonton dengan
+                                       memberikan wawasan menarik tentang kegiatan AITeC. Hal ini sekaligus dinilai mampu memberikan
+                                        efek positif terhadap peningkatan kualitas publikasi penyelenggaraan AITeC 
+                                    yang secara konsisten diselenggarakan sebagai program tahunan BAKORMA.
+                                    </p>
                                     </li>
                                 </ol>
                                 <br />
 
-                                Kompetisi Inovasi Teknologi Bidang Pertanian Tahun 2023 di Politeknik Pertanian
-                                Negeri Kupang akan dilaksanakan secara berkelanjutan dalam bentuk daring (dalam
-                                jaringan) dan luring (luar jaringan) dengan tahapan kompetisi sebagai berikut:
+                                Secara umum, sistem pelaksanaan AITeC VI Politeknik Negeri Lampung tahun 2024 terdiri atas:
                                 <ol>
                                     <li>
                                         <strong>Babak Penyisihan dilaksanakan secara:</strong>
                                         <ol type="a">
                                             <li>
-                                                <strong style="color:darkred">
-                                                    Daring:
+                                            <strong style="color:darkred">
+                                                    1.	Seleksi Internal
                                                 </strong>
-                                                yaitu Kontes Vokasi Bidang Pertanian dengan cabang lomba Okulasi
-                                                Tanaman, Karkas Ayam, Fillet Ikan, Penyuluhan Pertanian, Desain Alat dan
-                                                Mesin Pertanian dengan AutoCAD, Formulasi Pakan Ikan, dan Formulasi Pakan
-                                                Ternak; <br />
+                                                Mahasiswa yang didaftarkan sebagai peserta di AITeC VI adalah hasil 
+                                                seleksi internal oleh masing-masing 
+                                                Perguruan Tinggi yang dibuktikan dengan lampiran Berita Acara Seleksi Internal.
+                                            </li><br>
+                                            <li>
+                                                <strong style="color:darkred">
+                                                2.	Seleksi secara daring (online)
+                                                </strong>
+                                                Pelaksanaan secara daring (online) atau seleksi online adalah proses seleksi bagi peserta yang ditujukan untuk 9 (sembilan) cabang kompetisi, yaitu:
+                                                <ol>1.	Inovasi Teknologi Bidang Pertanian sub-kategori Smart and Precision Farming</ol>
+                                                <ol>2.	Inovasi Teknologi Bidang Pertanian sub-kategori Teknologi Tepat Guna</ol>
+                                                <ol>3. Teknik Okulasi Tanaman</ol>
+                                                <ol>4. Teknik Proses Karkas Ayam</ol>
+                                                <ol>5.  Teknik Pengambilan Sampel Darah Ayam</ol>
+                                                <ol>6.	Formulasi Pakan Ternak</ol>
+                                                <ol>7.	Formulasi Pakan Ikan</ol>
+                                                <ol>8.	Teknik Proses Fillet Ikan</ol>
+                                                <ol>9.	Penyuluhan Pertanian</ol>
+                                                <br />
                                             </li>
                                             <li>
                                                 <strong style="color:darkred">
-                                                    Luring:
+                                                    3.	Pelaksanaan secara luring (offline)
                                                 </strong>
-                                                yaitu Kontes Vokasi Bidang Pertanian dengan cabang lomba Teknik
-                                                Pembuatan Bakso Ikan, Survey Pemetaan Lahan, Teknik Pengambilan Sampel
-                                                Darah Ayam, Sortasi Biji Kopi, Handling Ternak, dan Packing Benih Ikan. <br />
+                                                Pelaksanaan secara luring (offline) di Politeknik Negeri Lampung meliputi 7 (tujuh) cabang kompetisi dan seluruh babak final dari cabang kompetisi yang sebelumnya telah melalui proses seleksi daring (online). Adapun 7 (tujuh) cabang kompetisi yang dimaksud adalah:
+                                                    <ol>1.	Sortasi Biji Kopi</ol>
+                                                    <ol>2.	Handling Ternak</ol>
+                                                    <ol>3.	Packing Benih Ikan</ol>
+                                                    <ol>4.	Teknik Pembuatan Bakso Ikan</ol>
+                                                    <ol>5.	Survey Pemetaan Lahan</ol>
+                                                    <ol>6.	Desain Alat dan Mesin Pertanian dengan AutoCAD</ol>
+                                                    <ol>7.	Eksibisi Fotografi</ol>
+                                                    <br />
                                             </li>
-                                            <li>
-                                                Untuk Kompetisi Inovasi Teknologi Bidang Pertanian dilaksanakan Desk
-                                                Evaluation oleh juri dan pengiriman video, poster, dan karya ilmiah untuk
-                                                inovasi yang diusulkan kepada panitia.<br />
-                                            </li>
-                                        </ol>
-                                    </li>
-
-                                    <li>
-                                        <strong>Babak final</strong>
-                                        akan dilaksanakan secara luring di Politeknik Pertanian Negeri Kupang.
-                                    </li>
                                 </ol>
                             </li>
 
@@ -453,16 +536,11 @@
                 </div>
             </section>
 
-            <section class="section category" aria-label="category">
+            <section class="section course" id="courses" aria-label="course">
                 <div class="container">
 
                     <div class="section-header" id="direktur">
-                        <h2 class="h2 section-title">Sambutan Direktur Politeknik Negeri Lampung</h2>
-                        <p style="font-size:large">
-                            <strong>
-                                Johanis A. Jeremias, S.Pt., M.Sc
-                            </strong>
-                        </p>
+                        <h2 class="h2 section-title"> SAMBUTAN DIREKTUR POLITEKNIK NEGERI LAMPUNG</h2>
                     </div>
 
                     <div class="row">
@@ -473,54 +551,35 @@
                     </div>
                     <div class="col-lg-8" data-aos="fade-left">
                         <div class="content">
-                                <p>Salam Sejahtera,
+                                <p>Assalamu’alaikum warahmatullahi wabarakatuh,
                                 <p>
 
                                 <p style="text-align: justify; text-indent:45px">
-                                    Puji Syukur kehadirat Tuhan Yang Maha Esa atas segala limpahan kekuatan,
-                                    rahmat, serta karunia-Nya, buku panduan Kompetisi Inovasi Teknologi Bidang
-                                    Pertanian (Agricultural Innovation Technology Competition, AITeC) 5 tahun 2023
-                                    di Politeknik Pertanian Lampung dapat terselesaikan dengan baik.
+                                Salam sejahtera bagi kita semua. Puji syukur kita panjatkan kehadirat Allah SWT, Tuhan Yang Maha Esa, yang telah melimpahkan rahmat dan karunia-Nya kepada kita semua. Alhamdulillah, pada tahun 2024 Politeknik Negeri Lampung diberi kepercayaan untuk menjadi tuan rumah dalam penyelenggaraan <i>Agricultural Innovation Technology Competition</i> yang ke-6 (AITeC VI), sebuah ajang kompetisi bergengsi bagi mahasiswa Politeknik se-Indonesia.
                                 <p>
 
                                 <p style="text-align: justify; text-indent:45px">
-                                    Kegiatan AITec terwujud atas upaya dan kerjasama seluruh pihak yang terkait
-                                    untuk bersama-sama memberikan wadah untuk berkarya, berinovasi dan
-                                    berkreativitas, mengembangkan potensi diri <span style="font-style:italic"> softskill </span> maupun <span style="font-style:italic"> hardskill </span>, kompetensi
-                                    diri, dan jiwa kompetitif yang sehat melalu peran aktif segenap civitas akademika
-                                    Politeknik se-Indonesia. Diharapkan kegiatan ini dapat mengimplementasikan ide
-                                    dan gagasan adaptif yang berwawasan lingkungan untuk menjawab tantangantantangan
-                                    sektor pertanian yang dihadapi pasca pandemi dan teknologi berbasis 4.0.
-                                    Lebih dari itu, silaturrahmi antar sesama Politeknik se-Indonesia dapat lebih erat serta
-                                    terjalin dengan baik.
+                                AITeC VI adalah sebuah momentum penting yang mempertemukan talenta-talenta terbaik dari berbagai Politeknik di Indonesia. Kompetisi ini tidak hanya menjadi ajang untuk mengukur kemampuan dan keterampilan mahasiswa, tetapi juga sebagai sarana untuk memperluas wawasan, memperkuat jaringan, serta membangun semangat kolaborasi antar mahasiswa Politeknik.
                                 <p>
 
                                 <p style="text-align:justify; text-indent:45px">
-                                    Politeknik Pertanian Negeri Lampung merasa bangga dan terhormat mendapat kepercayaan
-                                    untuk menjadi tuan rumah penyelenggaraan Kegiatan AITeC 5 tahun 2023,
-                                    dengan tema
-                                    <span style="font-style:italic; font-weight:bold">
-                                        ”Inovasi Teknologi Untuk Meningkatkan Mutu Produk dan
-                                        Daya Saing Dalam Bidang Pertanian Semi Ringkai Menuju Pertanian Berbasis
-                                        Teknologi 4.0”.
-                                    </span>
-                                    Tentu harapan-harapan serta tujuan dari kegiatan ini tidak akan
-                                    dapat berjalan dengan baik dan tercapai tanpa ada dukungan dan partisipasi dari
-                                    seluruh pihak selama kegiatan berlangsung. Maka dari itu buku panduan Kegiatan
-                                    AITeC 5 tahun 2023 ini disusun untuk dapat membantu memberikan informasi-informasi
-                                    yang dibutuhkan terkait kompetisi selama proses kegiatan berlangsung.
-                                    Kepada seluruh tim yang telah berpartisipasi dan bekerja keras hingga
-                                    terselesaikannya buku Kegiatan AITeC 5 tahun 2023 ini dengan baik, kami
-                                    haturkan terima kasih.
+                                Kami, Politeknik Negeri Lampung, merasa sangat terhormat dan bangga dapat berperan dalam penyelenggaraan AITeC VI yang merupakan agenda tahunan Badan Koordinasi Kemahasiswaan (BAKORMA) Politeknik se-Indonesia. Sebagai tuan rumah, kami berkomitmen untuk memberikan yang terbaik dalam menyambut dan melayani para peserta, juri, dan seluruh pihak yang terlibat. Kami berharap melalui AITeC VI akan lahir inovasi-inovasi baru, pemikiran kreatif, dan solusi-solusi yang dapat memberikan kontribusi nyata bagi perkembangan dunia pendidikan dan industri di Indonesia.
                                 <p>
+                                    <p>
+                                    Pedoman ini disusun sebagai panduan bagi seluruh peserta dan panitia dalam mengikuti dan menyelenggarakan setiap rangkaian kegiatan AITeC VI. Kami berharap pedoman ini dapat dipahami dengan baik dan menjadi acuan yang memudahkan setiap pihak untuk berpartisipasi secara maksimal.
+                                    </p>
+                                    <p>
+                                    Akhir kata, saya ucapkan terima kasih kepada seluruh panitia dan pihak yang telah berkontribusi dalam persiapan dan pelaksanaan AITeC VI. Semoga acara ini dapat berjalan lancar dan sukses, serta memberikan manfaat yang besar bagi kita semua.
+                                    </p>
+                                    <p>
+                                    Wassalamu’alaikum warahmatullahi wabarakatuh.
+                                    </p>
 
-                                <pre style="font-size:large">
-                            Lampung, Agustus 2023
-                            Direktur,
-                                                            
-                                                       
+                                    <pre style="font-size:large">
+                            Direktur
+                                                                                                                
 
-                            Johanis A. Jeremias, S.Pt., M.Sc
+                            Prof. Dr. Ir. Sarono, M.Si.
                             </pre>
                             </div>
                         </div>
@@ -533,11 +592,9 @@
                 <div class="container">
 
                     <div class="section-header">
-                        <h2 class="h2 section-title">Sambutan Ketua BAKORMA</h2>
+                        <h2 class="h2 section-title">SAMBUTAN KETUA BADAN KOORDINASI KEMAHASISWAAN <br>POLITEKNIK SE-INDONESIA</h2>
                         <p style="font-size:large">
-                            <strong>
-                                Wahyu Kurnia Dewanto, S.Kom., MT
-                            </strong>
+                            
                         </p>
                     </div>
 
@@ -549,45 +606,36 @@
                         </div>
                         <div class="col-lg-8" data-aos="fade-left">
                             <div class="content">
-                                <p>Assalamualaikum Wr. Wb.
+                                <p>Assalamu’alaikum warahmatullahi wabarakatuh,
                                 <p>
 
                                 <p style="text-align: justify; text-indent:45px">
-                                    Melalui Kompetisi Inovasi Teknologi Bidang Pertanian (<span style="font-style:italic">
-                                        Agricultural Innovation Technology Competition
-                                    </span>, AITeC) sebagai salah satu
-                                    program dari Badan Koordinasi Kemahasiswaan (BAKORMA) Lingkup Vokasi se-Indonesia,
-                                    kami memandang pentingnya peran dalam pengembangan kegiatan kemahasiswaan yang memiliki
-                                    <span style="font-style:italic">
-                                        academic knowledge, skill of thinking, management skill, dan communication skill.
-                                    </span>
-                                    Kekurangan atas salah satu dari keempat keterampilan/kemahiran tersebut dapat menyebabkan berkurangnya mutu lulusan.
-                                    Sinergisme akan tercermin melalui kemampuan lulusan dalam kecepatan menemukan solusi atas persoalan yang dihadapinya.
-                                    Secara umum program AITeC ini bukan program akademik semata tetapi juga dibekali dengan berbagai kegiatan
-                                    untuk meningkatkan <span style="font-style:italic">soft skills</span> mahasiswa melalui dua kriteria kompetisi yang dilombakan,
-                                    yaitu Kompetisi Inovasi Teknologi Bidang Pertanian melalui pengembangan inovasi teknologi mutakhir
-                                    di bidang pertanian dari berbagai disiplin ilmu dalam upaya untuk mengatasi tantangan bidang pertanian dan pangan
-                                    pada revolusi teknologi 4.0. Sedangkan kompetisi yang kedua adalah Kontes Vokasi Bidang Pertanian yang secara detail
-                                    telah disusun dengan baik di dalam buku panduan ini.
+                                Salam sejahtera bagi kita semua. Puji syukur kita panjatkan kehadirat Allah SWT, Tuhan Yang Maha Esa, yang telah melimpahkan rahmat dan karunia-Nya sehingga kita dapat menyusun Pedoman AITeC VI dengan baik dan tepat waktu. 
+                                Pertama-tama, saya ingin menyampaikan apresiasi yang sebesar-besarnya kepada seluruh anggota Badan Koordinasi Kemahasiswaan (BAKORMA) Politeknik se-Indonesia yang telah bekerja keras dan berkontribusi dalam penyusunan pedoman ini. 
                                 <p>
 
                                 <p style="text-align: justify; text-indent:45px">
-                                    Pelaksanaan program ini juga telah sejalan dengan visi Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi
-                                    yaitu terciptanya Pelajar Pancasila yang beriman dan bertakwa kepada Tuhan Yang Maha Esa, bernalar kritis, kreatif,
-                                    mandiri, bergotong royong, serta berkebinekaan global sebagaimana dinyatakan dalam Program Merdeka Belajar Kampus Merdeka (MBKM).
-                                    Oleh karena itu, melalui program Kompetisi Inovasi Teknologi Bidang Pertanian ini semoga dapat menjadi wadah
-                                    untuk unjuk prestasi dalam perancangan dan implementasi ilmu pengetahuan dan teknologi bagi mahasiswa di seluruh Indonesia.
+                                <i>Agricultural Innovation Technology Competition</i> yang ke-6 (AITeC VI) merupakan salah satu ajang kompetisi yang sangat dinanti oleh mahasiswa Politeknik di seluruh Indonesia dimana kreativitas, inovasi, dan 
+                                kecakapan teknis mahasiswa diuji dan dipamerkan. AITeC bukan hanya sekadar ajang perlombaan, tetapi juga wadah untuk mempererat tali persaudaraan, memperluas jejaring, dan memperkaya wawasan antar mahasiswa Politeknik se-Indonesia. Oleh karena itu, penyelenggaraan AITeC harus terus didorong agar dapat menghasilkan generasi muda yang kompeten, siap bersaing di dunia kerja, dan mampu memberikan kontribusi nyata bagi pembangunan bangsa.  
                                 <p>
+                                    <p>
+                                    Saya berharap Pedoman AITeC VI ini dapat menjadi acuan yang jelas dan mudah dipahami oleh seluruh peserta, panitia, juri dan pihak terkait lainnya sehingga pelaksanaan AITeC VI dapat berjalan lancar dan mencapai tujuan yang diharapkan. 
+                                    Mari kita jadikan AITeC VI tahun 2024 yang dilaksanakan di Politeknik Negeri Lampung sebagai momentum untuk menunjukkan bahwa mahasiswa Perguruan Tinggi Vokasi adalah insan yang kreatif, inovatif, dan berdaya saing tinggi.
+                                    </p>
+                                    <p>
+                                    Akhir kata, saya ucapkan terima kasih kepada semua pihak yang telah mendukung terselenggaranya AITeC VI. Semoga Allah SWT senantiasa 
+                                    melimpahkan berkah dan rahmat-Nya kepada kita semua dalam setiap langkah yang kita ambil.
+                                    </p>
+
 
                                 <p style="text-align:justify; text-indent:45px">
-                                    Wassalamualaikum Wr. Wb
+                                    Wassalamu’alaikum warahmatullahi wabarakatuh.
                                 <p>
 
                                 <pre style="font-size:large">
-                            Bandar Lampung, Agustus 2023
-                            Ketua BAKORMA,
+                            Ketua BAKORMA Politeknik se-Indonesia
                                                             
-                                                       
+                                                    
 
                             Wahyu Kurnia Dewanto, S.Kom., MT
                     </pre>
@@ -602,12 +650,7 @@
                 <div class="container">
 
                     <div class="section-header" id="panitia">
-                        <h2 class="h2 section-title">Sambutan Ketua Panitia AITeC 6</h2>
-                        <p style="font-size:large">
-                            <strong>
-                                Dr. Laurensius Lehar, S.P., M.P
-                            </strong>
-                        </p>
+                        <h2 class="h2 section-title"> SAMBUTAN KETUA PANITIA AITeC VI</h2>
                     </div>
 
                     <div class="row">
@@ -618,47 +661,38 @@
                         </div>
                         <div class="col-lg-8" data-aos="fade-left">
                             <div class="content">
-                                <p>Salam Sejahtera,
+                                <p>Assalamu'alaikum warahmatullahi wabarakatuh,
                                 <p>
 
                                 <p style="text-align: justify; text-indent:45px">
-                                    Puji serta syukur dilimpahkan pada Tuhan Yang Maha Esa, atas izin dan
-                                    kemudahan yang diberikan-Nya, melalui serangkaian kegiatan koordinasi dan
-                                    kerjasama seluruh pihak yang terkait, Panduan Kegiatan AITeC 5 tahun 2023 dapat
-                                    diselesaikan dengan baik.
+                                Dengan penuh rasa syukur dan kebanggaan, kami menyambut kehadiran seluruh peserta, manager pendamping, juri, dan pimpinan Politeknik se-Indonesia dalam acara AITeC VI tahun 2024 yang diselenggarakan di Politeknik Negeri Lampung. Merupakan suatu kehormatan bagi kami untuk menjadi tuan rumah dalam ajang tahunan yang bergengsi dengan tujuan untuk mempromosikan kreativitas dan inovasi di kalangan mahasiswa Politeknik se-Indonesia.
                                 <p>
 
                                 <p style="text-align: justify; text-indent:45px">
-                                    Kami sebagai tim panitia dari tuan rumah yang ditunjuk oleh Bakorma untuk pelaksanaan AITeC 5,
-                                    berterima kasih, merasa bangga, dan terhormat mendapat kepercayaan di tahun ini.
-                                    Dalam panduan kegiatan ini, kami menyusun informasiinformasi yang
-                                    dibutuhkan untuk pelaksaan lomba multidisplin ilmu yang terdiri
-                                    dari 2 (dua) kategori, yaitu lomba inovasi teknologi, dan lomba vokasi
-                                    yang terdiri dari 14 mata lomba hasil persetujuan bersama.
+                                AITeC VI adalah ajang yang sangat penting dalam mengembangkan potensi dan bakat di bidang teknologi dan inovasi. Tahun ini, kami berkomitmen untuk menghadirkan kompetisi yang tidak hanya menantang, tetapi juga memberi kesempatan kepada peserta untuk mengeksplorasi dan menampilkan hasil karya terbaik mereka. Melalui AITeC VI, kami berharap dapat mendorong munculnya solusi-solusi kreatif dan inovatif yang dapat bermanfaat bagi masyarakat dan dunia industri.
                                 <p>
 
                                 <p style="text-align:justify; text-indent:45px">
-                                    Tentu saja panduan kegiatan ini hanya permulaan, rangkaian kegiatan AITeC
-                                    5 masih panjang untuk mencapai tujuan bersama yakni memberikan wadah untuk
-                                    mahasiswa dapat berinovasi, meningkatkan kompetensi diri, meningkatkan
-                                    kreativitas, dan kualitas produksi dibidang pertanian yang berwawasan lingkungan;
-                                    menjaring mahasiswa berprestasi Tingkat Nasional Bidang Pertanian; serta
-                                    meningkatkan kualitas hubungan dan kerjasama antar perguruan tinggi vokasi
-                                    bidang pertanian Indonesia.
+                                Kami mengucapkan terima kasih kepada semua pihak yang telah berkontribusi dalam penyelenggaraan acara ini, termasuk sponsor, mitra, dan seluruh panitia yang telah bekerja keras untuk memastikan kesuksesan penyelenggaraan AITeC VI Politeknik Negeri Lampung. Ucapan terima kasih juga kami sampaikan kepada Bapak/Ibu Juri yang akan menilai karya-karya peserta dengan penuh profesionalisme dan objektivitas.
                                 <p>
 
                                 <p style="text-align:justify; text-indent:45px">
-                                    Kami yakin, dengan dukungan dan partisipasi dari seluruh pihak maka
-                                    harapan-harapan serta tujuan dari kegiatan ini akan dapat tercapai dengan baik.
+                                Kepada seluruh peserta, kami ucapkan selamat bertanding. Kami yakin bahwa setiap ide dan inovasi yang Anda hadirkan akan menjadi inspirasi dan memberikan dampak positif. Jadikanlah kesempatan ini sebagai ajang untuk belajar, berkembang, dan berkompetisi dengan menjunjung semangat sportivitas yang tinggi.    
                                 <p>
+                                    <p>
+                                    Akhir kata, kami berharap acara AITeC VI tahun 2024 dapat berjalan dengan sukses, menjadi pengalaman yang berharga serta mampu memberikan kesan yang mendalam bagi semua pihak yang terlibat. Semoga kegiatan ini dapat mempererat tali silaturahmi dan memberikan kontribusi yang berarti bagi kemajuan ilmu pengetahuan dan teknologi.
+                                    </p>
+
+                                    <p>
+                                    Wassalamu'alaikum Warahmatullahi Wabarakatuh.
+                                    </p>
 
                                 <pre style="font-size:large">
-                            Bandar Lampung, Agustus 2023
-                            Ketua Panitia AITeC 5,
+                            Ketua Pelaksana,
                                                             
                                                        
 
-                            Dr. Laurensius Lehar, S.P., M.P
+                            Riko Noviadi
                     </pre>
                             </div>
                         </div>
@@ -1388,42 +1422,42 @@
                         <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
 
                             <div class="row schedule-item">
-                                <div class="col-md-4"><time>1 - 10 September 2023</time></div>
+                                <div class="col-md-4"><time>26 Agustus - 18 September 2024</time></div>
                                 <div class="col-md-8">
                                     <h4>Pendaftaran peserta dan validasi oleh panitia</h4>
-                                    <p>Pendaftaran secara online pada laman https://aitec5.politanikoe.ac.id</p>
+                                    <p>Pendaftaran secara online pada laman https://aitec-lampung.polinela.ac.id </p>
                                 </div>
                             </div>
 
                             <div class="row schedule-item">
-                                <div class="col-md-4"><time>11 - 14 September 2023</time></div>
+                                <div class="col-md-4"><time>26 Agustus - 18 September 2024</time></div>
                                 <div class="col-md-8">
                                     <h4>Upload Proposal Lomba (tahap 1)</h4>
-                                    <p>Upload proposal secara online pada laman https://aitec5.politanikoe.ac.id</p>
+                                    <p>Upload proposal secara online pada laman https://aitec-lampung.polinela.ac.id </p>
                                 </div>
                             </div>
 
                             <div class="row schedule-item">
-                                <div class="col-md-4"><time>16 -19 September 2023</time></div>
+                                <div class="col-md-4"><time>20 -27 September 2024</time></div>
                                 <div class="col-md-8">
                                     <h4>Seleksi Proposal <span style="font-style:italic">(Desk Evaluation)</span></h4>
-                                    <p>Seleksi proposal secara online pada laman https://aitec5.politanikoe.ac.id</p>
+                                    <p>Seleksi proposal secara online pada laman https://aitec-lampung.polinela.ac.id </p>
                                 </div>
                             </div>
 
                             <div class="row schedule-item">
-                                <div class="col-md-4"><time>21 September 2023</time></div>
+                                <div class="col-md-4"><time>30 September 2023</time></div>
                                 <div class="col-md-8">
                                     <h4>Pengumuman Hasil Seleksi Proposal</h4>
-                                    <p>Pengumuman dilihat secara online pada laman https://aitec5.politanikoe.ac.id</p>
+                                    <p>Pengumuman dilihat secara online pada laman https://aitec-lampung.polinela.ac.id </p>
                                 </div>
                             </div>
 
                             <div class="row schedule-item">
-                                <div class="col-md-4"><time>23 September 2023 s/d 2 Oktober 2023</time></div>
+                                <div class="col-md-4"><time> 01 -07 oktober 2024</time></div>
                                 <div class="col-md-8">
                                     <h4>Upload video (tahap 2)</h4>
-                                    <p>Upload video secara online pada laman https://aitec5.politanikoe.ac.id</p>
+                                    <p>Upload video secara online pada laman https://aitec-lampung.polinela.ac.id </p>
                                 </div>
                             </div>
 
@@ -1431,7 +1465,7 @@
                                 <div class="col-md-4"><time>4 Oktober 2023</time></div>
                                 <div class="col-md-8">
                                     <h4>Seleksi Video </h4>
-                                    <p>Seleksi video secara online pada laman https://aitec5.politanikoe.ac.id</p>
+                                    <p>Seleksi video secara online pada laman https://aitec-lampung.polinela.ac.id </p>
                                 </div>
                             </div>
 
@@ -1439,7 +1473,7 @@
                                 <div class="col-md-4"><time>6 Oktober 2023</time></div>
                                 <div class="col-md-8">
                                     <h4>Pengumuman Hasil Seleksi Video</h4>
-                                    <p>Pengumuman dilihat secara online pada laman https://aitec5.politanikoe.ac.id</p>
+                                    <p>Pengumuman dilihat secara online pada laman https://aitec-lampung.polinela.ac.id </p>
                                 </div>
                             </div>
 
@@ -1447,7 +1481,7 @@
                                 <div class="col-md-4"><time>9 Oktober 2023</time></div>
                                 <div class="col-md-8">
                                     <h4>Undangan Peserta yang dinyatakan LOLOS Tahap 2 menuju babak FINAL</h4>
-                                    <p>Undangan didownload pada laman https://aitec5.politanikoe.ac.id</p>
+                                    <p>Undangan didownload pada laman https://aitec-lampung.polinela.ac.id </p>
                                 </div>
                             </div>
 
@@ -1455,7 +1489,7 @@
                                 <div class="col-md-4"><time>14 - 18 Oktober 2023</time></div>
                                 <div class="col-md-8">
                                     <h4>Pembayaran Registrasi Finalis</h4>
-                                    <p>Bukti pembayaran diupload pada laman https://aitec5.politanikoe.ac.id</p>
+                                    <p>Bukti pembayaran diupload pada laman https://aitec-lampung.polinela.ac.id </p>
                                 </div>
                             </div>
 
@@ -1482,7 +1516,7 @@
                                 <div class="col-md-4"><time>1 - 10 September 2023</time></div>
                                 <div class="col-md-8">
                                     <h4>Pendaftaran peserta dan validasi oleh panitia</h4>
-                                    <p>Pendaftaran secara online pada laman https://aitec5.politanikoe.ac.id</p>
+                                    <p>Pendaftaran secara online pada laman https://aitec-lampung.polinela.ac.id </p>
                                 </div>
                             </div>
 
@@ -1490,7 +1524,7 @@
                                 <div class="col-md-4"><time>11 - 14 September 2023</time></div>
                                 <div class="col-md-8">
                                     <h4>Pendaftaran Mata Lomba</h4>
-                                    <p>Pendaftaran mata lomba secara online pada laman https://aitec5.politanikoe.ac.id</p>
+                                    <p>Pendaftaran mata lomba secara online pada laman https://aitec-lampung.polinela.ac.id </p>
                                 </div>
                             </div>
 
@@ -1512,7 +1546,7 @@
                                 <div class="col-md-4"><time>23 September 2023 s/d 2 Oktober 2023</time></div>
                                 <div class="col-md-8">
                                     <h4>Upload Video Seleksi</h4>
-                                    <p>Upload video secara online pada laman https://aitec5.politanikoe.ac.id</p>
+                                    <p>Upload video secara online pada laman https://aitec-lampung.polinela.ac.id </p>
                                 </div>
                             </div>
 
@@ -1520,7 +1554,7 @@
                                 <div class="col-md-4"><time>4 Oktober 2023</time></div>
                                 <div class="col-md-8">
                                     <h4>Seleksi Video </h4>
-                                    <p>Seleksi video secara online pada laman https://aitec5.politanikoe.ac.id</p>
+                                    <p>Seleksi video secara online pada laman https://aitec-lampung.polinela.ac.id </p>
                                 </div>
                             </div>
 
@@ -1528,7 +1562,7 @@
                                 <div class="col-md-4"><time>6 Oktober 2023</time></div>
                                 <div class="col-md-8">
                                     <h4>Pengumuman Hasil Seleksi Video</h4>
-                                    <p>Pengumuman dilihat secara online pada laman https://aitec5.politanikoe.ac.id</p>
+                                    <p>Pengumuman dilihat secara online pada laman https://aitec-lampung.polinela.ac.id </p>
                                 </div>
                             </div>
 
@@ -1536,7 +1570,7 @@
                                 <div class="col-md-4"><time>9 Oktober 2023</time></div>
                                 <div class="col-md-8">
                                     <h4>Undangan Peserta yang dinyatakan LOLOS Tahap 2 menuju babak FINAL</h4>
-                                    <p>Undangan didownload pada laman https://aitec5.politanikoe.ac.id</p>
+                                    <p>Undangan didownload pada laman https://aitec-lampung.polinela.ac.id </p>
                                 </div>
                             </div>
 
@@ -1544,7 +1578,7 @@
                                 <div class="col-md-4"><time>14 - 18 Oktober 2023</time></div>
                                 <div class="col-md-8">
                                     <h4>Pembayaran Registrasi Finalis</h4>
-                                    <p>Bukti pembayaran diupload pada laman https://aitec5.politanikoe.ac.id</p>
+                                    <p>Bukti pembayaran diupload pada laman https://aitec-lampung.polinela.ac.id </p>
                                 </div>
                             </div>
 
@@ -1605,11 +1639,11 @@
 
                     <div class="section-header">
                         <h2 class="h2 section-title">Gallery</h2>
-                        <p>Dokumentasi Kegiatan AITeC 5 di Politeknik Pertanian Negeri Kupang</p>
+                        <p>Dokumentasi Kegiatan AITeC VI di Politeknik Pertanian Negeri Lampung</p>
                     </div>
                 </div>
 
-                <div class="gallery-slider swiper">
+                <div class="gallery-slider swiper text-aligin:center">
                     <div class="swiper-wrapper align-items-center">
                         <div class="swiper-slide"><a href="landing/assets/images/gallery/1.jpeg" class="gallery-lightbox"><img src="landing/assets/images/gallery/1.jpeg" class="img-fluid" alt=""></a></div>
                         <div class="swiper-slide"><a href="landing/assets/images/gallery/2.jpeg" class="gallery-lightbox"><img src="landing/assets/images/gallery/2.jpeg" class="img-fluid" alt=""></a></div>
@@ -1633,48 +1667,7 @@
                 </div>
             </section>
 
-            <section class="section category" aria-label="category" id="hubungi">
-                <div class="container">
-
-                    <div class="section-header">
-                        <h2 class="h2 section-title">Hubungi Kami</h2>
-                    </div>
-
-                    <div class="row contact-info">
-
-                        <div class="col-md-4">
-                            <div class="contact-address">
-                                <i class="bi bi-geo-alt"></i>
-                                <h3>Alamat</h3>
-                                <address>Jl. Soekarno Hatta No.10, Rajabasa Raya, Kec. Rajabasa, Kota Bandar Lampung, Lampung</address>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="contact-phone">
-                                <i class="bi bi-phone"></i>
-                                <h3>Nomor Telepon</h3>
-                                <p><a href="tel:+6281290056900">Laurens : 081339442556 (Ketua)</a></p>
-                                <p><a href="tel:+6281290056900">Dina TK : 081290056900 (Sekretaris)</a></p>
-                                <p><a href="tel:+620113820891">Micha : 08113820891 (Bendahara)</a></p>
-                                <p><a href="tel:+6281237942020">Romi : 081237942020 (IT)</a></p>
-                                <p><a href="tel:+6281237942020">Robin : 08113837387 (IT)</a></p>
-                                <p><a href="tel:+6281237942020">Xaver : 081227778862 (Humas)</a></p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="contact-email">
-                                <i class="bi bi-envelope"></i>
-                                <h3>Email</h3>
-                                <p><a href="mailto:aitec5kupang@gmail.com">aitecVILampung@gmail.com</a></p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </section>
+            
 
 
 
@@ -1703,8 +1696,11 @@
     - #FOOTER
   -->
 
-    <footer class="footer" style="background-image: url('landing/assets/images/footer-bg.png')">
+    <footer class="footer" style="background-image: url('landing/assets/images/footer-bg.png')" id="hubungi">
         <div class="footer-top section">
+                    <div class="section-header">
+                        <h2 class="h2 section-title">Hubungi Kami</h2>
+                    </div>
             <div class="container grid-list">
                 <div class="footer-brand">
                     <a href="#" class="logo">
@@ -1712,15 +1708,12 @@
                     </a>
 
                     <p class="footer-brand-text">
-                        Lorem ipsum dolor amet consecto adi pisicing elit sed eiusm tempor
-                        incidid unt labore dolore.
+                        
+                                <h3>Alamat</h3>
+                                <address>Jl. Soekarno Hatta No.10, Rajabasa Raya, Kec. Rajabasa, Kota Bandar Lampung, Lampung</address>
+                        
                     </p>
 
-                    <div class="wrapper">
-                        <span class="span">Add:</span>
-
-                        <address class="address">70-80 Upper St Norwich NR2</address>
-                    </div>
 
                     <div class="wrapper">
                         <span class="span">Call:</span>
@@ -1737,31 +1730,31 @@
 
                 <ul class="footer-list">
                     <li>
-                        <p class="footer-list-title">Online Platform</p>
+                        <p class="footer-list-title">Nomor Telepon</p>
                     </li>
 
                     <li>
-                        <a href="#" class="footer-link">About</a>
+                        <a href="tel:+6281290056900">Laurens : 081339442556 (Ketua)</a>
                     </li>
 
                     <li>
-                        <a href="#" class="footer-link">Courses</a>
+                    <a href="tel:+6281290056900">Dina TK : 081290056900 (Sekretaris)</a>
                     </li>
 
                     <li>
-                        <a href="#" class="footer-link">Instructor</a>
+                    <a href="tel:+620113820891">Micha : 08113820891 (Bendahara)</a>
                     </li>
 
                     <li>
-                        <a href="#" class="footer-link">Events</a>
+                    <a href="tel:+6281237942020">Romi : 081237942020 (IT)</a>
                     </li>
 
                     <li>
-                        <a href="#" class="footer-link">Instructor Profile</a>
+                    <a href="tel:+6281237942020">Robin : 08113837387 (IT)</a>
                     </li>
 
                     <li>
-                        <a href="#" class="footer-link">Purchase Guide</a>
+                    <a href="tel:+6281237942020">Xaver : 081227778862 (Humas)</a>
                     </li>
                 </ul>
 
