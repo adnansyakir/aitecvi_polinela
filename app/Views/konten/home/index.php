@@ -1446,7 +1446,7 @@
                             </div>
 
                             <div class="row schedule-item">
-                                <div class="col-md-4"><time>30 September 2023</time></div>
+                                <div class="col-md-4"><time>30 September 2024</time></div>
                                 <div class="col-md-8">
                                     <h4>Pengumuman Hasil Seleksi Proposal</h4>
                                     <p>Pengumuman dilihat secara online pada laman https://aitec-lampung.polinela.ac.id </p>
@@ -1462,7 +1462,7 @@
                             </div>
 
                             <div class="row schedule-item">
-                                <div class="col-md-4"><time>4 Oktober 2023</time></div>
+                                <div class="col-md-4"><time>4 Oktober 2024</time></div>
                                 <div class="col-md-8">
                                     <h4>Seleksi Video </h4>
                                     <p>Seleksi video secara online pada laman https://aitec-lampung.polinela.ac.id </p>
@@ -1470,23 +1470,16 @@
                             </div>
 
                             <div class="row schedule-item">
-                                <div class="col-md-4"><time>6 Oktober 2023</time></div>
+                                <div class="col-md-4"><time>10 Oktober 2024</time></div>
                                 <div class="col-md-8">
-                                    <h4>Pengumuman Hasil Seleksi Video</h4>
+                                    <h4>Pengumuman Hasil Seleksi Video dan dan undangan menuju Babak Final AITeC VI tahun 2024</h4>
                                     <p>Pengumuman dilihat secara online pada laman https://aitec-lampung.polinela.ac.id </p>
                                 </div>
                             </div>
 
-                            <div class="row schedule-item">
-                                <div class="col-md-4"><time>9 Oktober 2023</time></div>
-                                <div class="col-md-8">
-                                    <h4>Undangan Peserta yang dinyatakan LOLOS Tahap 2 menuju babak FINAL</h4>
-                                    <p>Undangan didownload pada laman https://aitec-lampung.polinela.ac.id </p>
-                                </div>
-                            </div>
 
                             <div class="row schedule-item">
-                                <div class="col-md-4"><time>14 - 18 Oktober 2023</time></div>
+                                <div class="col-md-4"><time>08 - 17 Oktober 2024</time></div>
                                 <div class="col-md-8">
                                     <h4>Pembayaran Registrasi Finalis</h4>
                                     <p>Bukti pembayaran diupload pada laman https://aitec-lampung.polinela.ac.id </p>
@@ -1494,17 +1487,17 @@
                             </div>
 
                             <div class="row schedule-item">
-                                <div class="col-md-4"><time>19 Oktober 2023</time></div>
+                                <div class="col-md-4"><time>15 - 20 Oktober 2023</time></div>
                                 <div class="col-md-8">
                                     <h4><span style="font-style:italic;font-weight:bold">Technical Meeting Daring Finalis</span></h4>
                                 </div>
                             </div>
 
                             <div class="row schedule-item">
-                                <div class="col-md-4"><time>26 - 27 Oktober 2023</time></div>
+                                <div class="col-md-4"><time>23 - 26 Oktober 2024</time></div>
                                 <div class="col-md-8">
                                     <h4>BABAK FINAL</h4>
-                                    <p>Pelaksanaan secara Luring di Kampus POLITEKNIK PERTANIAN NEGERI KUPANG</p>
+                                    <p>Pelaksanaan secara Luring di Kampus POLITEKNIK PERTANIAN NEGERI LAMPUNG</p>
                                 </div>
                             </div>
                         </div>
@@ -1513,77 +1506,44 @@
                         <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-2">
 
                             <div class="row schedule-item">
-                                <div class="col-md-4"><time>1 - 10 September 2023</time></div>
+                                <div class="col-md-4"><time>1 - 21 September 2024</time></div>
                                 <div class="col-md-8">
                                     <h4>Pendaftaran peserta dan validasi oleh panitia</h4>
                                     <p>Pendaftaran secara online pada laman https://aitec-lampung.polinela.ac.id </p>
                                 </div>
                             </div>
-
                             <div class="row schedule-item">
-                                <div class="col-md-4"><time>11 - 14 September 2023</time></div>
-                                <div class="col-md-8">
-                                    <h4>Pendaftaran Mata Lomba</h4>
-                                    <p>Pendaftaran mata lomba secara online pada laman https://aitec-lampung.polinela.ac.id </p>
-                                </div>
-                            </div>
-
-                            <div class="row schedule-item">
-                                <div class="col-md-4"><time>15 September 2023</time></div>
+                                <div class="col-md-4"><time>24 - 27 September 2024</time></div>
                                 <div class="col-md-8">
                                     <h4><span style="font-style:italic;font-weight:bold">Technical Meeting </span> Daring Babak Penyisihan</h4>
                                 </div>
                             </div>
 
                             <div class="row schedule-item">
-                                <div class="col-md-4"><time>21 - 23 September 2023</time></div>
+                                <div class="col-md-4"><time>01 - 06 September 2024</time></div>
                                 <div class="col-md-8">
-                                    <h4>Presentasi Secara Daring Melalui Zoom</h4>
+                                    <h4>Seleksi Online</h4>
+                                    <p>Seleksi secara online pada laman https://aitec-lampung.polinela.ac.id </p>
                                 </div>
                             </div>
 
                             <div class="row schedule-item">
-                                <div class="col-md-4"><time>23 September 2023 s/d 2 Oktober 2023</time></div>
+                                <div class="col-md-4"><time>08 Oktober 2024</time></div>
                                 <div class="col-md-8">
-                                    <h4>Upload Video Seleksi</h4>
-                                    <p>Upload video secara online pada laman https://aitec-lampung.polinela.ac.id </p>
+                                    <h4>Pengumuman hasil seleksi online dan undangan menuju Babak Final AITeC VI tahun 2024</h4>
+                                    <p>Pengumuman hasil seleksi online pada laman https://aitec-lampung.polinela.ac.id </p>
                                 </div>
                             </div>
 
                             <div class="row schedule-item">
-                                <div class="col-md-4"><time>4 Oktober 2023</time></div>
-                                <div class="col-md-8">
-                                    <h4>Seleksi Video </h4>
-                                    <p>Seleksi video secara online pada laman https://aitec-lampung.polinela.ac.id </p>
-                                </div>
-                            </div>
-
-                            <div class="row schedule-item">
-                                <div class="col-md-4"><time>6 Oktober 2023</time></div>
-                                <div class="col-md-8">
-                                    <h4>Pengumuman Hasil Seleksi Video</h4>
-                                    <p>Pengumuman dilihat secara online pada laman https://aitec-lampung.polinela.ac.id </p>
-                                </div>
-                            </div>
-
-                            <div class="row schedule-item">
-                                <div class="col-md-4"><time>9 Oktober 2023</time></div>
-                                <div class="col-md-8">
-                                    <h4>Undangan Peserta yang dinyatakan LOLOS Tahap 2 menuju babak FINAL</h4>
-                                    <p>Undangan didownload pada laman https://aitec-lampung.polinela.ac.id </p>
-                                </div>
-                            </div>
-
-                            <div class="row schedule-item">
-                                <div class="col-md-4"><time>14 - 18 Oktober 2023</time></div>
+                                <div class="col-md-4"><time>08 - 17 Oktober 2024</time></div>
                                 <div class="col-md-8">
                                     <h4>Pembayaran Registrasi Finalis</h4>
                                     <p>Bukti pembayaran diupload pada laman https://aitec-lampung.polinela.ac.id </p>
                                 </div>
                             </div>
-
                             <div class="row schedule-item">
-                                <div class="col-md-4"><time>23 Oktober 2023</time></div>
+                                <div class="col-md-4"><time>15 - 20 Oktober 2024</time></div>
                                 <div class="col-md-8">
                                     <h4><span style="font-style:italic;font-weight:bold">Technical Meeting Daring Finalis</span></h4>
                                 </div>
@@ -1593,7 +1553,7 @@
                                 <div class="col-md-4"><time>26 - 27 Oktober 2023</time></div>
                                 <div class="col-md-8">
                                     <h4>BABAK FINAL</h4>
-                                    <p>Pelaksanaan secara Luring di Kampus POLITEKNIK PERTANIAN NEGERI KUPANG</p>
+                                    <p>Pelaksanaan secara Luring di Kampus POLITEKNIK PERTANIAN NEGERI LAMPUNG</p>
                                 </div>
                             </div>
 
