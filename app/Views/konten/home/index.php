@@ -67,7 +67,7 @@
                         <a href="#" class="navbar-link" data-nav-link>Home</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="#" class="navbar-link" data-nav-link>Pengumuman</a>
+                        <a href="#pengumuman" class="navbar-link" data-nav-link>Pengumuman</a>
                     </li>
                     <li class="navbar-item">
                         <a href="#" class="navbar-link" data-nav-link>Tentang AITEC VI &#x25BC;</a>
@@ -698,6 +698,40 @@
                         </div>
                     </div>
 
+                </div>
+            </section>
+
+            <section class="section course" id="pengumuman" aria-label="course">
+                <div class="container">
+
+                    <div class="section-header">
+                        <h3 class="h2 section-title">Pengumuman</h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr style="font-weight:bold">
+                                        <td class="text-center" style="width:4%">No</td>
+                                        <td class="text-center" style="width:56%">File Dokumen</td>
+                                        <td class="text-center" style="width:20%">Download</td>
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php $i = 1;
+                                    foreach ($pt as $row) : ?>
+                                        <tr>
+                                            <td><?= $i++; ?></td>
+                                            <td align="center">Buku Paanduan</td>
+                                            <td><a href="https://drive.google.com/file/d/1HPU4g-FFDIld1npP6i0WZlXjDkekOFqm/view?usp=sharing">Klik Disini</a></td>
+                                        </tr>
+                                    <?php endforeach; ?>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </section>
 
