@@ -55,12 +55,12 @@
         <img src="./assets/images/L2.png" width="60" height="50" alt="AITeCVI logo" />
       </a> -->
             <a href="" class="header-logo">
-                <img src="landing/assets/images/L3.png" width="180" height="50" alt="AITeCVI logo" />
+                <img src="landing/assets/images/L3.png" width="150" height="50" alt="AITeCVI logo" />
             </a>
 
             <nav class="navbar" data-navbar>
                 <a href="">
-                    <img src="landing/assets/images/L3.png" width="180" height="50" alt="AITeCVI logo" />
+                    <img src="landing/assets/images/L3.png" width="150" height="50" alt="AITeCVI logo" />
                 </a>
                 <ul class="navbar-list">
                     <li class="navbar-item">
@@ -601,7 +601,7 @@
                     <div class="row">
                     <div class="col-lg-4" data-aos="fade-right">
                             <div class="image">
-                                <img src="<?= base_url('landing/assets/images/ketua.png') ?>" class="img-fluid" alt="Direktur">
+                                <img src="<?= base_url('landing/assets/images/ketua_bakorma.png') ?>" class="img-fluid" alt="Direktur">
                             </div>
                         </div>
                         <div class="col-lg-8" data-aos="fade-left">
@@ -656,7 +656,7 @@
                     <div class="row">
                     <div class="col-lg-4" data-aos="fade-right">
                             <div class="image">
-                                <img src="<?= base_url('landing/assets/images/ketua.png') ?>" class="img-fluid" alt="Direktur">
+                                <img src="<?= base_url('landing/assets/images/ketua_pelaksana.png') ?>" class="img-fluid" alt="Direktur">
                             </div>
                         </div>
                         <div class="col-lg-8" data-aos="fade-left">
