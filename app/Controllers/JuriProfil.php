@@ -3,16 +3,20 @@ namespace App\Controllers;
 
 use PhpOffice\PhpSpreadsheet\IOFactory;
 use Ramsey\Uuid\Uuid;
-use App\Models\Juri\JuriModel;
+use App\Models\Juri\UsersModel;
+
 
 class JuriProfil extends BaseController
 {
-    protected $ta;
+    protected $user;
+    protected $session;
+    protected $validation;
+    protected $db;
 
     public function __construct()
     {
         $this->cekPeran(['Juri']);
-        $this->user = new JuriModel();
+        $this->user = new UsersModel();
         $this->session = \Config\Services::session();
         $this->validation = \Config\Services::validation();
         $this->db = \Config\Database::connect();
@@ -20,14 +24,11 @@ class JuriProfil extends BaseController
 
     public function index()
     {
-        // $userId = $this->session->get('data')->id; // Assuming user_id is stored in session data
-        // $user = $this->user->find($userId);
+        $userId = $this->session->get('data')->id; // Assuming user_id is stored in session data
+        $user = $this->user->find($userId);
 
-        // $data = [
-        //     'juri' => $user,
-        // ];
         $data = [
-            'juri' => $this->user->JuribyPt(),
+            'user' => $user,
         ];
 // dd($data);
         echo view('konten/juri/user/index', $data);

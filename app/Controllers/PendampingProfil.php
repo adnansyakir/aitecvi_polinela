@@ -3,16 +3,20 @@ namespace App\Controllers;
 
 use PhpOffice\PhpSpreadsheet\IOFactory;
 use Ramsey\Uuid\Uuid;
-use App\Models\Pendamping\PendampingModel;
+use App\Models\Pendamping\UsersModel;
 
 class PendampingProfil extends BaseController
 {
-    protected $ta;
+    protected $user;
+    protected $session;
+    protected $validation;
+    protected $db;
+
 
     public function __construct()
     {
         $this->cekPeran(['Pendamping']);
-        $this->user = new PendampingModel();
+        $this->user = new UsersModel();
         $this->session = \Config\Services::session();
         $this->validation = \Config\Services::validation();
         $this->db = \Config\Database::connect();
@@ -20,10 +24,13 @@ class PendampingProfil extends BaseController
 
     public function index()
     {
+        $userId = $this->session->get('data')->id; // Assuming user_id is stored in session data
+        $user = $this->user->find($userId);
+
         $data = [
-            'pendamping' => $this->user->pendampingbyPt(),
+            'user' => $user,
         ];
-// dd($data);
+        // dd($data);
         echo view('konten/pendamping/user/index', $data);
     }
 

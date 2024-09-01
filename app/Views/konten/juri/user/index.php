@@ -24,54 +24,42 @@
             <div class="col-12 col-lg-8">
                 <div class="card">
                     <div class="card-body py-4 px-5">
-                        <?php foreach ($juri as $j): ?>
-                        <form id="passwordForm" class="form form-horizontal" action="/juri/user/change-password" method="post">
+                        <form id="passwordForm" class="form form-horizontal" action="/juri/profil/changePassword" method="post">
                             <div class="form-body">
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <label>Nama Juri</label>
+                                        <label>Nama</label>
                                     </div>
                                     <div class="col-md-8 form-group">
-                                        <?= $j['nama_juri'] ?>
+                                        <?= $user['username'] ?>
                                     </div>
                                     <div class="col-md-4">
-                                        <label>Nama Perlombaan</label>
+                                        <label>Email</label>
                                     </div>
                                     <div class="col-md-8 form-group">
-                                        <?= $j['nama_perlombaan'] ?>
+                                        <?= $user['email'] ?>
                                     </div>
-                                    <div class="col-md-4">
-                                        <label>Perguruan Tinggi</label>
-                                    </div>
-                                    <div class="col-md-8 form-group">
-                                        <?= $j['nama_pt'] ?>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <label>Keterangan</label>
-                                    </div>
-                                    <div class="col-md-8 form-group">
-                                        <?= $j['keterangan'] ?>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <label>Password</label>
-                                    </div>
-                                    <div class="col-md-8 form-group">
-                                        <input type="password" id="password" class="form-control" name="password" placeholder="Password">
-                                    </div>
-                                    <div class="col-md-4">
-                                        <label>Confirm Password</label>
-                                    </div>
-                                    <div class="col-md-8 form-group">
-                                        <input type="password" id="confirmPassword" class="form-control" name="confirmPassword" placeholder="Confirm password">
-                                        <small>kosongkan jika tidak ingin merubah password</small>
-                                    </div>
-                                    <div class="col-sm-12 d-flex justify-content-end">
-                                        <button type="submit" class="btn btn-primary me-1 mb-1">Simpan</button>
+
+                                        <div class="col-md-4">
+                                            <label>Password</label>
+                                        </div>
+                                        <div class="col-md-8 form-group">
+                                            <input type="password" id="password" class="form-control" name="password" placeholder="Password">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label>Confirm Password</label>
+                                        </div>
+                                        <div class="col-md-8 form-group">
+                                            <input type="password" id="confirmPassword" class="form-control" name="confirmPassword" placeholder="Confirm password">
+                                            <small>kosongkan jika tidak ingin merubah password</small>
+                                        </div>
+                                        <div class="col-sm-12 d-flex justify-content-end">
+                                            <button type="submit" class="btn btn-primary me-1 mb-1">Simpan</button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </form>
-                        <?php endforeach; ?>
+                            </form>
+                
                     </div>
                 </div>
             </div>

@@ -89,13 +89,7 @@ class Auth extends BaseController
                     if ($user->status == 0) {
                         return redirect()->to('/loginn')->with('error', 'Akun Anda belum aktif.');
                     } else {
-                        $users = $this->db->table('users')->select('juri.*, juri.nama_juri as username, users.id as user_id')
-                            ->join('juri', 'juri.kode_juri = users.username')
-                            ->where('username', $user->username)
-                            ->get()
-                            ->getRow();
-                        $session->set('data', $users);
-                        // $session->set('data', $user);
+                        $session->set('data', $user);
                         $session->set('role', $user->role);
                         $session->set([
                             'logged_in' => TRUE
@@ -107,13 +101,7 @@ class Auth extends BaseController
                     if ($user->status == 0) {
                         return redirect()->to('/loginn')->with('error', 'Akun Anda belum aktif.');
                     } else {
-                        $users = $this->db->table('users')->select('pendamping.*, pendamping.nama_pendamping as username, users.id as user_id')
-                            ->join('pendamping', 'pendamping.kode_pendamping = users.username')
-                            ->where('username', $user->username)
-                            ->get()
-                            ->getRow();
-                        $session->set('data', $users);
-                        // $session->set('data', $user);
+                        $session->set('data', $user);
                         $session->set('role', $user->role);
                         $session->set([
                             'logged_in' => TRUE
