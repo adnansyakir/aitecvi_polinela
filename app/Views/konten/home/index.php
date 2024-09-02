@@ -12,18 +12,14 @@
     <title>AITECVI-POLINELA</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
-
-
-
     <link rel="shortcut icon" href="landing/assets/images/L2.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
-
-
     <!-- 
     - custom css link
   -->
     <link rel="stylesheet" href="landing/assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/css/ionicons.min.css">
+
 
     <!-- 
     - google font link
@@ -31,36 +27,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
-
-    <!-- 
-    - preload images
-  -->
-    <link rel="preload" as="image" href="landing/assets/images/L3.png" />
-    <link rel="preload" as="image" href="landing/assets/images/L3.png" />
-    <link rel="preload" as="image" href="landing/assets/images/L3.png" />
-    <link rel="preload" as="image" href="landing/assets/images/L3.png" />
-    <link rel="preload" as="image" href="landing/assets/images/L3.png" />
-
-
 </head>
 
 <body id="top">
     <!-- 
     - #HEADER
   -->
-
     <header class="header" data-header>
         <div class="containerku">
-            <!-- <a href="#" class="logo">
-        <img src="./assets/images/L2.png" width="60" height="50" alt="AITeCVI logo" />
-      </a> -->
             <a href="" class="header-logo">
-                <img src="landing/assets/images/L3.png" width="150" height="50" alt="AITeCVI logo" />
+                <img src="landing/assets/images/L3.png" width="180" height="50" alt="AITeCVI logo" />
             </a>
 
             <nav class="navbar" data-navbar>
                 <a href="">
-                    <img src="landing/assets/images/L3.png" width="150" height="50" alt="AITeCVI logo" />
+                    <img src="landing/assets/images/L3.png" width="180" height="50" alt="AITeCVI logo" />
                 </a>
                 <ul class="navbar-list">
                     <li class="navbar-item">
@@ -120,22 +101,18 @@
     </header>
 
     <main>
-        <article>
             <!-- 
         - #HERO
       -->
-
             <section class="section hero has-bg-image" id="home" aria-label="home" style="background-image: url('landing/assets/images/hero-bg.svg')">
                 <div class="container">
                     <div class="haldep" align="center">
                         <h1 class="judul" align="center">
-                            Agricultural Innovation Technology
+                           <span class="utama">AGRICULTURAL</span>  INNOVATION TECHNOLOGY COMPETITION VI
                         </h1>
                         <h2 align="center">
-                            <span class="red-text">Competition VI</span>
-                            <span class="black-text">Politekinik Negeri Lampung</span>
+                            <span class="text-two">(AITeC VI)</span><br><br><br>
                         </h2>
-                        </h1>
 
                         <a href="../loginn" class="btn has-before">
                             <span class="span">Login </span>
@@ -143,85 +120,64 @@
                             <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
                         </a>
                     </div>
+            <section >
+             <div class="video-banner">
+            <iframe loading="lazy" class="vid-cover"
+             src="https://www.youtube.com/embed/3x3pYDQ4G7k?rel=0" 
+                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            <button >
+      </button>
+    </div>
+  </section>
 
-                    <figure class="hero-banner">
 
-                        <section class="video has-bg-image" aria-label="video" style="background-image: url('landing/assets/images/video-bg.png')">
-                            <div class="video-banner img-holder has-after" style="--width: ; --height: ">
-                                <video id="vid1" width="970" height="550" loading="lazy" class="img-cover">
-                                    <source src="landing/assets/images/vid1.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                                <button class="play-btn" aria-label="play video" onclick="playVideo()">
-                                    <ion-icon name="play" aria-hidden="true"></ion-icon>
-                                </button>
-                            </div>
-                        </section>
-
-                        <!-- <div class="img-holder two" style="--width: 240; --height: 370">
-                <img
-                  src="./assets/images/hero-banner-2.jpg"
-                  width="240"
-                  height="370"
-                  alt="hero banner"
-                  class="img-cover"
-                />
-              </div> -->
-
-                    </figure>
                 </div>
-
             </section>
-
-
-
 
             <!-- 
-        - #CATEGORY
+        - #LatarBelakang
       -->
 
-            <section class="section category" aria-label="category" id="latar">
+            <section class="section LatarBelakang" aria-label="LatarBelakang" id="latar">
                 <div class="container">
                     <h2 class="h2 section-title">LATAR BELAKANG</h2>
-
-                    <p>
+                    <p style="text-indent:45px">
                     Upaya untuk meningkatkan minat, softskill, dan hardskill sumberdaya manusia dapat dilakukan melalui pendidikan formal dan pendidikan informal seperti pelatihan, penyuluhan, lokakarya, 
                     dan sebagainya. Dalam hal penyelenggaraan pendidikan formal, Perguruan Tinggi Vokasi (PTV) menjadi institusi pendidikan yang berperan besar untuk menghasilkan output lulusan yang tidak hanya menguasai teori, tetapi mampu mengaplikasikan penguasaan keahlian terapan tertentu. Hal ini bertujuan untuk menyiapkan sumberdaya manusia dengan kemampuan dan keterampilan bidang tertentu yang siap terjun ke dunia kerja dan dapat bersaing secara global. Dalam hal mewujudkan tujuan tersebut, motivasi untuk senantiasa meningkatkan kompetensi dan keterampilan dinilai memiliki tingkat urgensi yang tinggi bagi mahasiswa.
-                    </p><br>
-                    <p>
+                    </p>
+                    <p style="text-indent:45px">
                     Politeknik Negeri Lampung sebagai salah satu Perguruan Tinggi Vokasi senantiasa memprioritaskan kesempatan bagi mahasiswa untuk dapat terus memperbarui <i>(update)</i> dan meningkatkan <i>(upgrade)</i> kompetensi diri. Hal ini dilakukan karena adanya kesadaran penuh bahwa pendidikan vokasi berfokus pada pengembangan keterampilan yang merupakan modal utama yang dibutuhkan generasi muda untuk dapat bersaing. Di tahun 2024, Politeknik Negeri Lampung mengemban amanah sebagai tuan rumah penyelenggara event nasional, yaitu Kompetisi Inovasi Teknologi Bidang Pertanian ke-6 atau 6th <i>Agricultural Innovation Technology Competition</i> (AITeC VI) yang secara repetitif dilaksanakan di bawah pengawasan Badan Koordinasi Kemahasiswaan (BAKORMA) Politeknik se-Indonesia.
-                    </p><br>
-                    <p>
+                    </p>
+                    <p style="text-indent:45px">
                     Badan Koordinasi Kemahasiswaan (BAKORMA) Politeknik se-Indonesia memiliki tanggung jawab bidang kemahasiswaan di lingkup vokasi untuk pengembangan softskill mahasiswa pada tataran implementasi secara nasional. Salah satu program yang dimiliki oleh BAKORMA untuk pengembangan softskill tersebut adalah melalui penyelenggaraan Agricultural Innovation Technology Competition (AITeC) tingkat nasional yang dilakukan secara rutin untuk mahasiswa vokasi bidang pertanian. AITeC juga memfasilitasi mahasiswa untuk mengembangkan potensi diri, jiwa kompetitif yang sehat, dan kompetensi diri. Secara umum, selain untuk menjadi wadah bagi mahasiswa, kegiatan AITeC ini diarahkan untuk meningkatkan, produktivitas, efektivitas dan efisiensi, serta kualitas pertanian secara luas yang melalui suatu ide/gagasan, pemikiran kreatif, maupun inovasi-inovasi mutakhir yang mencakup pertanian pangan dan hortikultura, peternakan, perikanan, dan kehutanan. Tidak hanya itu, 
                     penyelenggaraan AITeC diharapkan mampu melahirkan peningkatan akses teknologi pertanian bagi petani kecil dan masyarakat pedesaan dengan pendekatan yang inklusif dan berkelanjutan.
-                    </p><br>
-                    <p>
+                    </p>
+                    <p style="text-indent:45px">
                     AITeC menjadi salah satu ajang tahunan bergengsi yang secara konsisten telah diselenggarakan selama 6 tahun berturut-turut dan berkontribusi dalam memberikan apresiasi (penghargaan) berskala nasional kepada mahasiswa yang berprestasi di AITeC. Hal ini sekaligus menunjukan komitmen BAKORMA untuk senantiasa mendukung dan memberikan peluang bagi Perguruan Tinggi untuk dapat meningkatkan persentase capaian Indikator Kinerja Utama (IKU) Perguruan Tinggi. Atas dasar pemikiran tersebut, AITeC VI Politeknik Negeri Lampung diharapkan mampu menjadi sebuah kompetisi bergengsi untuk meningkatkan kompetensi diri, menumbuhkan jiwa kompetitif yang sehat, sekaligus mempersiapkan diri untuk dapat bersaing di tingkat yang lebih tinggi lagi dan mengharumkan nama institusi atau Perguruan Tinggi.
                     </p><br>
-                    
-
-
                 </div>
             </section>
 
+            <!-- Tujuan dan Manfaat -->
 
-            <section class="section course" id="tujuan" aria-label="course">
+            <section class="section TM" id="tujuan" aria-label="course">
                 <div class="container">
-                    <h3 class="h2 section-title">Tujuan dan Manfaat Kompetisi</h3>
+                    <h3 class="h2 section-title">TUJUAN DAN MANFAAT KOMPETISI</h3>
                     <div class="row">
-
                         <ol type="A">
                             <li>
                                 <strong>TUJUAN</strong>
                                 <ol type="1">
                                     <li>
-                                    Memberikan wadah bagi mahasiswa untuk dapat berinovasi, meningkatkan kompetensi diri, kreativitas, dan kualitas produksi di bidang pertanian yang berwawasan lingkungan;
+                                        1. Memberikan wadah untuk mahasiswa dapat berinovasi, meningkatkan kompetensi diri, meningkatkan kreativitas, dan kualitas produksi
+                                        dibidang pertanian yang berwawasan lingkungan;
                                     </li>
                                     <li>
-                                    Memberikan apresiasi (penghargaan) berskala nasional kepada mahasiswa yang berprestasi di AITeC;
+                                        2. Memberikan penghargaan kepada mahasiswa yang berprestasi Tingkat Nasional Bidang Pertanian dalam kompetisi AITeC 2023;
                                     </li>
                                     <li>
-                                    Meningkatkan kualitas hubungan dan kerjasama antar Perguruan Tinggi Vokasi bidang pertanian di Indonesia.
+                                        3. Meningkatkan kualitas hubungan dan kerjasama antar perguruan tinggi vokasi bidang pertanian Indonesia.
                                         <br />
                                         <br />
                                     </li>
@@ -233,13 +189,14 @@
                                 <strong>MANFAAT</strong>
                                 <ol type="1">
                                     <li>
-                                    Tumbuhnya semangat dan motivasi dalam diri mahasiswa untuk berkompetisi yang sehat di bawah naungan Badan Koordinasi Kemahasiswaan Politeknik bidang pertanian;
+                                        1. Tumbuhnya semangat dan motivasi dalam diri mahasiswa untuk berkompetisi yang sehat dalam lingkup kemahasiswaan politeknik
+                                        bidang pertanian;
                                     </li>
                                     <li>
-                                    Terciptanya kreativitas, budaya berprestasi dan berinovasi dalam diri mahasiswa yang berorientasi pada peningkatan kualitas di bidang pertanian;
+                                        2. Terciptanya kreativitas, budaya berprestasi dan berinovasi dalam diri mahasiswa bidang pertanian;
                                     </li>
                                     <li>
-                                    Terbentuknya relasi dan silaturahmi yang baik antar civitas Perguruan Tinggi Vokasi bidang pertanian di Indonesia.
+                                        3. Terbentuknya relasi dan silaturahmi yang baik antar civitas perguruan tinggi vokasi bidang pertanian Indonesia.
                                     </li>
                                 </ol>
                             </li>
@@ -250,21 +207,25 @@
                 </div>
             </section>
 
-            <section class="section category" aria-label="category" id="kompetisi">
-                <div class="container">
-                    <h3 class="h2 section-title">Kompetisi</h3>
-                    <div class="row">
+            <!-- Kompetisi -->
 
+            <section class="section kompetisi" aria-label="kompetisi" id="kompetisi">
+                <div class="container">
+                    <h3 class="h2 section-title">KOMPETISI</h3>
+                    <div class="row">
                         <ol type="A">
                             <li>
                                 <strong>TEMA KOMPETISI</strong>
                                 <p style="font-style:italic">
                                 Tema untuk Kompetisi Inovasi Teknologi Bidang Pertanian VI  atau <i>Agricultural Innovation Technology Competition</i> 6th (AITeC VI) Politeknik Negeri Lampung tahun 2024 adalah: <br /><br />
 
-                                    <strong style="color:darkred; font-size:larger; font-style:normal;text-align:center">
+                                    <strong style="color:darkgreen; font-size:larger; font-style:normal;text-align:center">
                                     “Pemantapan Ketahanan Pangan melalui Peningkatan Inovasi Teknologi Bidang Pertanian dalam Mengantisipasi Perubahan Iklim Menuju Indonesia Emas 2045”
                                     </strong>
                                 </p>
+                                <br>
+                                <br />
+                            </li>
 
                             <li>
                                 <strong>LOGO KOMPETISI</strong>
@@ -276,43 +237,44 @@
                                     <div class="col-lg-4 col-md-6">
                                         <img class="img-fluid" src="landing/assets/images/L4.png">
                                     </div>
+
                                     <li>
                                 <p style="font-style:italic">
                                 Secara umum, terdapat 5 (lima) elemen yang mendasari filosofi konsep logo yang 
                                 digunakan pada penyelenggaraan AITeC VI Politeknik Negeri Lampung, yaitu: 
-                                <br /><br />
+                                <br />
 
                                 <ol>
                                     <strong><i><li>1. Warna Hijau dan Warna Kuning</li></i></strong>
-                                    <p>Warna hijau melambangkan kesuburan, pertumbuhan, dan keberlanjutan. Hal ini menunjukkan 
+                                    <p style="text-indent:45px">Warna hijau melambangkan kesuburan, pertumbuhan, dan keberlanjutan. Hal ini menunjukkan 
                                     pentingnya pertanian dalam menjaga ketahanan pangan dan keseimbangan lingkungan. Warna kuning melambangkan kemakmuran, kehangatan, dan optimisme. 
                                     Hal ini mencerminkan harapan dan potensi besar sektor pertanian di masa depan.
                                 </p>
                                 </ol>
                                 <ol>
                                 <strong><i><li>2. Elemen Tunas dan Daun</li></i></strong>
-                                    <p>Warna hijau melambangkan kesuburBentuk daun dan tunas melambangkan pertumbuhan dan 
+                                    <p style="text-indent:45px">Warna hijau melambangkan kesuburBentuk daun dan tunas melambangkan pertumbuhan dan 
                                         inovasi dalam teknologi pertanian. Penggunaan elemen ini menekankan pentingnya inovasi 
                                         teknologi untuk mendukung ketahanan pangan dan mengantisipasi perubahan iklim.
                                 </p>
                                 </ol>
                                 <ol>
                                 <strong><i><li>3. Pola Geometris dan Pola Tradisional</li></i></strong>
-                                    <p>Warna hijau melambangkan kesuburBentuk daun dan tunas melambangkan pertumbuhan dan 
+                                    <p style="text-indent:45px">Warna hijau melambangkan kesuburBentuk daun dan tunas melambangkan pertumbuhan dan 
                                         inovasi dalam teknologi pertanian. Penggunaan elemen ini menekankan pentingnya inovasi 
                                         teknologi untuk mendukung ketahanan pangan dan mengantisipasi perubahan iklim.
                                 </p>
                                 </ol>
                                 <ol>
                                 <strong><i><li>4. Konsep Simetris dan Kesatuan</li></i></strong>
-                                    <p>Konsep desain logo yang simetris melambangkan keseimbangan dan harmoni yang berperan 
+                                    <p style="text-indent:45px">Konsep desain logo yang simetris melambangkan keseimbangan dan harmoni yang berperan 
                                         penting untuk mencapai keberlanjutan dalam sektor pertanian. Selain itu, konsep kesatuan 
                                         yang ditampilkan pada logo mencerminkan kerjasama dan sinergi antara berbagai pihak untuk mencapai tujuan bersama.
                                 </p>
                                 </ol>
                                 <ol>
                                 <strong><i><li>5. Inisial AITeC VI</li></i></strong>
-                                    <p>AITeC VI adalah singkatan dari <i>"Agricultural Innovation Technology Competition"</i> y
+                                    <p style="text-indent:45px">AITeC VI adalah singkatan dari <i>"Agricultural Innovation Technology Competition"</i> y
                                         ang menunjukkan bahwa kegiatan ini adalah acara berkelanjutan yang sudah memasuki 
                                         tahun keenam sekaligus menunjukkan bentuk komitmen Badan Koordinasi Kemahasiswaan 
                                         Politeknik se-Indonesia untuk terus-menerus memberikan dukungan melalui penyelenggaraan 
@@ -320,7 +282,7 @@
                                         pada inovasi teknologi dan peningkatan kualitas produksi di sektor pertanian. </p>
                                 </ol>
                                 
-                                    <p>
+                                    <p style="text-indent:45px">
                                     Logo AITeC VI Politeknik Negeri Lampung dirancang dengan menggunakan elemen-elemen yang 
                                     secara umum merepresentasikan pertumbuhan, inovasi, keberlanjutan, dan kesatuan yang 
                                     selaras dengan tema “Pemantapan Ketahanan Pangan melalui Peningkatan 
@@ -338,7 +300,6 @@
                                     </div>
                                 </div>
                                 <br />
-                                <br />
                             </li>
 
                             <li>
@@ -350,6 +311,7 @@
                                             1. Kompetisi Inovasi Teknologi Bidang Pertanian (Agricultural Innovation
                                             Technology Competition),
                                         </strong>
+                                        <p style="text-indent:45px">
                                         Kompetisi ini merupakan suatu ajang unjuk kemampuan mahasiswa di bidang pertanian dengan 
                                         menekankan pada kemampuan dasar yang dilakukan  seorang dan/atau kelompok mahasiswa 
                                         pada tahap pengetahuan, keterampilan, dan sikap dalam pencapaian standar kompetensi 
@@ -357,6 +319,7 @@
                                         di bidang pertanian. Ruang lingkup kompetisi ini mencakup bidang pertanian pada 
                                         sektor tanaman pangan dan hortikultura, perkebunan, peternakan, kesehatan hewan, 
                                         perikanan, kehutanan, industri, ekonomi, dan teknologi. Kategori ini terdiri atas 2 (dua) cabang kompetisi, yaitu: <br />
+                                        </p>
                                         <ol>
                                         1. Inovasi Teknologi Bidang Pertanian sub-kategori Smart and Precision Farming
                                         </ol>
@@ -369,12 +332,14 @@
                                         <strong>
                                             2. Kontes Vokasi Bidang Pertanian (Agricultural Vocation Skill Contest),
                                         </strong>
+                                        <p style="text-indent:45px">
                                         Kompetisi ini merupakan suatu ajang unjuk kemampuan mahasiswa dengan menekankan 
                                         peningkatan keterampilan spesifik di bidang pertanian dan berkreasi dalam  mengembangkan 
                                         kompetensi inovatif untuk dapat meningkatkan efisiensi, produktivitas, serta kualitas
                                         pertanian yang berkelanjutan dengan tetap mengedepankan sisi sosial
                                         budaya pertanian dan kearifan lokal di Indonesia.
                                         Kategori ini terdiri atas 13 (tiga belas) cabang kompetisi, yaitu: <br />
+                                        </p>
                                         <ol>
                                             1.	Teknik Okulasi Tanaman 
                                         </ol>
@@ -420,7 +385,8 @@
                                     <li>
                                         <strong>
                                             3. Eksibisi Fotografi (Photography Exhibition)
-                                        <p></strong>
+                                        </strong>
+                                    <p style="text-indent:45px">
                                         Perlu disadari bahwa bakat dan talenta mahasiswa tidak hanya sebatas di bidang akademik, 
                                         tetapi juga di bidang seni sehingga diperlukan suatu kompetisi yang dapat berperan sebagai
                                         ajang unjuk kemampuan mahasiswa di bidang seni, terutama dalam lingkup fotografi dan videografi. 
@@ -429,7 +395,7 @@
                                         yang diharapkan mampu mendorong ranah pendidikan visual di Indonesia, khususnya fotografi,
                                         mampu bergerak ke arah yang lebih baik dan selaras dengan capaian kemajuan teknologi saat ini. 
                                     </p>
-                                    <p>
+                                    <p style="text-indent:45px">
                                     Tema kompetisi disesuaikan dengan tema penyelenggaraan AITeC secara umum, 
                                     yaitu fotografi di bidang pertanian. Peserta akan diberikan kesempatan 
                                     untuk mengeksplorasi pelaksanaan AITeC VI serta berbagai aktivitas yang ada 
@@ -453,7 +419,7 @@
                                         <strong>Babak Penyisihan dilaksanakan secara:</strong>
                                         <ol type="a">
                                             <li>
-                                            <strong style="color:darkred">
+                                            <strong style="color:darkgreen">
                                                     1.	Seleksi Internal
                                                 </strong>
                                                 Mahasiswa yang didaftarkan sebagai peserta di AITeC VI adalah hasil 
@@ -461,7 +427,7 @@
                                                 Perguruan Tinggi yang dibuktikan dengan lampiran Berita Acara Seleksi Internal.
                                             </li><br>
                                             <li>
-                                                <strong style="color:darkred">
+                                                <strong style="color:darkgreen">
                                                 2.	Seleksi secara daring (online)
                                                 </strong>
                                                 Pelaksanaan secara daring (online) atau seleksi online adalah proses seleksi bagi peserta yang ditujukan untuk 9 (sembilan) cabang kompetisi, yaitu:
@@ -477,7 +443,7 @@
                                                 <br />
                                             </li>
                                             <li>
-                                                <strong style="color:darkred">
+                                                <strong style="color:darkgreen">
                                                     3.	Pelaksanaan secara luring (offline)
                                                 </strong>
                                                 Pelaksanaan secara luring (offline) di Politeknik Negeri Lampung meliputi 7 (tujuh) cabang kompetisi dan seluruh babak final dari cabang kompetisi yang sebelumnya telah melalui proses seleksi daring (online). Adapun 7 (tujuh) cabang kompetisi yang dimaksud adalah:
@@ -499,13 +465,13 @@
                 </div>
             </section>
 
+            <!-- Kampus Peserta -->
 
-
-            <section class="section course" id="kampuspeserta" aria-label="course">
+            <section class="section KP" id="kampuspeserta" aria-label="course">
                 <div class="container">
 
                     <div class="section-header">
-                        <h3 class="h2 section-title">Kampus Peserta</h3>
+                        <h3 class="h2 section-title">KAMPUS PESERTA</h3>
                     </div>
 
                     <div class="row">
@@ -536,7 +502,8 @@
                 </div>
             </section>
 
-            <section class="section course" id="courses" aria-label="course">
+            <!-- Sambutan Direktur -->
+            <section class="section direktur" id="direktur" aria-label="course">
                 <div class="container">
 
                     <div class="section-header" id="direktur">
@@ -565,22 +532,23 @@
                                 <p style="text-align:justify; text-indent:45px">
                                 Kami, Politeknik Negeri Lampung, merasa sangat terhormat dan bangga dapat berperan dalam penyelenggaraan AITeC VI yang merupakan agenda tahunan Badan Koordinasi Kemahasiswaan (BAKORMA) Politeknik se-Indonesia. Sebagai tuan rumah, kami berkomitmen untuk memberikan yang terbaik dalam menyambut dan melayani para peserta, juri, dan seluruh pihak yang terlibat. Kami berharap melalui AITeC VI akan lahir inovasi-inovasi baru, pemikiran kreatif, dan solusi-solusi yang dapat memberikan kontribusi nyata bagi perkembangan dunia pendidikan dan industri di Indonesia.
                                 <p>
-                                    <p>
-                                    Pedoman ini disusun sebagai panduan bagi seluruh peserta dan panitia dalam mengikuti dan menyelenggarakan setiap rangkaian kegiatan AITeC VI. Kami berharap pedoman ini dapat dipahami dengan baik dan menjadi acuan yang memudahkan setiap pihak untuk berpartisipasi secara maksimal.
-                                    </p>
-                                    <p>
-                                    Akhir kata, saya ucapkan terima kasih kepada seluruh panitia dan pihak yang telah berkontribusi dalam persiapan dan pelaksanaan AITeC VI. Semoga acara ini dapat berjalan lancar dan sukses, serta memberikan manfaat yang besar bagi kita semua.
-                                    </p>
+                                <p style="text-indent:45px">
+                                Pedoman ini disusun sebagai panduan bagi seluruh peserta dan panitia dalam mengikuti dan menyelenggarakan setiap rangkaian kegiatan AITeC VI. Kami berharap pedoman ini dapat dipahami dengan baik dan menjadi acuan yang memudahkan setiap pihak untuk berpartisipasi secara maksimal.
+                                </p>
+                                <p style="text-indent:45px">
+                                Akhir kata, saya ucapkan terima kasih kepada seluruh panitia dan pihak yang telah berkontribusi dalam persiapan dan pelaksanaan AITeC VI. Semoga acara ini dapat berjalan lancar dan sukses, serta memberikan manfaat yang besar bagi kita semua.
+                                </p>
                                     <p>
                                     Wassalamu’alaikum warahmatullahi wabarakatuh.
                                     </p>
 
                                     <pre style="font-size:large">
-                            Direktur
-                                                                                                                
+                            Direktur Politeknik Negeri Lampung
+                                                            
+                                                       
 
                             Prof. Dr. Ir. Sarono, M.Si.
-                            </pre>
+                    </pre>
                             </div>
                         </div>
                     </div>
@@ -588,7 +556,9 @@
                 </div>
             </section>
 
-            <section class="section course" id="courses" aria-label="course">
+            <!-- sambutan ketua bakorma -->
+
+            <section class="section bakorma" id="bakorma" aria-label="course">
                 <div class="container">
 
                     <div class="section-header">
@@ -618,11 +588,11 @@
                                 <i>Agricultural Innovation Technology Competition</i> yang ke-6 (AITeC VI) merupakan salah satu ajang kompetisi yang sangat dinanti oleh mahasiswa Politeknik di seluruh Indonesia dimana kreativitas, inovasi, dan 
                                 kecakapan teknis mahasiswa diuji dan dipamerkan. AITeC bukan hanya sekadar ajang perlombaan, tetapi juga wadah untuk mempererat tali persaudaraan, memperluas jejaring, dan memperkaya wawasan antar mahasiswa Politeknik se-Indonesia. Oleh karena itu, penyelenggaraan AITeC harus terus didorong agar dapat menghasilkan generasi muda yang kompeten, siap bersaing di dunia kerja, dan mampu memberikan kontribusi nyata bagi pembangunan bangsa.  
                                 <p>
-                                    <p>
+                                    <p style="text-indent:45px">
                                     Saya berharap Pedoman AITeC VI ini dapat menjadi acuan yang jelas dan mudah dipahami oleh seluruh peserta, panitia, juri dan pihak terkait lainnya sehingga pelaksanaan AITeC VI dapat berjalan lancar dan mencapai tujuan yang diharapkan. 
                                     Mari kita jadikan AITeC VI tahun 2024 yang dilaksanakan di Politeknik Negeri Lampung sebagai momentum untuk menunjukkan bahwa mahasiswa Perguruan Tinggi Vokasi adalah insan yang kreatif, inovatif, dan berdaya saing tinggi.
                                     </p>
-                                    <p>
+                                    <p style="text-indent:45px">
                                     Akhir kata, saya ucapkan terima kasih kepada semua pihak yang telah mendukung terselenggaranya AITeC VI. Semoga Allah SWT senantiasa 
                                     melimpahkan berkah dan rahmat-Nya kepada kita semua dalam setiap langkah yang kita ambil.
                                     </p>
@@ -646,7 +616,9 @@
                 </div>
             </section>
 
-            <section class="section category" aria-label="category">
+            <!-- sambutan ketua panitia -->
+
+            <section class="section panitia" aria-label="category">
                 <div class="container">
 
                     <div class="section-header" id="panitia">
@@ -679,7 +651,7 @@
                                 <p style="text-align:justify; text-indent:45px">
                                 Kepada seluruh peserta, kami ucapkan selamat bertanding. Kami yakin bahwa setiap ide dan inovasi yang Anda hadirkan akan menjadi inspirasi dan memberikan dampak positif. Jadikanlah kesempatan ini sebagai ajang untuk belajar, berkembang, dan berkompetisi dengan menjunjung semangat sportivitas yang tinggi.    
                                 <p>
-                                    <p>
+                                    <p style="text-indent:45px">
                                     Akhir kata, kami berharap acara AITeC VI tahun 2024 dapat berjalan dengan sukses, menjadi pengalaman yang berharga serta mampu memberikan kesan yang mendalam bagi semua pihak yang terlibat. Semoga kegiatan ini dapat mempererat tali silaturahmi dan memberikan kontribusi yang berarti bagi kemajuan ilmu pengetahuan dan teknologi.
                                     </p>
 
@@ -692,7 +664,7 @@
                                                             
                                                        
 
-                            Riko Noviadi
+                            Riko Noviadi,S.Pt.,M.Pt
                     </pre>
                             </div>
                         </div>
@@ -701,11 +673,13 @@
                 </div>
             </section>
 
-            <section class="section course" id="pengumuman" aria-label="course">
+            <!-- pengumuman -->
+
+            <section class="section pengumuman" id="pengumuman" aria-label="course">
                 <div class="container">
 
                     <div class="section-header">
-                        <h3 class="h2 section-title">Pengumuman</h3>
+                        <h2 class="h2 section-title">PENGUMUMAN</h2>
                     </div>
 
                     <div class="row">
@@ -725,7 +699,7 @@
                                         <tr>
                                             <td><?= $i++; ?></td>
                                             <td align="center">Buku Paanduan</td>
-                                            <td><a href="https://drive.google.com/file/d/1HPU4g-FFDIld1npP6i0WZlXjDkekOFqm/view?usp=sharing">Klik Disini</a></td>
+                                            <td  align="center"><a href="https://drive.google.com/file/d/1HPU4g-FFDIld1npP6i0WZlXjDkekOFqm/view?usp=sharing">Klik Disini</a></td>
                                         </tr>
                                     <?php endforeach; ?>
                                 </tbody>
@@ -735,874 +709,771 @@
                 </div>
             </section>
 
+            <!-- juri -->
 
-            <section class="section course" id="juri" aria-label="course">
+            <section class="section juri" id="juri" aria-label="course">
                 <div class="container">
 
                     <div class="section-header">
-                        <h2 class="h2 section-title">JURI AITEC 6</h2>
-                    </div>
-                    <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
-                        <div class="col-lg-9">
-
-                            <ul class="faq-list">
-
-                                <li>
-                                    <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">Teknologi Bidang Pertanian <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-                                    <div id="faq1" class="collapse" data-bs-parent=".faq-list">
-                                        <div class="row" style="padding-top:20px">
-                                            <div class="dropdown-content">
-                                                <a href="#latarbelakang">Latar Belakang</a>
-                                                <a href="#tujuan">Tujuan dan Manfaat</a>
-                                                <a href="#kompetisi">Kompetisi</a>
-                                                <a href="#kampuspeserta">Kampus Peserta</a>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6">
-                                                <div class="speaker">
-                                                    <img src="landing/assets/img/speakers/J11.jpg" alt="" class="img-fluid">
-
-                                                </div>
-                                                <h6 style="font-weight:bold; text-align:center; padding-top:10px">
-                                                    Welianto Boboy, SP., M.Sc <br />
-                                                    (Politeknik Pertanian Negeri Kupang)
-                                                </h6>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6">
-                                                <div class="speaker">
-                                                    <img src="landing/assets/img/speakers/J12.jpg" alt="" class="img-fluid">
-                                                </div>
-                                                <h6 style="font-weight: bold; text-align: center; padding-top: 10px">
-                                                    Dr. Rahmad D, SP.,M.Si <br />
-                                                    (Politeknik Pertanian Negeri Pangkajene Kepulauan)
-                                                </h6>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6">
-                                                <div class="speaker">
-                                                    <img src="landing/assets/img/speakers/j13.jpg" alt="" class="img-fluid">
-
-                                                    <h6 style="font-weight: bold; text-align: center; padding-top: 10px">
-                                                        Robinson A. Wadu, ST., MT <br />
-                                                        (Politeknik Negeri Kupang)
-                                                    </h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">Teknik Okulasi Tanaman <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-                                    <div id="faq2" class="collapse" data-bs-parent=".faq-list">
-                                        <div class="row" style="padding-top:20px">
-                                            <div class="col-lg-4 col-md-6">
-                                                <div class="speaker">
-                                                    <img src="landing/assets/img/speakers/J21.jpg" alt="" class="img-fluid">
-
-                                                </div>
-                                                <h6 style="font-weight:bold; text-align:center; padding-top:10px">
-                                                    Olivina S. Messakh,SP.,MP <br />
-                                                    (Politeknik Pertanian Negeri Kupang)
-                                                </h6>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6">
-                                                <div class="speaker">
-                                                    <img src="landing/assets/img/speakers/J22.jpg" alt="" class="img-fluid">
-                                                </div>
-                                                <h6 style="font-weight: bold; text-align: center; padding-top: 10px">
-                                                    Dwi Rahmawati, SP.,M.P <br />
-                                                    (Politeknik Negeri Jember)
-                                                </h6>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6">
-                                                <div class="speaker">
-                                                    <img src="landing/assets/img/speakers/j23.jpg" alt="" class="img-fluid">
-
-                                                    <h6 style="font-weight: bold; text-align: center; padding-top: 10px">
-                                                        Yohanes Lalang <br />
-                                                        (Ketua P4S Abdi Laboratus)
-                                                    </h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">
-                                        Teknik Proses Karkas Ayam <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i>
-                                    </div>
-                                    <div id="faq3" class="collapse" data-bs-parent=".faq-list">
-                                        <div class="row" style="padding-top:20px">
-                                            <div class="col-lg-4 col-md-6">
-                                                <div class="speaker">
-                                                    <img src="landing/assets/img/speakers/J31.jpg" alt="" class="img-fluid">
-
-                                                </div>
-                                                <h6 style="font-weight:bold; text-align:center; padding-top:10px">
-                                                    Dr. Cytske Sabuna, S.Pt., M.Si <br />
-                                                    (Politeknik Pertanian Negeri Kupang)
-                                                </h6>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6">
-                                                <div class="speaker">
-                                                    <img src="landing/assets/img/speakers/J32.jpg" alt="" class="img-fluid">
-                                                </div>
-                                                <h6 style="font-weight: bold; text-align: center; padding-top: 10px">
-                                                    Dr. drh. Dwi D. Putri., M.Si <br />
-                                                    (Politeknik Negeri Lampung)
-                                                </h6>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6">
-                                                <div class="speaker">
-                                                    <img src="landing/assets/img/speakers/j33.jpg" alt="" class="img-fluid">
-                                                    <h6 style="font-weight: bold; text-align: center; padding-top: 10px">
-                                                        Wenslaus Watu <br />
-                                                        (Manajer Divisi Butcher LIPPO PLAZA)
-                                                    </h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">Teknik Proses Fillet Ikan<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-                                    <div id="faq4" class="collapse" data-bs-parent=".faq-list">
-                                        <div class="row" style="padding-top:20px">
-                                            <div class="col-lg-4 col-md-6">
-                                                <div class="speaker">
-                                                    <img src="landing/assets/img/speakers/J41.jpg" alt="" class="img-fluid">
-
-                                                </div>
-                                                <h6 style="font-weight:bold; text-align:center; padding-top:10px">
-                                                    Naema Bora, STP., M.Si <br />
-                                                    (Politeknik Pertanian Negeri Kupang)
-                                                </h6>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6">
-                                                <div class="speaker">
-                                                    <img src="landing/assets/img/speakers/J42.jpg" alt="" class="img-fluid">
-                                                </div>
-                                                <h6 style="font-weight: bold; text-align: center; padding-top: 10px">
-                                                    Obyn I. Pumpente S.Pi,M.Si <br />
-                                                    (Politeknik Negeri Nusa Utara)
-                                                </h6>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6">
-                                                <div class="speaker">
-                                                    <img src="landing/assets/img/speakers/j43.jpg" alt="" class="img-fluid">
-                                                    <h6 style="font-weight: bold; text-align: center; padding-top: 10px">
-                                                        Breva Rizqi D. N <br />
-                                                        (GM PT. Matsyaraja A. Stambhapura)
-                                                    </h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">Penyuluhan Pertanian <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-                                    <div id="faq5" class="collapse" data-bs-parent=".faq-list">
-                                        <div class="row" style="padding-top:20px">
-                                            <div class="col-lg-4 col-md-6">
-                                                <div class="speaker">
-                                                    <img src="landing/assets/img/speakers/J51.jpg" alt="" class="img-fluid">
-
-                                                </div>
-                                                <h6 style="font-weight:bold; text-align:center; padding-top:10px">
-                                                    Prof. Dr. Ir. Rupa Mateus, M.Si <br />
-                                                    (Politeknik Pertanian Negeri Kupang)
-                                                </h6>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6">
-                                                <div class="speaker">
-                                                    <img src="landing/assets/img/speakers/J52.jpg" alt="" class="img-fluid">
-                                                </div>
-                                                <h6 style="font-weight: bold; text-align: center; padding-top: 10px">
-                                                    Mohammad I.Hilal S.St., M.St <br />
-                                                    (Politeknik Negeri Banyuwangi)
-                                                </h6>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6">
-                                                <div class="speaker">
-                                                    <img src="landing/assets/img/speakers/j53.jpg" alt="" class="img-fluid">
-                                                    <h6 style="font-weight: bold; text-align: center; padding-top: 10px">
-                                                        Petrus D. N. Dawa Djabur, SP <br />
-                                                        (Penyuluh Pertanian)
-                                                    </h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">Desain Alat dan Mesin (ALSIN) Pertanian dengan AutoCAD <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-                                    <div id="faq6" class="collapse" data-bs-parent=".faq-list">
-                                        <div class="row" style="padding-top:20px">
-                                            <div class="col-lg-4 col-md-6">
-                                                <div class="speaker">
-                                                    <img src="landing/assets/img/speakers/J61.jpg" alt="" class="img-fluid">
-
-                                                </div>
-                                                <h6 style="font-weight:bold; text-align:center; padding-top:10px">
-                                                    Alexius Leonardo Johanis, S.T., M.T <br />
-                                                    (Politeknik Negeri Kupang)
-                                                </h6>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6">
-                                                <div class="speaker">
-                                                    <img src="landing/assets/img/speakers/J62.jpg" alt="" class="img-fluid">
-                                                </div>
-                                                <h6 style="font-weight: bold; text-align: center; padding-top: 10px">
-                                                    Dr. Edi Syafri, S.T., M.Si <br />
-                                                    (Politeknik Pertanian Negeri Payakumbuh)
-                                                </h6>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6">
-                                                <div class="speaker">
-                                                    <img src="landing/assets/img/speakers/j63.jpg" alt="" class="img-fluid">
-                                                    <h6 style="font-weight: bold; text-align: center; padding-top: 10px">
-                                                        Edwin Ariesto Umbu Malahina,S.Kom., MT.,CIP.,C.ACS <br />
-                                                        Founder dan Owner DINEGO (Startup : Ecommerce Ads & Socia)
-                                                    </h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-
-
-                                <li>
-                                    <div data-bs-toggle="collapse" href="#faq7" class="collapsed question">Formulasi Pakan Ternak <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-                                    <div id="faq7" class="collapse" data-bs-parent=".faq-list">
-                                        <div class="row" style="padding-top:20px">
-                                            <div class="col-lg-4 col-md-6">
-                                                <div class="speaker">
-                                                    <img src="landing/assets/img/speakers/J71.jpg" alt="" class="img-fluid">
-
-                                                </div>
-                                                <h6 style="font-weight:bold; text-align:center; padding-top:10px">
-                                                    Catootjie L. Nalle, Ph.D <br />
-                                                    (Politeknik Pertanian Negeri Kupang)
-                                                </h6>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6">
-                                                <div class="speaker">
-                                                    <img src="landing/assets/img/speakers/J72.jpg" alt="" class="img-fluid">
-                                                </div>
-                                                <h6 style="font-weight: bold; text-align: center; padding-top: 10px">
-                                                    Dwi Ahmad Priyadi,S.Pt., M.Sc <br />
-                                                    (Politeknik Negeri Banyuwangi)
-                                                </h6>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6">
-                                                <div class="speaker">
-                                                    <img src="landing/assets/img/speakers/j73.jpg" alt="" class="img-fluid">
-                                                    <h6 style="font-weight: bold; text-align: center; padding-top: 10px">
-                                                        Rip Krishaditersanto,S.Pt.,M.Si <br />
-                                                        (Balai Besar Pelatihan Peternakan Kupang)
-                                                    </h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div data-bs-toggle="collapse" href="#faq8" class="collapsed question">Formulasi Pakan Ikan <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-                                    <div id="faq8" class="collapse" data-bs-parent=".faq-list">
-                                        <div class="row" style="padding-top:20px">
-                                            <div class="col-lg-4 col-md-6">
-                                                <div class="speaker">
-                                                    <img src="landing/assets/img/speakers/J81.jpg" alt="" class="img-fluid">
-
-                                                </div>
-                                                <h6 style="font-weight:bold; text-align:center; padding-top:10px">
-                                                    Dr. Theresia Koni S.Pt.,M.Si <br />
-                                                    (Politeknik Pertanian Negeri Kupang)
-                                                </h6>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6">
-                                                <div class="speaker">
-                                                    <img src="landing/assets/img/speakers/J82.jpg" alt="" class="img-fluid">
-                                                </div>
-                                                <h6 style="font-weight: bold; text-align: center; padding-top: 10px">
-                                                    Jetti T. Saselah, S.Pi., M.Si <br />
-                                                    (Politeknik Negeri Nusa Utara)
-                                                </h6>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6">
-                                                <div class="speaker">
-                                                    <img src="landing/assets/img/speakers/j83.jpg" alt="" class="img-fluid">
-                                                    <h6 style="font-weight: bold; text-align: center; padding-top: 10px">
-                                                        Asriati Djonu,S.Pi.,MP <br />
-                                                        (Praktisi - Universitas Nusa Cendana)
-                                                    </h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-
-
-                                <li>
-                                    <div data-bs-toggle="collapse" href="#faq9" class="collapsed question">Packing Benih Ikan <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-                                    <div id="faq9" class="collapse" data-bs-parent=".faq-list">
-                                        <div class="row" style="padding-top:20px">
-                                            <div class="col-lg-4 col-md-6">
-                                                <div class="speaker">
-                                                    <img src="landing/assets/img/speakers/J91.jpg" alt="" class="img-fluid">
-
-                                                </div>
-                                                <h6 style="font-weight:bold; text-align:center; padding-top:10px">
-                                                    Muhammad Panuntun, A.Md.Pi <br />
-                                                    (Politeknik Pertanian Negeri Kupang)
-                                                </h6>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6">
-                                                <div class="speaker">
-                                                    <img src="landing/assets/img/speakers/J92.jpg" alt="" class="img-fluid">
-                                                </div>
-                                                <h6 style="font-weight: bold; text-align: center; padding-top: 10px">
-                                                    Dr. Ir. Muhammad Ikbal Illjas., M.Sc <br />
-                                                    (Politeknik Pertanian Negeri Pangkajene Kepulauan)
-                                                </h6>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6">
-                                                <div class="speaker">
-                                                    <img src="landing/assets/img/speakers/j93.jpg" alt="" class="img-fluid">
-                                                    <h6 style="font-weight: bold; text-align: center; padding-top: 10px">
-                                                        Marselinus Blitanagy, SM <br />
-                                                        (Aneka Anugerah Aquaculture)
-                                                    </h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div data-bs-toggle="collapse" href="#faq10" class="collapsed question">Teknik Pembuatan Bakso Ikan <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-                                    <div id="faq10" class="collapse" data-bs-parent=".faq-list">
-                                        <div class="row" style="padding-top:20px">
-                                            <div class="col-lg-4 col-md-6">
-                                                <div class="speaker">
-                                                    <img src="landing/assets/img/speakers/J101.jpg" alt="" class="img-fluid">
-
-                                                </div>
-                                                <h6 style="font-weight:bold; text-align:center; padding-top:10px">
-                                                    Zulianatul Hidayah, STP., M.Sc <br />
-                                                    (Politeknik Pertanian Negeri Kupang)
-                                                </h6>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6">
-                                                <div class="speaker">
-                                                    <img src="landing/assets/img/speakers/J102.jpg" alt="" class="img-fluid">
-                                                </div>
-                                                <h6 style="font-weight: bold; text-align: center; padding-top: 10px">
-                                                    Ir. Fien Sudirjo,M.Sc <br />
-                                                    (Politeknik Perikanan Negeri Tual)
-                                                </h6>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6">
-                                                <div class="speaker">
-                                                    <img src="landing/assets/img/speakers/j103.jpg" alt="" class="img-fluid">
-                                                    <h6 style="font-weight: bold; text-align: center; padding-top: 10px">
-                                                        Etni Ira Risva Banunu, S.Si <br />
-                                                        (Kelompok Substansi Infokom-Balai POM Kupang)
-                                                    </h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div data-bs-toggle="collapse" href="#faq11" class="collapsed question">Survey dan Pemetaan <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-                                    <div id="faq11" class="collapse" data-bs-parent=".faq-list">
-                                        <div class="row" style="padding-top:20px">
-                                            <div class="col-lg-4 col-md-6">
-                                                <div class="speaker">
-                                                    <img src="landing/assets/img/speakers/J111.jpg" alt="" class="img-fluid">
-
-                                                </div>
-                                                <h6 style="font-weight:bold; text-align:center; padding-top:10px">
-                                                    Melkianus Pobas, S.T., M.Sc <br />
-                                                    (Politeknik Pertanian Negeri Kupang)
-                                                </h6>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6">
-                                                <div class="speaker">
-                                                    <img src="landing/assets/img/speakers/J112.jpg" alt="" class="img-fluid">
-                                                </div>
-                                                <h6 style="font-weight: bold; text-align: center; padding-top: 10px">
-                                                    Husmul Beze, S.Hut., M.Si <br />
-                                                    (Politeknik Negeri Samarinda)
-                                                </h6>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6">
-                                                <div class="speaker">
-                                                    <img src="landing/assets/img/speakers/j113.jpg" alt="" class="img-fluid">
-                                                    <h6 style="font-weight: bold; text-align: center; padding-top: 10px">
-                                                        Umbu Deny Esau Hawula,S.Hut., M.Ling <br />
-                                                        (BPKH Kupang)
-                                                    </h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div data-bs-toggle="collapse" href="#faq12" class="collapsed question">Teknik Pengambilan Sampel Darah Ayam <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-                                    <div id="faq12" class="collapse" data-bs-parent=".faq-list">
-                                        <div class="row" style="padding-top:20px">
-                                            <div class="col-lg-4 col-md-6">
-                                                <div class="speaker">
-                                                    <img src="landing/assets/img/speakers/J121.jpg" alt="" class="img-fluid">
-
-                                                </div>
-                                                <h6 style="font-weight:bold; text-align:center; padding-top:10px">
-                                                    Dr.drh.Petrus M. Bulu, BVSc,MVSc <br />
-                                                    (Politeknik Pertanian Negeri Kupang)
-                                                </h6>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6">
-                                                <div class="speaker">
-                                                    <img src="landing/assets/img/speakers/J122.jpg" alt="" class="img-fluid">
-                                                </div>
-                                                <h6 style="font-weight: bold; text-align: center; padding-top: 10px">
-                                                    drh. Ulva Mohtar Lutfi <br />
-                                                    (Politeknik Pertanian Negeri Payakumbuh)
-                                                </h6>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6">
-                                                <div class="speaker">
-                                                    <img src="landing/assets/img/speakers/j123.jpg" alt="" class="img-fluid">
-                                                    <h6 style="font-weight: bold; text-align: center; padding-top: 10px">
-                                                        Drh. Hilda S.D Berek, M.Sc <br />
-                                                        (UPTD Veteriner Disnak Provinsi NTT)
-                                                    </h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div data-bs-toggle="collapse" href="#faq13" class="collapsed question">Sortasi Biji Kopi <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-                                    <div id="faq13" class="collapse" data-bs-parent=".faq-list">
-                                        <div class="row" style="padding-top:20px">
-                                            <div class="col-lg-4 col-md-6">
-                                                <div class="speaker">
-                                                    <img src="landing/assets/img/speakers/J131.jpg" alt="" class="img-fluid">
-
-                                                </div>
-                                                <h6 style="font-weight:bold; text-align:center; padding-top:10px">
-                                                    Krisna Setiawan, S.P., M.Sc <br />
-                                                    (Politeknik Pertanian Negeri Kupang)
-                                                </h6>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6">
-                                                <div class="speaker">
-                                                    <img src="landing/assets/img/speakers/J132.jpg" alt="" class="img-fluid">
-                                                </div>
-                                                <h6 style="font-weight: bold; text-align: center; padding-top: 10px">
-                                                    Ir. Ujang Setyoko,M.P <br />
-                                                    (Politeknik Negeri Jember)
-                                                </h6>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6">
-                                                <div class="speaker">
-                                                    <img src="landing/assets/img/speakers/j133.jpg" alt="" class="img-fluid">
-                                                    <h6 style="font-weight: bold; text-align: center; padding-top: 10px">
-                                                        Muhamad Fikri Shobari <br />
-                                                        (Founder Nemukebun Kopi)
-                                                    </h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div data-bs-toggle="collapse" href="#faq14" class="collapsed question">Kontes Handling Ternak <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-                                    <div id="faq14" class="collapse" data-bs-parent=".faq-list">
-                                        <div class="row" style="padding-top:20px">
-                                            <div class="col-lg-4 col-md-6">
-                                                <div class="speaker">
-                                                    <img src="landing/assets/img/speakers/J141.jpg" alt="" class="img-fluid">
-
-                                                </div>
-                                                <h6 style="font-weight:bold; text-align:center; padding-top:10px">
-                                                    Alfred Bait Saubaki, S.Sos <br />
-                                                    (Politeknik Pertanian Negeri Kupang)
-                                                </h6>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6">
-                                                <div class="speaker">
-                                                    <img src="landing/assets/img/speakers/J142.jpg" alt="" class="img-fluid">
-                                                </div>
-                                                <h6 style="font-weight: bold; text-align: center; padding-top: 10px">
-                                                    Riko Noviadi,S.Pt.,M.Pt <br />
-                                                    (Politeknik Negeri Lampung)
-                                                </h6>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6">
-                                                <div class="speaker">
-                                                    <img src="landing/assets/img/speakers/j143.jpg" alt="" class="img-fluid">
-                                                    <h6 style="font-weight: bold; text-align: center; padding-top: 10px">
-                                                        Erfan Kustiawan, S.Pt., M.P <br />
-                                                        (Politeknik Negeri Jember)
-                                                    </h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-
-                            </ul>
-
-                        </div>
+                        <h2 class="h2 section-title">JURI AITeC VI</h2>
                     </div>
 
-                </div>
-            </section>
+                    <!-- Daftar Cabang Perlombaan -->
+                    <div class="cabang-perlombaan">
 
-            <section class="section category" aria-label="category" id="kordinator">
-                <div class="container">
+                        <!-- Cabang 1 -->
+                        <details class="cabang">
+                            <summary class="cabang-title">Lomba Inovasi AI</summary>
+                            <div class="juri-list">
+                                <div class="juri-item">
+                                    <img src="path/to/juri1.jpg" alt="Juri 1" class="juri-img">
+                                    <h4 class="juri-name">Juri 1</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                                <div class="juri-item">
+                                    <img src="path/to/juri2.jpg" alt="Juri 2" class="juri-img">
+                                    <h4 class="juri-name">Juri 2</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                                <div class="juri-item">
+                                    <img src="path/to/juri3.jpg" alt="Juri 3" class="juri-img">
+                                    <h4 class="juri-name">Juri 3</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                            </div>
+                        </details>
 
-                    <div class="section-header">
-                        <h2 class="h2 section-title">Kordinator AITEC 6</h2>
+                        <!-- Cabang 2 -->
+                        <details class="cabang">
+                            <summary class="cabang-title">Lomba Inovasi Non AI</summary>
+                            <div class="juri-list">
+                                <div class="juri-item">
+                                    <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
+                                    <h4 class="juri-name">Juri 4</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                                <div class="juri-item">
+                                    <img src="path/to/juri5.jpg" alt="Juri 5" class="juri-img">
+                                    <h4 class="juri-name">Juri 5</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                                <div class="juri-item">
+                                    <img src="path/to/juri6.jpg" alt="Juri 6" class="juri-img">
+                                    <h4 class="juri-name">Juri 6</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                            </div>
+                        </details>
+
+                        <!-- Cabang 3 -->
+                        <details class="cabang">
+                            <summary class="cabang-title">Lomba Okulasi</summary>
+                            <div class="juri-list">
+                                <div class="juri-item">
+                                    <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
+                                    <h4 class="juri-name">Juri 4</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                                <div class="juri-item">
+                                    <img src="path/to/juri5.jpg" alt="Juri 5" class="juri-img">
+                                    <h4 class="juri-name">Juri 5</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                                <div class="juri-item">
+                                    <img src="path/to/juri6.jpg" alt="Juri 6" class="juri-img">
+                                    <h4 class="juri-name">Juri 6</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                            </div>
+                        </details>
+
+                        <!-- Cabang 4 -->
+                        <details class="cabang">
+                            <summary class="cabang-title">Sortasi biji Kopi</summary>
+                            <div class="juri-list">
+                                <div class="juri-item">
+                                    <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
+                                    <h4 class="juri-name">Juri 4</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                                <div class="juri-item">
+                                    <img src="path/to/juri5.jpg" alt="Juri 5" class="juri-img">
+                                    <h4 class="juri-name">Juri 5</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                                <div class="juri-item">
+                                    <img src="path/to/juri6.jpg" alt="Juri 6" class="juri-img">
+                                    <h4 class="juri-name">Juri 6</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                            </div>
+                        </details>
+
+                        <!-- Cabang 5 -->
+                        <details class="cabang">
+                            <summary class="cabang-title">Handling Ternak</summary>
+                            <div class="juri-list">
+                                <div class="juri-item">
+                                    <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
+                                    <h4 class="juri-name">Juri 4</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                                <div class="juri-item">
+                                    <img src="path/to/juri5.jpg" alt="Juri 5" class="juri-img">
+                                    <h4 class="juri-name">Juri 5</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                                <div class="juri-item">
+                                    <img src="path/to/juri6.jpg" alt="Juri 6" class="juri-img">
+                                    <h4 class="juri-name">Juri 6</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                            </div>
+                        </details>
+
+                        <!-- Cabang 6 -->
+                        <details class="cabang">
+                            <summary class="cabang-title">Karkas Ayam</summary>
+                            <div class="juri-list">
+                                <div class="juri-item">
+                                    <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
+                                    <h4 class="juri-name">Juri 4</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                                <div class="juri-item">
+                                    <img src="path/to/juri5.jpg" alt="Juri 5" class="juri-img">
+                                    <h4 class="juri-name">Juri 5</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                                <div class="juri-item">
+                                    <img src="path/to/juri6.jpg" alt="Juri 6" class="juri-img">
+                                    <h4 class="juri-name">Juri 6</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                            </div>
+                        </details>
+
+                        <!-- Cabang 7 -->
+                        <details class="cabang">
+                            <summary class="cabang-title">Formulasi Ransum Ternak</summary>
+                            <div class="juri-list">
+                                <div class="juri-item">
+                                    <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
+                                    <h4 class="juri-name">Juri 4</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                                <div class="juri-item">
+                                    <img src="path/to/juri5.jpg" alt="Juri 5" class="juri-img">
+                                    <h4 class="juri-name">Juri 5</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                                <div class="juri-item">
+                                    <img src="path/to/juri6.jpg" alt="Juri 6" class="juri-img">
+                                    <h4 class="juri-name">Juri 6</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                            </div>
+                        </details>
+
+                        <!-- Cabang 8 -->
+                        <details class="cabang">
+                            <summary class="cabang-title">Formulasi Ransum Ikan</summary>
+                            <div class="juri-list">
+                                <div class="juri-item">
+                                    <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
+                                    <h4 class="juri-name">Juri 4</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                                <div class="juri-item">
+                                    <img src="path/to/juri5.jpg" alt="Juri 5" class="juri-img">
+                                    <h4 class="juri-name">Juri 5</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                                <div class="juri-item">
+                                    <img src="path/to/juri6.jpg" alt="Juri 6" class="juri-img">
+                                    <h4 class="juri-name">Juri 6</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                            </div>
+                        </details>
+
+                        <!-- Cabang 9 -->
+                        <details class="cabang">
+                            <summary class="cabang-title">Bakso Ikan</summary>
+                            <div class="juri-list">
+                                <div class="juri-item">
+                                    <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
+                                    <h4 class="juri-name">Juri 4</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                                <div class="juri-item">
+                                    <img src="path/to/juri5.jpg" alt="Juri 5" class="juri-img">
+                                    <h4 class="juri-name">Juri 5</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                                <div class="juri-item">
+                                    <img src="path/to/juri6.jpg" alt="Juri 6" class="juri-img">
+                                    <h4 class="juri-name">Juri 6</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                            </div>
+                        </details>
+
+                        <!-- Cabang 10 -->
+                        <details class="cabang">
+                            <summary class="cabang-title">Fillet Ikan</summary>
+                            <div class="juri-list">
+                                <div class="juri-item">
+                                    <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
+                                    <h4 class="juri-name">Juri 4</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                                <div class="juri-item">
+                                    <img src="path/to/juri5.jpg" alt="Juri 5" class="juri-img">
+                                    <h4 class="juri-name">Juri 5</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                                <div class="juri-item">
+                                    <img src="path/to/juri6.jpg" alt="Juri 6" class="juri-img">
+                                    <h4 class="juri-name">Juri 6</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                            </div>
+                        </details>
+
+                        <!-- Cabang 11 -->
+                        <details class="cabang">
+                            <summary class="cabang-title">Packing benih ikan</summary>
+                            <div class="juri-list">
+                                <div class="juri-item">
+                                    <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
+                                    <h4 class="juri-name">Juri 4</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                                <div class="juri-item">
+                                    <img src="path/to/juri5.jpg" alt="Juri 5" class="juri-img">
+                                    <h4 class="juri-name">Juri 5</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                                <div class="juri-item">
+                                    <img src="path/to/juri6.jpg" alt="Juri 6" class="juri-img">
+                                    <h4 class="juri-name">Juri 6</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                            </div>
+                        </details>
+
+                        <!-- Cabang 12 -->
+                        <details class="cabang">
+                            <summary class="cabang-title">Pemetaan Lahan</summary>
+                            <div class="juri-list">
+                                <div class="juri-item">
+                                    <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
+                                    <h4 class="juri-name">Juri 4</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                                <div class="juri-item">
+                                    <img src="path/to/juri5.jpg" alt="Juri 5" class="juri-img">
+                                    <h4 class="juri-name">Juri 5</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                                <div class="juri-item">
+                                    <img src="path/to/juri6.jpg" alt="Juri 6" class="juri-img">
+                                    <h4 class="juri-name">Juri 6</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                            </div>
+                        </details>
+
+                        <!-- Cabang 13 -->
+                        <details class="cabang">
+                            <summary class="cabang-title">Desain Alat Autocad</summary>
+                            <div class="juri-list">
+                                <div class="juri-item">
+                                    <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
+                                    <h4 class="juri-name">Juri 4</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                                <div class="juri-item">
+                                    <img src="path/to/juri5.jpg" alt="Juri 5" class="juri-img">
+                                    <h4 class="juri-name">Juri 5</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                                <div class="juri-item">
+                                    <img src="path/to/juri6.jpg" alt="Juri 6" class="juri-img">
+                                    <h4 class="juri-name">Juri 6</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                            </div>
+                        </details>
+
+                        <!-- Cabang 14 -->
+                        <details class="cabang">
+                            <summary class="cabang-title">Penyuluhan</summary>
+                            <div class="juri-list">
+                                <div class="juri-item">
+                                    <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
+                                    <h4 class="juri-name">Juri 4</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                                <div class="juri-item">
+                                    <img src="path/to/juri5.jpg" alt="Juri 5" class="juri-img">
+                                    <h4 class="juri-name">Juri 5</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                                <div class="juri-item">
+                                    <img src="path/to/juri6.jpg" alt="Juri 6" class="juri-img">
+                                    <h4 class="juri-name">Juri 6</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                            </div>
+                        </details> 
+
+                        <!-- Cabang 15 -->
+                        <details class="cabang">
+                            <summary class="cabang-title">Eksibisi Fotografi</summary>
+                            <div class="juri-list">
+                                <div class="juri-item">
+                                    <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
+                                    <h4 class="juri-name">Juri 4</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                                <div class="juri-item">
+                                    <img src="path/to/juri5.jpg" alt="Juri 5" class="juri-img">
+                                    <h4 class="juri-name">Juri 5</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                                <div class="juri-item">
+                                    <img src="path/to/juri6.jpg" alt="Juri 6" class="juri-img">
+                                    <h4 class="juri-name">Juri 6</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                            </div>
+                        </details>  
+
+                        <!-- Cabang 16 -->
+                        <details class="cabang">
+                            <summary class="cabang-title">Sampel Darah</summary>
+                            <div class="juri-list">
+                                <div class="juri-item">
+                                    <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
+                                    <h4 class="juri-name">Juri 4</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                                <div class="juri-item">
+                                    <img src="path/to/juri5.jpg" alt="Juri 5" class="juri-img">
+                                    <h4 class="juri-name">Juri 5</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                                <div class="juri-item">
+                                    <img src="path/to/juri6.jpg" alt="Juri 6" class="juri-img">
+                                    <h4 class="juri-name">Juri 6</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                            </div>
+                        </details>  
                     </div>
-
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6">
-                            <div class="speaker">
-                                <img src="landing/assets/img/speakers/1.jpg" alt="" class="img-fluid">
-                                <div class="details" style="padding-bottom:5px">
-                                    <h3 style="font-size:large">
-                                        Dr. Melkianus Deddy Randu, S.Pt., M.Si<br> Koordinator Lomba dan Juri
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="speaker">
-                                <img src="landing/assets/img/speakers/2.jpg" alt="" class="img-fluid">
-                                <div class="details" style="padding-bottom:5px">
-                                    <h3 style="font-size:large">
-                                        Catootjie L. Nalle, S.Pt., M.Agr.St, Ph.D <br> Koordinator Bidang Inovasi Pertanian
-                                    </h3>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="speaker">
-                                <img src="landing/assets/img/speakers/3.jpg" alt="" class="img-fluid">
-                                <div class="details" style="padding-bottom:5px">
-                                    <h3 style="font-size:large">
-                                        Agrippina Agnes Bele, STP., M.APCM <br> Koordinator Bidang Proses Fillet Ikan
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="speaker">
-                                <img src="landing/assets/img/speakers/4.jpg" alt="" class="img-fluid">
-                                <div class="details" style="padding-bottom:5px">
-                                    <h3 style="font-size:large">
-                                        Andi Yumina Ninu, S.Pt., M.Si <br> Koordinator Bidang Teknik Karkas Ayam
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="speaker">
-                                <img src="landing/assets/img/speakers/5.jpg" alt="" class="img-fluid">
-                                <div class="details" style="padding-bottom:5px">
-                                    <h3 style="font-size:large">
-                                        Ferdinan S. Suek, S. Pt. M.Si <br> Koordinator Handling Ternak
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="speaker">
-                                <img src="landing/assets/img/speakers/6.jpg" alt="" class="img-fluid">
-                                <div class="details" style="padding-bottom:5px">
-                                    <h3 style="font-size:large">
-                                        Kurinus Tonis, A.Md., S.P <br> Koordinator Bidang Okulasi Tanaman
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="speaker">
-                                <img src="landing/assets/img/speakers/7.jpg" alt="" class="img-fluid">
-                                <div class="details" style="padding-bottom:5px">
-                                    <h3 style="font-size:large">
-                                        Stefanus Markus Kuang, STP., M.Sc <br> Koordinator Desain Alat dan Mesin Pertanian dengan AutoCad
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="speaker">
-                                <img src="landing/assets/img/speakers/8.jpg" alt="" class="img-fluid">
-                                <div class="details" style="padding-bottom:5px">
-                                    <h3 style="font-size:large">
-                                        Wely Y Pello, S.ST., M.Si <br> Koordinator Penyuluhan Pertanian
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="speaker">
-                                <img src="landing/assets/img/speakers/9.jpg" alt="" class="img-fluid">
-                                <div class="details" style="padding-bottom:5px">
-                                    <h3 style="font-size:large">
-                                        Laurentius D. W. Wardhana, S.Hut., M.Si <br> Koordinator Survey Pemetaan Lahan
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="speaker">
-                                <img src="landing/assets/img/speakers/10.jpg" alt="" class="img-fluid">
-                                <div class="details" style="padding-bottom:5px">
-                                    <h3 style="font-size:large">
-                                        Eny Idayati, STP., M.Sc <br> Koordinator Pengolahan Bakso Ikan
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="speaker">
-                                <img src="landing/assets/img/speakers/11.jpg" alt="" class="img-fluid">
-                                <div class="details" style="padding-bottom:5px">
-                                    <h3 style="font-size:large">
-                                        Dr. drh. Andrijanto H. Angi, M.Si <br> Koordinator Teknik Pengambilan Sampel Darah Unggas
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="speaker">
-                                <img src="landing/assets/img/speakers/12.jpg" alt="" class="img-fluid">
-                                <div class="details" style="padding-bottom:5px">
-                                    <h3 style="font-size:large">
-                                        Senny J. Bunga, ST., M.Sc., PhD <br> Koordinator Sortasi Biji Kopi
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="speaker">
-                                <img src="landing/assets/img/speakers/13.jpg" alt="" class="img-fluid">
-                                <div class="details" style="padding-bottom:5px">
-                                    <h3 style="font-size:large">
-                                        Wahyuni Fanggitasik, S.Pi., M.Si <br> Koordinator Packing Benih Ikan
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="speaker">
-                                <img src="landing/assets/img/speakers/14.jpg" alt="" class="img-fluid">
-                                <div class="details" style="padding-bottom:5px">
-                                    <h3 style="font-size:large">
-                                        Suhartini S.Tr.Pt <br> Koordinator Formulasi Pakan Ternak dan Ikan
-                                    </h3>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
                 </div>
             </section>
 
 
 
-            <section class="section course" id="jadwal" aria-label="course">
-                <div class="container">
+            <!-- kordinator -->
+            <section class="section kordinator" aria-label="kordinator" id="kordinator">
+    <div class="container">
 
-                    <div class="section-header">
-                        <h2 class="h2 section-title">Jadwal Kompetisi AITEC 6</h2>
+        <div class="section-header">
+            <h2 class="h2 section-title">KORDINATOR AITeC VI</h2>
+        </div>
 
+        <div class="cabang-koordinator">
+    <!-- Koordinator Cabang 1 -->
+    <div class="card">
+        <details class="koordinator">
+            <summary>Lomba Inovasi AI</summary>
+            <div class="koordinator-info">
+                <img src="gambar1.jpg" alt="Koordinator 1">
+                <h4>Nama Koordinator 1</h4>
+                <p>Asal Politeknik 1</p>
+            </div>
+        </details>
+    </div>
+
+    <!-- Koordinator Cabang 2 -->
+    <div class="card">
+        <details class="koordinator">
+            <summary>Lomba Inovasi Non AI</summary>
+            <div class="koordinator-info">
+                <img src="gambar2.jpg" alt="Koordinator 2">
+                <h4>Nama Koordinator 2</h4>
+                <p>Asal Politeknik 2</p>
+            </div>
+        </details>
+    </div>
+
+    <!-- Koordinator Cabang 3 -->
+    <div class="card">
+        <details class="koordinator">
+            <summary>Lomba Okulasi</summary>
+            <div class="koordinator-info">
+                <img src="gambar3.jpg" alt="Koordinator 3">
+                <h4>Nama Koordinator 3</h4>
+                <p>Asal Politeknik 3</p>
+            </div>
+        </details>
+    </div>
+
+    <!-- Koordinator Cabang 4 -->
+    <div class="card">
+        <details class="koordinator">
+            <summary>Sortasi biji Kopi</summary>
+            <div class="koordinator-info">
+                <img src="gambar4.jpg" alt="Koordinator 4">
+                <h4>Nama Koordinator 4</h4>
+                <p>Asal Politeknik 4</p>
+            </div>
+        </details>
+    </div>
+
+    <!-- Koordinator Cabang 5 -->
+    <div class="card">
+        <details class="koordinator">
+            <summary>Handling Ternak</summary>
+            <div class="koordinator-info">
+                <img src="gambar5.jpg" alt="Koordinator 5">
+                <h4>Nama Koordinator 5</h4>
+                <p>Asal Politeknik 5</p>
+            </div>
+        </details>
+    </div>
+
+    <!-- Koordinator Cabang 6 -->
+    <div class="card">
+        <details class="koordinator">
+            <summary>Karkas Ayam</summary>
+            <div class="koordinator-info">
+                <img src="gambar6.jpg" alt="Koordinator 6">
+                <h4>Nama Koordinator 6</h4>
+                <p>Asal Politeknik 6</p>
+            </div>
+        </details>
+    </div>
+
+    <!-- Koordinator Cabang 7 -->
+    <div class="card">
+        <details class="koordinator">
+            <summary>Formulasi Ransum Ternak</summary>
+            <div class="koordinator-info">
+                <img src="gambar7.jpg" alt="Koordinator 7">
+                <h4>Nama Koordinator 7</h4>
+                <p>Asal Politeknik 7</p>
+            </div>
+        </details>
+    </div>
+
+    <!-- Koordinator Cabang 8 -->
+    <div class="card">
+        <details class="koordinator">
+            <summary>Formulasi Ransum Ikan</summary>
+            <div class="koordinator-info">
+                <img src="gambar8.jpg" alt="Koordinator 8">
+                <h4>Nama Koordinator 8</h4>
+                <p>Asal Politeknik 8</p>
+            </div>
+        </details>
+    </div>
+
+    <!-- Koordinator Cabang 9 -->
+    <div class="card">
+        <details class="koordinator">
+            <summary>Bakso Ikan</summary>
+            <div class="koordinator-info">
+                <img src="gambar9.jpg" alt="Koordinator 9">
+                <h4>Nama Koordinator 9</h4>
+                <p>Asal Politeknik 9</p>
+            </div>
+        </details>
+    </div>
+
+    <!-- Koordinator Cabang 10 -->
+    <div class="card">
+        <details class="koordinator">
+            <summary>Fillet Ikan</summary>
+            <div class="koordinator-info">
+                <img src="gambar10.jpg" alt="Koordinator 10">
+                <h4>Nama Koordinator 10</h4>
+                <p>Asal Politeknik 10</p>
+            </div>
+        </details>
+    </div>
+
+    <!-- Koordinator Cabang 11 -->
+    <div class="card">
+        <details class="koordinator">
+            <summary>Packing benih ikan</summary>
+            <div class="koordinator-info">
+                <img src="gambar11.jpg" alt="Koordinator 11">
+                <h4>Nama Koordinator 11</h4>
+                <p>Asal Politeknik 11</p>
+            </div>
+        </details>
+    </div>
+
+    <!-- Koordinator Cabang 12 -->
+    <div class="card">
+        <details class="koordinator">
+            <summary>Pemetaan Lahan</summary>
+            <div class="koordinator-info">
+                <img src="gambar12.jpg" alt="Koordinator 12">
+                <h4>Nama Koordinator 12</h4>
+                <p>Asal Politeknik 12</p>
+            </div>
+        </details>
+    </div>
+
+    <!-- Koordinator Cabang 13 -->
+    <div class="card">
+        <details class="koordinator">
+            <summary>Desain Alat Autocad</summary>
+            <div class="koordinator-info">
+                <img src="gambar13.jpg" alt="Koordinator 13">
+                <h4>Nama Koordinator 13</h4>
+                <p>Asal Politeknik 13</p>
+            </div>
+        </details>
+    </div>
+
+    <!-- Koordinator Cabang 14 -->
+    <div class="card">
+        <details class="koordinator">
+            <summary>Penyuluhan</summary>
+            <div class="koordinator-info">
+                <img src="gambar14.jpg" alt="Koordinator 14">
+                <h4>Nama Koordinator 14</h4>
+                <p>Asal Politeknik 14</p>
+            </div>
+        </details>
+    </div>
+
+    <!-- Koordinator Cabang 15 -->
+    <div class="card">
+        <details class="koordinator">
+            <summary>Eksibisi Fotografi</summary>
+            <div class="koordinator-info">
+                <img src="gambar15.jpg" alt="Koordinator 15">
+                <h4>Nama Koordinator 15</h4>
+                <p>Asal Politeknik 15</p>
+            </div>
+        </details>
+    </div>
+
+    <!-- Koordinator Cabang 16 -->
+    <div class="card">
+        <details class="koordinator">
+            <summary>Sampel Darah</summary>
+            <div class="koordinator-info">
+                <img src="gambar16.jpg" alt="Koordinator 16">
+                <h4>Nama Koordinator 16</h4>
+                <p>Asal Politeknik 16</p>
+            </div>
+        </details>
+    </div>
+</div>
+
+
+    </div>
+</section>
+
+
+
+            <!-- jadwal -->
+
+<section class="section jadwal" id="jadwal" aria-label="course">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="h2 section-title">JADWAL KOMPETISI AITeC VI</h2>
+    </div>
+
+    <div class="schedule-tabs" data-aos="fade-up" data-aos-delay="100">
+      <div class="schedule-tab active" data-target="#competition-kegiatan-1">Kompetisi Inovasi Bidang Pertanian</div>
+      <div class="schedule-tab" data-target="#competition-kegiatan-2">Kontes Vokasi Bidang Pertanian <span>(Seleksi Online)</span></div>
+      <div class="schedule-tab" data-target="#competition-kegiatan-3">Kontes Vokasi Bidang Pertanian <span>(Luring)</span></div>
+      <div class="schedule-tab" data-target="#competition-kegiatan-4">Eksibisi Fotografi <span>(Luring)</span></div>
+    </div>
+
+    <!-- Schedule Items -->
+            <div class="tab-content">
+                <!-- Competition kegiatan 1 -->
+                <div id="competition-kegiatan-1" class="tab-pane show">
+                    <div class="schedule-itemku">
+                        <div class="schedule-timeku">26 Agustus - 18 September 2024</div>
+                            <div class="schedule-eventku">
+                                <h3>Pendaftaran peserta dan verifikasi oleh panitia melalui website <a href="https://aitec-lampung.polinela.ac.id">https://aitec-lampung.polinela.ac.id</a></h3>
+                            </div>
                     </div>
-
-                    <ul class="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#day-1" role="tab" data-bs-toggle="tab">Inovasi Teknologi</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#day-2" role="tab" data-bs-toggle="tab">Kontes Vokasi</a>
-                        </li>
-
-                    </ul>
-
-
-
-                    <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
-
-                        <!-- Schdule Day 1 -->
-                        <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
-
-                            <div class="row schedule-item">
-                                <div class="col-md-4"><time>26 Agustus - 18 September 2024</time></div>
-                                <div class="col-md-8">
-                                    <h4>Pendaftaran peserta dan validasi oleh panitia</h4>
-                                    <p>Pendaftaran secara online pada laman https://aitec-lampung.polinela.ac.id </p>
-                                </div>
-                            </div>
-
-                            <div class="row schedule-item">
-                                <div class="col-md-4"><time>26 Agustus - 18 September 2024</time></div>
-                                <div class="col-md-8">
-                                    <h4>Upload Proposal Lomba (tahap 1)</h4>
-                                    <p>Upload proposal secara online pada laman https://aitec-lampung.polinela.ac.id </p>
-                                </div>
-                            </div>
-
-                            <div class="row schedule-item">
-                                <div class="col-md-4"><time>20 -27 September 2024</time></div>
-                                <div class="col-md-8">
-                                    <h4>Seleksi Proposal <span style="font-style:italic">(Desk Evaluation)</span></h4>
-                                    <p>Seleksi proposal secara online pada laman https://aitec-lampung.polinela.ac.id </p>
-                                </div>
-                            </div>
-
-                            <div class="row schedule-item">
-                                <div class="col-md-4"><time>30 September 2024</time></div>
-                                <div class="col-md-8">
-                                    <h4>Pengumuman Hasil Seleksi Proposal</h4>
-                                    <p>Pengumuman dilihat secara online pada laman https://aitec-lampung.polinela.ac.id </p>
-                                </div>
-                            </div>
-
-                            <div class="row schedule-item">
-                                <div class="col-md-4"><time> 01 -07 oktober 2024</time></div>
-                                <div class="col-md-8">
-                                    <h4>Upload video (tahap 2)</h4>
-                                    <p>Upload video secara online pada laman https://aitec-lampung.polinela.ac.id </p>
-                                </div>
-                            </div>
-
-                            <div class="row schedule-item">
-                                <div class="col-md-4"><time>4 Oktober 2024</time></div>
-                                <div class="col-md-8">
-                                    <h4>Seleksi Video </h4>
-                                    <p>Seleksi video secara online pada laman https://aitec-lampung.polinela.ac.id </p>
-                                </div>
-                            </div>
-
-                            <div class="row schedule-item">
-                                <div class="col-md-4"><time>10 Oktober 2024</time></div>
-                                <div class="col-md-8">
-                                    <h4>Pengumuman Hasil Seleksi Video dan dan undangan menuju Babak Final AITeC VI tahun 2024</h4>
-                                    <p>Pengumuman dilihat secara online pada laman https://aitec-lampung.polinela.ac.id </p>
-                                </div>
-                            </div>
-
-
-                            <div class="row schedule-item">
-                                <div class="col-md-4"><time>08 - 17 Oktober 2024</time></div>
-                                <div class="col-md-8">
-                                    <h4>Pembayaran Registrasi Finalis</h4>
-                                    <p>Bukti pembayaran diupload pada laman https://aitec-lampung.polinela.ac.id </p>
-                                </div>
-                            </div>
-
-                            <div class="row schedule-item">
-                                <div class="col-md-4"><time>15 - 20 Oktober 2023</time></div>
-                                <div class="col-md-8">
-                                    <h4><span style="font-style:italic;font-weight:bold">Technical Meeting Daring Finalis</span></h4>
-                                </div>
-                            </div>
-
-                            <div class="row schedule-item">
-                                <div class="col-md-4"><time>23 - 26 Oktober 2024</time></div>
-                                <div class="col-md-8">
-                                    <h4>BABAK FINAL</h4>
-                                    <p>Pelaksanaan secara Luring di Kampus POLITEKNIK PERTANIAN NEGERI LAMPUNG</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Schdule Day 1 -->
-                        <!-- Schdule Day 2 -->
-                        <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-2">
-
-                            <div class="row schedule-item">
-                                <div class="col-md-4"><time>1 - 21 September 2024</time></div>
-                                <div class="col-md-8">
-                                    <h4>Pendaftaran peserta dan validasi oleh panitia</h4>
-                                    <p>Pendaftaran secara online pada laman https://aitec-lampung.polinela.ac.id </p>
-                                </div>
-                            </div>
-                            <div class="row schedule-item">
-                                <div class="col-md-4"><time>24 - 27 September 2024</time></div>
-                                <div class="col-md-8">
-                                    <h4><span style="font-style:italic;font-weight:bold">Technical Meeting </span> Daring Babak Penyisihan</h4>
-                                </div>
-                            </div>
-
-                            <div class="row schedule-item">
-                                <div class="col-md-4"><time>01 - 06 September 2024</time></div>
-                                <div class="col-md-8">
-                                    <h4>Seleksi Online</h4>
-                                    <p>Seleksi secara online pada laman https://aitec-lampung.polinela.ac.id </p>
-                                </div>
-                            </div>
-
-                            <div class="row schedule-item">
-                                <div class="col-md-4"><time>08 Oktober 2024</time></div>
-                                <div class="col-md-8">
-                                    <h4>Pengumuman hasil seleksi online dan undangan menuju Babak Final AITeC VI tahun 2024</h4>
-                                    <p>Pengumuman hasil seleksi online pada laman https://aitec-lampung.polinela.ac.id </p>
-                                </div>
-                            </div>
-
-                            <div class="row schedule-item">
-                                <div class="col-md-4"><time>08 - 17 Oktober 2024</time></div>
-                                <div class="col-md-8">
-                                    <h4>Pembayaran Registrasi Finalis</h4>
-                                    <p>Bukti pembayaran diupload pada laman https://aitec-lampung.polinela.ac.id </p>
-                                </div>
-                            </div>
-                            <div class="row schedule-item">
-                                <div class="col-md-4"><time>15 - 20 Oktober 2024</time></div>
-                                <div class="col-md-8">
-                                    <h4><span style="font-style:italic;font-weight:bold">Technical Meeting Daring Finalis</span></h4>
-                                </div>
-                            </div>
-
-                            <div class="row schedule-item">
-                                <div class="col-md-4"><time>26 - 27 Oktober 2023</time></div>
-                                <div class="col-md-8">
-                                    <h4>BABAK FINAL</h4>
-                                    <p>Pelaksanaan secara Luring di Kampus POLITEKNIK PERTANIAN NEGERI LAMPUNG</p>
-                                </div>
-                            </div>
-
-                        </div>
-                        <!-- End Schdule Day 2 -->
+                    <div class="schedule-itemku">
+                    <div class="schedule-timeku">26 Agustus - 18 September 2024</div>
+                    <div class="schedule-eventku">
+                        <h3>Pengiriman proposal (upload proposal) melalui website <a href="https://aitec-lampung.polinela.ac.id">https://aitec-lampung.polinela.ac.id</a></h3>
                     </div>
-
+                    </div>
+                    <div class="schedule-itemku">
+                    <div class="schedule-timeku">20 - 27 September 2024</div>
+                    <div class="schedule-eventku">
+                        <h3>Seleksi proposal (desk evaluation)</h3>
+                    </div>
+                    </div>
+                    <div class="schedule-itemku">
+                    <div class="schedule-timeku">30 September 2024</div>
+                    <div class="schedule-eventku">
+                        <h3>Pengumuman hasil seleksi proposal</h3>
+                    </div>
+                    </div>
+                    <div class="schedule-itemku">
+                    <div class="schedule-timeku">01 - 07 Oktober 2024</div>
+                    <div class="schedule-eventku">
+                        <h3>Pengiriman video (upload video) melalui website <a href="https://aitec-lampung.polinela.ac.id">https://aitec-lampung.polinela.ac.id</a></h3>
+                    </div>
+                    </div>
+                    <div class="schedule-itemku">
+                    <div class="schedule-timeku">10 Oktober 2024</div>
+                    <div class="schedule-eventku">
+                        <h3>Pengumuman hasil seleksi video dan undangan menuju Babak Final AITeC VI tahun 2024</h3>
+                    </div>
+                    </div>
+                    <div class="schedule-itemku">
+                    <div class="schedule-timeku">08 - 17 Oktober 2024</div>
+                    <div class="schedule-eventku">
+                        <h3>Pembayaran registrasi peserta</h3>
+                    </div>
+                    </div>
+                    <div class="schedule-itemku">
+                    <div class="schedule-timeku">15 - 20 Oktober 2024</div>
+                    <div class="schedule-eventku">
+                        <h3>Technical meeting peserta menuju Babak Final AITeC VI</h3>
+                    </div>
+                    </div>
+                    <div class="schedule-itemku">
+                    <div class="schedule-timeku">23 - 26 Oktober 2024</div>
+                    <div class="schedule-eventku">
+                        <h3>Babak Final AITeC VI</h3>
+                    </div>
+                    </div>
                 </div>
-            </section>
+            </div>
 
-            <section class="section category" aria-label="category" id="lokasi">
+      <!-- Competition kegiatan 2 -->
+      <div id="competition-kegiatan-2" class="tab-pane">
+        <div class="schedule-itemku">
+          <div class="schedule-timeku">01 - 21 September 2024</div>
+            <div class="schedule-eventku">
+                <h3>Pendaftaran peserta dan verifikasi oleh panitia melalui website <a href="https://aitec-lampung.polinela.ac.id">https://aitec-lampung.polinela.ac.id</a></h3>
+            </div>
+        </div>
+        <div class="schedule-itemku">
+          <div class="schedule-timeku">24 - 27 September 2024</div>
+            <div class="schedule-eventku">
+                <h3>Technical meeting peserta babak penyisihan (seleksi online)</h3>
+            </div>
+        </div>
+        <div class="schedule-itemku">
+          <div class="schedule-timeku">01 - 06 Oktober 2024</div>
+            <div class="schedule-eventku">
+                <h3>Seleksi online</h3>
+            </div>
+        </div>
+        <div class="schedule-itemku">
+          <div class="schedule-timeku">08 Oktober 2024</div>
+            <div class="schedule-eventku">
+                <h3>Pengumuman hasil seleksi online dan undangan menuju Babak Final AITeC VI tahun 2024</h3>
+            </div>
+        </div>
+        <div class="schedule-itemku">
+          <div class="schedule-timeku">08 - 17 Oktober 2024</div>
+            <div class="schedule-eventku">
+                <h3>Pembayaran registrasi peserta</h3>
+            </div>
+        </div>
+        <div class="schedule-itemku">
+          <div class="schedule-timeku">15 - 20 Oktober 2024</div>
+            <div class="schedule-eventku">
+                <h3>Technical meeting peserta menuju Babak Final AITeC VI</h3>
+            </div>
+        </div>
+        <div class="schedule-itemku">
+          <div class="schedule-timeku">23 - 26 Oktober 2024</div>
+            <div class="schedule-eventku">
+                <h3>Babak Final AITeC VI</h3>
+            </div>
+        </div>
+      </div>
+
+      <!-- Competition kegiatan 3 -->
+      <div id="competition-kegiatan-3" class="tab-pane">
+        <div class="schedule-itemku">
+          <div class="schedule-timeku">26 Agustus – 06 Oktober 2024</div>
+          <div class="schedule-eventku">
+            <h3>Pendaftaran peserta dan verifikasi oleh panitia melalui website <a href="https://aitec-lampung.polinela.ac.id">https://aitec-lampung.polinela.ac.id</a></h3>
+          </div>
+        </div>
+        <div class="schedule-itemku">
+          <div class="schedule-timeku">15 – 20 Oktober 2024</div>
+          <div class="schedule-eventku">
+            <h3>Technical meeting peserta</h3>
+          </div>
+        </div>
+        <div class="schedule-itemku">
+          <div class="schedule-timeku">08 – 17 Oktober 2024</div>
+          <div class="schedule-eventku">
+            <h3>Pembayaran registrasi peserta</h3>
+          </div>
+        </div>
+        <div class="schedule-itemku">
+          <div class="schedule-timeku">23 – 26 Oktober 2024</div>
+          <div class="schedule-eventku">
+            <h3>Babak Final AITeC VI</h3>
+          </div>
+        </div>
+      </div>
+      <!-- Competition kegiatan 4 -->
+      <div id="competition-kegiatan-4" class="tab-pane">
+        <div class="schedule-itemku">
+          <div class="schedule-timeku">26 Agustus – 06 Oktober 2024</div>
+          <div class="schedule-eventku">
+            <h3>Pendaftaran peserta dan verifikasi oleh panitia melalui website <a href="https://aitec-lampung.polinela.ac.id">https://aitec-lampung.polinela.ac.id</a></h3>
+          </div>
+        </div>
+        <div class="schedule-itemku">
+          <div class="schedule-timeku">15 – 20 Oktober 2024</div>
+          <div class="schedule-eventku">
+            <h3>Technical meeting peserta</h3>
+          </div>
+        </div>
+        <div class="schedule-itemku">
+          <div class="schedule-timeku">08 – 17 Oktober 2024</div>
+          <div class="schedule-eventku">
+            <h3>Pembayaran registrasi peserta</h3>
+          </div>
+        </div>
+        <div class="schedule-itemku">
+          <div class="schedule-timeku">23 – 26 Oktober 2024</div>
+          <div class="schedule-eventku">
+            <h3>Babak Final AITeC VI</h3>
+          </div>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+            <!-- lokasi -->
+
+            <section class="section lokasi" aria-label="category" id="lokasi">
                 <div class="container">
 
                     <div class="section-header">
-                        <h2 class="h2 section-title">Lokasi Kegiatan Kompetisi AITEC 6</h2>
+                        <h2 class="h2 section-title">LOKASI KEGIATAN KOMPETISI AITeC VI</h2>
 
                         <div class="row g-0">
                             <div class="col-lg-6 venue-map">
@@ -1627,70 +1498,129 @@
                     </div>
             </section>
 
+            <!-- gallery -->
 
-            <section class="section course" id="gallery" aria-label="course">
+            <section class="section gallery" id="gallery" aria-label="course">
                 <div class="container">
-
                     <div class="section-header">
-                        <h2 class="h2 section-title">Gallery</h2>
-                        <p>Dokumentasi Kegiatan AITeC VI di Politeknik Pertanian Negeri Lampung</p>
+                    <h2 class="h2 section-title">GALLERY</h2>
+                    <h3>
+                        <p style="text-align: center">
+                        Dokumentasi Kegiatan AITeC VI di Politeknik Pertanian Negeri Lampung
+                        </p>
+                    </h3>
                     </div>
-                </div>
 
-                <div class="gallery-slider swiper text-aligin:center">
-                    <div class="swiper-wrapper align-items-center">
-                        <div class="swiper-slide"><a href="landing/assets/images/gallery/1.jpeg" class="gallery-lightbox"><img src="landing/assets/images/gallery/1.jpeg" class="img-fluid" alt=""></a></div>
-                        <div class="swiper-slide"><a href="landing/assets/images/gallery/2.jpeg" class="gallery-lightbox"><img src="landing/assets/images/gallery/2.jpeg" class="img-fluid" alt=""></a></div>
-                        <div class="swiper-slide"><a href="landing/assets/images/gallery/3.jpeg" class="gallery-lightbox"><img src="landing/assets/images/gallery/3.jpeg" class="img-fluid" alt=""></a></div>
-                        <div class="swiper-slide"><a href="landing/assets/images/gallery/4.jpeg" class="gallery-lightbox"><img src="landing/assets/images/gallery/4.jpeg" class="img-fluid" alt=""></a></div>
-                        <div class="swiper-slide"><a href="landing/assets/img/gallery/5.jpg" class="gallery-lightbox"><img src="landing/assets/img/gallery/5.jpg" class="img-fluid" alt=""></a></div>
-                        <div class="swiper-slide"><a href="landing/assets/img/gallery/6.jpg" class="gallery-lightbox"><img src="landing/assets/img/gallery/6.jpg" class="img-fluid" alt=""></a></div>
-                        <div class="swiper-slide"><a href="landing/assets/img/gallery/7.jpg" class="gallery-lightbox"><img src="landing/assets/img/gallery/7.jpg" class="img-fluid" alt=""></a></div>
-                        <div class="swiper-slide"><a href="landing/assets/img/gallery/8.jpg" class="gallery-lightbox"><img src="landing/assets/img/gallery/8.jpg" class="img-fluid" alt=""></a></div>
-
-
-                        <div class="swiper-slide"><a href="landing/assets/img/gallery/9.jpg" class="gallery-lightbox"><img src="landing/assets/img/gallery/9.jpg" class="img-fluid" alt=""></a></div>
-                        <div class="swiper-slide"><a href="landing/assets/img/gallery/10.jpg" class="gallery-lightbox"><img src="landing/assets/img/gallery/10.jpg" class="img-fluid" alt=""></a></div>
-                        <div class="swiper-slide"><a href="landing/assets/img/gallery/11.jpg" class="gallery-lightbox"><img src="landing/assets/img/gallery/11.jpg" class="img-fluid" alt=""></a></div>
-                        <div class="swiper-slide"><a href="landing/assets/img/gallery/12.jpg" class="gallery-lightbox"><img src="landing/assets/img/gallery/12.jpg" class="img-fluid" alt=""></a></div>
-                        <div class="swiper-slide"><a href="landing/assets/img/gallery/13.jpg" class="gallery-lightbox"><img src="landing/assets/img/gallery/13.jpg" class="img-fluid" alt=""></a></div>
-                        <div class="swiper-slide"><a href="landing/assets/img/gallery/14.jpg" class="gallery-lightbox"><img src="landing/assets/img/gallery/14.jpg" class="img-fluid" alt=""></a></div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-
-                </div>
-            </section>
-
-            
-
-
-
-            <section class="video has-bg-image" aria-label="video" style="background-image: url('landing/assets/images/video-bg.png')">
-                <div class="container">
-                    <div class="video-card">
-                        <div class="video-banner img-holder has-after" style="--width: ; --height: ">
-                            <video id="vid1" width="970" height="550" loading="lazy" class="img-cover">
-                                <source src="landing/assets/images/vid1.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <button class="play-btn" aria-label="play video" onclick="playVideo()">
-                                <ion-icon name="play" aria-hidden="true"></ion-icon>
-                            </button>
+                    <!-- Gallery Container -->
+                    <div class="gallery-container">
+                        <!-- line 1 -->
+                        <div class="gallery-row">
+                            <a href="landing/assets/images/gallery/1.jpeg" target="_blank">
+                            <img src="landing/assets/images/gallery/1.jpeg" alt="Image 1">
+                            </a>
+                            <a href="landing/assets/images/gallery/2.jpeg" target="_blank">
+                            <img src="landing/assets/images/gallery/2.jpeg" alt="Image 2">
+                            </a>
+                            <a href="landing/assets/images/gallery/3.jpeg" target="_blank">
+                            <img src="landing/assets/images/gallery/3.jpeg" alt="Image 3">
+                            </a>
+                            <a href="landing/assets/images/gallery/2.jpeg" target="_blank">
+                            <img src="landing/assets/images/gallery/2.jpeg" alt="Image 2">
+                            </a>
+                            <a href="landing/assets/images/gallery/3.jpeg" target="_blank">
+                            <img src="landing/assets/images/gallery/3.jpeg" alt="Image 3">
+                            </a>
                         </div>
-                        <img src="./assets/images/video-shape-1.png" width="1089" height="605" loading="lazy" alt="" class="shape video-shape-1" />
-                        <img src="./assets/images/video-shape-2.png" width="158" height="174" loading="lazy" alt="" class="shape video-shape-2" />
+
+                        <!-- line 2 -->
+                        <div class="gallery-row">
+                            <a href="landing/assets/images/gallery/1.jpeg" target="_blank">
+                            <img src="landing/assets/images/gallery/1.jpeg" alt="Image 1">
+                            </a>
+                            <a href="landing/assets/images/gallery/2.jpeg" target="_blank">
+                            <img src="landing/assets/images/gallery/2.jpeg" alt="Image 2">
+                            </a>
+                            <a href="landing/assets/images/gallery/3.jpeg" target="_blank">
+                            <img src="landing/assets/images/gallery/3.jpeg" alt="Image 3">
+                            </a>
+                            <a href="landing/assets/images/gallery/2.jpeg" target="_blank">
+                            <img src="landing/assets/images/gallery/2.jpeg" alt="Image 2">
+                            </a>
+                            <a href="landing/assets/images/gallery/3.jpeg" target="_blank">
+                            <img src="landing/assets/images/gallery/3.jpeg" alt="Image 3">
+                            </a>
+                        </div>
+
+                        <!-- line 3 -->
+                        <div class="gallery-row">
+                            <a href="landing/assets/images/gallery/1.jpeg" target="_blank">
+                            <img src="landing/assets/images/gallery/1.jpeg" alt="Image 1">
+                            </a>
+                            <a href="landing/assets/images/gallery/2.jpeg" target="_blank">
+                            <img src="landing/assets/images/gallery/2.jpeg" alt="Image 2">
+                            </a>
+                            <a href="landing/assets/images/gallery/3.jpeg" target="_blank">
+                            <img src="landing/assets/images/gallery/3.jpeg" alt="Image 3">
+                            </a>
+                            <a href="landing/assets/images/gallery/2.jpeg" target="_blank">
+                            <img src="landing/assets/images/gallery/2.jpeg" alt="Image 2">
+                            </a>
+                            <a href="landing/assets/images/gallery/3.jpeg" target="_blank">
+                            <img src="landing/assets/images/gallery/3.jpeg" alt="Image 3">
+                            </a>
+                        </div>
+
+                        <!-- line 4 -->
+                        <div class="gallery-row">
+                            <a href="landing/assets/images/gallery/1.jpeg" target="_blank">
+                            <img src="landing/assets/images/gallery/1.jpeg" alt="Image 1">
+                            </a>
+                            <a href="landing/assets/images/gallery/2.jpeg" target="_blank">
+                            <img src="landing/assets/images/gallery/2.jpeg" alt="Image 2">
+                            </a>
+                            <a href="landing/assets/images/gallery/3.jpeg" target="_blank">
+                            <img src="landing/assets/images/gallery/3.jpeg" alt="Image 3">
+                            </a>
+                            <a href="landing/assets/images/gallery/2.jpeg" target="_blank">
+                            <img src="landing/assets/images/gallery/2.jpeg" alt="Image 2">
+                            </a>
+                            <a href="landing/assets/images/gallery/3.jpeg" target="_blank">
+                            <img src="landing/assets/images/gallery/3.jpeg" alt="Image 3">
+                            </a>
+                        </div>
+
+                        <!-- line 5 -->
+                        <div class="gallery-row">
+                            <a href="landing/assets/images/gallery/1.jpeg" target="_blank">
+                            <img src="landing/assets/images/gallery/1.jpeg" alt="Image 1">
+                            </a>
+                            <a href="landing/assets/images/gallery/2.jpeg" target="_blank">
+                            <img src="landing/assets/images/gallery/2.jpeg" alt="Image 2">
+                            </a>
+                            <a href="landing/assets/images/gallery/3.jpeg" target="_blank">
+                            <img src="landing/assets/images/gallery/3.jpeg" alt="Image 3">
+                            </a>
+                            <a href="landing/assets/images/gallery/2.jpeg" target="_blank">
+                            <img src="landing/assets/images/gallery/2.jpeg" alt="Image 2">
+                            </a>
+                            <a href="landing/assets/images/gallery/3.jpeg" target="_blank">
+                            <img src="landing/assets/images/gallery/3.jpeg" alt="Image 3">
+                            </a>
+                        </div>
                     </div>
+                    
                 </div>
             </section>
 
-        </article>
+
+
     </main>
 
     <!-- 
     - #FOOTER
   -->
 
-    <footer class="footer" style="background-image: url('landing/assets/images/footer-bg.png')" id="hubungi">
+  <footer class="footer" style="background-image: url('landing/assets/images/footer-bg.png')" id="hubungi">
         <div class="footer-top section">
                     <div class="section-header">
                         <h2 class="h2 section-title">Hubungi Kami</h2>
@@ -1861,6 +1791,19 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script>
+        document.querySelectorAll('.schedule-tab').forEach(tab => {
+    tab.addEventListener('click', function () {
+        document.querySelectorAll('.schedule-tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('show', 'active'));
+        
+        tab.classList.add('active');
+        document.querySelector(tab.getAttribute('data-target')).classList.add('show', 'active');
+    });
+});
+
+
+    </script>
+    <script>
         document.addEventListener("DOMContentLoaded", function() {
             const navbarItems = document.querySelectorAll(".navbar-item");
 
@@ -1911,25 +1854,18 @@
             }
         }
     </script>
+    <script>
+        const backTopBtn = document.querySelector('.back-top-btn');
+
+window.addEventListener('scroll', function() {
+  if (window.scrollY > 200) { // Tampilkan tombol setelah menggulir 200px
+    backTopBtn.classList.add('show');
+  } else {
+    backTopBtn.classList.remove('show');
+  }
+});
+    </script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script>
-    var swiper = new Swiper('.gallery-slider', {
-        slidesPerView: 3,
-        spaceBetween: 20,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        breakpoints: {
-            768: {
-                slidesPerView: 4,
-            },
-            1024: {
-                slidesPerView: 5,
-            },
-        }
-    });
-</script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 </body>

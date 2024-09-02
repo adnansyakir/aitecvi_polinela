@@ -2,11 +2,6 @@
   #style.css
 \*-----------------------------------*/
 
-
-
-
-
-
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
@@ -160,226 +155,8 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background-color: var(--white);
-  color: var(--gray-web);
-  font-size: 1.6rem;
-  line-height: 1.75;
 
- .section p {
-    text-align: justify;
-  }
 
-  
-  .header {
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
-  padding: 1px 0;
-}
-.header-logo {
-  display: inline-block;
-  margin-right: 20px;
-}
-.containerku {
-  width: 100%;
-  max-width: 1450px;
-  /* margin-left: px; */
-  display: flex;
-  align-items: center;
-  
-}
-/* Gaya dasar navbar */
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 10px;
-  /* background-color: #f8f9fa;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); */
-}
-
-/* Hapus gaya untuk nav-toggle-btn */
-.nav-toggle-btn {
-  display: none; /* Sembunyikan tombol toggle */
-}
-
-/* Gaya default untuk list item di desktop */
-.navbar-list {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar-item {
-  position: relative;
-  /* margin-right: 10px; */
-}
-
-.navbar-link {
-  text-decoration: none;
-  color: #000;
-  padding: 10px 15px;
-}
-
-.navbar-link:hover {
-  background-color: #e9ecef;
-  border-radius: 5px;
-}
-
-/* Gaya dropdown */
-.dropdown-content {
-  display: none; /* Sembunyikan dropdown-content secara default */
-  position: absolute;
-  background-color: #fff;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-  z-index: 100;
-  width: 200px; /* Atur lebar dropdown sesuai kebutuhan */
-}
-
-.dropdown-content a {
-  color: #000;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-}
-.navbar img {
-  display: none; /* Sembunyikan logo secara default */
-}
-/* Menampilkan dropdown-content pada hover di desktop */
-.navbar-item:hover .dropdown-content {
-  display: block;
-}
-
-/* Gaya responsif untuk tampilan mobile */
-@media screen and (max-width: 768px) {
-  .navbar-list {
-    display: flex; /* Menampilkan navbar-list pada layar kecil */
-    flex-direction: column;
-    position: static; /* Navbar-list diatur menjadi statis */
-    width: 90%;
-    height: 900%;
-    background-color: #f8f9fa;
-    box-shadow: none;
-    margin: 0; /* Menghapus margin jika perlu */
-  }
-  .navbar img {
-    display: block;
-    width: 200px; /* Sesuaikan lebar logo */
-    height: 100px; /* Sesuaikan tinggi logo */
-    margin: 0; /* Menghapus margin */
-  }
-
-  .navbar-item {
-    width: 100%;
-    text-align: center;
-  }
-
-  .navbar-link {
-    padding: 10px 0;
-    display: block;
-  }
-
-  .dropdown-content {
-    position: static; /* Dropdown tampil di bawah item */
-    display: none; /* Default sembunyikan dropdown-content di mobile */
-  }
-
-  .navbar-item.active .dropdown-content {
-    display: block; /* Tampilkan dropdown-content jika item aktif */
-  }
-}
-.header-actions {
-  margin-left: 150px;
-  display: flex;
-  align-items: center;
-}
-.header-action-btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-.btn {
-  text-decoration: none;
-  color: #fff;
-  background-color: #007d1b;
-  padding: 10px 20px;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-}
-.btn .span {
-  margin-right: 5px;
-}
-.overlay {
-  display: none;
-}
-
-.section-title {
-  font-size: 2em;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.nav-tabs {
-  border-bottom: 2px solid #ddd;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.nav-tabs .nav-item {
-  margin: 0 10px;
-}
-
-.nav-tabs .nav-link {
-  border: none;
-  border-radius: 0;
-  color: #0f570b;
-  font-weight: bold;
-  padding: 10px 20px;
-  transition: background-color 0.3s ease;
-}
-
-.nav-tabs .nav-link.active {
-  background-color: #0f570b;
-  color: #fff;
-}
-
-.nav-tabs .nav-link:hover {
-  background-color: #00cccc;
-  color: #fff;
-}
-
-.tab-content .schedule-item {
-  margin-bottom: 20px;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 5px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-.tab-content .schedule-item time {
-  font-size: 1.2em;
-  color: #333;
-}
-
-.tab-content .schedule-item h4 {
-  font-size: 1.5em;
-  margin: 10px 0;
-}
-
-.tab-content .schedule-item p {
-  margin: 0;
-  font-size: 1em;
-  color: #666;
-}
-}
 
 :focus-visible { outline-offset: 4px; }
 
@@ -406,7 +183,7 @@ body {
 .haldep {
   color: var(--eerie-black-1);
   font-size: var(--fs-4);
-  margin-block: 1px 0px;
+  padding-top: -500px;
 }
 
 .section { padding-block: var(--section-padding); }
@@ -443,9 +220,16 @@ body {
 }
 
 .section-title {
-  --color: var(--radical-red);
+  --color: var(--radical-red); /* Warna asli */
   text-align: center;
+  transition: color 0.3s ease; /* Menambahkan transisi untuk efek yang lebih halus */
 }
+
+.section-title:hover {
+  --color: #006400; /* Warna hijau tua pada hover */
+  color: var(--color); /* Menerapkan variabel warna pada teks */
+}
+
 
 .section-title .span {
   display: inline-block;
@@ -534,116 +318,329 @@ body {
   #HEADER
 \*-----------------------------------*/
 
-.header .btn { display: none; }
-
-.header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+body {
   background-color: var(--white);
-  padding-block: 12px;
-  box-shadow: var(--shadow-1);
-  z-index: 4;
+  color: var(--gray-web);
+  font-size: 1.6rem;
+  line-height: 1.75;
+
+ .section p {
+    text-align: justify;
+  }
+
+  
+  .header {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 1px 0;
 }
-
-.header.active { position: fixed; }
-
-.header .container,
-.header-actions,
-.navbar .wrapper {
+.header-logo {
+  display: inline-block;
+  margin-right: 20px;
+}
+.containerku {
+  width: 100%;
+  max-width: 1450px;
+  margin-left: 40px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 15px;
-}
-
-.header-action-btn,
-.nav-close-btn {
-  position: relative;
-  color: var(--eerie-black-1);
-  font-size: 24px;
-  transition: var(--transition-1);
-}
-
-.header-action-btn:is(:hover, :focus) { color: var(--kappel); }
-
-.header-action-btn .btn-badge {
-  position: absolute;
-  top: -10px;
-  right: -10px;
-  background-color: var(--kappel);
-  color: var(--white);
-  font-family: var(--ff-league_spartan);
-  font-size: var(--fs-6);
-  min-width: 20px;
-  height: 20px;
-  border-radius: var(--radius-circle);
+  
 }
 
 .navbar {
-  position: fixed;
-  top: 0;
-  left: -320px;
-  background-color: var(--white);
-  width: 100%;
-  max-width: 320px;
-  height: 100%;
-  z-index: 2;
-  transition: 0.25s var(--cubic-in);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
+.nav-toggle-btn {
+  display: none; 
+}
+.navbar-list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
-.navbar.active {
-  transform: translateX(320px);
-  transition: 0.5s var(--cubic-out);
+.navbar-item {
+  position: relative;
+  margin-right: 10px;
 }
-
-.navbar .wrapper {
-  padding: 15px 20px;
-  border-block-end: 1px solid var(--platinum);
-}
-
-.nav-close-btn {
-  background-color: var(--white);
-  box-shadow: var(--shadow-2);
-  padding: 8px;
-  border-radius: var(--radius-circle);
-}
-
-.nav-close-btn:is(:hover, :focus) {
-  background-color: var(--kappel);
-  color: var(--white);
-}
-
-.navbar-list { padding: 15px 20px; }
-
-.navbar-item:not(:last-child) { border-block-end: 1px solid var(--platinum); }
 
 .navbar-link {
-  padding-block: 8px;
-  font-weight: var(--fw-500);
-  transition: var(--transition-1);
+  text-decoration: none;
+  color: #000;
+  padding: 10px 15px;
 }
 
-.navbar-link:is(:hover, :focus) { color: var(--kappel); }
+.navbar-link:hover {
+  background-color: #e9ecef;
+  border-radius: 5px;
+}
 
+/* Gaya dropdown */
+.dropdown-content {
+  display: none; /* Sembunyikan dropdown-content secara default */
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  width: 200px; /* Atur lebar dropdown sesuai kebutuhan */
+}
+
+.dropdown-content a {
+  color: #000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+.navbar img {
+  display: none; /* Sembunyikan logo secara default */
+}
+/* Menampilkan dropdown-content pada hover di desktop */
+.navbar-item:hover .dropdown-content {
+  display: block;
+}
+
+/* Gaya responsif untuk tampilan mobile */
+@media screen and (max-width: 768px) {
+  .navbar-list {
+    display: flex; /* Menampilkan navbar-list pada layar kecil */
+    flex-direction: column;
+    position: static; /* Navbar-list diatur menjadi statis */
+    width: 90%;
+    height: 900%;
+    background-color: #f8f9fa;
+    box-shadow: none;
+    margin: 0; /* Menghapus margin jika perlu */
+  }
+  .navbar img {
+    display: block;
+    width: 200px; /* Sesuaikan lebar logo */
+    height: 100px; /* Sesuaikan tinggi logo */
+    margin: 0; /* Menghapus margin */
+  }
+
+  .navbar-item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-link {
+    padding: 10px 0;
+    display: block;
+  }
+  
+  .dropdown-content {
+    position: static; /* Dropdown tampil di bawah item */
+    display: none; /* Default sembunyikan dropdown-content di mobile */
+  }
+
+  .navbar-item.active .dropdown-content {
+    display: block; /* Tampilkan dropdown-content jika item aktif */
+  }
+}
+.header-actions {
+  margin-left: 150px;
+  display: flex;
+  align-items: center;
+}
+.header-action-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.btn {
+  text-decoration: none;
+  color: #fff;
+  background-color: #007d1b;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.btn .span {
+  margin-right: 5px;
+}
 .overlay {
-  position: fixed;
-  inset: 0;
-  background-color: var(--black_80);
-  pointer-events: none;
-  opacity: 0;
-  z-index: 1;
-  transition: var(--transition-1);
-}
-
-.overlay.active {
-  opacity: 1;
-  pointer-events: all;
+  display: none;
 }
 
 
+.section-title {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 40px;
+}
 
+.nav-tabs {
+  border-bottom: 2px solid #ddd;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.nav-tabs .nav-item {
+  margin: 0 10px;
+}
+
+.nav-tabs .nav-link {
+  border: none;
+  border-radius: 0;
+  color: #0f570b;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #0f570b;
+  color: #fff;
+}
+
+.nav-tabs .nav-link:hover {
+  background-color: #00cccc;
+  color: #fff;
+}
+
+.tab-content .schedule-item {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.tab-content .schedule-item time {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.tab-content .schedule-item h4 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.tab-content .schedule-item p {
+  margin: 0;
+  font-size: 1em;
+  color: #666;
+}
+}
+
+.header .btn { display: none; }
+  
+  .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--white);
+    padding-block: 12px;
+    box-shadow: var(--shadow-1);
+    z-index: 4;
+  }
+  
+  .header.active { position: fixed; }
+  
+  .header .container,
+  .header-actions,
+  .navbar .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .header-action-btn,
+  .nav-close-btn {
+    position: relative;
+    color: var(--eerie-black-1);
+    font-size: 24px;
+    transition: var(--transition-1);
+  }
+  
+  .header-action-btn:is(:hover, :focus) { color: var(--kappel); }
+  
+  .header-action-btn .btn-badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: var(--kappel);
+    color: var(--white);
+    font-family: var(--ff-league_spartan);
+    font-size: var(--fs-6);
+    min-width: 20px;
+    height: 20px;
+    border-radius: var(--radius-circle);
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: -320px;
+    background-color: var(--white);
+    width: 100%;
+    max-width: 320px;
+    height: 100%;
+    z-index: 2;
+    transition: 0.25s var(--cubic-in);
+  }
+  
+  .navbar.active {
+    transform: translateX(320px);
+    transition: 0.5s var(--cubic-out);
+  }
+  
+  .navbar .wrapper {
+    padding: 15px 20px;
+    border-block-end: 1px solid var(--platinum);
+  }
+  
+  .nav-close-btn {
+    background-color: var(--white);
+    box-shadow: var(--shadow-2);
+    padding: 8px;
+    border-radius: var(--radius-circle);
+  }
+  
+  .nav-close-btn:is(:hover, :focus) {
+    background-color: var(--kappel);
+    color: var(--white);
+  }
+  
+  .navbar-list { padding: 15px 20px; }
+  
+  .navbar-item:not(:last-child) { border-block-end: 1px solid var(--platinum); }
+  
+  .navbar-link {
+    padding-block: 8px;
+    font-weight: var(--fw-500);
+    transition: var(--transition-1);
+  }
+  
+  .navbar-link:is(:hover, :focus) { color: var(--kappel); }
+  
+  .overlay {
+    position: fixed;
+    inset: 0;
+    background-color: var(--black_80);
+    pointer-events: none;
+    opacity: 0;
+    z-index: 1;
+    transition: var(--transition-1);
+  }
+  
+  .overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
 
 
 /*-----------------------------------*\
@@ -682,240 +679,410 @@ body {
   border-bottom-right-radius: 90px;
 }
 
+.judul {
+  text-align: center; /* Mengatur teks untuk berada di tengah */
+  font-size: 40px; /* Mengatur ukuran font untuk judul */
+  font-weight: bold; /* Mengatur teks menjadi tebal */
+  /* padding-top: 10px; */
+  margin: 2px 0px; /* Menambahkan jarak vertikal antara judul dan elemen lainnya */
+}
 
+.text-one {
+  display: inline;
+  font-size: 30px;
+  color: rgb(0, 0, 0); /* Mengatur warna teks menjadi merah */
+  font-weight: bold; /* Mengatur teks menjadi tebal */
+}
+
+.text-two {
+  display: inline;
+  font-size: 30px;
+  color: rgb(3, 79, 3); /* Mengatur warna teks menjadi merah */
+  font-weight: bold; /* Mengatur teks menjadi tebal */
+}
+
+.text-three {
+  font-size: 40px;
+  color: black; /* Mengatur warna teks menjadi hitam */
+}
+
+.utama {
+  font-size: 65px;
+  color: rgb(3, 79, 3); /* Mengatur warna teks menjadi merah */
+  font-weight: bold; /* Mengatur teks menjadi tebal */
+}
 
 
 
 /*-----------------------------------*\
-  #CATEGORY
+  #Latar Belakang
 \*-----------------------------------*/
 
-.category .section-subtitle { color: var(--radical-red); }
+/*-----------------------------------*\
+  Tujuan dan Manfaat
+\*-----------------------------------*/
 
-.category .section-title { --color: var(--kappel); }
+.TM { background-color: var(--isabelline); }
 
-.category .section-text { margin-block-end: 40px; }
 
-.category-card {
-  padding: 50px 30px;
+
+/*-----------------------------------*\
+  #kompetisi
+\*-----------------------------------*/
+
+/*-----------------------------------*\
+  #Kampus Peserta
+\*-----------------------------------*/
+
+.KP { background-color: var(--isabelline); }
+
+/* Styling tabel dengan garis lebih tebal */
+.table-bordered {
+  border: 2px solid #000; /* Menebalkan garis border tabel menjadi 2px */
+}
+
+.table th, 
+.table td {
+  border-bottom: 2px solid #000; /* Menebalkan garis bawah setiap sel menjadi 2px */
+}
+
+.table thead th {
+  border-bottom: 2px solid #000; /* Menebalkan garis bawah kepala tabel */
+}
+
+.table tbody tr:hover {
+  background-color: #ddd; 
+}
+
+/* Responsivitas */
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+/*-----------------------------------*\
+  #sambutan direktur
+\*-----------------------------------*/
+
+/*-----------------------------------*\
+  #sambutan bakorma
+\*-----------------------------------*/
+
+.bakorma { background-color: var(--isabelline); }
+
+/*-----------------------------------*\
+  #panitia
+\*-----------------------------------*/
+
+/*-----------------------------------*\
+  #pengumuman
+\*-----------------------------------*/
+
+.pengumuman { background-color: var(--isabelline); }
+
+/*-----------------------------------*\
+  #juri
+\*-----------------------------------*/
+
+
+.cabang-perlombaan {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cabang {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Ensures that animations do not exceed the card boundaries */
+}
+
+.cabang-title {
+  font-size: 17px;
+  font-weight: bold;
+  margin: 0;
+  padding: 20px;
+  cursor: pointer;
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Hover effect */
+.cabang-title:hover {
+  background-color: #007100; /* Dark green color */
+  color: #fff; /* Change text color to white for better contrast */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar saat hover */
+}
+
+
+.juri-list {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  opacity: 0; /* Awalnya disembunyikan */
+  max-height: 0; /* Awalnya disembunyikan */
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease; /* Animasi saat muncul */
+}
+
+.juri-item {
   text-align: center;
-  border-radius: var(--radius-5);
+  max-width: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animasi saat hover */
 }
 
-.category-card .card-icon {
-  background-color: hsla(var(--color), 0.1);
-  width: 80px;
-  height: 80px;
-  display: grid;
-  place-items: center;
-  border-radius: var(--radius-circle);
-  margin-inline: auto;
-  margin-block-end: 30px;
+.juri-img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
 }
 
-.category-card .card-text {
-  color: var(--eerie-black-1);
-  font-size: var(--fs-5);
-  margin-block: 15px 25px;
-}
-
-.category-card .card-badge {
-  background-color: hsla(var(--color), 0.1);
-  color: hsl(var(--color));
-  font-size: var(--fs-5);
-  font-weight: var(--fw-500);
-  padding: 2px 18px;
-  max-width: max-content;
-  margin-inline: auto;
-  border-radius: var(--radius-5);
-}
-
-
-
-
-
-/*-----------------------------------*\
-  #ABOUT
-\*-----------------------------------*/
-
-.about {
-  padding-block-start: 0;
-  overflow: hidden;
-}
-
-.about .container {
-  display: grid;
-  gap: 30px;
-}
-
-.about-banner {
-  position: relative;
-  z-index: 1;
-}
-
-.about-banner .img-holder { border-radius: var(--radius-10); }
-
-.about-shape-2 {
-  display: block;
-  bottom: -100px;
-  left: -60px;
-  animation: bounce 2.5s infinite;
-}
-
-@keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% { transform: translateY(0); }
-
-  40% { transform: translateY(-30px); }
-
-  60% { transform: translateY(-15px); }
-}
-
-.about :is(.section-subtitle, .section-title, .section-text) {
-  text-align: left;
-}
-
-.about-item {
-  margin-block: 15px;
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.about-item ion-icon {
-  color: var(--selective-yellow);
-  font-size: 20px;
-  --ionicon-stroke-width: 50px;
-}
-
-.about-item .span {
-  color: var(--eerie-black-1);
-  font-family: var(--ff-league_spartan);
-}
-
-
-
-
-
-/*-----------------------------------*\
-  #COURSE
-\*-----------------------------------*/
-
-.course { background-color: var(--isabelline); }
-
-.course-card {
-  position: relative;
-  background-color: var(--white);
-  border-radius: var(--radius-5);
-  overflow: hidden;
-}
-
-.course-card .img-cover { transition: var(--transition-2); }
-
-.course-card:is(:hover, :focus-within) .img-cover { transform: scale(1.1); }
-
-.course-card :is(.abs-badge, .badge) {
-  font-family: var(--ff-league_spartan);
-  border-radius: var(--radius-3);
-}
-
-.course-card .abs-badge {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: var(--selective-yellow);
-  color: var(--white);
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  line-height: 1;
-  padding: 6px 8px;
-  padding-block-end: 3px;
-}
-
-.course-card .abs-badge ion-icon {
+.juri-name {
   font-size: 18px;
-  margin-block-end: 5px;
-  --ionicon-stroke-width: 50px;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
-.course-card .card-content { padding: 25px; }
-
-.course-card .badge {
-  background-color: var(--kappel_15);
-  max-width: max-content;
-  color: var(--kappel);
-  line-height: 25px;
-  padding-inline: 10px;
+.juri-role {
+  font-size: 14px;
+  color: #666;
 }
 
-.course-card .card-title {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  margin-block: 15px 8px;
-  transition: var(--transition-1);
+/* Style untuk elemen <details> */
+.cabang[open] .cabang-title {
+  background-color: #006400;
+  border-bottom: none;
 }
 
-.course-card .card-title:is(:hover, :focus) { color: var(--kappel); }
+.cabang[open] .juri-list {
+  max-height: 500px; /* Tinggi maksimal ketika terbuka */
+  opacity: 1; /* Tampil ketika terbuka */
+}
 
-.course-card :is(.wrapper, .rating-wrapper, .card-meta-list, .card-meta-item) {
+/* Efek hover pada juri */
+.juri-item:hover {
+  transform: translateY(-5px); /* Efek hover mengangkat */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar saat hover */
+}
+
+
+
+/*-----------------------------------*\
+  #kordinator
+\*-----------------------------------*/
+
+.kordinator { background-color: var(--isabelline); }
+
+.cabang-koordinator {
   display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.card {
+  width: calc(33.333% - 10px);
+  border: 1px solid #ddd; /* Border kotak */
+  border-radius: 8px; /* Sudut membulat */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animasi saat hover */
+  background-color: #fff; /* Warna latar belakang putih */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Menyelaraskan item di tengah secara horizontal */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Efek hover mengangkat */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar saat hover */
+}
+
+.koordinator {
+  width: 100%; /* Lebar penuh untuk konten koordinator di dalam card */
+}
+
+.koordinator summary {
+  cursor: pointer;
+  padding: 15px;
+  font-weight: bold;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #ddd;
+  margin: 0;
+  text-align: left; /* Mengatur text-align ke kiri */
+  width: 100%;
+}
+
+.koordinator-info {
+  display: none; /* Menyembunyikan konten secara default */
+  padding: 15px;
+  text-align: center; /* Menyelaraskan teks di tengah */
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Menyelaraskan konten di tengah secara horizontal */
+  justify-content: center; /* Menyelaraskan konten di tengah secara vertikal */
+}
+
+.koordinator[open] .koordinator-info {
+  display: flex; /* Menampilkan konten saat elemen <details> dibuka */
+}
+
+.koordinator-info img {
+  max-width: 80px; /* Ukuran gambar lebih kecil */
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.koordinator-info h4, .koordinator-info p {
+  margin: 5px 0; /* Mengatur margin untuk elemen teks */
+}
+
+
+
+
+/*-----------------------------------*\
+  #jadwal
+\*-----------------------------------*/
+
+.schedule-tabs {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.schedule-tab {
+  flex: 1;
+  padding: 10px 20px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-weight: bold;
+}
+
+.schedule-tab.active {
+  background-color: #01681c;
+  color: #ffffff;
+}
+
+.schedule-tab:hover {
+  background-color: #01681c;
+  transform: translateY(-3px);
+  box-shadow: 0 20px 16px rgba(0, 0, 0, 0.467); /* Bayangan lebih besar saat hover */
+}
+
+.tab-content {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-.course-card .wrapper { gap: 10px; }
-
-.course-card .rating-wrapper { gap: 3px; }
-
-.course-card .rating-wrapper ion-icon { color: var(--selective-yellow); }
-
-.course-card .rating-text {
-  color: var(--eerie-black-1);
-  font-size: var(--fs-6);
-  font-weight: var(--fw-500);
+.tab-pane {
+  display: none;
+  width: 100%;
 }
 
-.course-card .price {
-  color: var(--radical-red);
-  font-family: var(--ff-league_spartan);
-  font-size: var(--fs-4);
-  font-weight: var(--fw-600);
-  margin-block: 8px 15px;
+.tab-pane.show {
+  display: block;
 }
 
-.course-card .card-meta-list { flex-wrap: wrap; }
-
-.course-card .card-meta-item {
-  position: relative;
-  gap: 5px;
+.schedule-itemku {
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+  background-color: #fcfeec;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left; /* Mengubah text-align menjadi left untuk konsistensi */
 }
 
-.course-card .card-meta-item:not(:last-child)::after {
-  content: "|";
-  display: inline-block;
-  color: var(--platinum);
-  padding-inline: 10px;
+.schedule-timeku, .schedule-eventku {
+  flex-basis: 30%;
+  font-weight: bold;
+  text-align: left; /* Menempatkan teks di kiri untuk konsistensi */
 }
 
-.course-card .card-meta-item ion-icon {
-  color: var(--quick-silver);
-  --ionicon-stroke-width: 50px;
+.schedule-eventku {
+  flex-basis: 65%; /* Sama seperti waktu */
 }
 
-.course-card .card-meta-item .span {
-  color: var(--eerie-black-1);
-  font-size: var(--fs-7);
+.schedule-eventku h3, 
+.schedule-eventku p {
+  margin: 0 0 5px;
+  font-size: 1.2em;
 }
 
-.course .btn {
-  margin-inline: auto;
-  margin-block-start: 60px;
+@media (max-width: 768px) {
+  .schedule-itemku {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .schedule-timeku,
+  .schedule-eventku {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+    text-align: left;
+  }
 }
 
+
+/*-----------------------------------*\
+  #lokasi
+\*-----------------------------------*/
+
+.lokasi { background-color: var(--isabelline); }
+
+/*-----------------------------------*\
+  #gallery
+\*-----------------------------------*/
+
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  max-height: 300px; /* Menampilkan maksimal 2 baris */
+  overflow-y: auto; /* Menambahkan scroll vertikal */
+}
+
+.gallery-row {
+  display: flex;
+  justify-content: space-between; /* Memberi jarak antar gambar */
+  margin-bottom: 25px; /* Menambahkan jarak antar baris gambar */
+}
+
+.gallery-row a {
+  display: inline-block; /* Memastikan link melingkupi gambar sepenuhnya */
+  width: 19%; /* Lebar link sesuai lebar gambar */
+}
+
+.gallery-row img {
+  width: 100%; /* Membuat gambar mengisi link sepenuhnya */
+  height: auto;
+  object-fit: cover; /* Memastikan gambar tetap proporsional */
+  border-radius: 5px; /* Menambahkan sudut yang membulat pada gambar */
+  transition: transform 0.3s ease; /* Transisi halus saat efek hover */
+}
+
+.gallery-row img:hover {
+  transform: scale(1.1); /* Efek zoom pada hover */
+}
 
 
 
@@ -924,157 +1091,36 @@ body {
   #VIDEO
 \*-----------------------------------*/
 
-.video {
-  background-size: contain;
-  background-position: center top;
-}
-
 .video-banner {
   position: relative;
-  border-top-right-radius: 80px;
-  border-bottom-left-radius: 120px;
+  width: 100%;
+  max-width: 1000px;
+  height: 0;
+  padding-top: 70%;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
-.video .play-btn {
+
+.vid-cover {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: var(--radical-red);
-  font-size: 30px;
-  padding: 16px;
-  color: var(--white);
-  border-radius: var(--radius-circle);
-  box-shadow: 0 0 0 0 var(--white_50);
-  z-index: 1;
-  animation: pulse 3s ease infinite;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Memastikan video menutupi seluruh kontainer */
 }
 
-@keyframes pulse {
-  0% { box-shadow: 0 0 0 0 var(--white_50); }
-  100% { box-shadow: 0 0 0 20px transparent; }
+@media (min-width: 1000px) {
+  .video-banner {
+    padding-top: 80%; /* Rasio aspek 16:9 untuk layar yang lebih lebar */
+    padding-left: 100%;
+  }
 }
-
-.video-banner::after {
-  inset: 0;
-  background-color: var(--black_30);
-}
-
-
-
-
-
-/*-----------------------------------*\
-  #STATS
-\*-----------------------------------*/
-
-.stats-card {
-  text-align: center;
-  padding: 25px;
-  border-radius: var(--radius-10);
-}
-
-.stats-card :is(.card-title, .card-text) { font-family: var(--ff-league_spartan); }
-
-.stats-card .card-title {
-  color: hsl(var(--color));
-  font-size: var(--fs-2);
-  line-height: 1.1;
-}
-
-.stats-card .card-text {
-  color: var(--eerie-black-1);
-  text-transform: uppercase;
-}
-
-
-
-
-
-/*-----------------------------------*\
-  #BLOG
-\*-----------------------------------*/
-
-.blog-card .card-banner { border-radius: var(--radius-10); }
-
-.blog-card .card-banner .img-cover { transition: var(--transition-2); }
-
-.blog-card .card-banner::after {
-  inset: 0;
-  background-color: var(--black_50);
-  opacity: 0;
-  transition: var(--transition-1);
-}
-
-.blog-card:is(:hover, :focus-within) .card-banner .img-cover { transform: scale(1.1); }
-
-.blog-card:is(:hover, :focus-within) .card-banner::after { opacity: 1; }
-
-.blog-card .card-content {
-  position: relative;
-  margin-inline: 15px;
-  background-color: var(--white);
-  padding: 20px;
-  border-radius: var(--radius-10);
-  box-shadow: var(--shadow-3);
-  margin-block-start: -100px;
-  z-index: 1;
-}
-
-.blog-card .card-btn {
-  position: absolute;
-  top: -40px;
-  right: 30px;
-  background-color: var(--kappel);
-  color: var(--white);
-  font-size: 20px;
-  padding: 20px;
-  border-radius: var(--radius-circle);
-  transition: var(--transition-1);
-  opacity: 0;
-}
-
-.blog-card .card-btn:is(:hover, :focus) { background-color: var(--radical-red); }
-
-.blog-card:is(:hover, :focus-within) .card-btn {
-  opacity: 1;
-  transform: translateY(10px);
-}
-
-.blog-card :is(.card-meta-item, .card-text, .card-subtitle) {
-  font-size: var(--fs-5);
-}
-
-.blog-card .card-subtitle { text-transform: uppercase; }
-
-.blog-card .card-title {
-  margin-block: 10px 15px;
-  transition: var(--transition-1);
-}
-
-.blog-card .card-title:is(:hover, :focus) { color: var(--kappel); }
-
-.blog-card :is(.card-meta-list, .card-meta-item) { display: flex; }
-
-.blog-card .card-meta-list {
-  flex-wrap: wrap;
-  gap: 10px 20px;
-  margin-block-end: 20px;
-}
-
-.blog-card .card-meta-item {
-  gap: 10px;
-  align-items: center;
-  color: var(--eerie-black-1);
-}
-
-.blog-card .card-meta-item ion-icon {
-  color: var(--kappel);
-  font-size: 18px;
-  --ionicon-stroke-width: 40px;
-}
-
-
 
 
 
@@ -1153,32 +1199,31 @@ body {
 
 
 
-
 /*-----------------------------------*\
   #BACK TO TOP
 \*-----------------------------------*/
 
 .back-top-btn {
-  position: fixed;
-  bottom: 40px;
-  right: 30px;
-  background-color: var(--kappel);
-  color: var(--white);
-  font-size: 20px;
-  padding: 15px;
-  border-radius: var(--radius-circle);
-  z-index: 3;
-  opacity: 0;
-  pointer-events: none;
-  transition: var(--transition-1);
+  position: fixed; /* Tetapkan posisi tetap sehingga tetap terlihat saat halaman digulir */
+  bottom: 50px; /* Jarak dari bagian bawah halaman */
+  right: 30px; /* Jarak dari sisi kanan halaman */
+  background-color: #024518; /* Warna latar belakang tombol */
+  color: #fff; /* Warna teks tombol */
+  padding: 10px; /* Jarak dalam tombol */
+  border-radius: 50%; /* Bentuk tombol menjadi lingkaran */
+  display: none; /* Menyembunyikan tombol secara default */
+  z-index: 1000; /* Pastikan tombol berada di atas elemen lainnya */
+  cursor: pointer; /* Ubah kursor saat melayang di atas tombol */
+  transition: opacity 0.3s ease; /* Transisi halus saat muncul dan menghilang */
 }
 
-.back-top-btn.active {
-  transform: translateY(10px);
-  opacity: 1;
-  pointer-events: all;
+.back-top-btn.show {
+  display: block; /* Menampilkan tombol saat diperlukan */
 }
 
+.back-top-btn ion-icon {
+  font-size: 24px; /* Perbesar ikon dengan menambah ukuran font */
+}
 
 
 
