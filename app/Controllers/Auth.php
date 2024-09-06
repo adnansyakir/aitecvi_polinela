@@ -14,11 +14,14 @@ class Auth extends BaseController
     protected $db;
     protected $session;
     protected $ptModel;
+    protected $User;
+
 
     public function __construct()
     {
         // Initialize models and services
         $this->Auth = new AuthModel();
+        $this->User = new UsersModel();
         $this->ptModel = new PtModel();
         $this->db = \Config\Database::connect();
         $this->session = \Config\Services::session();
@@ -52,35 +55,89 @@ class Auth extends BaseController
 
         $validation->setRules([
             'username' => 'required',
-            'email' => 'required|valid_email|is_unique[users.email]',
-            'password' => 'required|min_length[8]',
+            'email' => 'required|valid_email',
             'pt_id' => 'required',
+        ], [
+            'username' => [
+                'required' => 'Kolom username harus diisi.'
+            ],
+            'email' => [
+                'required' => 'Kolom email harus diisi.',
+                'valid_email' => 'Masukkan alamat email yang valid.'
+            ],
+            
         ]);
 
         if (!$validation->withRequest($this->request)->run()) {
-            return redirect()->to('/register')->withInput()->with('error', $validation->listErrors());
+            return redirect()->back()->withInput()->with('errors', $validation->getErrors());
+        }
+// dd($validation);
+        $password = hash('sha256', sha1($this->request->getPost('password')));
+        if (empty($password)) {
+            $password = hash('sha256', sha1('123456'));
         }
 
-        $userModel = new AuthModel();
-
-        // Hash the password securely using bcrypt
-        $password_hash = password_hash($this->request->getPost('password'), PASSWORD_BCRYPT);
-
-        $userData = [
+        $data = [
+            'id' => Uuid::uuid4()->toString(),
             'username' => $this->request->getPost('username'),
             'email' => $this->request->getPost('email'),
-            'password' => $password_hash,
             'pt_id' => $this->request->getPost('pt_id'),
-            'role_id' => '3',  // Assuming '1' is a valid role ID
-            'status' => '0',  // Assuming '1' means the user is active
+            
+            'role_id' => 3,
+
+            'password' => $password,
         ];
 
-        $userModel->save($userData);
-        // Save user to the database
+        $this->User->insert($data);
 
-        // Redirect to verification page with a custom message
-        return redirect()->to('/verification_pending')->with('username', $this->request->getPost('username'));
+        if ($this->db->affectedRows() > 0) {
+            return redirect()->to('/verification_pending')->with('username', $this->request->getPost('username'));
+        } else {
+            return redirect()->back()->withInput()->with('error', 'Gagal menambahkan data.');
+        }
+
+        return redirect()->to('/verification_pending');
     }
+
+    // public function registerPost()
+    // {
+    //     $validation = \Config\Services::validation();
+
+    //     $validation->setRules([
+    //         'username' => 'required',
+    //         'email' => 'required|valid_email|is_unique[users.email]',
+    //         'password' => 'required|min_length[8]',
+    //         'pt_id' => 'required',
+    //     ]);
+
+    //     if (!$validation->withRequest($this->request)->run()) {
+    //         return redirect()->to('/register')->withInput()->with('error', $validation->listErrors());
+    //     }
+    //     //    dd($validation);
+
+    //     $userModel = new AuthModel();
+
+    //     // Hash the password securely using bcrypt
+    //     $password = hash('sha256', sha1($this->request->getPost('password')));
+    //     if (empty($password)) {
+    //         $password = hash('sha256', sha1('123456'));
+    //     }
+    //     $userData = [
+    //         'id' => Uuid::uuid4()->toString(),
+    //         'username' => $this->request->getPost('username'),
+    //         'email' => $this->request->getPost('email'),
+    //         'password' => $password,
+    //         'pt_id' => $this->request->getPost('pt_id'),
+    //         'role_id' => '3',  // Assuming '1' is a valid role ID
+    //         'status' => '0',  // Assuming '1' means the user is active
+    //     ];
+
+    //     $userModel->save($userData);
+    //     // Save user to the database
+
+    //     // Redirect to verification page with a custom message
+    //     return redirect()->to('/verification_pending')->with('username', $this->request->getPost('username'));
+    // }
 
     public function verification()
     {
