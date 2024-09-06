@@ -8,7 +8,7 @@ class PesertaModel extends Model
 {
     protected $table      = 'peserta';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['id', 'kode_peserta', 'nama_peserta', 'no_wa','ktm','file_surat_tugas','prodi_id','pt_id','keterangan'];
+    protected $allowedFields = ['id', 'kode_peserta', 'nama_peserta', 'no_wa','ktm','berita_acara','prodi_id','pt_id','foto','email','ukuran_kaos'];
 
     
 
@@ -41,6 +41,16 @@ class PesertaModel extends Model
         return $this->findAll();
     }
 
+    public function getPesertaById($id)
+{
+    return $this->where('id', $id)->first();
+}
+
+    public function getAllProdiid($id)
+    {
+        return $this->findAll($id);
+    }
+
     public function pesertabyjoinsemua(){
         $builder = $this->db->table('peserta');
         $builder->select('peserta.*, prodi.nama_prodi, pt.nama_pt');
@@ -48,12 +58,22 @@ class PesertaModel extends Model
         $builder->join('pt', 'peserta.pt_id = pt.id', 'left');
         
         
-        // // Print query for debugging
-        // echo $builder->getCompiledSelect();
-        
         $query = $builder->get();
         return $query->getResultArray();
     }
+
+    public function pesertabyjoinsemuaid($peserta_id)
+{
+    $builder = $this->db->table('peserta');
+    $builder->select('peserta.*, prodi.nama_prodi, pt.nama_pt');
+    $builder->join('prodi', 'peserta.prodi_id = prodi.id', 'left');
+    $builder->join('pt', 'peserta.pt_id = pt.id', 'left');
+    $builder->where('peserta.id', $peserta_id);
+    
+    $query = $builder->get();
+    return $query->getRowArray(); // Use getRowArray() to fetch a single row if you're searching by ID
+}
+
     public function getPeserta($id)
     {
 

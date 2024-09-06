@@ -109,6 +109,7 @@ $routes->group('admin', ['filter' => 'authenticate'], function ($routes) {
     $routes->get('peserta/edit/(:any)', 'AdminMaster::editPeserta/$1');
     $routes->post('peserta/edit/(:num)', 'AdminMaster::editPesertaPost/$1');
     $routes->get('peserta/delete/(:any)', 'AdminMaster::deletePeserta/$1');
+    $routes->get('peserta/view/(:any)', 'AdminMaster::pesertaview/$1');
 
 
     $routes->get('hasillomba', 'AdminHasillomba::index');

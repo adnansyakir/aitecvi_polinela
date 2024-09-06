@@ -35,12 +35,11 @@
   -->
     <header class="header" data-header>
         <div class="containerku">
-            <a href="" class="header-logo">
+            <a href="#" class="header-logo">
                 <img src="landing/assets/images/L3.png" width="180" height="50" alt="AITeCVI logo" />
             </a>
-
             <nav class="navbar" data-navbar>
-                <a href="">
+                <a href="#">
                     <img src="landing/assets/images/L3.png" width="180" height="50" alt="AITeCVI logo" />
                 </a>
                 <ul class="navbar-list">
@@ -88,17 +87,16 @@
 
                 <a href="../loginn" class="btn has-before">
                     <span class="span">Login</span>
-
                 </a>
 
                 <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
                     <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
                 </button>
             </div>
-
             <div class="overlay" data-nav-toggler data-overlay></div>
         </div>
     </header>
+
 
     <main>
             <!-- 
@@ -467,7 +465,7 @@
 
             <!-- Kampus Peserta -->
 
-            <section class="section KP" id="kampuspeserta" aria-label="course">
+            <!-- <section class="section KP" id="kampuspeserta" aria-label="course">
                 <div class="container">
 
                     <div class="section-header">
@@ -500,7 +498,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
             <!-- Sambutan Direktur -->
             <section class="section direktur" id="direktur" aria-label="course">
@@ -698,8 +696,8 @@
                                     foreach ($pt as $row) : ?>
                                         <tr>
                                             <td><?= $i++; ?></td>
-                                            <td align="center">Buku Paanduan</td>
-                                            <td  align="center"><a href="https://drive.google.com/file/d/1HPU4g-FFDIld1npP6i0WZlXjDkekOFqm/view?usp=sharing">Klik Disini</a></td>
+                                            <td align="center">Buku Panduan</td>
+                                            <td align="center"><a href="https://drive.google.com/file/d/1HPU4g-FFDIld1npP6i0WZlXjDkekOFqm/view?usp=sharing">Klik Disini</a></td>
                                         </tr>
                                     <?php endforeach; ?>
                                 </tbody>
@@ -1647,8 +1645,14 @@
 
                     <div class="wrapper">
                         <span class="span">Email:</span>
+                        <a href="mailto:aitecVILampung@gmail.com" class="footer-link">aitecVILampung@gmail.com</a>
+                    </div>
 
-                        <a href="mailto:info@eduweb.com" class="footer-link">aitecVILampung@gmail.com</a>
+
+                    <div class="wrapper">
+                        <span class="span">Instagram:</span>
+
+                        <a href="https://www.instagram.com/aitec6polinela" class="footer-link">@aitec6polinela</a>
                     </div>
                 </div>
 
@@ -1658,31 +1662,28 @@
                     </li>
 
                     <li>
-                        <a href="tel:+6281290056900">Laurens : 081339442556 (Ketua)</a>
+                        Mustika Adzania Lestari:<br><a href="tel:+6282182139595">0821-8213-9595</a>
                     </li>
 
                     <li>
-                    <a href="tel:+6281290056900">Dina TK : 081290056900 (Sekretaris)</a>
+                        Linuwih Aluh Prastiti:<br><a href="tel:+628127265550">0812-7265-550</a>
                     </li>
 
                     <li>
-                    <a href="tel:+620113820891">Micha : 08113820891 (Bendahara)</a>
+                        Enggar Dwi Cahyo:<br><a href="tel:+6285878948248">0858-7894-8248</a>
                     </li>
 
                     <li>
-                    <a href="tel:+6281237942020">Romi : 081237942020 (IT)</a>
+                        Intan Andya Bellapama:<br><a href="tel:+6282183153815">0821-8315-3815</a>
                     </li>
 
                     <li>
-                    <a href="tel:+6281237942020">Robin : 08113837387 (IT)</a>
-                    </li>
-
-                    <li>
-                    <a href="tel:+6281237942020">Xaver : 081227778862 (Humas)</a>
+                        Surya Prasetya T:<br><a href="tel:+6282282200440">0822-8220-0440</a>
                     </li>
                 </ul>
 
-                <ul class="footer-list">
+
+                <ul cls="footer-list">
                     <li>
                         <p class="footer-list-title">Links</p>
                     </li>
@@ -1733,7 +1734,7 @@
                     <ul class="social-list">
                         <li>
                             <a href="#" class="social-link">
-                                <ion-icon name="logo-facebook"></ion-icon>
+                                <ion-icon name="logo-email"></ion-icon>
                             </a>
                         </li>
 
