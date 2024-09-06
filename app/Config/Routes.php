@@ -11,20 +11,20 @@ $routes->get('back', function () {
 });
 
 
-
 $routes->get('/', 'LandingPage::index');
 
-
 $routes->get('/loginn', 'Auth::index');
-// $routes->get('umkm/create', 'UmkmProfil::add');
+$routes->get('/register', 'Auth::register');
+$routes->post('/save', 'Auth::registerPost');
 
+$routes->get('/verification_pending', 'Auth::verification');
 
-// $routes->get('/', 'Auth::index'); // Ini akan mencocokkan "/auth/"
 $routes->group('auth', ['filter' => 'redirectIfAuthenticated'], function ($routes) {
-    $routes->get('/', 'Auth::insdex');
-    $routes->get('logout', 'Auth::logout', ['filter' => null]); // Mengecualikan dari filter
+    $routes->get('/', 'Auth::index');
+    $routes->get('logout', 'Auth::logout', ['filter' => null]); // Exclude from filter
     $routes->post('check-auth', 'Auth::checkAuth');
 });
+
 
 
 $routes->group('admin', ['filter' => 'authenticate'], function ($routes) {
@@ -115,7 +115,7 @@ $routes->group('admin', ['filter' => 'authenticate'], function ($routes) {
     $routes->get('hasillomba/add', 'AdminHasillomba::add');
     $routes->post('hasillomba/store', 'AdminHasillomba::store');
     $routes->get('hasillomba/edit/(:any)', 'AdminHasillomba::edit/$1');
-    $routes->post('hasillomba/update/(:any)', 'AdminHasillomba::update/$1');    
+    $routes->post('hasillomba/update/(:any)', 'AdminHasillomba::update/$1');
     $routes->get('hasillomba/delete/(:any)', 'AdminHasillomba::delete/$1');
 
 
@@ -137,7 +137,7 @@ $routes->group('juri', ['filter' => 'authenticate'], function ($routes) {
     $routes->get('hasillomba/add', 'JuriHasillomba::add');
     $routes->post('hasillomba/store', 'JuriHasillomba::store');
     $routes->get('hasillomba/edit/(:any)', 'JuriHasillomba::edit/$1');
-    $routes->post('hasillomba/update/(:any)', 'JuriHasillomba::update/$1');    
+    $routes->post('hasillomba/update/(:any)', 'JuriHasillomba::update/$1');
     $routes->get('hasillomba/delete/(:any)', 'JuriHasillomba::delete/$1');
 
     $routes->get('juri', 'JuriJuri::index');
@@ -193,7 +193,7 @@ $routes->group('koordinator', ['filter' => 'authenticate'], function ($routes) {
     $routes->get('hasillomba/add', 'KoordinatorHasillomba::add');
     $routes->post('hasillomba/store', 'KoordinatorHasillomba::store');
     $routes->get('hasillomba/edit/(:any)', 'KoordinatorHasillomba::edit/$1');
-    $routes->post('hasillomba/update/(:any)', 'KoordinatorHasillomba::update/$1');    
+    $routes->post('hasillomba/update/(:any)', 'KoordinatorHasillomba::update/$1');
     $routes->get('hasillomba/delete/(:any)', 'KoordinatorHasillomba::delete/$1');
 
     $routes->get('sertifikat', 'KoordinatorSertifikat::Sertifikat');

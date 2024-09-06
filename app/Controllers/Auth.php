@@ -2,38 +2,90 @@
 
 namespace App\Controllers;
 
-use App\Models\AuthModel;
 use Ramsey\Uuid\Uuid;
+
+use App\Models\AuthModel;
+use App\Models\Admin\PtModel;
+use App\Models\Admin\UsersModel;
 
 class Auth extends BaseController
 {
-
     protected $Auth;
     protected $db;
     protected $session;
+    protected $ptModel;
 
     public function __construct()
     {
-        // Inisialisasi model tahun akademik
+        // Initialize models and services
         $this->Auth = new AuthModel();
+        $this->ptModel = new PtModel();
         $this->db = \Config\Database::connect();
         $this->session = \Config\Services::session();
     }
 
     public function index()
     {
-        // var_dump(session()->get('logged_in'));die;
+        // Check if user is already logged in
         if (session()->get('logged_in')) {
-            // Jika ada session 'logged_id', redirect ke dashboard berdasarkan peran (role)
             return redirect()->to(strtolower(session()->get('role')) . '/dashboard');
         } else {
-            // Jika tidak ada session 'logged_id', tampilkan halaman login
-            $data = [
-                "title" => "Halaman Login - AITECVI-POLINELA",
-                'errors' => session('errors'), // Tambahkan validation ke data
-            ];
-            return view('auth/index', $data);
+            // Fetch all institutions
+            $data['title'] = "Halaman Login - AITECVI-POLINELA";
+            $data['errors'] = session('errors'); // Pass any errors to the view
+
+            return view('auth/index', $data); // Render the login view
         }
+    }
+    public function register()
+    {
+
+        $data['pt_id'] = $this->ptModel->findAll(); // Fetch all institutions
+        $data['errors'] = session('errors'); // Pass any errors to the view
+
+        return view('auth/register', $data); // Render the login view
+
+    }
+    public function registerPost()
+    {
+        $validation = \Config\Services::validation();
+
+        $validation->setRules([
+            'username' => 'required',
+            'email' => 'required|valid_email|is_unique[users.email]',
+            'password' => 'required|min_length[8]',
+            'pt_id' => 'required',
+        ]);
+
+        if (!$validation->withRequest($this->request)->run()) {
+            return redirect()->to('/register')->withInput()->with('error', $validation->listErrors());
+        }
+
+        $userModel = new AuthModel();
+
+        // Hash the password securely using bcrypt
+        $password_hash = password_hash($this->request->getPost('password'), PASSWORD_BCRYPT);
+
+        $userData = [
+            'username' => $this->request->getPost('username'),
+            'email' => $this->request->getPost('email'),
+            'password' => $password_hash,
+            'pt_id' => $this->request->getPost('pt_id'),
+            'role_id' => '3',  // Assuming '1' is a valid role ID
+            'status' => '0',  // Assuming '1' means the user is active
+        ];
+
+        $userModel->save($userData);
+        // Save user to the database
+
+        // Redirect to verification page with a custom message
+        return redirect()->to('/verification_pending')->with('username', $this->request->getPost('username'));
+    }
+
+    public function verification()
+    {
+        $username = session()->getFlashdata('username');
+        return view('auth/verifikasi', ['username' => $username]);
     }
 
 

@@ -8,6 +8,7 @@ class AuthModel extends Model
 {
     protected $table      = 'users';
     protected $primaryKey = 'id';
+    protected $allowedFields = ['id', 'username', 'email', 'password', 'pt_id', 'role_id', 'created_at', 'updated_at', 'status'];
     // protected $allowedFields = ['id', 'nip', 'nama',  'prodi_id', 'jurusan_id', 'email', 'ttd', 'status'];
 
 
@@ -16,29 +17,26 @@ class AuthModel extends Model
     {
         // Hash password
         $hashedPassword = hash('sha256', sha1($password));
-    
+
         // Query ke database untuk mencari user
         $query = $this->select('users.*, role.role')
             ->join('role', 'role.id = users.role_id', 'left')
             ->where('password', $hashedPassword)
             ->groupStart()
-                ->where('users.email', $username)
-                ->orWhere('users.username', $username)
+            ->where('users.email', $username)
+            ->orWhere('users.username', $username)
             ->groupEnd();
-    
+
         // Jalankan kueri dan ambil hasilnya
         $user = $query->get()->getRow();
-    
+
         // Periksa apakah user ditemukan
         if ($user) {
             // Jika user ditemukan, kembalikan data user
             return $user;
         }
-    
+
         // Jika user tidak ditemukan, kembalikan null
         return null;
     }
-    
-    
-
 }

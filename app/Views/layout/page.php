@@ -23,13 +23,18 @@
     <link rel="shortcut icon" href="/assets/img/L2.png" type="image/x-icon">
     <link rel="stylesheet" href="/templates/assets/vendors/toastify/toastify.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<style>
-    .table-container {
-    width: 100%;
-    overflow-x: auto; /* Mengaktifkan scrollbar horizontal jika diperlukan */
-}
+    <style>
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+            /* Mengaktifkan scrollbar horizontal jika diperlukan */
+        }
 
-</style>
+        .sidebar-item.has-sub .sidebar-link {
+            font-size: 14px;
+            /* Samakan dengan ukuran teks lain */
+        }
+    </style>
 </head>
 
 <body>
@@ -175,6 +180,7 @@
         let table1 = document.querySelector('#table1');
         let dataTable = new simpleDatatables.DataTable(table1);
     </script>
+
     <script src="/templates/assets/vendors/toastify/toastify.js"></script>
     <script src="/templates/assets/js/extensions/toastify.js"></script>
     <script>

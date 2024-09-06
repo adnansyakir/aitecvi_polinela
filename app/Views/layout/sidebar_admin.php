@@ -62,11 +62,45 @@
         </li>
 
 
-        <li class="sidebar-item <?= ($request->uri->getSegment(2) === 'pendaftaran') ? 'active' : '' ?>">
+        <!-- <li class="sidebar-item <?= ($request->uri->getSegment(2) === 'pendaftaran') ? 'active' : '' ?>">
             <a href="/admin/pendaftaran" class='sidebar-link'>
                 <i class="bi bi-person-plus-fill"></i>
                 <span>Pendaftaran</span>
             </a>
+        </li> -->
+        <li class="sidebar-item has-sub <?= ($request->uri->getSegment(2) === 'kompetisiInovasi' || $request->uri->getSegment(2) === 'kontesVokasi' || $request->uri->getSegment(2) === 'eksibisiFotografi') ? 'active open' : '' ?>">
+            <a href="#" class="sidebar-link">
+                <i class="bi bi-person-plus-fill"></i>
+                <span>Pendaftaran</span>
+            </a>
+            <ul class="submenu <?= ($request->uri->getSegment(2) === 'kontesVokasi') ? 'active open' : '' ?>">
+
+                <!-- Kompetisi Inovasi -->
+                <li class="submenu-item <?= ($request->uri->getSegment(2) === 'kompetisiInovasi') ? 'active' : '' ?>">
+                    <a href="/admin/pendaftaran/kompetisiInovasi">Kompetisi Inovasi</a>
+                </li>
+
+                <!-- Kontes Vokasi dengan Submenu -->
+                <li class="sidebar-item has-sub <?= ($request->uri->getSegment(2) === 'kontesVokasi') ? 'active open' : '' ?>">
+                    <a href="#" class="sidebar-link">
+                        <span>Kontes Vokasi</span>
+                    </a>
+                    <ul class="submenu <?= ($request->uri->getSegment(3) === 'daring' || $request->uri->getSegment(3) === 'luring') ? 'active' : '' ?>">
+                        <li class="submenu-item <?= ($request->uri->getSegment(3) === 'daring') ? 'active' : '' ?>">
+                            <a href="/admin/pendaftaran/kontesVokasi/daring">Daring</a>
+                        </li>
+                        <li class="submenu-item <?= ($request->uri->getSegment(3) === 'luring') ? 'active' : '' ?>">
+                            <a href="/admin/pendaftaran/kontesVokasi/luring">Luring</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Eksibisi Fotografi -->
+                <li class="submenu-item <?= ($request->uri->getSegment(2) === 'eksibisiFotografi') ? 'active' : '' ?>">
+                    <a href="/admin/pendaftaran/eksibisiFotografi">Eksibisi Fotografi</a>
+                </li>
+
+            </ul>
         </li>
 
         <li class="sidebar-item <?= ($request->uri->getSegment(2) === 'hasillomba') ? 'active' : '' ?>">
