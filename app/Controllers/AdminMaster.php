@@ -415,6 +415,17 @@ class AdminMaster extends BaseController
         echo view('konten/admin/peserta/index', $data);
     }
 
+    public function pesertaview($id)
+    {
+        $data['peserta'] = $this->pesertaModel->getPesertaById($id);
+
+    if (empty($data['peserta'])) {
+        throw new \CodeIgniter\Exceptions\PageNotFoundException('Peserta dengan ID ' . $id . ' tidak ditemukan.');
+    }
+
+    return view('konten/admin/peserta/view', $data);
+    }
+
     public function addPeserta()
     {
         $data = [
@@ -434,35 +445,44 @@ class AdminMaster extends BaseController
         $validationRules = [
             'nama_peserta' => 'required',
             'kode_peserta' => 'required',
+            'email' => 'required',
+            'ukuran_kaos' => 'required',
             'pt_id' => 'required',
             'prodi_id' => 'required',
-            'keterangan' => 'required',
-            'file_surat_tugas' =>  'max_size[file_surat_tugas,5120]|ext_in[file_surat_tugas,pdf,doc,docx, png]',
+            'berita_acara' =>  'max_size[berita_acara,5120]|ext_in[berita_acara,pdf,doc,docx, png]',
             'ktm' => 'max_size[ktm,5120]|ext_in[ktm,pdf,doc,docx,png]',
+            'foto' => 'max_size[foto,5120]|ext_in[foto,jpg,jpeg,png]',
             'no_wa' => 'required',
         ];
 
         $validationMessages = [
             'nama_peserta' => ['required' => 'Kolom Nama Peserta Harus diisi'],
             'kode_peserta' => ['required' => 'Kolom Kode Peserta Harus diisi'],
+            'email' => ['required' => 'Kolom email peserta Harus diisi'],
+            'ukuran_kaos' => ['required' => 'ukuran kaos peserta'],
             'pt_id' => ['required' => 'Kolom Perguruan Tinggi Harus diisi'],
             'prodi_id' => ['required' => 'Kolom Program Studi Harus diisi'],
-            'keterangan' => ['required' => 'Kolom Kelompok Harus diisi'],
             'ktm' => [
                 'max_size' => 'Ukuran file KTM tidak boleh lebih dari 5120 KB',
                 'ext_in' => 'Format file KTM harus PDF, DOC, DOCX, PNG',
             ],
-            'file_surat_tugas' => [
-                'max_size' => 'Ukuran file Surat Tugas tidak boleh lebih dari 5.120 KB',
-                'ext_in' => 'Format file Surat Tugas harus PDF, DOC, DOCX, PNG',
+            'berita_acara' => [
+                'max_size' => 'Ukuran berita_acara tidak boleh lebih dari 5.120 KB',
+                'ext_in' => 'Format berita_acara harus PDF, DOC, DOCX, PNG',
+            ],
+            'foto' => [
+                'max_size' => 'Ukuran foto tidak boleh lebih dari 5.120 KB',
+                'ext_in' => 'Format foto harus JPG,JPEG, PNG',
             ],
             'no_wa' => ['required' => 'Kolom No Whatsapp Harus diisi'],
         ];
 
         $validation = $this->validate($validationRules, $validationMessages);
+        // dd($validation);
 
         if (!$validation) {
             $errors = \Config\Services::validation()->getErrors();
+            // dd($errors);
             return redirect()->back()->withInput()->with('errors', $errors);
         }
 
@@ -471,16 +491,26 @@ class AdminMaster extends BaseController
             'kode_peserta' => $this->request->getPost('kode_peserta'),
             'pt_id' => $this->request->getPost('pt_id'),
             'prodi_id' => $this->request->getPost('prodi_id'),
-            'keterangan' => $this->request->getPost('keterangan'),
+            'email' => $this->request->getPost('email'),
+            'ukuran_kaos' => $this->request->getPost('ukuran_kaos'),
             'no_wa' => $this->request->getPost('no_wa'),
         ];
 
         // Handle file uploads
-        $suratTugas = $this->request->getFile('file_surat_tugas');
-        if ($suratTugas && $suratTugas->isValid() && !$suratTugas->hasMoved()) {
-            $namasuratTugas = $suratTugas->getRandomName();
-            $suratTugas->move(FCPATH . '/uploads/surat_tugas', $namasuratTugas);
-            $data['file_surat_tugas'] = $namasuratTugas;
+        // dd($data);
+
+        $beritaAcara = $this->request->getFile('berita_acara');
+        if ($beritaAcara && $beritaAcara->isValid() && !$beritaAcara->hasMoved()) {
+            $namaberitaAcara = $beritaAcara->getRandomName();
+            $beritaAcara->move(FCPATH . '/uploads/berita_acara', $namaberitaAcara);
+            $data['berita_acara'] = $namaberitaAcara;
+        }
+
+        $Foto = $this->request->getFile('foto');
+        if ($Foto && $Foto->isValid() && !$Foto->hasMoved()) {
+            $namaFoto = $Foto->getRandomName();
+            $Foto->move(FCPATH . '/uploads/foto', $namaFoto);
+            $data['foto'] = $namaFoto;
         }
 
         $KTM = $this->request->getFile('ktm');
@@ -489,10 +519,11 @@ class AdminMaster extends BaseController
             $KTM->move(FCPATH . '/uploads/ktm', $namaKTM);
             $data['ktm'] = $namaKTM;
         }
-
+        
         $this->pesertaModel->insert($data);
         session()->setFlashdata('primary', 'Data berhasil disimpan.');
         return redirect()->to('admin/peserta');
+        
     }
 
 
@@ -514,35 +545,44 @@ class AdminMaster extends BaseController
         $validationRules = [
             'nama_peserta' => 'required',
             'kode_peserta' => 'required',
+            'email' => 'required',
+            'ukuran_kaos' => 'required',
             'pt_id' => 'required',
             'prodi_id' => 'required',
-            'keterangan' => 'required',
-            'file_surat_tugas' => 'max_size[file_surat_tugas,5120]|ext_in[file_surat_tugas,pdf,doc,docx,png]',
+            'berita_acara' =>  'max_size[berita_acara,5120]|ext_in[berita_acara,pdf,doc,docx, png]',
             'ktm' => 'max_size[ktm,5120]|ext_in[ktm,pdf,doc,docx,png]',
+            'foto' => 'max_size[foto,5120]|ext_in[foto,jpg,jpeg,png]',
             'no_wa' => 'required',
         ];
 
         $validationMessages = [
             'nama_peserta' => ['required' => 'Kolom Nama Peserta Harus diisi'],
             'kode_peserta' => ['required' => 'Kolom Kode Peserta Harus diisi'],
+            'email' => ['required' => 'Kolom email peserta Harus diisi'],
+            'ukuran_kaos' => ['required' => 'ukuran kaos peserta'],
             'pt_id' => ['required' => 'Kolom Perguruan Tinggi Harus diisi'],
             'prodi_id' => ['required' => 'Kolom Program Studi Harus diisi'],
-            'keterangan' => ['required' => 'Kolom Kelompok Harus diisi'],
             'ktm' => [
                 'max_size' => 'Ukuran file KTM tidak boleh lebih dari 5120 KB',
                 'ext_in' => 'Format file KTM harus PDF, DOC, DOCX, PNG',
             ],
-            'file_surat_tugas' => [
-                'max_size' => 'Ukuran file Surat Tugas tidak boleh lebih dari 5120 KB',
-                'ext_in' => 'Format file Surat Tugas harus PDF, DOC, DOCX, PNG',
+            'berita_acara' => [
+                'max_size' => 'Ukuran berita_acara tidak boleh lebih dari 5.120 KB',
+                'ext_in' => 'Format berita_acara harus PDF, DOC, DOCX, PNG',
+            ],
+            'foto' => [
+                'max_size' => 'Ukuran foto tidak boleh lebih dari 5.120 KB',
+                'ext_in' => 'Format foto harus JPG,JPEG, PNG',
             ],
             'no_wa' => ['required' => 'Kolom No Whatsapp Harus diisi'],
         ];
 
         $validation = $this->validate($validationRules, $validationMessages);
+        // dd($validation);
 
         if (!$validation) {
             $errors = \Config\Services::validation()->getErrors();
+            // dd($errors);
             return redirect()->back()->withInput()->with('errors', $errors);
         }
 
@@ -551,16 +591,26 @@ class AdminMaster extends BaseController
             'kode_peserta' => $this->request->getPost('kode_peserta'),
             'pt_id' => $this->request->getPost('pt_id'),
             'prodi_id' => $this->request->getPost('prodi_id'),
-            'keterangan' => $this->request->getPost('keterangan'),
+            'email' => $this->request->getPost('email'),
+            'ukuran_kaos' => $this->request->getPost('ukuran_kaos'),
             'no_wa' => $this->request->getPost('no_wa'),
         ];
 
         // Handle file uploads
-        $suratTugas = $this->request->getFile('file_surat_tugas');
-        if ($suratTugas && $suratTugas->isValid() && !$suratTugas->hasMoved()) {
-            $namasuratTugas = $suratTugas->getRandomName();
-            $suratTugas->move(FCPATH . '/uploads/surat_tugas', $namasuratTugas);
-            $data['file_surat_tugas'] = $namasuratTugas;
+        // dd($data);
+
+        $beritaAcara = $this->request->getFile('berita_acara');
+        if ($beritaAcara && $beritaAcara->isValid() && !$beritaAcara->hasMoved()) {
+            $namaberitaAcara = $beritaAcara->getRandomName();
+            $beritaAcara->move(FCPATH . '/uploads/berita_acara', $namaberitaAcara);
+            $data['berita_acara'] = $namaberitaAcara;
+        }
+
+        $Foto = $this->request->getFile('foto');
+        if ($Foto && $Foto->isValid() && !$Foto->hasMoved()) {
+            $namaFoto = $Foto->getRandomName();
+            $Foto->move(FCPATH . '/uploads/foto', $namaFoto);
+            $data['foto'] = $namaFoto;
         }
 
         $KTM = $this->request->getFile('ktm');

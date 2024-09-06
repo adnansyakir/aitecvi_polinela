@@ -3,7 +3,6 @@
 <?= $this->section('content') ?>
 
 <div class="row">
-
     <div class="col-lg-12 mb-4 order-0">
         <div class="card">
             <div class="row">
@@ -55,44 +54,24 @@
                                     </div>
                                 <?php endif; ?>
                             </div>
+                            
+                            
                             <div class="col-lg-6 mb-3">
                                 <label class="form-label" for="nama_peserta">Nama Peserta</label>
-                                <select class="form-control <?= isset($errors['peserta_id']) ? 'is-invalid ' : ''; ?>" name="peserta_id" id="nama_peserta">
-                                    <option value="" disabled selected>Pilih Peserta</option>
-                                    <?php foreach ($peserta as $pesr) : ?>
-                                        <option value="<?= $pesr['id'] ?>" <?= old('peserta_id') == $pesr['id'] ? 'selected' : '' ?>><?= $pesr['nama_peserta'] ?></option>
-                                    <?php endforeach; ?>
-                                </select>
-                                <?php if (isset($errors['peserta_id'])) : ?>
-                                    <div class="invalid-feedback">
-                                        <?= $errors['peserta_id'] ?>
+                                <div id="peserta-wrapper">
+                                    <div class="input-group mb-2">
+                                        <select class="form-control" name="peserta_id[]">
+                                            <option value="" disabled selected>Pilih Peserta</option>
+                                            <?php foreach ($peserta as $pesr) : ?>
+                                                <option value="<?= $pesr['id'] ?>"><?= $pesr['nama_peserta'] ?></option>
+                                            <?php endforeach; ?>
+                                        </select>
+                                        <button type="button" class="btn btn-outline-danger remove-peserta">Hapus</button>
                                     </div>
-                                <?php endif; ?>
+                                </div>
+                                <button type="button" class="btn btn-outline-primary add-peserta">Tambah Peserta</button>
                             </div>
-                            <div class="col-lg-6 mb-3">
-                                <label class="form-label" for="kode_peserta">NIM/NPM</label>
-                                <input type="text" class="form-control <?= isset($errors['kode_peserta']) ? 'is-invalid ' : ''; ?>" name="kode_peserta" id="kode_peserta" placeholder="NIP/NPM" value="<?= old('kode_peserta') ?>">
-                                <?php if (isset($errors['kode_peserta'])) : ?>
-                                    <div class="invalid-feedback">
-                                        <?= $errors['kode_peserta'] ?>
-                                    </div>
-                                <?php endif; ?>
-                            </div>
-                            <div class="col-lg-6 mb-3">
-                                <label class="form-label" for="keterangan">Keterangan</label>
-                                <select class="form-control <?= isset($errors['keterangan']) ? 'is-invalid ' : ''; ?>" name="keterangan" id="keterangan">
-                                    <option value="" disabled selected>Pilih Keterangan</option>
-                                    <option value="anggota 1">Anggota 1</option>
-                                    <option value="anggota 2">Anggota 2</option>
-                                    <option value="anggota 3">Anggota 3</option>
-                                </select>
-                                <?php if (isset($errors['keterangan'])) : ?>
-                                    <div class="invalid-feedback">
-                                        <?= $errors['keterangan'] ?>
-                                    </div>
-                                <?php endif; ?>
-                            </div>
-
+                            
                             <div class="col-lg-12 mt-4">
                                 <button class="btn btn-primary">Simpan</button>
                             </div>
@@ -104,5 +83,65 @@
     </div>
 
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    function updateAvailableOptions() {
+        var selectedValues = Array.from(document.querySelectorAll('select[name="peserta_id[]"]')).map(function(select) {
+            return select.value;
+        });
+
+        document.querySelectorAll('select[name="peserta_id[]"] option').forEach(function(option) {
+            if (selectedValues.includes(option.value) && option.value !== "") {
+                option.disabled = true;
+            } else {
+                option.disabled = false;
+            }
+        });
+    }
+
+    document.querySelector('.add-peserta').addEventListener('click', function() {
+        var wrapper = document.getElementById('peserta-wrapper');
+        var newField = document.createElement('div');
+        newField.className = 'input-group mb-2';
+        newField.innerHTML = `
+            <select class="form-control" name="peserta_id[]">
+                <option value="" disabled selected>Pilih Peserta</option>
+                <?php foreach ($peserta as $pesr) : ?>
+                    <option value="<?= $pesr['id'] ?>"><?= $pesr['nama_peserta'] ?></option>
+                <?php endforeach; ?>
+            </select>
+            <button type="button" class="btn btn-outline-danger remove-peserta">Hapus</button>
+        `;
+        wrapper.appendChild(newField);
+
+        // Update available options in all selects
+        updateAvailableOptions();
+
+        // Event listener for removing the field
+        newField.querySelector('.remove-peserta').addEventListener('click', function() {
+            wrapper.removeChild(newField);
+            updateAvailableOptions(); // Update options after removal
+        });
+
+        // Update options when the new select changes
+        newField.querySelector('select').addEventListener('change', function() {
+            updateAvailableOptions();
+        });
+    });
+
+    // Event delegation for dynamically added fields
+    document.getElementById('peserta-wrapper').addEventListener('click', function(event) {
+        if (event.target.classList.contains('remove-peserta')) {
+            event.target.parentElement.remove();
+            updateAvailableOptions();
+        }
+    });
+
+    // Initial call to disable already selected options
+    updateAvailableOptions();
+});
+
+</script>
 
 <?= $this->endSection() ?>

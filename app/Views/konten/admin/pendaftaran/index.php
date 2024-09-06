@@ -23,8 +23,6 @@
                             <th>Nama Perlombaan</th>
                             <th>Nama Team</th>
                             <th>Nama Peserta</th>
-                            <th>NIM/NPM</th>
-                            <th>Keterangan</th>
                             <th class="text-center">Aksi</th>
                         </tr>
                     </thead>
@@ -35,8 +33,6 @@
                                 <td><?= $row['nama_perlombaan']; ?></td>
                                 <td><?= $row['nama_team']; ?></td>
                                 <td><?= $row['nama_peserta']; ?></td>
-                                <td><?= $row['kode_peserta']; ?></td>
-                                <td><?= $row['keterangan']; ?></td>
                                 <td> <a href="/admin/pendaftaran/edit/<?= $row['id']; ?>" class="btn btn-success btn-sm"><i class="bi bi-pencil-square"></i></a> <a href="#" onclick="confirmDelete('<?= $row['id']; ?>','/admin/pendaftaran/delete/')" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></a> </td>
                             </tr> <?php endforeach; ?>
                     </tbody>
