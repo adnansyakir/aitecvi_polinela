@@ -78,21 +78,7 @@
                                 <?php endif; ?>
                             </div>
 
-                            <div class="col-lg-6 mb-3">
-                                <label class="form-label" for="kelompok_id">Kelompok</label>
-                                <select name="kelompok_id" id="kelompok_id" class="form-control <?= isset($errors['kelompok_id']) ? 'is-invalid ' : ''; ?>">
-                                    <option value="">Pilih..</option>
-                                    <?php foreach ($kelompok as $j) : ?>
-                                        <option value="<?= $j['id'] ?>"><?= $j['nama_kelompok'] ?></option>
-                                    <?php endforeach; ?>
-                                </select>
-                                <?php if (isset($errors['kelompok_id'])) : ?>
-                                    <div class="invalid-feedback">
-                                        <?= $errors['kelompok_id'] ?>
-                                    </div>
-                                <?php endif; ?>
-                            </div>
-
+                            
                             <div class="col-lg-6 mb-3">
                                 <label for="file_surat_tugas" class="form-label">Surat Tugas</label>
                                 <input class="form-control <?= isset($errors['file_surat_tugas']) ? 'is-invalid ' : ''; ?>" type="file" name="file_surat_tugas" id="formFile" value="<?= old('file_surat_tugas') ?>" />

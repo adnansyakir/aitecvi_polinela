@@ -93,6 +93,7 @@
                     <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
                 </button>
             </div>
+
             <div class="overlay" data-nav-toggler data-overlay></div>
         </div>
     </header>
@@ -114,22 +115,21 @@
 
                         <a href="../loginn" class="btn has-before">
                             <span class="span">Login </span>
+                            <br>
 
                             <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
                         </a>
                     </div>
-            <section >
-             <div class="video-banner">
-            <iframe loading="lazy" class="vid-cover"
-             src="https://www.youtube.com/embed/3x3pYDQ4G7k?rel=0" 
-                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-            </iframe>
-            <button >
-      </button>
-    </div>
-  </section>
-
-
+                        <section >
+                        <div class="video-banner">
+                        <iframe loading="lazy" class="vid-cover"
+                        src="https://www.youtube.com/embed/3x3pYDQ4G7k?rel=0" 
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+                        <button >
+                            </button>
+                            </div>
+                        </section>
                 </div>
             </section>
 
@@ -1618,147 +1618,70 @@
     - #FOOTER
   -->
 
-  <footer class="footer" style="background-image: url('landing/assets/images/footer-bg.png')" id="hubungi">
+  <footer class="footer" >
         <div class="footer-top section">
-                    <div class="section-header">
-                        <h2 class="h2 section-title">Hubungi Kami</h2>
-                    </div>
             <div class="container grid-list">
-                <div class="footer-brand">
+                <div class="footer-brand " >
                     <a href="#" class="logo">
-                        <img src="landing/assets/images/A1.png" width="162" height="50" alt="EduWeb logo" />
+                        <img src="landing/assets/images/L3.PNG" width="162" height="50" alt="AITeC VI" />
                     </a>
 
                     <p class="footer-brand-text">
-                        
                                 <h3>Alamat</h3>
                                 <address>Jl. Soekarno Hatta No.10, Rajabasa Raya, Kec. Rajabasa, Kota Bandar Lampung, Lampung</address>
-                        
                     </p>
-
-
-                    <div class="wrapper">
-                        <span class="span">Call:</span>
-
-                        <a href="tel:+011234567890" class="footer-link">+01 123 4567 890</a>
-                    </div>
 
                     <div class="wrapper">
                         <span class="span">Email:</span>
                         <a href="mailto:aitecVILampung@gmail.com" class="footer-link">aitecVILampung@gmail.com</a>
                     </div>
-
-
-                    <div class="wrapper">
-                        <span class="span">Instagram:</span>
-
-                        <a href="https://www.instagram.com/aitec6polinela" class="footer-link">@aitec6polinela</a>
-                    </div>
                 </div>
 
-                <ul class="footer-list">
-                    <li>
-                        <p class="footer-list-title">Nomor Telepon</p>
-                    </li>
-
-                    <li>
-                        Mustika Adzania Lestari:<br><a href="tel:+6282182139595">0821-8213-9595</a>
-                    </li>
-
-                    <li>
-                        Linuwih Aluh Prastiti:<br><a href="tel:+628127265550">0812-7265-550</a>
-                    </li>
-
-                    <li>
-                        Enggar Dwi Cahyo:<br><a href="tel:+6285878948248">0858-7894-8248</a>
-                    </li>
-
-                    <li>
-                        Intan Andya Bellapama:<br><a href="tel:+6282183153815">0821-8315-3815</a>
-                    </li>
-
-                    <li>
-                        Surya Prasetya T:<br><a href="tel:+6282282200440">0822-8220-0440</a>
-                    </li>
-                </ul>
-
-
-                <ul cls="footer-list">
-                    <li>
-                        <p class="footer-list-title">Links</p>
-                    </li>
-
-                    <li>
-                        <a href="#" class="footer-link">Contact Us</a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="footer-link">Gallery</a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="footer-link">News & Articles</a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="footer-link">FAQ's</a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="footer-link">Sign In/Registration</a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="footer-link">Coming Soon</a>
-                    </li>
-                </ul>
-
                 <div class="footer-list">
-                    <p class="footer-list-title">Contacts</p>
+                    <li>
+                        <p class="footer-list-title">Contact Kami</p>
+                    </li>
+                        
+                        <li>
+                        Mustika Adzania Lestari:<br><a href="tel:+6282182139595" class="contact">0821-8213-9595</a>
+                        </li>
 
-                    <p class="footer-list-text">
-                        Enter your email address to register to our newsletter
-                        subscription
-                    </p>
+                        <li>
+                            Linuwih Aluh Prastiti:<br><a href="tel:+628127265550" class="contact">0812-7265-550</a>
+                        </li>
 
-                    <form action="" class="newsletter-form">
-                        <input type="email" name="email_address" placeholder="Your email" required class="input-field" />
+                        <li>
+                            Enggar Dwi Cahyo:<br><a href="tel:+6285878948248" class="contact">0858-7894-8248</a>
+                        </li>
 
-                        <button type="submit" class="btn has-before">
-                            <span class="span">Subscribe</span>
+                        <li>
+                            Intan Andya Bellapama:<br><a href="tel:+6282183153815" class="contact">0821-8315-3815</a>
+                        </li>
 
-                            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                        </button>
-                    </form>
+                        <li>
+                            Surya Prasetya Trihatmaja:<br><a href="tel:+6282282200440" class="contact">0822-8220-0440</a>
+                        </li>
+                </div>
 
+                <div class="footer-list2">
+                    <p class="footer-list-title">Kunjungi kami</p>
                     <ul class="social-list">
                         <li>
-                            <a href="#" class="social-link">
-                                <ion-icon name="logo-email"></ion-icon>
+                            <a href="https://polinela.ac.id/" class="social-link">
+                                <ion-icon name="globe-outline"></ion-icon>
+                                polinela.ac.id
                             </a>
                         </li>
-
                         <li>
-                            <a href="#" class="social-link">
-                                <ion-icon name="logo-linkedin"></ion-icon>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="social-link">
-                                <ion-icon name="logo-instagram"></ion-icon>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="social-link">
-                                <ion-icon name="logo-twitter"></ion-icon>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="social-link">
+                            <a href="https://www.youtube.com/@politekniknegerilampung9459" class="social-link">
                                 <ion-icon name="logo-youtube"></ion-icon>
+                                politeknik negeri lampung
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/politeknik_negeri_lampung/" class="social-link">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                                politeknik negeri lampung
                             </a>
                         </li>
                     </ul>
@@ -1768,10 +1691,10 @@
 
         <div class="footer-bottom">
             <div class="container">
-                <p class="copyright"><?= date('Y'); ?> &copy; Aitec VI <a href="polinela" class="copyright-link">Politeknik Negeri Lampung</a></p>
+                <p class="copyright"><?= date('Y'); ?> &copy; AiteC VI <a href="polinela" class="copyright-link">Politeknik Negeri Lampung</a></p>
             </div>
         </div>
-    </footer>
+ </footer>
 
     <!-- 
     - #BACK TO TOP
@@ -1792,16 +1715,23 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script>
-        document.querySelectorAll('.schedule-tab').forEach(tab => {
-    tab.addEventListener('click', function () {
-        document.querySelectorAll('.schedule-tab').forEach(t => t.classList.remove('active'));
-        document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('show', 'active'));
-        
-        tab.classList.add('active');
-        document.querySelector(tab.getAttribute('data-target')).classList.add('show', 'active');
-    });
+        // Ambil elemen yang terkait dengan menu dan tombol
+const navToggler = document.querySelector('[data-nav-toggler]');
+const navbar = document.querySelector('[data-navbar]');
+const overlay = document.querySelector('[data-overlay]');
+
+// Tambahkan event listener untuk menangani klik tombol
+navToggler.addEventListener('click', function() {
+    // Toggle kelas 'active' pada navbar dan overlay
+    navbar.classList.toggle('active');
+    overlay.classList.toggle('active');
 });
 
+// Tambahkan event listener untuk menutup menu saat overlay diklik
+overlay.addEventListener('click', function() {
+    navbar.classList.remove('active');
+    overlay.classList.remove('active');
+});
 
     </script>
     <script>
@@ -1856,6 +1786,17 @@
         }
     </script>
     <script>
+        document.querySelectorAll('.schedule-tab').forEach(tab => {
+    tab.addEventListener('click', function () {
+        document.querySelectorAll('.schedule-tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('show', 'active'));
+        
+        tab.classList.add('active');
+        document.querySelector(tab.getAttribute('data-target')).classList.add('show', 'active');
+    });
+});
+    </script>
+    <script>
         const backTopBtn = document.querySelector('.back-top-btn');
 
 window.addEventListener('scroll', function() {
@@ -1872,4 +1813,3 @@ window.addEventListener('scroll', function() {
 </body>
 
 </html>
-.
