@@ -57,12 +57,22 @@ $routes->group('admin', ['filter' => 'authenticate'], function ($routes) {
     $routes->post('pendamping/edit/(:any)', 'AdminPendamping::editPendampingPost/$1');
     $routes->get('pendamping/delete/(:any)', 'AdminPendamping::deletePendamping/$1');
 
-    $routes->get('pendaftaran', 'AdminPendaftaran::index');
-    $routes->get('pendaftaran/add', 'AdminPendaftaran::addPendaftaran');
-    $routes->post('pendaftaran/add', 'AdminPendaftaran::addPendaftaranPost');
-    $routes->get('pendaftaran/edit/(:any)', 'AdminPendaftaran::editPendaftaran/$1');
-    $routes->post('pendaftaran/edit/(:any)', 'AdminPendaftaran::editPendaftaranPost/$1');
-    $routes->get('pendaftaran/delete/(:any)', 'AdminPendaftaran::deletePendaftaran/$1');
+    // Proposal
+    $routes->get('pendaftaran/kompetisiInovasi/proposal', 'AdminkompetisiInovasi::kompetisiInovasiProposal');
+    $routes->get('pendaftaran/kompetisiInovasi/proposal/add', 'AdminkompetisiInovasi::addkompetisiInovasiProposal');
+    $routes->post('pendaftaran/kompetisiInovasi/proposal/add', 'AdminkompetisiInovasi::addkompetisiInovasiProposalpost');
+    $routes->get('pendaftaran/kompetisiInovasi/proposal/edit/(:any)', 'AdminkompetisiInovasi::editkompetisiInovasiProposal/$1');
+    $routes->post('pendaftaran/kompetisiInovasi/proposal/edit/(:any)', 'AdminkompetisiInovasi::editkompetisiInovasiProposalPost/$1');
+    $routes->get('pendaftaran/kompetisiInovasi/proposal/delete/(:any)', 'AdminkompetisiInovasi::deletekompetisiInovasiProposal/$1');
+
+    // Video
+
+    $routes->get('pendaftaran/kompetisiInovasi/video', 'AdminkompetisiInovasi::kompetisiInovasiVideo');
+    $routes->get('pendaftaran/kompetisiInovasi/video/add', 'AdminkompetisiInovasi::addkompetisiInovasiVideo');
+    $routes->post('pendaftaran/kompetisiInovasi/video/add', 'AdminkompetisiInovasi::addkompetisiInovasiVideoPost');
+    $routes->get('pendaftaran/kompetisiInovasi/video/edit/(:any)', 'AdminkompetisiInovasi::editkompetisiInovasiVideo/$1');
+    $routes->post('pendaftaran/kompetisiInovasi/video/edit/(:any)', 'AdminkompetisiInovasi::editkompetisiInovasiVideoPost/$1');
+    $routes->get('pendaftaran/kompetisiInovasi/video/delete/(:any)', 'AdminkompetisiInovasi::deletekompetisiInovasiVideo/$1');
 
 
     //AdminMaster 

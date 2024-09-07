@@ -73,11 +73,21 @@
                 <i class="bi bi-person-plus-fill"></i>
                 <span>Pendaftaran</span>
             </a>
-            <ul class="submenu <?= ($request->uri->getSegment(2) === 'kontesVokasi') ? 'active open' : '' ?>">
+            <ul class="submenu <?= ($request->uri->getSegment(2) === 'kompetisiInovasi' || $request->uri->getSegment(2) === 'kontesVokasi' || $request->uri->getSegment(2) === 'eksibisiFotografi') ? 'active' : '' ?>">
 
                 <!-- Kompetisi Inovasi -->
-                <li class="submenu-item <?= ($request->uri->getSegment(2) === 'kompetisiInovasi') ? 'active' : '' ?>">
-                    <a href="/admin/pendaftaran/kompetisiInovasi">Kompetisi Inovasi</a>
+                <li class="sidebar-item has-sub <?= ($request->uri->getSegment(3) === 'proposal' || $request->uri->getSegment(2) === 'video') ? 'active open' : '' ?>">
+                    <a href="#" class="sidebar-link">
+                        <span>Kompetisi Inovasi</span>
+                    </a>
+                    <ul class="submenu <?= ($request->uri->getSegment(3) === 'proposal' || $request->uri->getSegment(3) === 'video') ? 'active' : '' ?>">
+                        <li class="submenu-item <?= ($request->uri->getSegment(3) === 'proposal') ? 'active' : '' ?>">
+                            <a href="/admin/pendaftaran/kompetisiInovasi/proposal">Proposal</a>
+                        </li>
+                        <li class="submenu-item <?= ($request->uri->getSegment(3) === 'video') ? 'active' : '' ?>">
+                            <a href="/admin/pendaftaran/kompetisiInovasi/video">Video</a>
+                        </li>
+                    </ul>
                 </li>
 
                 <!-- Kontes Vokasi dengan Submenu -->

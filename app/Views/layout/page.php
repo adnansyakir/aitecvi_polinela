@@ -31,7 +31,8 @@
         }
 
         .sidebar-item.has-sub .sidebar-link {
-            font-size: 14px;
+            font-size: 15px;
+
             /* Samakan dengan ukuran teks lain */
         }
     </style>
