@@ -26,11 +26,26 @@ class AdminkompetisiInovasi extends BaseController
     }
     public function kompetisiInovasiProposal()
     {
-        $data = [
-            'proposal' => $this->proposalModel->proposalbyPt()
+        $proposals = $this->proposalModel->proposalbyPt();
+        $pesertaModel = new \App\Models\Admin\PesertaModel();
+        $allPeserta = $pesertaModel->findAll();
 
-        ];
+        // Atur peserta ke dalam array untuk pencarian cepat
+        $pesertaArray = [];
+        foreach ($allPeserta as $peserta) {
+            $pesertaArray[$peserta['id']] = $peserta['nama_peserta'];
+        }
 
+        // Tambahkan nama peserta ke setiap proposal
+        foreach ($proposals as &$proposal) {
+            $pesertaIds = explode(',', $proposal['peserta_id']);
+            $proposal['peserta_names'] = array_map(function ($id) use ($pesertaArray) {
+                return $pesertaArray[$id] ?? 'Unknown'; // Ganti 'Unknown' jika ID tidak ditemukan
+            }, $pesertaIds);
+        }
+
+        // Kirim data ke view
+        $data['proposal'] = $proposals;
         echo view('konten/admin/kompetisiInovasi/proposal/index', $data);
     }
     public function addkompetisiInovasiProposal()
@@ -215,7 +230,7 @@ class AdminkompetisiInovasi extends BaseController
     public function addkompetisiInovasiVideo()
     {
         $data = [
-            'video' => $this->proposalModel->getAllPendaftaran(),
+            'video' => $this->videoModel->getAllPendaftaran(),
             'peserta' => $this->pesertaModel->getAllpeserta(),
             'cabang_perlombaan' => $this->cabanglombaModel->getAllLomba(),
             'pt' => $this->ptModel->getAllPt(),
