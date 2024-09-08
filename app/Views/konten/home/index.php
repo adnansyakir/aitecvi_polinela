@@ -1467,34 +1467,44 @@
 
             <!-- lokasi -->
 
-            <section class="section lokasi" aria-label="category" id="lokasi">
-                <div class="container">
+<section class="section lokasi" aria-label="category" id="lokasi">
+    <div class="container">
 
-                    <div class="section-header">
-                        <h2 class="h2 section-title">LOKASI KEGIATAN KOMPETISI AITeC VI</h2>
+        <div class="section-header">
+            <h2 class="h2 section-title">LOKASI KEGIATAN KOMPETISI AITeC VI</h2>
 
-                        <div class="row g-0">
-                            <div class="col-lg-6 venue-map">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1963.6755593961552!2d123.67044116575296!3d-10.152087730498591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2c568398f844fbe1%3A0x56f55f4db5373e62!2sPoliteknik%20Pertanian%20Negeri%20Kupang!5e0!3m2!1sid!2sid!4v1689958162478!5m2!1sid!2sid" frameborder="0" style="border:0" allowfullscreen></iframe>
-                            </div>
+            <div class="row g-0">
 
-                            <div class="col-lg-6 venue-info">
-                                <div class="row justify-content-center">
-                                    <div class="col-11 col-lg-8 position-relative">
-                                        <h3>Politeknik Negeri Lampung</h3>
-                                        <p>
-                                            Aku Belajar, Aku Terapkan dan Aku Sejahtera.<br />
-                                            <span style="font-style:italic;color:lightskyblue">
-                                                (Learn, Practice and be Rich)
-                                            </span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                <!-- Card 1 dengan iframe Google Maps -->
+                <div class="col-lg-6">
+                    <div class="card location-card large-card">
+                        <div class="card-img-top">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.3841436233074!2d105.23055407503118!3d-5.358214094620569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40c54fa0db33eb%3A0xe69b7788ca97353a!2sPoliteknik%20Negeri%20Lampung!5e0!3m2!1sid!2sid!4v1725779221210!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
-
+                        <div class="card-body">
+                            <p class="card-text">Klik untuk melihat lokasi di Google Maps</p>
+                        </div>
                     </div>
-            </section>
+                </div>
+
+                <!-- Card 2 dengan gambar -->
+                <div class="col-lg-6">
+                    <div class="card location-card large-card">
+                        <img src="landing/assets/images/hero.jpg" class="card-img-top" alt="Lokasi 2" style="width: 100%; height: 85%;">
+                        <div class="card-body">
+                        <h3 class="card-title">Politeknik Pertanian Negeri Lampung</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
 
             <!-- gallery -->
 
@@ -1813,3 +1823,4 @@ window.addEventListener('scroll', function() {
 </body>
 
 </html>
+.

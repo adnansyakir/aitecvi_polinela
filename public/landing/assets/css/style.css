@@ -1017,6 +1017,41 @@ body {
 
 .lokasi { background-color: var(--isabelline); }
 
+.location-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.location-card:hover {
+  transform: scale(1.05);
+}
+
+.large-card {
+  height: 300px; /* Tinggi card yang lebih besar */
+  width: 500px;
+}
+
+.card-img-top iframe {
+  border-radius: 10px 10px 0 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-img-top {
+  border-radius: 10px 10px 0 0;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
 /*-----------------------------------*\
   #gallery
 \*-----------------------------------*/
