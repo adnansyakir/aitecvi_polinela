@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Controllers;
 
 use PhpOffice\PhpSpreadsheet\IOFactory;
@@ -24,13 +25,22 @@ class PendampingProfil extends BaseController
 
     public function index()
     {
-        $userId = $this->session->get('data')->id; // Assuming user_id is stored in session data
+        $userId = $this->session->get('data')->id;
+
+        // Temukan data user berdasarkan user_id
         $user = $this->user->find($userId);
 
+        // Ambil nama PT berdasarkan pt_id yang ada di data user (akses sebagai array)
+        $ptModel = new \App\Models\Admin\PtModel(); // Pastikan model ini sesuai dengan model yang Anda gunakan
+        $pt = $ptModel->find($user['pt_id']); // Ubah ke notasi array
+
+        // Tambahkan data PT ke data yang dikirim ke view
         $data = [
             'user' => $user,
+            'pt' => $pt,
         ];
-        // dd($data);
+
+        // Tampilkan view dengan data yang sudah disiapkan
         echo view('konten/pendamping/user/index', $data);
     }
 

@@ -182,6 +182,14 @@ $routes->group('pendamping', ['filter' => 'authenticate'], function ($routes) {
     $routes->post('finalisasi/edit/(:any)', 'Pendampingfinalisasi::editfinalisasiPost/$1');
     $routes->get('finalisasi/delete/(:any)', 'Pendampingfinalisasi::deletefinalisasi/$1');
 
+    $routes->get('pendaftaran/kompetisiInovasi/proposal', 'PendampingkompetisiInovasi::kompetisiInovasiProposal');
+    $routes->get('pendaftaran/kompetisiInovasi/proposal/add', 'PendampingkompetisiInovasi::addkompetisiInovasiProposal');
+    $routes->post('pendaftaran/kompetisiInovasi/proposal/add', 'PendampingkompetisiInovasi::addkompetisiInovasiProposalpost');
+    $routes->get('pendaftaran/kompetisiInovasi/proposal/edit/(:any)', 'PendampingkompetisiInovasi::editkompetisiInovasiProposal/$1');
+    $routes->post('pendaftaran/kompetisiInovasi/proposal/update/(:any)', 'PendampingkompetisiInovasi::editkompetisiInovasiProposalPost/$1');
+    $routes->get('pendaftaran/kompetisiInovasi/proposal/delete/(:any)', 'PendampingkompetisiInovasi::deletekompetisiInovasiProposal/$1');
+    $routes->get('pendaftaran/kompetisiInovasi/proposal/updateKeterangan/(:any)/(:any)', 'PendampingkompetisiInovasi::updateStatus/$1/$2');
+
     $routes->get('peserta', 'PendampingPeserta::peserta');
     $routes->get('peserta/add', 'PendampingPeserta::addPeserta');
     $routes->post('peserta/add', 'PendampingPeserta::addPesertaPost');

@@ -8,13 +8,13 @@ class ProposalModel extends Model
 {
     protected $table      = 'proposal';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['id',  'pt_id', 'cabang_perlombaan_id', 'nama_team','peserta_id', 'proposal', 'keterangan'];
+    protected $allowedFields = ['id',  'pt_id', 'cabang_perlombaan_id', 'nama_team', 'peserta_id', 'proposal', 'keterangan'];
 
     public function getProposalWithKeterangan($keterangan)
-{
-    return $this->where('keterangan', $keterangan)
-                ->findAll();
-}
+    {
+        return $this->where('keterangan', $keterangan)
+            ->findAll();
+    }
 
     public function getAllPendaftaran()
     {
@@ -22,10 +22,13 @@ class ProposalModel extends Model
     }
     public function proposalbyPt()
     {
-        return $this->select('proposal.*, peserta.nama_peserta,  pt.nama_pt, cabang_perlombaan.nama_perlombaan')
+        $ptId = session()->get('pt_id'); // Mendapatkan pt_id dari session
+
+        return $this->select('proposal.*, pt.nama_pt, cabang_perlombaan.nama_perlombaan')
             ->join('pt', 'proposal.pt_id = pt.id')
             ->join('cabang_perlombaan', 'proposal.cabang_perlombaan_id = cabang_perlombaan.id')
-            ->join('peserta', 'proposal.peserta_id = peserta.id')
+            ->where('proposal.pt_id', $ptId) // Filter berdasarkan pt_id
+            ->distinct() // Pastikan data tidak duplikat
             ->get()
             ->getResultArray();
     }

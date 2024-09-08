@@ -37,10 +37,10 @@
                     </a>
                     <ul class="submenu <?= ($request->uri->getSegment(3) === 'proposal' || $request->uri->getSegment(3) === 'video') ? 'active' : '' ?>">
                         <li class="submenu-item <?= ($request->uri->getSegment(3) === 'proposal') ? 'active' : '' ?>">
-                            <a href="/admin/pendaftaran/kompetisiInovasi/proposal">Proposal</a>
+                            <a href="/pendamping/pendaftaran/kompetisiInovasi/proposal">Proposal</a>
                         </li>
                         <li class="submenu-item <?= ($request->uri->getSegment(3) === 'video') ? 'active' : '' ?>">
-                            <a href="/admin/pendaftaran/kompetisiInovasi/video">Video</a>
+                            <a href="/pendamping/pendaftaran/kompetisiInovasi/video">Video</a>
                         </li>
                     </ul>
                 </li>
@@ -52,17 +52,17 @@
                     </a>
                     <ul class="submenu <?= ($request->uri->getSegment(3) === 'daring' || $request->uri->getSegment(3) === 'luring') ? 'active' : '' ?>">
                         <li class="submenu-item <?= ($request->uri->getSegment(3) === 'daring') ? 'active' : '' ?>">
-                            <a href="/admin/pendaftaran/kontesVokasi/daring">Daring</a>
+                            <a href="/pendamping/pendaftaran/kontesVokasi/daring">Daring</a>
                         </li>
                         <li class="submenu-item <?= ($request->uri->getSegment(3) === 'luring') ? 'active' : '' ?>">
-                            <a href="/admin/pendaftaran/kontesVokasi/luring">Luring</a>
+                            <a href="/pendamping/pendaftaran/kontesVokasi/luring">Luring</a>
                         </li>
                     </ul>
                 </li>
 
                 <!-- Eksibisi Fotografi -->
                 <li class="submenu-item <?= ($request->uri->getSegment(2) === 'eksibisiFotografi') ? 'active' : '' ?>">
-                    <a href="/admin/pendaftaran/eksibisiFotografi">Eksibisi Fotografi</a>
+                    <a href="/pendamping/pendaftaran/eksibisiFotografi">Eksibisi Fotografi</a>
                 </li>
 
             </ul>
@@ -71,7 +71,7 @@
         <li class="sidebar-item <?= ($request->uri->getSegment(2) === 'finalisasi') ? 'active' : '' ?>">
             <a href="/pendamping/finalisasi" class='sidebar-link'>
             <i class="bi bi-person-check-fill"></i>
-                <span>Finalisasi Admin</span>
+                <span>Finalisasi pendamping</span>
             </a>
         </li>
         <li class="sidebar-item  <?= ($request->uri->getSegment(2) === 'sertifikat') ? 'active  ' : '' ?>">

@@ -65,13 +65,13 @@ class Auth extends BaseController
                 'required' => 'Kolom email harus diisi.',
                 'valid_email' => 'Masukkan alamat email yang valid.'
             ],
-            
+
         ]);
 
         if (!$validation->withRequest($this->request)->run()) {
             return redirect()->back()->withInput()->with('errors', $validation->getErrors());
         }
-// dd($validation);
+        // dd($validation);
         $password = hash('sha256', sha1($this->request->getPost('password')));
         if (empty($password)) {
             $password = hash('sha256', sha1('123456'));
@@ -82,7 +82,7 @@ class Auth extends BaseController
             'username' => $this->request->getPost('username'),
             'email' => $this->request->getPost('email'),
             'pt_id' => $this->request->getPost('pt_id'),
-            
+
             'role_id' => 3,
 
             'password' => $password,
@@ -148,7 +148,6 @@ class Auth extends BaseController
 
     public function checkAuth()
     {
-        // dd($this->request->getPost());
         $validation = $this->validate([
             'username' => [
                 'rules' => 'required',
@@ -162,35 +161,34 @@ class Auth extends BaseController
                     'required' => 'Kolom Password tidak boleh kosong'
                 ]
             ],
-
         ]);
-        // dd($validation);
 
         if (!$validation) {
             $errors = \Config\Services::validation()->getErrors();
-
             return redirect()->back()->withInput()->with('errors', $errors);
         }
 
         $user = $this->Auth->checkUser($this->request->getPost('username'), $this->request->getPost('password'));
         $session = session();
-        // dd($user);
+
         if ($user) {
-
-            // hash('sha256', sha1('pw'))
-
             session()->setFlashdata('primary', 'Hello.... Selamat Datang');
-            // dd($user);
+
+            // Simpan pt_id ke dalam session
+            $sessionData = [
+                'id' => $user->id,
+                'role' => $user->role,
+                'pt_id' => $user->pt_id,  // Simpan pt_id ke session
+                'logged_in' => TRUE
+            ];
+
+            $session->set($sessionData);  // Set session dengan pt_id
+
             switch ($user->role) {
                 case 'Admin':
                     if ($user->status == 0) {
                         return redirect()->to('/loginn')->with('error', 'Akun Anda belum aktif.');
                     } else {
-                        $session->set('data', $user);
-                        $session->set('role', $user->role);
-                        $session->set([
-                            'logged_in' => TRUE
-                        ]);
                         return redirect()->to('/admin/dashboard');
                     }
                     break;
@@ -198,11 +196,6 @@ class Auth extends BaseController
                     if ($user->status == 0) {
                         return redirect()->to('/loginn')->with('error', 'Akun Anda belum aktif.');
                     } else {
-                        $session->set('data', $user);
-                        $session->set('role', $user->role);
-                        $session->set([
-                            'logged_in' => TRUE
-                        ]);
                         return redirect()->to('/juri/dashboard');
                     }
                     break;
@@ -210,11 +203,6 @@ class Auth extends BaseController
                     if ($user->status == 0) {
                         return redirect()->to('/loginn')->with('error', 'Akun Anda belum aktif.');
                     } else {
-                        $session->set('data', $user);
-                        $session->set('role', $user->role);
-                        $session->set([
-                            'logged_in' => TRUE
-                        ]);
                         return redirect()->to('/pendamping/dashboard');
                     }
                     break;
@@ -222,11 +210,6 @@ class Auth extends BaseController
                     if ($user->status == 0) {
                         return redirect()->to('/loginn')->with('error', 'Akun Anda belum aktif.');
                     } else {
-                        $session->set('data', $user);
-                        $session->set('role', $user->role);
-                        $session->set([
-                            'logged_in' => TRUE
-                        ]);
                         return redirect()->to('/kampus/dashboard');
                     }
                     break;
@@ -234,25 +217,18 @@ class Auth extends BaseController
                     if ($user->status == 0) {
                         return redirect()->to('/loginn')->with('error', 'Akun Anda belum aktif.');
                     } else {
-                        $session->set('data', $user);
-                        $session->set('role', $user->role);
-                        $session->set([
-                            'logged_in' => TRUE
-                        ]);
                         return redirect()->to('/koordinator/dashboard');
                     }
                     break;
                 default:
                     return redirect()->to('/');
             }
-            // tambahkan ini
-            return redirect()->to('/');
         } else {
-            // Kasus jika username tidak ditemukan atau password salah
             session()->setFlashdata('error', 'Username atau Password salah.');
             return redirect()->to('/loginn');
         }
     }
+
 
     public function logOut()
     {
