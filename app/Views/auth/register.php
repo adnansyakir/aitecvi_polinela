@@ -64,6 +64,11 @@
         .btn-link:hover {
             background-color: #45a049;
         }
+
+        .content h1 span {
+            color: rgb(255, 211, 50);
+        }
+        
     </style>
 </head>
 
@@ -72,7 +77,7 @@
         <div class="forms-container">
             <div class="signin-signup">
                 <!-- Form Sign In -->
-                <form action="save" method="POST" class="sign-in-form">
+                <form action="save" method="POST" class="sign-up-form">
                     <h2 class="title">Sign Up</h2>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
@@ -100,7 +105,7 @@
         <div class="panels-container">
             <div class="panel left-panel">
                 <div class="content">
-                    <h2>Agricultural Innovation Technology</h2>
+                    <h1>AGRICULTURAL INNOVATION TECHNOLOGY COMPETITION VI <br><br>(AITeC VI)</h1>
                 </div>
                 <img src="login/img/L3.png" class="image" alt="">
             </div>

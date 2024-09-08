@@ -14,12 +14,11 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <style>
-        /* Mengubah teks <p> menjadi berwarna putih */
+
         p {
             color: white;
         }
 
-        /* Mengatur tampilan tombol Sign In dan Sign Up */
         .btn-link {
             display: inline-block;
             background-color: #4CAF50;
@@ -37,6 +36,14 @@
 
         .btn-link:hover {
             background-color: #45a049;
+        }
+
+        .panel.left-panel  {
+            color: #4CAF50; 
+        }
+
+        .content h1 span {
+            color: rgb(255, 211, 50);
         }
     </style>
 </head>
@@ -65,7 +72,7 @@
         <div class="panels-container">
             <div class="panel left-panel">
                 <div class="content">
-                    <h2>Agricultural Innovation Technology</h2>
+                    <h1>AGRICULTURAL INNOVATION TECHNOLOGY COMPETITION VI <br><br>(AITeC VI)</h1>
                 </div>
                 <img src="login/img/L3.png" class="image" alt="">
             </div>
