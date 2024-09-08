@@ -1,5 +1,4 @@
 <?= $this->extend('layout/page') ?>
-
 <?= $this->section('content') ?>
 
 <div class="row">
@@ -17,6 +16,7 @@
                         <?= csrf_field() ?>
                         <div class="row">
 
+                            <!-- Dropdown Nama Perguruan Tinggi -->
                             <div class="col-lg-6 mb-3">
                                 <label class="form-label" for="nama_pt">Perguruan Tinggi</label>
                                 <select class="form-control <?= isset($errors['pt_id']) ? 'is-invalid ' : ''; ?>" name="pt_id" id="nama_pt">
@@ -31,6 +31,8 @@
                                     </div>
                                 <?php endif; ?>
                             </div>
+
+                            <!-- Dropdown Nama Perlombaan -->
                             <div class="col-lg-6 mb-3">
                                 <label class="form-label" for="nama_perlombaan">Nama Perlombaan</label>
                                 <select class="form-control <?= isset($errors['cabang_perlombaan_id']) ? 'is-invalid ' : ''; ?>" name="cabang_perlombaan_id" id="nama_perlombaan">
@@ -45,42 +47,34 @@
                                     </div>
                                 <?php endif; ?>
                             </div>
+
+                            <!-- Dropdown Nama Team dari Proposal -->
                             <div class="col-lg-6 mb-3">
                                 <label class="form-label" for="nama_team">Nama Team</label>
-                                <input type="text" class="form-control <?= isset($errors['nama_team']) ? 'is-invalid ' : ''; ?>" name="nama_team" id="nama_team" placeholder="Nama team" value="<?= old('nama_team') ?>">
+                                <select class="form-control <?= isset($errors['nama_team']) ? 'is-invalid ' : ''; ?>" name="nama_team" id="nama_team">
+                                    <option value="" disabled selected>Pilih Nama Team</option>
+                                    <?php foreach ($proposal as $team) : ?>
+                                        <option value="<?= $team['nama_team'] ?>" <?= old('nama_team') == $team['nama_team'] ? 'selected' : '' ?>><?= $team['nama_team'] ?></option>
+                                    <?php endforeach; ?>
+                                </select>
                                 <?php if (isset($errors['nama_team'])) : ?>
                                     <div class="invalid-feedback">
                                         <?= $errors['nama_team'] ?>
                                     </div>
                                 <?php endif; ?>
                             </div>
+
+                            <!-- Input URL Video -->
                             <div class="col-lg-6 mb-3">
                                 <label class="form-label" for="video">Video</label>
-                                <input type="text" class="form-control <?= isset($errors['video']) ? 'is-invalid ' : ''; ?>" name="video" id="video" placeholder="Nama team" value="<?= old('video') ?>">
+                                <input type="text" class="form-control <?= isset($errors['video']) ? 'is-invalid ' : ''; ?>" name="video" id="video" placeholder="Masukkan URL Video" value="<?= old('video') ?>">
                                 <?php if (isset($errors['video'])) : ?>
                                     <div class="invalid-feedback">
                                         <?= $errors['video'] ?>
                                     </div>
                                 <?php endif; ?>
-                                <p style="font-weight: bold;">Masukkan link drive video.</p>
-                            </div>
-
-                            <div class="col-lg-6 mb-3">
-                                <label class="form-label" for="nama_peserta">Nama Peserta</label>
-                                <div id="peserta-wrapper">
-                                    <div class="input-group mb-2">
-                                        <select class="form-control" name="peserta_id[]">
-                                            <option value="" disabled selected>Pilih Peserta</option>
-                                            <?php foreach ($pesertaOptions as $pesr) : ?>
-                                                <option value="<?= $pesr['id'] ?>"><?= $pesr['nama_peserta'] ?></option>
-                                            <?php endforeach; ?>
-                                        </select>
-                                        <button type="button" class="btn btn-outline-danger remove-peserta">Hapus</button>
-                                    </div>
-                                </div>
-
-                                <button type="button" class="btn btn-outline-primary add-peserta">Tambah Peserta</button>
-                            </div>
+                                <p style="font-weight: bold;">Masukkan link video dari drive.</p>
+                            </div>                         
 
                             <div class="col-lg-12 mt-4">
                                 <button class="btn btn-primary">Simpan</button>
@@ -91,66 +85,6 @@
             </div>
         </div>
     </div>
-
 </div>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        function updateAvailableOptions() {
-            var selectedValues = Array.from(document.querySelectorAll('select[name="peserta_id[]"]')).map(function(select) {
-                return select.value;
-            });
-
-            document.querySelectorAll('select[name="peserta_id[]"] option').forEach(function(option) {
-                if (selectedValues.includes(option.value) && option.value !== "") {
-                    option.disabled = true;
-                } else {
-                    option.disabled = false;
-                }
-            });
-        }
-
-        document.querySelector('.add-peserta').addEventListener('click', function() {
-            var wrapper = document.getElementById('peserta-wrapper');
-            var newField = document.createElement('div');
-            newField.className = 'input-group mb-2';
-            newField.innerHTML = `
-            <select class="form-control" name="peserta_id[]">
-                <option value="" disabled selected>Pilih Peserta</option>
-                <?php foreach ($peserta as $pesr) : ?>
-                    <option value="<?= $pesr['id'] ?>"><?= $pesr['nama_peserta'] ?></option>
-                <?php endforeach; ?>
-            </select>
-            <button type="button" class="btn btn-outline-danger remove-peserta">Hapus</button>
-        `;
-            wrapper.appendChild(newField);
-
-            // Update available options in all selects
-            updateAvailableOptions();
-
-            // Event listener for removing the field
-            newField.querySelector('.remove-peserta').addEventListener('click', function() {
-                wrapper.removeChild(newField);
-                updateAvailableOptions(); // Update options after removal
-            });
-
-            // Update options when the new select changes
-            newField.querySelector('select').addEventListener('change', function() {
-                updateAvailableOptions();
-            });
-        });
-
-        // Event delegation for dynamically added fields
-        document.getElementById('peserta-wrapper').addEventListener('click', function(event) {
-            if (event.target.classList.contains('remove-peserta')) {
-                event.target.parentElement.remove();
-                updateAvailableOptions();
-            }
-        });
-
-        // Initial call to disable already selected options
-        updateAvailableOptions();
-    });
-</script>
 
 <?= $this->endSection() ?>

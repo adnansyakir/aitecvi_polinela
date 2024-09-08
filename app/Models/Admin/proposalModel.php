@@ -10,6 +10,12 @@ class ProposalModel extends Model
     protected $primaryKey = 'id';
     protected $allowedFields = ['id',  'pt_id', 'cabang_perlombaan_id', 'nama_team','peserta_id', 'proposal', 'keterangan'];
 
+    public function getProposalWithKeterangan($keterangan)
+{
+    return $this->where('keterangan', $keterangan)
+                ->findAll();
+}
+
     public function getAllPendaftaran()
     {
         return $this->findAll();

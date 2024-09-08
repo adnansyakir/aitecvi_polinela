@@ -22,7 +22,7 @@
                             <th>Nama Perguruan tinggi</th>
                             <th>Nama Perlombaan</th>
                             <th>Nama Team</th>
-                            <th>Nama Peserta</th>
+                            
                             <th>Video</th>
                             <th>Keterangan</th>
                             <th class="text-center">Aksi</th>
@@ -34,15 +34,12 @@
                                 <td><?= $row['nama_pt']; ?></td>
                                 <td><?= $row['nama_perlombaan']; ?></td>
                                 <td><?= $row['nama_team']; ?></td>
-                                <td>
-                                    <?= implode(', ', $row['peserta_names'])?>
-                                </td>
-                                <td><a href="<?= $row['video']; ?>"><i class="bi bi-file-earmark-text"></i></a></td>
+                                <td><a href="<?= $row['video']; ?>"><i class="bi bi-file-earmark-play"></i></a></td>
 
                                 <td>
                                     <?php
                                     if ($row['keterangan'] == 0) {
-                                        echo '<span class="badge bg-secondary">Sedang divalidasi</span>';
+                                        echo '<span class="badge bg-secondary">Sedang diverifikasi</span>';
                                     } else if ($row['keterangan'] == 1) {
                                         echo '<span class="badge bg-success">Lolos</span>';
                                     } else if($row['keterangan'] == 2){

@@ -7,13 +7,13 @@
         <div class="card">
             <div class="row">
                 <div class="col-lg-6">
-                    <h5 class="card-header">Edit Data Proposal</h5>
+                    <h5 class="card-header">Edit Data Video</h5>
                 </div>
                 <div class="col-lg-6 text-end">
-                    <a href="/admin/pendaftaran/kompetisiInovasi/proposal" class="btn btn-dark me-3 mt-3"><i class='bx bx-arrow-back'></i> Kembali</a>
+                    <a href="/admin/pendaftaran/kompetisiInovasi/video" class="btn btn-dark me-3 mt-3"><i class='bx bx-arrow-back'></i> Kembali</a>
                 </div>
                 <div class="col-lg-12 p-5">
-                    <form method="POST" action="/admin/pendaftaran/kompetisiInovasi/proposal/update/<?= $video['id'] ?>">
+                    <form method="POST" action="/admin/pendaftaran/kompetisiInovasi/video/update/<?= $video['id'] ?>">
                         <?= csrf_field() ?>
                         <div class="row">
 
@@ -68,24 +68,7 @@
                                 <p style="font-weight: bold;">Masukkan link drive video.</p>
                             </div>
 
-                            <div class="col-lg-6 mb-3">
-                                <label class="form-label" for="nama_peserta">Nama Peserta</label>
-                                <div id="peserta-wrapper">
-                                    <?php foreach ($videoPesertaIds as $peserta_id) : ?>
-                                        <div class="input-group mb-2">
-                                            <select class="form-control" name="peserta_id[]">
-                                                <option value="" disabled>Pilih Peserta</option>
-                                                <?php foreach ($pesertaOptions as $pesr) : ?>
-                                                    <option value="<?= $pesr['id'] ?>" <?= $peserta_id == $pesr['id'] ? 'selected' : '' ?>><?= $pesr['nama_peserta'] ?></option>
-                                                <?php endforeach; ?>
-                                            </select>
-                                            <button type="button" class="btn btn-outline-danger remove-peserta">Hapus</button>
-                                        </div>
-                                    <?php endforeach; ?>
-                                </div>
-
-                                <button type="button" class="btn btn-outline-primary add-peserta">Tambah Peserta</button>
-                            </div>
+                            
 
                             <div class="col-lg-12 mt-4">
                                 <button class="btn btn-primary">Update</button>
@@ -99,58 +82,5 @@
     </div>
 </div>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        function updateAvailableOptions() {
-            var selectedValues = Array.from(document.querySelectorAll('select[name="peserta_id[]"]')).map(function(select) {
-                return select.value;
-            });
-
-            document.querySelectorAll('select[name="peserta_id[]"] option').forEach(function(option) {
-                if (selectedValues.includes(option.value) && option.value !== "") {
-                    option.disabled = true;
-                } else {
-                    option.disabled = false;
-                }
-            });
-        }
-
-        document.querySelector('.add-peserta').addEventListener('click', function() {
-            var wrapper = document.getElementById('peserta-wrapper');
-            var newField = document.createElement('div');
-            newField.className = 'input-group mb-2';
-            newField.innerHTML = `
-            <select class="form-control" name="peserta_id[]">
-                <option value="" disabled selected>Pilih Peserta</option>
-                <?php foreach ($pesertaOptions as $pesr) : ?>
-                    <option value="<?= $pesr['id'] ?>"><?= $pesr['nama_peserta'] ?></option>
-                <?php endforeach; ?>
-            </select>
-            <button type="button" class="btn btn-outline-danger remove-peserta">Hapus</button>
-        `;
-            wrapper.appendChild(newField);
-
-            updateAvailableOptions();
-
-            newField.querySelector('.remove-peserta').addEventListener('click', function() {
-                wrapper.removeChild(newField);
-                updateAvailableOptions();
-            });
-
-            newField.querySelector('select').addEventListener('change', function() {
-                updateAvailableOptions();
-            });
-        });
-
-        document.getElementById('peserta-wrapper').addEventListener('click', function(event) {
-            if (event.target.classList.contains('remove-peserta')) {
-                event.target.parentElement.remove();
-                updateAvailableOptions();
-            }
-        });
-
-        updateAvailableOptions();
-    });
-</script>
 
 <?= $this->endSection() ?>

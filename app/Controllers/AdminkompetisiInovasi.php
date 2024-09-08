@@ -78,7 +78,7 @@ class AdminkompetisiInovasi extends BaseController
         $messages = [
             'peserta_id' => [
                 'required' => 'Peserta harus dipilih.',
-               
+
             ]
         ];
 
@@ -93,6 +93,7 @@ class AdminkompetisiInovasi extends BaseController
             'cabang_perlombaan_id' => $data['cabang_perlombaan_id'],
             'nama_team' => $data['nama_team'],
             'proposal' => $data['proposal'],
+            'keterangan' => 2,
             'peserta_id' => isset($data['peserta_id']) ? implode(',', $data['peserta_id']) : '' // Convert array to comma-separated string
         ];
 
@@ -128,30 +129,33 @@ class AdminkompetisiInovasi extends BaseController
     {
         // Get the posted data
         $data = $this->request->getPost();
-
+        dd($data); // Debugging line to inspect data
+    
         // Validation rules
         $rules = [
             'pt_id' => 'required|integer',
             'cabang_perlombaan_id' => 'required|integer',
             'nama_team' => 'required|string',
             'proposal' => 'required|valid_url',
-            'peserta_id' => 'required'
+            'peserta_id' => 'required|array', // Ensure peserta_id is an array
+            'keterangan' => 'required|' // Ensure keterangan is 1 or 2
         ];
-
+    
         // Validate the input data
         if (!$this->validate($rules)) {
             return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
         }
-
+    
         // Prepare data for updating
         $updateData = [
             'pt_id' => $data['pt_id'],
             'cabang_perlombaan_id' => $data['cabang_perlombaan_id'],
             'nama_team' => $data['nama_team'],
             'proposal' => $data['proposal'],
-            'peserta_id' => implode(',', $data['peserta_id']) // Convert array to comma-separated string
+            'peserta_id' => implode(',', $data['peserta_id']), // Convert array to comma-separated string
+            'keterangan' => $data['keterangan'] // Include keterangan in update data
         ];
-
+    
         // Update the proposal in the database
         if ($this->proposalModel->update($id, $updateData)) {
             return redirect()->to('/admin/pendaftaran/kompetisiInovasi/proposal')->with('primary', 'Proposal updated successfully');
@@ -159,6 +163,7 @@ class AdminkompetisiInovasi extends BaseController
             return redirect()->back()->withInput()->with('error', 'Failed to update proposal');
         }
     }
+    
 
     public function deletekompetisiInovasiProposal($id)
     {
@@ -177,28 +182,11 @@ class AdminkompetisiInovasi extends BaseController
     public function kompetisiInovasiVideo()
     {
 
-        $videos = $this->videoModel->videobyPt();
-        $pesertaModel = new \App\Models\Admin\PesertaModel();
-        $allPeserta = $pesertaModel->findAll();
+        $data = [
 
-        // Atur peserta ke dalam array untuk pencarian cepat
-        $pesertaArray = [];
-        foreach ($allPeserta as $peserta) {
-            $pesertaArray[$peserta['id']] = $peserta['nama_peserta'];
-        }
+            'video' => $this->videoModel->videobyPt(),
 
-        // Tambahkan nama peserta ke setiap video
-        foreach ($videos as &$video) {
-            $pesertaIds = explode(',', $video['peserta_id']);
-            $video['peserta_names'] = array_map(function ($id) use ($pesertaArray) {
-                return $pesertaArray[$id] ?? 'Unknown'; // Ganti 'Unknown' jika ID tidak ditemukan
-            }, $pesertaIds);
-        }
-
-        // Kirim data ke view
-        $data['video'] = $videos;
-
-
+        ];
         // dd($data);
         echo view('konten/admin/kompetisiInovasi/video/index', $data);
     }
@@ -207,12 +195,13 @@ class AdminkompetisiInovasi extends BaseController
         $data = [
             'video' => $this->videoModel->getAllPendaftaran(),
             'peserta' => $this->pesertaModel->getAllpeserta(),
-            'pesertaOptions' => $this->pesertaModel->findAll(),
             'cabang_perlombaan' => $this->cabanglombaModel->getAllLomba(),
             'pt' => $this->ptModel->getAllPt(),
+            'proposal' => $this->proposalModel->getProposalWithKeterangan(1), // Filter berdasarkan keterangan = 1
         ];
         return view('konten/admin/kompetisiInovasi/video/add', $data);
     }
+
 
     public function addkompetisiInovasiVideoPost()
     {
@@ -225,21 +214,10 @@ class AdminkompetisiInovasi extends BaseController
             'cabang_perlombaan_id' => 'required|integer',
             'nama_team' => 'required|string',
             'video' => 'required|valid_url',
-            'peserta_id' => 'required'
+
         ];
 
-        // Custom validation messages
-        $messages = [
-            'peserta_id' => [
-                'required' => 'Peserta harus dipilih.',
-               
-            ]
-        ];
 
-        // Validate the input data
-        if (!$this->validate($rules, $messages)) {
-            return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
-        }
 
         // Prepare data for insertion
         $insertData = [
@@ -247,7 +225,6 @@ class AdminkompetisiInovasi extends BaseController
             'cabang_perlombaan_id' => $data['cabang_perlombaan_id'],
             'nama_team' => $data['nama_team'],
             'video' => $data['video'],
-            'peserta_id' => isset($data['peserta_id']) ? implode(',', $data['peserta_id']) : '' // Convert array to comma-separated string
         ];
 
         // Insert the video into the database
@@ -262,15 +239,13 @@ class AdminkompetisiInovasi extends BaseController
     {
         $video = $this->videoModel->find($id);
 
-        // Pecah string peserta_id menjadi array
-        $videoPesertaIds = explode(',', $video['peserta_id']);
 
         $data = [
             'video' => $video,
             'pt' => $this->ptModel->findAll(),
             'cabang_perlombaan' => $this->cabanglombaModel->findAll(),
-            'pesertaOptions' => $this->pesertaModel->findAll(), // semua peserta
-            'videoPesertaIds' => $videoPesertaIds, // array of peserta_id
+
+
             'errors' => session()->getFlashdata('errors')
         ];
 
@@ -288,8 +263,8 @@ class AdminkompetisiInovasi extends BaseController
             'pt_id' => 'required|integer',
             'cabang_perlombaan_id' => 'required|integer',
             'nama_team' => 'required|string',
-            'proposal' => 'required|valid_url',
-            'peserta_id' => 'required'
+            'video' => 'required|valid_url',
+
         ];
 
         // Validate the input data
@@ -302,28 +277,27 @@ class AdminkompetisiInovasi extends BaseController
             'pt_id' => $data['pt_id'],
             'cabang_perlombaan_id' => $data['cabang_perlombaan_id'],
             'nama_team' => $data['nama_team'],
-            'proposal' => $data['proposal'],
-            'peserta_id' => implode(',', $data['peserta_id']) // Convert array to comma-separated string
+            'video' => $data['video'],
+
         ];
 
-        // Update the proposal in the database
-        if ($this->proposalModel->update($id, $updateData)) {
-            return redirect()->to('/admin/pendaftaran/kompetisiInovasi/proposal')->with('primary', 'Proposal updated successfully');
+        // Update the video in the database
+        if ($this->videoModel->update($id, $updateData)) {
+            return redirect()->to('/admin/pendaftaran/kompetisiInovasi/video')->with('primary', 'video updated successfully');
         } else {
-            return redirect()->back()->withInput()->with('error', 'Failed to update proposal');
+            return redirect()->back()->withInput()->with('error', 'Failed to update video');
         }
     }
     public function deletekompetisiInovasiVideo($id)
     {
         // Check if the record exists
-        $proposal = $this->proposalModel->find($id);
-        if ($proposal) {
+        $video = $this->videoModel->find($id);
+        if ($video) {
             // Delete the record
-            $this->proposalModel->deleteById($id);
-            return redirect()->to('/admin/pendaftaran/kompetisiInovasi/proposal')->with('danger', 'deleted successfully');
+            $this->videoModel->deleteById($id);
+            return redirect()->to('/admin/pendaftaran/kompetisiInovasi/video')->with('danger', 'deleted successfully');
         } else {
-            return redirect()->to('/admin/pendaftaran/kompetisiInovasi/proposal')->with('status', 'Record not found');
+            return redirect()->to('/admin/pendaftaran/kompetisiInovasi/video')->with('status', 'Record not found');
         }
     }
-
 }

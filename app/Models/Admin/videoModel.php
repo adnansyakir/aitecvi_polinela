@@ -8,18 +8,19 @@ class VideoModel extends Model
 {
     protected $table      = 'video';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['id',  'pt_id', 'cabang_perlombaan_id', 'nama_team','peserta_id', 'video', 'keterangan'];
+    protected $allowedFields = ['id',  'pt_id', 'cabang_perlombaan_id', 'nama_team', 'video', 'keterangan'];
 
     public function getAllPendaftaran()
     {
         return $this->findAll();
     }
+    // Method untuk join video dengan proposal berdasarkan nama_team
     public function videobyPt()
     {
-        return $this->select('video.*, peserta.nama_peserta,  pt.nama_pt, cabang_perlombaan.nama_perlombaan')
+        return $this->select('video.*, pt.nama_pt, cabang_perlombaan.nama_perlombaan, proposal.nama_team')
             ->join('pt', 'video.pt_id = pt.id')
             ->join('cabang_perlombaan', 'video.cabang_perlombaan_id = cabang_perlombaan.id')
-            ->join('peserta', 'video.peserta_id = peserta.id')
+            ->join('proposal', 'video.nama_team = proposal.nama_team') // Join dengan tabel proposal berdasarkan nama_team
             ->get()
             ->getResultArray();
     }
