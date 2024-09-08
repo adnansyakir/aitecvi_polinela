@@ -336,6 +336,7 @@ class AdminkompetisiInovasi extends BaseController
             'cabang_perlombaan_id' => $data['cabang_perlombaan_id'],
             'nama_team' => $data['nama_team'],
             'video' => $data['video'],
+            'keterangan' => 2,
 
         ];
 
