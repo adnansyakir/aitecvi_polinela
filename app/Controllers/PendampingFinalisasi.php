@@ -26,15 +26,36 @@ class PendampingFinalisasi extends BaseController
     }
 
     public function addFinalisasi()
-    {
-        $data = [
-            'finalisasi' =>$this->finalisasiModel->getAllfinalisasi(),
-        ];
-        return view('konten/pendamping/finalisasi/add', $data);
-    }
+{
+    $proposalModel = new \App\Models\Pendamping\ProposalModel();
+    $proposalData = $proposalModel->findAll();
+
+    $data = [
+        'finalisasi' => $this->finalisasiModel->getAllfinalisasi(),
+        'proposal' => $proposalData, 
+    ];
+    return view('konten/pendamping/finalisasi/add', $data);
+}
+
 
     public function addFinalisasiPost()
     {
+
+        $data = $this->request->getPost();
+
+        // Validation rules
+        $rules = [
+            'nama_team' => 'required|string',
+        ];
+
+
+
+        // Prepare data for insertion
+        $insertData = [
+            'nama_team' => $data['nama_team'],
+            'keterangan' => 2,
+        ];
+
         $validationRules = [
             'surat_tugas' =>  'max_size[surat_tugas,5120]|ext_in[surat_tugas,pdf,doc,docx, png]',
             'invoice' => 'max_size[invoice,5120]|ext_in[invoice,pdf,doc,docx,png]',
@@ -94,17 +115,38 @@ class PendampingFinalisasi extends BaseController
     }
 
 
-
     public function editFinalisasi($id)
     {
+        $proposalModel = new \App\Models\Pendamping\ProposalModel();
+        $proposalData = $proposalModel->findAll();
+    
         $data = [
             'finalisasi' => $this->finalisasiModel->getPt($id),
+            'proposal' => $proposalData,
         ];
         return view('konten/pendamping/finalisasi/edit', $data);
     }
+    
+
+
 
     public function editFinalisasiPost($id)
 {
+
+    $data = $this->request->getPost();
+
+        // Validation rules
+        $rules = [
+            'nama_team' => 'required|string',
+        ];
+
+
+
+        // Prepare data for insertion
+        $insertData = [
+            'nama_team' => $data['nama_team'],
+        ];
+
     $validationRules = [
         'surat_tugas' => 'max_size[surat_tugas,5120]|ext_in[surat_tugas,pdf,doc,docx,png]',
         'invoice' => 'max_size[invoice,5120]|ext_in[invoice,pdf,doc,docx,png]',

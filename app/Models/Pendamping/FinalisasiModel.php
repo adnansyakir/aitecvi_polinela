@@ -8,11 +8,19 @@ class FinalisasiModel extends Model
 {
     protected $table      = 'finalisasi';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['id', 'surat_tugas', 'invoice', 'bukti_transfer'];
+    protected $allowedFields = ['id', 'nama_team', 'surat_tugas', 'invoice', 'bukti_transfer', 'keterangan'];
+
+    public function getFinalisasiWithKeterangan($keterangan)
+{
+    return $this->where('keterangan', $keterangan)
+                ->findAll();
+}
 
     public function getAllfinalisasi()
     {
-        return $this->findAll();
+        return $this->select('finalisasi.*, proposal.nama_team')
+                    ->join('proposal', 'proposal.nama_team = finalisasi.nama_team')
+                    ->findAll();
     }
 
     public function insertData($data)
@@ -29,16 +37,19 @@ class FinalisasiModel extends Model
     {
         return $this->delete($id);
     }
-    
+
     public function updateData($id, $data)
     {
-
         // Update data berdasarkan ID
         $this->set($data)->where('id', $id)->update();
     }
+
     public function getPt($id)
     {
-
-        return $this->where("id", $id)->get()->getRow();
+        return $this->select('finalisasi.*, proposal.nama_team')
+                    ->join('proposal', 'proposal.nama_team = finalisasi.nama_team')
+                    ->where('finalisasi.id', $id)
+                    ->get()
+                    ->getRow();
     }
 }

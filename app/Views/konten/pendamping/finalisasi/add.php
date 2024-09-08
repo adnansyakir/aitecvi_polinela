@@ -16,6 +16,21 @@
                         <?= csrf_field() ?>
 
                         <div class="row">
+                        <div class="col-lg-6 mb-3">
+                                <label class="form-label" for="nama_team">Nama Team</label>
+                                <select class="form-control <?= isset($errors['nama_team']) ? 'is-invalid ' : ''; ?>" name="nama_team" id="nama_team">
+                                    <option value="" disabled selected>Pilih Nama Team</option>
+                                    <?php foreach ($proposal as $team) : ?>
+                                        <option value="<?= $team['nama_team'] ?>" <?= old('nama_team') == $team['nama_team'] ? 'selected' : '' ?>><?= $team['nama_team'] ?></option>
+                                    <?php endforeach; ?>
+                                </select>
+                                <?php if (isset($errors['nama_team'])) : ?>
+                                    <div class="invalid-feedback">
+                                        <?= $errors['nama_team'] ?>
+                                    </div>
+                                <?php endif; ?>
+                            </div>
+
                             <div class="col-lg-6 mb-3">
                                 <label for="surat_tugas" class="form-label">Surat Tugas</label>
                                 <input class="form-control <?= isset($errors['surat_tugas']) ? 'is-invalid ' : ''; ?>" type="file" name="surat_tugas" id="formFile" value="<?= old('surat_tugas') ?>" />

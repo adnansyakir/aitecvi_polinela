@@ -25,7 +25,7 @@
                                     </div>
                                 <?php endif; ?>
                             </div>
-                      
+                        
                             <div class="col-lg-6 mb-3">
                                 <label class="form-label" for="kode_peserta">NIP/NIM</label>
                                 <input type="text" class="form-control <?= isset($errors['kode_peserta']) ? 'is-invalid ' : ''; ?>" name="kode_peserta" id="kode_peserta" placeholder="NIP/NIM" value="<?= old('kode_peserta') ?>">
@@ -35,15 +35,34 @@
                                     </div>
                                 <?php endif; ?>
                             </div>
-                        </div>
-
-                        <div class="row">
+                       
                             <div class="col-lg-6 mb-3">
                                 <label class="form-label" for="no_wa">No Whatsapp</label>
                                 <input type="text" class="form-control <?= isset($errors['no_wa']) ? 'is-invalid ' : ''; ?>" name="no_wa" id="no_wa" placeholder="No Whatsapp" value="<?= old('no_wa') ?>">
                                 <?php if (isset($errors['no_wa'])) : ?>
                                     <div class="invalid-feedback">
                                         <?= $errors['no_wa'] ?>
+                                    </div>
+                                <?php endif; ?>
+                            </div>
+
+                           
+                            <div class="col-lg-6 mb-3">
+                                <label class="form-label" for="email">email</label>
+                                <input type="text" class="form-control <?= isset($errors['email']) ? 'is-invalid ' : ''; ?>" name="email" id="email" placeholder="email@example.com" value="<?= old('email') ?>">
+                                <?php if (isset($errors['email'])) : ?>
+                                    <div class="invalid-feedback">
+                                        <?= $errors['email'] ?>
+                                    </div>
+                                <?php endif; ?>
+                            </div>
+                            
+                            <div class="col-lg-6 mb-3">
+                                <label class="form-label" for="ukuran_kaos">Ukuran Kaos</label>
+                                <input type="text" class="form-control <?= isset($errors['ukuran_kaos']) ? 'is-invalid ' : ''; ?>" name="ukuran_kaos" id="ukuran_kaos" placeholder="ukuran kaos" value="<?= old('ukuran_kaos') ?>">
+                                <?php if (isset($errors['ukuran_kaos'])) : ?>
+                                    <div class="invalid-feedback">
+                                        <?= $errors['ukuran_kaos'] ?>
                                     </div>
                                 <?php endif; ?>
                             </div>
@@ -79,12 +98,22 @@
                             </div>
 
                             
+
                             <div class="col-lg-6 mb-3">
-                                <label for="file_surat_tugas" class="form-label">Surat Tugas</label>
-                                <input class="form-control <?= isset($errors['file_surat_tugas']) ? 'is-invalid ' : ''; ?>" type="file" name="file_surat_tugas" id="formFile" value="<?= old('file_surat_tugas') ?>" />
-                                <?php if (isset($errors['file_surat_tugas'])) : ?>
+                                <label for="berita_acara" class="form-label">Berita Acara</label>
+                                <input class="form-control <?= isset($errors['berita_acara']) ? 'is-invalid ' : ''; ?>" type="file" name="berita_acara" id="formFile" value="<?= old('berita_acara') ?>" />
+                                <?php if (isset($errors['berita_acara'])) : ?>
                                     <div class="invalid-feedback">
-                                        <?= $errors['file_surat_tugas'] ?>
+                                        <?= $errors['berita_acara'] ?>
+                                    </div>
+                                <?php endif; ?>
+                            </div>
+                            <div class="col-lg-6 mb-3">
+                                <label for="foto" class="form-label">Foto Peserta</label>
+                                <input class="form-control <?= isset($errors['foto']) ? 'is-invalid ' : ''; ?>" type="file" name="foto" id="formFile" value="<?= old('foto') ?>" />
+                                <?php if (isset($errors['foto'])) : ?>
+                                    <div class="invalid-feedback">
+                                        <?= $errors['foto'] ?>
                                     </div>
                                 <?php endif; ?>
                             </div>
@@ -102,7 +131,9 @@
                             <div class="col-lg-12 mt-4">
                                 <button class="btn btn-primary">Simpan</button>
                             </div>
+                            </div>
                         </div>
+
                     </form>
                 </div>
             </div>
