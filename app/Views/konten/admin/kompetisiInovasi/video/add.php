@@ -71,13 +71,14 @@
                                     <div class="input-group mb-2">
                                         <select class="form-control" name="peserta_id[]">
                                             <option value="" disabled selected>Pilih Peserta</option>
-                                            <?php foreach ($peserta as $pesr) : ?>
+                                            <?php foreach ($pesertaOptions as $pesr) : ?>
                                                 <option value="<?= $pesr['id'] ?>"><?= $pesr['nama_peserta'] ?></option>
                                             <?php endforeach; ?>
                                         </select>
                                         <button type="button" class="btn btn-outline-danger remove-peserta">Hapus</button>
                                     </div>
                                 </div>
+
                                 <button type="button" class="btn btn-outline-primary add-peserta">Tambah Peserta</button>
                             </div>
 

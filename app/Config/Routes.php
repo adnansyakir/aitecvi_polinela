@@ -62,7 +62,7 @@ $routes->group('admin', ['filter' => 'authenticate'], function ($routes) {
     $routes->get('pendaftaran/kompetisiInovasi/proposal/add', 'AdminkompetisiInovasi::addkompetisiInovasiProposal');
     $routes->post('pendaftaran/kompetisiInovasi/proposal/add', 'AdminkompetisiInovasi::addkompetisiInovasiProposalpost');
     $routes->get('pendaftaran/kompetisiInovasi/proposal/edit/(:any)', 'AdminkompetisiInovasi::editkompetisiInovasiProposal/$1');
-    $routes->post('pendaftaran/kompetisiInovasi/proposal/edit/(:any)', 'AdminkompetisiInovasi::editkompetisiInovasiProposalPost/$1');
+    $routes->post('pendaftaran/kompetisiInovasi/proposal/update/(:any)', 'AdminkompetisiInovasi::editkompetisiInovasiProposalPost/$1');
     $routes->get('pendaftaran/kompetisiInovasi/proposal/delete/(:any)', 'AdminkompetisiInovasi::deletekompetisiInovasiProposal/$1');
 
     // Video

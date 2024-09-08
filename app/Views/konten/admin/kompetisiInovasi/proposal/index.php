@@ -42,15 +42,15 @@
                                 <td>
                                     <?php
                                     if ($row['keterangan'] == 0) {
-                                        echo '<span class="badge bg-danger">Tidak Lolos</span>';
+                                        echo '<span class="badge bg-secondary">Sedang divalidasi</span>';
                                     } else if ($row['keterangan'] == 1) {
                                         echo '<span class="badge bg-success">Lolos</span>';
-                                    } else {
-                                        echo '<span class="badge bg-secondary">Keterangan Tidak Valid</span>';
+                                    } else if($row['keterangan'] == 2){
+                                        echo '<span class="badge bg-danger">Tidak Lolos</span>';
                                     }
                                     ?>
                                 </td>
-                                <td> <a href="/admin/pendaftaran/edit/<?= $row['id']; ?>" class="btn btn-success btn-sm"><i class="bi bi-pencil-square"></i></a> <a href="#" onclick="confirmDelete('<?= $row['id']; ?>','/admin/pendaftaran/delete/')" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></a> </td>
+                                <td> <a href="/admin/pendaftaran/kompetisiInovasi/proposal/edit/<?= $row['id']; ?>" class="btn btn-success btn-sm"><i class="bi bi-pencil-square"></i></a> <a href="#" onclick="confirmDelete('<?= $row['id']; ?>','/admin/pendaftaran/kompetisiInovasi/proposal/delete/')" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></a> </td>
                             </tr> <?php endforeach; ?>
                     </tbody>
                 </table>

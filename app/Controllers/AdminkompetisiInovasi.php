@@ -53,6 +53,7 @@ class AdminkompetisiInovasi extends BaseController
         $data = [
             'proposal' => $this->proposalModel->getAllPendaftaran(),
             'peserta' => $this->pesertaModel->getAllpeserta(),
+            'pesertaOptions' => $this->pesertaModel->findAll(),
             'cabang_perlombaan' => $this->cabanglombaModel->getAllLomba(),
             'pt' => $this->ptModel->getAllPt(),
         ];
@@ -61,140 +62,114 @@ class AdminkompetisiInovasi extends BaseController
 
     public function addkompetisiInovasiProposalPost()
     {
-        $validationRules = [
+        // Get the posted data
+        $data = $this->request->getPost();
 
-            'pt_id' => 'required',
-            'cabang_perlombaan_id' => 'required',
-            'nama_team' => 'required',
-            'peserta_id' => 'required',
-            'kode_peserta' => 'required',
-            'keterangan' => 'required',
+        // Validation rules
+        $rules = [
+            'pt_id' => 'required|integer',
+            'cabang_perlombaan_id' => 'required|integer',
+            'nama_team' => 'required|string',
+            'proposal' => 'required|valid_url',
+            'peserta_id' => 'required'
         ];
 
-        $validationMessages = [
-
-            'pt_id' => [
-                'required' => 'Kolom Perguruan Tinggi harus diisi',
-            ],
-            'cabang_perlombaan_id' => [
-                'required' => 'Kolom Nama Perlombaan harus diisi',
-            ],
-            'nama_team' => [
-                'required' => 'Kolom Kode pendaftaran harus diisi',
-            ],
+        // Custom validation messages
+        $messages = [
             'peserta_id' => [
-                'required' => 'Kolom Kode pendaftaran harus diisi',
-            ],
-            'kode_peserta' => [
-                'required' => 'Kolom Nama pendaftaran harus diisi',
-            ],
-            'keterangan' => [
-                'required' => 'Kolom Keterangan harus diisi',
-            ],
+                'required' => 'Peserta harus dipilih.',
+               
+            ]
         ];
 
-        if (!$this->validate($validationRules, $validationMessages)) {
+        // Validate the input data
+        if (!$this->validate($rules, $messages)) {
             return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
         }
 
-        $data = [
-            'id' => Uuid::uuid4()->toString(),
-            'pt_id' => $this->request->getPost('pt_id'),
-            'cabang_perlombaan_id' => $this->request->getPost('cabang_perlombaan_id'),
-            'nama_team' => $this->request->getPost('nama_team'),
-            'peserta_id' => $this->request->getPost('peserta_id'),
-            'kode_peserta' => $this->request->getPost('kode_peserta'),
-            'keterangan' => $this->request->getPost('keterangan'),
+        // Prepare data for insertion
+        $insertData = [
+            'pt_id' => $data['pt_id'],
+            'cabang_perlombaan_id' => $data['cabang_perlombaan_id'],
+            'nama_team' => $data['nama_team'],
+            'proposal' => $data['proposal'],
+            'peserta_id' => isset($data['peserta_id']) ? implode(',', $data['peserta_id']) : '' // Convert array to comma-separated string
         ];
 
-        $this->proposalModel->insert($data);
-        session()->setFlashdata('primary', 'Data berhasil disimpan.');
-        return redirect()->to('/admin/pendaftaran');
-    }
-
-    public function editPendaftaran($id)
-    {
-        $pendaftaran = $this->proposalModel->find($id);
-        if (!$pendaftaran) {
-            throw new \RuntimeException('Data pendaftaran tidak ditemukan');
+        // Insert the proposal into the database
+        if ($this->proposalModel->insert($insertData)) {
+            return redirect()->to('/admin/pendaftaran/kompetisiInovasi/proposal')->with('message', 'Proposal added successfully');
+        } else {
+            return redirect()->back()->withInput()->with('error', 'Failed to add proposal');
         }
+    }
+
+    public function editkompetisiInovasiProposal($id)
+    {
+        $proposal = $this->proposalModel->find($id);
+
+        // Pecah string peserta_id menjadi array
+        $proposalPesertaIds = explode(',', $proposal['peserta_id']);
 
         $data = [
-            'pendaftaran' => $pendaftaran,
-            'peserta' => $this->pesertaModel->getAllpeserta(),
-            'cabang_perlombaan' => $this->cabanglombaModel->getAllLomba(),
-            'pt' => $this->ptModel->getAllPt(),
+            'proposal' => $proposal,
+            'pt' => $this->ptModel->findAll(),
+            'cabang_perlombaan' => $this->cabanglombaModel->findAll(),
+            'pesertaOptions' => $this->pesertaModel->findAll(), // semua peserta
+            'proposalPesertaIds' => $proposalPesertaIds, // array of peserta_id
+            'errors' => session()->getFlashdata('errors')
         ];
 
-        return view('konten/admin/pendaftaran/edit', $data);
+        return view('konten/admin/kompetisiInovasi/proposal/edit', $data);
     }
+
 
     public function editkompetisiInovasiProposalPost($id)
     {
-        $pendaftaran = $this->proposalModel->find($id);
-        if (!$pendaftaran) {
-            throw new \RuntimeException('Data pendaftaran tidak ditemukan');
-        }
+        // Get the posted data
+        $data = $this->request->getPost();
 
-        $validationRules = [
-            'pt_id' => 'required',
-            'cabang_perlombaan_id' => 'required',
-            'nama_team' => 'required',
-            'peserta_id' => 'required',
-            'kode_peserta' => 'required',
-            'keterangan' => 'required',
+        // Validation rules
+        $rules = [
+            'pt_id' => 'required|integer',
+            'cabang_perlombaan_id' => 'required|integer',
+            'nama_team' => 'required|string',
+            'proposal' => 'required|valid_url',
+            'peserta_id' => 'required'
         ];
 
-        $validationMessages = [
-
-            'pt_id' => [
-                'required' => 'Kolom Perguruan Tinggi harus diisi',
-            ],
-            'cabang_perlombaan_id' => [
-                'required' => 'Kolom Nama Perlombaan harus diisi',
-            ],
-            'nama_team' => [
-                'required' => 'Kolom Kode pendaftaran harus diisi',
-            ],
-            'peserta_id' => [
-                'required' => 'Kolom Kode pendaftaran harus diisi',
-            ],
-            'kode_peserta' => [
-                'required' => 'Kolom Nama pendaftaran harus diisi',
-            ],
-            'keterangan' => [
-                'required' => 'Kolom Keterangan harus diisi',
-            ],
-        ];
-
-        if (!$this->validate($validationRules, $validationMessages)) {
+        // Validate the input data
+        if (!$this->validate($rules)) {
             return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
         }
 
-        $data = [
-            'id' => $id,
-            'pt_id' => $this->request->getPost('pt_id'),
-            'cabang_perlombaan_id' => $this->request->getPost('cabang_perlombaan_id'),
-            'nama_team' => $this->request->getPost('nama_team'),
-            'peserta_id' => $this->request->getPost('peserta_id'),
-            'kode_peserta' => $this->request->getPost('kode_peserta'),
-            'keterangan' => $this->request->getPost('keterangan'),
+        // Prepare data for updating
+        $updateData = [
+            'pt_id' => $data['pt_id'],
+            'cabang_perlombaan_id' => $data['cabang_perlombaan_id'],
+            'nama_team' => $data['nama_team'],
+            'proposal' => $data['proposal'],
+            'peserta_id' => implode(',', $data['peserta_id']) // Convert array to comma-separated string
         ];
 
-        $this->proposalModel->update($id, $data);
-        session()->setFlashdata('primary', 'Data berhasil diupdate.');
-        return redirect()->to('/admin/pendaftaran');
+        // Update the proposal in the database
+        if ($this->proposalModel->update($id, $updateData)) {
+            return redirect()->to('/admin/pendaftaran/kompetisiInovasi/proposal')->with('primary', 'Proposal updated successfully');
+        } else {
+            return redirect()->back()->withInput()->with('error', 'Failed to update proposal');
+        }
     }
+
     public function deletekompetisiInovasiProposal($id)
     {
         // Check if the record exists
-        $pendaftaran = $this->proposalModel->find($id);
-        if ($pendaftaran) {
+        $proposal = $this->proposalModel->find($id);
+        if ($proposal) {
             // Delete the record
             $this->proposalModel->deleteById($id);
-            return redirect()->to('/admin/pendaftaran')->with('danger', 'deleted successfully');
+            return redirect()->to('/admin/pendaftaran/kompetisiInovasi/proposal')->with('danger', 'deleted successfully');
         } else {
-            return redirect()->to('/admin/pendaftaran')->with('status', 'Record not found');
+            return redirect()->to('/admin/pendaftaran/kompetisiInovasi/proposal')->with('status', 'Record not found');
         }
     }
 
@@ -232,78 +207,123 @@ class AdminkompetisiInovasi extends BaseController
         $data = [
             'video' => $this->videoModel->getAllPendaftaran(),
             'peserta' => $this->pesertaModel->getAllpeserta(),
+            'pesertaOptions' => $this->pesertaModel->findAll(),
             'cabang_perlombaan' => $this->cabanglombaModel->getAllLomba(),
             'pt' => $this->ptModel->getAllPt(),
         ];
         return view('konten/admin/kompetisiInovasi/video/add', $data);
     }
+
     public function addkompetisiInovasiVideoPost()
     {
-        $validation = \Config\Services::validation();
-        // dd($this->request->getPost());
-        // Mengambil data dari request
-        $pt_id = $this->request->getPost('pt_id');
-        $video = $this->request->getPost('video');
-        $nama_team = $this->request->getPost('nama_team');
-        $cabang_perlombaan_id = $this->request->getPost('cabang_perlombaan_id');
-        $peserta_ids = $this->request->getPost('peserta_id'); // Ini akan menjadi array jika benar
+        // Get the posted data
+        $data = $this->request->getPost();
 
-
-        // dd($pt_id, $video, $nama_team, $cabang_perlombaan_id, $peserta_ids);
-        // Validasi form
-        $validation->setRules(
-            [
-                'pt_id' => 'required',
-                'video' => 'required',
-                'nama_team' => 'required',
-                'cabang_perlombaan_id' => 'required',
-                'peserta_id' => 'required',
-            ],
-            [
-                'pt_id' => [
-                    'required' => 'Kolom perguruan tinggi harus diisi.'
-                ],
-                'video' => [
-                    'required' => 'Kolom video harus diisi.'
-                ],
-                'nama_team' => [
-                    'required' => 'Kolom nama team harus diisi.'
-                ],
-                'cabang_perlombaan_id' => [
-                    'required' => 'Kolom cabang perlombaan harus diisi.'
-                ],
-                'peserta_id' => [
-                    'required' => 'Kolom peserta harus diisi.'
-                ],
-            ]
-        );
-
-        // Jika validasi gagal
-        if (!$validation->withRequest($this->request)->run()) {
-            return redirect()->back()->withInput()->with('errors', $validation->getErrors());
-        }
-
-        // Cek apakah peserta_ids adalah array
-        if (is_array($peserta_ids)) {
-            $peserta_ids = implode(',', $peserta_ids); // Gabungkan array menjadi string
-        } else {
-            $peserta_ids = ''; // Jika tidak ada peserta dipilih
-        }
-
-        // Ambil data dari form
-        $data = [
-            'pt_id' => $pt_id,
-            'cabang_perlombaan_id' => $cabang_perlombaan_id,
-            'nama_team' => $nama_team,
-            'video' => $video,
-            'peserta_id' => $peserta_ids, // Masukkan peserta yang sudah digabung
-            'keterangan' => 0 // Default value
+        // Validation rules
+        $rules = [
+            'pt_id' => 'required|integer',
+            'cabang_perlombaan_id' => 'required|integer',
+            'nama_team' => 'required|string',
+            'video' => 'required|valid_url',
+            'peserta_id' => 'required'
         ];
 
-        $videoMod = new VideoModel();
-        $videoMod->insert($data);
+        // Custom validation messages
+        $messages = [
+            'peserta_id' => [
+                'required' => 'Peserta harus dipilih.',
+               
+            ]
+        ];
 
-        // Redirect ke halaman sukses
-        return redirect()->to('/admin/pendaftaran/kompetisiInovasi/video')->with('success', 'Data video berhasil disimpan.');
+        // Validate the input data
+        if (!$this->validate($rules, $messages)) {
+            return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
+        }
+
+        // Prepare data for insertion
+        $insertData = [
+            'pt_id' => $data['pt_id'],
+            'cabang_perlombaan_id' => $data['cabang_perlombaan_id'],
+            'nama_team' => $data['nama_team'],
+            'video' => $data['video'],
+            'peserta_id' => isset($data['peserta_id']) ? implode(',', $data['peserta_id']) : '' // Convert array to comma-separated string
+        ];
+
+        // Insert the video into the database
+        if ($this->videoModel->insert($insertData)) {
+            return redirect()->to('/admin/pendaftaran/kompetisiInovasi/video')->with('message', 'video added successfully');
+        } else {
+            return redirect()->back()->withInput()->with('error', 'Failed to add video');
+        }
     }
+
+    public function editkompetisiInovasiVideo($id)
+    {
+        $video = $this->videoModel->find($id);
+
+        // Pecah string peserta_id menjadi array
+        $videoPesertaIds = explode(',', $video['peserta_id']);
+
+        $data = [
+            'video' => $video,
+            'pt' => $this->ptModel->findAll(),
+            'cabang_perlombaan' => $this->cabanglombaModel->findAll(),
+            'pesertaOptions' => $this->pesertaModel->findAll(), // semua peserta
+            'videoPesertaIds' => $videoPesertaIds, // array of peserta_id
+            'errors' => session()->getFlashdata('errors')
+        ];
+
+        return view('konten/admin/kompetisiInovasi/video/edit', $data);
+    }
+
+
+    public function editkompetisiInovasiVideoPost($id)
+    {
+        // Get the posted data
+        $data = $this->request->getPost();
+
+        // Validation rules
+        $rules = [
+            'pt_id' => 'required|integer',
+            'cabang_perlombaan_id' => 'required|integer',
+            'nama_team' => 'required|string',
+            'proposal' => 'required|valid_url',
+            'peserta_id' => 'required'
+        ];
+
+        // Validate the input data
+        if (!$this->validate($rules)) {
+            return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
+        }
+
+        // Prepare data for updating
+        $updateData = [
+            'pt_id' => $data['pt_id'],
+            'cabang_perlombaan_id' => $data['cabang_perlombaan_id'],
+            'nama_team' => $data['nama_team'],
+            'proposal' => $data['proposal'],
+            'peserta_id' => implode(',', $data['peserta_id']) // Convert array to comma-separated string
+        ];
+
+        // Update the proposal in the database
+        if ($this->proposalModel->update($id, $updateData)) {
+            return redirect()->to('/admin/pendaftaran/kompetisiInovasi/proposal')->with('primary', 'Proposal updated successfully');
+        } else {
+            return redirect()->back()->withInput()->with('error', 'Failed to update proposal');
+        }
+    }
+    public function deletekompetisiInovasiVideo($id)
+    {
+        // Check if the record exists
+        $proposal = $this->proposalModel->find($id);
+        if ($proposal) {
+            // Delete the record
+            $this->proposalModel->deleteById($id);
+            return redirect()->to('/admin/pendaftaran/kompetisiInovasi/proposal')->with('danger', 'deleted successfully');
+        } else {
+            return redirect()->to('/admin/pendaftaran/kompetisiInovasi/proposal')->with('status', 'Record not found');
+        }
+    }
+
 }
