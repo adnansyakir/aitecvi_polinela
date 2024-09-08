@@ -104,59 +104,73 @@ class PendampingFinalisasi extends BaseController
     }
 
     public function editFinalisasiPost($id)
-    {
-        $validationRules = [
-            'surat_tugas' => 'max_size[surat_tugas,5120]|ext_in[surat_tugas,pdf,doc,docx,png]',
-            'invoice' => 'max_size[invoice,5120]|ext_in[invoice,pdf,doc,docx,png]',
-            'bukti_transfer' => 'max_size[bukti_transfer,5120]|ext_in[bukti_transfer,pdf,doc,docx,png]',
-        ];
+{
+    $validationRules = [
+        'surat_tugas' => 'max_size[surat_tugas,5120]|ext_in[surat_tugas,pdf,doc,docx,png]',
+        'invoice' => 'max_size[invoice,5120]|ext_in[invoice,pdf,doc,docx,png]',
+        'bukti_transfer' => 'max_size[bukti_transfer,5120]|ext_in[bukti_transfer,pdf,doc,docx,png]',
+    ];
 
-        $validationMessages = [
-            'surat_tugas' => [
-                'max_size' => 'Ukuran Surat Tugas tidak boleh lebih dari 5.120 KB',
-                'ext_in' => 'Format Surat Tugas harus PDF, DOC, DOCX, PNG',
-            ],
-            'invoice' => [
-                'max_size' => 'Ukuran file invoice tidak boleh lebih dari 5120 KB',
-                'ext_in' => 'Format file invoice harus PDF, DOC, DOCX, PNG',
-            ],
-            'bukti_transfer' => [
-                'max_size' => 'Ukuran bukti transfer tidak boleh lebih dari 5.120 KB',
-                'ext_in' => 'Format bukti transfer harus PDF, DOC, DOCX, PNG',
-            ],
-        ];
+    $validationMessages = [
+        'surat_tugas' => [
+            'max_size' => 'Ukuran Surat Tugas tidak boleh lebih dari 5.120 KB',
+            'ext_in' => 'Format Surat Tugas harus PDF, DOC, DOCX, PNG',
+        ],
+        'invoice' => [
+            'max_size' => 'Ukuran file invoice tidak boleh lebih dari 5120 KB',
+            'ext_in' => 'Format file invoice harus PDF, DOC, DOCX, PNG',
+        ],
+        'bukti_transfer' => [
+            'max_size' => 'Ukuran bukti transfer tidak boleh lebih dari 5.120 KB',
+            'ext_in' => 'Format bukti transfer harus PDF, DOC, DOCX, PNG',
+        ],
+    ];
 
-        $validation = $this->validate($validationRules, $validationMessages);
+    $validation = $this->validate($validationRules, $validationMessages);
 
-        if (!$validation) {
-            $errors = \Config\Services::validation()->getErrors();
-            return redirect()->back()->withInput()->with('errors', $errors);
-        }
-
-        // Handle file uploads
-        $data = [];
-        $suratTugas = $this->request->getFile('surat_tugas');
-        if ($suratTugas && $suratTugas->isValid() && !$suratTugas->hasMoved()) {
-            $data['surat_tugas'] = $suratTugas->getRandomName();
-            $suratTugas->move(FCPATH . '/uploads/surat_tugas', $data['surat_tugas']);
-        }
-
-        $invoice = $this->request->getFile('invoice');
-        if ($invoice && $invoice->isValid() && !$invoice->hasMoved()) {
-            $data['invoice'] = $invoice->getRandomName();
-            $invoice->move(FCPATH . '/uploads/invoice', $data['invoice']);
-        }
-
-        $buktiTransfer = $this->request->getFile('bukti_transfer');
-        if ($buktiTransfer && $buktiTransfer->isValid() && !$buktiTransfer->hasMoved()) {
-            $data['bukti_transfer'] = $buktiTransfer->getRandomName();
-            $buktiTransfer->move(FCPATH . '/uploads/bukti_transfer', $data['bukti_transfer']);
-        }
-
-        $this->finalisasiModel->updateData($id, $data);
-        session()->setFlashdata('primary', 'Data berhasil diupdate.');
-        return redirect()->to('/pendamping/finalisasi');
+    if (!$validation) {
+        $errors = \Config\Services::validation()->getErrors();
+        return redirect()->back()->withInput()->with('errors', $errors);
     }
+
+    // Fetch existing data
+    $existingData = $this->finalisasiModel->getPt($id);
+    $data = [];
+
+    // Handle file uploads
+    $suratTugas = $this->request->getFile('surat_tugas');
+    if ($suratTugas && $suratTugas->isValid() && !$suratTugas->hasMoved()) {
+        $data['surat_tugas'] = $suratTugas->getRandomName();
+        $suratTugas->move(FCPATH . '/uploads/surat_tugas', $data['surat_tugas']);
+    } else {
+        // Use existing file if no new file is uploaded
+        $data['surat_tugas'] = $existingData->surat_tugas;
+    }
+
+    $invoice = $this->request->getFile('invoice');
+    if ($invoice && $invoice->isValid() && !$invoice->hasMoved()) {
+        $data['invoice'] = $invoice->getRandomName();
+        $invoice->move(FCPATH . '/uploads/invoice', $data['invoice']);
+    } else {
+        // Use existing file if no new file is uploaded
+        $data['invoice'] = $existingData->invoice;
+    }
+
+    $buktiTransfer = $this->request->getFile('bukti_transfer');
+    if ($buktiTransfer && $buktiTransfer->isValid() && !$buktiTransfer->hasMoved()) {
+        $data['bukti_transfer'] = $buktiTransfer->getRandomName();
+        $buktiTransfer->move(FCPATH . '/uploads/bukti_transfer', $data['bukti_transfer']);
+    } else {
+        // Use existing file if no new file is uploaded
+        $data['bukti_transfer'] = $existingData->bukti_transfer;
+    }
+
+    // Update the record with the new data
+    $this->finalisasiModel->updateData($id, $data);
+    session()->setFlashdata('primary', 'Data berhasil diupdate.');
+    return redirect()->to('/pendamping/finalisasi');
+}
+
 
 
     public function deleteFinalisasi($id)
