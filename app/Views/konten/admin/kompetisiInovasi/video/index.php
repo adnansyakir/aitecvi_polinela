@@ -22,7 +22,7 @@
                             <th>Nama Perguruan tinggi</th>
                             <th>Nama Perlombaan</th>
                             <th>Nama Team</th>
-                            
+
                             <th>Video</th>
                             <th>Keterangan</th>
                             <th class="text-center">Aksi</th>
@@ -37,17 +37,27 @@
                                 <td><a href="<?= $row['video']; ?>"><i class="bi bi-file-earmark-play"></i></a></td>
 
                                 <td>
-                                    <?php
+                                <?php
                                     if ($row['keterangan'] == 0) {
-                                        echo '<span class="badge bg-secondary">Sedang diverifikasi</span>';
+                                        echo '<span class="badge bg-danger">Tidak Lolos</span>';
                                     } else if ($row['keterangan'] == 1) {
                                         echo '<span class="badge bg-success">Lolos</span>';
-                                    } else if($row['keterangan'] == 2){
-                                        echo '<span class="badge bg-danger">Tidak Lolos</span>';
+                                    } else if ($row['keterangan'] == 2) {
+                                        echo '<span class="badge bg-secondary">Sedang diverifikasi</span>';
                                     }
                                     ?>
                                 </td>
-                                <td> <a href="/admin/pendaftaran/kompetisiInovasi/video/edit/<?= $row['id']; ?>" class="btn btn-success btn-sm"><i class="bi bi-pencil-square"></i></a> <a href="#" onclick="confirmDelete('<?= $row['id']; ?>','/admin/pendaftaran/kompetisiInovasi/video/delete/')" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></a> </td>
+                                <td>
+                                    <div class="btn-group">
+                                        <a href="/admin/pendaftaran/kompetisiInovasi/video/edit/<?= $row['id']; ?>" class="btn btn-success btn-sm"><i class="bi bi-pencil-square"></i></a>
+                                        <a href="#" onclick="confirmDelete('<?= $row['id']; ?>','/admin/pendaftaran/kompetisiInovasi/video/delete/')" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></a>
+                                        <?php if ($row['keterangan'] == 0) : ?>
+                                            <a href="/admin/pendaftaran/kompetisiInovasi/video/updateKeterangan/1/<?= $row['id']; ?>" class="btn btn-success btn-sm"><i class="bi bi-power"></i></a>
+                                        <?php else : ?>
+                                            <a href="/admin/pendaftaran/kompetisiInovasi/video/updateKeterangan/0/<?= $row['id']; ?>" class="btn btn-secondary btn-sm"><i class="bi bi-power"></i></a>
+                                        <?php endif; ?>
+                                    </div>
+                                </td>
                             </tr> <?php endforeach; ?>
                     </tbody>
                 </table>

@@ -35,7 +35,7 @@
                                 <td><?= $row['nama_perlombaan']; ?></td>
                                 <td><?= $row['nama_team']; ?></td>
                                 <td>
-                                    <?= implode(', ', $row['peserta_names'])?>
+                                    <?= implode(', ', $row['peserta_names']) ?>
                                 </td>
                                 <td><a href="<?= $row['proposal']; ?>"><i class="bi bi-file-earmark-text"></i></a></td>
 
@@ -45,12 +45,22 @@
                                         echo '<span class="badge bg-danger">Tidak Lolos</span>';
                                     } else if ($row['keterangan'] == 1) {
                                         echo '<span class="badge bg-success">Lolos</span>';
-                                    } else if($row['keterangan'] == 2){
+                                    } else if ($row['keterangan'] == 2) {
                                         echo '<span class="badge bg-secondary">Sedang diverifikasi</span>';
                                     }
                                     ?>
                                 </td>
-                                <td> <a href="/admin/pendaftaran/kompetisiInovasi/proposal/edit/<?= $row['id']; ?>" class="btn btn-success btn-sm"><i class="bi bi-pencil-square"></i></a> <a href="#" onclick="confirmDelete('<?= $row['id']; ?>','/admin/pendaftaran/kompetisiInovasi/proposal/delete/')" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></a> </td>
+                                <td>
+                                    <div class="btn-group">
+                                        <a href="/admin/pendaftaran/kompetisiInovasi/proposal/edit/<?= $row['id']; ?>" class="btn btn-success btn-sm"><i class="bi bi-pencil-square"></i></a>
+                                        <a href="#" onclick="confirmDelete('<?= $row['id']; ?>','/admin/pendaftaran/kompetisiInovasi/proposal/delete/')" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></a>
+                                        <?php if ($row['keterangan'] == 0) : ?>
+                                            <a href="/admin/pendaftaran/kompetisiInovasi/proposal/updateKeterangan/1/<?= $row['id']; ?>" class="btn btn-success btn-sm"><i class="bi bi-power"></i></a>
+                                        <?php else : ?>
+                                            <a href="/admin/pendaftaran/kompetisiInovasi/proposal/updateKeterangan/0/<?= $row['id']; ?>" class="btn btn-secondary btn-sm"><i class="bi bi-power"></i></a>
+                                        <?php endif; ?>
+                                    </div>
+                                </td>
                             </tr> <?php endforeach; ?>
                     </tbody>
                 </table>

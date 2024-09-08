@@ -64,7 +64,7 @@ $routes->group('admin', ['filter' => 'authenticate'], function ($routes) {
     $routes->get('pendaftaran/kompetisiInovasi/proposal/edit/(:any)', 'AdminkompetisiInovasi::editkompetisiInovasiProposal/$1');
     $routes->post('pendaftaran/kompetisiInovasi/proposal/update/(:any)', 'AdminkompetisiInovasi::editkompetisiInovasiProposalPost/$1');
     $routes->get('pendaftaran/kompetisiInovasi/proposal/delete/(:any)', 'AdminkompetisiInovasi::deletekompetisiInovasiProposal/$1');
-
+    $routes->get('pendaftaran/kompetisiInovasi/proposal/updateKeterangan/(:any)/(:any)', 'AdminkompetisiInovasi::updateStatus/$1/$2');
     // Video
 
     $routes->get('pendaftaran/kompetisiInovasi/video', 'AdminkompetisiInovasi::kompetisiInovasiVideo');
@@ -73,6 +73,7 @@ $routes->group('admin', ['filter' => 'authenticate'], function ($routes) {
     $routes->get('pendaftaran/kompetisiInovasi/video/edit/(:any)', 'AdminkompetisiInovasi::editkompetisiInovasiVideo/$1');
     $routes->post('pendaftaran/kompetisiInovasi/video/update/(:any)', 'AdminkompetisiInovasi::editkompetisiInovasiVideoPost/$1');
     $routes->get('pendaftaran/kompetisiInovasi/video/delete/(:any)', 'AdminkompetisiInovasi::deletekompetisiInovasiVideo/$1');
+    $routes->get('pendaftaran/kompetisiInovasi/video/updateKeterangan/(:any)/(:any)', 'AdminkompetisiInovasi::updateStatusVideo/$1/$2');
 
 
     //AdminMaster 
@@ -166,7 +167,7 @@ $routes->group('pendamping', ['filter' => 'authenticate'], function ($routes) {
     $routes->get('pendaftaran/edit/(:any)', 'PendampingPendaftaran::editPendaftaran/$1');
     $routes->post('pendaftaran/edit/(:any)', 'PendampingPendaftaran::editPendaftaranPost/$1');
     $routes->get('pendaftaran/delete/(:any)', 'PendampingPendaftaran::deletePendaftaran/$1');
-    
+
     $routes->get('finalisasi', 'Pendampingfinalisasi::finalisasi');
     $routes->get('finalisasi/add', 'Pendampingfinalisasi::addfinalisasi');
     $routes->post('finalisasi/add', 'Pendampingfinalisasi::addfinalisasiPost');

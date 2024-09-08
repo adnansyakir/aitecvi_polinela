@@ -84,19 +84,6 @@
                                 <button type="button" class="btn btn-outline-primary add-peserta">Tambah Peserta</button>
                             </div>
 
-                            
-                            <div class="col-lg-6 mb-3">
-                                <label class="form-label" for="keterangan">Keterangan</label>
-                                <select class="form-control <?= isset($errors['keterangan']) ? 'is-invalid ' : ''; ?>" name="keterangan" id="keterangan">
-                                    <option value="1" <?= $proposal['keterangan'] == '1' ? 'selected' : '' ?>>Lolos</option>
-                                    <option value="2" <?= $proposal['keterangan'] == '0' ? 'selected' : '' ?>>Tidak Lolos</option>
-                                </select>
-                                <?php if (isset($errors['keterangan'])) : ?>
-                                    <div class="invalid-feedback">
-                                        <?= $errors['keterangan'] ?>
-                                    </div>
-                                <?php endif; ?>
-                            </div>
 
                             <div class="col-lg-12 mt-4">
                                 <button class="btn btn-primary">Update</button>

@@ -10,14 +10,16 @@ use App\Models\Admin\PesertaModel;
 use Ramsey\Uuid\Uuid;
 
 class AdminkompetisiInovasi extends BaseController
-{
-    protected $proposalModel;
+{protected $proposalModel;
     protected $videoModel;
     protected $ptModel;
     protected $cabanglombaModel;
     protected $pesertaModel;
+    protected $session;
+
     public function __construct()
     {
+        $this->session = \Config\Services::session();
         $this->ptModel = new PtModel();
         $this->pesertaModel = new PesertaModel();
         $this->cabanglombaModel = new CabangLombaModel();
@@ -192,7 +194,34 @@ class AdminkompetisiInovasi extends BaseController
         }
     }
     
+    public function updateStatus($keterangan, $id)
+    {
+        $data = [
+            'keterangan' => $keterangan
+        ];
 
+        if ($this->proposalModel->update($id, $data)) {
+            $user = $this->proposalModel->find($id);
+            $userEmail = $user['proposal'];
+
+            $proposalModel = $this->proposalModel->where('proposal', $userEmail)->first();
+
+            if ($proposalModel) {
+                $proposalModelData = ['keterangan' => $keterangan];
+                $this->proposalModel->update($proposalModel['id'], $proposalModelData);
+            }
+
+            if ($keterangan == 1) {
+                $this->session->setFlashdata('success', 'Pengguna berhasil diaktifkan.');
+            } else {
+                $this->session->setFlashdata('success', 'Pengguna berhasil dinonaktifkan.');
+            }
+        } else {
+            $this->session->setFlashdata('error', 'Gagal memperbarui keterangan pengguna.');
+        }
+
+        return redirect()->to('/admin/pendaftaran/kompetisiInovasi/proposal');
+    }
     public function deletekompetisiInovasiProposal($id)
     {
         // Check if the record exists
@@ -253,6 +282,7 @@ class AdminkompetisiInovasi extends BaseController
             'cabang_perlombaan_id' => $data['cabang_perlombaan_id'],
             'nama_team' => $data['nama_team'],
             'video' => $data['video'],
+            'keterangan' => 2,
         ];
 
         // Insert the video into the database
@@ -315,6 +345,35 @@ class AdminkompetisiInovasi extends BaseController
         } else {
             return redirect()->back()->withInput()->with('error', 'Failed to update video');
         }
+    }
+
+    public function updateStatusVideo($keterangan, $id)
+    {
+        $data = [
+            'keterangan' => $keterangan
+        ];
+
+        if ($this->videoModel->update($id, $data)) {
+            $user = $this->videoModel->find($id);
+            $userEmail = $user['video'];
+
+            $videoModel = $this->videoModel->where('video', $userEmail)->first();
+
+            if ($videoModel) {
+                $videoModelData = ['keterangan' => $keterangan];
+                $this->videoModel->update($videoModel['id'], $videoModelData);
+            }
+
+            if ($keterangan == 1) {
+                $this->session->setFlashdata('success', 'Pengguna berhasil diaktifkan.');
+            } else {
+                $this->session->setFlashdata('success', 'Pengguna berhasil dinonaktifkan.');
+            }
+        } else {
+            $this->session->setFlashdata('error', 'Gagal memperbarui keterangan pengguna.');
+        }
+
+        return redirect()->to('/admin/pendaftaran/kompetisiInovasi/video');
     }
     public function deletekompetisiInovasiVideo($id)
     {
