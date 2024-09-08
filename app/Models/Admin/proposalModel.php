@@ -38,6 +38,20 @@ class ProposalModel extends Model
             return false; // Gagal, tangani exception jika diperlukan
         }
     }
+
+    public function getProposalById($id)
+{
+    return $this->db->table('proposal_table') // Replace 'proposal_table' with your actual table name
+                    ->where('id', $id)
+                    ->get()
+                    ->getRow();
+}
+
+    public function updateData($id, $data)
+{
+    $this->db->where('id', $id);
+    return $this->db->update('proposal_table', $data); // Replace 'proposal_table' with your actual table name
+}
     public function deleteById($id)
     {
         return $this->delete($id);

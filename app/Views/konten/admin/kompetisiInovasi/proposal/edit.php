@@ -71,21 +71,20 @@
                             <div class="col-lg-6 mb-3">
                                 <label class="form-label" for="nama_peserta">Nama Peserta</label>
                                 <div id="peserta-wrapper">
-                                    <?php foreach ($proposalPesertaIds as $peserta_id) : ?>
-                                        <div class="input-group mb-2">
-                                            <select class="form-control" name="peserta_id[]">
-                                                <option value="" disabled>Pilih Peserta</option>
-                                                <?php foreach ($pesertaOptions as $pesr) : ?>
-                                                    <option value="<?= $pesr['id'] ?>" <?= $peserta_id == $pesr['id'] ? 'selected' : '' ?>><?= $pesr['nama_peserta'] ?></option>
-                                                <?php endforeach; ?>
-                                            </select>
-                                            <button type="button" class="btn btn-outline-danger remove-peserta">Hapus</button>
-                                        </div>
-                                    <?php endforeach; ?>
+                                    <div class="input-group mb-2">
+                                        <select class="form-control" name="peserta_id[]">
+                                            <option value="" disabled selected>Pilih Peserta</option>
+                                            <?php foreach ($peserta as $pesr) : ?>
+                                                <option value="<?= $pesr['id'] ?>"><?= $pesr['nama_peserta'] ?></option>
+                                            <?php endforeach; ?>
+                                        </select>
+                                        <button type="button" class="btn btn-outline-danger remove-peserta">Hapus</button>
+                                    </div>
                                 </div>
-
                                 <button type="button" class="btn btn-outline-primary add-peserta">Tambah Peserta</button>
                             </div>
+
+                            
                             <div class="col-lg-6 mb-3">
                                 <label class="form-label" for="keterangan">Keterangan</label>
                                 <select class="form-control <?= isset($errors['keterangan']) ? 'is-invalid ' : ''; ?>" name="keterangan" id="keterangan">
@@ -112,57 +111,28 @@
 </div>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        function updateAvailableOptions() {
-            var selectedValues = Array.from(document.querySelectorAll('select[name="peserta_id[]"]')).map(function(select) {
-                return select.value;
-            });
+    $(document).ready(function() {
+    var pesertaCount = 1;
 
-            document.querySelectorAll('select[name="peserta_id[]"] option').forEach(function(option) {
-                if (selectedValues.includes(option.value) && option.value !== "") {
-                    option.disabled = true;
-                } else {
-                    option.disabled = false;
-                }
-            });
-        }
-
-        document.querySelector('.add-peserta').addEventListener('click', function() {
-            var wrapper = document.getElementById('peserta-wrapper');
-            var newField = document.createElement('div');
-            newField.className = 'input-group mb-2';
-            newField.innerHTML = `
-            <select class="form-control" name="peserta_id[]">
-                <option value="" disabled selected>Pilih Peserta</option>
-                <?php foreach ($pesertaOptions as $pesr) : ?>
-                    <option value="<?= $pesr['id'] ?>"><?= $pesr['nama_peserta'] ?></option>
-                <?php endforeach; ?>
-            </select>
-            <button type="button" class="btn btn-outline-danger remove-peserta">Hapus</button>
-        `;
-            wrapper.appendChild(newField);
-
-            updateAvailableOptions();
-
-            newField.querySelector('.remove-peserta').addEventListener('click', function() {
-                wrapper.removeChild(newField);
-                updateAvailableOptions();
-            });
-
-            newField.querySelector('select').addEventListener('change', function() {
-                updateAvailableOptions();
-            });
-        });
-
-        document.getElementById('peserta-wrapper').addEventListener('click', function(event) {
-            if (event.target.classList.contains('remove-peserta')) {
-                event.target.parentElement.remove();
-                updateAvailableOptions();
-            }
-        });
-
-        updateAvailableOptions();
+    $('.add-peserta').on('click', function() {
+        pesertaCount++;
+        $('#peserta-wrapper').append(`
+            <div class="input-group mb-2">
+                <select class="form-control" name="peserta_id[]">
+                    <option value="" disabled selected>Pilih Peserta</option>
+                    <?php foreach ($pesertaOptions as $pesr) : ?>
+                        <option value="<?= $pesr['id'] ?>"><?= $pesr['nama_peserta'] ?></option>
+                    <?php endforeach; ?>
+                </select>
+                <button type="button" class="btn btn-outline-danger remove-peserta">Hapus</button>
+            </div>
+        `);
     });
+
+    $(document).on('click', '.remove-peserta', function() {
+        $(this).parent().remove();
+    });
+});
 </script>
 
 <?= $this->endSection() ?>

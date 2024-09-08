@@ -62,105 +62,133 @@ class AdminkompetisiInovasi extends BaseController
 
     public function addkompetisiInovasiProposalPost()
     {
-        // Get the posted data
-        $data = $this->request->getPost();
-
-        // Validation rules
-        $rules = [
-            'pt_id' => 'required|integer',
-            'cabang_perlombaan_id' => 'required|integer',
-            'nama_team' => 'required|string',
-            'proposal' => 'required|valid_url',
-            'peserta_id' => 'required'
+        // Define validation rules
+        $validationRules = [
+            'pt_id' => 'required|is_not_unique[pt.id]',
+            'cabang_perlombaan_id' => 'required|is_not_unique[cabang_perlombaan.id]',
+            'nama_team' => 'required|min_length[3]|max_length[255]',
+            'proposal' => 'required',
+            'peserta_id' => 'required|permit_empty',
         ];
-
-        // Custom validation messages
-        $messages = [
+    
+        $validationMessages = [
+            'pt_id' => [
+                'required' => 'PT harus dipilih.',
+                'is_not_unique' => 'PT yang dipilih tidak valid.',
+            ],
+            'cabang_perlombaan_id' => [
+                'required' => 'Cabang perlombaan harus dipilih.',
+                'is_not_unique' => 'Cabang perlombaan yang dipilih tidak valid.',
+            ],
+            'nama_team' => [
+                'required' => 'Nama tim harus diisi.',
+                'min_length' => 'Nama tim harus terdiri dari minimal 3 karakter.',
+                'max_length' => 'Nama tim tidak boleh lebih dari 255 karakter.',
+            ],
+            'proposal' => [
+                'required' => 'Proposal harus diisi.',
+            ],
             'peserta_id' => [
                 'required' => 'Peserta harus dipilih.',
-
-            ]
+            ],
         ];
-
-        // Validate the input data
-        if (!$this->validate($rules, $messages)) {
+    
+        // Validate input
+        if (!$this->validate($validationRules, $validationMessages)) {
+            // Validation failed, redirect back with input and validation errors
             return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
         }
-
-        // Prepare data for insertion
-        $insertData = [
-            'pt_id' => $data['pt_id'],
-            'cabang_perlombaan_id' => $data['cabang_perlombaan_id'],
-            'nama_team' => $data['nama_team'],
-            'proposal' => $data['proposal'],
+    
+        $proposalModel = new ProposalModel();
+        $data = [
+            'pt_id' => $this->request->getPost('pt_id'),
+            'cabang_perlombaan_id' => $this->request->getPost('cabang_perlombaan_id'),
+            'nama_team' => $this->request->getPost('nama_team'),
+            'proposal' => $this->request->getPost('proposal'),
             'keterangan' => 2,
-            'peserta_id' => isset($data['peserta_id']) ? implode(',', $data['peserta_id']) : '' // Convert array to comma-separated string
+            'peserta_id' => implode(',', $this->request->getPost('peserta_id')) // Convert array to comma-separated string
         ];
-
-        // Insert the proposal into the database
-        if ($this->proposalModel->insert($insertData)) {
-            return redirect()->to('/admin/pendaftaran/kompetisiInovasi/proposal')->with('message', 'Proposal added successfully');
+    
+        if ($proposalModel->insertData($data)) {
+            return redirect()->to('/admin/pendaftaran/kompetisiInovasi/proposal')->with('success', 'Data berhasil disimpan!');
         } else {
-            return redirect()->back()->withInput()->with('error', 'Failed to add proposal');
+            return redirect()->back()->withInput()->with('error', 'Gagal menyimpan data!');
         }
     }
+    
 
     public function editkompetisiInovasiProposal($id)
     {
-        $proposal = $this->proposalModel->find($id);
+        $proposalModel = new ProposalModel();
+    $data = [
+        'proposal' => $proposalModel->find($id),
+        'peserta' => $this->pesertaModel->getAllpeserta(),
+        'pesertaOptions' => $this->pesertaModel->findAll(),
+        'cabang_perlombaan' => $this->cabanglombaModel->getAllLomba(),
+        'pt' => $this->ptModel->getAllPt(),
+    ];
 
-        // Pecah string peserta_id menjadi array
-        $proposalPesertaIds = explode(',', $proposal['peserta_id']);
+    if (empty($data['proposal'])) {
+        throw new \CodeIgniter\Exceptions\PageNotFoundException('Proposal not found');
+    }
 
-        $data = [
-            'proposal' => $proposal,
-            'pt' => $this->ptModel->findAll(),
-            'cabang_perlombaan' => $this->cabanglombaModel->findAll(),
-            'pesertaOptions' => $this->pesertaModel->findAll(), // semua peserta
-            'proposalPesertaIds' => $proposalPesertaIds, // array of peserta_id
-            'errors' => session()->getFlashdata('errors')
-        ];
-
-        return view('konten/admin/kompetisiInovasi/proposal/edit', $data);
+    return view('konten/admin/kompetisiInovasi/proposal/edit', $data);
+        
     }
 
 
     public function editkompetisiInovasiProposalPost($id)
     {
-        // Get the posted data
-        $data = $this->request->getPost();
-        dd($data); // Debugging line to inspect data
-    
-        // Validation rules
-        $rules = [
-            'pt_id' => 'required|integer',
-            'cabang_perlombaan_id' => 'required|integer',
-            'nama_team' => 'required|string',
-            'proposal' => 'required|valid_url',
-            'peserta_id' => 'required|array', // Ensure peserta_id is an array
-            'keterangan' => 'required|' // Ensure keterangan is 1 or 2
+        $validationRules = [
+            'pt_id' => 'required|is_not_unique[pt.id]',
+            'cabang_perlombaan_id' => 'required|is_not_unique[cabang_perlombaan.id]',
+            'nama_team' => 'required|min_length[3]|max_length[255]',
+            'proposal' => 'required',
+            'peserta_id' => 'required|permit_empty',
         ];
     
-        // Validate the input data
-        if (!$this->validate($rules)) {
+        $validationMessages = [
+            'pt_id' => [
+                'required' => 'PT harus dipilih.',
+                'is_not_unique' => 'PT yang dipilih tidak valid.',
+            ],
+            'cabang_perlombaan_id' => [
+                'required' => 'Cabang perlombaan harus dipilih.',
+                'is_not_unique' => 'Cabang perlombaan yang dipilih tidak valid.',
+            ],
+            'nama_team' => [
+                'required' => 'Nama tim harus diisi.',
+                'min_length' => 'Nama tim harus terdiri dari minimal 3 karakter.',
+                'max_length' => 'Nama tim tidak boleh lebih dari 255 karakter.',
+            ],
+            'proposal' => [
+                'required' => 'Proposal harus diisi.',
+            ],
+            'peserta_id' => [
+                'required' => 'Peserta harus dipilih.',
+            ],
+        ];
+    
+        // Validate input
+        if (!$this->validate($validationRules, $validationMessages)) {
+            // Validation failed, redirect back with input and validation errors
             return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
         }
     
-        // Prepare data for updating
-        $updateData = [
-            'pt_id' => $data['pt_id'],
-            'cabang_perlombaan_id' => $data['cabang_perlombaan_id'],
-            'nama_team' => $data['nama_team'],
-            'proposal' => $data['proposal'],
-            'peserta_id' => implode(',', $data['peserta_id']), // Convert array to comma-separated string
-            'keterangan' => $data['keterangan'] // Include keterangan in update data
+        $proposalModel = new ProposalModel();
+        $data = [
+            'pt_id' => $this->request->getPost('pt_id'),
+            'cabang_perlombaan_id' => $this->request->getPost('cabang_perlombaan_id'),
+            'nama_team' => $this->request->getPost('nama_team'),
+            'proposal' => $this->request->getPost('proposal'),
+            'keterangan' => 2,
+            'peserta_id' => implode(',', $this->request->getPost('peserta_id')) // Convert array to comma-separated string
         ];
     
-        // Update the proposal in the database
-        if ($this->proposalModel->update($id, $updateData)) {
-            return redirect()->to('/admin/pendaftaran/kompetisiInovasi/proposal')->with('primary', 'Proposal updated successfully');
+        if ($proposalModel->update($id, $data)) {
+            return redirect()->to('/admin/pendaftaran/kompetisiInovasi/proposal')->with('success', 'Data berhasil diperbarui!');
         } else {
-            return redirect()->back()->withInput()->with('error', 'Failed to update proposal');
+            return redirect()->back()->withInput()->with('error', 'Gagal memperbarui data!');
         }
     }
     
