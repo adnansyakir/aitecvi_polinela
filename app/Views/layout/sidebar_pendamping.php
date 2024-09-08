@@ -55,7 +55,7 @@
         </li>
         <li class="sidebar-item <?= ($request->uri->getSegment(2) === 'finalisasi') ? 'active' : '' ?>">
             <a href="/pendamping/finalisasi" class='sidebar-link'>
-                <i class="bi bi-person-plus-fill"></i>
+            <i class="bi bi-person-check-fill"></i>
                 <span>Finalisasi Admin</span>
             </a>
         </li>
