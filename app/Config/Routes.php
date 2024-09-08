@@ -75,7 +75,14 @@ $routes->group('admin', ['filter' => 'authenticate'], function ($routes) {
     $routes->get('pendaftaran/kompetisiInovasi/video/delete/(:any)', 'AdminkompetisiInovasi::deletekompetisiInovasiVideo/$1');
     $routes->get('pendaftaran/kompetisiInovasi/video/updateKeterangan/(:any)/(:any)', 'AdminkompetisiInovasi::updateStatusVideo/$1/$2');
 
-
+    // Kontes Vokasi
+    $routes->get('pendaftaran/kontesVokasi/daring', 'AdminkompetisiInovasi::kompetisiInovasiProposal');
+    $routes->get('pendaftaran/kontesVokasi/daring/add', 'AdminkompetisiInovasi::addkompetisiInovasiProposal');
+    $routes->post('pendaftaran/kontesVokasi/daring/add', 'AdminkompetisiInovasi::addkompetisiInovasiProposalpost');
+    $routes->get('pendaftaran/kontesVokasi/daring/edit/(:any)', 'AdminkompetisiInovasi::editkompetisiInovasiProposal/$1');
+    $routes->post('pendaftaran/kontesVokasi/daring/update/(:any)', 'AdminkompetisiInovasi::editkompetisiInovasiProposalPost/$1');
+    $routes->get('pendaftaran/kontesVokasi/daring/delete/(:any)', 'AdminkompetisiInovasi::deletekompetisiInovasiProposal/$1');
+    $routes->get('pendaftaran/kontesVokasi/daring/updateKeterangan/(:any)/(:any)', 'AdminkompetisiInovasi::updateStatus/$1/$2');
     //AdminMaster 
 
 
