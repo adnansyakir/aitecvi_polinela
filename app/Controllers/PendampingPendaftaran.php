@@ -21,7 +21,7 @@ class PendampingPendaftaran extends BaseController
         $this->cabanglombaModel = new CabangLombaModel();
         $this->pendaftaranModel = new PendaftaranModel();
     }
-    public function index()
+    public function finalisasi()
     {
         $data = [
             'pendaftaran' => $this->pendaftaranModel->PendaftaranbyPeserta()

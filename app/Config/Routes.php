@@ -166,6 +166,13 @@ $routes->group('pendamping', ['filter' => 'authenticate'], function ($routes) {
     $routes->get('pendaftaran/edit/(:any)', 'PendampingPendaftaran::editPendaftaran/$1');
     $routes->post('pendaftaran/edit/(:any)', 'PendampingPendaftaran::editPendaftaranPost/$1');
     $routes->get('pendaftaran/delete/(:any)', 'PendampingPendaftaran::deletePendaftaran/$1');
+    
+    $routes->get('finalisasi', 'Pendampingfinalisasi::finalisasi');
+    $routes->get('finalisasi/add', 'Pendampingfinalisasi::addfinalisasi');
+    $routes->post('finalisasi/add', 'Pendampingfinalisasi::addfinalisasiPost');
+    $routes->get('finalisasi/edit/(:any)', 'Pendampingfinalisasi::editfinalisasi/$1');
+    $routes->post('finalisasi/edit/(:any)', 'Pendampingfinalisasi::editfinalisasiPost/$1');
+    $routes->get('finalisasi/delete/(:any)', 'Pendampingfinalisasi::deletefinalisasi/$1');
 
     $routes->get('peserta', 'PendampingPeserta::peserta');
     $routes->get('peserta/add', 'PendampingPeserta::addPeserta');

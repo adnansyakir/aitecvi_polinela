@@ -178,13 +178,10 @@ html {
 
 .container { 
   padding-inline: 10px; 
+  max-width: 100%;
 }
 
-.haldep {
-  color: var(--eerie-black-1);
-  font-size: var(--fs-4);
-  padding-top: -500px;
-}
+
 
 .section { padding-block: var(--section-padding); }
 
@@ -408,44 +405,6 @@ body {
   display: block;
 }
 
-/* Gaya responsif untuk tampilan mobile */
-@media screen and (max-width: 768px) {
-  .navbar-list {
-    display: flex; /* Menampilkan navbar-list pada layar kecil */
-    flex-direction: column;
-    position: static; /* Navbar-list diatur menjadi statis */
-    width: 90%;
-    height: 900%;
-    background-color: #f8f9fa;
-    box-shadow: none;
-    margin: 0; /* Menghapus margin jika perlu */
-  }
-  .navbar img {
-    display: block;
-    width: 200px; /* Sesuaikan lebar logo */
-    height: 100px; /* Sesuaikan tinggi logo */
-    margin: 0; /* Menghapus margin */
-  }
-
-  .navbar-item {
-    width: 100%;
-    text-align: center;
-  }
-
-  .navbar-link {
-    padding: 10px 0;
-    display: block;
-  }
-  
-  .dropdown-content {
-    position: static; /* Dropdown tampil di bawah item */
-    display: none; /* Default sembunyikan dropdown-content di mobile */
-  }
-
-  .navbar-item.active .dropdown-content {
-    display: block; /* Tampilkan dropdown-content jika item aktif */
-  }
-}
 .header-actions {
   margin-left: 150px;
   display: flex;
@@ -711,6 +670,14 @@ body {
   color: rgb(3, 79, 3); /* Mengatur warna teks menjadi merah */
   font-weight: bold; /* Mengatur teks menjadi tebal */
 }
+
+.haldep {
+  color: var(--eerie-black-1);
+  font-size: var(--fs-4);
+  padding-top: -500px;
+}
+
+
 
 
 
@@ -1115,10 +1082,10 @@ body {
   object-fit: cover; /* Memastikan video menutupi seluruh kontainer */
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 768px) {
   .video-banner {
     padding-top: 80%; /* Rasio aspek 16:9 untuk layar yang lebih lebar */
-    padding-left: 100%;
+    padding-left: 80%;
   }
 }
 
@@ -1129,29 +1096,40 @@ body {
 \*-----------------------------------*/
 
 .footer {
-  background-repeat: no-repeat;
   background-color: var(--eerie-black-2);
   color: var(--gray-x-11);
   font-size: var(--fs-5);
+  padding: 40px 0;
 }
 
 .footer-top {
-  display: grid;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 30px;
+  margin-left: 280px;
 }
 
-.footer-brand-text { margin-block: 20px; }
+.footer-brand-text { 
+  margin-block: 20px; 
+}
 
 .footer-brand .wrapper {
   display: flex;
   gap: 5px;
 }
 
-.footer-brand .wrapper .span { font-weight: var(--fw-500); }
+.footer-brand .wrapper .span { 
+  font-weight: var(--fw-500); 
+}
 
-.footer-link { transition: var(--transition-1); }
+.footer-link { 
+  transition: var(--transition-1); 
+}
 
-.footer-link:is(:hover, :focus) { color: var(--kappel); }
+.footer-link:is(:hover, :focus) { 
+  color: var(--kappel); 
+}
 
 .footer-list-title {
   color: var(--white);
@@ -1161,40 +1139,56 @@ body {
   margin-block-end: 10px;
 }
 
-.footer-list .footer-link { padding-block: 5px; }
-
-.newsletter-form { margin-block: 20px 35px; }
-
-.newsletter-form .input-field {
-  background-color: var(--white);
-  padding: 12px;
-  border-radius: var(--radius-5);
-  margin-block-end: 20px;
+.footer-list {
+  flex: 1;
+  min-width: 200px;
 }
 
-.newsletter-form .btn {
-  min-width: 100%;
-  justify-content: center;
-}
-
-.social-list {
+.footer-list2 {
+  flex: none;
+  min-width: 200px;
   display: flex;
-  gap: 25px;
+  flex-direction: column;
+  align-items: center;
 }
 
-.social-link { font-size: 20px; }
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.social-link ion-icon {
+  font-size: 20px; 
+}
+
+.social-link:hover {
+  text-decoration: underline;
+  color: var(--kappel); 
+}
+.contact:hover {
+  text-decoration: underline;
+  color: var(--kappel); 
+}
+
+
 
 .footer-bottom {
   border-block-start: 1px solid var(--eerie-black-1);
   padding-block: 30px;
 }
 
-.copyright { text-align: center; }
+.copyright { 
+  text-align: center; 
+}
 
 .copyright-link {
   color: var(--kappel);
   display: inline-block;
 }
+
 
 
 
@@ -1232,6 +1226,405 @@ body {
   #MEDIA QUERIES
 \*-----------------------------------*/
 
+/* ukuran 1 */
+@media (max-width: 575px) {
+  .hero {
+    padding-block-start: calc(var(--section-padding) + 40px);
+    max-width: 100%;
+  }
+
+  .hero .container {
+    display: block; /* Mengubah grid menjadi block layout di layar kecil */
+    padding: 20px;
+  }
+
+  .hero-text {
+    font-size: var(--fs-5); /* Mengurangi ukuran font */
+    text-align: center;
+    margin-block: 10px 15px;
+  }
+
+  .hero .btn {
+    margin-inline: auto;
+    padding: 10px 15px; /* Ukuran tombol lebih kecil */
+  }
+
+  .hero-banner {
+    grid-template-columns: 1fr; /* Mengubah layout menjadi satu kolom */
+    gap: 20px;
+  }
+
+  .judul {
+    font-size: 28px; /* Mengurangi ukuran judul */
+    margin: 10px 0px;
+  }
+
+  .text-one, .text-two {
+    font-size: 20px; /* Ukuran teks lebih kecil di mobile */
+  }
+
+  .text-three {
+    font-size: 30px;
+  }
+
+  .utama {
+    font-size: 40px; /* Menurunkan ukuran font */
+  }
+
+  .haldep {
+    font-size: var(--fs-5); /* Ukuran font lebih kecil di mobile */
+    padding-top: 0; /* Hilangkan padding yang tidak perlu */
+  }
+
+  .hero-banner .img-holder.one,
+  .hero-banner .img-holder.two {
+    width: 100%; /* Gambar di layar mobile memenuhi lebar layar */
+    border-radius: 20px; /* Ubah radius border agar lebih halus di mobile */
+  }
+
+  .navbar-list {
+    display: flex; /* Menampilkan navbar-list pada layar kecil */
+    flex-direction: column;
+    position: static; /* Navbar-list diatur menjadi statis */
+    width: 90%;
+    height: 900%;
+    background-color: #f8f9fa;
+    box-shadow: none;
+    margin: 0; /* Menghapus margin jika perlu */
+  }
+  .navbar img {
+    display: block;
+    width: 200px; /* Sesuaikan lebar logo */
+    height: 100px; /* Sesuaikan tinggi logo */
+    margin: 0; /* Menghapus margin */
+  }
+
+  .navbar-item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-link {
+    padding: 10px 0;
+    display: block;
+  }
+  
+  .dropdown-content {
+    position: static; /* Dropdown tampil di bawah item */
+    display: none; /* Default sembunyikan dropdown-content di mobile */
+  }
+
+  .navbar-item.active .dropdown-content {
+    display: block; /* Tampilkan dropdown-content jika item aktif */
+  }
+
+  .btn {
+    margin-bottom: 20px; /* Memberikan jarak antara tombol dan elemen di bawahnya */
+  }
+
+  iframe {
+    margin-top: 20px; /* Memberikan jarak antara iframe video dan elemen di atasnya */
+  }
+}
+
+/* ukuran 2 */
+@media (max-width: 768px) {
+  .hero {
+    padding-block-start: calc(var(--section-padding) + 60px); /* Tambah sedikit padding di atas */
+  }
+
+  .hero .container {
+    display: block; /* Mengubah grid menjadi block layout */
+    padding: 25px; /* Sedikit menambah padding */
+  }
+
+  .hero-text {
+    font-size: var(--fs-4); /* Ukuran font sedikit lebih besar dibanding layar lebih kecil */
+    text-align: center;
+    margin-block: 12px 18px;
+  }
+
+  .hero .btn {
+    margin-inline: auto;
+    padding: 12px 20px; /* Ukuran tombol lebih besar untuk tablet */
+  }
+
+  .hero-banner {
+    grid-template-columns: 1fr; /* Satu kolom di ukuran layar menengah */
+    gap: 25px; /* Sedikit lebih besar daripada mobile */
+  }
+
+  .judul {
+    font-size: 35px; /* Ukuran judul sedang */
+    margin: 12px 0px;
+  }
+
+  .text-one, .text-two {
+    font-size: 25px; /* Ukuran teks lebih kecil di tablet */
+  }
+
+  .text-three {
+    font-size: 35px;
+  }
+
+  .utama {
+    font-size: 50px; /* Ukuran font sedikit lebih besar untuk tablet */
+  }
+
+  .haldep {
+    font-size: var(--fs-4); /* Ukuran font lebih besar di layar menengah */
+    padding-top: 0; /* Hilangkan padding tidak perlu */
+  }
+
+  .hero-banner .img-holder.one,
+  .hero-banner .img-holder.two {
+    width: 100%; /* Gambar memenuhi layar pada ukuran ini */
+    border-radius: 30px; /* Radius border lebih besar */
+  }
+
+  .navbar-list {
+    display: flex; /* Tampilkan navbar-list */
+    flex-direction: column;
+    position: static; /* Navbar tetap statis */
+    width: 100%;
+    height: auto;
+    background-color: #f8f9fa;
+    box-shadow: none;
+    margin: 0;
+  }
+
+  .navbar img {
+    display: block;
+    width: 220px; /* Sesuaikan ukuran logo */
+    height: 110px; /* Sesuaikan ukuran logo */
+    margin: 0;
+  }
+
+  .navbar-item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-link {
+    padding: 12px 0;
+    display: block;
+  }
+
+  .dropdown-content {
+    position: static; /* Dropdown muncul di bawah item */
+    display: none; /* Default sembunyikan dropdown-content */
+  }
+
+  .navbar-item.active .dropdown-content {
+    display: block; /* Tampilkan dropdown-content jika item aktif */
+  }
+
+  .btn {
+    margin-bottom: 25px; /* Tambah sedikit jarak di bawah tombol */
+  }
+
+  iframe {
+    margin-top: 25px; /* Tambah sedikit jarak di atas iframe */
+  }
+}
+
+/* ukuran 3 */
+@media (max-width: 992px) {
+  .hero {
+    padding-block-start: calc(var(--section-padding) + 60px); /* Sesuaikan padding di layar menengah */
+  }
+
+  .hero .container {
+    display: block;
+    padding: 25px;
+  }
+
+  .hero-text {
+    font-size: var(--fs-4); /* Ukuran font sedikit lebih kecil */
+    text-align: center;
+    margin-block: 15px 20px;
+  }
+
+  .hero .btn {
+    margin-inline: auto;
+    padding: 12px 18px; /* Sedikit lebih kecil dari ukuran desktop */
+  }
+
+  .hero-banner {
+    grid-template-columns: 1fr; /* Tampilkan satu kolom di layar menengah */
+    gap: 25px;
+  }
+
+  .judul {
+    font-size: 35px; /* Ukuran judul lebih kecil */
+    margin: 15px 0px;
+  }
+
+  .text-one, .text-two {
+    font-size: 25px; /* Ukuran teks lebih kecil di layar menengah */
+  }
+
+  .text-three {
+    font-size: 35px;
+  }
+
+  .utama {
+    font-size: 50px; /* Ukuran font turun dari desktop */
+  }
+
+  .haldep {
+    font-size: var(--fs-4); /* Ukuran font menengah */
+    padding-top: 0;
+  }
+
+  .hero-banner .img-holder.one,
+  .hero-banner .img-holder.two {
+    width: 100%; /* Gambar memenuhi layar pada layar menengah */
+    border-radius: 30px;
+  }
+
+  .navbar-list {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    width: 100%;
+    background-color: #f8f9fa;
+    margin: 0;
+  }
+
+  .navbar img {
+    width: 250px; /* Sesuaikan ukuran logo */
+    height: 120px;
+  }
+
+  .navbar-item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-link {
+    padding: 12px 0;
+    display: block;
+  }
+
+  .dropdown-content {
+    position: static;
+    display: none;
+  }
+
+  .navbar-item.active .dropdown-content {
+    display: block;
+  }
+
+  .btn {
+    margin-bottom: 25px; /* Berikan jarak antara tombol dan elemen di bawahnya */
+  }
+
+  iframe {
+    margin-top: 25px; /* Tambahkan jarak antara video dan elemen di atasnya */
+  }
+}
+
+/* ukuran 4 */
+@media (max-width: 1200px) {
+  .hero {
+    padding-block-start: calc(var(--section-padding) + 40px);
+  }
+
+  .hero .container {
+    display: block; /* Mengubah grid menjadi block layout di layar kecil */
+    padding: 20px;
+  }
+
+  .hero-text {
+    font-size: var(--fs-5); /* Mengurangi ukuran font */
+    text-align: center;
+    margin-block: 10px 15px;
+  }
+
+  .hero .btn {
+    margin-inline: auto;
+    padding: 10px 15px; /* Ukuran tombol lebih kecil */
+  }
+
+  .hero-banner {
+    grid-template-columns: 1fr; /* Mengubah layout menjadi satu kolom */
+    gap: 20px;
+  }
+
+  .judul {
+    font-size: 28px; /* Mengurangi ukuran judul */
+    margin: 10px 0px;
+  }
+
+  .text-one, .text-two {
+    font-size: 20px; /* Ukuran teks lebih kecil di mobile */
+  }
+
+  .text-three {
+    font-size: 30px;
+  }
+
+  .utama {
+    font-size: 40px; /* Menurunkan ukuran font */
+  }
+
+  .haldep {
+    font-size: var(--fs-5); /* Ukuran font lebih kecil di mobile */
+    padding-top: 0; /* Hilangkan padding yang tidak perlu */
+  }
+
+  .hero-banner .img-holder.one,
+  .hero-banner .img-holder.two {
+    width: 100%; /* Gambar di layar mobile memenuhi lebar layar */
+    border-radius: 20px; /* Ubah radius border agar lebih halus di mobile */
+  }
+
+  .navbar-list {
+    display: flex; /* Menampilkan navbar-list pada layar kecil */
+    flex-direction: column;
+    position: static; /* Navbar-list diatur menjadi statis */
+    width: 90%;
+    height: 900%;
+    background-color: #f8f9fa;
+    box-shadow: none;
+    margin: 0; /* Menghapus margin jika perlu */
+  }
+  .navbar img {
+    display: block;
+    width: 200px; /* Sesuaikan lebar logo */
+    height: 100px; /* Sesuaikan tinggi logo */
+    margin: 0; /* Menghapus margin */
+  }
+
+  .navbar-item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-link {
+    padding: 10px 0;
+    display: block;
+  }
+  
+  .dropdown-content {
+    position: static; /* Dropdown tampil di bawah item */
+    display: none; /* Default sembunyikan dropdown-content di mobile */
+  }
+
+  .navbar-item.active .dropdown-content {
+    display: block; /* Tampilkan dropdown-content jika item aktif */
+  }
+
+  .btn {
+    margin-bottom: 20px; /* Memberikan jarak antara tombol dan elemen di bawahnya */
+  }
+
+  iframe {
+    margin-top: 20px; /* Memberikan jarak antara iframe video dan elemen di atasnya */
+  }
+}
+
 /**
  * responsive for large than 575px screen
  */
@@ -1243,7 +1636,7 @@ body {
    */
 
   .container {
-    max-width: 520px;
+    max-width: 575px;
     width: 100%;
     margin-inline: auto;
   }
