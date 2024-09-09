@@ -42,9 +42,9 @@
                                 <td>
                                     <?php
                                     if ($row['keterangan'] == 0) {
-                                        echo '<span class="badge bg-danger">Tidak Lolos</span>';
+                                        echo '<span class="badge bg-danger">Tidak Lolos Desk Evaluation</span>';
                                     } else if ($row['keterangan'] == 1) {
-                                        echo '<span class="badge bg-success">Lolos</span>';
+                                        echo '<span class="badge bg-success">Lolos Desk Evaluation</span>';
                                     } else if ($row['keterangan'] == 2) {
                                         echo '<span class="badge bg-secondary">Sedang diverifikasi</span>';
                                     }
