@@ -19,18 +19,15 @@
                             <!-- Dropdown Nama Perguruan Tinggi -->
                             <div class="col-lg-6 mb-3">
                                 <label class="form-label" for="nama_pt">Perguruan Tinggi</label>
-                                <select class="form-control <?= isset($errors['pt_id']) ? 'is-invalid ' : ''; ?>" name="pt_id" id="nama_pt">
-                                    <option value="" disabled selected>Pilih Perguruan Tinggi</option>
+                                <select class="form-control" name="pt_id" id="nama_pt" readonly>
                                     <?php foreach ($pt as $pts) : ?>
-                                        <option value="<?= $pts['id'] ?>" <?= old('pt_id') == $pts['id'] ? 'selected' : '' ?>><?= $pts['nama_pt'] ?></option>
+                                        <?php if ($pts['id'] == session()->get('pt_id')) : ?>
+                                            <option value="<?= $pts['id'] ?>" selected><?= $pts['nama_pt'] ?></option>
+                                        <?php endif; ?>
                                     <?php endforeach; ?>
                                 </select>
-                                <?php if (isset($errors['pt_id'])) : ?>
-                                    <div class="invalid-feedback">
-                                        <?= $errors['pt_id'] ?>
-                                    </div>
-                                <?php endif; ?>
                             </div>
+
 
                             <!-- Dropdown Nama Perlombaan -->
                             <div class="col-lg-6 mb-3">
@@ -74,7 +71,7 @@
                                     </div>
                                 <?php endif; ?>
                                 <p style="font-weight: bold;">Masukkan link video dari drive.</p>
-                            </div>                         
+                            </div>
 
                             <div class="col-lg-12 mt-4">
                                 <button class="btn btn-primary">Simpan</button>
