@@ -30,7 +30,7 @@
 </head>
 
 <body id="top">
-    <!-- 
+    <!--    
     - #HEADER
   -->
     <header class="header" data-header>
@@ -692,14 +692,11 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <?php $i = 1;
-                                    foreach ($pt as $row) : ?>
                                         <tr>
-                                            <td><?= $i++; ?></td>
+                                            <td align="center">1</td>
                                             <td align="center">Buku Panduan</td>
-                                            <td align="center"><a href="https://drive.google.com/file/d/1HPU4g-FFDIld1npP6i0WZlXjDkekOFqm/view?usp=sharing">Klik Disini</a></td>
+                                            <td align="center"><a href="https://drive.google.com/file/d/1O5wjC69x6KvTNb9iSYm7nd2Q7q_Kgs_u/view?usp=sharing">Klik Disini</a></td>
                                         </tr>
-                                    <?php endforeach; ?>
                                 </tbody>
                             </table>
                         </div>
@@ -1823,4 +1820,3 @@ window.addEventListener('scroll', function() {
 </body>
 
 </html>
-.
