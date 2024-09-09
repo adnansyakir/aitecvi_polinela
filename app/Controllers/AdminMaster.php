@@ -492,7 +492,7 @@ class AdminMaster extends BaseController
             'pt_id' => $this->request->getPost('pt_id'),
             'prodi_id' => $this->request->getPost('prodi_id'),
             'email' => $this->request->getPost('email'),
-            'ukuran_kaos' => $this->request->getPost('ukuran_kaos'),
+            'ukuran_kaos' => strtoupper($this->request->getPost('ukuran_kaos')),
             'no_wa' => $this->request->getPost('no_wa'),
         ];
 
@@ -592,7 +592,7 @@ class AdminMaster extends BaseController
             'pt_id' => $this->request->getPost('pt_id'),
             'prodi_id' => $this->request->getPost('prodi_id'),
             'email' => $this->request->getPost('email'),
-            'ukuran_kaos' => $this->request->getPost('ukuran_kaos'),
+            'ukuran_kaos' => strtoupper($this->request->getPost('ukuran_kaos')),
             'no_wa' => $this->request->getPost('no_wa'),
         ];
 

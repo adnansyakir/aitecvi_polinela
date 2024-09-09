@@ -59,7 +59,7 @@
                             
                             <div class="col-lg-6 mb-3">
                                 <label class="form-label" for="ukuran_kaos">Ukuran Kaos</label>
-                                <input type="text" class="form-control <?= isset($errors['ukuran_kaos']) ? 'is-invalid ' : ''; ?>" name="ukuran_kaos" id="ukuran_kaos" placeholder="ukuran kaos" value="<?= old('ukuran_kaos') ?>">
+                                <input type="text" class="form-control <?= isset($errors['ukuran_kaos']) ? 'is-invalid ' : ''; ?>" name="ukuran_kaos" id="ukuran_kaos" placeholder="S,M,L,XL,XXL" value="<?= old('ukuran_kaos') ?>">
                                 <?php if (isset($errors['ukuran_kaos'])) : ?>
                                     <div class="invalid-feedback">
                                         <?= $errors['ukuran_kaos'] ?>

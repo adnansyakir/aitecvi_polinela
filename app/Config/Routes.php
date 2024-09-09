@@ -83,6 +83,20 @@ $routes->group('admin', ['filter' => 'authenticate'], function ($routes) {
     $routes->post('pendaftaran/kontesVokasi/daring/daring/update/(:any)', 'AdminkontesVokasiDaring::editKontesVokasiDaringPost/$1');
     $routes->get('pendaftaran/kontesVokasi/daring/daring/delete/(:any)', 'AdminkontesVokasiDaring::deleteKontesVokasiDaring/$1');
     $routes->get('pendaftaran/kontesVokasi/daring/daring/updateKeterangan/(:any)/(:any)', 'AdminkontesVokasiDaring::updateStatus/$1/$2');
+
+    //Eksebisi Fotografi
+    $routes->get('pendaftaran/eksibisiFotografi', 'AdminFotografi::index');
+    $routes->get('pendaftaran/eksibisiFotografi/add', 'AdminFotografi::addfoto');
+    $routes->post('pendaftaran/eksibisiFotografi/add', 'AdminFotografi::addfotopost');
+    $routes->get('pendaftaran/eksibisiFotografi/edit/(:any)', 'AdminFotografi::editfoto/$1');
+    $routes->post('pendaftaran/eksibisiFotografi/update/(:any)', 'AdminFotografi::editfotoPost/$1');
+    $routes->get('pendaftaran/eksibisiFotografi/delete/(:any)', 'AdminFotografi::deletefoto/$1');
+    $routes->get('pendaftaran/eksibisiFotografi/updateKeterangan/(:any)/(:any)', 'AdminFotografi::updateStatus/$1/$2');
+
+
+
+
+
     //AdminMaster 
 
 
