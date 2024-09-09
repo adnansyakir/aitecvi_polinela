@@ -8,7 +8,7 @@
                 <h4 class="card-title">Upload Proposal</h4>
             </div>
             <div class="col-md-6 text-end">
-                <a href="/admin/pendaftaran/kompetisiInovasi/proposal/add" class="btn btn-primary btn-sm"> Tambah Data</a>
+                <a href="/pendamping/pendaftaran/kompetisiInovasi/proposal/add" class="btn btn-primary btn-sm"> Tambah Data</a>
             </div>
         </div>
     </div>
@@ -50,7 +50,7 @@
                                     }
                                     ?>
                                 </td>
-                                <td> <a href="/admin/pendaftaran/kompetisiInovasi/proposal/edit/<?= $row['id']; ?>" class="btn btn-success btn-sm"><i class="bi bi-pencil-square"></i></a> <a href="#" onclick="confirmDelete('<?= $row['id']; ?>','/admin/pendaftaran/kompetisiInovasi/proposal/delete/')" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></a> </td>
+                                <td> <a href="/pendamping/pendaftaran/kompetisiInovasi/proposal/edit/<?= $row['id']; ?>" class="btn btn-success btn-sm"><i class="bi bi-pencil-square"></i></a> <a href="#" onclick="confirmDelete('<?= $row['id']; ?>','/pendamping/pendaftaran/kompetisiInovasi/proposal/delete/')" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></a> </td>
                             </tr> <?php endforeach; ?>
                     </tbody>
                 </table>

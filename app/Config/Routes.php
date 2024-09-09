@@ -182,6 +182,7 @@ $routes->group('pendamping', ['filter' => 'authenticate'], function ($routes) {
     $routes->post('finalisasi/edit/(:any)', 'Pendampingfinalisasi::editfinalisasiPost/$1');
     $routes->get('finalisasi/delete/(:any)', 'Pendampingfinalisasi::deletefinalisasi/$1');
 
+    // proposal
     $routes->get('pendaftaran/kompetisiInovasi/proposal', 'PendampingkompetisiInovasi::kompetisiInovasiProposal');
     $routes->get('pendaftaran/kompetisiInovasi/proposal/add', 'PendampingkompetisiInovasi::addkompetisiInovasiProposal');
     $routes->post('pendaftaran/kompetisiInovasi/proposal/add', 'PendampingkompetisiInovasi::addkompetisiInovasiProposalpost');
@@ -189,6 +190,16 @@ $routes->group('pendamping', ['filter' => 'authenticate'], function ($routes) {
     $routes->post('pendaftaran/kompetisiInovasi/proposal/update/(:any)', 'PendampingkompetisiInovasi::editkompetisiInovasiProposalPost/$1');
     $routes->get('pendaftaran/kompetisiInovasi/proposal/delete/(:any)', 'PendampingkompetisiInovasi::deletekompetisiInovasiProposal/$1');
     $routes->get('pendaftaran/kompetisiInovasi/proposal/updateKeterangan/(:any)/(:any)', 'PendampingkompetisiInovasi::updateStatus/$1/$2');
+
+    // Video
+    $routes->get('pendaftaran/kompetisiInovasi/video', 'AdminkompetisiInovasi::kompetisiInovasiVideo');
+    $routes->get('pendaftaran/kompetisiInovasi/video/add', 'AdminkompetisiInovasi::addkompetisiInovasiVideo');
+    $routes->post('pendaftaran/kompetisiInovasi/video/add', 'AdminkompetisiInovasi::addkompetisiInovasiVideoPost');
+    $routes->get('pendaftaran/kompetisiInovasi/video/edit/(:any)', 'AdminkompetisiInovasi::editkompetisiInovasiVideo/$1');
+    $routes->post('pendaftaran/kompetisiInovasi/video/update/(:any)', 'AdminkompetisiInovasi::editkompetisiInovasiVideoPost/$1');
+    $routes->get('pendaftaran/kompetisiInovasi/video/delete/(:any)', 'AdminkompetisiInovasi::deletekompetisiInovasiVideo/$1');
+    $routes->get('pendaftaran/kompetisiInovasi/video/updateKeterangan/(:any)/(:any)', 'AdminkompetisiInovasi::updateStatusVideo/$1/$2');
+
 
     $routes->get('peserta', 'PendampingPeserta::peserta');
     $routes->get('peserta/add', 'PendampingPeserta::addPeserta');
