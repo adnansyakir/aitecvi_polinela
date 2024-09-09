@@ -8,7 +8,7 @@
                 <h4 class="card-title">Upload Video</h4>
             </div>
             <div class="col-md-6 text-end">
-                <a href="/admin/pendaftaran/kompetisiInovasi/video/add" class="btn btn-primary btn-sm"> Tambah Data</a>
+                <a href="/pendamping/pendaftaran/kompetisiInovasi/video/add" class="btn btn-primary btn-sm"> Tambah Data</a>
             </div>
         </div>
     </div>
@@ -37,17 +37,17 @@
                                 <td><a href="<?= $row['video']; ?>"><i class="bi bi-file-earmark-play"></i></a></td>
 
                                 <td>
-                                    <?php
+                                <?php
                                     if ($row['keterangan'] == 0) {
-                                        echo '<span class="badge bg-secondary">Sedang diverifikasi</span>';
+                                        echo '<span class="badge bg-danger">Tidak Lolos</span>';
                                     } else if ($row['keterangan'] == 1) {
                                         echo '<span class="badge bg-success">Lolos</span>';
                                     } else if($row['keterangan'] == 2){
-                                        echo '<span class="badge bg-danger">Tidak Lolos</span>';
+                                        echo '<span class="badge bg-secondary">Sedang diverifikasi</span>';
                                     }
                                     ?>
                                 </td>
-                                <td> <a href="/admin/pendaftaran/kompetisiInovasi/video/edit/<?= $row['id']; ?>" class="btn btn-success btn-sm"><i class="bi bi-pencil-square"></i></a> <a href="#" onclick="confirmDelete('<?= $row['id']; ?>','/admin/pendaftaran/kompetisiInovasi/video/delete/')" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></a> </td>
+                                <td> <a href="/pendamping/pendaftaran/kompetisiInovasi/video/edit/<?= $row['id']; ?>" class="btn btn-success btn-sm"><i class="bi bi-pencil-square"></i></a> <a href="#" onclick="confirmDelete('<?= $row['id']; ?>','/pendamping/pendaftaran/kompetisiInovasi/video/delete/')" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></a> </td>
                             </tr> <?php endforeach; ?>
                     </tbody>
                 </table>

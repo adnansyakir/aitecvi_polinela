@@ -10,10 +10,10 @@
                     <h5 class="card-header">Edit Data Video</h5>
                 </div>
                 <div class="col-lg-6 text-end">
-                    <a href="/admin/pendaftaran/kompetisiInovasi/video" class="btn btn-dark me-3 mt-3"><i class='bx bx-arrow-back'></i> Kembali</a>
+                    <a href="/pendamping/pendaftaran/kompetisiInovasi/video" class="btn btn-dark me-3 mt-3"><i class='bx bx-arrow-back'></i> Kembali</a>
                 </div>
                 <div class="col-lg-12 p-5">
-                    <form method="POST" action="/admin/pendaftaran/kompetisiInovasi/video/update/<?= $video['id'] ?>">
+                    <form method="POST" action="/pendamping/pendaftaran/kompetisiInovasi/video/update/<?= $video['id'] ?>">
                         <?= csrf_field() ?>
                         <div class="row">
 

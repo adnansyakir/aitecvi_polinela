@@ -17,13 +17,19 @@ class VideoModel extends Model
     // Method untuk join video dengan proposal berdasarkan nama_team
     public function videobyPt()
     {
-        return $this->select('video.*, pt.nama_pt, cabang_perlombaan.nama_perlombaan, proposal.nama_team')
+        // Get pt_id from session
+        $ptId = session()->get('pt_id');
+
+        // Retrieve videos based on pt_id
+        return $this->select('video.*, pt.nama_pt, cabang_perlombaan.nama_perlombaan')
             ->join('pt', 'video.pt_id = pt.id')
             ->join('cabang_perlombaan', 'video.cabang_perlombaan_id = cabang_perlombaan.id')
-            ->join('proposal', 'video.nama_team = proposal.nama_team') // Join dengan tabel proposal berdasarkan nama_team
+            ->where('video.pt_id', $ptId) // Filter based on pt_id
+            ->distinct() // Ensure no duplicate data
             ->get()
             ->getResultArray();
     }
+
     public function insertData($data)
     {
         try {

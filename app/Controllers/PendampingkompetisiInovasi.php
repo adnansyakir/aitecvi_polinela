@@ -5,7 +5,7 @@ namespace App\Controllers;
 use App\Models\Admin\PtModel;
 use App\Models\Admin\CabangLombaModel;
 use App\Models\Pendamping\ProposalModel;
-use App\Models\Admin\VideoModel;
+use App\Models\Pendamping\VideoModel;
 use App\Models\Admin\PesertaModel;
 use Ramsey\Uuid\Uuid;
 
@@ -243,15 +243,20 @@ class PendampingkompetisiInovasi extends BaseController
     // Video
     public function kompetisiInovasiVideo()
     {
+        // Get video data based on pt_id
+        $videoData = $this->videoModel->videobyPt();
+        // dd($videoData);
+        // Store video data in session
+        session()->set('video_by_pt', $videoData);
 
+        // Pass the video data to the view
         $data = [
-
-            'video' => $this->videoModel->videobyPt(),
-
+            'video' => $videoData
         ];
-        // dd($data);
+
         echo view('konten/pendamping/kompetisiInovasi/video/index', $data);
     }
+
     public function addkompetisiInovasiVideo()
     {
         $data = [

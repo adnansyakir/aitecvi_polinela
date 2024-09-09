@@ -192,13 +192,13 @@ $routes->group('pendamping', ['filter' => 'authenticate'], function ($routes) {
     $routes->get('pendaftaran/kompetisiInovasi/proposal/updateKeterangan/(:any)/(:any)', 'PendampingkompetisiInovasi::updateStatus/$1/$2');
 
     // Video
-    $routes->get('pendaftaran/kompetisiInovasi/video', 'AdminkompetisiInovasi::kompetisiInovasiVideo');
-    $routes->get('pendaftaran/kompetisiInovasi/video/add', 'AdminkompetisiInovasi::addkompetisiInovasiVideo');
-    $routes->post('pendaftaran/kompetisiInovasi/video/add', 'AdminkompetisiInovasi::addkompetisiInovasiVideoPost');
-    $routes->get('pendaftaran/kompetisiInovasi/video/edit/(:any)', 'AdminkompetisiInovasi::editkompetisiInovasiVideo/$1');
-    $routes->post('pendaftaran/kompetisiInovasi/video/update/(:any)', 'AdminkompetisiInovasi::editkompetisiInovasiVideoPost/$1');
-    $routes->get('pendaftaran/kompetisiInovasi/video/delete/(:any)', 'AdminkompetisiInovasi::deletekompetisiInovasiVideo/$1');
-    $routes->get('pendaftaran/kompetisiInovasi/video/updateKeterangan/(:any)/(:any)', 'AdminkompetisiInovasi::updateStatusVideo/$1/$2');
+    $routes->get('pendaftaran/kompetisiInovasi/video', 'PendampingkompetisiInovasi::kompetisiInovasiVideo');
+    $routes->get('pendaftaran/kompetisiInovasi/video/add', 'PendampingkompetisiInovasi::addkompetisiInovasiVideo');
+    $routes->post('pendaftaran/kompetisiInovasi/video/add', 'PendampingkompetisiInovasi::addkompetisiInovasiVideoPost');
+    $routes->get('pendaftaran/kompetisiInovasi/video/edit/(:any)', 'PendampingkompetisiInovasi::editkompetisiInovasiVideo/$1');
+    $routes->post('pendaftaran/kompetisiInovasi/video/update/(:any)', 'PendampingkompetisiInovasi::editkompetisiInovasiVideoPost/$1');
+    $routes->get('pendaftaran/kompetisiInovasi/video/delete/(:any)', 'PendampingkompetisiInovasi::deletekompetisiInovasiVideo/$1');
+    $routes->get('pendaftaran/kompetisiInovasi/video/updateKeterangan/(:any)/(:any)', 'PendampingkompetisiInovasi::updateStatusVideo/$1/$2');
 
 
     $routes->get('peserta', 'PendampingPeserta::peserta');
