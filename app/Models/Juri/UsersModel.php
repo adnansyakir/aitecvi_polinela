@@ -8,7 +8,7 @@ class UsersModel extends Model
 {
     protected $table      = 'users';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['id', 'username', 'email', 'password', 'role_id', 'created_at', 'updated_at', 'status'];
+    protected $allowedFields = ['id', 'username', 'email', 'password','pt_id', 'role_id', 'created_at', 'updated_at', 'status'];
 
     public function getAllUsers()
     {
@@ -26,14 +26,6 @@ class UsersModel extends Model
             ->countAllResults();
     }
 
-    public function getJuri($userId)
-    {
-        return $this->select('users.*, juri.cabang_perlombaan_id, juri.keterangan')
-            ->join('juri', 'juri.kode_juri = users.username') // Join based on username
-            ->where('users.id', $userId)
-            ->get()
-            ->getRowArray();
-    }
     public function activateUsers($id, $status)
     {
         $builder = $this->db->table($this->table);

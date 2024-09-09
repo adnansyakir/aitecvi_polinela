@@ -39,27 +39,32 @@
                                     <div class="col-md-8 form-group">
                                         <?= $user['email'] ?>
                                     </div>
-
-                                        <div class="col-md-4">
-                                            <label>Password</label>
-                                        </div>
-                                        <div class="col-md-8 form-group">
-                                            <input type="password" id="password" class="form-control" name="password" placeholder="Password">
-                                        </div>
-                                        <div class="col-md-4">
-                                            <label>Confirm Password</label>
-                                        </div>
-                                        <div class="col-md-8 form-group">
-                                            <input type="password" id="confirmPassword" class="form-control" name="confirmPassword" placeholder="Confirm password">
-                                            <small>kosongkan jika tidak ingin merubah password</small>
-                                        </div>
-                                        <div class="col-sm-12 d-flex justify-content-end">
-                                            <button type="submit" class="btn btn-primary me-1 mb-1">Simpan</button>
-                                        </div>
+                                    <div class="col-md-4">
+                                        <label>Nama Perguruan Tinggi</label>
+                                    </div>
+                                    <div class="col-md-8 form-group">
+                                        <?= $pt['nama_pt'] ?> <!-- Menampilkan nama PT -->
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label>Password</label>
+                                    </div>
+                                    <div class="col-md-8 form-group">
+                                        <input type="password" id="password" class="form-control" name="password" placeholder="Password">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label>Confirm Password</label>
+                                    </div>
+                                    <div class="col-md-8 form-group">
+                                        <input type="password" id="confirmPassword" class="form-control" name="confirmPassword" placeholder="Confirm password">
+                                        <small>kosongkan jika tidak ingin merubah password</small>
+                                    </div>
+                                    <div class="col-sm-12 d-flex justify-content-end">
+                                        <button type="submit" class="btn btn-primary me-1 mb-1">Simpan</button>
                                     </div>
                                 </div>
-                            </form>
-                
+                            </div>
+                        </form>
+
                     </div>
                 </div>
             </div>

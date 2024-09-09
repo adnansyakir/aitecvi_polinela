@@ -148,6 +148,7 @@ class Auth extends BaseController
 
     public function checkAuth()
     {
+        // Validate input fields
         $validation = $this->validate([
             'username' => [
                 'rules' => 'required',
@@ -162,28 +163,32 @@ class Auth extends BaseController
                 ]
             ],
         ]);
-
+    
+        // If validation fails, return with errors
         if (!$validation) {
             $errors = \Config\Services::validation()->getErrors();
             return redirect()->back()->withInput()->with('errors', $errors);
         }
-
+    
+        // Check user credentials
         $user = $this->Auth->checkUser($this->request->getPost('username'), $this->request->getPost('password'));
         $session = session();
-
+    
         if ($user) {
+            // Welcome message
             session()->setFlashdata('primary', 'Hello.... Selamat Datang');
-
-            // Simpan pt_id ke dalam session
+    
+            // Store session data, including pt_id
             $sessionData = [
-                'id' => $user->id,
+                'data' => $user,   // Store the full user object or just the required fields
                 'role' => $user->role,
-                'pt_id' => $user->pt_id,  // Simpan pt_id ke session
+                'pt_id' => $user->pt_id,  // Include pt_id in the session
                 'logged_in' => TRUE
             ];
-
-            $session->set($sessionData);  // Set session dengan pt_id
-
+            
+            $session->set($sessionData);
+    
+           
             switch ($user->role) {
                 case 'Admin':
                     if ($user->status == 0) {
@@ -227,7 +232,7 @@ class Auth extends BaseController
             session()->setFlashdata('error', 'Username atau Password salah.');
             return redirect()->to('/loginn');
         }
-    }
+    }    
 
 
     public function logOut()
