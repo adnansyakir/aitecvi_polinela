@@ -10,6 +10,13 @@ class CabangLombaModel extends Model
     protected $primaryKey = 'id';
     protected $allowedFields = ['id', 'kode_perlombaan', 'nama_perlombaan'];
 
+
+    public function getLombabyKode($kode_perlombaan)
+    {
+        return $this->where('kode_perlombaan', $kode_perlombaan)
+                    ->findAll();
+    }
+
     public function getAllLomba()
     {
         return $this->findAll();

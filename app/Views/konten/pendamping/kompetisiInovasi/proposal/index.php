@@ -46,7 +46,7 @@
                                     } else if ($row['keterangan'] == 1) {
                                         echo '<span class="badge bg-success">Lolos Desk Evaluation</span>';
                                     } else if($row['keterangan'] == 2){
-                                        echo '<span class="badge bg-secondary">Sedang diverifikasi</span>';
+                                        echo '<span class="badge bg-secondary">Sedang penilaian</span>';
                                     }
                                     ?>
                                 </td>

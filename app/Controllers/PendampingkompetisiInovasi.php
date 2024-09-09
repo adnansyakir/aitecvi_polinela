@@ -62,7 +62,7 @@ class PendampingkompetisiInovasi extends BaseController
             'proposal' => $this->proposalModel->getAllPendaftaran(),
             'peserta' => $this->pesertaModel->getAllpeserta(),
             'pesertaOptions' => $this->pesertaModel->findAll(),
-            'cabang_perlombaan' => $this->cabanglombaModel->getAllLomba(),
+            'cabang_perlombaan' => $this->cabanglombaModel->getLombabyKode(001),
             'pt' => $this->ptModel->getAllPt(),
         ];
         return view('konten/pendamping/kompetisiInovasi/proposal/add', $data);
@@ -132,7 +132,7 @@ class PendampingkompetisiInovasi extends BaseController
         'proposal' => $proposalModel->find($id),
         'peserta' => $this->pesertaModel->getAllpeserta(),
         'pesertaOptions' => $this->pesertaModel->findAll(),
-        'cabang_perlombaan' => $this->cabanglombaModel->getAllLomba(),
+        'cabang_perlombaan' => $this->cabanglombaModel->getLombabyKode(001),
         'pt' => $this->ptModel->getAllPt(),
     ];
 
@@ -264,7 +264,7 @@ class PendampingkompetisiInovasi extends BaseController
     $data = [
         'video' => $this->videoModel->getAllPendaftaran(),
         'peserta' => $this->pesertaModel->getAllpeserta(),
-        'cabang_perlombaan' => $this->cabanglombaModel->getAllLomba(),
+        'cabang_perlombaan' => $this->cabanglombaModel->getLombabyKode(001),
         'pt' => $this->ptModel->getAllPt(),
         'proposal' => $this->proposalModel->getProposalWithKeteranganAndPt($pt_id, 1), // Filter by pt_id and keterangan = 1
     ];
@@ -313,7 +313,7 @@ class PendampingkompetisiInovasi extends BaseController
         $data = [
             'video' => $video,
             'pt' => $this->ptModel->findAll(),
-            'cabang_perlombaan' => $this->cabanglombaModel->findAll(),
+            'cabang_perlombaan' => $this->cabanglombaModel->getLombabyKode(001),
 
 
             'errors' => session()->getFlashdata('errors')

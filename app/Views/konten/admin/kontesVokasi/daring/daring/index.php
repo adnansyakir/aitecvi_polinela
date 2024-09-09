@@ -5,10 +5,10 @@
     <div class="card-header">
         <div class="row">
             <div class="col-md-6">
-                <h4 class="card-title">Upload Proposal</h4>
+                <h4 class="card-title">Upload Data Daring</h4>
             </div>
             <div class="col-md-6 text-end">
-                <a href="/admin/pendaftaran/kompetisiInovasi/proposal/add" class="btn btn-primary btn-sm"> Tambah Data</a>
+                <a href="/admin/pendaftaran/kontesVokasi/daring/daring/add" class="btn btn-primary btn-sm"> Tambah Data</a>
             </div>
         </div>
     </div>
@@ -20,25 +20,18 @@
                         <tr>
                             <th>No</th>
                             <th>Nama Perguruan tinggi</th>
-                            <th>Nama Perlombaan</th>
-                            <th>Nama Team</th>
+                            <th>Nama Perlombaan</th> 
                             <th>Nama Peserta</th>
-                            <th>Proposal</th>
                             <th>Keterangan</th>
                             <th class="text-center">Aksi</th>
                         </tr>
                     </thead>
                     <tbody> <?php $i = 1;
-                            foreach ($proposal as $row) : ?> <tr>
+                            foreach ($kntsdaring_luring as $row) : ?> <tr>
                                 <td><?= $i++; ?></td>
                                 <td><?= $row['nama_pt']; ?></td>
                                 <td><?= $row['nama_perlombaan']; ?></td>
-                                <td><?= $row['nama_team']; ?></td>
-                                <td>
-                                    <?= implode(', ', $row['peserta_names']) ?>
-                                </td>
-                                <td><a href="<?= $row['proposal']; ?>"><i class="bi bi-file-earmark-text"></i></a></td>
-
+                                <td><?= $row['nama_peserta']; ?></td>
                                 <td>
                                     <?php
                                     if ($row['keterangan'] == 0) {
@@ -46,18 +39,18 @@
                                     } else if ($row['keterangan'] == 1) {
                                         echo '<span class="badge bg-success">Lolos Desk Evaluation</span>';
                                     } else if ($row['keterangan'] == 2) {
-                                        echo '<span class="badge bg-secondary">Sedang penilaian</span>';
+                                        echo '<span class="badge bg-secondary">Sedang diverifikasi</span>';
                                     }
                                     ?>
                                 </td>
                                 <td>
                                     <div class="btn-group">
-                                        <a href="/admin/pendaftaran/kompetisiInovasi/proposal/edit/<?= $row['id']; ?>" class="btn btn-success btn-sm"><i class="bi bi-pencil-square"></i></a>
-                                        <a href="#" onclick="confirmDelete('<?= $row['id']; ?>','/admin/pendaftaran/kompetisiInovasi/proposal/delete/')" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></a>
+                                        <a href="/admin/pendaftaran/kontesVokasi/daring/daring/edit/<?= $row['id']; ?>" class="btn btn-success btn-sm"><i class="bi bi-pencil-square"></i></a>
+                                        <a href="#" onclick="confirmDelete('<?= $row['id']; ?>','/admin/pendaftaran/kontesVokasi/daring/daring/delete/')" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></a>
                                         <?php if ($row['keterangan'] == 0) : ?>
-                                            <a href="/admin/pendaftaran/kompetisiInovasi/proposal/updateKeterangan/1/<?= $row['id']; ?>" class="btn btn-success btn-sm"><i class="bi bi-power"></i></a>
+                                            <a href="/admin/pendaftaran/kontesVokasi/daring/daring/updateKeterangan/1/<?= $row['id']; ?>" class="btn btn-success btn-sm"><i class="bi bi-power"></i></a>
                                         <?php else : ?>
-                                            <a href="/admin/pendaftaran/kompetisiInovasi/proposal/updateKeterangan/0/<?= $row['id']; ?>" class="btn btn-secondary btn-sm"><i class="bi bi-power"></i></a>
+                                            <a href="/admin/pendaftaran/kontesVokasi/daring/daring/updateKeterangan/0/<?= $row['id']; ?>" class="btn btn-secondary btn-sm"><i class="bi bi-power"></i></a>
                                         <?php endif; ?>
                                     </div>
                                 </td>

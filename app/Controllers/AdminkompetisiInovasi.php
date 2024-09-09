@@ -56,8 +56,9 @@ class AdminkompetisiInovasi extends BaseController
             'proposal' => $this->proposalModel->getAllPendaftaran(),
             'peserta' => $this->pesertaModel->getAllpeserta(),
             'pesertaOptions' => $this->pesertaModel->findAll(),
-            'cabang_perlombaan' => $this->cabanglombaModel->getAllLomba(),
+            'cabang_perlombaan' => $this->cabanglombaModel->getLombabyKode(001),
             'pt' => $this->ptModel->getAllPt(),
+
         ];
         return view('konten/admin/kompetisiInovasi/proposal/add', $data);
     }
@@ -126,7 +127,7 @@ class AdminkompetisiInovasi extends BaseController
         'proposal' => $proposalModel->find($id),
         'peserta' => $this->pesertaModel->getAllpeserta(),
         'pesertaOptions' => $this->pesertaModel->findAll(),
-        'cabang_perlombaan' => $this->cabanglombaModel->getAllLomba(),
+        'cabang_perlombaan' => $this->cabanglombaModel->getLombabyKode(001),
         'pt' => $this->ptModel->getAllPt(),
     ];
 
@@ -252,7 +253,7 @@ class AdminkompetisiInovasi extends BaseController
         $data = [
             'video' => $this->videoModel->getAllPendaftaran(),
             'peserta' => $this->pesertaModel->getAllpeserta(),
-            'cabang_perlombaan' => $this->cabanglombaModel->getAllLomba(),
+            'cabang_perlombaan' => $this->cabanglombaModel->getLombabyKode(001),
             'pt' => $this->ptModel->getAllPt(),
             'proposal' => $this->proposalModel->getProposalWithKeterangan(1), // Filter berdasarkan keterangan = 1
         ];
