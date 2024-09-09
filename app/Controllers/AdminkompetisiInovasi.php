@@ -202,9 +202,9 @@ class AdminkompetisiInovasi extends BaseController
 
         if ($this->proposalModel->update($id, $data)) {
             $user = $this->proposalModel->find($id);
-            $userEmail = $user['proposal'];
+            $userEmail = $user['nama_team'];
 
-            $proposalModel = $this->proposalModel->where('proposal', $userEmail)->first();
+            $proposalModel = $this->proposalModel->where('nama_team', $userEmail)->first();
 
             if ($proposalModel) {
                 $proposalModelData = ['keterangan' => $keterangan];
@@ -356,9 +356,9 @@ class AdminkompetisiInovasi extends BaseController
 
         if ($this->videoModel->update($id, $data)) {
             $user = $this->videoModel->find($id);
-            $userEmail = $user['video'];
+            $userEmail = $user['nama_team'];
 
-            $videoModel = $this->videoModel->where('video', $userEmail)->first();
+            $videoModel = $this->videoModel->where('nama_team', $userEmail)->first();
 
             if ($videoModel) {
                 $videoModelData = ['keterangan' => $keterangan];
