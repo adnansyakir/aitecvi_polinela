@@ -259,16 +259,17 @@ class PendampingkompetisiInovasi extends BaseController
     }
 
     public function addkompetisiInovasiVideo()
-    {
-        $data = [
-            'video' => $this->videoModel->getAllPendaftaran(),
-            'peserta' => $this->pesertaModel->getAllpeserta(),
-            'cabang_perlombaan' => $this->cabanglombaModel->getAllLomba(),
-            'pt' => $this->ptModel->getAllPt(),
-            'proposal' => $this->proposalModel->getProposalWithKeterangan(1), // Filter berdasarkan keterangan = 1
-        ];
-        return view('konten/pendamping/kompetisiInovasi/video/add', $data);
-    }
+{
+    $pt_id = session()->get('pt_id'); // Get pt_id from session
+    $data = [
+        'video' => $this->videoModel->getAllPendaftaran(),
+        'peserta' => $this->pesertaModel->getAllpeserta(),
+        'cabang_perlombaan' => $this->cabanglombaModel->getAllLomba(),
+        'pt' => $this->ptModel->getAllPt(),
+        'proposal' => $this->proposalModel->getProposalWithKeteranganAndPt($pt_id, 1), // Filter by pt_id and keterangan = 1
+    ];
+    return view('konten/pendamping/kompetisiInovasi/video/add', $data);
+}
 
 
     public function addkompetisiInovasiVideoPost()
