@@ -465,7 +465,7 @@
 
             <!-- Kampus Peserta -->
 
-            <!-- <section class="section KP" id="kampuspeserta" aria-label="course">
+            <section class="section KP" id="kampuspeserta" aria-label="course">
                 <div class="container">
 
                     <div class="section-header">
@@ -498,7 +498,7 @@
                         </div>
                     </div>
                 </div>
-            </section> -->
+            </section>
 
             <!-- Sambutan Direktur -->
             <section class="section direktur" id="direktur" aria-label="course">
@@ -1492,7 +1492,7 @@
                     <div class="card location-card large-card">
                         <img src="landing/assets/images/hero.jpg" class="card-img-top" alt="Lokasi 2" style="width: 100%; height: 85%;">
                         <div class="card-body">
-                        <h3 class="card-title">Politeknik Pertanian Negeri Lampung</h3>
+                        <h3 class="card-title">Politeknik Negeri Lampung</h3>
                         </div>
                     </div>
                 </div>
