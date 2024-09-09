@@ -78,7 +78,7 @@ class PendampingkompetisiInovasi extends BaseController
             'proposal' => 'required',
             'peserta_id' => 'required|permit_empty',
         ];
-
+    
         $validationMessages = [
             'pt_id' => [
                 'required' => 'PT harus dipilih.',
@@ -100,13 +100,13 @@ class PendampingkompetisiInovasi extends BaseController
                 'required' => 'Peserta harus dipilih.',
             ],
         ];
-
+    
         // Validate input
         if (!$this->validate($validationRules, $validationMessages)) {
             // Validation failed, redirect back with input and validation errors
             return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
         }
-
+    
         $proposalModel = new ProposalModel();
         $data = [
             'pt_id' => $this->request->getPost('pt_id'),
@@ -116,31 +116,32 @@ class PendampingkompetisiInovasi extends BaseController
             'keterangan' => 2,
             'peserta_id' => implode(',', $this->request->getPost('peserta_id')) // Convert array to comma-separated string
         ];
-
+    
         if ($proposalModel->insertData($data)) {
             return redirect()->to('/pendamping/pendaftaran/kompetisiInovasi/proposal')->with('success', 'Data berhasil disimpan!');
         } else {
             return redirect()->back()->withInput()->with('error', 'Gagal menyimpan data!');
         }
     }
-
+    
 
     public function editkompetisiInovasiProposal($id)
     {
         $proposalModel = new ProposalModel();
-        $data = [
-            'proposal' => $proposalModel->find($id),
-            'peserta' => $this->pesertaModel->getAllpeserta(),
-            'pesertaOptions' => $this->pesertaModel->findAll(),
-            'cabang_perlombaan' => $this->cabanglombaModel->getAllLomba(),
-            'pt' => $this->ptModel->getAllPt(),
-        ];
+    $data = [
+        'proposal' => $proposalModel->find($id),
+        'peserta' => $this->pesertaModel->getAllpeserta(),
+        'pesertaOptions' => $this->pesertaModel->findAll(),
+        'cabang_perlombaan' => $this->cabanglombaModel->getAllLomba(),
+        'pt' => $this->ptModel->getAllPt(),
+    ];
 
-        if (empty($data['proposal'])) {
-            throw new \CodeIgniter\Exceptions\PageNotFoundException('Proposal not found');
-        }
+    if (empty($data['proposal'])) {
+        throw new \CodeIgniter\Exceptions\PageNotFoundException('Proposal not found');
+    }
 
-        return view('konten/pendamping/kompetisiInovasi/proposal/edit', $data);
+    return view('konten/pendamping/kompetisiInovasi/proposal/edit', $data);
+        
     }
 
 
@@ -153,7 +154,7 @@ class PendampingkompetisiInovasi extends BaseController
             'proposal' => 'required',
             'peserta_id' => 'required|permit_empty',
         ];
-
+    
         $validationMessages = [
             'pt_id' => [
                 'required' => 'PT harus dipilih.',
@@ -175,13 +176,13 @@ class PendampingkompetisiInovasi extends BaseController
                 'required' => 'Peserta harus dipilih.',
             ],
         ];
-
+    
         // Validate input
         if (!$this->validate($validationRules, $validationMessages)) {
             // Validation failed, redirect back with input and validation errors
             return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
         }
-
+    
         $proposalModel = new ProposalModel();
         $data = [
             'pt_id' => $this->request->getPost('pt_id'),
@@ -191,7 +192,7 @@ class PendampingkompetisiInovasi extends BaseController
             'keterangan' => 2,
             'peserta_id' => implode(',', $this->request->getPost('peserta_id')) // Convert array to comma-separated string
         ];
-
+    
         if ($proposalModel->update($id, $data)) {
             return redirect()->to('/pendamping/pendaftaran/kompetisiInovasi/proposal')->with('success', 'Data berhasil diperbarui!');
         } else {
