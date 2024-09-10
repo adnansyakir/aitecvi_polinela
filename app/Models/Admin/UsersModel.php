@@ -12,8 +12,9 @@ class UsersModel extends Model
 
     public function getAllUsers()
     {
-        return $this->select('users.*, role.role')
+        return $this->select('users.*, role.role, pt.nama_pt')
             ->join('role', 'role.id = users.role_id')
+            ->join('pt', 'pt.id = users.pt_id')
             ->orderBy('status', '0')
             ->get()
 

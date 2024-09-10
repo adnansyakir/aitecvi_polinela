@@ -53,76 +53,57 @@ class PendampingkontesVokasiLuring extends BaseController
 
     public function addKontesVokasiLuringPost()
     {
-         // Load the KntsLuringModel
-         $KntsLuring = new KntsLuringModel(); // Ensure the correct model is loaded
+        // Load the KntsLuringModel
+        $KntsLuring = new KntsLuringModel(); // Ensure the correct model is loaded
 
-         // Define validation rules
-         $validationRules = [
-             'pt_id' => 'required|is_not_unique[pt.id]',
-             'cabang_perlombaan_id' => 'required|is_not_unique[cabang_perlombaan.id]',
-             'peserta_id' => 'required',
-         ];
- 
-         $validationMessages = [
-             'pt_id' => [
-                 'required' => 'PT harus dipilih.',
-                 'is_not_unique' => 'PT yang dipilih tidak valid.',
-             ],
-             'cabang_perlombaan_id' => [
-                 'required' => 'Cabang perlombaan harus dipilih.',
-                 'is_not_unique' => 'Cabang perlombaan yang dipilih tidak valid.',
-             ],
-             'peserta_id' => [
-                 'required' => 'Peserta harus dipilih.',
-             ],
-         ];
- 
-         // Validate input
-         if (!$this->validate($validationRules, $validationMessages)) {
-             // Validation failed, redirect back with input and validation errors
-             return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
-         }
- 
-         $pt_id = $this->request->getPost('pt_id');
-         $cabang_perlombaan_name = $this->request->getPost('cabang_perlombaan_name');
- 
-         // Define the competition names with a limit
-         $limitedCompetitions = [
-             'Handling Ternak',
-             'Desain Alat dan Mesin Pertanian dengan AutoCAD',
-             'Teknik Pengambilan Sampel Darah Ayam',
-             'Packing Benih Ikan',
-             'Sortasi Biji Kopi',
-             'Teknik Pembuatan Bakso Ikan',
-             'Survey Pemetaan Lahan'
-         ];
- 
-         // Get the `cabang_perlombaan_id` for the provided name
-         $cabangPerlombaan = $this->cabanglombaModel->where('nama_perlombaan', $cabang_perlombaan_name)->first();
-         if (!$cabangPerlombaan) {
-             return redirect()->back()->withInput()->with('error', 'PT ini telah mendaftarkan maksimal 2 perwakilan untuk cabang perlombaan ini.');
-         }
- 
-         $cabang_perlombaan_id = $cabangPerlombaan['id'];
- 
-         // Check if this PT has already registered two participants for this category
-         if (in_array($cabang_perlombaan_name, $limitedCompetitions)) {
-             $existingRegistrations = $KntsLuring->where('pt_id', $pt_id)
-                 ->where('cabang_perlombaan_id', $cabang_perlombaan_id)
-                 ->countAllResults();
- 
-             if ($existingRegistrations >= 2) {
-                 return redirect()->back()->withInput()->with('error', 'PT ini telah mendaftarkan maksimal 2 perwakilan untuk cabang perlombaan ini.');
-             }
-         }
- 
-         // Proceed with registration if validation passes and limit is not exceeded
-         $data = [
-             'pt_id' => $pt_id,
-             'cabang_perlombaan_id' => $cabang_perlombaan_id,
-             'keterangan' => 2, // Default status or description
-             'peserta_id' => $this->request->getPost('peserta_id')
-         ];
+        // Define validation rules
+        $validationRules = [
+            'pt_id' => 'required|is_not_unique[pt.id]',
+            'cabang_perlombaan_id' => 'required|is_not_unique[cabang_perlombaan.id]',
+            'peserta_id' => 'required',
+        ];
+
+        $validationMessages = [
+            'pt_id' => [
+                'required' => 'PT harus dipilih.',
+                'is_not_unique' => 'PT yang dipilih tidak valid.',
+            ],
+            'cabang_perlombaan_id' => [
+                'required' => 'Cabang perlombaan harus dipilih.',
+                'is_not_unique' => 'Cabang perlombaan yang dipilih tidak valid.',
+            ],
+            'peserta_id' => [
+                'required' => 'Peserta harus dipilih.',
+            ],
+        ];
+
+        // Validate input
+        if (!$this->validate($validationRules, $validationMessages)) {
+            // Validation failed, redirect back with input and validation errors
+            return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
+        }
+
+        $pt_id = $this->request->getPost('pt_id');
+        $cabang_perlombaan_id = $this->request->getPost('cabang_perlombaan_id');
+
+        // Check if this PT has already registered two participants for this category
+        if (in_array($cabang_perlombaan_id, [1, 2,6,63,4300007,582,])) {
+            $existingRegistrations = $KntsLuring->where('pt_id', $pt_id)
+                ->where('cabang_perlombaan_id', $cabang_perlombaan_id)
+                ->countAllResults();
+
+            if ($existingRegistrations >= 2) {
+                return redirect()->back()->withInput()->with('error', 'Maaf, Anda telah Memenuhi Kuota Maksimal pada Cabang Perlombaan ini.');
+            }
+        }
+
+        // Proceed with registration if validation passes and limit is not exceeded
+        $data = [
+            'pt_id' => $pt_id,
+            'cabang_perlombaan_id' => $cabang_perlombaan_id,
+            'keterangan' => 2, // Default status or description
+            'peserta_id' => $this->request->getPost('peserta_id')
+        ];
         if ($KntsLuring->insertData($data)) {
             return redirect()->to('/pendamping/pendaftaran/kontesVokasi/luring')->with('success', 'Data berhasil disimpan!');
         } else {
@@ -153,6 +134,7 @@ class PendampingkontesVokasiLuring extends BaseController
 
     public function editKontesVokasiLuringPost($id)
     {
+        $KntsLuring = new KntsLuringModel();
         // Define validation rules
         $validationRules = [
             'pt_id' => 'required|is_not_unique[pt.id]',
@@ -180,7 +162,39 @@ class PendampingkontesVokasiLuring extends BaseController
             return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
         }
 
-        $KntsLuring = new KntsLuringModel();
+        $pt_id = $this->request->getPost('pt_id');
+        $cabang_perlombaan_name = $this->request->getPost('cabang_perlombaan_name');
+
+        // Define the competition names with a limit
+        $limitedCompetitions = [
+            'Handling Ternak',
+            'Desain Alat dan Mesin Pertanian dengan AutoCAD',
+            'Teknik Pengambilan Sampel Darah Ayam',
+            'Packing Benih Ikan',
+            'Sortasi Biji Kopi',
+            'Teknik Pembuatan Bakso Ikan',
+            'Survey Pemetaan Lahan'
+        ];
+
+        // Get the `cabang_perlombaan_id` for the provided name
+        $cabangPerlombaan = $this->cabanglombaModel->where('nama_perlombaan', $cabang_perlombaan_name)->first();
+        if (!$cabangPerlombaan) {
+            return redirect()->back()->withInput()->with('error', 'Maaf, Anda telah Memenuhi Kuota Maksimal pada Cabang Perlombaan ini.');
+        }
+
+        $cabang_perlombaan_id = $cabangPerlombaan['id'];
+
+        // Check if this PT has already registered two participants for this category
+        if (in_array($cabang_perlombaan_name, $limitedCompetitions)) {
+            $existingRegistrations = $KntsLuring->where('pt_id', $pt_id)
+                ->where('cabang_perlombaan_id', $cabang_perlombaan_id)
+                ->countAllResults();
+
+            if ($existingRegistrations >= 2) {
+                return redirect()->back()->withInput()->with('error', 'Maaf, Anda telah Memenuhi Kuota Maksimal pada Cabang Perlombaan ini.');
+            }
+        }
+
         $data = [
             'pt_id' => $this->request->getPost('pt_id'),
             'cabang_perlombaan_id' => $this->request->getPost('cabang_perlombaan_id'),
