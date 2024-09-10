@@ -77,21 +77,21 @@ $routes->group('admin', ['filter' => 'authenticate'], function ($routes) {
 
     // Kontes Vokasi
     // Daring-daring
-    $routes->get('pendaftaran/kontesVokasi/daring/daring', 'AdminkontesVokasiDaring::KontesVokasiDaring');
-    $routes->get('pendaftaran/kontesVokasi/daring/daring/add', 'AdminkontesVokasiDaring::addKontesVokasiDaring');
-    $routes->post('pendaftaran/kontesVokasi/daring/daring/add', 'AdminkontesVokasiDaring::addKontesVokasiDaringpost');
-    $routes->get('pendaftaran/kontesVokasi/daring/daring/edit/(:any)', 'AdminkontesVokasiDaring::editKontesVokasiDaring/$1');
-    $routes->post('pendaftaran/kontesVokasi/daring/daring/update/(:any)', 'AdminkontesVokasiDaring::editKontesVokasiDaringPost/$1');
-    $routes->get('pendaftaran/kontesVokasi/daring/daring/delete/(:any)', 'AdminkontesVokasiDaring::deleteKontesVokasiDaring/$1');
-    $routes->get('pendaftaran/kontesVokasi/daring/daring/updateKeterangan/(:any)/(:any)', 'AdminkontesVokasiDaring::updateStatus/$1/$2');
-    // Daring-Luring
-    $routes->get('pendaftaran/kontesVokasi/daring/luring', 'AdminkontesVokasiDaring::KontesVokasiLuring');
-    $routes->get('pendaftaran/kontesVokasi/daring/luring/add', 'AdminkontesVokasiDaring::addKontesVokasiLuring');
-    $routes->post('pendaftaran/kontesVokasi/daring/luring/add', 'AdminkontesVokasiDaring::addKontesVokasiLuringpost');
-    $routes->get('pendaftaran/kontesVokasi/daring/luring/edit/(:any)', 'AdminkontesVokasiDaring::editKontesVokasiLuring/$1');
-    $routes->post('pendaftaran/kontesVokasi/daring/luring/update/(:any)', 'AdminkontesVokasiDaring::editKontesVokasiLuringPost/$1');
-    $routes->get('pendaftaran/kontesVokasi/daring/luring/delete/(:any)', 'AdminkontesVokasiDaring::deleteKontesVokasiLuring/$1');
-    $routes->get('pendaftaran/kontesVokasi/daring/luring/updateKeterangan/(:any)/(:any)', 'AdminkontesVokasiDaring::updateStatusLuring/$1/$2');
+    $routes->get('pendaftaran/kontesVokasi/daring', 'AdminkontesVokasiDaring::KontesVokasiDaring');
+    $routes->get('pendaftaran/kontesVokasi/daring/add', 'AdminkontesVokasiDaring::addKontesVokasiDaring');
+    $routes->post('pendaftaran/kontesVokasi/daring/add', 'AdminkontesVokasiDaring::addKontesVokasiDaringpost');
+    $routes->get('pendaftaran/kontesVokasi/daring/edit/(:any)', 'AdminkontesVokasiDaring::editKontesVokasiDaring/$1');
+    $routes->post('pendaftaran/kontesVokasi/daring/update/(:any)', 'AdminkontesVokasiDaring::editKontesVokasiDaringPost/$1');
+    $routes->get('pendaftaran/kontesVokasi/daring/delete/(:any)', 'AdminkontesVokasiDaring::deleteKontesVokasiDaring/$1');
+    $routes->get('pendaftaran/kontesVokasi/daring/updateKeterangan/(:any)/(:any)', 'AdminkontesVokasiDaring::updateStatus/$1/$2');
+    // // Daring-Luring
+    // $routes->get('pendaftaran/kontesVokasi/daring/luring', 'AdminkontesVokasiDaring::KontesVokasiLuring');
+    // $routes->get('pendaftaran/kontesVokasi/daring/luring/add', 'AdminkontesVokasiDaring::addKontesVokasiLuring');
+    // $routes->post('pendaftaran/kontesVokasi/daring/luring/add', 'AdminkontesVokasiDaring::addKontesVokasiLuringpost');
+    // $routes->get('pendaftaran/kontesVokasi/daring/luring/edit/(:any)', 'AdminkontesVokasiDaring::editKontesVokasiLuring/$1');
+    // $routes->post('pendaftaran/kontesVokasi/daring/luring/update/(:any)', 'AdminkontesVokasiDaring::editKontesVokasiLuringPost/$1');
+    // $routes->get('pendaftaran/kontesVokasi/daring/luring/delete/(:any)', 'AdminkontesVokasiDaring::deleteKontesVokasiLuring/$1');
+    // $routes->get('pendaftaran/kontesVokasi/daring/luring/updateKeterangan/(:any)/(:any)', 'AdminkontesVokasiDaring::updateStatusLuring/$1/$2');
 
     $routes->get('pendaftaran/kontesVokasi/luring', 'AdminkontesVokasiLuring::KontesVokasiLuring');
     $routes->get('pendaftaran/kontesVokasi/luring/add', 'AdminkontesVokasiLuring::addKontesVokasiLuring');
@@ -233,13 +233,13 @@ $routes->group('pendamping', ['filter' => 'authenticate'], function ($routes) {
 
     // Kontes Vokasi
     // Daring-daring
-    $routes->get('pendaftaran/kontesVokasi/daring/daring', 'PendampingkontesVokasiDaring::KontesVokasiDaring');
-    $routes->get('pendaftaran/kontesVokasi/daring/daring/add', 'PendampingkontesVokasiDaring::addKontesVokasiDaring');
-    $routes->post('pendaftaran/kontesVokasi/daring/daring/add', 'PendampingkontesVokasiDaring::addKontesVokasiDaringpost');
-    $routes->get('pendaftaran/kontesVokasi/daring/daring/edit/(:any)', 'PendampingkontesVokasiDaring::editKontesVokasiDaring/$1');
-    $routes->post('pendaftaran/kontesVokasi/daring/daring/update/(:any)', 'PendampingkontesVokasiDaring::editKontesVokasiDaringPost/$1');
-    $routes->get('pendaftaran/kontesVokasi/daring/daring/delete/(:any)', 'PendampingkontesVokasiDaring::deleteKontesVokasiDaring/$1');
-    $routes->get('pendaftaran/kontesVokasi/daring/daring/updateKeterangan/(:any)/(:any)', 'PendampingkontesVokasiDaring::updateStatus/$1/$2');
+    $routes->get('pendaftaran/kontesVokasi/daring', 'PendampingkontesVokasiDaring::KontesVokasiDaring');
+    $routes->get('pendaftaran/kontesVokasi/daring/add', 'PendampingkontesVokasiDaring::addKontesVokasiDaring');
+    $routes->post('pendaftaran/kontesVokasi/daring/add', 'PendampingkontesVokasiDaring::addKontesVokasiDaringpost');
+    $routes->get('pendaftaran/kontesVokasi/daring/edit/(:any)', 'PendampingkontesVokasiDaring::editKontesVokasiDaring/$1');
+    $routes->post('pendaftaran/kontesVokasi/daring/update/(:any)', 'PendampingkontesVokasiDaring::editKontesVokasiDaringPost/$1');
+    $routes->get('pendaftaran/kontesVokasi/daring/delete/(:any)', 'PendampingkontesVokasiDaring::deleteKontesVokasiDaring/$1');
+    $routes->get('pendaftaran/kontesVokasi/daring/updateKeterangan/(:any)/(:any)', 'PendampingkontesVokasiDaring::updateStatus/$1/$2');
     // Daring-Luring
     $routes->get('pendaftaran/kontesVokasi/daring/luring', 'PendampingkontesVokasiDaring::KontesVokasiLuring');
     $routes->get('pendaftaran/kontesVokasi/daring/luring/add', 'PendampingkontesVokasiDaring::addKontesVokasiLuring');

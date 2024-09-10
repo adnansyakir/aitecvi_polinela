@@ -6,6 +6,7 @@
         <div class="row">
             <div class="col-md-6">
                 <h4 class="card-title">Upload Video</h4>
+                <h6>(Smart and Precision Farming & Teknologi Tepat Guna)</h6>
             </div>
             <div class="col-md-6 text-end">
                 <a href="/admin/pendaftaran/kompetisiInovasi/video/add" class="btn btn-primary btn-sm"> Tambah Data</a>

@@ -3,6 +3,25 @@
 <?= $this->section('content') ?>
 <div class="card">
     <div class="card-header">
+        <div class="col-md-6">
+            <h2 class="card-title">Informasi Kontes Vokasil Luring untuk 7 Lomba</h2>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <ul>
+            <li>Handling Ternak,</li>
+            <li> Desain Alat dan Mesin Pertanian dengan AutoCAD</li>
+            <li>Teknik Pengambilan Sampel Darah Ayam</li>
+            <li> Packing Benih Ikan</li>
+            <li>Sortasi Biji Kopi</li>
+            <li> Teknik Pembuatan Bakso Ikan</li>
+            <li> Survey Pemetaan Lahan</li>
+        </ul>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header">
         <div class="row">
             <div class="col-md-6">
                 <h4 class="card-title">Upload Data Luring</h4>

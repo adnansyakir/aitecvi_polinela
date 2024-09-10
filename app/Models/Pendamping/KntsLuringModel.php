@@ -15,12 +15,13 @@ class KntsLuringModel extends Model
         return $this->findAll();
     }
     // Method untuk join kntsdaring_luring dengan proposal berdasarkan nama_team
-    public function kntsdaringluringbyPt()
+    public function kntsdaringluringbyPt($pt_id)
     {
         return $this->select('knts_luring.*, pt.nama_pt, cabang_perlombaan.nama_perlombaan, peserta.nama_peserta')
             ->join('pt', 'knts_luring.pt_id = pt.id')
             ->join('cabang_perlombaan', 'knts_luring.cabang_perlombaan_id = cabang_perlombaan.id')
             ->join('peserta', 'knts_luring.peserta_id = peserta.id') // Join dengan tabel proposal berdasarkan nama_team
+            ->where('knts_luring.pt_id', $pt_id) // Filter based on pt_id from session
             ->get()
             ->getResultArray();
     }

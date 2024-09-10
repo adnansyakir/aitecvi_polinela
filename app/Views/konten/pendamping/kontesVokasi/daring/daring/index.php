@@ -5,7 +5,9 @@
     <div class="card-header">
         <div class="row">
             <div class="col-md-6">
-                <h4 class="card-title">Upload Data Daring</h4>
+                <h3 class="card-title">Upload Data Daring</h3>
+                <h6>(Formulasi Pakan Ternak, Teknik Proses Fillet Ikan, Formulasi Pakan Ikan,
+                Teknik Proses Karkas Ayam, Teknik Okulasi Tanaman, Penyuluhan Pertanian)</h6>
             </div>
             <div class="col-md-6 text-end">
                 <a href="/pendamping/pendaftaran/kontesVokasi/daring/daring/add" class="btn btn-primary btn-sm"> Tambah Data</a>

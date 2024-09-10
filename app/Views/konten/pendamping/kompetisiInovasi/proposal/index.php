@@ -1,11 +1,14 @@
 <?= $this->extend('layout/page') ?>
 
 <?= $this->section('content') ?>
+
+
 <div class="card">
     <div class="card-header">
         <div class="row">
             <div class="col-md-6">
                 <h4 class="card-title">Upload Proposal</h4>
+                <h6>(Smart and Precision Farming & Teknologi Tepat Guna)</h6>
             </div>
             <div class="col-md-6 text-end">
                 <a href="/pendamping/pendaftaran/kompetisiInovasi/proposal/add" class="btn btn-primary btn-sm"> Tambah Data</a>

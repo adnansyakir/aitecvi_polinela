@@ -5,7 +5,7 @@ namespace App\Controllers;
 use App\Models\Admin\PtModel;
 use App\Models\Admin\CabangLombaModel;
 use App\Models\Pendamping\KntsLuringModel;
-use App\Models\Admin\PesertaModel;
+use App\Models\Pendamping\PesertaModel;
 use Ramsey\Uuid\Uuid;
 
 class PendampingkontesVokasiLuring extends BaseController
@@ -29,18 +29,21 @@ class PendampingkontesVokasiLuring extends BaseController
 
     public function KontesVokasiLuring()
     {
+        $pt_id = session()->get('pt_id');
+
         $data = [
 
-            'kntsluring' => $this->KntsLuring->kntsdaringluringbyPt(),
+            'kntsluring' => $this->KntsLuring->kntsdaringluringbyPt($pt_id),
 
         ];
         echo view('konten/pendamping/kontesVokasi/luring/index', $data);
     }
     public function addKontesVokasiLuring()
     {
+        $pt_id = session()->get('pt_id');
         $data = [
             'kntsluring' => $this->KntsLuring->getAllPendaftaran(),
-            'peserta' => $this->pesertaModel->getAllpeserta(),
+            'peserta' => $this->pesertaModel->getPesertaWithdPt($pt_id),
             // 003 sesuai kode lomba
             'cabang_perlombaan' => $this->cabanglombaModel->getLombabyKode(003),
             'pt' => $this->ptModel->getAllPt(),
@@ -96,10 +99,12 @@ class PendampingkontesVokasiLuring extends BaseController
 
     public function editKontesVokasiLuring($id)
     {
+        $pt_id = session()->get('pt_id');
+
         $KntsLuring = new KntsLuringModel();
         $data = [
             'luring' => $KntsLuring->find($id),
-            'peserta' => $this->pesertaModel->getAllpeserta(),
+            'peserta' => $this->pesertaModel->getPesertaWithdPt($pt_id),
             'cabang_perlombaan' => $this->cabanglombaModel->getLombabyKode(003),
             'pt' => $this->ptModel->getAllPt(),
         ];

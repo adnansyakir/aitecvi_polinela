@@ -96,18 +96,9 @@
                         <span>Kontes Vokasi</span>
                     </a>
                     <ul class="submenu <?= ($request->uri->getSegment(3) === 'daring' || $request->uri->getSegment(3) === 'luring') ? 'active' : '' ?>">
-                        <li class="sidebar-item has-sub <?= ($request->uri->getSegment(3) === 'daring' || $request->uri->getSegment(2) === 'luring') ? 'active open' : '' ?>">
-                            <a href="#" class="sidebar-link">
-                                <span>Daring</span>
-                            </a>
-                            <ul class="submenu <?= ($request->uri->getSegment(3) === 'daring' || $request->uri->getSegment(3) === 'luring') ? 'active' : '' ?>">
-                                <li class="submenu-item <?= ($request->uri->getSegment(3) === 'daring') ? 'active' : '' ?>">
-                                    <a href="/admin/pendaftaran/kontesVokasi/daring/daring">Daring</a>
-                                </li>
-                                <li class="submenu-item <?= ($request->uri->getSegment(3) === 'luring') ? 'active' : '' ?>">
-                                    <a href="/admin/pendaftaran/kontesVokasi/daring/luring">Luring</a>
-                                </li>
-                            </ul>
+
+                        <li class="submenu-item <?= ($request->uri->getSegment(3) === 'daring') ? 'active' : '' ?>">
+                            <a href="/admin/pendaftaran/kontesVokasi/daring">Daring</a>
                         </li>
                         <li class="submenu-item <?= ($request->uri->getSegment(3) === 'luring') ? 'active' : '' ?>">
                             <a href="/admin/pendaftaran/kontesVokasi/luring">Luring</a>
