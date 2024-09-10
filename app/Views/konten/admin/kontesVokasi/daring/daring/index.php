@@ -7,13 +7,30 @@
         <div class="col-md-3">
             <h4 class="card-title"><span style="color: red;">Keterangan</span></h4>
         </div>
-    
+
         <div class="col-md-7">
-        <B><ul>
-            <li>Peserta Masih dalam Desk Verifikasi Penilaian,</li>
-            <li> Peserta Tidak Lolos Penilaian </li>
-            <li>Peserta Lolos Desk Verifikasi Akan mengikuti Luring di Politeknik Negeri Lampung</li>
-        </ul></B>
+            <B>
+                <ul>
+                    <li>Peserta Masih dalam Desk Verifikasi Penilaian,</li>
+                    <li> Peserta Tidak Lolos Penilaian </li>
+                    <li>Peserta Lolos Desk Verifikasi Akan mengikuti Luring di Politeknik Negeri Lampung</li>
+                </ul>
+            </B>
+        </div>
+        <div class="col-md-3">
+            <h4 class="card-title"><span style="color: green;">Cabang Lomba</span></h4>
+        </div>
+        <div class="col-md-7">
+            <B>
+                <ul>
+                    <li>Formulasi Pakan Ternak</li>
+                    <li>Teknik Proses Fillet Ikan</li>
+                    <li>Formulasi Pakan Ikan</li>
+                    <li>Teknik Proses Karkas Ayam</li>
+                    <li>Teknik Okulasi Tanaman</li>
+                    <li>Penyuluhan Pertanian</li>
+                </ul>
+            </B>
         </div>
     </div>
 </div>
@@ -37,7 +54,7 @@
                         <tr>
                             <th>No</th>
                             <th>Nama Perguruan tinggi</th>
-                            <th>Nama Perlombaan</th> 
+                            <th>Nama Perlombaan</th>
                             <th>Nama Peserta</th>
                             <th>Keterangan</th>
                             <th class="text-center">Aksi</th>
@@ -75,7 +92,7 @@
                     </tbody>
                 </table>
 
-                
+
             </div>
         </div>
     </div>
