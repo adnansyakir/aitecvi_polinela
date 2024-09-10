@@ -60,6 +60,8 @@
                         <div class="text-danger"><?= $validation->getError('pt') ?></div>
                     <?php endif; ?>
                 </div>
+                <br><br></br><br>
+                </br>
 
                 <button class="btn btn-primary" type="submit">Simpan</button>
             </form>
@@ -71,12 +73,14 @@
         $('.select2').select2({
             placeholder: "Pilih Perguruan Tinggi",
             allowClear: true,
+            minimumInputLength: 3, // Memulai pencarian setelah 3 huruf
             dropdownAutoWidth: true,
             width: '100%',
-            dropdownParent: $('.select2').parent(), // Agar dropdown tetap di dalam container yang tepat
+            dropdownParent: $('.select2').parent(),
         });
     });
 </script>
+
 
 
 <?= $this->endSection() ?>

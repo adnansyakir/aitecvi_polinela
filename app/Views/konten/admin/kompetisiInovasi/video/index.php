@@ -4,7 +4,7 @@
 <div class="card">
     <div class="card-header">
         <div class="col-md-6">
-            <h2 class="card-title">Informasi kompetisi Inovasi untuk 2 Lomba</h2>
+            <h2 class="card-title"><span style="color: red;">Cabang Lomba</span></h2>
         </div>
     </div>
     <div class="col-md-6">

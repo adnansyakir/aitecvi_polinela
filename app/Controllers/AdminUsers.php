@@ -123,6 +123,8 @@ class AdminUsers extends BaseController
             'detail' => 'Edit Users',
             'deskripsi' => 'Halaman Edit Users',
             'role' => $this->role->getAllData(),
+            'pt' => $this->pt->getAllPt(),
+
             'validation' => \Config\Services::validation(),
             'user' => $this->users->find($id)
         ];
@@ -161,6 +163,7 @@ class AdminUsers extends BaseController
             'username' => $this->request->getPost('username'),
             'email' => $email,
             'role_id' => $this->request->getPost('role_id'),
+            'pt_id' => $this->request->getPost('pt_id'),
         ];
 
         if (!empty($password)) {

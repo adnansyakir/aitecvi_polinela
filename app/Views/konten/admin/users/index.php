@@ -24,6 +24,7 @@
                             <th>Username</th>
                             <th>Email</th>
                             <th>Role</th>
+                            <th>Perguruan Tinggi</th>
                             <th>Status Akun</th>
                             <th class="text-center">Aksi</th>
                         </tr>
@@ -36,6 +37,8 @@
                                 <td><?= $row['username'] ?> </td>
                                 <td><?= $row['email'] ?> </td>
                                 <td><?= $row['role'] ?> </td>
+                                <td><?= $row['nama_pt'] ?> </td>
+
                                 <td>
                                     <?php
                                     if ($row['status'] == 0) {

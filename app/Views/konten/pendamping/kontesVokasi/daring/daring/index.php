@@ -7,13 +7,23 @@
         <div class="col-md-3">
             <h4 class="card-title"><span style="color: red;">Keterangan</span></h4>
         </div>
-    
+
         <div class="col-md-7">
-        <B><ul>
-            <li>Peserta Masih dalam Desk Verifikasi Penilaian,</li>
-            <li> Peserta Tidak Lolos Penilaian </li>
-            <li>Peserta Lolos Desk Verifikasi Akan mengikuti Luring di Politeknik Negeri Lampung</li>
-        </ul></B>
+            <B>
+                <ul>
+                    <li>Peserta Masih dalam Desk Verifikasi Penilaian,</li>
+                    <li> Peserta Tidak Lolos Penilaian </li>
+                    <li>Peserta Lolos Desk Verifikasi Akan mengikuti Luring di Politeknik Negeri Lampung</li>
+                </ul>
+            </B>
+        </div>
+        <div class="col-md-7">
+            <li>Formulasi Pakan Ternak</li>
+            <li>Teknik Proses Fillet Ikan</li>
+            <li>Formulasi Pakan Ikan</li>
+            <li>Teknik Proses Karkas Ayam</li>
+            <li>Teknik Okulasi Tanaman</li>
+            <li>Penyuluhan Pertanian</li>
         </div>
     </div>
 </div>
@@ -22,9 +32,7 @@
     <div class="card-header">
         <div class="row">
             <div class="col-md-6">
-                <h3 class="card-title">Upload Data Daring</h3>
-                <h6>(Formulasi Pakan Ternak, Teknik Proses Fillet Ikan, Formulasi Pakan Ikan,
-                Teknik Proses Karkas Ayam, Teknik Okulasi Tanaman, Penyuluhan Pertanian)</h6>
+                <h4 class="card-title">Upload Data Daring</h4>
             </div>
             <div class="col-md-6 text-end">
                 <a href="/pendamping/pendaftaran/kontesVokasi/daring/daring/add" class="btn btn-primary btn-sm"> Tambah Data</a>
@@ -39,7 +47,7 @@
                         <tr>
                             <th>No</th>
                             <th>Nama Perguruan tinggi</th>
-                            <th>Nama Perlombaan</th> 
+                            <th>Nama Perlombaan</th>
                             <th>Nama Peserta</th>
                             <th>Keterangan</th>
                             <th class="text-center">Aksi</th>
