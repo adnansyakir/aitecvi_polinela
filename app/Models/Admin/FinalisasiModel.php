@@ -8,7 +8,7 @@ class FinalisasiModel extends Model
 {
     protected $table      = 'finalisasi';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['id', 'nama_team', 'surat_tugas', 'invoice', 'bukti_transfer', 'keterangan'];
+    protected $allowedFields = ['id', 'pt_id', 'surat_tugas', 'invoice', 'bukti_transfer', 'keterangan'];
 
     public function getFinalisasiWithKeterangan($keterangan)
 {
@@ -16,12 +16,13 @@ class FinalisasiModel extends Model
                 ->findAll();
 }
 
-    public function getAllfinalisasi()
-    {
-        return $this->select('finalisasi.*, proposal.nama_team')
-                    ->join('proposal', 'proposal.nama_team = finalisasi.nama_team')
-                    ->findAll();
-    }
+public function getAllfinalisasi()
+{
+    return $this->select('finalisasi.*, pt.nama_pt')
+                ->join('pt', 'finalisasi.pt_id = pt.id')
+                ->findAll();
+}
+
 
     public function insertData($data)
     {

@@ -19,7 +19,7 @@
                     <thead>
                         <tr>
                             <th>No</th>
-                            <th>Nama Perguruan Tinggi</th>
+                            <th>Perguruan Tinggi</th>
                             <th>Surat tugas</th>
                             <th>Invoice Tagihan Kontribusi</th>
                             <th>Bukti Transfer</th>
@@ -32,7 +32,7 @@
                         foreach ($finalisasi as $row) : ?>
                             <tr>
                                 <td><?= $i++; ?></td>
-                                <td><?= $row['nama_team']; ?></td>
+                                <td><?= $row['nama_pt']; ?></td>
                                 <td><a href="/uploads/surat_tugas/<?= $row['surat_tugas']; ?>"><i class="bi bi-file-earmark-text"></i></a></td>
                                 <td><a href="/uploads/invoice/<?= $row['invoice']; ?>"><i class="bi bi-card-heading"></a></td>
                                 <td><a href="/uploads/bukti_transfer/<?= $row['bukti_transfer']; ?>"><i class="bi bi-card-heading"></a></td>

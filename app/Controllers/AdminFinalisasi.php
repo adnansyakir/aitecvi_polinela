@@ -32,7 +32,7 @@ class AdminFinalisasi extends BaseController
 
     $data = [
         'finalisasi' => $this->finalisasiModel->getAllfinalisasi(),
-        'proposal' => $proposalData, 
+        'pt' => $this->PtModel->getAllPt(),
     ];
     return view('konten/admin/finalisasi/add', $data);
 }

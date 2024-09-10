@@ -17,18 +17,14 @@
 
                         <div class="row">
                         <div class="col-lg-6 mb-3">
-                                <label class="form-label" for="nama_team">Nama Team</label>
-                                <select class="form-control <?= isset($errors['nama_team']) ? 'is-invalid ' : ''; ?>" name="nama_team" id="nama_team">
-                                    <option value="" disabled selected>Pilih Nama Team</option>
-                                    <?php foreach ($proposal as $team) : ?>
-                                        <option value="<?= $team['nama_team'] ?>" <?= old('nama_team') == $team['nama_team'] ? 'selected' : '' ?>><?= $team['nama_team'] ?></option>
+                                <label class="form-label" for="nama_pt">Perguruan Tinggi</label>
+                                <select class="form-control" name="pt_id" id="nama_pt" readonly>
+                                    <?php foreach ($pt as $pts) : ?>
+                                        <?php if ($pts['id'] == session()->get('pt_id')) : ?>
+                                            <option value="<?= $pts['id'] ?>" selected><?= $pts['nama_pt'] ?></option>
+                                        <?php endif; ?>
                                     <?php endforeach; ?>
                                 </select>
-                                <?php if (isset($errors['nama_team'])) : ?>
-                                    <div class="invalid-feedback">
-                                        <?= $errors['nama_team'] ?>
-                                    </div>
-                                <?php endif; ?>
                             </div>
 
                             <div class="col-lg-6 mb-3">

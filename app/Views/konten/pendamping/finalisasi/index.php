@@ -5,7 +5,7 @@
     <div class="card-header">
         <div class="row">
             <div class="col-md-6">
-                <h4 class="card-title">Finalisasi Admin</h4>
+                <h4 class="card-title">Finalisasi Administrasi</h4>
             </div>
             <div class="col-md-6 text-end">
                 <a href="/pendamping/finalisasi/add" class="btn btn-primary btn-sm"> Tambah Data</a>
@@ -38,12 +38,12 @@
                                 <td><a href="/uploads/bukti_transfer/<?= $row['bukti_transfer']; ?>"><i class="bi bi-card-heading"></a></td>
                                 <td>
                                     <?php
-                                    if ($row['keterangan'] == 2) {
-                                        echo '<span class="badge bg-danger">Tidak Diverifikasi</span>';
+                                    if ($row['keterangan'] == 0) {
+                                        echo '<span class="badge bg-danger">Gagal</span>';
                                     } else if ($row['keterangan'] == 1) {
-                                        echo '<span class="badge bg-success">Terverifikasi</span>';
-                                    } else if($row['keterangan'] == 0){
-                                        echo '<span class="badge bg-secondary">Sedang diverifikasi</span>';
+                                        echo '<span class="badge bg-success">Lunas</span>';
+                                    } else if ($row['keterangan'] == 2) {
+                                        echo '<span class="badge bg-secondary">Sedang Diverifikasi</span>';
                                     }
                                     ?>
                                 </td>

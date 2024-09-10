@@ -6,7 +6,7 @@
         <div class="card">
             <div class="row">
                 <div class="col-lg-6">
-                    <h5 class="card-header">Edit Finalisasi</h5>
+                    <h5 class="card-header">Edit Finalisasi Administrasi</h5>
                 </div>
                 <div class="col-lg-6 text-end">
                     <a href="/admin/finalisasi" class="btn btn-dark me-3 mt-3"><i class='bx bx-arrow-back'></i> Kembali</a>
@@ -17,7 +17,7 @@
 
                         <div class="row">
                             <div class="col-lg-6 mb-3">
-                                <label class="form-label" for="nama_team">Nama Team</label>
+                                <label class="form-label" for="nama_team">Perguruan Tinggi</label>
                                 <input type="text" class="form-control <?= isset($errors['nama_team']) ? 'is-invalid ' : ''; ?>" name="nama_team" id="nama_team" value="<?= esc($finalisasi->nama_team) ?>">
                                 <?php if (isset($errors['nama_team'])) : ?>
                                     <div class="invalid-feedback">
