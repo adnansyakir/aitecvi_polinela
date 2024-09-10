@@ -50,7 +50,7 @@
                         <a href="#pengumuman" class="navbar-link" data-nav-link>Pengumuman</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="#" class="navbar-link" data-nav-link>Tentang AITEC VI &#x25BC;</a>
+                        <a href="#" class="navbar-link" data-nav-link>Tentang AITeC VI &#x25BC;</a>
                         <div class="dropdown-content">
                             <a href="#latar">Latar Belakang</a>
                             <a href="#tujuan">Tujuan dan Manfaat</a>
@@ -58,23 +58,33 @@
                             <a href="#kampuspeserta">Kampus Peserta</a>
                             <a href="#jadwal">Jadwal</a>
                             <a href="#lokasi">Lokasi</a>
-                            <a href="#gallery">Gallery</a>
+                            <a href="#gallery">Galeri</a>
                         </div>
                     </li>
                     <li class="navbar-item">
                         <a href="#" class="navbar-link" data-nav-link>Sambutan &#x25BC;</a>
                         <div class="dropdown-content">
                             <a href="#direktur">Direktur Politeknik Negeri Lampung Lampung</a>
-                            <a href="#bakorma">Ketua BAKORMA</a>
+                            <a href="#bakorma">Ketua BAKORMA Politeknik se-Indonesia</a>
                             <a href="#panitia">Ketua Panitia</a>
                         </div>
                     </li>
                     <li class="navbar-item">
                         <a href="#" class="navbar-link" data-nav-link>Kepanitiaan &#x25BC;</a>
                         <div class="dropdown-content">
+                            <a href="#panitia">Panitia Pelaksana</a>
+                            <a href="#kordinator">Koordinator Lomba</a>
                             <a href="#juri">Juri</a>
-                            <a href="#kordinator">Kordinator Lomba</a>
-                            <a href="#hubungi">Hubungi</a>
+                            <!-- <a href="#hubungi">Hubungi</a> -->
+                        </div>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link" data-nav-link>Informasi Umum &#x25BC;</a>
+                        <div class="dropdown-content">
+                            <a href="#panitia">Narahubung</a>
+                            <a href="#kordinator">Fasilitas</a>
+                            <a href="#juri">Transportasi</a>
+                            <a href="#hubungi">Penginapan</a>
                         </div>
                     </li>
                 </ul>
@@ -109,13 +119,12 @@
                            <span class="utama">AGRICULTURAL</span>  INNOVATION TECHNOLOGY COMPETITION VI
                         </h1>
                         <h2 align="center">
-                            <span class="text-two">(AITeC VI)</span><br><br><br>
+                            <span class="text-two">(AITeC VI)</span><br>
+                            <span class="text-two">2024</span><br><br>
                         </h2>
-
                         <a href="../loginn" class="btn has-before">
                             <span class="span">Login </span>
                             <br>
-
                             <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
                         </a>
                     </div>
@@ -144,10 +153,10 @@
                     dan sebagainya. Dalam hal penyelenggaraan pendidikan formal, Perguruan Tinggi Vokasi (PTV) menjadi institusi pendidikan yang berperan besar untuk menghasilkan output lulusan yang tidak hanya menguasai teori, tetapi mampu mengaplikasikan penguasaan keahlian terapan tertentu. Hal ini bertujuan untuk menyiapkan sumberdaya manusia dengan kemampuan dan keterampilan bidang tertentu yang siap terjun ke dunia kerja dan dapat bersaing secara global. Dalam hal mewujudkan tujuan tersebut, motivasi untuk senantiasa meningkatkan kompetensi dan keterampilan dinilai memiliki tingkat urgensi yang tinggi bagi mahasiswa.
                     </p>
                     <p style="text-indent:45px">
-                    Politeknik Negeri Lampung sebagai salah satu Perguruan Tinggi Vokasi senantiasa memprioritaskan kesempatan bagi mahasiswa untuk dapat terus memperbarui <i>(update)</i> dan meningkatkan <i>(upgrade)</i> kompetensi diri. Hal ini dilakukan karena adanya kesadaran penuh bahwa pendidikan vokasi berfokus pada pengembangan keterampilan yang merupakan modal utama yang dibutuhkan generasi muda untuk dapat bersaing. Di tahun 2024, Politeknik Negeri Lampung mengemban amanah sebagai tuan rumah penyelenggara event nasional, yaitu Kompetisi Inovasi Teknologi Bidang Pertanian ke-6 atau 6th <i>Agricultural Innovation Technology Competition</i> (AITeC VI) yang secara repetitif dilaksanakan di bawah pengawasan Badan Koordinasi Kemahasiswaan (BAKORMA) Politeknik se-Indonesia.
+                    Politeknik Negeri Lampung sebagai salah satu Perguruan Tinggi Vokasi senantiasa memprioritaskan kesempatan bagi mahasiswa untuk dapat terus memperbarui <i>(update)</i> dan meningkatkan <i>(upgrade)</i> kompetensi diri. Hal ini dilakukan karena adanya kesadaran penuh bahwa pendidikan vokasi berfokus pada pengembangan keterampilan yang merupakan modal utama yang dibutuhkan generasi muda untuk dapat bersaing. Di tahun 2024, Politeknik Negeri Lampung mengemban amanah sebagai tuan rumah penyelenggara event nasional, yaitu Kompetisi Inovasi Teknologi Bidang Pertanian ke-6 atau <i>6th Agricultural Innovation Technology Competition</i> (AITeC VI) yang secara repetitif dilaksanakan di bawah pengawasan Badan Koordinasi Kemahasiswaan (BAKORMA) Politeknik se-Indonesia.
                     </p>
                     <p style="text-indent:45px">
-                    Badan Koordinasi Kemahasiswaan (BAKORMA) Politeknik se-Indonesia memiliki tanggung jawab bidang kemahasiswaan di lingkup vokasi untuk pengembangan softskill mahasiswa pada tataran implementasi secara nasional. Salah satu program yang dimiliki oleh BAKORMA untuk pengembangan softskill tersebut adalah melalui penyelenggaraan Agricultural Innovation Technology Competition (AITeC) tingkat nasional yang dilakukan secara rutin untuk mahasiswa vokasi bidang pertanian. AITeC juga memfasilitasi mahasiswa untuk mengembangkan potensi diri, jiwa kompetitif yang sehat, dan kompetensi diri. Secara umum, selain untuk menjadi wadah bagi mahasiswa, kegiatan AITeC ini diarahkan untuk meningkatkan, produktivitas, efektivitas dan efisiensi, serta kualitas pertanian secara luas yang melalui suatu ide/gagasan, pemikiran kreatif, maupun inovasi-inovasi mutakhir yang mencakup pertanian pangan dan hortikultura, peternakan, perikanan, dan kehutanan. Tidak hanya itu, 
+                    Badan Koordinasi Kemahasiswaan (BAKORMA) Politeknik se-Indonesia memiliki tanggung jawab bidang kemahasiswaan di lingkup vokasi untuk pengembangan softskill mahasiswa pada tataran implementasi secara nasional. Salah satu program yang dimiliki oleh BAKORMA untuk pengembangan softskill tersebut adalah melalui penyelenggaraan <i>Agricultural Innovation Technology Competition</i> (AITeC) tingkat nasional yang dilakukan secara rutin untuk mahasiswa vokasi bidang pertanian. AITeC juga memfasilitasi mahasiswa untuk mengembangkan potensi diri, jiwa kompetitif yang sehat, dan kompetensi diri. Secara umum, selain untuk menjadi wadah bagi mahasiswa, kegiatan AITeC ini diarahkan untuk meningkatkan, produktivitas, efektivitas dan efisiensi, serta kualitas pertanian secara luas yang melalui suatu ide/gagasan, pemikiran kreatif, maupun inovasi-inovasi mutakhir yang mencakup pertanian pangan dan hortikultura, peternakan, perikanan, dan kehutanan. Tidak hanya itu, 
                     penyelenggaraan AITeC diharapkan mampu melahirkan peningkatan akses teknologi pertanian bagi petani kecil dan masyarakat pedesaan dengan pendekatan yang inklusif dan berkelanjutan.
                     </p>
                     <p style="text-indent:45px">
@@ -167,14 +176,13 @@
                                 <strong>TUJUAN</strong>
                                 <ol type="1">
                                     <li>
-                                        1. Memberikan wadah untuk mahasiswa dapat berinovasi, meningkatkan kompetensi diri, meningkatkan kreativitas, dan kualitas produksi
-                                        dibidang pertanian yang berwawasan lingkungan;
+                                        1. Memberikan wadah bagi mahasiswa untuk dapat berinovasi, meningkatkan kompetensi diri, kreativitas, dan kualitas produksi di bidang pertanian yang berwawasan lingkungan;
                                     </li>
                                     <li>
-                                        2. Memberikan penghargaan kepada mahasiswa yang berprestasi Tingkat Nasional Bidang Pertanian dalam kompetisi AITeC 2023;
+                                        2. Memberikan apresiasi (penghargaan) berskala nasional kepada mahasiswa yang berprestasi di AITeC;
                                     </li>
                                     <li>
-                                        3. Meningkatkan kualitas hubungan dan kerjasama antar perguruan tinggi vokasi bidang pertanian Indonesia.
+                                        3. Meningkatkan kualitas hubungan dan kerjasama antar Perguruan Tinggi Vokasi bidang pertanian di Indonesia.
                                         <br />
                                         <br />
                                     </li>
@@ -186,14 +194,13 @@
                                 <strong>MANFAAT</strong>
                                 <ol type="1">
                                     <li>
-                                        1. Tumbuhnya semangat dan motivasi dalam diri mahasiswa untuk berkompetisi yang sehat dalam lingkup kemahasiswaan politeknik
-                                        bidang pertanian;
+                                        1. Tumbuhnya semangat dan motivasi dalam diri mahasiswa untuk berkompetisi yang sehat di bawah naungan Badan Koordinasi Kemahasiswaan Politeknik bidang pertanian;
                                     </li>
                                     <li>
-                                        2. Terciptanya kreativitas, budaya berprestasi dan berinovasi dalam diri mahasiswa bidang pertanian;
+                                        2. Terciptanya kreativitas, budaya berprestasi dan berinovasi dalam diri mahasiswa yang berorientasi pada peningkatan kualitas di bidang pertanian;
                                     </li>
                                     <li>
-                                        3. Terbentuknya relasi dan silaturahmi yang baik antar civitas perguruan tinggi vokasi bidang pertanian Indonesia.
+                                        3. Terbentuknya relasi dan silaturahmi yang baik antar civitas Perguruan Tinggi Vokasi bidang pertanian di Indonesia.
                                     </li>
                                 </ol>
                             </li>
@@ -217,7 +224,7 @@
                                 Tema untuk Kompetisi Inovasi Teknologi Bidang Pertanian VI  atau <i>Agricultural Innovation Technology Competition</i> 6th (AITeC VI) Politeknik Negeri Lampung tahun 2024 adalah: <br /><br />
 
                                     <strong style="color:darkgreen; font-size:larger; font-style:normal;text-align:center">
-                                    “Pemantapan Ketahanan Pangan melalui Peningkatan Inovasi Teknologi Bidang Pertanian dalam Mengantisipasi Perubahan Iklim Menuju Indonesia Emas 2045”
+                                    <i>“Pemantapan Ketahanan Pangan melalui Peningkatan Inovasi Teknologi Bidang Pertanian dalam Mengantisipasi Perubahan Iklim Menuju Indonesia Emas 2045”</i>
                                     </strong>
                                 </p>
                                 <br>
@@ -271,13 +278,13 @@
                                 </ol>
                                 <ol>
                                 <strong><i><li>5. Inisial AITeC VI</li></i></strong>
-                                    <p style="text-indent:45px">AITeC VI adalah singkatan dari <i>"Agricultural Innovation Technology Competition"</i> y
-                                        ang menunjukkan bahwa kegiatan ini adalah acara berkelanjutan yang sudah memasuki 
-                                        tahun keenam sekaligus menunjukkan bentuk komitmen Badan Koordinasi Kemahasiswaan 
-                                        Politeknik se-Indonesia untuk terus-menerus memberikan dukungan melalui penyelenggaraan 
-                                        kompetisi sehat yang berorientasi 
-                                        pada inovasi teknologi dan peningkatan kualitas produksi di sektor pertanian. </p>
-                                </ol>
+                                    <p style="text-indent:45px">
+                                    AITeC VI adalah singkatan dari <i>"Agricultural Innovation Technology Competition"</i> yang
+                                    menunjukkan bahwa kegiatan ini adalah acara berkelanjutan yang sudah memasuki 
+                                    tahun keenam sekaligus menunjukkan bentuk komitmen Badan Koordinasi Kemahasiswaan 
+                                    Politeknik se-Indonesia untuk terus-menerus memberikan dukungan melalui penyelenggaraan 
+                                    kompetisi sehat yang berorientasi 
+                                    pada inovasi teknologi dan peningkatan kualitas produksi di sektor pertanian. </p>
                                 
                                     <p style="text-indent:45px">
                                     Logo AITeC VI Politeknik Negeri Lampung dirancang dengan menggunakan elemen-elemen yang 
@@ -285,10 +292,10 @@
                                     selaras dengan tema “Pemantapan Ketahanan Pangan melalui Peningkatan 
                                     Inovasi Teknologi Bidang Pertanian dalam Mengantisipasi Perubahan Iklim Menuju 
                                     Indonesia Emas 2045”. Oleh karena itu, Politeknik Negeri Lampung selaku tuan
-                                     rumah penyelenggara AITeC VI berhadap logo ini tidak hanya berfungsi sebagai identitas visual, 
+                                    rumah penyelenggara AITeC VI berhadap logo ini tidak hanya berfungsi sebagai identitas visual, 
                                     tetapi juga sebagai simbol dari visi dan misi kegiatan yang mendalam dan bermakna.
                                     </p>
-                            
+                                    </ol>
 
                             <li>
 
@@ -305,8 +312,8 @@
                                 Secara umum, AITeC VI Politeknik Negeri Lampung tahun 2024 dilaksanakan dalam bentuk 3 (tiga) kategori kompetisi, yaitu:
                                     <li>
                                         <strong>
-                                            1. Kompetisi Inovasi Teknologi Bidang Pertanian (Agricultural Innovation
-                                            Technology Competition),
+                                            1. Kompetisi Inovasi Teknologi Bidang Pertanian <i>(Agricultural Innovation
+                                            Technology Competition)</i>
                                         </strong>
                                         <p style="text-indent:45px">
                                         Kompetisi ini merupakan suatu ajang unjuk kemampuan mahasiswa di bidang pertanian dengan 
@@ -318,7 +325,7 @@
                                         perikanan, kehutanan, industri, ekonomi, dan teknologi. Kategori ini terdiri atas 2 (dua) cabang kompetisi, yaitu: <br />
                                         </p>
                                         <ol>
-                                        1. Inovasi Teknologi Bidang Pertanian sub-kategori Smart and Precision Farming
+                                        1. Inovasi Teknologi Bidang Pertanian sub-kategori <i>Smart and Precision Farming</i>
                                         </ol>
                                         <ol>
                                         2. Inovasi Teknologi Bidang Pertanian sub-kategori Teknologi Tepat Guna
@@ -327,7 +334,7 @@
 
                                     <li>
                                         <strong>
-                                            2. Kontes Vokasi Bidang Pertanian (Agricultural Vocation Skill Contest),
+                                            2. Kontes Vokasi Bidang Pertanian <i>(Agricultural Vocation Skill Contest)</i>
                                         </strong>
                                         <p style="text-indent:45px">
                                         Kompetisi ini merupakan suatu ajang unjuk kemampuan mahasiswa dengan menekankan 
@@ -344,7 +351,7 @@
                                         2.	Sortasi Biji Kopi
                                         </ol>
                                         <ol>
-                                        3.	Handling Ternak
+                                        3.	<I>Handling</I> Ternak
                                         </ol>
                                         <ol>
                                         4.	Teknik Proses Karkas Ayam
@@ -360,10 +367,10 @@
                                         7.	Formulasi Pakan Ikan
                                         </ol>
                                         <ol>
-                                        8.	Packing Benih Ikan
+                                        8.	<I>Packing</I> Benih Ikan
                                         </ol>
                                         <ol>
-                                        9.	Teknik Proses Fillet Ikan
+                                        9.	Teknik Proses <I>Fillet</I> Ikan
                                         </ol>
                                         <ol>
                                         10.	Teknik Pembuatan Bakso Ikan
@@ -372,7 +379,7 @@
                                         11.	Survey Pemetaan Lahan
                                         </ol>
                                         <ol>
-                                        12.	Desain Alat dan Mesin Pertanian dengan AutoCAD
+                                        12.	Desain Alat dan Mesin Pertanian dengan <I>AutoCAD</I>
                                         </ol>
                                         <ol>
                                         13.	Penyuluhan Pertanian
@@ -381,7 +388,7 @@
 
                                     <li>
                                         <strong>
-                                            3. Eksibisi Fotografi (Photography Exhibition)
+                                            3. Eksibisi Fotografi <i>(Photography Exhibition)</i>
                                         </strong>
                                     <p style="text-indent:45px">
                                         Perlu disadari bahwa bakat dan talenta mahasiswa tidak hanya sebatas di bidang akademik, 
@@ -413,7 +420,7 @@
                                 Secara umum, sistem pelaksanaan AITeC VI Politeknik Negeri Lampung tahun 2024 terdiri atas:
                                 <ol>
                                     <li>
-                                        <strong>Babak Penyisihan dilaksanakan secara:</strong>
+                                        
                                         <ol type="a">
                                             <li>
                                             <strong style="color:darkgreen">
@@ -425,36 +432,88 @@
                                             </li><br>
                                             <li>
                                                 <strong style="color:darkgreen">
-                                                2.	Seleksi secara daring (online)
+                                                2.	Seleksi Secara Daring (online)
                                                 </strong>
-                                                Pelaksanaan secara daring (online) atau seleksi online adalah proses seleksi bagi peserta yang ditujukan untuk 9 (sembilan) cabang kompetisi, yaitu:
-                                                <ol>1.	Inovasi Teknologi Bidang Pertanian sub-kategori Smart and Precision Farming</ol>
+                                                Pelaksanaan secara daring (online) atau seleksi online adalah proses seleksi bagi peserta yang ditujukan untuk  cabang kompetisi, yaitu:
+                                                <ol>1.	Inovasi Teknologi Bidang Pertanian sub-kategori <I>Smart and Precision Farming</I></ol>
                                                 <ol>2.	Inovasi Teknologi Bidang Pertanian sub-kategori Teknologi Tepat Guna</ol>
                                                 <ol>3. Teknik Okulasi Tanaman</ol>
                                                 <ol>4. Teknik Proses Karkas Ayam</ol>
-                                                <ol>5.  Teknik Pengambilan Sampel Darah Ayam</ol>
-                                                <ol>6.	Formulasi Pakan Ternak</ol>
-                                                <ol>7.	Formulasi Pakan Ikan</ol>
-                                                <ol>8.	Teknik Proses Fillet Ikan</ol>
-                                                <ol>9.	Penyuluhan Pertanian</ol>
+                                                <ol>5.	Formulasi Pakan Ternak</ol>
+                                                <ol>6.	Formulasi Pakan Ikan</ol>
+                                                <ol>7.	Teknik Proses <I>Fillet</I> Ikan</ol>
+                                                <ol>8.	Penyuluhan Pertanian</ol>
                                                 <br />
                                             </li>
                                             <li>
                                                 <strong style="color:darkgreen">
-                                                    3.	Pelaksanaan secara luring (offline)
+                                                    3.	Pelaksanaan Secara Luring (offline)
                                                 </strong>
-                                                Pelaksanaan secara luring (offline) di Politeknik Negeri Lampung meliputi 7 (tujuh) cabang kompetisi dan seluruh babak final dari cabang kompetisi yang sebelumnya telah melalui proses seleksi daring (online). Adapun 7 (tujuh) cabang kompetisi yang dimaksud adalah:
+                                                Pelaksanaan secara luring (offline) di Politeknik Negeri Lampung meliputi 8 (delapan) cabang kompetisi dan seluruh babak final dari cabang kompetisi yang sebelumnya telah melalui proses seleksi daring (online). Adapun 7 (tujuh) cabang kompetisi yang dimaksud adalah:
                                                     <ol>1.	Sortasi Biji Kopi</ol>
-                                                    <ol>2.	Handling Ternak</ol>
-                                                    <ol>3.	Packing Benih Ikan</ol>
-                                                    <ol>4.	Teknik Pembuatan Bakso Ikan</ol>
-                                                    <ol>5.	Survey Pemetaan Lahan</ol>
-                                                    <ol>6.	Desain Alat dan Mesin Pertanian dengan AutoCAD</ol>
-                                                    <ol>7.	Eksibisi Fotografi</ol>
+                                                    <ol>2.	<i>Handling</i> Ternak</ol>
+                                                    <ol>3.  Teknik Pengambilan Sampel Darah Ayam</ol>
+                                                    <ol>4.	<i>Packing</i> Benih Ikan</ol>
+                                                    <ol>5.	Teknik Pembuatan Bakso Ikan</ol>
+                                                    <ol>6.	Survey Pemetaan Lahan</ol>
+                                                    <ol>7.	Desain Alat dan Mesin Pertanian dengan <i>AutoCAD</i></ol>
+                                                    <ol>8.	Eksibisi Fotografi</ol>
                                                     <br />
                                             </li>
                                 </ol>
+                            </li><br>
+                            <li>
+                                <strong>PENGHARGAAN KOMPETISI</strong>
                             </li>
+                            <div class="row">
+                                    <div class="col-lg-4 col-md-3">
+                                        &nbsp;
+                                    </div>
+                                    <li>
+                                <p style="font-style:italic">
+                                Penghargaan AITeC VI Politeknik Negeri Lampung tahun 2024 diberikan kepada seluruh peserta,
+                                pemenang dan peringkat satu dengan rincian sebagai berikut: 
+                                <br />
+
+                                <ol>
+                                    <strong><i><li>1. Peserta</li></i></strong>
+                                    <p style="text-indent:45px">Seluruh peserta AITeC VI yang terdaftar dan hadir akan mendapatkan <i>e-certificate.</i>
+                                </p>
+                                </ol>
+                                <ol>
+                                <strong><i><li>2. Pemenang</li></i></strong>
+                                    <p style="text-indent:45px">Pemenang kompetisi diberikan dalam 4 (empat) sub-kategori, yaitu:
+                                        <ol>
+                                        <ul>
+                                            <ol>
+                                                <b> 1. Kategori Kompeten : Juara I, Juara II, dan Juara III [uang pembinaan + sertifikat fisik]</b>
+                                                </ol>
+                                                <ol>
+                                                    <b>2. Kategori Ahli : Juara I, Juara II, dan Juara III [sertifikat fisik]</b> 
+                                                </ol>
+                                                <ol>
+                                                    <b>3. Kategori Terampil : Juara I, Juara II, dan Juara III [sertifikat fisik]</b> 
+                                                </ol>
+                                                <ol>
+                                                    <b>4. Kategori Pemula : Juara I, Juara II, dan Juara III [sertifikat fisik]</b>
+                                                </ol>
+                                        </ol>
+                                        </ul>
+                                            
+                                </p>
+                                </ol>
+                                <ol>
+                                <strong><i><li>3. Peringkat Pertama</li></i></strong>
+                                    <p style="text-indent:45px">Predikat ‘Peringkat Pertama’ diberikan kepada Perguruan Tinggi yang paling banyak
+                                    mendapatkan <b>Juara I Kategori Kompeten</b> dari semua cabang kompetisi yang diselenggarakan dengan ketentuan sebagai berikut:
+                                    <ol>
+                                        a. <b>WAJIB</b> mengikuti kompetisi inovasi teknologi bidang pertanian.
+                                    </ol>
+                                    <ol>
+                                        b. <b>WAJIB</b> mengikuti minimal 5 kompetisi pada kontes vokasi.
+                                    </ol>
+                                </p>
+
 
                         </ol>
                     </div>
@@ -534,13 +593,12 @@
                                     Wassalamu’alaikum warahmatullahi wabarakatuh.
                                     </p>
 
-                                    <pre style="font-size:large">
-                            Direktur Politeknik Negeri Lampung
-                                                            
-                                                       
-
-                            Prof. Dr. Ir. Sarono, M.Si.
-                    </pre>
+                                    <p style="text-align: right; margin-right: 150px;">
+                                        <span>Direktur Politeknik Negeri Lampung</span><br><br><br>
+                                        <span style="display: inline-block; text-indent: 50px;">
+                                            Prof. Dr. Ir. Sarono, M.Si.
+                                        </span>
+                                    </p>
                             </div>
                         </div>
                     </div>
@@ -594,13 +652,12 @@
                                     Wassalamu’alaikum warahmatullahi wabarakatuh.
                                 <p>
 
-                                <pre style="font-size:large">
-                            Ketua BAKORMA Politeknik se-Indonesia
-                                                            
-                                                    
-
-                            Wahyu Kurnia Dewanto, S.Kom., MT
-                    </pre>
+                                <p style="text-align: right; margin-right: 150px;">
+                                        <span>Ketua BAKORMA Politeknik se-Indonesia</span><br><br><br>
+                                        <span style="display: inline-block; margin-right: -45px;">
+                                            Wahyu Kurnia Dewanto, S.Kom., M.T.
+                                        </span>
+                                    </p>
                             </div>
                         </div>
                     </div>
@@ -651,13 +708,12 @@
                                     Wassalamu'alaikum Warahmatullahi Wabarakatuh.
                                     </p>
 
-                                <pre style="font-size:large">
-                            Ketua Pelaksana,
-                                                            
-                                                       
-
-                            Riko Noviadi,S.Pt.,M.Pt
-                    </pre>
+                                    <p style="text-align: right; margin-right: 180px;">
+                                        <span>Ketua Pelaksana,</span><br><br><br>
+                                        <span style="display: inline-block; margin-right: -25px;">
+                                            Riko Noviadi, S.Pt., M.P.
+                                        </span>
+                                    </p>
                             </div>
                         </div>
                     </div>
@@ -688,7 +744,12 @@
                                 <tbody>
                                         <tr>
                                             <td align="center">1</td>
-                                            <td align="center">Buku Panduan</td>
+                                            <td align="center">Buku Panduan AITec VI 2024</td>
+                                            <td align="center"><a href="https://drive.google.com/file/d/1O5wjC69x6KvTNb9iSYm7nd2Q7q_Kgs_u/view?usp=sharing">Klik Disini</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center">2</td>
+                                            <td align="center">Format Proposal Kompetisi Inovasi Teknologi bid.Prtanian</td>
                                             <td align="center"><a href="https://drive.google.com/file/d/1O5wjC69x6KvTNb9iSYm7nd2Q7q_Kgs_u/view?usp=sharing">Klik Disini</a></td>
                                         </tr>
                                 </tbody>
@@ -712,7 +773,7 @@
 
                         <!-- Cabang 1 -->
                         <details class="cabang">
-                            <summary class="cabang-title">Lomba Inovasi AI</summary>
+                            <summary class="cabang-title">Inovasi Teknologi Bidang Pertanian sub-kategori <I>Smart and Precision Farming</I></summary>
                             <div class="juri-list">
                                 <div class="juri-item">
                                     <img src="path/to/juri1.jpg" alt="Juri 1" class="juri-img">
@@ -734,7 +795,7 @@
 
                         <!-- Cabang 2 -->
                         <details class="cabang">
-                            <summary class="cabang-title">Lomba Inovasi Non AI</summary>
+                            <summary class="cabang-title">Inovasi Teknologi Bidang Pertanian sub-kategori Teknologi Tepat Guna</summary>
                             <div class="juri-list">
                                 <div class="juri-item">
                                     <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
@@ -756,7 +817,7 @@
 
                         <!-- Cabang 3 -->
                         <details class="cabang">
-                            <summary class="cabang-title">Lomba Okulasi</summary>
+                            <summary class="cabang-title">Kontes Vokasi Bidang Pertanian Teknik Okulasi Tanaman </summary>
                             <div class="juri-list">
                                 <div class="juri-item">
                                     <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
@@ -778,7 +839,7 @@
 
                         <!-- Cabang 4 -->
                         <details class="cabang">
-                            <summary class="cabang-title">Sortasi biji Kopi</summary>
+                            <summary class="cabang-title">Kontes Vokasi Bidang Pertanian Sortasi biji Kopi</summary>
                             <div class="juri-list">
                                 <div class="juri-item">
                                     <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
@@ -800,7 +861,7 @@
 
                         <!-- Cabang 5 -->
                         <details class="cabang">
-                            <summary class="cabang-title">Handling Ternak</summary>
+                            <summary class="cabang-title">Kontes Vokasi Bidang Pertanian <I>Handling</I> Ternak</summary>
                             <div class="juri-list">
                                 <div class="juri-item">
                                     <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
@@ -822,7 +883,7 @@
 
                         <!-- Cabang 6 -->
                         <details class="cabang">
-                            <summary class="cabang-title">Karkas Ayam</summary>
+                            <summary class="cabang-title">Kontes Vokasi Bidang Pertanian Teknik Proses Karkas Ayam</summary>
                             <div class="juri-list">
                                 <div class="juri-item">
                                     <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
@@ -844,7 +905,7 @@
 
                         <!-- Cabang 7 -->
                         <details class="cabang">
-                            <summary class="cabang-title">Formulasi Ransum Ternak</summary>
+                            <summary class="cabang-title">Kontes Vokasi Bidang Pertanian Teknik Pengambilan Sampel Darah Ayam</summary>
                             <div class="juri-list">
                                 <div class="juri-item">
                                     <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
@@ -866,7 +927,7 @@
 
                         <!-- Cabang 8 -->
                         <details class="cabang">
-                            <summary class="cabang-title">Formulasi Ransum Ikan</summary>
+                            <summary class="cabang-title">Kontes Vokasi Bidang Pertanian Formulasi Pakan Ternak</summary>
                             <div class="juri-list">
                                 <div class="juri-item">
                                     <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
@@ -888,7 +949,7 @@
 
                         <!-- Cabang 9 -->
                         <details class="cabang">
-                            <summary class="cabang-title">Bakso Ikan</summary>
+                            <summary class="cabang-title">Kontes Vokasi Bidang Pertanian Formulasi Pakan Ikan</summary>
                             <div class="juri-list">
                                 <div class="juri-item">
                                     <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
@@ -910,7 +971,7 @@
 
                         <!-- Cabang 10 -->
                         <details class="cabang">
-                            <summary class="cabang-title">Fillet Ikan</summary>
+                            <summary class="cabang-title">Kontes Vokasi Bidang Pertanian <I>Packing</I> benih ikan</summary>
                             <div class="juri-list">
                                 <div class="juri-item">
                                     <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
@@ -932,7 +993,7 @@
 
                         <!-- Cabang 11 -->
                         <details class="cabang">
-                            <summary class="cabang-title">Packing benih ikan</summary>
+                            <summary class="cabang-title">Kontes Vokasi Bidang Pertanian <I>Fillet</I> Ikan</summary>
                             <div class="juri-list">
                                 <div class="juri-item">
                                     <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
@@ -952,9 +1013,11 @@
                             </div>
                         </details>
 
+                        
+
                         <!-- Cabang 12 -->
                         <details class="cabang">
-                            <summary class="cabang-title">Pemetaan Lahan</summary>
+                            <summary class="cabang-title">Kontes Vokasi Bidang Pertanian Teknik Pembuatan Bakso Ikan</summary>
                             <div class="juri-list">
                                 <div class="juri-item">
                                     <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
@@ -976,29 +1039,7 @@
 
                         <!-- Cabang 13 -->
                         <details class="cabang">
-                            <summary class="cabang-title">Desain Alat Autocad</summary>
-                            <div class="juri-list">
-                                <div class="juri-item">
-                                    <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
-                                    <h4 class="juri-name">Juri 4</h4>
-                                    <p class="juri-role">Asal politeknik</p>
-                                </div>
-                                <div class="juri-item">
-                                    <img src="path/to/juri5.jpg" alt="Juri 5" class="juri-img">
-                                    <h4 class="juri-name">Juri 5</h4>
-                                    <p class="juri-role">Asal politeknik</p>
-                                </div>
-                                <div class="juri-item">
-                                    <img src="path/to/juri6.jpg" alt="Juri 6" class="juri-img">
-                                    <h4 class="juri-name">Juri 6</h4>
-                                    <p class="juri-role">Asal politeknik</p>
-                                </div>
-                            </div>
-                        </details>
-
-                        <!-- Cabang 14 -->
-                        <details class="cabang">
-                            <summary class="cabang-title">Penyuluhan</summary>
+                            <summary class="cabang-title">Kontes Vokasi Bidang Pertanian Survey Pemetaan Lahan</summary>
                             <div class="juri-list">
                                 <div class="juri-item">
                                     <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
@@ -1018,9 +1059,34 @@
                             </div>
                         </details> 
 
+
+                        <!-- Cabang 14 -->
+                        <details class="cabang">
+                            <summary class="cabang-title">Kontes Vokasi Bidang Pertanian Desain Alat <i>Autocad</i></summary>
+                            <div class="juri-list">
+                                <div class="juri-item">
+                                    <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
+                                    <h4 class="juri-name">Juri 4</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                                <div class="juri-item">
+                                    <img src="path/to/juri5.jpg" alt="Juri 5" class="juri-img">
+                                    <h4 class="juri-name">Juri 5</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                                <div class="juri-item">
+                                    <img src="path/to/juri6.jpg" alt="Juri 6" class="juri-img">
+                                    <h4 class="juri-name">Juri 6</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                            </div>
+                        </details>
+
+                        
+
                         <!-- Cabang 15 -->
                         <details class="cabang">
-                            <summary class="cabang-title">Sampel Darah</summary>
+                            <summary class="cabang-title">Kontes Vokasi Bidang Pertanian Penyuluhan Pertanian</summary>
                             <div class="juri-list">
                                 <div class="juri-item">
                                     <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
@@ -1061,7 +1127,6 @@
                                 </div>
                             </div>
                         </details>
-                         
                     </div>
                 </div>
             </section>
@@ -1080,7 +1145,7 @@
     <!-- Koordinator Cabang 1 -->
     <div class="card">
         <details class="koordinator">
-            <summary>Lomba Inovasi AI</summary>
+            <summary>KITBP sub-kategori <i>Smart and Precision Farming</i></summary>
             <div class="koordinator-info">
                 <img src="gambar1.jpg" alt="Koordinator 1">
                 <h4>Nama Koordinator 1</h4>
@@ -1092,7 +1157,7 @@
     <!-- Koordinator Cabang 2 -->
     <div class="card">
         <details class="koordinator">
-            <summary>Lomba Inovasi Non AI</summary>
+            <summary>KITBP sub-kategori Teknologi Tepat Guna</summary>
             <div class="koordinator-info">
                 <img src="gambar2.jpg" alt="Koordinator 2">
                 <h4>Nama Koordinator 2</h4>
@@ -1104,7 +1169,7 @@
     <!-- Koordinator Cabang 3 -->
     <div class="card">
         <details class="koordinator">
-            <summary>Lomba Okulasi</summary>
+            <summary>Kompetisi Teknik Okulasi Tanaman </summary>
             <div class="koordinator-info">
                 <img src="gambar3.jpg" alt="Koordinator 3">
                 <h4>Nama Koordinator 3</h4>
@@ -1116,7 +1181,7 @@
     <!-- Koordinator Cabang 4 -->
     <div class="card">
         <details class="koordinator">
-            <summary>Sortasi biji Kopi</summary>
+            <summary>Kompetisi Sortasi Biji Kopi</summary>
             <div class="koordinator-info">
                 <img src="gambar4.jpg" alt="Koordinator 4">
                 <h4>Nama Koordinator 4</h4>
@@ -1128,7 +1193,7 @@
     <!-- Koordinator Cabang 5 -->
     <div class="card">
         <details class="koordinator">
-            <summary>Handling Ternak</summary>
+            <summary>Kompetisi <i>Handling</i> Ternak</summary>
             <div class="koordinator-info">
                 <img src="gambar5.jpg" alt="Koordinator 5">
                 <h4>Nama Koordinator 5</h4>
@@ -1140,7 +1205,7 @@
     <!-- Koordinator Cabang 6 -->
     <div class="card">
         <details class="koordinator">
-            <summary>Karkas Ayam</summary>
+            <summary>Kompetisi Teknik Proses Karkas Ayam</summary>
             <div class="koordinator-info">
                 <img src="gambar6.jpg" alt="Koordinator 6">
                 <h4>Nama Koordinator 6</h4>
@@ -1152,7 +1217,7 @@
     <!-- Koordinator Cabang 7 -->
     <div class="card">
         <details class="koordinator">
-            <summary>Formulasi Ransum Ternak</summary>
+            <summary>Kompetisi Teknik Pengambilan Sampel Darah Ayam</summary>
             <div class="koordinator-info">
                 <img src="gambar7.jpg" alt="Koordinator 7">
                 <h4>Nama Koordinator 7</h4>
@@ -1164,7 +1229,7 @@
     <!-- Koordinator Cabang 8 -->
     <div class="card">
         <details class="koordinator">
-            <summary>Formulasi Ransum Ikan</summary>
+            <summary>Kompetisi Formulasi Pakan Ternak</summary>
             <div class="koordinator-info">
                 <img src="gambar8.jpg" alt="Koordinator 8">
                 <h4>Nama Koordinator 8</h4>
@@ -1176,7 +1241,7 @@
     <!-- Koordinator Cabang 9 -->
     <div class="card">
         <details class="koordinator">
-            <summary>Bakso Ikan</summary>
+            <summary>Kompetisi Formulasi Pakan Ikan</summary>
             <div class="koordinator-info">
                 <img src="gambar9.jpg" alt="Koordinator 9">
                 <h4>Nama Koordinator 9</h4>
@@ -1188,7 +1253,7 @@
     <!-- Koordinator Cabang 10 -->
     <div class="card">
         <details class="koordinator">
-            <summary>Fillet Ikan</summary>
+            <summary>Kompetisi Packing Benih Ikan</summary>
             <div class="koordinator-info">
                 <img src="gambar10.jpg" alt="Koordinator 10">
                 <h4>Nama Koordinator 10</h4>
@@ -1200,7 +1265,7 @@
     <!-- Koordinator Cabang 11 -->
     <div class="card">
         <details class="koordinator">
-            <summary>Packing benih ikan</summary>
+            <summary>Kompetisi Teknik Proses Fillet Ikan</summary>
             <div class="koordinator-info">
                 <img src="gambar11.jpg" alt="Koordinator 11">
                 <h4>Nama Koordinator 11</h4>
@@ -1212,7 +1277,7 @@
     <!-- Koordinator Cabang 12 -->
     <div class="card">
         <details class="koordinator">
-            <summary>Pemetaan Lahan</summary>
+            <summary>Kompetisi Teknik Pembuatan Bakso Ikan</summary>
             <div class="koordinator-info">
                 <img src="gambar12.jpg" alt="Koordinator 12">
                 <h4>Nama Koordinator 12</h4>
@@ -1224,7 +1289,7 @@
     <!-- Koordinator Cabang 13 -->
     <div class="card">
         <details class="koordinator">
-            <summary>Desain Alat Autocad</summary>
+            <summary>Kompetisi Survey Pemetaan Lahan</summary>
             <div class="koordinator-info">
                 <img src="gambar13.jpg" alt="Koordinator 13">
                 <h4>Nama Koordinator 13</h4>
@@ -1236,7 +1301,7 @@
     <!-- Koordinator Cabang 14 -->
     <div class="card">
         <details class="koordinator">
-            <summary>Penyuluhan</summary>
+            <summary>Kompetisi Desain Alat dan Mesin Pertanian dengan <i>AutoCAD</i></summary>
             <div class="koordinator-info">
                 <img src="gambar14.jpg" alt="Koordinator 14">
                 <h4>Nama Koordinator 14</h4>
@@ -1248,7 +1313,7 @@
     <!-- Koordinator Cabang 15 -->
     <div class="card">
         <details class="koordinator">
-            <summary>Sampel Darah</summary>
+            <summary>Kompetisi Penyuluhan Pertanian</summary>
             <div class="koordinator-info">
                 <img src="gambar16.jpg" alt="Koordinator 16">
                 <h4>Nama Koordinator 16</h4>
@@ -1260,7 +1325,7 @@
     <!-- Koordinator Cabang 16 -->
     <div class="card">
         <details class="koordinator">
-            <summary>Eksibisi Fotografi</summary>
+            <summary>Kompetisi Eksibisi Fotografi</summary>
             <div class="koordinator-info">
                 <img src="gambar15.jpg" alt="Koordinator 15">
                 <h4>Nama Koordinator 15</h4>
@@ -1269,10 +1334,6 @@
         </details>
     </div>
 </div>
-
-
-    </div>
-</section>
 
 
 
@@ -1349,7 +1410,7 @@
             </div>
         </div>
         <div class="schedule-itemku">
-          <div class="schedule-timeku">23 Oktober 2024</div>
+          <div class="schedule-timeku">19 Oktober – 21 Oktober 2024</div>
             <div class="schedule-eventku">
                 <h3>Technical meeting peserta menuju Babak Final AITeC VI</h3>
             </div>
@@ -1371,7 +1432,7 @@
           </div>
         </div>
         <div class="schedule-itemku">
-          <div class="schedule-timeku">02 Oktober - 04 Oktober 2024</div>
+          <div class="schedule-timeku">19 Oktober – 21 Oktober 2024</div>
           <div class="schedule-eventku">
             <h3>Technical meeting peserta babak penyisihan (seleksi online)</h3>
           </div>
@@ -1395,7 +1456,7 @@
           </div>
         </div>
         <div class="schedule-itemku">
-          <div class="schedule-timeku">23 Oktober 2024</div>
+          <div class="schedule-timeku">19 Oktober – 21 Oktober 2024</div>
           <div class="schedule-eventku">
             <h3>Technical meeting peserta menuju Babak Final AITeC VI</h3>
           </div>
@@ -1422,7 +1483,7 @@
           </div>
         </div>
         <div class="schedule-itemku">
-          <div class="schedule-timeku">23 Oktober 2024</div>
+          <div class="schedule-timeku">19 Oktober – 21 Oktober 2024</div>
           <div class="schedule-eventku">
             <h3>Technical meeting peserta</h3>
           </div>
@@ -1488,7 +1549,7 @@
                     <h2 class="h2 section-title">GALLERY</h2>
                     <h3>
                         <p style="text-align: center">
-                        Dokumentasi Kegiatan AITeC VI di Politeknik Pertanian Negeri Lampung
+                        Dokumentasi Kegiatan AITeC VI Politeknik Negeri Lampung
                         </p>
                     </h3>
                     </div>
