@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/templates/assets/css/bootstrap.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/templates/assets/vendors/simple-datatables/style.css">
 
     <link href="/assets/datatable/DataTables-1.13.5/css/dataTables.bootstrap5.css" rel="stylesheet" />
@@ -35,6 +35,13 @@
 
             /* Samakan dengan ukuran teks lain */
         }
+
+       .select2-container--open {
+            z-index: 9999;
+            /* Memastikan dropdown tampil di atas elemen lainnya */
+        }
+    </style>
+
     </style>
 </head>
 
@@ -174,7 +181,7 @@
     <script src="/templates/assets/js/extensions/sweetalert2.js"></script>
     <script src="/templates/assets/vendors/sweetalert2/sweetalert2.all.min.js"></script>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="/templates/assets/vendors/simple-datatables/simple-datatables.js"></script>
     <script>
         // Simple Datatable

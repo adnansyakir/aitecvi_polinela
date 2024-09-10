@@ -8,7 +8,7 @@
                 <h4 class="card-title">Formulir Tambah User</h4>
             </div>
             <div class="col-md-6 text-end">
-            <a href="/admin/master/users" class="btn btn-primary btn-sm">Kembali</a>
+                <a href="/admin/master/users" class="btn btn-primary btn-sm">Kembali</a>
             </div>
         </div>
     </div>
@@ -48,9 +48,35 @@
                         <div class="text-danger"><?= $validation->getError('password') ?></div>
                     <?php endif; ?>
                 </div>
+                <div class="col-md-12">
+                    <label class="mb-2" for="">Perguruan Tinggi</label>
+                    <select name="pt_id" class="form-control mb-3 select2">
+                        <option value="">Pilih Perguruan Tinggi</option>
+                        <?php foreach ($pt as $p) : ?>
+                            <option value="<?= $p['id'] ?>"><?= $p['nama_pt'] ?></option>
+                        <?php endforeach; ?>
+                    </select>
+                    <?php if (isset($validation) && $validation->hasError('pt')) : ?>
+                        <div class="text-danger"><?= $validation->getError('pt') ?></div>
+                    <?php endif; ?>
+                </div>
+
                 <button class="btn btn-primary" type="submit">Simpan</button>
             </form>
         </div>
     </div>
 </div>
+<script>
+    $(document).ready(function() {
+        $('.select2').select2({
+            placeholder: "Pilih Perguruan Tinggi",
+            allowClear: true,
+            dropdownAutoWidth: true,
+            width: '100%',
+            dropdownParent: $('.select2').parent(), // Agar dropdown tetap di dalam container yang tepat
+        });
+    });
+</script>
+
+
 <?= $this->endSection() ?>

@@ -6,6 +6,8 @@ use PhpOffice\PhpSpreadsheet\IOFactory;
 use Ramsey\Uuid\Uuid;
 use App\Models\Admin\UsersModel;
 use App\Models\Admin\RoleModel;
+use App\Models\Admin\PtModel;
+
 
 
 class AdminUsers extends BaseController
@@ -13,7 +15,7 @@ class AdminUsers extends BaseController
 
     protected $users;
     protected $role;
-
+    protected $pt;
     protected $session;
     protected $validation;
     protected $db;
@@ -24,8 +26,7 @@ class AdminUsers extends BaseController
         // Inisialisasi model tahun akademik
         $this->users = new UsersModel();
         $this->role = new RoleModel();
-
-
+        $this->pt = new PtModel();
         $this->session = \Config\Services::session();
         $this->validation = \Config\Services::validation();
         $this->db = \Config\Database::connect();
@@ -52,6 +53,7 @@ class AdminUsers extends BaseController
             'detail' => 'Add Users',
             'deskripsi' => 'Halaman Add Users',
             'role' => $this->role->getAllData(),
+            'pt' => $this->pt->getAllPt(),
             'validation' => \Config\Services::validation(),
         ];
         return view('konten/admin/users/users-add', $data);
@@ -66,6 +68,7 @@ class AdminUsers extends BaseController
             'username' => 'required',
             'email' => 'required|valid_email',
             'role_id' => 'required',
+            'pt_id' => 'required',
         ], [
             'username' => [
                 'required' => 'Kolom username harus diisi.'
@@ -75,6 +78,9 @@ class AdminUsers extends BaseController
                 'valid_email' => 'Masukkan alamat email yang valid.'
             ],
             'role_id' => [
+                'required' => 'Kolom role harus dipilih.'
+            ],
+            'pt_id' => [
                 'required' => 'Kolom role harus dipilih.'
             ]
         ]);
@@ -93,6 +99,7 @@ class AdminUsers extends BaseController
             'username' => $this->request->getPost('username'),
             'email' => $this->request->getPost('email'),
             'role_id' => $this->request->getPost('role_id'),
+            'pt_id' => $this->request->getPost('pt_id'),
             'password' => $password,
         ];
 
