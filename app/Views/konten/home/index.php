@@ -1464,7 +1464,7 @@
                 <!-- Card 2 dengan gambar -->
                 <div class="col-lg-6">
                     <div class="card location-card large-card">
-                        <img src="landing/assets/images/hero.jpg" class="card-img-top" alt="Lokasi 2" style="width: 100%; height: 85%;">
+                        <img src="landing/assets/images/pol2.JPG" class="card-img-top" alt="Lokasi 2" style="width: 100%; height: 85%;">
                         <div class="card-body">
                         <h3 class="card-title">Politeknik Negeri Lampung</h3>
                         </div>
