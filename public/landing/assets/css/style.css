@@ -360,6 +360,12 @@ body {
   padding: 0;
 }
 
+.navbar-logo {
+  width: 150px; /* Sesuaikan ukuran logo */
+  height: auto;
+  margin-bottom: 20px; /* Jarak antara logo dan item pertama */
+}
+
 .navbar-item {
   position: relative;
   margin-right: 10px;
@@ -395,9 +401,6 @@ body {
 
 .dropdown-content a:hover {
   background-color: #f1f1f1;
-}
-.navbar img {
-  display: none; /* Sembunyikan logo secara default */
 }
 /* Menampilkan dropdown-content pada hover di desktop */
 .navbar-item:hover .dropdown-content {
@@ -1337,7 +1340,7 @@ body {
     position: static;
     width: 100%;
     height: auto;
-    background-color: #f8f9fa;
+    background-color: #0080ff;
     box-shadow: none;
     margin: 0;
   }
@@ -1588,8 +1591,8 @@ body {
     flex-direction: column;
     position: static;
     width: 90%; /* Sesuaikan dengan lebar kontainer */
-    height: auto; /* Sesuaikan tinggi secara otomatis */
-    background-color: #f8f9fa;
+    height: 100%;
+    background-color: #0077ee;
     box-shadow: none;
     margin: 0; /* Menghapus margin jika perlu */
   }
@@ -1849,7 +1852,7 @@ body {
     position: static;
     width: 90%;
     height: auto;
-    background-color: #f8f9fa;
+    background-color: #0080ff;
     box-shadow: none;
     margin: 0;
   }
@@ -2096,7 +2099,7 @@ body {
     position: static;
     width: 85%; /* Sedikit lebih lebar di tablet */
     height: auto;
-    background-color: #f8f9fa;
+    background-color: #0080ff;
     box-shadow: none;
     margin: 0;
   }
@@ -2334,16 +2337,20 @@ body {
   }
 
   .navbar-list {
+    display: flex;
     flex-direction: column;
     position: static;
-    width: 95%;
+    width: 85%; /* Sedikit lebih lebar di tablet */
     height: auto;
+    background-color: #0080ff;
     box-shadow: none;
+    margin: 0;
   }
 
   .navbar img {
-    width: 190px;
-    height: 95px;
+    width: 200px; /* Sesuaikan lebar logo */
+    height: 100px; /* Sesuaikan tinggi logo */
+    margin: 0;
   }
 
   .navbar-item {
@@ -2352,9 +2359,10 @@ body {
   }
 
   .navbar-link {
-    padding: 10px 0;
+    padding: 10px 0; /* Tambahkan padding */
+    display: block;
   }
-  
+
   .dropdown-content {
     position: static;
     display: none;
@@ -2563,42 +2571,44 @@ body {
     border-radius: 20px; /* Ubah radius border agar lebih halus di tablet */
   }
 
-  .navbar-list {
-    display: flex; /* Menampilkan navbar-list pada layar lebih kecil */
-    flex-direction: column;
-    position: static; /* Navbar-list diatur menjadi statis */
-    width: 90%;
-    height: auto;
+  .navbar {
+    padding: 10px 20px; /* Mengurangi padding navbar */
+}
+
+.navbar-list {
+    width: 100%; 
+    height: 80%; 
     background-color: #f8f9fa;
-    box-shadow: none;
-    margin: 0; /* Menghapus margin jika perlu */
-  }
+    flex-direction: column; /* Menjaga arah kolom untuk elemen navbar */
+    align-items: flex-start; 
+}
 
-  .navbar img {
-    display: block;
-    width: 220px; /* Sesuaikan lebar logo */
-    height: 110px; /* Sesuaikan tinggi logo */
-    margin: 0; /* Menghapus margin */
-  }
+.navbar-logo {
+    width: 140px; /* Ukuran logo lebih kecil di layar 1200px */
+    height: auto;
+    
+}
 
-  .navbar-item {
-    width: 100%;
-    text-align: center;
-  }
+.navbar-link {
+    font-size: 18px; /* Mengurangi ukuran font untuk navbar link */
+    padding: 5px 0; /* Mengurangi padding di link */
+}
 
-  .navbar-link {
-    padding: 10px 0;
-    display: block;
-  }
-  
-  .dropdown-content {
-    position: static; /* Dropdown tampil di bawah item */
-    display: none; /* Default sembunyikan dropdown-content di tablet */
-  }
+.dropdown-content {
+    font-size: 16px; /* Mengurangi ukuran font dropdown */
+    margin-left: 15px; /* Memberi sedikit jarak dari tepi kiri */
+}
 
-  .navbar-item.active .dropdown-content {
-    display: block; /* Tampilkan dropdown-content jika item aktif */
-  }
+.navbar-toggle {
+    display: block; /* Menampilkan tombol toggle di layar ini */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.navbar-list.active {
+    display: flex; /* Tampilkan navbar list saat active */
+}
 
   .btn {
     margin-bottom: 20px; /* Memberikan jarak antara tombol dan elemen di bawahnya */

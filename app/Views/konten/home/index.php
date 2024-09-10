@@ -35,13 +35,13 @@
   -->
     <header class="header" data-header>
         <div class="containerku">
-            <a href="#" class="header-logo">
+            <a href="" class="header-logo">
                 <img src="landing/assets/images/L3.png" width="180" height="50" alt="AITeCVI logo" />
             </a>
             <nav class="navbar" data-navbar>
-                <a href="#">
-                    <img src="landing/assets/images/L3.png" width="180" height="50" alt="AITeCVI logo" />
-                </a>
+                <!-- <li class="navbar-item logo-item">
+                    <img src="landing/assets/images/L3.png" alt="AITeCVI logo" class="navbar-logo" onclick="goToIndex()" />
+                </li> -->
                 <ul class="navbar-list">
                     <li class="navbar-item">
                         <a href="#" class="navbar-link" data-nav-link>Home</a>
@@ -64,7 +64,7 @@
                     <li class="navbar-item">
                         <a href="#" class="navbar-link" data-nav-link>Sambutan &#x25BC;</a>
                         <div class="dropdown-content">
-                            <a href="#direktur">Direktur Polinela Lampung</a>
+                            <a href="#direktur">Direktur Politeknik Negeri Lampung Lampung</a>
                             <a href="#bakorma">Ketua BAKORMA</a>
                             <a href="#panitia">Ketua Panitia</a>
                         </div>
@@ -483,15 +483,10 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <?php $i = 1;
-                                    foreach ($pt as $row) : ?>
-                                        <tr>
-                                            <td><?= $i++; ?></td>
-                                            <td><?= $row['nama_pt']; ?></td>
-                                            <td align="center"><?= $row['asal_prov']; ?></td>
-                                            <td align="center"><?= $row['asal_negara']; ?></td>
-                                        </tr>
-                                    <?php endforeach; ?>
+                                    <!-- <td align="center">1</td>
+                                    <td align="center">Politeknik Negeri Lampung</td>
+                                    <td align="center">Lampung</td>
+                                    <td align="center">Indonesia</td> -->
                                 </tbody>
                             </table>
                         </div>
@@ -1025,28 +1020,6 @@
 
                         <!-- Cabang 15 -->
                         <details class="cabang">
-                            <summary class="cabang-title">Eksibisi Fotografi</summary>
-                            <div class="juri-list">
-                                <div class="juri-item">
-                                    <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
-                                    <h4 class="juri-name">Juri 4</h4>
-                                    <p class="juri-role">Asal politeknik</p>
-                                </div>
-                                <div class="juri-item">
-                                    <img src="path/to/juri5.jpg" alt="Juri 5" class="juri-img">
-                                    <h4 class="juri-name">Juri 5</h4>
-                                    <p class="juri-role">Asal politeknik</p>
-                                </div>
-                                <div class="juri-item">
-                                    <img src="path/to/juri6.jpg" alt="Juri 6" class="juri-img">
-                                    <h4 class="juri-name">Juri 6</h4>
-                                    <p class="juri-role">Asal politeknik</p>
-                                </div>
-                            </div>
-                        </details>  
-
-                        <!-- Cabang 16 -->
-                        <details class="cabang">
                             <summary class="cabang-title">Sampel Darah</summary>
                             <div class="juri-list">
                                 <div class="juri-item">
@@ -1065,7 +1038,30 @@
                                     <p class="juri-role">Asal politeknik</p>
                                 </div>
                             </div>
-                        </details>  
+                        </details>
+
+                        <!-- Cabang 16 -->
+                        <details class="cabang">
+                            <summary class="cabang-title">Eksibisi Fotografi</summary>
+                            <div class="juri-list">
+                                <div class="juri-item">
+                                    <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
+                                    <h4 class="juri-name">Juri 4</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                                <div class="juri-item">
+                                    <img src="path/to/juri5.jpg" alt="Juri 5" class="juri-img">
+                                    <h4 class="juri-name">Juri 5</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                                <div class="juri-item">
+                                    <img src="path/to/juri6.jpg" alt="Juri 6" class="juri-img">
+                                    <h4 class="juri-name">Juri 6</h4>
+                                    <p class="juri-role">Asal politeknik</p>
+                                </div>
+                            </div>
+                        </details>
+                         
                     </div>
                 </div>
             </section>
@@ -1252,11 +1248,11 @@
     <!-- Koordinator Cabang 15 -->
     <div class="card">
         <details class="koordinator">
-            <summary>Eksibisi Fotografi</summary>
+            <summary>Sampel Darah</summary>
             <div class="koordinator-info">
-                <img src="gambar15.jpg" alt="Koordinator 15">
-                <h4>Nama Koordinator 15</h4>
-                <p>Asal Politeknik 15</p>
+                <img src="gambar16.jpg" alt="Koordinator 16">
+                <h4>Nama Koordinator 16</h4>
+                <p>Asal Politeknik 16</p>
             </div>
         </details>
     </div>
@@ -1264,11 +1260,11 @@
     <!-- Koordinator Cabang 16 -->
     <div class="card">
         <details class="koordinator">
-            <summary>Sampel Darah</summary>
+            <summary>Eksibisi Fotografi</summary>
             <div class="koordinator-info">
-                <img src="gambar16.jpg" alt="Koordinator 16">
-                <h4>Nama Koordinator 16</h4>
-                <p>Asal Politeknik 16</p>
+                <img src="gambar15.jpg" alt="Koordinator 15">
+                <h4>Nama Koordinator 15</h4>
+                <p>Asal Politeknik 15</p>
             </div>
         </details>
     </div>
@@ -1289,10 +1285,10 @@
     </div>
 
     <div class="schedule-tabs" data-aos="fade-up" data-aos-delay="100">
-      <div class="schedule-tab active" data-target="#competition-kegiatan-1">Kompetisi Inovasi Bidang Pertanian</div>
-      <div class="schedule-tab" data-target="#competition-kegiatan-2">Kontes Vokasi Bidang Pertanian <span>(Seleksi Online)</span></div>
-      <div class="schedule-tab" data-target="#competition-kegiatan-3">Kontes Vokasi Bidang Pertanian <span>(Luring)</span></div>
-      <div class="schedule-tab" data-target="#competition-kegiatan-4">Eksibisi Fotografi <span>(Luring)</span></div>
+      <div class="schedule-tab active" data-target="#competition-kegiatan-1">Pendaftaran Akun Peserta</div>
+      <div class="schedule-tab" data-target="#competition-kegiatan-2">A. Kompetisi Inovasi Bidang Pertanian (2 sub-kategori)</div>
+      <div class="schedule-tab" data-target="#competition-kegiatan-3">B. Kontes Vokasi Bidang Pertanian (Seleksi Online) (8 cabang lomba) </div>
+      <div class="schedule-tab" data-target="#competition-kegiatan-4">C. Kontes Vokasi Bidang Pertanian (Luring) - (7 cabang lomba) & Eksibisi Fotografi (Luring)</div>
     </div>
 
     <!-- Schedule Items -->
@@ -1300,130 +1296,112 @@
                 <!-- Competition kegiatan 1 -->
                 <div id="competition-kegiatan-1" class="tab-pane show">
                     <div class="schedule-itemku">
-                        <div class="schedule-timeku">26 Agustus - 18 September 2024</div>
+                        <div class="schedule-timeku">09 September - 20 September 2024</div>
                             <div class="schedule-eventku">
-                                <h3>Pendaftaran peserta dan verifikasi oleh panitia melalui website <a href="https://aitec-lampung.polinela.ac.id">https://aitec-lampung.polinela.ac.id</a></h3>
+                                <h3>Pendaftaran akun dan entri calon peserta serta verifikasi oleh panitia melalui website <a href="https://aitec-lampung.polinela.ac.id" style="display: inline;">https://aitec-lampung.polinela.ac.id</a></h3>
                             </div>
-                    </div>
-                    <div class="schedule-itemku">
-                    <div class="schedule-timeku">26 Agustus - 18 September 2024</div>
-                    <div class="schedule-eventku">
-                        <h3>Pengiriman proposal (upload proposal) melalui website <a href="https://aitec-lampung.polinela.ac.id">https://aitec-lampung.polinela.ac.id</a></h3>
-                    </div>
-                    </div>
-                    <div class="schedule-itemku">
-                    <div class="schedule-timeku">20 - 27 September 2024</div>
-                    <div class="schedule-eventku">
-                        <h3>Seleksi proposal (desk evaluation)</h3>
-                    </div>
-                    </div>
-                    <div class="schedule-itemku">
-                    <div class="schedule-timeku">30 September 2024</div>
-                    <div class="schedule-eventku">
-                        <h3>Pengumuman hasil seleksi proposal</h3>
-                    </div>
-                    </div>
-                    <div class="schedule-itemku">
-                    <div class="schedule-timeku">01 - 07 Oktober 2024</div>
-                    <div class="schedule-eventku">
-                        <h3>Pengiriman video (upload video) melalui website <a href="https://aitec-lampung.polinela.ac.id">https://aitec-lampung.polinela.ac.id</a></h3>
-                    </div>
-                    </div>
-                    <div class="schedule-itemku">
-                    <div class="schedule-timeku">10 Oktober 2024</div>
-                    <div class="schedule-eventku">
-                        <h3>Pengumuman hasil seleksi video dan undangan menuju Babak Final AITeC VI tahun 2024</h3>
-                    </div>
-                    </div>
-                    <div class="schedule-itemku">
-                    <div class="schedule-timeku">08 - 17 Oktober 2024</div>
-                    <div class="schedule-eventku">
-                        <h3>Pembayaran registrasi peserta</h3>
-                    </div>
-                    </div>
-                    <div class="schedule-itemku">
-                    <div class="schedule-timeku">15 - 20 Oktober 2024</div>
-                    <div class="schedule-eventku">
-                        <h3>Technical meeting peserta menuju Babak Final AITeC VI</h3>
-                    </div>
-                    </div>
-                    <div class="schedule-itemku">
-                    <div class="schedule-timeku">23 - 26 Oktober 2024</div>
-                    <div class="schedule-eventku">
-                        <h3>Babak Final AITeC VI</h3>
-                    </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
       <!-- Competition kegiatan 2 -->
       <div id="competition-kegiatan-2" class="tab-pane">
         <div class="schedule-itemku">
-          <div class="schedule-timeku">01 - 21 September 2024</div>
+          <div class="schedule-timeku">10 September - 20 September 2024</div>
             <div class="schedule-eventku">
-                <h3>Pendaftaran peserta dan verifikasi oleh panitia melalui website <a href="https://aitec-lampung.polinela.ac.id">https://aitec-lampung.polinela.ac.id</a></h3>
+                <h3>Entri peserta ke menu cabang lomba melalui website <a href="https://aitec-lampung.polinela.ac.id">https://aitec-lampung.polinela.ac.id</a></h3>
             </div>
         </div>
         <div class="schedule-itemku">
-          <div class="schedule-timeku">24 - 27 September 2024</div>
+          <div class="schedule-timeku">10 September - 20 September 2024</div>
             <div class="schedule-eventku">
-                <h3>Technical meeting peserta babak penyisihan (seleksi online)</h3>
+                <h3>Pengiriman proposal (upload proposal) melalui website <a href="https://aitec-lampung.polinela.ac.id">https://aitec-lampung.polinela.ac.id</a></h3>
             </div>
         </div>
         <div class="schedule-itemku">
-          <div class="schedule-timeku">01 - 06 Oktober 2024</div>
+          <div class="schedule-timeku">21 September - 27 September 2024</div>
             <div class="schedule-eventku">
-                <h3>Seleksi online</h3>
+                <h3>Seleksi proposal (desk evaluation)</h3>
             </div>
         </div>
         <div class="schedule-itemku">
-          <div class="schedule-timeku">08 Oktober 2024</div>
+          <div class="schedule-timeku">30 September 2024</div>
             <div class="schedule-eventku">
-                <h3>Pengumuman hasil seleksi online dan undangan menuju Babak Final AITeC VI tahun 2024</h3>
+                <h3>Pengumuman hasil seleksi proposal</h3>
             </div>
         </div>
         <div class="schedule-itemku">
-          <div class="schedule-timeku">08 - 17 Oktober 2024</div>
+          <div class="schedule-timeku">30 September - 07 Oktober 2024</div>
+            <div class="schedule-eventku">
+                <h3>Pengiriman video (upload video) melalui website <a href="https://aitec-lampung.polinela.ac.id">https://aitec-lampung.polinela.ac.id</a></h3>
+            </div>
+        </div>
+        <div class="schedule-itemku">
+          <div class="schedule-timeku">11 Oktober 2024</div>
+            <div class="schedule-eventku">
+                <h3>Pengumuman hasil seleksi video dan undangan menuju Babak Final AITeC VI tahun 2024</h3>
+            </div>
+        </div>
+        <div class="schedule-itemku">
+          <div class="schedule-timeku">Maksimal 17 Oktober 2024</div>
             <div class="schedule-eventku">
                 <h3>Pembayaran registrasi peserta</h3>
             </div>
         </div>
         <div class="schedule-itemku">
-          <div class="schedule-timeku">15 - 20 Oktober 2024</div>
+          <div class="schedule-timeku">23 Oktober 2024</div>
             <div class="schedule-eventku">
                 <h3>Technical meeting peserta menuju Babak Final AITeC VI</h3>
             </div>
         </div>
         <div class="schedule-itemku">
-          <div class="schedule-timeku">23 - 26 Oktober 2024</div>
+          <div class="schedule-timeku">23 Oktober - 26 Oktober 2024</div>
             <div class="schedule-eventku">
                 <h3>Babak Final AITeC VI</h3>
             </div>
         </div>
-      </div>
+    </div>
 
       <!-- Competition kegiatan 3 -->
       <div id="competition-kegiatan-3" class="tab-pane">
         <div class="schedule-itemku">
-          <div class="schedule-timeku">26 Agustus – 06 Oktober 2024</div>
+          <div class="schedule-timeku">10 September - 01 Oktober 2024</div>
           <div class="schedule-eventku">
-            <h3>Pendaftaran peserta dan verifikasi oleh panitia melalui website <a href="https://aitec-lampung.polinela.ac.id">https://aitec-lampung.polinela.ac.id</a></h3>
+            <h3>Entri peserta ke menu cabang lomba melalui website <a href="https://aitec-lampung.polinela.ac.id">https://aitec-lampung.polinela.ac.id</a></h3>
           </div>
         </div>
         <div class="schedule-itemku">
-          <div class="schedule-timeku">15 – 20 Oktober 2024</div>
+          <div class="schedule-timeku">02 Oktober - 04 Oktober 2024</div>
           <div class="schedule-eventku">
-            <h3>Technical meeting peserta</h3>
+            <h3>Technical meeting peserta babak penyisihan (seleksi online)</h3>
           </div>
         </div>
         <div class="schedule-itemku">
-          <div class="schedule-timeku">08 – 17 Oktober 2024</div>
+          <div class="schedule-timeku">07 Oktober - 10 Oktober 2024</div>
+          <div class="schedule-eventku">
+            <h3>Seleksi online</h3>
+          </div>
+        </div>
+        <div class="schedule-itemku">
+          <div class="schedule-timeku">11 Oktober 2024</div>
+          <div class="schedule-eventku">
+            <h3>Pengumuman hasil seleksi online dan undangan menuju Babak Final AITeC VI tahun 2024</h3>
+          </div>
+        </div>
+        <div class="schedule-itemku">
+          <div class="schedule-timeku">Maksimal 17 Oktober 2024</div>
           <div class="schedule-eventku">
             <h3>Pembayaran registrasi peserta</h3>
           </div>
         </div>
         <div class="schedule-itemku">
-          <div class="schedule-timeku">23 – 26 Oktober 2024</div>
+          <div class="schedule-timeku">23 Oktober 2024</div>
+          <div class="schedule-eventku">
+            <h3>Technical meeting peserta menuju Babak Final AITeC VI</h3>
+          </div>
+        </div>
+        <div class="schedule-itemku">
+          <div class="schedule-timeku">23 Oktober - 26 Oktober 2024</div>
           <div class="schedule-eventku">
             <h3>Babak Final AITeC VI</h3>
           </div>
@@ -1432,25 +1410,25 @@
       <!-- Competition kegiatan 4 -->
       <div id="competition-kegiatan-4" class="tab-pane">
         <div class="schedule-itemku">
-          <div class="schedule-timeku">26 Agustus – 06 Oktober 2024</div>
+          <div class="schedule-timeku">10 September - 16 Oktober 2024</div>
           <div class="schedule-eventku">
-            <h3>Pendaftaran peserta dan verifikasi oleh panitia melalui website <a href="https://aitec-lampung.polinela.ac.id">https://aitec-lampung.polinela.ac.id</a></h3>
+            <h3>Entri peserta ke menu cabang lomba melalui website <a href="https://aitec-lampung.polinela.ac.id">https://aitec-lampung.polinela.ac.id</a></h3>
           </div>
         </div>
         <div class="schedule-itemku">
-          <div class="schedule-timeku">15 – 20 Oktober 2024</div>
-          <div class="schedule-eventku">
-            <h3>Technical meeting peserta</h3>
-          </div>
-        </div>
-        <div class="schedule-itemku">
-          <div class="schedule-timeku">08 – 17 Oktober 2024</div>
+          <div class="schedule-timeku">Maksimal 17 Oktober 2024</div>
           <div class="schedule-eventku">
             <h3>Pembayaran registrasi peserta</h3>
           </div>
         </div>
         <div class="schedule-itemku">
-          <div class="schedule-timeku">23 – 26 Oktober 2024</div>
+          <div class="schedule-timeku">23 Oktober 2024</div>
+          <div class="schedule-eventku">
+            <h3>Technical meeting peserta</h3>
+          </div>
+        </div>
+        <div class="schedule-itemku">
+          <div class="schedule-timeku">23 Oktober – 26 Oktober 2024</div>
           <div class="schedule-eventku">
             <h3>Babak Final AITeC VI</h3>
           </div>
@@ -1624,7 +1602,7 @@
     - #FOOTER
   -->
 
-  <footer class="footer" >
+  <footer class="footer" id='hubungi' >
         <div class="footer-top section">
             <div class="container grid-list">
                 <div class="footer-brand " >
@@ -1721,14 +1699,20 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script>
+        function goToIndex() {
+  window.location.href = '/';
+}
+    </script>
+    <script>
         // Ambil elemen yang terkait dengan menu dan tombol
 const navToggler = document.querySelector('[data-nav-toggler]');
 const navbar = document.querySelector('[data-navbar]');
 const overlay = document.querySelector('[data-overlay]');
+const navLinks = document.querySelectorAll('[data-nav-link]');
+const dropdownItems = document.querySelectorAll('.navbar-item .dropdown-content');
 
 // Tambahkan event listener untuk menangani klik tombol
 navToggler.addEventListener('click', function() {
-    // Toggle kelas 'active' pada navbar dan overlay
     navbar.classList.toggle('active');
     overlay.classList.toggle('active');
 });
@@ -1739,45 +1723,62 @@ overlay.addEventListener('click', function() {
     overlay.classList.remove('active');
 });
 
+// Tambahkan event listener untuk setiap link navigasi
+navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+        navbar.classList.remove('active');
+        overlay.classList.remove('active');
+    });
+});
+
+// Event listener untuk menunjukkan dropdown saat hover
+navbar.addEventListener('mouseover', function(event) {
+    const targetItem = event.target.closest('.navbar-item');
+    if (targetItem) {
+        const dropdown = targetItem.querySelector('.dropdown-content');
+        if (dropdown) {
+            dropdown.classList.add('active');
+        }
+    }
+});
+
+// Event listener untuk menampilkan dropdown saat kursor diarahkan
+navbar.addEventListener('mouseover', function(event) {
+    const targetItem = event.target.closest('.navbar-item');
+    if (targetItem) {
+        const dropdown = targetItem.querySelector('.dropdown-content');
+        if (dropdown) {
+            dropdown.classList.add('active');
+        }
+    }
+});
+
+// Event listener untuk menyembunyikan dropdown saat kursor keluar
+navbar.addEventListener('mouseout', function(event) {
+    const targetItem = event.target.closest('.navbar-item');
+    if (targetItem) {
+        const dropdown = targetItem.querySelector('.dropdown-content');
+        if (dropdown && !targetItem.contains(event.relatedTarget)) {
+            dropdown.classList.remove('active');
+        }
+    }
+});
+
+
+// Menutup navbar dan overlay saat klik di luar
+document.addEventListener('click', function(event) {
+    if (!event.target.closest('.navbar-item') && !event.target.closest('[data-nav-toggler]')) {
+        navbar.classList.remove('active');
+        overlay.classList.remove('active');
+        dropdownItems.forEach(item => {
+            item.classList.remove('active');
+        });
+    }
+});
+
     </script>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const navbarItems = document.querySelectorAll(".navbar-item");
-
-            // Event listener untuk item dropdown
-            navbarItems.forEach(item => {
-                item.addEventListener("click", function(event) {
-                    event.stopPropagation(); // Mencegah event bubbling
-                    const dropdown = this.querySelector(".dropdown-content");
-                    if (dropdown) {
-                        dropdown.classList.toggle("active");
-                        // Menutup dropdown lain saat dropdown ini dibuka
-                        navbarItems.forEach(otherItem => {
-                            if (otherItem !== item) {
-                                const otherDropdown = otherItem.querySelector(".dropdown-content");
-                                if (otherDropdown) {
-                                    otherDropdown.classList.remove("active");
-                                }
-                            }
-                        });
-                    }
-                });
-            });
-
-            // Menutup dropdown jika klik di luar
-            document.addEventListener('click', function(event) {
-                if (!event.target.closest('.navbar-item')) {
-                    navbarItems.forEach(item => {
-                        const dropdown = item.querySelector(".dropdown-content");
-                        if (dropdown) {
-                            dropdown.classList.remove("active");
-                        }
-                    });
-                }
-            });
-        });
-
-
+        
 
         function playVideo() {
             var video = document.getElementById('vid1');
