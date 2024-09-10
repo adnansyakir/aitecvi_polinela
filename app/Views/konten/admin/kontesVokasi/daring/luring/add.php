@@ -7,13 +7,13 @@
         <div class="card">
             <div class="row">
                 <div class="col-lg-6">
-                    <h5 class="card-header">Tambah Data Proposal</h5>
+                    <h5 class="card-header">Tambah Data Daring</h5>
                 </div>
                 <div class="col-lg-6 text-end">
-                    <a href="/admin/pendaftaran/kompetisiInovasi/proposal" class="btn btn-dark me-3 mt-3"><i class='bx bx-arrow-back'></i> Kembali</a>
+                    <a href="/admin/pendaftaran/kontesVokasi/daring/luring" class="btn btn-dark me-3 mt-3"><i class='bx bx-arrow-back'></i> Kembali</a>
                 </div>
                 <div class="col-lg-12 p-5">
-                    <form method="POST" action="/admin/pendaftaran/kompetisiInovasi/proposal/add">
+                    <form method="POST" action="/admin/pendaftaran/kontesVokasi/daring/luring/add">
                         <?= csrf_field() ?>
                         <div class="row">
 
@@ -46,39 +46,18 @@
                                 <?php endif; ?>
                             </div>
                             <div class="col-lg-6 mb-3">
-                                <label class="form-label" for="nama_team">Nama Team</label>
-                                <input type="text" class="form-control <?= isset($errors['nama_team']) ? 'is-invalid ' : ''; ?>" name="nama_team" id="nama_team" placeholder="Nama team" value="<?= old('nama_team') ?>">
-                                <?php if (isset($errors['nama_team'])) : ?>
-                                    <div class="invalid-feedback">
-                                        <?= $errors['nama_team'] ?>
-                                    </div>
-                                <?php endif; ?>
-                            </div>
-                            <div class="col-lg-6 mb-3">
-                                <label class="form-label" for="proposal">Proposal</label>
-                                <input type="text" class="form-control <?= isset($errors['proposal']) ? 'is-invalid ' : ''; ?>" name="proposal" id="proposal" placeholder="Nama team" value="<?= old('proposal') ?>">
-                                <?php if (isset($errors['proposal'])) : ?>
-                                    <div class="invalid-feedback">
-                                        <?= $errors['proposal'] ?>
-                                    </div>
-                                <?php endif; ?>
-                                <p style="font-weight: bold;">Masukkan link drive proposal.</p>
-                            </div>
-
-                            <div class="col-lg-6 mb-3">
                                 <label class="form-label" for="nama_peserta">Nama Peserta</label>
-                                <div id="peserta-wrapper">
-                                    <div class="input-group mb-2">
-                                        <select class="form-control" name="peserta_id[]">
-                                            <option value="" disabled selected>Pilih Peserta</option>
-                                            <?php foreach ($peserta as $pesr) : ?>
-                                                <option value="<?= $pesr['id'] ?>"><?= $pesr['nama_peserta'] ?></option>
-                                            <?php endforeach; ?>
-                                        </select>
-                                        <button type="button" class="btn btn-outline-danger remove-peserta">Hapus</button>
+                                <select class="form-control <?= isset($errors['peserta_id']) ? 'is-invalid ' : ''; ?>" name="peserta_id" id="nama_peserta">
+                                    <option value="" disabled selected>Pilih Peserta</option>
+                                    <?php foreach ($peserta as $ps) : ?>
+                                        <option value="<?= $ps['id'] ?>" <?= old('peserta_id') == $ps['id'] ? 'selected' : '' ?>><?= $ps['nama_peserta'] ?></option>
+                                    <?php endforeach; ?>
+                                </select>
+                                <?php if (isset($errors['peserta_id'])) : ?>
+                                    <div class="invalid-feedback">
+                                        <?= $errors['peserta_id'] ?>
                                     </div>
-                                </div>
-                                <button type="button" class="btn btn-outline-primary add-peserta">Tambah Peserta</button>
+                                <?php endif; ?>
                             </div>
 
                             <div class="col-lg-12 mt-4">
@@ -92,31 +71,6 @@
     </div>
 
 </div>
-
-<script>
-    $(document).ready(function() {
-    var pesertaCount = 1;
-
-    $('.add-peserta').on('click', function() {
-        pesertaCount++;
-        $('#peserta-wrapper').append(`
-            <div class="input-group mb-2">
-                <select class="form-control" name="peserta_id[]">
-                    <option value="" disabled selected>Pilih Peserta</option>
-                    <?php foreach ($pesertaOptions as $pesr) : ?>
-                        <option value="<?= $pesr['id'] ?>"><?= $pesr['nama_peserta'] ?></option>
-                    <?php endforeach; ?>
-                </select>
-                <button type="button" class="btn btn-outline-danger remove-peserta">Hapus</button>
-            </div>
-        `);
-    });
-
-    $(document).on('click', '.remove-peserta', function() {
-        $(this).parent().remove();
-    });
-});
-</script>
 
 
 

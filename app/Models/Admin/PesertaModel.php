@@ -8,7 +8,7 @@ class PesertaModel extends Model
 {
     protected $table      = 'peserta';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['id', 'kode_peserta', 'nama_peserta', 'no_wa','ktm','berita_acara','prodi_id','pt_id','foto','email','ukuran_kaos'];
+    protected $allowedFields = ['id', 'kode_peserta', 'nama_peserta', 'no_wa','ktm','berita_acara','prodi','pt_id','foto','email','ukuran_kaos'];
 
     
 
@@ -53,8 +53,7 @@ class PesertaModel extends Model
 
     public function pesertabyjoinsemua(){
         $builder = $this->db->table('peserta');
-        $builder->select('peserta.*, prodi.nama_prodi, pt.nama_pt');
-        $builder->join('prodi', 'peserta.prodi_id = prodi.id', 'left');
+        $builder->select('peserta.*, pt.nama_pt');
         $builder->join('pt', 'peserta.pt_id = pt.id', 'left');
         
         

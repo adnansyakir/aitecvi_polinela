@@ -68,16 +68,11 @@
                             </div>
 
                             <div class="col-lg-6 mb-3">
-                                <label class="form-label" for="prodi_id">Program Studi</label>
-                                <select name="prodi_id" id="prodi_id" class="form-control <?= isset($errors['prodi_id']) ? 'is-invalid ' : ''; ?>">
-                                    <option value="">Pilih..</option>
-                                    <?php foreach ($prodi as $j) : ?>
-                                        <option value="<?= $j['id'] ?>"><?= $j['nama_prodi'] ?></option>
-                                    <?php endforeach; ?>
-                                </select>
-                                <?php if (isset($errors['prodi_id'])) : ?>
+                                <label class="form-label" for="prodi">Program Studi</label>
+                                <input type="text" name="prodi" id="prodi" class="form-control <?= isset($errors['prodi']) ? 'is-invalid ' : ''; ?>" value="<?= old('prodi') ?>">
+                                <?php if (isset($errors['prodi'])) : ?>
                                     <div class="invalid-feedback">
-                                        <?= $errors['prodi_id'] ?>
+                                        <?= $errors['prodi'] ?>
                                     </div>
                                 <?php endif; ?>
                             </div>

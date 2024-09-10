@@ -10,10 +10,10 @@
                     <h5 class="card-header">Edit Data Luring</h5>
                 </div>
                 <div class="col-lg-6 text-end">
-                    <a href="/admin/pendaftaran/kontesVokasi/daring/luring" class="btn btn-dark me-3 mt-3"><i class='bx bx-arrow-back'></i> Kembali</a>
+                    <a href="/admin/pendaftaran/kontesVokasi/luring" class="btn btn-dark me-3 mt-3"><i class='bx bx-arrow-back'></i> Kembali</a>
                 </div>
                 <div class="col-lg-12 p-5">
-                    <form method="POST" action="/admin/pendaftaran/kontesVokasi/daring/luring/update/<?= $luring['id'] ?>">
+                    <form method="POST" action="/admin/pendaftaran/kontesVokasi/luring/update/<?= $luring['id'] ?>">
                         <?= csrf_field() ?>
                         <div class="row">
 

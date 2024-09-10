@@ -34,7 +34,7 @@
                                 <td><?= $i++; ?></td>
                                 <td><?= $row['nama_peserta']; ?></td>
                                 <td><?= $row['kode_peserta']; ?></td>
-                                <td><?= $row['nama_prodi']; ?></td>
+                                <td><?= $row['prodi']; ?></td>
                                 <td><?= $row['nama_pt']; ?></td>
                                 <td><?= $row['no_wa']; ?></td>
                                 <td>

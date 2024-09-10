@@ -24,11 +24,13 @@ class PendampingPeserta extends BaseController
     //PESERTA
     public function peserta()
     {
+        $pt_id = session()->get('pt_id');
+
         $data = [
-            'peserta' => $this->pesertaModel->pesertabyjoinsemua()
+            'peserta' => $this->pesertaModel->pesertabyjoinsemua($pt_id)
         ];
         // dd($data);
-        echo view('konten/admin/peserta/index', $data);
+        echo view('konten/pendamping/peserta/index', $data);
     }
 
     public function pesertaview($id)
@@ -39,7 +41,7 @@ class PendampingPeserta extends BaseController
         throw new \CodeIgniter\Exceptions\PageNotFoundException('Peserta dengan ID ' . $id . ' tidak ditemukan.');
     }
 
-    return view('konten/admin/peserta/view', $data);
+    return view('konten/pendamping/peserta/view', $data);
     }
 
     public function addPeserta()
@@ -53,7 +55,7 @@ class PendampingPeserta extends BaseController
         ];
         // dd($data);
 
-        return view('konten/admin/peserta/add', $data);
+        return view('konten/pendamping/peserta/add', $data);
     }
 
     public function addPesertaPost()
@@ -64,7 +66,7 @@ class PendampingPeserta extends BaseController
             'email' => 'required',
             'ukuran_kaos' => 'required',
             'pt_id' => 'required',
-            'prodi_id' => 'required',
+            'prodi' => 'required',
             'berita_acara' =>  'max_size[berita_acara,5120]|ext_in[berita_acara,pdf,doc,docx, png]',
             'ktm' => 'max_size[ktm,5120]|ext_in[ktm,pdf,doc,docx,png]',
             'foto' => 'max_size[foto,5120]|ext_in[foto,jpg,jpeg,png]',
@@ -77,7 +79,7 @@ class PendampingPeserta extends BaseController
             'email' => ['required' => 'Kolom email peserta Harus diisi'],
             'ukuran_kaos' => ['required' => 'ukuran kaos peserta'],
             'pt_id' => ['required' => 'Kolom Perguruan Tinggi Harus diisi'],
-            'prodi_id' => ['required' => 'Kolom Program Studi Harus diisi'],
+            'prodi' => ['required' => 'Kolom Program Studi Harus diisi'],
             'ktm' => [
                 'max_size' => 'Ukuran file KTM tidak boleh lebih dari 5120 KB',
                 'ext_in' => 'Format file KTM harus PDF, DOC, DOCX, PNG',
@@ -106,7 +108,7 @@ class PendampingPeserta extends BaseController
             'nama_peserta' => $this->request->getPost('nama_peserta'),
             'kode_peserta' => $this->request->getPost('kode_peserta'),
             'pt_id' => $this->request->getPost('pt_id'),
-            'prodi_id' => $this->request->getPost('prodi_id'),
+            'prodi' => $this->request->getPost('prodi'),
             'email' => $this->request->getPost('email'),
             'ukuran_kaos' => $this->request->getPost('ukuran_kaos'),
             'no_wa' => $this->request->getPost('no_wa'),
@@ -138,7 +140,7 @@ class PendampingPeserta extends BaseController
         
         $this->pesertaModel->insert($data);
         session()->setFlashdata('primary', 'Data berhasil disimpan.');
-        return redirect()->to('admin/peserta');
+        return redirect()->to('pendamping/peserta');
         
     }
 
@@ -153,7 +155,7 @@ class PendampingPeserta extends BaseController
 
             'errors' => session('errors'), // Add validation errors to data
         ];
-        return view('konten/admin/peserta/edit', $data);
+        return view('konten/pendamping/peserta/edit', $data);
     }
 
     public function editPesertaPost($id)
@@ -164,7 +166,7 @@ class PendampingPeserta extends BaseController
             'email' => 'required',
             'ukuran_kaos' => 'required',
             'pt_id' => 'required',
-            'prodi_id' => 'required',
+            'prodi' => 'required',
             'berita_acara' =>  'max_size[berita_acara,5120]|ext_in[berita_acara,pdf,doc,docx, png]',
             'ktm' => 'max_size[ktm,5120]|ext_in[ktm,pdf,doc,docx,png]',
             'foto' => 'max_size[foto,5120]|ext_in[foto,jpg,jpeg,png]',
@@ -177,7 +179,7 @@ class PendampingPeserta extends BaseController
             'email' => ['required' => 'Kolom email peserta Harus diisi'],
             'ukuran_kaos' => ['required' => 'ukuran kaos peserta'],
             'pt_id' => ['required' => 'Kolom Perguruan Tinggi Harus diisi'],
-            'prodi_id' => ['required' => 'Kolom Program Studi Harus diisi'],
+            'prodi' => ['required' => 'Kolom Program Studi Harus diisi'],
             'ktm' => [
                 'max_size' => 'Ukuran file KTM tidak boleh lebih dari 5120 KB',
                 'ext_in' => 'Format file KTM harus PDF, DOC, DOCX, PNG',
@@ -206,7 +208,7 @@ class PendampingPeserta extends BaseController
             'nama_peserta' => $this->request->getPost('nama_peserta'),
             'kode_peserta' => $this->request->getPost('kode_peserta'),
             'pt_id' => $this->request->getPost('pt_id'),
-            'prodi_id' => $this->request->getPost('prodi_id'),
+            'prodi' => $this->request->getPost('prodi'),
             'email' => $this->request->getPost('email'),
             'ukuran_kaos' => $this->request->getPost('ukuran_kaos'),
             'no_wa' => $this->request->getPost('no_wa'),
@@ -238,7 +240,7 @@ class PendampingPeserta extends BaseController
 
         $this->pesertaModel->update($id, $data);
         session()->setFlashdata('primary', 'Data berhasil diupdate.');
-        return redirect()->to('admin/peserta');
+        return redirect()->to('pendamping/peserta');
     }
 
 
@@ -249,9 +251,9 @@ class PendampingPeserta extends BaseController
         if ($pt) {
             // Delete the record
             $this->pesertaModel->deleteById($id);
-            return redirect()->to('/admin/peserta')->with('danger', 'deleted successfully');
+            return redirect()->to('/pendamping/peserta')->with('danger', 'deleted successfully');
         } else {
-            return redirect()->to('/admin/peserta')->with('danger', 'Record not found');
+            return redirect()->to('/pendamping/peserta')->with('danger', 'Record not found');
         }
     }
 }

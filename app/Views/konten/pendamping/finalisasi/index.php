@@ -23,6 +23,7 @@
                             <th>Surat tugas</th>
                             <th>Invoice Tagihan Kontribusi</th>
                             <th>Bukti Transfer</th>
+                            <th>Keterangan</th>
                             <th class="text-center">Aksi</th>
                         </tr>
                     </thead>

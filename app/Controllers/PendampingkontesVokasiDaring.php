@@ -4,13 +4,12 @@ namespace App\Controllers;
 
 use App\Models\Admin\PtModel;
 use App\Models\Admin\CabangLombaModel;
-use App\Models\Admin\KntsDaringLuringModel;
-use App\Models\Admin\KntsLuringDaringModel;
-use App\Models\Admin\VideoModel;
-use App\Models\Admin\PesertaModel;
+use App\Models\Pendamping\KntsDaringLuringModel;
+use App\Models\Pendamping\KntsLuringDaringModel;
+use App\Models\Pendamping\PesertaModel;
 use Ramsey\Uuid\Uuid;
 
-class AdminkontesVokasiDaring extends BaseController
+class PendampingkontesVokasiDaring extends BaseController
 {
     protected $KntsDaringLuring;
     protected $KntsLuring;
@@ -28,27 +27,29 @@ class AdminkontesVokasiDaring extends BaseController
         $this->cabanglombaModel = new CabangLombaModel();
         $this->KntsDaringLuring = new KntsDaringLuringModel();
         $this->KntsLuring = new KntsLuringDaringModel();
-        $this->videoModel = new VideoModel();
     }
     public function KontesVokasiDaring()
     {
+        $pt_id = session()->get('pt_id');
         $data = [
 
-            'kntsdaring_luring' => $this->KntsDaringLuring->kntsdaringluringbyPt(),
+            'kntsdaring_luring' => $this->KntsDaringLuring->kntsdaringluringbyPt($pt_id),
 
         ];
-        echo view('konten/admin/kontesVokasi/daring/daring/index', $data);
+        echo view('konten/pendamping/kontesVokasi/daring/daring/index', $data);
     }
     public function addKontesVokasiDaring()
     {
+        $pt_id = session()->get('pt_id');
+
         $data = [
             'kntsdaring_luring' => $this->KntsDaringLuring->getAllPendaftaran(),
-            'peserta' => $this->pesertaModel->getAllpeserta(),
+            'peserta' => $this->pesertaModel->getPesertaWithdPt($pt_id),
             // 002 sesuai kode lomba
             'cabang_perlombaan' => $this->cabanglombaModel->getLombabyKode(002),
             'pt' => $this->ptModel->getAllPt(),
         ];
-        return view('konten/admin/kontesVokasi/daring/daring/add', $data);
+        return view('konten/pendamping/kontesVokasi/daring/daring/add', $data);
     }
 
     public function addKontesVokasiDaringPost()
@@ -90,7 +91,7 @@ class AdminkontesVokasiDaring extends BaseController
         ];
 
         if ($KntsDaringLuring->insertData($data)) {
-            return redirect()->to('/admin/pendaftaran/kontesVokasi/daring/daring')->with('success', 'Data berhasil disimpan!');
+            return redirect()->to('/pendamping/pendaftaran/kontesVokasi/daring/daring')->with('success', 'Data berhasil disimpan!');
         } else {
             return redirect()->back()->withInput()->with('error', 'Gagal menyimpan data!');
         }
@@ -99,10 +100,11 @@ class AdminkontesVokasiDaring extends BaseController
 
     public function editKontesVokasiDaring($id)
     {
+        $pt_id = session()->get('pt_id');
         $KntsDaringLuring = new KntsDaringLuringModel();
         $data = [
             'daring' => $KntsDaringLuring->find($id),
-            'peserta' => $this->pesertaModel->getAllpeserta(),
+            'peserta' => $this->pesertaModel->getPesertaWithdPt($pt_id),
             'cabang_perlombaan' => $this->cabanglombaModel->getLombabyKode(002),
             'pt' => $this->ptModel->getAllPt(),
         ];
@@ -111,7 +113,7 @@ class AdminkontesVokasiDaring extends BaseController
             throw new \CodeIgniter\Exceptions\PageNotFoundException('Proposal not found');
         }
 
-        return view('konten/admin/kontesVokasi/daring/daring/edit', $data);
+        return view('konten/pendamping/kontesVokasi/daring/daring/edit', $data);
     }
 
 
@@ -153,7 +155,7 @@ class AdminkontesVokasiDaring extends BaseController
         ];
 
         if ($KntsDaringLuring->update($id, $data)) {
-            return redirect()->to('/admin/pendaftaran/kontesVokasi/daring/daring')->with('success', 'Data berhasil disimpan!');
+            return redirect()->to('/pendamping/pendaftaran/kontesVokasi/daring/daring')->with('success', 'Data berhasil disimpan!');
         } else {
         }
     }
@@ -184,7 +186,7 @@ class AdminkontesVokasiDaring extends BaseController
             $this->session->setFlashdata('error', 'Gagal memperbarui keterangan pengguna.');
         }
 
-        return redirect()->to('/admin/pendaftaran/kontesVokasi/daring/daring');
+        return redirect()->to('/pendamping/pendaftaran/kontesVokasi/daring/daring');
     }
     public function deleteKontesVokasiDaring($id)
     {
@@ -193,31 +195,33 @@ class AdminkontesVokasiDaring extends BaseController
         if ($KntsDaringLuring) {
             // Delete the record
             $this->KntsDaringLuring->deleteById($id);
-            return redirect()->to('/admin/pendaftaran/kontesVokasi/daring/daring')->with('danger', 'deleted successfully');
+            return redirect()->to('/pendamping/pendaftaran/kontesVokasi/daring/daring')->with('danger', 'deleted successfully');
         } else {
-            return redirect()->to('/admin/pendaftaran/kontesVokasi/daring/daring')->with('status', 'Record not found');
+            return redirect()->to('/pendamping/pendaftaran/kontesVokasi/daring/daring')->with('status', 'Record not found');
         }
     }
-// Kontes Vokasi Daring Luring
-public function KontesVokasiLuring()
+    // Kontes Vokasi Daring Luring
+    public function KontesVokasiLuring()
     {
+        $pt_id = session()->get('pt_id');
         $data = [
 
-            'kntsluring_daring' => $this->KntsLuring->kntsdaringluringbyPt(),
+            'kntsluring_daring' => $this->KntsLuring->kntsdaringluringbyPt($pt_id),
 
         ];
-        echo view('konten/admin/kontesVokasi/daring/luring/index', $data);
+        echo view('konten/pendamping/kontesVokasi/daring/luring/index', $data);
     }
     public function addKontesVokasiLuring()
     {
+        $pt_id = session()->get('pt_id');
         $data = [
             'kntsluring_daring' => $this->KntsLuring->getAllPendaftaran(),
-            'peserta' => $this->pesertaModel->getAllpeserta(),
+            'peserta' => $this->pesertaModel->getPesertaWithdPt($pt_id),
             // 002 sesuai kode lomba
             'cabang_perlombaan' => $this->cabanglombaModel->getLombabyKode(002),
             'pt' => $this->ptModel->getAllPt(),
         ];
-        return view('konten/admin/kontesVokasi/daring/luring/add', $data);
+        return view('konten/pendamping/kontesVokasi/daring/luring/add', $data);
     }
 
     public function addKontesVokasiLuringPost()
@@ -259,7 +263,7 @@ public function KontesVokasiLuring()
         ];
 
         if ($KntsLuring->insertData($data)) {
-            return redirect()->to('/admin/pendaftaran/kontesVokasi/daring/luring')->with('success', 'Data berhasil disimpan!');
+            return redirect()->to('/pendamping/pendaftaran/kontesVokasi/daring/luring')->with('success', 'Data berhasil disimpan!');
         } else {
             return redirect()->back()->withInput()->with('error', 'Gagal menyimpan data!');
         }
@@ -268,10 +272,11 @@ public function KontesVokasiLuring()
 
     public function editKontesVokasiLuring($id)
     {
+        $pt_id = session()->get('pt_id');
         $KntsLuring = new KntsLuringDaringModel();
         $data = [
             'luring' => $KntsLuring->find($id),
-            'peserta' => $this->pesertaModel->getAllpeserta(),
+            'peserta' => $this->pesertaModel->getPesertaWithdPt($pt_id),
             'cabang_perlombaan' => $this->cabanglombaModel->getLombabyKode(002),
             'pt' => $this->ptModel->getAllPt(),
         ];
@@ -280,7 +285,7 @@ public function KontesVokasiLuring()
             throw new \CodeIgniter\Exceptions\PageNotFoundException('Proposal not found');
         }
 
-        return view('konten/admin/kontesVokasi/daring/luring/edit', $data);
+        return view('konten/pendamping/kontesVokasi/daring/luring/edit', $data);
     }
 
 
@@ -322,7 +327,7 @@ public function KontesVokasiLuring()
         ];
 
         if ($KntsLuring->update($id, $data)) {
-            return redirect()->to('/admin/pendaftaran/kontesVokasi/daring/luring')->with('success', 'Data berhasil disimpan!');
+            return redirect()->to('/pendamping/pendaftaran/kontesVokasi/daring/luring')->with('success', 'Data berhasil disimpan!');
         } else {
         }
     }
@@ -353,7 +358,7 @@ public function KontesVokasiLuring()
             $this->session->setFlashdata('error', 'Gagal memperbarui keterangan pengguna.');
         }
 
-        return redirect()->to('/admin/pendaftaran/kontesVokasi/daring/luring');
+        return redirect()->to('/pendamping/pendaftaran/kontesVokasi/daring/luring');
     }
     public function deleteKontesVokasiLuring($id)
     {
@@ -362,10 +367,9 @@ public function KontesVokasiLuring()
         if ($KntsLuring) {
             // Delete the record
             $this->KntsLuring->deleteById($id);
-            return redirect()->to('/admin/pendaftaran/kontesVokasi/daring/luring')->with('danger', 'deleted successfully');
+            return redirect()->to('/pendamping/pendaftaran/kontesVokasi/daring/luring')->with('danger', 'deleted successfully');
         } else {
-            return redirect()->to('/admin/pendaftaran/kontesVokasi/daring/luring')->with('status', 'Record not found');
+            return redirect()->to('/pendamping/pendaftaran/kontesVokasi/daring/luring')->with('status', 'Record not found');
         }
     }
-
 }

@@ -4,14 +4,14 @@ namespace App\Controllers;
 
 use App\Models\Admin\PtModel;
 use App\Models\Admin\CabangLombaModel;
-use App\Models\Admin\FotografiModel;
-use App\Models\Admin\VideoModel;
+use App\Models\Pendamping\KntsLuringModel;
 use App\Models\Admin\PesertaModel;
 use Ramsey\Uuid\Uuid;
 
-class AdminFotografi extends BaseController
+class AdminkontesVokasiLuring extends BaseController
 {
-    protected $Fotografi;
+    protected $KntsDaringLuring;
+    protected $KntsLuring;
     protected $videoModel;
     protected $ptModel;
     protected $cabanglombaModel;
@@ -24,32 +24,31 @@ class AdminFotografi extends BaseController
         $this->ptModel = new PtModel();
         $this->pesertaModel = new PesertaModel();
         $this->cabanglombaModel = new CabangLombaModel();
-        $this->Fotografi = new FotografiModel();
-        $this->videoModel = new VideoModel();
+        $this->KntsLuring = new KntsLuringModel();
     }
-    public function index()
+
+    public function KontesVokasiLuring()
     {
         $data = [
 
-            'fotografi' => $this->Fotografi->FotobyPt(),
-            'peserta' => $this->pesertaModel->getAllpeserta(),
+            'kntsluring' => $this->KntsLuring->kntsdaringluringbyPt(),
 
         ];
-        echo view('konten/admin/eksibisiFotografi/index', $data);
+        echo view('konten/pendamping/kontesVokasi/luring/index', $data);
     }
-    public function addfoto()
+    public function addKontesVokasiLuring()
     {
         $data = [
-            'fotografi' => $this->Fotografi->FotobyPt(),
+            'kntsluring' => $this->KntsLuring->getAllPendaftaran(),
             'peserta' => $this->pesertaModel->getAllpeserta(),
-            // 001 sesuai kode lomba
-            'cabang_perlombaan' => $this->cabanglombaModel->getLombabyKode(005),
+            // 003 sesuai kode lomba
+            'cabang_perlombaan' => $this->cabanglombaModel->getLombabyKode(003),
             'pt' => $this->ptModel->getAllPt(),
         ];
-        return view('konten/admin/eksibisiFotografi/add', $data);
+        return view('konten/pendamping/kontesVokasi/luring/add', $data);
     }
 
-    public function addfotoPost()
+    public function addKontesVokasiLuringPost()
     {
         // Define validation rules
         $validationRules = [
@@ -78,7 +77,7 @@ class AdminFotografi extends BaseController
             return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
         }
 
-        $Fotografi = new FotografiModel();
+        $KntsLuring = new KntsLuringModel();
         $data = [
             'pt_id' => $this->request->getPost('pt_id'),
             'cabang_perlombaan_id' => $this->request->getPost('cabang_perlombaan_id'),
@@ -87,34 +86,33 @@ class AdminFotografi extends BaseController
             'peserta_id' => $this->request->getPost('peserta_id') // Convert array to comma-separated string
         ];
 
-        if ($Fotografi->insertData($data)) {
-            return redirect()->to('/admin/pendaftaran/eksibisiFotografi')->with('success', 'Data berhasil disimpan!');
+        if ($KntsLuring->insertData($data)) {
+            return redirect()->to('/pendamping/pendaftaran/kontesVokasi/luring')->with('success', 'Data berhasil disimpan!');
         } else {
             return redirect()->back()->withInput()->with('error', 'Gagal menyimpan data!');
         }
     }
 
 
-    public function editFoto($id)
+    public function editKontesVokasiLuring($id)
     {
-        $Fotografi = new FotografiModel();
+        $KntsLuring = new KntsLuringModel();
         $data = [
-            'fotografi' => $Fotografi->find($id),
+            'luring' => $KntsLuring->find($id),
             'peserta' => $this->pesertaModel->getAllpeserta(),
-            'cabang_perlombaan' => $this->cabanglombaModel->getLombabyKode(005),
+            'cabang_perlombaan' => $this->cabanglombaModel->getLombabyKode(003),
             'pt' => $this->ptModel->getAllPt(),
         ];
 
-        if (empty($data['fotografi'])) {
-            throw new \CodeIgniter\Exceptions\PageNotFoundException('Eksibisi Fotografi not found');
+        if (empty($data['luring'])) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Proposal not found');
         }
 
-        return view('konten/admin/eksibisiFotografi/edit', $data);
-        
+        return view('konten/pendamping/kontesVokasi/luring/edit', $data);
     }
 
 
-    public function EditFotoPost($id)
+    public function editKontesVokasiLuringPost($id)
     {
         // Define validation rules
         $validationRules = [
@@ -143,38 +141,35 @@ class AdminFotografi extends BaseController
             return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
         }
 
-        $Fotografi = new FotografiModel();
+        $KntsLuring = new KntsLuringModel();
         $data = [
             'pt_id' => $this->request->getPost('pt_id'),
             'cabang_perlombaan_id' => $this->request->getPost('cabang_perlombaan_id'),
             'keterangan' => 2,
             'peserta_id' => $this->request->getPost('peserta_id') // Convert array to comma-separated string
         ];
-        // dd($data);
 
-        if ($Fotografi->update($id, $data)) {
-            return redirect()->to('/admin/pendaftaran/eksibisiFotografi')->with('success', 'Data berhasil disimpan!');
+        if ($KntsLuring->update($id, $data)) {
+            return redirect()->to('/pendamping/pendaftaran/kontesVokasi/luring')->with('success', 'Data berhasil disimpan!');
         } else {
-            // Handle the failure case
         }
-        
     }
 
-    public function updateStatus($keterangan, $id)
+    public function updateStatusLuring($keterangan, $id)
     {
         $data = [
             'keterangan' => $keterangan
         ];
 
-        if ($this->Fotografi->update($id, $data)) {
-            $user = $this->Fotografi->find($id);
+        if ($this->KntsLuring->update($id, $data)) {
+            $user = $this->KntsLuring->find($id);
             $userEmail = $user['id'];
 
-            $Fotografi = $this->Fotografi->where('id', $userEmail)->first();
+            $KntsLuring = $this->KntsLuring->where('id', $userEmail)->first();
 
-            if ($Fotografi) {
-                $FotografiData = ['keterangan' => $keterangan];
-                $this->Fotografi->update($Fotografi['id'], $FotografiData);
+            if ($KntsLuring) {
+                $KntsLuringData = ['keterangan' => $keterangan];
+                $this->KntsLuring->update($KntsLuring['id'], $KntsLuringData);
             }
 
             if ($keterangan == 1) {
@@ -186,18 +181,18 @@ class AdminFotografi extends BaseController
             $this->session->setFlashdata('error', 'Gagal memperbarui keterangan pengguna.');
         }
 
-        return redirect()->to('/admin/pendaftaran/eksibisiFotografi');
+        return redirect()->to('/pendamping/pendaftaran/kontesVokasi/luring');
     }
-    public function deletefoto($id)
+    public function deleteKontesVokasiLuring($id)
     {
         // Check if the record exists
-        $Fotografi = $this->Fotografi->find($id);
-        if ($Fotografi) {
+        $KntsLuring = $this->KntsLuring->find($id);
+        if ($KntsLuring) {
             // Delete the record
-            $this->Fotografi->deleteById($id);
-            return redirect()->to('/admin/pendaftaran/eksibisiFotografi')->with('danger', 'deleted successfully');
+            $this->KntsLuring->deleteById($id);
+            return redirect()->to('/pendamping/pendaftaran/kontesVokasi/luring')->with('danger', 'deleted successfully');
         } else {
-            return redirect()->to('/admin/pendaftaran/eksibisiFotografi')->with('status', 'Record not found');
+            return redirect()->to('/pendamping/pendaftaran/kontesVokasi/luring')->with('status', 'Record not found');
         }
     }
 }

@@ -25,7 +25,7 @@
                                     </div>
                                 <?php endif; ?>
                             </div>
-                        
+
                             <div class="col-lg-6 mb-3">
                                 <label class="form-label" for="kode_peserta">NIP/NIM</label>
                                 <input type="text" class="form-control <?= isset($errors['kode_peserta']) ? 'is-invalid ' : ''; ?>" name="kode_peserta" id="kode_peserta" placeholder="NIP/NIM" value="<?= old('kode_peserta') ?>">
@@ -35,7 +35,7 @@
                                     </div>
                                 <?php endif; ?>
                             </div>
-                       
+
                             <div class="col-lg-6 mb-3">
                                 <label class="form-label" for="no_wa">No Whatsapp</label>
                                 <input type="text" class="form-control <?= isset($errors['no_wa']) ? 'is-invalid ' : ''; ?>" name="no_wa" id="no_wa" placeholder="No Whatsapp" value="<?= old('no_wa') ?>">
@@ -46,7 +46,7 @@
                                 <?php endif; ?>
                             </div>
 
-                           
+
                             <div class="col-lg-6 mb-3">
                                 <label class="form-label" for="email">email</label>
                                 <input type="text" class="form-control <?= isset($errors['email']) ? 'is-invalid ' : ''; ?>" name="email" id="email" placeholder="email@example.com" value="<?= old('email') ?>">
@@ -56,10 +56,10 @@
                                     </div>
                                 <?php endif; ?>
                             </div>
-                            
+
                             <div class="col-lg-6 mb-3">
                                 <label class="form-label" for="ukuran_kaos">Ukuran Kaos</label>
-                                <input type="text" class="form-control <?= isset($errors['ukuran_kaos']) ? 'is-invalid ' : ''; ?>" name="ukuran_kaos" id="ukuran_kaos" placeholder="ukuran kaos" value="<?= old('ukuran_kaos') ?>">
+                                <input type="text" class="form-control <?= isset($errors['ukuran_kaos']) ? 'is-invalid ' : ''; ?>" name="ukuran_kaos" id="ukuran_kaos" placeholder="XL, M, L, S" value="<?= old('ukuran_kaos') ?>">
                                 <?php if (isset($errors['ukuran_kaos'])) : ?>
                                     <div class="invalid-feedback">
                                         <?= $errors['ukuran_kaos'] ?>
@@ -68,36 +68,28 @@
                             </div>
 
                             <div class="col-lg-6 mb-3">
-                                <label class="form-label" for="prodi_id">Program Studi</label>
-                                <select name="prodi_id" id="prodi_id" class="form-control <?= isset($errors['prodi_id']) ? 'is-invalid ' : ''; ?>">
-                                    <option value="">Pilih..</option>
-                                    <?php foreach ($prodi as $j) : ?>
-                                        <option value="<?= $j['id'] ?>"><?= $j['nama_prodi'] ?></option>
-                                    <?php endforeach; ?>
-                                </select>
-                                <?php if (isset($errors['prodi_id'])) : ?>
+                                <label class="form-label" for="prodi">Program Studi</label>
+                                <input type="text" name="prodi" id="prodi" class="form-control <?= isset($errors['prodi']) ? 'is-invalid ' : ''; ?>" value="<?= old('prodi') ?>">
+                                <?php if (isset($errors['prodi'])) : ?>
                                     <div class="invalid-feedback">
-                                        <?= $errors['prodi_id'] ?>
+                                        <?= $errors['prodi'] ?>
                                     </div>
                                 <?php endif; ?>
                             </div>
+
 
                             <div class="col-lg-6 mb-3">
-                                <label class="form-label" for="pt_id">Perguruan Tinggi</label>
-                                <select name="pt_id" id="pt_id" class="form-control <?= isset($errors['pt_id']) ? 'is-invalid ' : ''; ?>">
-                                    <option value="">Pilih..</option>
-                                    <?php foreach ($pt as $j) : ?>
-                                        <option value="<?= $j['id'] ?>"><?= $j['nama_pt'] ?></option>
+                                <label class="form-label" for="nama_pt">Perguruan Tinggi</label>
+                                <select class="form-control" name="pt_id" id="nama_pt" readonly>
+                                    <?php foreach ($pt as $pts) : ?>
+                                        <?php if ($pts['id'] == session()->get('pt_id')) : ?>
+                                            <option value="<?= $pts['id'] ?>" selected><?= $pts['nama_pt'] ?></option>
+                                        <?php endif; ?>
                                     <?php endforeach; ?>
                                 </select>
-                                <?php if (isset($errors['pt_id'])) : ?>
-                                    <div class="invalid-feedback">
-                                        <?= $errors['pt_id'] ?>
-                                    </div>
-                                <?php endif; ?>
                             </div>
 
-                            
+
 
                             <div class="col-lg-6 mb-3">
                                 <label for="berita_acara" class="form-label">Berita Acara</label>
@@ -131,14 +123,14 @@
                             <div class="col-lg-12 mt-4">
                                 <button class="btn btn-primary">Simpan</button>
                             </div>
-                            </div>
                         </div>
-
-                    </form>
                 </div>
+
+                </form>
             </div>
         </div>
     </div>
+</div>
 </div>
 
 <?= $this->endSection() ?>

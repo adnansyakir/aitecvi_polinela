@@ -67,18 +67,23 @@
                             <div class="col-lg-6 mb-3">
                                 <label class="form-label" for="nama_peserta">Nama Peserta</label>
                                 <div id="peserta-wrapper">
-                                    <div class="input-group mb-2">
-                                        <select class="form-control" name="peserta_id[]">
-                                            <option value="" disabled selected>Pilih Peserta</option>
-                                            <?php foreach ($peserta as $pesr) : ?>
-                                                <option value="<?= $pesr['id'] ?>"><?= $pesr['nama_peserta'] ?></option>
-                                            <?php endforeach; ?>
-                                        </select>
-                                        <button type="button" class="btn btn-outline-danger remove-peserta">Hapus</button>
-                                    </div>
+                                    <?php foreach ($selected_peserta_ids as $selected_peserta_id) : ?>
+                                        <div class="input-group mb-2">
+                                            <select class="form-control" name="peserta_id[]">
+                                                <option value="" disabled>Pilih Peserta</option>
+                                                <?php foreach ($peserta as $pesr) : ?>
+                                                    <option value="<?= $pesr['id'] ?>" <?= $pesr['id'] == $selected_peserta_id ? 'selected' : '' ?>>
+                                                        <?= $pesr['nama_peserta'] ?>
+                                                    </option>
+                                                <?php endforeach; ?>
+                                            </select>
+                                            <button type="button" class="btn btn-outline-danger remove-peserta">Hapus</button>
+                                        </div>
+                                    <?php endforeach; ?>
                                 </div>
                                 <button type="button" class="btn btn-outline-primary add-peserta">Tambah Peserta</button>
                             </div>
+
 
 
                             <div class="col-lg-12 mt-4">

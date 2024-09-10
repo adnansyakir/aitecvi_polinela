@@ -4,12 +4,12 @@ namespace App\Controllers;
 
 use App\Models\Admin\PtModel;
 use App\Models\Admin\CabangLombaModel;
-use App\Models\Admin\FotografiModel;
+use App\Models\Pendamping\FotografiModel;
 use App\Models\Admin\VideoModel;
-use App\Models\Admin\PesertaModel;
+use App\Models\Pendamping\PesertaModel;
 use Ramsey\Uuid\Uuid;
 
-class AdminFotografi extends BaseController
+class PendampingFotografi extends BaseController
 {
     protected $Fotografi;
     protected $videoModel;
@@ -29,24 +29,26 @@ class AdminFotografi extends BaseController
     }
     public function index()
     {
+        $pt_id = session()->get('pt_id'); // Get pt_id from the session
+        // dd($pt_id);
         $data = [
-
-            'fotografi' => $this->Fotografi->FotobyPt(),
-            'peserta' => $this->pesertaModel->getAllpeserta(),
-
+            'fotografi' => $this->Fotografi->FotobyPt($pt_id), // Pass pt_id to the model method
         ];
-        echo view('konten/admin/eksibisiFotografi/index', $data);
+        // dd($data);
+        echo view('konten/pendamping/eksibisiFotografi/index', $data);
     }
+
     public function addfoto()
     {
+        $pt_id = session()->get('pt_id');
         $data = [
-            'fotografi' => $this->Fotografi->FotobyPt(),
-            'peserta' => $this->pesertaModel->getAllpeserta(),
+            'fotografi' => $this->Fotografi->getAllPendaftaran(),
+            'peserta' => $this->pesertaModel->getPesertaWithdPt($pt_id),
             // 001 sesuai kode lomba
             'cabang_perlombaan' => $this->cabanglombaModel->getLombabyKode(005),
             'pt' => $this->ptModel->getAllPt(),
         ];
-        return view('konten/admin/eksibisiFotografi/add', $data);
+        return view('konten/pendamping/eksibisiFotografi/add', $data);
     }
 
     public function addfotoPost()
@@ -88,7 +90,7 @@ class AdminFotografi extends BaseController
         ];
 
         if ($Fotografi->insertData($data)) {
-            return redirect()->to('/admin/pendaftaran/eksibisiFotografi')->with('success', 'Data berhasil disimpan!');
+            return redirect()->to('/pendamping/pendaftaran/eksibisiFotografi')->with('success', 'Data berhasil disimpan!');
         } else {
             return redirect()->back()->withInput()->with('error', 'Gagal menyimpan data!');
         }
@@ -96,11 +98,12 @@ class AdminFotografi extends BaseController
 
 
     public function editFoto($id)
-    {
+    {   $pt_id = session()->get('pt_id');
+
         $Fotografi = new FotografiModel();
         $data = [
             'fotografi' => $Fotografi->find($id),
-            'peserta' => $this->pesertaModel->getAllpeserta(),
+            'peserta' => $this->pesertaModel->getPesertaWithdPt($pt_id),
             'cabang_perlombaan' => $this->cabanglombaModel->getLombabyKode(005),
             'pt' => $this->ptModel->getAllPt(),
         ];
@@ -109,8 +112,7 @@ class AdminFotografi extends BaseController
             throw new \CodeIgniter\Exceptions\PageNotFoundException('Eksibisi Fotografi not found');
         }
 
-        return view('konten/admin/eksibisiFotografi/edit', $data);
-        
+        return view('konten/pendamping/eksibisiFotografi/edit', $data);
     }
 
 
@@ -153,11 +155,10 @@ class AdminFotografi extends BaseController
         // dd($data);
 
         if ($Fotografi->update($id, $data)) {
-            return redirect()->to('/admin/pendaftaran/eksibisiFotografi')->with('success', 'Data berhasil disimpan!');
+            return redirect()->to('/pendamping/pendaftaran/eksibisiFotografi')->with('success', 'Data berhasil disimpan!');
         } else {
             // Handle the failure case
         }
-        
     }
 
     public function updateStatus($keterangan, $id)
@@ -186,7 +187,7 @@ class AdminFotografi extends BaseController
             $this->session->setFlashdata('error', 'Gagal memperbarui keterangan pengguna.');
         }
 
-        return redirect()->to('/admin/pendaftaran/eksibisiFotografi');
+        return redirect()->to('/pendamping/pendaftaran/eksibisiFotografi');
     }
     public function deletefoto($id)
     {
@@ -195,9 +196,9 @@ class AdminFotografi extends BaseController
         if ($Fotografi) {
             // Delete the record
             $this->Fotografi->deleteById($id);
-            return redirect()->to('/admin/pendaftaran/eksibisiFotografi')->with('danger', 'deleted successfully');
+            return redirect()->to('/pendamping/pendaftaran/eksibisiFotografi')->with('danger', 'deleted successfully');
         } else {
-            return redirect()->to('/admin/pendaftaran/eksibisiFotografi')->with('status', 'Record not found');
+            return redirect()->to('/pendamping/pendaftaran/eksibisiFotografi')->with('status', 'Record not found');
         }
     }
 }
