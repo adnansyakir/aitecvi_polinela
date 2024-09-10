@@ -4,11 +4,11 @@
 <div class="card">
     <div class="card-header">
         <div class="col-md-6">
-            <h2 class="card-title">Informasi Kontes Vokasil Luring untuk 7 Lomba</h2>
+            <h2 class="card-title"><span style="color: red;">Informasi Kontes Vokasil Luring untuk 7 Lomba </span></h2>
         </div>
-    </div>
-    <div class="col-md-6">
-        <ul>
+    
+    <div class="col-md-7">
+        <B><ul>
             <li>Handling Ternak,</li>
             <li> Desain Alat dan Mesin Pertanian dengan AutoCAD</li>
             <li>Teknik Pengambilan Sampel Darah Ayam</li>
@@ -16,7 +16,8 @@
             <li>Sortasi Biji Kopi</li>
             <li> Teknik Pembuatan Bakso Ikan</li>
             <li> Survey Pemetaan Lahan</li>
-        </ul>
+        </ul></B>
+    </div>
     </div>
 </div>
 

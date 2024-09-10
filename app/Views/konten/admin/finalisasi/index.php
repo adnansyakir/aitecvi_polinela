@@ -47,7 +47,6 @@
                                     }
                                     ?>
                                 </td>
-
                                 <td>
                                     <a href="/pendamping/finalisasi/edit/<?= $row['id']; ?>" class="btn btn-success btn-sm"><i class="bi bi-pencil-square"></i></a>
                                     <a href="#" onclick="confirmDelete('<?= $row['id']; ?>','/pendamping/finalisasi/delete/')" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></a>
