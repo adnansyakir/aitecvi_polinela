@@ -167,12 +167,12 @@ $routes->group('admin', ['filter' => 'authenticate'], function ($routes) {
     $routes->post('hasillomba/update/(:any)', 'AdminHasillomba::update/$1');
     $routes->get('hasillomba/delete/(:any)', 'AdminHasillomba::delete/$1');
 
-    $routes->get('finalisasi', 'AdminFinalisasi::index');
-    $routes->get('finalisasi/add', 'AdminFinalisasi::add');
-    $routes->post('finalisasi/store', 'AdminFinalisasi::store');
-    $routes->get('finalisasi/edit/(:any)', 'AdminFinalisasi::edit/$1');
-    $routes->post('finalisasi/update/(:any)', 'AdminFinalisasi::update/$1');
-    $routes->get('finalisasi/delete/(:any)', 'AdminFinalisasi::delete/$1');
+    $routes->get('finalisasi', 'AdminFinalisasi::finalisasi');
+    $routes->get('finalisasi/add', 'AdminFinalisasi::addfinalisasi');
+    $routes->post('finalisasi/add', 'AdminFinalisasi::addfinalisasiPost');
+    $routes->get('finalisasi/edit/(:any)', 'AdminFinalisasi::editfinalisasi/$1');
+    $routes->post('finalisasi/edit/(:any)', 'AdminFinalisasi::editfinalisasiPost/$1');
+    $routes->get('finalisasi/delete/(:any)', 'AdminFinalisasi::deletefinalisasi/$1');
     $routes->get('finalisasi/updateKeterangan/(:any)/(:any)', 'AdminFinalisasi::updateStatus/$1/$2');
 
 

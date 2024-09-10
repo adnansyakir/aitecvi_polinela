@@ -16,12 +16,18 @@
                         <?= csrf_field() ?>
 
                         <div class="row">
-                            <div class="col-lg-6 mb-3">
-                                <label class="form-label" for="nama_team">Perguruan Tinggi</label>
-                                <input type="text" class="form-control <?= isset($errors['nama_team']) ? 'is-invalid ' : ''; ?>" name="nama_team" id="nama_team" value="<?= esc($finalisasi->nama_team) ?>">
-                                <?php if (isset($errors['nama_team'])) : ?>
+                            
+                        <div class="col-lg-6 mb-3">
+                                <label class="form-label" for="nama_pt">Perguruan Tinggi</label>
+                                <select class="form-control <?= isset($errors['pt_id']) ? 'is-invalid ' : ''; ?>" name="pt_id" id="nama_pt">
+                                    <option value="" disabled>Pilih Perguruan Tinggi</option>
+                                    <?php foreach ($pt as $pts) : ?>
+                                        <option value="<?= $pts['id'] ?>" <?= $finalisasi->pt_id == $pts['id'] ? 'selected' : '' ?>><?= $pts['nama_pt'] ?></option>
+                                    <?php endforeach; ?>
+                                </select>
+                                <?php if (isset($errors['pt_id'])) : ?>
                                     <div class="invalid-feedback">
-                                        <?= $errors['nama_team'] ?>
+                                        <?= $errors['pt_id'] ?>
                                     </div>
                                 <?php endif; ?>
                             </div>

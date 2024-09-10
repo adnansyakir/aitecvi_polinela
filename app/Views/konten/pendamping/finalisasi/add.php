@@ -6,7 +6,7 @@
         <div class="card">
             <div class="row">
                 <div class="col-lg-6">
-                    <h5 class="card-header">Finalisasi Admin</h5>
+                    <h5 class="card-header">Finalisasi Administrasi</h5>
                 </div>
                 <div class="col-lg-6 text-end">
                     <a href="/pendamping/finalisasi/" class="btn btn-dark me-3 mt-3"><i class='bx bx-arrow-back'></i> Kembali</a>
