@@ -42,7 +42,7 @@
                 <h4 class="card-title">Upload Data Daring</h4>
             </div>
             <div class="col-md-6 text-end">
-                <a href="/pendamping/pendaftaran/kontesVokasi/daring/daring/add" class="btn btn-primary btn-sm"> Tambah Data</a>
+                <a href="/pendamping/pendaftaran/kontesVokasi/daring/add" class="btn btn-primary btn-sm"> Tambah Data</a>
             </div>
         </div>
     </div>
@@ -79,8 +79,8 @@
                                 </td>
                                 <td>
                                     <div class="btn-group">
-                                        <a href="/pendamping/pendaftaran/kontesVokasi/daring/daring/edit/<?= $row['id']; ?>" class="btn btn-success btn-sm"><i class="bi bi-pencil-square"></i></a>
-                                        <a href="#" onclick="confirmDelete('<?= $row['id']; ?>','/pendamping/pendaftaran/kontesVokasi/daring/daring/delete/')" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></a>
+                                        <a href="/pendamping/pendaftaran/kontesVokasi/daring/edit/<?= $row['id']; ?>" class="btn btn-success btn-sm"><i class="bi bi-pencil-square"></i></a>
+                                        <a href="#" onclick="confirmDelete('<?= $row['id']; ?>','/pendamping/pendaftaran/kontesVokasi/daring/delete/')" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></a>
                                     </div>
                                 </td>
                             </tr> <?php endforeach; ?>
