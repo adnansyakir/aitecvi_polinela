@@ -8,7 +8,7 @@ use App\Models\Pendamping\KntsLuringModel;
 use App\Models\Admin\PesertaModel;
 use Ramsey\Uuid\Uuid;
 
-class AdminkontesVokasiLuring extends BaseController
+class PendampingkontesVokasiLuring extends BaseController
 {
     protected $KntsDaringLuring;
     protected $KntsLuring;
