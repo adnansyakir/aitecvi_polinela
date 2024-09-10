@@ -167,6 +167,14 @@ $routes->group('admin', ['filter' => 'authenticate'], function ($routes) {
     $routes->post('hasillomba/update/(:any)', 'AdminHasillomba::update/$1');
     $routes->get('hasillomba/delete/(:any)', 'AdminHasillomba::delete/$1');
 
+    $routes->get('finalisasi', 'AdminFinalisasi::index');
+    $routes->get('finalisasi/add', 'AdminFinalisasi::add');
+    $routes->post('finalisasi/store', 'AdminFinalisasi::store');
+    $routes->get('finalisasi/edit/(:any)', 'AdminFinalisasi::edit/$1');
+    $routes->post('finalisasi/update/(:any)', 'AdminFinalisasi::update/$1');
+    $routes->get('finalisasi/delete/(:any)', 'AdminFinalisasi::delete/$1');
+    $routes->get('finalisasi/updateKeterangan/(:any)/(:any)', 'AdminFinalisasi::updateStatus/$1/$2');
+
 
     $routes->get('sertifikat', 'AdminSertifikat::Sertifikat');
     $routes->get('sertifikat/add', 'AdminSertifikat::addSertifikat');

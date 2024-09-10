@@ -5,7 +5,7 @@
     <div class="card-header">
         <div class="row">
             <div class="col-md-6">
-                <h4 class="card-title">Finalisasi Admin</h4>
+                <h4 class="card-title">Finalisasi Administrasi</h4>
             </div>
             <div class="col-md-6 text-end">
                 <a href="/admin/finalisasi/add" class="btn btn-primary btn-sm"> Tambah Data</a>
@@ -19,7 +19,7 @@
                     <thead>
                         <tr>
                             <th>No</th>
-                            <th>Nama Team</th>
+                            <th>Nama Perguruan Tinggi</th>
                             <th>Surat tugas</th>
                             <th>Invoice Tagihan Kontribusi</th>
                             <th>Bukti Transfer</th>
@@ -38,19 +38,25 @@
                                 <td><a href="/uploads/bukti_transfer/<?= $row['bukti_transfer']; ?>"><i class="bi bi-card-heading"></a></td>
                                 <td>
                                     <?php
-                                    if ($row['keterangan'] == 2) {
-                                        echo '<span class="badge bg-danger">Tidak Diverifikasi</span>';
+                                    if ($row['keterangan'] == 0) {
+                                        echo '<span class="badge bg-danger">Gagal</span>';
                                     } else if ($row['keterangan'] == 1) {
-                                        echo '<span class="badge bg-success">Terverifikasi</span>';
-                                    } else if($row['keterangan'] == 0){
-                                        echo '<span class="badge bg-secondary">Sedang diverifikasi</span>';
+                                        echo '<span class="badge bg-success">Lunas</span>';
+                                    } else if ($row['keterangan'] == 2) {
+                                        echo '<span class="badge bg-secondary">Sedang Diverifikasi</span>';
                                     }
                                     ?>
                                 </td>
-
                                 <td>
-                                    <a href="/pendamping/finalisasi/edit/<?= $row['id']; ?>" class="btn btn-success btn-sm"><i class="bi bi-pencil-square"></i></a>
-                                    <a href="#" onclick="confirmDelete('<?= $row['id']; ?>','/pendamping/finalisasi/delete/')" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></a>
+                                    <div class="btn-group">
+                                        <a href="/admin/finalisasi/edit/<?= $row['id']; ?>" class="btn btn-success btn-sm"><i class="bi bi-pencil-square"></i></a>
+                                        <a href="#" onclick="confirmDelete('<?= $row['id']; ?>','/admin/finalisasi/delete/')" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></a>
+                                        <?php if ($row['keterangan'] == 0) : ?>
+                                            <a href="/admin/finalisasi/updateKeterangan/1/<?= $row['id']; ?>" class="btn btn-success btn-sm"><i class="bi bi-power"></i></a>
+                                        <?php else : ?>
+                                            <a href="/admin/finalisasi/updateKeterangan/0/<?= $row['id']; ?>" class="btn btn-secondary btn-sm"><i class="bi bi-power"></i></a>
+                                        <?php endif; ?>
+                                    </div>
                                 </td>
                             </tr>
                         <?php endforeach; ?>

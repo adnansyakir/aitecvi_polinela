@@ -9,10 +9,10 @@
                     <h5 class="card-header">Edit Finalisasi</h5>
                 </div>
                 <div class="col-lg-6 text-end">
-                    <a href="/pendamping/finalisasi" class="btn btn-dark me-3 mt-3"><i class='bx bx-arrow-back'></i> Kembali</a>
+                    <a href="/admin/finalisasi" class="btn btn-dark me-3 mt-3"><i class='bx bx-arrow-back'></i> Kembali</a>
                 </div>
                 <div class="col-lg-12 p-5">
-                    <form method="POST" action="/pendamping/finalisasi/edit/<?= $finalisasi->id ?>" enctype="multipart/form-data">
+                    <form method="POST" action="/admin/finalisasi/edit/<?= $finalisasi->id ?>" enctype="multipart/form-data">
                         <?= csrf_field() ?>
 
                         <div class="row">
