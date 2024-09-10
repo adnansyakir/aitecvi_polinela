@@ -4,18 +4,18 @@
 
 <div class="card">
     <div class="card-header">
-        <div class="col-md-6">
-        <h4 class="card-title"><span style="color: red;">Informasi Penting</span></h4>
-
-            </div>
-            
-        </div>
-        <div class="col-md-6">
-                
-            </div>
-            
+        <div class="col-md-3">
+            <h4 class="card-title"><span style="color: red;">Informasi Penting</span></h4>
         </div>
     
+        <div class="col-md-7">
+        <B><ul>
+            <li>Peserta bersifat individu atau perseorangan.,</li>
+            <li> Lomba dilaksanakan secara luring (offline) di Politeknik Negeri Lampung. </li>
+            <li>Setiap Perguruan Tinggi hanya dapat mengirimkan  <span style="color: red;">maksimal 2 orang perwakilan.</span></li>
+        </ul></B>
+        </div>
+    </div>
 </div>
 
 <div class="card">

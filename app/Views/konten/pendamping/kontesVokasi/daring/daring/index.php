@@ -1,6 +1,23 @@
 <?= $this->extend('layout/page') ?>
 
 <?= $this->section('content') ?>
+
+<div class="card">
+    <div class="card-header">
+        <div class="col-md-3">
+            <h4 class="card-title"><span style="color: red;">Keterangan</span></h4>
+        </div>
+    
+        <div class="col-md-7">
+        <B><ul>
+            <li>Peserta Masih dalam Desk Verifikasi Penilaian,</li>
+            <li> Peserta Tidak Lolos Penilaian </li>
+            <li>Peserta Lolos Desk Verifikasi Akan mengikuti Luring di Politeknik Negeri Lampung</li>
+        </ul></B>
+        </div>
+    </div>
+</div>
+
 <div class="card">
     <div class="card-header">
         <div class="row">
@@ -58,4 +75,6 @@
         </div>
     </div>
 </div>
+
+
 <?= $this->endSection() ?>

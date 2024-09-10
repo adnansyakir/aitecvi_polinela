@@ -12,7 +12,7 @@
                 <div class="col-lg-6 text-end">
                     <a href="/pendamping/pendaftaran/kompetisiInovasi/proposal" class="btn btn-dark me-3 mt-3"><i class='bx bx-arrow-back'></i> Kembali</a>
                 </div>
-                <div class="col-lg-12 p-5">
+                <div class="col- lg-12 p-5">
                     <form method="POST" action="/pendamping/pendaftaran/kompetisiInovasi/proposal/add">
                         <?= csrf_field() ?>
                         <div class="row">
@@ -74,10 +74,11 @@
                                         </select>
                                         <button type="button" class="btn btn-outline-danger remove-peserta">Hapus</button>
                                     </div>
+                                
                                 </div>
                                 <button type="button" class="btn btn-outline-primary add-peserta">Tambah Peserta</button>
                             </div>
-
+                            <p style="font-weight: bold;">Tambahakan seluruh peserta dalam Team.</p>
                             <div class="col-lg-12 mt-4">
                                 <button class="btn btn-primary">Simpan</button>
                             </div>

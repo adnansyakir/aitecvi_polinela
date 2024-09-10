@@ -10,14 +10,14 @@
                     <h5 class="card-header">Tambah Data Peserta</h5>
                 </div>
                 <div class="col-lg-6 text-end">
-                    <a href="/admin/pendaftaran/eksibisiFotografi" class="btn btn-dark me-3 mt-3"><i class='bx bx-arrow-back'></i> Kembali</a>
+                    <a href="/pendamping/pendaftaran/eksibisiFotografi" class="btn btn-dark me-3 mt-3"><i class='bx bx-arrow-back'></i> Kembali</a>
                 </div>
                 <div class="col-lg-12 p-5">
-                    <form method="POST" action="/admin/pendaftaran/eksibisiFotografi/add">
+                    <form method="POST" action="/pendamping/pendaftaran/eksibisiFotografi/add">
                         <?= csrf_field() ?>
                         <div class="row">
 
-                            <div class="col-lg-6 mb-3">
+                        <div class="col-lg-6 mb-3">
                                 <label class="form-label" for="nama_pt">Perguruan Tinggi</label>
                                 <select class="form-control" name="pt_id" id="nama_pt" readonly>
                                     <?php foreach ($pt as $pts) : ?>
@@ -27,6 +27,8 @@
                                     <?php endforeach; ?>
                                 </select>
                             </div>
+
+
                             <div class="col-lg-6 mb-3">
                                 <label class="form-label" for="nama_perlombaan">Nama Perlombaan</label>
                                 <select class="form-control <?= isset($errors['cabang_perlombaan_id']) ? 'is-invalid ' : ''; ?>" name="cabang_perlombaan_id" id="nama_perlombaan">

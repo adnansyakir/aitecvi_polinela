@@ -1,6 +1,24 @@
 <?= $this->extend('layout/page') ?>
 
 <?= $this->section('content') ?>
+
+
+<div class="card">
+    <div class="card-header">
+        <div class="col-md-3">
+            <h4 class="card-title"><span style="color: red;">Informasi Penting</span></h4>
+        </div>
+    
+        <div class="col-md-7">
+        <B><ul>
+            <li>Peserta bersifat individu atau perseorangan.,</li>
+            <li> Lomba dilaksanakan secara luring (offline) di Politeknik Negeri Lampung. </li>
+            <li>Setiap Perguruan Tinggi hanya dapat mengirimkan  <span style="color: red;">maksimal 2 orang perwakilan.</span></li>
+        </ul></B>
+        </div>
+    </div>
+</div>
+
 <div class="card">
     <div class="card-header">
         <div class="row">
@@ -22,7 +40,7 @@
                             <th>Nama Perguruan tinggi</th>
                             <th>Nama Perlombaan</th>
                             <th>Nama Peserta</th>
-                            <th>Keterangan</th>
+
                             <th class="text-center">Aksi</th>
                         </tr>
                     </thead>
@@ -33,25 +51,15 @@
                                 <td><?= $row['nama_perlombaan']; ?></td>
                                 <td><?= $row['nama_peserta']; ?></td>
                     
-                                <td>
-                                    <?php
-                                    if ($row['keterangan'] == 0) {
-                                        echo '<span class="badge bg-danger">Tidak Lolos Desk Evaluation</span>';
-                                    } else if ($row['keterangan'] == 1) {
-                                        echo '<span class="badge bg-success">Lolos Desk Evaluation</span>';
-                                    } else if ($row['keterangan'] == 2) {
-                                        echo '<span class="badge bg-secondary">Sedang diverifikasi</span>';
-                                    }
-                                    ?>
-                                </td>
+                                
                                 <td>
                                     <div class="btn-group">
-                                        <a href="/admin/pendaftaran/eksibisiFotografi/edit/<?= $row['id']; ?>" class="btn btn-success btn-sm"><i class="bi bi-pencil-square"></i></a>
-                                        <a href="#" onclick="confirmDelete('<?= $row['id']; ?>','/admin/pendaftaran/eksibisiFotografi/delete/')" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></a>
+                                        <a href="/pendamping/pendaftaran/eksibisiFotografi/edit/<?= $row['id']; ?>" class="btn btn-success btn-sm"><i class="bi bi-pencil-square"></i></a>
+                                        <a href="#" onclick="confirmDelete('<?= $row['id']; ?>','/pendamping/pendaftaran/eksibisiFotografi/delete/')" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></a>
                                         <?php if ($row['keterangan'] == 0) : ?>
-                                            <a href="/admin/pendaftaran/eksibisiFotografi/updateKeterangan/1/<?= $row['id']; ?>" class="btn btn-success btn-sm"><i class="bi bi-power"></i></a>
+                                            <a href="/pendamping/pendaftaran/eksibisiFotografi/updateKeterangan/1/<?= $row['id']; ?>" class="btn btn-success btn-sm"><i class="bi bi-power"></i></a>
                                         <?php else : ?>
-                                            <a href="/admin/pendaftaran/eksibisiFotografi/updateKeterangan/0/<?= $row['id']; ?>" class="btn btn-secondary btn-sm"><i class="bi bi-power"></i></a>
+
                                         <?php endif; ?>
                                     </div>
                                 </td>

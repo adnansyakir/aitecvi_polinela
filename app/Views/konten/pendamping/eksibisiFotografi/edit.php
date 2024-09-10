@@ -10,10 +10,10 @@
                     <h5 class="card-header">Edit Data fotografi</h5>
                 </div>
                 <div class="col-lg-6 text-end">
-                    <a href="/admin/pendaftaran/eksibisiFotografi" class="btn btn-dark me-3 mt-3"><i class='bx bx-arrow-back'></i> Kembali</a>
+                    <a href="/pendamping/pendaftaran/eksibisiFotografi" class="btn btn-dark me-3 mt-3"><i class='bx bx-arrow-back'></i> Kembali</a>
                 </div>
                 <div class="col-lg-12 p-5">
-                <form method="POST" action="/admin/pendaftaran/eksibisiFotografi/update/<?= $fotografi['id'] ?>">
+                <form method="POST" action="/pendamping/pendaftaran/eksibisiFotografi/update/<?= $fotografi['id'] ?>">
                         <?= csrf_field() ?>
                         <div class="row">
 
