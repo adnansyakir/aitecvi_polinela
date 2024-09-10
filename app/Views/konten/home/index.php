@@ -59,7 +59,6 @@
                             <a href="#jadwal">Jadwal</a>
                             <a href="#lokasi">Lokasi</a>
                             <a href="#gallery">Gallery</a>
-                            <a href="#buku">Buku Panduan</a>
                         </div>
                     </li>
                     <li class="navbar-item">

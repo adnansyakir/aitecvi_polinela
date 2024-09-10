@@ -17,6 +17,11 @@
             font-size: 18px;
         }
     </style>
+    <script>
+        setTimeout(function() {
+            window.location.href = "/";
+        }, 5000);
+    </script>
 </head>
 <body>
     <h1>Halo, <?= esc($username); ?>!</h1>
