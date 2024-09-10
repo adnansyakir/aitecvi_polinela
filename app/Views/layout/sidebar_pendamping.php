@@ -72,7 +72,7 @@
         <li class="sidebar-item <?= ($request->uri->getSegment(2) === 'finalisasi') ? 'active' : '' ?>">
             <a href="/pendamping/finalisasi" class='sidebar-link'>
             <i class="bi bi-person-check-fill"></i>
-                <span>Finalisasi pendamping</span>
+                <span>Finalisasi Administrasi</span>
             </a>
         </li>
         <li class="sidebar-item  <?= ($request->uri->getSegment(2) === 'sertifikat') ? 'active  ' : '' ?>">

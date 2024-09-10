@@ -127,6 +127,12 @@
                 <span>Peserta</span>
             </a>
         </li>
+        <li class="sidebar-item <?= ($request->uri->getSegment(2) === 'finalisasi') ? 'active' : '' ?>">
+            <a href="/admin/finalisasi" class='sidebar-link'>
+            <i class="bi bi-person-check-fill"></i>
+                <span>Finalisasi Administrasi</span>
+            </a>
+        </li>
 
         <li class="sidebar-item <?= ($request->uri->getSegment(2) === 'sertifikat') ? 'active' : '' ?>">
             <a href="/admin/sertifikat" class='sidebar-link'>
