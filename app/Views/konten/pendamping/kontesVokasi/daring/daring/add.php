@@ -10,10 +10,10 @@
                     <h5 class="card-header">Tambah Data Daring</h5>
                 </div>
                 <div class="col-lg-6 text-end">
-                    <a href="/pendamping/pendaftaran/kontesVokasi/daring/daring" class="btn btn-dark me-3 mt-3"><i class='bx bx-arrow-back'></i> Kembali</a>
+                    <a href="/pendamping/pendaftaran/kontesVokasi/daring" class="btn btn-dark me-3 mt-3"><i class='bx bx-arrow-back'></i> Kembali</a>
                 </div>
                 <div class="col-lg-12 p-5">
-                    <form method="POST" action="/pendamping/pendaftaran/kontesVokasi/daring/daring/add">
+                    <form method="POST" action="/pendamping/pendaftaran/kontesVokasi/daring/add">
                         <?= csrf_field() ?>
                         <div class="row">
 
