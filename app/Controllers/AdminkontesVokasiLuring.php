@@ -52,6 +52,9 @@ class AdminkontesVokasiLuring extends BaseController
 
     public function addKontesVokasiLuringPost()
     {
+        // Load the KntsLuringModel
+        $KntsLuring = new KntsLuringModel(); // Ensure the correct model is loaded
+
         // Define validation rules
         $validationRules = [
             'pt_id' => 'required|is_not_unique[pt.id]',
@@ -79,13 +82,26 @@ class AdminkontesVokasiLuring extends BaseController
             return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
         }
 
-        $KntsLuring = new KntsLuringModel();
+        $pt_id = $this->request->getPost('pt_id');
+        $cabang_perlombaan_id = $this->request->getPost('cabang_perlombaan_id');
+
+        // Check if this PT has already registered two participants for this category
+        if (in_array($cabang_perlombaan_id, [1, 582])) {
+            $existingRegistrations = $KntsLuring->where('pt_id', $pt_id)
+                ->where('cabang_perlombaan_id', $cabang_perlombaan_id)
+                ->countAllResults();
+
+            if ($existingRegistrations >= 2) {
+                return redirect()->back()->withInput()->with('error', 'PT ini telah mendaftarkan maksimal 2 perwakilan untuk cabang perlombaan ini.');
+            }
+        }
+
+        // Proceed with registration if validation passes and limit is not exceeded
         $data = [
-            'pt_id' => $this->request->getPost('pt_id'),
-            'cabang_perlombaan_id' => $this->request->getPost('cabang_perlombaan_id'),
-            // 2 ngatur nilai keterangan (sedang penilaian)
-            'keterangan' => 2,
-            'peserta_id' => $this->request->getPost('peserta_id') // Convert array to comma-separated string
+            'pt_id' => $pt_id,
+            'cabang_perlombaan_id' => $cabang_perlombaan_id,
+            'keterangan' => 2, // Default status or description
+            'peserta_id' => $this->request->getPost('peserta_id')
         ];
 
         if ($KntsLuring->insertData($data)) {
@@ -94,6 +110,7 @@ class AdminkontesVokasiLuring extends BaseController
             return redirect()->back()->withInput()->with('error', 'Gagal menyimpan data!');
         }
     }
+
 
 
     public function editKontesVokasiLuring($id)
