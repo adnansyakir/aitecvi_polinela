@@ -4,16 +4,19 @@ namespace App\Controllers;
 
 
 use App\Models\Pendamping\FinalisasiModel;
+use App\Models\Admin\PtModel;
 use Ramsey\Uuid\Uuid;
 
 class PendampingFinalisasi extends BaseController
 {
    
     protected $finalisasiModel;
+    protected $PtModel;
     public function __construct()
     {
         
         $this->finalisasiModel = new FinalisasiModel();
+        $this->PtModel = new PtModel();
        
     }
     public function finalisasi()
@@ -32,7 +35,7 @@ class PendampingFinalisasi extends BaseController
 
     $data = [
         'finalisasi' => $this->finalisasiModel->getAllfinalisasi(),
-        'proposal' => $proposalData, 
+        'pt' => $this->PtModel->getAllPt(),
     ];
     return view('konten/pendamping/finalisasi/add', $data);
 }
