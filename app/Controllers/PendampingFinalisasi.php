@@ -47,17 +47,6 @@ class PendampingFinalisasi extends BaseController
         $data = $this->request->getPost();
 
         // Validation rules
-        $rules = [
-            'nama_team' => 'required|string',
-        ];
-
-
-
-        // Prepare data for insertion
-        $insertData = [
-            'nama_team' => $data['nama_team'],
-            'keterangan' => 2,
-        ];
 
         $validationRules = [
             'surat_tugas' =>  'max_size[surat_tugas,5120]|ext_in[surat_tugas,pdf,doc,docx, png]',
@@ -125,7 +114,7 @@ class PendampingFinalisasi extends BaseController
     
         $data = [
             'finalisasi' => $this->finalisasiModel->getPt($id),
-            'proposal' => $proposalData,
+            'pt' => $this->PtModel->getAllPt(),
         ];
         return view('konten/pendamping/finalisasi/edit', $data);
     }
@@ -137,18 +126,6 @@ class PendampingFinalisasi extends BaseController
 {
 
     $data = $this->request->getPost();
-
-        // Validation rules
-        $rules = [
-            'nama_team' => 'required|string',
-        ];
-
-
-
-        // Prepare data for insertion
-        $insertData = [
-            'nama_team' => $data['nama_team'],
-        ];
 
     $validationRules = [
         'surat_tugas' => 'max_size[surat_tugas,5120]|ext_in[surat_tugas,pdf,doc,docx,png]',

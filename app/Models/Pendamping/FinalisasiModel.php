@@ -47,8 +47,8 @@ public function getAllfinalisasi()
 
     public function getPt($id)
     {
-        return $this->select('finalisasi.*, proposal.nama_team')
-                    ->join('proposal', 'proposal.nama_team = finalisasi.nama_team')
+        return $this->select('finalisasi.*, pt.nama_pt')
+                        ->join('pt', 'finalisasi.pt_id = pt.id')
                     ->where('finalisasi.id', $id)
                     ->get()
                     ->getRow();
