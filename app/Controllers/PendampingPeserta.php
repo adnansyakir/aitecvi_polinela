@@ -73,7 +73,7 @@ class PendampingPeserta extends BaseController
             'pt_id' => 'required',
             'prodi' => 'required',
             'berita_acara' =>  'max_size[berita_acara,5120]|ext_in[berita_acara,pdf,doc,docx, png]',
-            'ktm' => 'required','max_size[ktm,5120]|ext_in[ktm,pdf,doc,docx,png]',
+            'ktm' => 'max_size[ktm,5120]|ext_in[ktm,pdf,doc,docx,png]',
             'foto' => 'max_size[foto,5120]|ext_in[foto,jpg,jpeg,png]',
             'no_wa' => 'required',
         ];

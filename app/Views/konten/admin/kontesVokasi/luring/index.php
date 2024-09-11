@@ -10,7 +10,7 @@
         <div class="col-md-10">
         <B><ul>
             <li> Lomba dilaksanakan secara luring (offline) di Politeknik Negeri Lampung.</li>
-            <li> ⁠Setiap Perguruan Tinggi hanya dapat mengirimkan <span style="color: red;">maksimal 2 orang atau 2 tim perwakilan.</span></li>
+            <li> ⁠Setiap Perguruan Tinggi hanya dapat mengirimkan <span style="color: red;">maksimal 2 orang.</span></li>
             <li>Setiap peserta <span style="color: red;">wajib</span> mengikuti Technical Meeting.</li>
         </ul></B>
         </div>
@@ -58,7 +58,7 @@
                             <th>Nama Perguruan tinggi</th>
                             <th>Nama Perlombaan</th> 
                             <th>Nama Peserta</th>
-                            <th>Keterangan</th>
+                          
                             <th class="text-center">Aksi</th>
                         </tr>
                     </thead>
@@ -68,17 +68,7 @@
                                 <td><?= $row['nama_pt']; ?></td>
                                 <td><?= $row['nama_perlombaan']; ?></td>
                                 <td><?= $row['nama_peserta']; ?></td>
-                                <td>
-                                    <?php
-                                    if ($row['keterangan'] == 0) {
-                                        echo '<span class="badge bg-danger">Tidak Lolos Desk Evaluation</span>';
-                                    } else if ($row['keterangan'] == 1) {
-                                        echo '<span class="badge bg-success">Lolos Desk Evaluation</span>';
-                                    } else if ($row['keterangan'] == 2) {
-                                        echo '<span class="badge bg-secondary">Sedang diverifikasi</span>';
-                                    }
-                                    ?>
-                                </td>
+                               
                                 <td>
                                     <div class="btn-group">
                                         <a href="/admin/pendaftaran/kontesVokasi/luring/edit/<?= $row['id']; ?>" class="btn btn-success btn-sm"><i class="bi bi-pencil-square"></i></a>

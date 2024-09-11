@@ -170,9 +170,9 @@ class PendampingFotografi extends BaseController
                 ->where('cabang_perlombaan_id', $cabang_perlombaan_id)
                 ->countAllResults();
 
-            if ($existingRegistrations >= 2) {
-                return redirect()->back()->withInput()->with('error', 'Maaf, Anda telah Memenuhi Kuota Maksimal pada Cabang Perlombaan ini.');
-            }
+            // if ($existingRegistrations >= 2) {
+            //     return redirect()->back()->withInput()->with('error', 'Maaf, Anda telah Memenuhi Kuota Maksimal pada Cabang Perlombaan ini.');
+            // }
         }
         $data = [
             'pt_id' => $this->request->getPost('pt_id'),

@@ -87,7 +87,7 @@ class PendampingkontesVokasiLuring extends BaseController
         $cabang_perlombaan_id = $this->request->getPost('cabang_perlombaan_id');
 
         // Check if this PT has already registered two participants for this category
-        if (in_array($cabang_perlombaan_id, [9,10,11,12,13,14,15])) {
+        if (in_array($cabang_perlombaan_id, [9, 10, 11, 12, 13, 14, 15])) {
             $existingRegistrations = $KntsLuring->where('pt_id', $pt_id)
                 ->where('cabang_perlombaan_id', $cabang_perlombaan_id)
                 ->countAllResults();
@@ -163,38 +163,18 @@ class PendampingkontesVokasiLuring extends BaseController
         }
 
         $pt_id = $this->request->getPost('pt_id');
-        $cabang_perlombaan_name = $this->request->getPost('cabang_perlombaan_name');
-
-        // Define the competition names with a limit
-        $limitedCompetitions = [
-            'Handling Ternak',
-            'Desain Alat dan Mesin Pertanian dengan AutoCAD',
-            'Teknik Pengambilan Sampel Darah Ayam',
-            'Packing Benih Ikan',
-            'Sortasi Biji Kopi',
-            'Teknik Pembuatan Bakso Ikan',
-            'Survey Pemetaan Lahan'
-        ];
-
-        // Get the `cabang_perlombaan_id` for the provided name
-        $cabangPerlombaan = $this->cabanglombaModel->where('nama_perlombaan', $cabang_perlombaan_name)->first();
-        if (!$cabangPerlombaan) {
-            return redirect()->back()->withInput()->with('error', 'Maaf, Anda telah Memenuhi Kuota Maksimal pada Cabang Perlombaan ini.');
-        }
-
-        $cabang_perlombaan_id = $cabangPerlombaan['id'];
+        $cabang_perlombaan_id = $this->request->getPost('cabang_perlombaan_id');
 
         // Check if this PT has already registered two participants for this category
-        if (in_array($cabang_perlombaan_name, $limitedCompetitions)) {
+        if (in_array($cabang_perlombaan_id, [9, 10, 11, 12, 13, 14, 15])) {
             $existingRegistrations = $KntsLuring->where('pt_id', $pt_id)
                 ->where('cabang_perlombaan_id', $cabang_perlombaan_id)
                 ->countAllResults();
-
+            // dd($existingRegistrations);
             if ($existingRegistrations >= 2) {
                 return redirect()->back()->withInput()->with('error', 'Maaf, Anda telah Memenuhi Kuota Maksimal pada Cabang Perlombaan ini.');
             }
         }
-
         $data = [
             'pt_id' => $this->request->getPost('pt_id'),
             'cabang_perlombaan_id' => $this->request->getPost('cabang_perlombaan_id'),

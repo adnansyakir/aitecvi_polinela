@@ -90,7 +90,7 @@ class AdminkontesVokasiDaring extends BaseController
         ];
 
         if ($KntsDaringLuring->insertData($data)) {
-            return redirect()->to('/admin/pendaftaran/kontesVokasi/daring/daring')->with('success', 'Data berhasil disimpan!');
+            return redirect()->to('/admin/pendaftaran/kontesVokasi/daring')->with('success', 'Data berhasil disimpan!');
         } else {
             return redirect()->back()->withInput()->with('error', 'Gagal menyimpan data!');
         }
@@ -153,7 +153,7 @@ class AdminkontesVokasiDaring extends BaseController
         ];
 
         if ($KntsDaringLuring->update($id, $data)) {
-            return redirect()->to('/admin/pendaftaran/kontesVokasi/daring/daring')->with('success', 'Data berhasil disimpan!');
+            return redirect()->to('/admin/pendaftaran/kontesVokasi/daring')->with('success', 'Data berhasil disimpan!');
         } else {
         }
     }
@@ -184,7 +184,7 @@ class AdminkontesVokasiDaring extends BaseController
             $this->session->setFlashdata('error', 'Gagal memperbarui keterangan pengguna.');
         }
 
-        return redirect()->to('/admin/pendaftaran/kontesVokasi/daring/daring');
+        return redirect()->to('/admin/pendaftaran/kontesVokasi/daring');
     }
     public function deleteKontesVokasiDaring($id)
     {
@@ -193,13 +193,13 @@ class AdminkontesVokasiDaring extends BaseController
         if ($KntsDaringLuring) {
             // Delete the record
             $this->KntsDaringLuring->deleteById($id);
-            return redirect()->to('/admin/pendaftaran/kontesVokasi/daring/daring')->with('danger', 'deleted successfully');
+            return redirect()->to('/admin/pendaftaran/kontesVokasi/daring')->with('danger', 'deleted successfully');
         } else {
-            return redirect()->to('/admin/pendaftaran/kontesVokasi/daring/daring')->with('status', 'Record not found');
+            return redirect()->to('/admin/pendaftaran/kontesVokasi/daring')->with('status', 'Record not found');
         }
     }
-// Kontes Vokasi Daring Luring
-public function KontesVokasiLuring()
+    // Kontes Vokasi Daring Luring
+    public function KontesVokasiLuring()
     {
         $data = [
 
@@ -367,5 +367,4 @@ public function KontesVokasiLuring()
             return redirect()->to('/admin/pendaftaran/kontesVokasi/daring/luring')->with('status', 'Record not found');
         }
     }
-
 }

@@ -86,7 +86,7 @@ class PendampingkontesVokasiDaring extends BaseController
         $cabang_perlombaan_id = $this->request->getPost('cabang_perlombaan_id');
 
         // Check if this PT has already registered two participants for this category
-        if (in_array($cabang_perlombaan_id, [3,4,5,6,7,8])) {
+        if (in_array($cabang_perlombaan_id, [3, 4, 5, 6, 7, 8])) {
             $existingRegistrations = $KntsDaringLuring->where('pt_id', $pt_id)
                 ->where('cabang_perlombaan_id', $cabang_perlombaan_id)
                 ->countAllResults();
@@ -96,7 +96,7 @@ class PendampingkontesVokasiDaring extends BaseController
             }
         }
 
-        
+
         $data = [
             'pt_id' => $this->request->getPost('pt_id'),
             'cabang_perlombaan_id' => $this->request->getPost('cabang_perlombaan_id'),
@@ -166,12 +166,12 @@ class PendampingkontesVokasiDaring extends BaseController
         $cabang_perlombaan_id = $this->request->getPost('cabang_perlombaan_id');
 
         // Check if this PT has already registered two participants for this category
-        if (in_array($cabang_perlombaan_id, [3,4,5,6,7,8])) {
+        if (in_array($cabang_perlombaan_id, [3, 4, 5, 6, 7, 8])) {
             $existingRegistrations = $KntsDaringLuring->where('pt_id', $pt_id)
                 ->where('cabang_perlombaan_id', $cabang_perlombaan_id)
                 ->countAllResults();
-
-            if ($existingRegistrations >= 5) {
+            // dd($existingRegistrations);
+            if ($existingRegistrations >= 4) {
                 return redirect()->back()->withInput()->with('error', 'Maaf, Anda telah Memenuhi Kuota Maksimal pada Cabang Perlombaan ini.');
             }
         }
@@ -188,7 +188,7 @@ class PendampingkontesVokasiDaring extends BaseController
         }
     }
 
-   
+
     public function deleteKontesVokasiDaring($id)
     {
         // Check if the record exists

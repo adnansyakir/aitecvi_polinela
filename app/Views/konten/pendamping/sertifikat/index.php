@@ -1,25 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verifikasi Akun</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-        }
-        h1 {
-            color: #4CAF50;
-        }
-        p {
-            font-size: 18px;
-        }
-    </style>
-    
-</head>
-<body>
-    <h1>Fitur ini belum tersedia</h1>
-</body>
-</html>
+<?= $this->extend('layout/page') ?>
+
+<?= $this->section('content') ?>
+<?= $this->endSection() ?>
+
