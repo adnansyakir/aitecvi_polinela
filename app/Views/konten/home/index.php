@@ -1664,21 +1664,21 @@
                             <li>
                                 <strong style="font-size:larger;">Fasilitas</strong>
                                 <p>
-                                Ini adalah fasilitas
+                                <!-- Ini adalah fasilitas -->
                                 </p>
                                 <br>
                             </li>
                             <li>
                                 <strong style="font-size:larger;">Transportasi</strong>
                                 <p>
-                                Ini adalah transportasi
+                                <!-- Ini adalah transportasi -->
                                 </p>
                                 <br>
                             </li>
                             <li>
                                 <strong style="font-size:larger;">Penginapan</strong>
                                 <p>
-                                Ini adalah Penginapan
+                                <!-- Ini adalah Penginapan -->
                                 </p>
                                 <br>
                             </li>
