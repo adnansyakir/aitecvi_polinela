@@ -8,12 +8,13 @@
             <h4 class="card-title"><span style="color: red;">Keterangan</span></h4>
         </div>
 
-        <div class="col-md-7">
+        <div class="col-md-11">
             <B>
                 <ul>
-                    <li>Peserta Masih dalam Desk Verifikasi Penilaian,</li>
-                    <li> Peserta Tidak Lolos Penilaian </li>
-                    <li>Peserta Lolos Desk Verifikasi Akan mengikuti Luring di Politeknik Negeri Lampung</li>
+                    <li>Lomba disertai dengan Seleksi Online.</li>
+                    <li>Setiap Perguruan Tinggi hanya diperkenankan mengirimkan <span style="color: red;">maksimal 4 orang perwakilan pada Seleksi Online. </span></li>
+                    <li>Setiap peserta <span style="color: red;">wajib</span> mengikuti Technical Meeting.</li>
+                    <li>12 (Dua belas) peserta terbaik berdasarkan peringkat Seleksi Online akan diundang ke Babak Final AITeC VI di Politeknik Negeri Lampung.</li>
                 </ul>
             </B>
         </div>

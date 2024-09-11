@@ -72,7 +72,7 @@
         <div class="panels-container">
             <div class="panel left-panel">
                 <div class="content">
-                    <h1>AGRICULTURAL INNOVATION TECHNOLOGY COMPETITION VI <br><br>(AITeC VI)</h1>
+                    <h1>AGRICULTURAL INNOVATION TECHNOLOGY COMPETITION VI <br><br>(AITeC VI) <br> <span class="text-two">2024</span> </h1>
                 </div>
                 <img src="login/img/L3.png" class="image" alt="">
             </div>
