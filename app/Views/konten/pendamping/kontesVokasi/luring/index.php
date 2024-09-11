@@ -1,12 +1,28 @@
 <?= $this->extend('layout/page') ?>
 
 <?= $this->section('content') ?>
+
+<div class="card">
+    <div class="card-header">
+        <div class="col-md-3">
+            <h4 class="card-title"><span style="color: red;">Informasi Penting</span></h4>
+        </div>
+    
+        <div class="col-md-9">
+        <B><ul>
+            <li> Lomba dilaksanakan secara luring (offline) di Politeknik Negeri Lampung.</li>
+            <li> ⁠Setiap Perguruan Tinggi hanya dapat mengirimkan <span style="color: red;">maksimal 2 orang atau 2 tim perwakilan.</span></li>
+            <li>Setiap peserta <span style="color: red;">wajib</span> mengikuti Technical Meeting.</li>
+        </ul></B>
+        </div>
+    </div>
+</div>
+
 <div class="card">
     <div class="card-header">
         <div class="col-md-6">
-            <h2 class="card-title"><span style="color: red;">Informasi Kontes Vokasi Luring untuk 7 Lomba </span></h2>
+            <h2 class="card-title"><span style="color: blue;">Informasi Kontes Vokasi Luring untuk 7 Lomba </span></h2>
         </div>
-    
     <div class="col-md-7">
         <B><ul>
             <li>Handling Ternak,</li>

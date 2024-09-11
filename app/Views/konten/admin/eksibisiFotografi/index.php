@@ -8,11 +8,11 @@
             <h4 class="card-title"><span style="color: red;">Informasi Penting</span></h4>
         </div>
     
-        <div class="col-md-7">
+        <div class="col-md-11">
         <B><ul>
-            <li>Peserta bersifat individu atau perseorangan.,</li>
-            <li> Lomba dilaksanakan secara luring (offline) di Politeknik Negeri Lampung. </li>
-            <li>Setiap Perguruan Tinggi hanya dapat mengirimkan  <span style="color: red;">maksimal 2 orang perwakilan.</span></li>
+            <li> Lomba dilaksanakan secara luring (offline) di Politeknik Negeri Lampung.</li>
+            <li> ⁠Setiap Perguruan Tinggi hanya dapat mengirimkan <span style="color: red;">maksimal 2 orang atau 2 tim perwakilan.</span></li>
+            <li>Setiap peserta <span style="color: red;">wajib</span> mengikuti Technical Meeting.</li>
         </ul></B>
         </div>
     </div>
