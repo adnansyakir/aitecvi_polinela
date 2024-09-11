@@ -87,7 +87,7 @@ class PendampingkontesVokasiLuring extends BaseController
         $cabang_perlombaan_id = $this->request->getPost('cabang_perlombaan_id');
 
         // Check if this PT has already registered two participants for this category
-        if (in_array($cabang_perlombaan_id, [1, 2,6,63,4300007,582,])) {
+        if (in_array($cabang_perlombaan_id, [9,10,11,12,13,14,15])) {
             $existingRegistrations = $KntsLuring->where('pt_id', $pt_id)
                 ->where('cabang_perlombaan_id', $cabang_perlombaan_id)
                 ->countAllResults();

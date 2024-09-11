@@ -45,7 +45,7 @@ class PendampingFotografi extends BaseController
             'fotografi' => $this->Fotografi->getAllPendaftaran(),
             'peserta' => $this->pesertaModel->getPesertaWithdPt($pt_id),
             // 001 sesuai kode lomba
-            'cabang_perlombaan' => $this->cabanglombaModel->getLombabyKode(005),
+            'cabang_perlombaan' => $this->cabanglombaModel->getLombabyKode(004),
             'pt' => $this->ptModel->getAllPt(),
         ];
         return view('konten/pendamping/eksibisiFotografi/add', $data);
@@ -53,6 +53,7 @@ class PendampingFotografi extends BaseController
 
     public function addfotoPost()
     {
+        $Fotografi = new FotografiModel();
         // Define validation rules
         $validationRules = [
             'pt_id' => 'required|is_not_unique[pt.id]',
@@ -80,7 +81,20 @@ class PendampingFotografi extends BaseController
             return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
         }
 
-        $Fotografi = new FotografiModel();
+        $pt_id = $this->request->getPost('pt_id');
+        $cabang_perlombaan_id = $this->request->getPost('cabang_perlombaan_id');
+
+        // Check if this PT has already registered two participants for this category
+        if (in_array($cabang_perlombaan_id, [16])) {
+            $existingRegistrations = $Fotografi->where('pt_id', $pt_id)
+                ->where('cabang_perlombaan_id', $cabang_perlombaan_id)
+                ->countAllResults();
+
+            if ($existingRegistrations >= 2) {
+                return redirect()->back()->withInput()->with('error', 'Maaf, Anda telah Memenuhi Kuota Maksimal pada Cabang Perlombaan ini.');
+            }
+        }
+       
         $data = [
             'pt_id' => $this->request->getPost('pt_id'),
             'cabang_perlombaan_id' => $this->request->getPost('cabang_perlombaan_id'),
@@ -104,7 +118,7 @@ class PendampingFotografi extends BaseController
         $data = [
             'fotografi' => $Fotografi->find($id),
             'peserta' => $this->pesertaModel->getPesertaWithdPt($pt_id),
-            'cabang_perlombaan' => $this->cabanglombaModel->getLombabyKode(005),
+            'cabang_perlombaan' => $this->cabanglombaModel->getLombabyKode(004),
             'pt' => $this->ptModel->getAllPt(),
         ];
 
@@ -118,6 +132,7 @@ class PendampingFotografi extends BaseController
 
     public function EditFotoPost($id)
     {
+        $Fotografi = new FotografiModel();
         // Define validation rules
         $validationRules = [
             'pt_id' => 'required|is_not_unique[pt.id]',
@@ -145,7 +160,20 @@ class PendampingFotografi extends BaseController
             return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
         }
 
-        $Fotografi = new FotografiModel();
+        
+        $pt_id = $this->request->getPost('pt_id');
+        $cabang_perlombaan_id = $this->request->getPost('cabang_perlombaan_id');
+
+        // Check if this PT has already registered two participants for this category
+        if (in_array($cabang_perlombaan_id, [16])) {
+            $existingRegistrations = $Fotografi->where('pt_id', $pt_id)
+                ->where('cabang_perlombaan_id', $cabang_perlombaan_id)
+                ->countAllResults();
+
+            if ($existingRegistrations >= 2) {
+                return redirect()->back()->withInput()->with('error', 'Maaf, Anda telah Memenuhi Kuota Maksimal pada Cabang Perlombaan ini.');
+            }
+        }
         $data = [
             'pt_id' => $this->request->getPost('pt_id'),
             'cabang_perlombaan_id' => $this->request->getPost('cabang_perlombaan_id'),
