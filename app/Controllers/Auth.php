@@ -148,7 +148,7 @@ class Auth extends BaseController
 
     public function checkAuth()
     {
-        // Validate input fields
+        // Validasi input fields
         $validation = $this->validate([
             'username' => [
                 'rules' => 'required',
@@ -163,76 +163,63 @@ class Auth extends BaseController
                 ]
             ],
         ]);
-    
-        // If validation fails, return with errors
+
+        // Jika validasi gagal, kembalikan dengan error
         if (!$validation) {
             $errors = \Config\Services::validation()->getErrors();
             return redirect()->back()->withInput()->with('errors', $errors);
         }
-    
-        // Check user credentials
+
+        // Periksa kredensial user
         $user = $this->Auth->checkUser($this->request->getPost('username'), $this->request->getPost('password'));
         $session = session();
-    
+
+        // Jika user ditemukan
         if ($user) {
-            // Welcome message
+            // Cek apakah akun aktif
+            if ($user->status == 0) {
+                return redirect()->to('/loginn')->with('error', 'Akun Anda belum aktif.');
+            }
+
+            // Jika akun aktif, simpan data sesi
             session()->setFlashdata('primary', 'Hello.... Selamat Datang');
-    
-            // Store session data, including pt_id
+
+            // Siapkan session data
             $sessionData = [
-                'data' => $user,   // Store the full user object or just the required fields
+                'data' => $user,   // Simpan objek user lengkap atau field yang diperlukan
                 'role' => $user->role,
-                'pt_id' => $user->pt_id,  // Include pt_id in the session
                 'logged_in' => TRUE
             ];
-            
+
+            // Hanya role selain Admin yang menyertakan pt_id
+            if ($user->role !== 'Admin') {
+                $sessionData['pt_id'] = $user->pt_id;
+            }
+
             $session->set($sessionData);
-    
-           
+
+            // Redirect berdasarkan role
             switch ($user->role) {
                 case 'Admin':
-                    if ($user->status == 0) {
-                        return redirect()->to('/loginn')->with('error', 'Akun Anda belum aktif.');
-                    } else {
-                        return redirect()->to('/admin/dashboard');
-                    }
-                    break;
+                    return redirect()->to('/admin/dashboard');
                 case 'Juri':
-                    if ($user->status == 0) {
-                        return redirect()->to('/loginn')->with('error', 'Akun Anda belum aktif.');
-                    } else {
-                        return redirect()->to('/juri/dashboard');
-                    }
-                    break;
+                    return redirect()->to('/juri/dashboard');
                 case 'Pendamping':
-                    if ($user->status == 0) {
-                        return redirect()->to('/loginn')->with('error', 'Akun Anda belum aktif.');
-                    } else {
-                        return redirect()->to('/pendamping/dashboard');
-                    }
-                    break;
+                    return redirect()->to('/pendamping/dashboard');
                 case 'Kampus':
-                    if ($user->status == 0) {
-                        return redirect()->to('/loginn')->with('error', 'Akun Anda belum aktif.');
-                    } else {
-                        return redirect()->to('/kampus/dashboard');
-                    }
-                    break;
+                    return redirect()->to('/kampus/dashboard');
                 case 'Koordinator':
-                    if ($user->status == 0) {
-                        return redirect()->to('/loginn')->with('error', 'Akun Anda belum aktif.');
-                    } else {
-                        return redirect()->to('/koordinator/dashboard');
-                    }
-                    break;
+                    return redirect()->to('/koordinator/dashboard');
                 default:
                     return redirect()->to('/');
             }
         } else {
+            // Jika kredensial salah
             session()->setFlashdata('error', 'Username atau Password salah.');
             return redirect()->to('/loginn');
         }
-    }    
+    }
+
 
 
     public function logOut()

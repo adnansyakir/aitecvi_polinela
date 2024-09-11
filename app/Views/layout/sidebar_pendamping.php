@@ -45,10 +45,10 @@
         } ?>">
 
                         <li class="submenu-item <?= ($request->uri->getTotalSegments() >= 4 && $request->uri->getSegment(4) === 'proposal') ? 'active' : '' ?>">
-                            <a href="/admin/pendaftaran/kompetisiInovasi/proposal">Proposal</a>
+                            <a href="/pendamping/pendaftaran/kompetisiInovasi/proposal">Proposal</a>
                         </li>
                         <li class="submenu-item <?= ($request->uri->getTotalSegments() >= 4 && $request->uri->getSegment(4) === 'video') ? 'active' : '' ?>">
-                            <a href="/admin/pendaftaran/kompetisiInovasi/video">Video</a>
+                            <a href="/pendamping/pendaftaran/kompetisiInovasi/video">Video</a>
                         </li>
                     </ul>
                 </li>
@@ -68,17 +68,17 @@
         } ?>">
 
                         <li class="submenu-item <?= ($request->uri->getTotalSegments() >= 4 && $request->uri->getSegment(4) === 'daring') ? 'active' : '' ?>">
-                            <a href="/admin/pendaftaran/kontesVokasi/daring">Daring</a>
+                            <a href="/pendamping/pendaftaran/kontesVokasi/daring">Daring</a>
                         </li>
                         <li class="submenu-item <?= ($request->uri->getTotalSegments() >= 4 && $request->uri->getSegment(4) === 'luring') ? 'active' : '' ?>">
-                            <a href="/admin/pendaftaran/kontesVokasi/luring">Luring</a>
+                            <a href="/pendamping/pendaftaran/kontesVokasi/luring">Luring</a>
                         </li>
                     </ul>
                 </li>
 
                 <!-- Eksibisi Fotografi -->
                 <li class="submenu-item <?= ($request->uri->getTotalSegments() >= 3 && $request->uri->getSegment(3) === 'eksibisiFotografi') ? 'active' : '' ?>">
-                    <a href="/admin/pendaftaran/eksibisiFotografi">Eksibisi Fotografi</a>
+                    <a href="/pendamping/pendaftaran/eksibisiFotografi">Eksibisi Fotografi</a>
                 </li>
 
             </ul>
