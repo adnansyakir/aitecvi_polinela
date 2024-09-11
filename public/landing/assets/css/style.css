@@ -358,6 +358,7 @@ body {
   align-items: center;
   margin: 0;
   padding: 0;
+  gap: 15px;
 }
 
 .navbar-logo {
@@ -751,6 +752,10 @@ body {
 .pengumuman { background-color: var(--isabelline); }
 
 /*-----------------------------------*\
+  #kepanitiaan
+\*-----------------------------------*/
+
+/*-----------------------------------*\
   #juri
 \*-----------------------------------*/
 
@@ -885,8 +890,9 @@ body {
   background-color: #f4f4f4;
   border-bottom: 1px solid #ddd;
   margin: 0;
-  text-align: left; /* Mengatur text-align ke kiri */
+  text-align: left;
   width: 100%;
+  min-height: 90px;
 }
 
 .koordinator-info {
@@ -920,6 +926,8 @@ body {
 /*-----------------------------------*\
   #jadwal
 \*-----------------------------------*/
+
+.jadwal { background-color: var(--isabelline); }
 
 .schedule-tabs {
   display: flex;
@@ -1017,8 +1025,6 @@ body {
   #lokasi
 \*-----------------------------------*/
 
-.lokasi { background-color: var(--isabelline); }
-
 .location-card {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
@@ -1051,6 +1057,12 @@ body {
   height: 100%;
   object-fit: cover;
 }
+
+/*-----------------------------------*\
+  #informasi
+\*-----------------------------------*/
+
+.informasi { background-color: var(--isabelline); }
 
 
 
@@ -1148,7 +1160,7 @@ body {
 }
 
 .footer-brand-text { 
-  margin-block: 20px; 
+  margin-block: 5px;
 }
 
 .footer-brand .wrapper {
@@ -1770,7 +1782,41 @@ body {
     margin: 0 0 5px;
     font-size: 1em;
   }
+
+  .cabang-koordinator {
+    display: block; /* Atur menjadi block untuk layout vertikal */
+    gap: 10px; /* Kurangi gap antar kartu */
+    justify-content: flex-start;
+  }
+
+  .card {
+    width: 100%; /* Ubah lebar menjadi 100% agar satu kartu per baris */
+    margin-bottom: 15px; /* Tambahkan jarak antar kartu */
+  }
+
+  .koordinator summary {
+    font-size: 16px; /* Sesuaikan ukuran font summary */
+    padding: 10px; /* Kurangi padding */
+    min-height: auto; /* Hilangkan tinggi minimum agar lebih fleksibel */
+  }
+
+  .koordinator-info {
+    padding: 10px; /* Kurangi padding */
+    text-align: left; /* Ubah text align ke kiri */
+    flex-grow: 0; /* Hilangkan pertumbuhan fleksibel */
+  }
+
+  .koordinator-info img {
+    max-width: 60px; /* Perkecil ukuran gambar */
+    margin-bottom: 8px;
+  }
+
+  .koordinator-info h4, .koordinator-info p {
+    margin: 3px 0; /* Kurangi margin untuk elemen teks */
+    font-size: 14px; /* Sesuaikan ukuran font untuk teks */
+  }
 }
+
 
 
 /* ukuran 2 */
@@ -2741,6 +2787,39 @@ body {
   .schedule-eventku p {
     margin: 0 0 8px;
     font-size: 1em;
+  }
+
+  .cabang-koordinator {
+    display: block; /* Atur menjadi block untuk layout vertikal */
+    gap: 10px; /* Kurangi gap antar kartu */
+    justify-content: flex-start;
+  }
+
+  .card {
+    width: 100%; /* Ubah lebar menjadi 100% agar satu kartu per baris */
+    margin-bottom: 15px; /* Tambahkan jarak antar kartu */
+  }
+
+  .koordinator summary {
+    font-size: 16px; /* Sesuaikan ukuran font summary */
+    padding: 10px; /* Kurangi padding */
+    min-height: auto; /* Hilangkan tinggi minimum agar lebih fleksibel */
+  }
+
+  .koordinator-info {
+    padding: 10px; /* Kurangi padding */
+    text-align: left; /* Ubah text align ke kiri */
+    flex-grow: 0; /* Hilangkan pertumbuhan fleksibel */
+  }
+
+  .koordinator-info img {
+    max-width: 60px; /* Perkecil ukuran gambar */
+    margin-bottom: 8px;
+  }
+
+  .koordinator-info h4, .koordinator-info p {
+    margin: 3px 0; /* Kurangi margin untuk elemen teks */
+    font-size: 14px; /* Sesuaikan ukuran font untuk teks */
   }
 }
 

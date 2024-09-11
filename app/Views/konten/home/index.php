@@ -75,16 +75,15 @@
                             <a href="#panitia">Panitia Pelaksana</a>
                             <a href="#kordinator">Koordinator Lomba</a>
                             <a href="#juri">Juri</a>
-                            <!-- <a href="#hubungi">Hubungi</a> -->
                         </div>
                     </li>
                     <li class="navbar-item">
                         <a href="#" class="navbar-link" data-nav-link>Informasi Umum &#x25BC;</a>
                         <div class="dropdown-content">
-                            <a href="#panitia">Narahubung</a>
-                            <a href="#kordinator">Fasilitas</a>
-                            <a href="#juri">Transportasi</a>
-                            <a href="#hubungi">Penginapan</a>
+                            <a href="#hubungi">Narahubung</a>
+                            <a href="#informasi">Fasilitas</a>
+                            <a href="#informasi">Transportasi</a>
+                            <a href="#informasi">Penginapan</a>
                         </div>
                     </li>
                 </ul>
@@ -223,12 +222,12 @@
                                 <p style="font-style:italic">
                                 Tema untuk Kompetisi Inovasi Teknologi Bidang Pertanian VI  atau <i>Agricultural Innovation Technology Competition</i> 6th (AITeC VI) Politeknik Negeri Lampung tahun 2024 adalah: <br /><br />
 
-                                    <strong style="color:darkgreen; font-size:larger; font-style:normal;text-align:center">
-                                    <i>“Pemantapan Ketahanan Pangan melalui Peningkatan Inovasi Teknologi Bidang Pertanian dalam Mengantisipasi Perubahan Iklim Menuju Indonesia Emas 2045”</i>
-                                    </strong>
+                                <strong style="color: darkgreen; font-size: larger; font-style: normal; text-align: center; display: block;">
+                                    “Pemantapan Ketahanan Pangan melalui Peningkatan Inovasi Teknologi Bidang 
+                                    <br>Pertanian dalam Mengantisipasi Perubahan Iklim Menuju Indonesia Emas 2045”
+                                </strong>
                                 </p>
                                 <br>
-                                <br />
                             </li>
 
                             <li>
@@ -648,9 +647,9 @@
                                     </p>
 
 
-                                <p style="text-align:justify; text-indent:45px">
-                                    Wassalamu’alaikum warahmatullahi wabarakatuh.
-                                <p>
+                                    <p>
+                                    Wassalamu'alaikum Warahmatullahi Wabarakatuh.
+                                    </p>
 
                                 <p style="text-align: right; margin-right: 150px;">
                                         <span>Ketua BAKORMA Politeknik se-Indonesia</span><br><br><br>
@@ -758,6 +757,326 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Kepanitiaan -->
+            
+            <section class="section kepanitiaan" id="kepanitiaan" aria-label="course">
+                <div class="container">
+
+                    <div class="section-header">
+                        <h2 class="h2 section-title">Susunan Kepanitiaan AITeC VI</h2>
+                    </div>
+
+                    <strong style="color:black; font-size:larger; font-style:normal;text-align:center; display: block;">
+                    Susunan Panitia Pelaksana <br>Agricultural Innovation Technology Competition 6th (AITeC VI) <br>Politeknik Negeri Lampung Tahun 2024
+                    </strong>
+
+                    <br>
+                    <div class="row">
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                            <tbody>
+    <tr>
+        <td>Penanggung Jawab</td>
+        <td>Prof. Dr. Ir. Sarono, M.Si. (Direktur)</td>
+    </tr>
+    <tr>
+        <td>Pengarah</td>
+        <td>Dwi Puji Hartono, S.Pi., M.Si. (Wadir I)</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Dr. Ir. Beni Hidayat, M.Si. (Wadir II)</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Agung Adi Candra, S.KH., M.Si. (Wadir III)</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Eko Win Kenali, S.Kom., M.Cs. (Wadir IV)</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Zahermanto, S.P., M.H. (Kabag Keuangan dan Umum)</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Kasmir, S.Sos. (Kabag. Akademik)</td>
+    </tr>
+    <tr>
+        <td>Ketua</td>
+        <td>Riko Noviadi, S.Pt., M.P.</td>
+    </tr>
+    <tr>
+        <td>Sekretaris</td>
+        <td>Mustika Adzania Lestari, S.P., M.P.</td>
+    </tr>
+    <tr>
+        <td>Bendahara</td>
+        <td>Evi Yuniarti, S.E., M.Si.</td>
+    </tr>
+    <tr>
+        <td>Koordinator Umum Kompetisi</td>
+        <td>Andy Eka Saputra, S.T., M.T.</td>
+    </tr>
+    <tr>
+        <td>Koordinator Tim Juri</td>
+        <td>Dr. Drh. Dwi Desmiyeni Putri, M.Si.</td>
+    </tr>
+    <tr>
+        <td>Koordinator Acara</td>
+        <td>Intan Andya Bellapama, S.P., M.P.</td>
+    </tr>
+    <tr>
+        <td>Koordinator Kesekretariatan</td>
+        <td>Surya Prasetya Trihatmaja, S.E., M.Acc.</td>
+    </tr>
+    <tr>
+        <td>Koordinator Registrasi Peserta</td>
+        <td>Linuwih Aluh Prastiti, S.Pi., M.Si.</td>
+    </tr>
+    <tr>
+        <td>Koordinator Akomodasi dan Transportasi</td>
+        <td>Enggar Dwi Cahyo, S.Par., M.Arch.</td>
+    </tr>
+    <tr>
+        <td>Koordinator Konsumsi</td>
+        <td>Intan Kamilia Habsari, S.Pt., M.Pt.</td>
+    </tr>
+    <tr>
+        <td>Koordinator Umum, Keamanan dan Perlengkapan</td>
+        <td>Irwansyah, S.H.</td>
+    </tr>
+    <tr>
+        <td>Koordinator Humas dan Publikasi</td>
+        <td>Ir. Teguh Budi Trisnanto, M.Si.</td>
+    </tr>
+    <tr>
+        <td>Koordinator IT dan Website</td>
+        <td>Panji Andhika Pratomo, S.Kom., M.T.I.</td>
+    </tr>
+    <tr>
+        <td>Koordinator Liaison Officer (LO)</td>
+        <td>Nani Irwani, S.Pt. M.S.</td>
+    </tr>
+    <tr>
+        <td>Koordinator Venue Acara</td>
+        <td>Supriyanto, S.P., M.Si.</td>
+    </tr>
+    <tr>
+        <td>Koordinator Expo</td>
+        <td>Rusmianto, S.E., M.Si.</td>
+    </tr>
+</tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- kordinator -->
+                <section class="section kordinator" aria-label="kordinator" id="kordinator">
+                    <div class="container">
+
+                        <div class="section-header">
+                            <h2 class="h2 section-title">KORDINATOR AITeC VI</h2>
+                        </div>
+
+                        <div class="cabang-koordinator">
+                    <!-- Koordinator Cabang 1 -->
+                    <div class="card">
+                        <details class="koordinator">
+                            <summary>KITBP sub-kategori <i>Smart and Precision Farming</i></summary>
+                            <div class="koordinator-info">
+                                <img src="gambar1.jpg" alt="Koordinator 1">
+                                <h4>Nama Koordinator 1</h4>
+                                <p>Asal Politeknik 1</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Koordinator Cabang 2 -->
+                    <div class="card">
+                        <details class="koordinator">
+                            <summary>KITBP sub-kategori Teknologi Tepat Guna</summary>
+                            <div class="koordinator-info">
+                                <img src="gambar2.jpg" alt="Koordinator 2">
+                                <h4>Nama Koordinator 2</h4>
+                                <p>Asal Politeknik 2</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Koordinator Cabang 3 -->
+                    <div class="card">
+                        <details class="koordinator">
+                            <summary>Kontes Teknik Okulasi Tanaman </summary>
+                            <div class="koordinator-info">
+                                <img src="gambar3.jpg" alt="Koordinator 3">
+                                <h4>Nama Koordinator 3</h4>
+                                <p>Asal Politeknik 3</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Koordinator Cabang 4 -->
+                    <div class="card">
+                        <details class="koordinator">
+                            <summary>Kontes Sortasi Biji Kopi</summary>
+                            <div class="koordinator-info">
+                                <img src="gambar4.jpg" alt="Koordinator 4">
+                                <h4>Nama Koordinator 4</h4>
+                                <p>Asal Politeknik 4</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Koordinator Cabang 5 -->
+                    <div class="card">
+                        <details class="koordinator">
+                            <summary>Kontes <i>Handling</i> Ternak</summary>
+                            <div class="koordinator-info">
+                                <img src="gambar5.jpg" alt="Koordinator 5">
+                                <h4>Nama Koordinator 5</h4>
+                                <p>Asal Politeknik 5</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Koordinator Cabang 6 -->
+                    <div class="card">
+                        <details class="koordinator">
+                            <summary>Kontes Teknik Proses Karkas Ayam</summary>
+                            <div class="koordinator-info">
+                                <img src="gambar6.jpg" alt="Koordinator 6">
+                                <h4>Nama Koordinator 6</h4>
+                                <p>Asal Politeknik 6</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Koordinator Cabang 7 -->
+                    <div class="card">
+                        <details class="koordinator">
+                            <summary>Kontes Teknik Pengambilan Sampel Darah Ayam</summary>
+                            <div class="koordinator-info">
+                                <img src="gambar7.jpg" alt="Koordinator 7">
+                                <h4>Nama Koordinator 7</h4>
+                                <p>Asal Politeknik 7</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Koordinator Cabang 8 -->
+                    <div class="card">
+                        <details class="koordinator">
+                            <summary>Kontes Formulasi Pakan Ternak</summary>
+                            <div class="koordinator-info">
+                                <img src="gambar8.jpg" alt="Koordinator 8">
+                                <h4>Nama Koordinator 8</h4>
+                                <p>Asal Politeknik 8</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Koordinator Cabang 9 -->
+                    <div class="card">
+                        <details class="koordinator">
+                            <summary>Kontes Formulasi Pakan Ikan</summary>
+                            <div class="koordinator-info">
+                                <img src="gambar9.jpg" alt="Koordinator 9">
+                                <h4>Nama Koordinator 9</h4>
+                                <p>Asal Politeknik 9</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Koordinator Cabang 10 -->
+                    <div class="card">
+                        <details class="koordinator">
+                            <summary>Kontes Packing Benih Ikan</summary>
+                            <div class="koordinator-info">
+                                <img src="gambar10.jpg" alt="Koordinator 10">
+                                <h4>Nama Koordinator 10</h4>
+                                <p>Asal Politeknik 10</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Koordinator Cabang 11 -->
+                    <div class="card">
+                        <details class="koordinator">
+                            <summary>Kontes Teknik Proses Fillet Ikan</summary>
+                            <div class="koordinator-info">
+                                <img src="gambar11.jpg" alt="Koordinator 11">
+                                <h4>Nama Koordinator 11</h4>
+                                <p>Asal Politeknik 11</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Koordinator Cabang 12 -->
+                    <div class="card">
+                        <details class="koordinator">
+                            <summary>Kontes Teknik Pembuatan Bakso Ikan</summary>
+                            <div class="koordinator-info">
+                                <img src="gambar12.jpg" alt="Koordinator 12">
+                                <h4>Nama Koordinator 12</h4>
+                                <p>Asal Politeknik 12</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Koordinator Cabang 13 -->
+                    <div class="card">
+                        <details class="koordinator">
+                            <summary>Kontes Survey Pemetaan Lahan</summary>
+                            <div class="koordinator-info">
+                                <img src="gambar13.jpg" alt="Koordinator 13">
+                                <h4>Nama Koordinator 13</h4>
+                                <p>Asal Politeknik 13</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Koordinator Cabang 14 -->
+                    <div class="card">
+                        <details class="koordinator">
+                            <summary>Kontes Desain Alat dan Mesin Pertanian dengan <i>AutoCAD</i></summary>
+                            <div class="koordinator-info">
+                                <img src="gambar14.jpg" alt="Koordinator 14">
+                                <h4>Nama Koordinator 14</h4>
+                                <p>Asal Politeknik 14</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Koordinator Cabang 15 -->
+                    <div class="card">
+                        <details class="koordinator">
+                            <summary>Kontes Penyuluhan Pertanian</summary>
+                            <div class="koordinator-info">
+                                <img src="gambar16.jpg" alt="Koordinator 16">
+                                <h4>Nama Koordinator 16</h4>
+                                <p>Asal Politeknik 16</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Koordinator Cabang 16 -->
+                    <div class="card">
+                        <details class="koordinator">
+                            <summary>Eksibisi Fotografi</summary>
+                            <div class="koordinator-info">
+                                <img src="gambar15.jpg" alt="Koordinator 15">
+                                <h4>Nama Koordinator 15</h4>
+                                <p>Asal Politeknik 15</p>
+                            </div>
+                        </details>
+                    </div>
+                    </div>
+                </section>
 
             <!-- juri -->
 
@@ -1133,209 +1452,6 @@
 
 
 
-            <!-- kordinator -->
-            <section class="section kordinator" aria-label="kordinator" id="kordinator">
-    <div class="container">
-
-        <div class="section-header">
-            <h2 class="h2 section-title">KORDINATOR AITeC VI</h2>
-        </div>
-
-        <div class="cabang-koordinator">
-    <!-- Koordinator Cabang 1 -->
-    <div class="card">
-        <details class="koordinator">
-            <summary>KITBP sub-kategori <i>Smart and Precision Farming</i></summary>
-            <div class="koordinator-info">
-                <img src="gambar1.jpg" alt="Koordinator 1">
-                <h4>Nama Koordinator 1</h4>
-                <p>Asal Politeknik 1</p>
-            </div>
-        </details>
-    </div>
-
-    <!-- Koordinator Cabang 2 -->
-    <div class="card">
-        <details class="koordinator">
-            <summary>KITBP sub-kategori Teknologi Tepat Guna</summary>
-            <div class="koordinator-info">
-                <img src="gambar2.jpg" alt="Koordinator 2">
-                <h4>Nama Koordinator 2</h4>
-                <p>Asal Politeknik 2</p>
-            </div>
-        </details>
-    </div>
-
-    <!-- Koordinator Cabang 3 -->
-    <div class="card">
-        <details class="koordinator">
-            <summary>Kompetisi Teknik Okulasi Tanaman </summary>
-            <div class="koordinator-info">
-                <img src="gambar3.jpg" alt="Koordinator 3">
-                <h4>Nama Koordinator 3</h4>
-                <p>Asal Politeknik 3</p>
-            </div>
-        </details>
-    </div>
-
-    <!-- Koordinator Cabang 4 -->
-    <div class="card">
-        <details class="koordinator">
-            <summary>Kompetisi Sortasi Biji Kopi</summary>
-            <div class="koordinator-info">
-                <img src="gambar4.jpg" alt="Koordinator 4">
-                <h4>Nama Koordinator 4</h4>
-                <p>Asal Politeknik 4</p>
-            </div>
-        </details>
-    </div>
-
-    <!-- Koordinator Cabang 5 -->
-    <div class="card">
-        <details class="koordinator">
-            <summary>Kompetisi <i>Handling</i> Ternak</summary>
-            <div class="koordinator-info">
-                <img src="gambar5.jpg" alt="Koordinator 5">
-                <h4>Nama Koordinator 5</h4>
-                <p>Asal Politeknik 5</p>
-            </div>
-        </details>
-    </div>
-
-    <!-- Koordinator Cabang 6 -->
-    <div class="card">
-        <details class="koordinator">
-            <summary>Kompetisi Teknik Proses Karkas Ayam</summary>
-            <div class="koordinator-info">
-                <img src="gambar6.jpg" alt="Koordinator 6">
-                <h4>Nama Koordinator 6</h4>
-                <p>Asal Politeknik 6</p>
-            </div>
-        </details>
-    </div>
-
-    <!-- Koordinator Cabang 7 -->
-    <div class="card">
-        <details class="koordinator">
-            <summary>Kompetisi Teknik Pengambilan Sampel Darah Ayam</summary>
-            <div class="koordinator-info">
-                <img src="gambar7.jpg" alt="Koordinator 7">
-                <h4>Nama Koordinator 7</h4>
-                <p>Asal Politeknik 7</p>
-            </div>
-        </details>
-    </div>
-
-    <!-- Koordinator Cabang 8 -->
-    <div class="card">
-        <details class="koordinator">
-            <summary>Kompetisi Formulasi Pakan Ternak</summary>
-            <div class="koordinator-info">
-                <img src="gambar8.jpg" alt="Koordinator 8">
-                <h4>Nama Koordinator 8</h4>
-                <p>Asal Politeknik 8</p>
-            </div>
-        </details>
-    </div>
-
-    <!-- Koordinator Cabang 9 -->
-    <div class="card">
-        <details class="koordinator">
-            <summary>Kompetisi Formulasi Pakan Ikan</summary>
-            <div class="koordinator-info">
-                <img src="gambar9.jpg" alt="Koordinator 9">
-                <h4>Nama Koordinator 9</h4>
-                <p>Asal Politeknik 9</p>
-            </div>
-        </details>
-    </div>
-
-    <!-- Koordinator Cabang 10 -->
-    <div class="card">
-        <details class="koordinator">
-            <summary>Kompetisi Packing Benih Ikan</summary>
-            <div class="koordinator-info">
-                <img src="gambar10.jpg" alt="Koordinator 10">
-                <h4>Nama Koordinator 10</h4>
-                <p>Asal Politeknik 10</p>
-            </div>
-        </details>
-    </div>
-
-    <!-- Koordinator Cabang 11 -->
-    <div class="card">
-        <details class="koordinator">
-            <summary>Kompetisi Teknik Proses Fillet Ikan</summary>
-            <div class="koordinator-info">
-                <img src="gambar11.jpg" alt="Koordinator 11">
-                <h4>Nama Koordinator 11</h4>
-                <p>Asal Politeknik 11</p>
-            </div>
-        </details>
-    </div>
-
-    <!-- Koordinator Cabang 12 -->
-    <div class="card">
-        <details class="koordinator">
-            <summary>Kompetisi Teknik Pembuatan Bakso Ikan</summary>
-            <div class="koordinator-info">
-                <img src="gambar12.jpg" alt="Koordinator 12">
-                <h4>Nama Koordinator 12</h4>
-                <p>Asal Politeknik 12</p>
-            </div>
-        </details>
-    </div>
-
-    <!-- Koordinator Cabang 13 -->
-    <div class="card">
-        <details class="koordinator">
-            <summary>Kompetisi Survey Pemetaan Lahan</summary>
-            <div class="koordinator-info">
-                <img src="gambar13.jpg" alt="Koordinator 13">
-                <h4>Nama Koordinator 13</h4>
-                <p>Asal Politeknik 13</p>
-            </div>
-        </details>
-    </div>
-
-    <!-- Koordinator Cabang 14 -->
-    <div class="card">
-        <details class="koordinator">
-            <summary>Kompetisi Desain Alat dan Mesin Pertanian dengan <i>AutoCAD</i></summary>
-            <div class="koordinator-info">
-                <img src="gambar14.jpg" alt="Koordinator 14">
-                <h4>Nama Koordinator 14</h4>
-                <p>Asal Politeknik 14</p>
-            </div>
-        </details>
-    </div>
-
-    <!-- Koordinator Cabang 15 -->
-    <div class="card">
-        <details class="koordinator">
-            <summary>Kompetisi Penyuluhan Pertanian</summary>
-            <div class="koordinator-info">
-                <img src="gambar16.jpg" alt="Koordinator 16">
-                <h4>Nama Koordinator 16</h4>
-                <p>Asal Politeknik 16</p>
-            </div>
-        </details>
-    </div>
-
-    <!-- Koordinator Cabang 16 -->
-    <div class="card">
-        <details class="koordinator">
-            <summary>Kompetisi Eksibisi Fotografi</summary>
-            <div class="koordinator-info">
-                <img src="gambar15.jpg" alt="Koordinator 15">
-                <h4>Nama Koordinator 15</h4>
-                <p>Asal Politeknik 15</p>
-            </div>
-        </details>
-    </div>
-</div>
-
-
 
             <!-- jadwal -->
 
@@ -1539,7 +1655,38 @@
 </section>
 
 
+            <!-- Informasi Umum -->
+            <section class="section informasi" aria-label="kompetisi" id="informasi">
+                <div class="container">
+                    <h3 class="h2 section-title">INFORMASI UMUM</h3>
+                    <div class="row">
+                        <ol type="A">
+                            <li>
+                                <strong style="font-size:larger;">Fasilitas</strong>
+                                <p>
+                                Ini adalah fasilitas
+                                </p>
+                                <br>
+                            </li>
+                            <li>
+                                <strong style="font-size:larger;">Transportasi</strong>
+                                <p>
+                                Ini adalah transportasi
+                                </p>
+                                <br>
+                            </li>
+                            <li>
+                                <strong style="font-size:larger;">Penginapan</strong>
+                                <p>
+                                Ini adalah Penginapan
+                                </p>
+                                <br>
+                            </li>
+                        </ol>
+                    </div>
 
+                </div>
+            </section>
 
             <!-- gallery -->
 
@@ -1673,12 +1820,15 @@
 
                     <p class="footer-brand-text">
                                 <h3>Alamat</h3>
-                                <address>Jl. Soekarno Hatta No.10, Rajabasa Raya, Kec. Rajabasa, Kota Bandar Lampung, Lampung</address>
+                                <address>Kampus Politeknik Negeri Lampung – Gedung Akademik 
+                                <br>Jl. Soekarno-Hatta No. 10 Rajabasa Raya, Kec. Rajabasa, Kota Bandar Lampung, 
+                                <br>Provinsi Lampung – Kode Pos 35141 
+                                <br>Telepon (0721) 703995, Faximili (0721) 7873309</address>
                     </p>
 
                     <div class="wrapper">
                         <span class="span">Email:</span>
-                        <a href="mailto:aitecVILampung@gmail.com" class="footer-link">aitecVILampung@gmail.com</a>
+                        <a href="mailto:aitec-lampung@polinela.ac.id" class="footer-link">aitec-lampung@polinela.ac.id</a>
                     </div>
                 </div>
 
@@ -1688,23 +1838,23 @@
                     </li>
                         
                         <li>
-                        Mustika Adzania Lestari:<br><a href="tel:+6282182139595" class="contact">0821-8213-9595</a>
+                        Mustika Adzania Lestari (Acara dan Registrasi)<br><a href="tel:+6282182139595" class="contact">0821-8213-9595</a>
                         </li>
 
                         <li>
-                            Linuwih Aluh Prastiti:<br><a href="tel:+628127265550" class="contact">0812-7265-550</a>
+                        Linuwih Aluh Prastiti (Acara dan Registrasi)<br><a href="tel:+628127265550" class="contact">0812-7265-550</a>
                         </li>
 
                         <li>
-                            Enggar Dwi Cahyo:<br><a href="tel:+6285878948248" class="contact">0858-7894-8248</a>
+                        Enggar Dwi Cahyo (Akomodasi dan Transportasi)<br><a href="tel:+6285878948248" class="contact">0858-7894-8248</a>
                         </li>
 
                         <li>
-                            Intan Andya Bellapama:<br><a href="tel:+6282183153815" class="contact">0821-8315-3815</a>
+                        Intan Andya Bellapama (Akomodasi dan Transportasi)<br><a href="tel:+6282183153815" class="contact">0821-8315-3815</a>
                         </li>
 
                         <li>
-                            Surya Prasetya Trihatmaja:<br><a href="tel:+6282282200440" class="contact">0822-8220-0440</a>
+                        Panji Andhika Pratomo (IT)<br><a href="tel:+62823-7718-8127" class="contact">0823-7718-8127</a>
                         </li>
                 </div>
 
@@ -1712,9 +1862,9 @@
                     <p class="footer-list-title">Kunjungi kami</p>
                     <ul class="social-list">
                         <li>
-                            <a href="https://polinela.ac.id/" class="social-link">
+                            <a href="https://aitec-lampung.polinela.ac.id" class="social-link">
                                 <ion-icon name="globe-outline"></ion-icon>
-                                polinela.ac.id
+                                https://aitec-lampung.polinela.ac.id
                             </a>
                         </li>
                         <li>
