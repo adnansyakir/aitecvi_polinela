@@ -27,9 +27,6 @@
                 <li class="submenu-item <?= ($request->uri->getSegment(3) === 'perguruantinggi') ? 'active' : '' ?>">
                     <a href="/admin/master/perguruantinggi">Perguruan Tinggi</a>
                 </li>
-                <li class="submenu-item <?= ($request->uri->getSegment(3) === 'prodi') ? 'active' : '' ?>">
-                    <a href="/admin/master/prodi">Prodi</a>
-                </li>
                 <li class="submenu-item <?= ($request->uri->getSegment(3) === 'lomba') ? 'active' : '' ?>">
                     <a href="/admin/master/lomba">Cabang Perlombaan</a>
                 </li>
