@@ -27,7 +27,7 @@
                             </div>
 
                             <div class="col-lg-6 mb-3">
-                                <label class="form-label" for="kode_peserta">NIP/NIM</label>
+                                <label class="form-label" for="kode_peserta">NIM/NPM</label>
                                 <input type="text" class="form-control <?= isset($errors['kode_peserta']) ? 'is-invalid ' : ''; ?>" name="kode_peserta" id="kode_peserta" placeholder="NIP/NIM" value="<?= old('kode_peserta') ?>">
                                 <?php if (isset($errors['kode_peserta'])) : ?>
                                     <div class="invalid-feedback">
@@ -40,9 +40,8 @@
                                 <label class="form-label" for="status">Status</label>
                                 <select class="form-control <?= isset($errors['status']) ? 'is-invalid ' : ''; ?>" name="status" id="status">
                                     <option value="">Pilih Status</option>
-                                    <option value="1" <?= old('status')?>>Peserta (Mahasiswa)</option>
-                                    <option value="2" <?= old('status')?>>Pendamping (Manager)</option>
-                                    <option value="3" <?= old('status')?>>Pimpinan</option>
+                                    <option value="1" <?= old('status') ?>>Peserta (Mahasiswa)</option>
+
                                 </select>
                                 <?php if (isset($errors['status'])) : ?>
                                     <div class="invalid-feedback">
@@ -77,7 +76,13 @@
 
                             <div class="col-lg-6 mb-3">
                                 <label class="form-label" for="ukuran_kaos">Ukuran Kaos</label>
-                                <input type="text" class="form-control <?= isset($errors['ukuran_kaos']) ? 'is-invalid ' : ''; ?>" name="ukuran_kaos" id="ukuran_kaos" placeholder="S,M,L,XL,XXL" value="<?= old('ukuran_kaos') ?>">
+                                <input type="text"
+                                    class="form-control <?= isset($errors['ukuran_kaos']) ? 'is-invalid ' : ''; ?>"
+                                    name="ukuran_kaos"
+                                    id="ukuran_kaos"
+                                    placeholder="S,M,L,XL,XXL"
+                                    value="<?= old('ukuran_kaos') ?>"
+                                    oninput="this.value = this.value.toUpperCase()">
                                 <?php if (isset($errors['ukuran_kaos'])) : ?>
                                     <div class="invalid-feedback">
                                         <?= $errors['ukuran_kaos'] ?>

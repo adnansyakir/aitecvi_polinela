@@ -20,7 +20,7 @@
                         <tr>
                             <th>No</th>
                             <th>Nama Peserta</th>
-                            <th>NIM/NIP</th>
+                            <th>NIM/NPM</th>
                             <th>Nama Program Studi</th>
                             <th>Perguruan Tinggi</th>
                             <th>Status</th>

@@ -11,7 +11,11 @@ class PendampingPeserta extends BaseController
 {
     protected $ptModel;
     protected $prodiModel;
+    protected $session;
     protected $pesertaModel;
+    protected $validation;
+    protected $db;
+
     public function __construct()
     {
         $this->ptModel = new PtModel();
@@ -83,6 +87,7 @@ class PendampingPeserta extends BaseController
             'pt_id' => ['required' => 'Kolom Perguruan Tinggi Harus diisi'],
             'prodi' => ['required' => 'Kolom Program Studi Harus diisi'],
             'ktm' => [
+                'required' => 'Kolom file KTM harus diisi',
                 'max_size' => 'Ukuran file KTM tidak boleh lebih dari 5120 KB',
                 'ext_in' => 'Format file KTM harus PDF, DOC, DOCX, PNG',
             ],
@@ -172,7 +177,7 @@ class PendampingPeserta extends BaseController
             'pt_id' => 'required',
             'prodi' => 'required',
             'berita_acara' =>  'max_size[berita_acara,5120]|ext_in[berita_acara,pdf,doc,docx, png]',
-            'ktm' => 'max_size[ktm,5120]|ext_in[ktm,pdf,doc,docx,png]',
+            'ktm' => 'required','max_size[ktm,5120]|ext_in[ktm,pdf,doc,docx,png]',
             'foto' => 'max_size[foto,5120]|ext_in[foto,jpg,jpeg,png]',
             'no_wa' => 'required',
         ];
@@ -186,6 +191,7 @@ class PendampingPeserta extends BaseController
             'pt_id' => ['required' => 'Kolom Perguruan Tinggi Harus diisi'],
             'prodi' => ['required' => 'Kolom Program Studi Harus diisi'],
             'ktm' => [
+                'required' => 'Kolom file KTM harus diisi',
                 'max_size' => 'Ukuran file KTM tidak boleh lebih dari 5120 KB',
                 'ext_in' => 'Format file KTM harus PDF, DOC, DOCX, PNG',
             ],

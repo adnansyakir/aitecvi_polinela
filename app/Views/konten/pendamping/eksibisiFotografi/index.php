@@ -12,7 +12,7 @@
         <div class="col-md-9">
         <B><ul>
             <li> Lomba dilaksanakan secara luring (offline) di Politeknik Negeri Lampung.</li>
-            <li> ⁠Setiap Perguruan Tinggi hanya dapat mengirimkan <span style="color: red;">maksimal 2 orang atau 2 tim perwakilan.</span></li>
+            <li> ⁠Setiap Perguruan Tinggi hanya dapat mengirimkan <span style="color: red;">maksimal 2 orang.</span></li>
             <li> Setiap peserta <span style="color: red;">wajib</span> mengikuti Technical Meeting.</li>
         </ul></B>
         </div>
