@@ -22,11 +22,11 @@
                     <thead class="table-light">
                         <tr>
                             <th>No</th>
-                            <th>Nama Perguruan tinggi</th>
+                            <th>Nama Perguruan Tinggi</th>
                             <th>Nama Perlombaan</th>
-                            <th>Nama Team</th>
+                            <th>Nama Tim</th>
                             <th>Nama Peserta</th>
-                            <th>Proposal</th>
+                            <th>Judul Proposal</th>
                             <th>Keterangan</th>
                             <th class="text-center">Aksi</th>
                         </tr>

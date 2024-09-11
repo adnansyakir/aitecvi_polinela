@@ -21,11 +21,11 @@ class PendampingFinalisasi extends BaseController
     }
     public function finalisasi()
     {
-        $data = [
-            'finalisasi' =>$this->finalisasiModel->getAllfinalisasi(),
-        ];
+        // $data = [
+        //     'finalisasi' =>$this->finalisasiModel->getAllfinalisasi(),
+        // ];
         
-        echo view('konten/pendamping/finalisasi/index', $data);
+        echo view('konten/pendamping/finalisasi/index');
     }
 
     public function addFinalisasi()

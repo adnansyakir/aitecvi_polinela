@@ -44,7 +44,7 @@
                             </div>
 
                             <div class="col-lg-6 mb-3">
-                                <label class="form-label" for="nama_team">Nama Team</label>
+                                <label class="form-label" for="nama_team">Nama Tim</label>
                                 <input type="text" class="form-control <?= isset($errors['nama_team']) ? 'is-invalid ' : ''; ?>" name="nama_team" id="nama_team" value="<?= $video['nama_team'] ?>">
                                 <?php if (isset($errors['nama_team'])) : ?>
                                     <div class="invalid-feedback">

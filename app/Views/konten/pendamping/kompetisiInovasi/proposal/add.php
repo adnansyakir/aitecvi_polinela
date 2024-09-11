@@ -43,8 +43,8 @@
                                 <?php endif; ?>
                             </div>
                             <div class="col-lg-6 mb-3">
-                                <label class="form-label" for="nama_team">Nama Team</label>
-                                <input type="text" class="form-control <?= isset($errors['nama_team']) ? 'is-invalid ' : ''; ?>" name="nama_team" id="nama_team" placeholder="Nama team" value="<?= old('nama_team') ?>">
+                                <label class="form-label" for="nama_team">Nama Tim</label>
+                                <input type="text" class="form-control <?= isset($errors['nama_team']) ? 'is-invalid ' : ''; ?>" name="nama_team" id="nama_team" placeholder="Nama Tim" value="<?= old('nama_team') ?>">
                                 <?php if (isset($errors['nama_team'])) : ?>
                                     <div class="invalid-feedback">
                                         <?= $errors['nama_team'] ?>
@@ -53,13 +53,13 @@
                             </div>
                             <div class="col-lg-6 mb-3">
                                 <label class="form-label" for="proposal">Proposal</label>
-                                <input type="text" class="form-control <?= isset($errors['proposal']) ? 'is-invalid ' : ''; ?>" name="proposal" id="proposal" placeholder="Nama team" value="<?= old('proposal') ?>">
+                                <input type="text" class="form-control <?= isset($errors['proposal']) ? 'is-invalid ' : ''; ?>" name="proposal" id="proposal" placeholder="Judul Proposal" value="<?= old('proposal') ?>">
                                 <?php if (isset($errors['proposal'])) : ?>
                                     <div class="invalid-feedback">
                                         <?= $errors['proposal'] ?>
                                     </div>
                                 <?php endif; ?>
-                                <p style="font-weight: bold;">Masukkan link drive proposal.</p>
+                                <p style="font-weight: bold;">Cantumkan link drive proposal.</p>
                             </div>
 
                             <div class="col-lg-6 mb-3">
@@ -78,7 +78,7 @@
                                 </div>
                                 <button type="button" class="btn btn-outline-primary add-peserta">Tambah Peserta</button>
                             </div>
-                            <p style="font-weight: bold;">Tambahakan seluruh peserta dalam Team.</p>
+                            <p style="font-weight: bold;">Tambahkan seluruh peserta dalam Tim.</p>
                             <div class="col-lg-12 mt-4">
                                 <button class="btn btn-primary">Simpan</button>
                             </div>

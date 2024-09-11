@@ -17,7 +17,7 @@
 
                         <div class="row">
                             <div class="col-lg-6 mb-3">
-                                <label class="form-label" for="nama_peserta">Nama peserta</label>
+                                <label class="form-label" for="nama_peserta">Nama Lengkap</label>
                                 <input type="text" class="form-control <?= isset($errors['nama_peserta']) ? 'is-invalid ' : ''; ?>" name="nama_peserta" id="nama_peserta" placeholder="Nama Peserta" value="<?= old('nama_peserta') ?>">
                                 <?php if (isset($errors['nama_peserta'])) : ?>
                                     <div class="invalid-feedback">
@@ -37,6 +37,21 @@
                             </div>
 
                             <div class="col-lg-6 mb-3">
+                                <label class="form-label" for="status">Status</label>
+                                <select class="form-control <?= isset($errors['status']) ? 'is-invalid ' : ''; ?>" name="status" id="status">
+                                    <option value="">Pilih Status</option>
+                                    <option value="1" <?= old('status')?>>Peserta (Mahasiswa)</option>
+                                    <option value="2" <?= old('status')?>>Pendamping (Manager)</option>
+                                    <option value="3" <?= old('status')?>>Pimpinan</option>
+                                </select>
+                                <?php if (isset($errors['status'])) : ?>
+                                    <div class="invalid-feedback">
+                                        <?= $errors['status'] ?>
+                                    </div>
+                                <?php endif; ?>
+                            </div>
+
+                            <div class="col-lg-6 mb-3">
                                 <label class="form-label" for="no_wa">No Whatsapp</label>
                                 <input type="text" class="form-control <?= isset($errors['no_wa']) ? 'is-invalid ' : ''; ?>" name="no_wa" id="no_wa" placeholder="No Whatsapp" value="<?= old('no_wa') ?>">
                                 <?php if (isset($errors['no_wa'])) : ?>
@@ -46,20 +61,23 @@
                                 <?php endif; ?>
                             </div>
 
-
                             <div class="col-lg-6 mb-3">
-                                <label class="form-label" for="email">email</label>
-                                <input type="text" class="form-control <?= isset($errors['email']) ? 'is-invalid ' : ''; ?>" name="email" id="email" placeholder="email@example.com" value="<?= old('email') ?>">
-                                <?php if (isset($errors['email'])) : ?>
+                                <label class="form-label" for="jk">Jenis Kelamin</label>
+                                <select class="form-control <?= isset($errors['jk']) ? 'is-invalid ' : ''; ?>" name="jk" id="jk">
+                                    <option value="">Pilih Jenis Kelamin</option>
+                                    <option value="1" <?= old('jk') ?>>Perempuan</option>
+                                    <option value="2" <?= old('jk') ?>>Laki-laki</option>
+                                </select>
+                                <?php if (isset($errors['jk'])) : ?>
                                     <div class="invalid-feedback">
-                                        <?= $errors['email'] ?>
+                                        <?= $errors['jk'] ?>
                                     </div>
                                 <?php endif; ?>
                             </div>
 
                             <div class="col-lg-6 mb-3">
                                 <label class="form-label" for="ukuran_kaos">Ukuran Kaos</label>
-                                <input type="text" class="form-control <?= isset($errors['ukuran_kaos']) ? 'is-invalid ' : ''; ?>" name="ukuran_kaos" id="ukuran_kaos" placeholder="XL, M, L, S" value="<?= old('ukuran_kaos') ?>">
+                                <input type="text" class="form-control <?= isset($errors['ukuran_kaos']) ? 'is-invalid ' : ''; ?>" name="ukuran_kaos" id="ukuran_kaos" placeholder="S,M,L,XL,XXL" value="<?= old('ukuran_kaos') ?>">
                                 <?php if (isset($errors['ukuran_kaos'])) : ?>
                                     <div class="invalid-feedback">
                                         <?= $errors['ukuran_kaos'] ?>
@@ -89,17 +107,6 @@
                                 </select>
                             </div>
 
-
-
-                            <div class="col-lg-6 mb-3">
-                                <label for="berita_acara" class="form-label">Berita Acara</label>
-                                <input class="form-control <?= isset($errors['berita_acara']) ? 'is-invalid ' : ''; ?>" type="file" name="berita_acara" id="formFile" value="<?= old('berita_acara') ?>" />
-                                <?php if (isset($errors['berita_acara'])) : ?>
-                                    <div class="invalid-feedback">
-                                        <?= $errors['berita_acara'] ?>
-                                    </div>
-                                <?php endif; ?>
-                            </div>
                             <div class="col-lg-6 mb-3">
                                 <label for="foto" class="form-label">Foto Peserta</label>
                                 <input class="form-control <?= isset($errors['foto']) ? 'is-invalid ' : ''; ?>" type="file" name="foto" id="formFile" value="<?= old('foto') ?>" />
@@ -119,18 +126,25 @@
                                     </div>
                                 <?php endif; ?>
                             </div>
-
+                            <div class="col-lg-6 mb-3">
+                                <label for="berita_acara" class="form-label">Berita Acara Hasil Seleksi Internal</label>
+                                <input class="form-control <?= isset($errors['berita_acara']) ? 'is-invalid ' : ''; ?>" type="file" name="berita_acara" id="formFile" value="<?= old('berita_acara') ?>" />
+                                <?php if (isset($errors['berita_acara'])) : ?>
+                                    <div class="invalid-feedback">
+                                        <?= $errors['berita_acara'] ?>
+                                    </div>
+                                <?php endif; ?>
+                                <p style="font-weight: bold;">File BA cukup satu kali upload.</p>
+                            </div>
                             <div class="col-lg-12 mt-4">
                                 <button class="btn btn-primary">Simpan</button>
                             </div>
                         </div>
+                    </form>
                 </div>
-
-                </form>
             </div>
         </div>
     </div>
-</div>
 </div>
 
 <?= $this->endSection() ?>

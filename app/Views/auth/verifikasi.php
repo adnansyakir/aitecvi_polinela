@@ -27,6 +27,6 @@
     <h1>Halo, <?= esc($username); ?>!</h1>
     <p>Terima kasih telah mendaftar.</p>
     <p>Akun Anda sedang dalam proses verifikasi oleh admin.</p>
-    <p>Anda akan menerima email pemberitahuan ketika akun Anda sudah aktif.</p>
+    <p>Anda akan menerima e-mail pemberitahuan ketika akun Anda sudah aktif.</p>
 </body>
 </html>

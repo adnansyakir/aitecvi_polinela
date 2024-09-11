@@ -7,7 +7,7 @@
         <div class="card">
             <div class="row">
                 <div class="col-lg-6">
-                    <h5 class="card-header">Tambah Data Daring</h5>
+                    <h5 class="card-header">Daftar Peserta Kontes Vokasi (Luring)</h5>
                 </div>
                 <div class="col-lg-6 text-end">
                     <a href="/pendamping/pendaftaran/kontesVokasi/luring" class="btn btn-dark me-3 mt-3"><i class='bx bx-arrow-back'></i> Kembali</a>

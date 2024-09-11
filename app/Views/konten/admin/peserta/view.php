@@ -21,7 +21,7 @@
                             <th>No</th>
                             <th>Nama Peserta</th>
                             <th>Nomor Wa</th>
-                            <th>Email</th>
+                            <th>Jenis Kelamin</th>
                             <th>Ukuran Kaos</th>
                             <th>Berita Acara</th>
                             <th>KTM</th>
@@ -34,7 +34,15 @@
                             <td>1</td> <!-- Karena hanya satu peserta, No nya langsung 1 -->
                             <td><?= $peserta['nama_peserta']; ?></td>
                             <td><?= $peserta['no_wa']; ?></td>
-                            <td><?= $peserta['email']; ?></td>
+                            <td>
+                                    <?php
+                                    if ($peserta['jk'] == 1) {
+                                        echo '<span>Perempuan</span>';
+                                    } else if ($peserta['jk'] == 2) {
+                                        echo '<span>Laki-Laki</span>';
+                                    }
+                                    ?>
+                                </td>
                             <td><?= $peserta['ukuran_kaos']; ?></td>
                             <td><a href="/uploads/berita_acara/<?= $peserta['berita_acara']; ?>"><i class="bi bi-file-earmark-text"></i></a></td>
                             <td><a href="/uploads/ktm/<?= $peserta['ktm']; ?>"><i class="bi bi-card-heading"></i></a></td>

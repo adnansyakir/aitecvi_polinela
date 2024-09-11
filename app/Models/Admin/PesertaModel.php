@@ -8,7 +8,7 @@ class PesertaModel extends Model
 {
     protected $table      = 'peserta';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['id', 'kode_peserta', 'nama_peserta', 'no_wa','ktm','berita_acara','prodi','pt_id','foto','email','ukuran_kaos'];
+    protected $allowedFields = ['id', 'kode_peserta', 'nama_peserta', 'status','no_wa','ktm','berita_acara','prodi','pt_id','foto','jk','ukuran_kaos'];
 
     
 

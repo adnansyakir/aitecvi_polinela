@@ -4,7 +4,7 @@
 <div class="card">
     <div class="card-header">
         <div class="col-md-6">
-            <h2 class="card-title"><span style="color: red;">Informasi Kontes Vokasil Luring untuk 7 Lomba </span></h2>
+            <h2 class="card-title"><span style="color: red;">Informasi Kontes Vokasi Luring untuk 7 Lomba </span></h2>
         </div>
     
     <div class="col-md-7">
@@ -25,7 +25,7 @@
     <div class="card-header">
         <div class="row">
             <div class="col-md-6">
-                <h4 class="card-title">Upload Data Luring</h4>
+                <h4 class="card-title">Daftar Peserta Kontes Vokasi (Luring)</h4>
 
             </div>
             <div class="col-md-6 text-end">
@@ -40,7 +40,7 @@
                     <thead class="table-light">
                         <tr>
                             <th>No</th>
-                            <th>Nama Perguruan tinggi</th>
+                            <th>Nama Perguruan Tinggi</th>
                             <th>Nama Perlombaan</th>
                             <th>Nama Peserta</th>
                             <th>Keterangan</th>

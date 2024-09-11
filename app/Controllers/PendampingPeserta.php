@@ -63,7 +63,8 @@ class PendampingPeserta extends BaseController
         $validationRules = [
             'nama_peserta' => 'required',
             'kode_peserta' => 'required',
-            'email' => 'required',
+            'status' => 'required',
+            'jk' => 'required',
             'ukuran_kaos' => 'required',
             'pt_id' => 'required',
             'prodi' => 'required',
@@ -76,7 +77,8 @@ class PendampingPeserta extends BaseController
         $validationMessages = [
             'nama_peserta' => ['required' => 'Kolom Nama Peserta Harus diisi'],
             'kode_peserta' => ['required' => 'Kolom Kode Peserta Harus diisi'],
-            'email' => ['required' => 'Kolom email peserta Harus diisi'],
+            'status' => ['required' => 'Kolom status peserta Harus diisi'],
+            'jk' => ['required' => 'Kolom jenis kelamin peserta Harus diisi'],
             'ukuran_kaos' => ['required' => 'ukuran kaos peserta'],
             'pt_id' => ['required' => 'Kolom Perguruan Tinggi Harus diisi'],
             'prodi' => ['required' => 'Kolom Program Studi Harus diisi'],
@@ -109,8 +111,9 @@ class PendampingPeserta extends BaseController
             'kode_peserta' => $this->request->getPost('kode_peserta'),
             'pt_id' => $this->request->getPost('pt_id'),
             'prodi' => $this->request->getPost('prodi'),
-            'email' => $this->request->getPost('email'),
-            'ukuran_kaos' => $this->request->getPost('ukuran_kaos'),
+            'status' => $this->request->getPost('status'),
+            'jk' => $this->request->getPost('jk'),
+            'ukuran_kaos' => strtoupper($this->request->getPost('ukuran_kaos')),
             'no_wa' => $this->request->getPost('no_wa'),
         ];
 
@@ -163,7 +166,8 @@ class PendampingPeserta extends BaseController
         $validationRules = [
             'nama_peserta' => 'required',
             'kode_peserta' => 'required',
-            'email' => 'required',
+            'status' => 'required',
+            'jk' => 'required',
             'ukuran_kaos' => 'required',
             'pt_id' => 'required',
             'prodi' => 'required',
@@ -176,7 +180,8 @@ class PendampingPeserta extends BaseController
         $validationMessages = [
             'nama_peserta' => ['required' => 'Kolom Nama Peserta Harus diisi'],
             'kode_peserta' => ['required' => 'Kolom Kode Peserta Harus diisi'],
-            'email' => ['required' => 'Kolom email peserta Harus diisi'],
+            'status' => ['required' => 'Kolom status peserta Harus diisi'],
+            'jk' => ['required' => 'Kolom jenis kelamin peserta Harus diisi'],
             'ukuran_kaos' => ['required' => 'ukuran kaos peserta'],
             'pt_id' => ['required' => 'Kolom Perguruan Tinggi Harus diisi'],
             'prodi' => ['required' => 'Kolom Program Studi Harus diisi'],
@@ -209,8 +214,9 @@ class PendampingPeserta extends BaseController
             'kode_peserta' => $this->request->getPost('kode_peserta'),
             'pt_id' => $this->request->getPost('pt_id'),
             'prodi' => $this->request->getPost('prodi'),
-            'email' => $this->request->getPost('email'),
-            'ukuran_kaos' => $this->request->getPost('ukuran_kaos'),
+            'status' => $this->request->getPost('status'),
+            'jk' => $this->request->getPost('jk'),
+            'ukuran_kaos' => strtoupper($this->request->getPost('ukuran_kaos')),
             'no_wa' => $this->request->getPost('no_wa'),
         ];
 

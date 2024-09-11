@@ -54,6 +54,7 @@ class PendampingkontesVokasiDaring extends BaseController
 
     public function addKontesVokasiDaringPost()
     {
+        $KntsDaringLuring = new KntsDaringLuringModel();
         // Define validation rules
         $validationRules = [
             'pt_id' => 'required|is_not_unique[pt.id]',
@@ -81,7 +82,21 @@ class PendampingkontesVokasiDaring extends BaseController
             return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
         }
 
-        $KntsDaringLuring = new KntsDaringLuringModel();
+        $pt_id = $this->request->getPost('pt_id');
+        $cabang_perlombaan_id = $this->request->getPost('cabang_perlombaan_id');
+
+        // Check if this PT has already registered two participants for this category
+        if (in_array($cabang_perlombaan_id, [7,37,3026,430003,430004,4300006])) {
+            $existingRegistrations = $KntsDaringLuring->where('pt_id', $pt_id)
+                ->where('cabang_perlombaan_id', $cabang_perlombaan_id)
+                ->countAllResults();
+
+            if ($existingRegistrations >= 4) {
+                return redirect()->back()->withInput()->with('error', 'Maaf, Anda telah Memenuhi Kuota Maksimal pada Cabang Perlombaan ini.');
+            }
+        }
+
+        
         $data = [
             'pt_id' => $this->request->getPost('pt_id'),
             'cabang_perlombaan_id' => $this->request->getPost('cabang_perlombaan_id'),
@@ -91,7 +106,7 @@ class PendampingkontesVokasiDaring extends BaseController
         ];
 
         if ($KntsDaringLuring->insertData($data)) {
-            return redirect()->to('/pendamping/pendaftaran/kontesVokasi/daring/daring')->with('success', 'Data berhasil disimpan!');
+            return redirect()->to('/pendamping/pendaftaran/kontesVokasi/daring')->with('success', 'Data berhasil disimpan!');
         } else {
             return redirect()->back()->withInput()->with('error', 'Gagal menyimpan data!');
         }
@@ -119,6 +134,7 @@ class PendampingkontesVokasiDaring extends BaseController
 
     public function editKontesVokasiDaringPost($id)
     {
+        $KntsDaringLuring = new KntsDaringLuringModel();
         // Define validation rules
         $validationRules = [
             'pt_id' => 'required|is_not_unique[pt.id]',
@@ -146,7 +162,19 @@ class PendampingkontesVokasiDaring extends BaseController
             return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
         }
 
-        $KntsDaringLuring = new KntsDaringLuringModel();
+        $pt_id = $this->request->getPost('pt_id');
+        $cabang_perlombaan_id = $this->request->getPost('cabang_perlombaan_id');
+
+        // Check if this PT has already registered two participants for this category
+        if (in_array($cabang_perlombaan_id, [7,37,3026,430003,430004,4300006])) {
+            $existingRegistrations = $KntsDaringLuring->where('pt_id', $pt_id)
+                ->where('cabang_perlombaan_id', $cabang_perlombaan_id)
+                ->countAllResults();
+
+            if ($existingRegistrations >= 4) {
+                return redirect()->back()->withInput()->with('error', 'Maaf, Anda telah Memenuhi Kuota Maksimal pada Cabang Perlombaan ini.');
+            }
+        }
         $data = [
             'pt_id' => $this->request->getPost('pt_id'),
             'cabang_perlombaan_id' => $this->request->getPost('cabang_perlombaan_id'),
@@ -155,39 +183,12 @@ class PendampingkontesVokasiDaring extends BaseController
         ];
 
         if ($KntsDaringLuring->update($id, $data)) {
-            return redirect()->to('/pendamping/pendaftaran/kontesVokasi/daring/daring')->with('success', 'Data berhasil disimpan!');
+            return redirect()->to('/pendamping/pendaftaran/kontesVokasi/daring')->with('success', 'Data berhasil disimpan!');
         } else {
         }
     }
 
-    public function updateStatus($keterangan, $id)
-    {
-        $data = [
-            'keterangan' => $keterangan
-        ];
-
-        if ($this->KntsDaringLuring->update($id, $data)) {
-            $user = $this->KntsDaringLuring->find($id);
-            $userEmail = $user['id'];
-
-            $KntsDaringLuring = $this->KntsDaringLuring->where('id', $userEmail)->first();
-
-            if ($KntsDaringLuring) {
-                $KntsDaringLuringData = ['keterangan' => $keterangan];
-                $this->KntsDaringLuring->update($KntsDaringLuring['id'], $KntsDaringLuringData);
-            }
-
-            if ($keterangan == 1) {
-                $this->session->setFlashdata('success', 'Pengguna berhasil diaktifkan.');
-            } else {
-                $this->session->setFlashdata('success', 'Pengguna berhasil dinonaktifkan.');
-            }
-        } else {
-            $this->session->setFlashdata('error', 'Gagal memperbarui keterangan pengguna.');
-        }
-
-        return redirect()->to('/pendamping/pendaftaran/kontesVokasi/daring/daring');
-    }
+   
     public function deleteKontesVokasiDaring($id)
     {
         // Check if the record exists
@@ -195,9 +196,9 @@ class PendampingkontesVokasiDaring extends BaseController
         if ($KntsDaringLuring) {
             // Delete the record
             $this->KntsDaringLuring->deleteById($id);
-            return redirect()->to('/pendamping/pendaftaran/kontesVokasi/daring/daring')->with('danger', 'deleted successfully');
+            return redirect()->to('/pendamping/pendaftaran/kontesVokasi/daring')->with('danger', 'deleted successfully');
         } else {
-            return redirect()->to('/pendamping/pendaftaran/kontesVokasi/daring/daring')->with('status', 'Record not found');
+            return redirect()->to('/pendamping/pendaftaran/kontesVokasi/daring')->with('status', 'Record not found');
         }
     }
     // Kontes Vokasi Daring Luring

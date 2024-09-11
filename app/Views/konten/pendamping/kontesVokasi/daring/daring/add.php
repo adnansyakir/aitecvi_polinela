@@ -7,7 +7,7 @@
         <div class="card">
             <div class="row">
                 <div class="col-lg-6">
-                    <h5 class="card-header">Tambah Data Daring</h5>
+                    <h5 class="card-header">Tambah Data Peserta Kontes Vokasi (Daring)</h5>
                 </div>
                 <div class="col-lg-6 text-end">
                     <a href="/pendamping/pendaftaran/kontesVokasi/daring" class="btn btn-dark me-3 mt-3"><i class='bx bx-arrow-back'></i> Kembali</a>
@@ -17,7 +17,7 @@
                         <?= csrf_field() ?>
                         <div class="row">
 
-                        <div class="col-lg-6 mb-3">
+                            <div class="col-lg-6 mb-3">
                                 <label class="form-label" for="nama_pt">Perguruan Tinggi</label>
                                 <select class="form-control" name="pt_id" id="nama_pt" readonly>
                                     <?php foreach ($pt as $pts) : ?>

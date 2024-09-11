@@ -39,7 +39,7 @@
     <div class="card-header">
         <div class="row">
             <div class="col-md-6">
-                <h4 class="card-title">Upload Data Daring</h4>
+                <h4 class="card-title">Daftar Peserta Kontes Vokasi (Daring)</h4>
             </div>
             <div class="col-md-6 text-end">
                 <a href="/pendamping/pendaftaran/kontesVokasi/daring/add" class="btn btn-primary btn-sm"> Tambah Data</a>
@@ -53,7 +53,7 @@
                     <thead class="table-light">
                         <tr>
                             <th>No</th>
-                            <th>Nama Perguruan tinggi</th>
+                            <th>Nama Perguruan Tinggi</th>
                             <th>Nama Perlombaan</th>
                             <th>Nama Peserta</th>
                             <th>Keterangan</th>

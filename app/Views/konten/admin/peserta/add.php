@@ -17,7 +17,7 @@
 
                         <div class="row">
                             <div class="col-lg-6 mb-3">
-                                <label class="form-label" for="nama_peserta">Nama peserta</label>
+                                <label class="form-label" for="nama_peserta">Nama Lengkap</label>
                                 <input type="text" class="form-control <?= isset($errors['nama_peserta']) ? 'is-invalid ' : ''; ?>" name="nama_peserta" id="nama_peserta" placeholder="Nama Peserta" value="<?= old('nama_peserta') ?>">
                                 <?php if (isset($errors['nama_peserta'])) : ?>
                                     <div class="invalid-feedback">
@@ -25,7 +25,7 @@
                                     </div>
                                 <?php endif; ?>
                             </div>
-                        
+
                             <div class="col-lg-6 mb-3">
                                 <label class="form-label" for="kode_peserta">NIP/NIM</label>
                                 <input type="text" class="form-control <?= isset($errors['kode_peserta']) ? 'is-invalid ' : ''; ?>" name="kode_peserta" id="kode_peserta" placeholder="NIP/NIM" value="<?= old('kode_peserta') ?>">
@@ -35,7 +35,22 @@
                                     </div>
                                 <?php endif; ?>
                             </div>
-                       
+
+                            <div class="col-lg-6 mb-3">
+                                <label class="form-label" for="status">Status</label>
+                                <select class="form-control <?= isset($errors['status']) ? 'is-invalid ' : ''; ?>" name="status" id="status">
+                                    <option value="">Pilih Status</option>
+                                    <option value="1" <?= old('status')?>>Peserta (Mahasiswa)</option>
+                                    <option value="2" <?= old('status')?>>Pendamping (Manager)</option>
+                                    <option value="3" <?= old('status')?>>Pimpinan</option>
+                                </select>
+                                <?php if (isset($errors['status'])) : ?>
+                                    <div class="invalid-feedback">
+                                        <?= $errors['status'] ?>
+                                    </div>
+                                <?php endif; ?>
+                            </div>
+
                             <div class="col-lg-6 mb-3">
                                 <label class="form-label" for="no_wa">No Whatsapp</label>
                                 <input type="text" class="form-control <?= isset($errors['no_wa']) ? 'is-invalid ' : ''; ?>" name="no_wa" id="no_wa" placeholder="No Whatsapp" value="<?= old('no_wa') ?>">
@@ -46,17 +61,20 @@
                                 <?php endif; ?>
                             </div>
 
-                           
                             <div class="col-lg-6 mb-3">
-                                <label class="form-label" for="email">email</label>
-                                <input type="text" class="form-control <?= isset($errors['email']) ? 'is-invalid ' : ''; ?>" name="email" id="email" placeholder="email@example.com" value="<?= old('email') ?>">
-                                <?php if (isset($errors['email'])) : ?>
+                                <label class="form-label" for="jk">Jenis Kelamin</label>
+                                <select class="form-control <?= isset($errors['jk']) ? 'is-invalid ' : ''; ?>" name="jk" id="jk">
+                                    <option value="">Pilih Jenis Kelamin</option>
+                                    <option value="1" <?= old('jk') ?>>Perempuan</option>
+                                    <option value="2" <?= old('jk') ?>>Laki-laki</option>
+                                </select>
+                                <?php if (isset($errors['jk'])) : ?>
                                     <div class="invalid-feedback">
-                                        <?= $errors['email'] ?>
+                                        <?= $errors['jk'] ?>
                                     </div>
                                 <?php endif; ?>
                             </div>
-                            
+
                             <div class="col-lg-6 mb-3">
                                 <label class="form-label" for="ukuran_kaos">Ukuran Kaos</label>
                                 <input type="text" class="form-control <?= isset($errors['ukuran_kaos']) ? 'is-invalid ' : ''; ?>" name="ukuran_kaos" id="ukuran_kaos" placeholder="S,M,L,XL,XXL" value="<?= old('ukuran_kaos') ?>">
@@ -77,12 +95,13 @@
                                 <?php endif; ?>
                             </div>
 
+
                             <div class="col-lg-6 mb-3">
-                                <label class="form-label" for="pt_id">Perguruan Tinggi</label>
-                                <select name="pt_id" id="pt_id" class="form-control <?= isset($errors['pt_id']) ? 'is-invalid ' : ''; ?>">
-                                    <option value="">Pilih..</option>
-                                    <?php foreach ($pt as $j) : ?>
-                                        <option value="<?= $j['id'] ?>"><?= $j['nama_pt'] ?></option>
+                                <label class="form-label" for="nama_pt">Perguruan Tinggi</label>
+                                <select class="form-control <?= isset($errors['pt_id']) ? 'is-invalid ' : ''; ?>" name="pt_id" id="nama_pt">
+                                    <option value="" disabled selected>Pilih Perguruan Tinggi</option>
+                                    <?php foreach ($pt as $pts) : ?>
+                                        <option value="<?= $pts['id'] ?>" <?= old('pt_id') == $pts['id'] ? 'selected' : '' ?>><?= $pts['nama_pt'] ?></option>
                                     <?php endforeach; ?>
                                 </select>
                                 <?php if (isset($errors['pt_id'])) : ?>
@@ -92,17 +111,6 @@
                                 <?php endif; ?>
                             </div>
 
-                            
-
-                            <div class="col-lg-6 mb-3">
-                                <label for="berita_acara" class="form-label">Berita Acara</label>
-                                <input class="form-control <?= isset($errors['berita_acara']) ? 'is-invalid ' : ''; ?>" type="file" name="berita_acara" id="formFile" value="<?= old('berita_acara') ?>" />
-                                <?php if (isset($errors['berita_acara'])) : ?>
-                                    <div class="invalid-feedback">
-                                        <?= $errors['berita_acara'] ?>
-                                    </div>
-                                <?php endif; ?>
-                            </div>
                             <div class="col-lg-6 mb-3">
                                 <label for="foto" class="form-label">Foto Peserta</label>
                                 <input class="form-control <?= isset($errors['foto']) ? 'is-invalid ' : ''; ?>" type="file" name="foto" id="formFile" value="<?= old('foto') ?>" />
@@ -122,10 +130,18 @@
                                     </div>
                                 <?php endif; ?>
                             </div>
-
+                            <div class="col-lg-6 mb-3">
+                                <label for="berita_acara" class="form-label">Berita Acara Hasil Seleksi Internal</label>
+                                <input class="form-control <?= isset($errors['berita_acara']) ? 'is-invalid ' : ''; ?>" type="file" name="berita_acara" id="formFile" value="<?= old('berita_acara') ?>" />
+                                <?php if (isset($errors['berita_acara'])) : ?>
+                                    <div class="invalid-feedback">
+                                        <?= $errors['berita_acara'] ?>
+                                    </div>
+                                <?php endif; ?>
+                                <p style="font-weight: bold;">File BA cukup satu kali upload.</p>
+                            </div>
                             <div class="col-lg-12 mt-4">
                                 <button class="btn btn-primary">Simpan</button>
-                            </div>
                             </div>
                         </div>
 

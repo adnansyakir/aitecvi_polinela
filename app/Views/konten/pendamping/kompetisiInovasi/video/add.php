@@ -47,9 +47,9 @@
 
                             <!-- Dropdown Nama Team dari Proposal -->
                             <div class="col-lg-6 mb-3">
-                                <label class="form-label" for="nama_team">Nama Team</label>
+                                <label class="form-label" for="nama_team">Nama Tim</label>
                                 <select class="form-control <?= isset($errors['nama_team']) ? 'is-invalid ' : ''; ?>" name="nama_team" id="nama_team">
-                                    <option value="" disabled selected>Pilih Nama Team</option>
+                                    <option value="" disabled selected>Pilih Nama Tim</option>
                                     <?php foreach ($proposal as $team) : ?>
                                         <option value="<?= $team['nama_team'] ?>" <?= old('nama_team') == $team['nama_team'] ? 'selected' : '' ?>><?= $team['nama_team'] ?></option>
                                     <?php endforeach; ?>
@@ -71,7 +71,7 @@
                                         <?= $errors['video'] ?>
                                     </div>
                                 <?php endif; ?>
-                                <p style="font-weight: bold;">Masukkan link video dari drive.</p>
+                                <p style="font-weight: bold;">Cantumkan link drive video.</p>
                             </div>
 
                             <div class="col-lg-12 mt-4">

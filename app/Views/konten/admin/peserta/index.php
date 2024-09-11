@@ -23,7 +23,7 @@
                             <th>NIM/NIP</th>
                             <th>Nama Program Studi</th>
                             <th>Perguruan Tinggi</th>
-                            <th>Nomor Wa</th>
+                            <th>Status</th>
                             <th class="text-center">Aksi</th>
                         </tr>
                     </thead>
@@ -36,7 +36,17 @@
                                 <td><?= $row['kode_peserta']; ?></td>
                                 <td><?= $row['prodi']; ?></td>
                                 <td><?= $row['nama_pt']; ?></td>
-                                <td><?= $row['no_wa']; ?></td>
+                                <td>
+                                    <?php
+                                    if ($row['status'] == 1) {
+                                        echo '<span>Peserta(Mahasiswa)</span>';
+                                    } else if ($row['status'] == 2) {
+                                        echo '<span>Pendamping(Manager)</span>';
+                                    } else if ($row['status'] == 3) {
+                                        echo '<span>Pimpinan</span>';
+                                    }
+                                    ?>
+                                </td>
                                 <td>
                                     <a href="/admin/peserta/view/<?= $row['id']; ?>" class="btn btn-sm btn-info"><i class='bi bi-eye'></i></a>
                                     <a href="/admin/peserta/edit/<?= $row['id']; ?>" class="btn btn-success btn-sm"><i class="bi bi-pencil-square"></i></a>
