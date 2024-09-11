@@ -72,7 +72,7 @@
                     <li class="navbar-item">
                         <a href="#" class="navbar-link" data-nav-link>Kepanitiaan &#x25BC;</a>
                         <div class="dropdown-content">
-                            <a href="#panitia">Panitia Pelaksana</a>
+                            <a href="#kepanitiaan">Panitia Pelaksana</a>
                             <a href="#kordinator">Koordinator Lomba</a>
                             <a href="#juri">Juri</a>
                         </div>
