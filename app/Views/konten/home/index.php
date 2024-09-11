@@ -880,7 +880,7 @@
                     <div class="container">
 
                         <div class="section-header">
-                            <h2 class="h2 section-title">KORDINATOR AITeC VI</h2>
+                            <h2 class="h2 section-title">KOORDINATOR AITeC VI</h2>
                         </div>
 
                         <div class="cabang-koordinator">
@@ -911,7 +911,7 @@
                     <!-- Koordinator Cabang 3 -->
                     <div class="card">
                         <details class="koordinator">
-                            <summary>Kontes Teknik Okulasi Tanaman </summary>
+                            <summary>Teknik Okulasi Tanaman </summary>
                             <div class="koordinator-info">
                                 <img src="gambar3.jpg" alt="Koordinator 3">
                                 <h4>Nama Koordinator 3</h4>
@@ -923,7 +923,7 @@
                     <!-- Koordinator Cabang 4 -->
                     <div class="card">
                         <details class="koordinator">
-                            <summary>Kontes Sortasi Biji Kopi</summary>
+                            <summary>Sortasi Biji Kopi</summary>
                             <div class="koordinator-info">
                                 <img src="gambar4.jpg" alt="Koordinator 4">
                                 <h4>Nama Koordinator 4</h4>
@@ -935,7 +935,7 @@
                     <!-- Koordinator Cabang 5 -->
                     <div class="card">
                         <details class="koordinator">
-                            <summary>Kontes <i>Handling</i> Ternak</summary>
+                            <summary><i>Handling</i> Ternak</summary>
                             <div class="koordinator-info">
                                 <img src="gambar5.jpg" alt="Koordinator 5">
                                 <h4>Nama Koordinator 5</h4>
@@ -947,7 +947,7 @@
                     <!-- Koordinator Cabang 6 -->
                     <div class="card">
                         <details class="koordinator">
-                            <summary>Kontes Teknik Proses Karkas Ayam</summary>
+                            <summary>Teknik Proses Karkas Ayam</summary>
                             <div class="koordinator-info">
                                 <img src="gambar6.jpg" alt="Koordinator 6">
                                 <h4>Nama Koordinator 6</h4>
@@ -959,7 +959,7 @@
                     <!-- Koordinator Cabang 7 -->
                     <div class="card">
                         <details class="koordinator">
-                            <summary>Kontes Teknik Pengambilan Sampel Darah Ayam</summary>
+                            <summary>Teknik Pengambilan Sampel Darah Ayam</summary>
                             <div class="koordinator-info">
                                 <img src="gambar7.jpg" alt="Koordinator 7">
                                 <h4>Nama Koordinator 7</h4>
@@ -971,7 +971,7 @@
                     <!-- Koordinator Cabang 8 -->
                     <div class="card">
                         <details class="koordinator">
-                            <summary>Kontes Formulasi Pakan Ternak</summary>
+                            <summary>Formulasi Pakan Ternak</summary>
                             <div class="koordinator-info">
                                 <img src="gambar8.jpg" alt="Koordinator 8">
                                 <h4>Nama Koordinator 8</h4>
@@ -983,7 +983,7 @@
                     <!-- Koordinator Cabang 9 -->
                     <div class="card">
                         <details class="koordinator">
-                            <summary>Kontes Formulasi Pakan Ikan</summary>
+                            <summary>Formulasi Pakan Ikan</summary>
                             <div class="koordinator-info">
                                 <img src="gambar9.jpg" alt="Koordinator 9">
                                 <h4>Nama Koordinator 9</h4>
@@ -995,7 +995,7 @@
                     <!-- Koordinator Cabang 10 -->
                     <div class="card">
                         <details class="koordinator">
-                            <summary>Kontes Packing Benih Ikan</summary>
+                            <summary>Packing Benih Ikan</summary>
                             <div class="koordinator-info">
                                 <img src="gambar10.jpg" alt="Koordinator 10">
                                 <h4>Nama Koordinator 10</h4>
@@ -1007,7 +1007,7 @@
                     <!-- Koordinator Cabang 11 -->
                     <div class="card">
                         <details class="koordinator">
-                            <summary>Kontes Teknik Proses Fillet Ikan</summary>
+                            <summary>Teknik Proses Fillet Ikan</summary>
                             <div class="koordinator-info">
                                 <img src="gambar11.jpg" alt="Koordinator 11">
                                 <h4>Nama Koordinator 11</h4>
@@ -1019,7 +1019,7 @@
                     <!-- Koordinator Cabang 12 -->
                     <div class="card">
                         <details class="koordinator">
-                            <summary>Kontes Teknik Pembuatan Bakso Ikan</summary>
+                            <summary>Teknik Pembuatan Bakso Ikan</summary>
                             <div class="koordinator-info">
                                 <img src="gambar12.jpg" alt="Koordinator 12">
                                 <h4>Nama Koordinator 12</h4>
@@ -1031,7 +1031,7 @@
                     <!-- Koordinator Cabang 13 -->
                     <div class="card">
                         <details class="koordinator">
-                            <summary>Kontes Survey Pemetaan Lahan</summary>
+                            <summary>Survey Pemetaan Lahan</summary>
                             <div class="koordinator-info">
                                 <img src="gambar13.jpg" alt="Koordinator 13">
                                 <h4>Nama Koordinator 13</h4>
@@ -1043,7 +1043,7 @@
                     <!-- Koordinator Cabang 14 -->
                     <div class="card">
                         <details class="koordinator">
-                            <summary>Kontes Desain Alat dan Mesin Pertanian dengan <i>AutoCAD</i></summary>
+                            <summary>Desain Alat dan Mesin Pertanian dengan <i>AutoCAD</i></summary>
                             <div class="koordinator-info">
                                 <img src="gambar14.jpg" alt="Koordinator 14">
                                 <h4>Nama Koordinator 14</h4>
@@ -1055,7 +1055,7 @@
                     <!-- Koordinator Cabang 15 -->
                     <div class="card">
                         <details class="koordinator">
-                            <summary>Kontes Penyuluhan Pertanian</summary>
+                            <summary>Penyuluhan Pertanian</summary>
                             <div class="koordinator-info">
                                 <img src="gambar16.jpg" alt="Koordinator 16">
                                 <h4>Nama Koordinator 16</h4>
@@ -1136,7 +1136,7 @@
 
                         <!-- Cabang 3 -->
                         <details class="cabang">
-                            <summary class="cabang-title">Kontes Vokasi Bidang Pertanian Teknik Okulasi Tanaman </summary>
+                            <summary class="cabang-title">Teknik Okulasi Tanaman </summary>
                             <div class="juri-list">
                                 <div class="juri-item">
                                     <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
@@ -1158,7 +1158,7 @@
 
                         <!-- Cabang 4 -->
                         <details class="cabang">
-                            <summary class="cabang-title">Kontes Vokasi Bidang Pertanian Sortasi biji Kopi</summary>
+                            <summary class="cabang-title">Sortasi biji Kopi</summary>
                             <div class="juri-list">
                                 <div class="juri-item">
                                     <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
@@ -1180,7 +1180,7 @@
 
                         <!-- Cabang 5 -->
                         <details class="cabang">
-                            <summary class="cabang-title">Kontes Vokasi Bidang Pertanian <I>Handling</I> Ternak</summary>
+                            <summary class="cabang-title"><I>Handling</I> Ternak</summary>
                             <div class="juri-list">
                                 <div class="juri-item">
                                     <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
@@ -1202,7 +1202,7 @@
 
                         <!-- Cabang 6 -->
                         <details class="cabang">
-                            <summary class="cabang-title">Kontes Vokasi Bidang Pertanian Teknik Proses Karkas Ayam</summary>
+                            <summary class="cabang-title">Teknik Proses Karkas Ayam</summary>
                             <div class="juri-list">
                                 <div class="juri-item">
                                     <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
@@ -1224,7 +1224,7 @@
 
                         <!-- Cabang 7 -->
                         <details class="cabang">
-                            <summary class="cabang-title">Kontes Vokasi Bidang Pertanian Teknik Pengambilan Sampel Darah Ayam</summary>
+                            <summary class="cabang-title">Teknik Pengambilan Sampel Darah Ayam</summary>
                             <div class="juri-list">
                                 <div class="juri-item">
                                     <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
@@ -1246,7 +1246,7 @@
 
                         <!-- Cabang 8 -->
                         <details class="cabang">
-                            <summary class="cabang-title">Kontes Vokasi Bidang Pertanian Formulasi Pakan Ternak</summary>
+                            <summary class="cabang-title">Formulasi Pakan Ternak</summary>
                             <div class="juri-list">
                                 <div class="juri-item">
                                     <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
@@ -1268,7 +1268,7 @@
 
                         <!-- Cabang 9 -->
                         <details class="cabang">
-                            <summary class="cabang-title">Kontes Vokasi Bidang Pertanian Formulasi Pakan Ikan</summary>
+                            <summary class="cabang-title">Formulasi Pakan Ikan</summary>
                             <div class="juri-list">
                                 <div class="juri-item">
                                     <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
@@ -1290,7 +1290,7 @@
 
                         <!-- Cabang 10 -->
                         <details class="cabang">
-                            <summary class="cabang-title">Kontes Vokasi Bidang Pertanian <I>Packing</I> benih ikan</summary>
+                            <summary class="cabang-title"><I>Packing</I> benih ikan</summary>
                             <div class="juri-list">
                                 <div class="juri-item">
                                     <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
@@ -1312,7 +1312,7 @@
 
                         <!-- Cabang 11 -->
                         <details class="cabang">
-                            <summary class="cabang-title">Kontes Vokasi Bidang Pertanian <I>Fillet</I> Ikan</summary>
+                            <summary class="cabang-title"><I>Fillet</I> Ikan</summary>
                             <div class="juri-list">
                                 <div class="juri-item">
                                     <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
@@ -1336,7 +1336,7 @@
 
                         <!-- Cabang 12 -->
                         <details class="cabang">
-                            <summary class="cabang-title">Kontes Vokasi Bidang Pertanian Teknik Pembuatan Bakso Ikan</summary>
+                            <summary class="cabang-title">Teknik Pembuatan Bakso Ikan</summary>
                             <div class="juri-list">
                                 <div class="juri-item">
                                     <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
@@ -1358,7 +1358,7 @@
 
                         <!-- Cabang 13 -->
                         <details class="cabang">
-                            <summary class="cabang-title">Kontes Vokasi Bidang Pertanian Survey Pemetaan Lahan</summary>
+                            <summary class="cabang-title">Survey Pemetaan Lahan</summary>
                             <div class="juri-list">
                                 <div class="juri-item">
                                     <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
@@ -1381,7 +1381,7 @@
 
                         <!-- Cabang 14 -->
                         <details class="cabang">
-                            <summary class="cabang-title">Kontes Vokasi Bidang Pertanian Desain Alat <i>Autocad</i></summary>
+                            <summary class="cabang-title">Desain Alat <i>Autocad</i></summary>
                             <div class="juri-list">
                                 <div class="juri-item">
                                     <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
@@ -1405,7 +1405,7 @@
 
                         <!-- Cabang 15 -->
                         <details class="cabang">
-                            <summary class="cabang-title">Kontes Vokasi Bidang Pertanian Penyuluhan Pertanian</summary>
+                            <summary class="cabang-title">Penyuluhan Pertanian</summary>
                             <div class="juri-list">
                                 <div class="juri-item">
                                     <img src="path/to/juri4.jpg" alt="Juri 4" class="juri-img">
@@ -1842,7 +1842,7 @@
                         </li>
 
                         <li>
-                        Linuwih Aluh Prastiti (Acara dan Registrasi)<br><a href="tel:+628127265550" class="contact">0812-7265-550</a>
+                        Linuwih Aluh Prastiti <br>(Acara dan Registrasi)<br><a href="tel:+628127265550" class="contact">0812-7265-550</a>
                         </li>
 
                         <li>
@@ -1870,13 +1870,19 @@
                         <li>
                             <a href="https://www.youtube.com/@politekniknegerilampung9459" class="social-link">
                                 <ion-icon name="logo-youtube"></ion-icon>
-                                politeknik negeri lampung
+                                Politeknik Negeri Lampung
                             </a>
                         </li>
                         <li>
                             <a href="https://www.instagram.com/politeknik_negeri_lampung/" class="social-link">
                                 <ion-icon name="logo-instagram"></ion-icon>
-                                politeknik negeri lampung
+                                Politeknik Negeri Lampung
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/aitec6polinela?igsh=MWdpMTVtc25ub2Zubw==" class="social-link">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                                AITeC VI POLINELA
                             </a>
                         </li>
                     </ul>
@@ -1886,7 +1892,7 @@
 
         <div class="footer-bottom">
             <div class="container">
-                <p class="copyright"><?= date('Y'); ?> &copy; AiteC VI <a href="polinela" class="copyright-link">Politeknik Negeri Lampung</a></p>
+                <p class="copyright"><?= date('Y'); ?> &copy; AIteC VI <a href="polinela" class="copyright-link">Politeknik Negeri Lampung</a></p>
             </div>
         </div>
  </footer>
