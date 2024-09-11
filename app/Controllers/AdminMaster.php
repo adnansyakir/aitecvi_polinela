@@ -419,11 +419,11 @@ class AdminMaster extends BaseController
     {
         $data['peserta'] = $this->pesertaModel->getPesertaById($id);
 
-    if (empty($data['peserta'])) {
-        throw new \CodeIgniter\Exceptions\PageNotFoundException('Peserta dengan ID ' . $id . ' tidak ditemukan.');
-    }
+        if (empty($data['peserta'])) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Peserta dengan ID ' . $id . ' tidak ditemukan.');
+        }
 
-    return view('konten/admin/peserta/view', $data);
+        return view('konten/admin/peserta/view', $data);
     }
 
     public function addPeserta()
@@ -451,7 +451,8 @@ class AdminMaster extends BaseController
             'pt_id' => 'required',
             'prodi' => 'required',
             'berita_acara' =>  'max_size[berita_acara,5120]|ext_in[berita_acara,pdf,doc,docx, png]',
-            'ktm' => 'max_size[ktm,5120]|ext_in[ktm,pdf,doc,docx,png]',
+            'ktm' => 'required',
+            'max_size[ktm,5120]|ext_in[ktm,pdf,doc,docx,png]',
             'foto' => 'max_size[foto,5120]|ext_in[foto,jpg,jpeg,png]',
             'no_wa' => 'required',
         ];
@@ -465,6 +466,7 @@ class AdminMaster extends BaseController
             'pt_id' => ['required' => 'Kolom Perguruan Tinggi Harus diisi'],
             'prodi' => ['required' => 'Kolom Program Studi Harus diisi'],
             'ktm' => [
+                'required' => 'Kolom file KTM harus diisi',
                 'max_size' => 'Ukuran file KTM tidak boleh lebih dari 5120 KB',
                 'ext_in' => 'Format file KTM harus PDF, DOC, DOCX, PNG',
             ],
@@ -522,11 +524,10 @@ class AdminMaster extends BaseController
             $KTM->move(FCPATH . '/uploads/ktm', $namaKTM);
             $data['ktm'] = $namaKTM;
         }
-        
+
         $this->pesertaModel->insert($data);
         session()->setFlashdata('primary', 'Data berhasil disimpan.');
         return redirect()->to('admin/peserta');
-        
     }
 
 
@@ -554,7 +555,8 @@ class AdminMaster extends BaseController
             'pt_id' => 'required',
             'prodi' => 'required',
             'berita_acara' =>  'max_size[berita_acara,5120]|ext_in[berita_acara,pdf,doc,docx, png]',
-            'ktm' => 'max_size[ktm,5120]|ext_in[ktm,pdf,doc,docx,png]',
+            'ktm' => 'required',
+            'max_size[ktm,5120]|ext_in[ktm,pdf,doc,docx,png]',
             'foto' => 'max_size[foto,5120]|ext_in[foto,jpg,jpeg,png]',
             'no_wa' => 'required',
         ];
@@ -568,6 +570,7 @@ class AdminMaster extends BaseController
             'pt_id' => ['required' => 'Kolom Perguruan Tinggi Harus diisi'],
             'prodi' => ['required' => 'Kolom Program Studi Harus diisi'],
             'ktm' => [
+                'required' => 'Kolom file KTM harus diisi',
                 'max_size' => 'Ukuran file KTM tidak boleh lebih dari 5120 KB',
                 'ext_in' => 'Format file KTM harus PDF, DOC, DOCX, PNG',
             ],
