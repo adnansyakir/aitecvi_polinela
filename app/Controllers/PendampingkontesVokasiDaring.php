@@ -165,35 +165,31 @@ class PendampingkontesVokasiDaring extends BaseController
         $pt_id = $this->request->getPost('pt_id');
         $cabang_perlombaan_id = $this->request->getPost('cabang_perlombaan_id');
 
-<<<<<<< HEAD
-        
-        if (in_array($cabang_perlombaan_id, [3,4,5,6,7,8])) {
-=======
-        // Check if this PT has already registered two participants for this category
+
         if (in_array($cabang_perlombaan_id, [3, 4, 5, 6, 7, 8])) {
->>>>>>> 5a93b2f3f58278af504a474b94ab347506d7bdc9
-            $existingRegistrations = $KntsDaringLuring->where('pt_id', $pt_id)
-                ->where('cabang_perlombaan_id', $cabang_perlombaan_id)
-                ->countAllResults();
-            // dd($existingRegistrations);
-            if ($existingRegistrations >= 4) {
-                return redirect()->back()->withInput()->with('error', 'Maaf, Anda telah Memenuhi Kuota Maksimal pada Cabang Perlombaan ini.');
+            // Check if this PT has already registered two participants for this category
+            if (in_array($cabang_perlombaan_id, [3, 4, 5, 6, 7, 8])) {
+                $existingRegistrations = $KntsDaringLuring->where('pt_id', $pt_id)
+                    ->where('cabang_perlombaan_id', $cabang_perlombaan_id)
+                    ->countAllResults();
+                // dd($existingRegistrations);
+                if ($existingRegistrations >= 4) {
+                    return redirect()->back()->withInput()->with('error', 'Maaf, Anda telah Memenuhi Kuota Maksimal pada Cabang Perlombaan ini.');
+                }
+            }
+            $data = [
+                'pt_id' => $this->request->getPost('pt_id'),
+                'cabang_perlombaan_id' => $this->request->getPost('cabang_perlombaan_id'),
+                'keterangan' => 2,
+                'peserta_id' => $this->request->getPost('peserta_id') // Convert array to comma-separated string
+            ];
+
+            if ($KntsDaringLuring->update($id, $data)) {
+                return redirect()->to('/pendamping/pendaftaran/kontesVokasi/daring')->with('success', 'Data berhasil disimpan!');
+            } else {
             }
         }
-        $data = [
-            'pt_id' => $this->request->getPost('pt_id'),
-            'cabang_perlombaan_id' => $this->request->getPost('cabang_perlombaan_id'),
-            'keterangan' => 2,
-            'peserta_id' => $this->request->getPost('peserta_id') // Convert array to comma-separated string
-        ];
-
-        if ($KntsDaringLuring->update($id, $data)) {
-            return redirect()->to('/pendamping/pendaftaran/kontesVokasi/daring')->with('success', 'Data berhasil disimpan!');
-        } else {
-        }
     }
-
-
     public function deleteKontesVokasiDaring($id)
     {
         // Check if the record exists
