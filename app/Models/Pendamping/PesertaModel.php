@@ -8,7 +8,7 @@ class PesertaModel extends Model
 {
     protected $table      = 'peserta';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['id', 'kode_peserta', 'nama_peserta', 'no_wa', 'ktm', 'berita_acara', 'prodi', 'pt_id', 'foto', 'email', 'ukuran_kaos'];
+    protected $allowedFields = ['id', 'kode_peserta', 'nama_peserta', 'no_wa', 'jk', 'ktm', 'berita_acara', 'prodi', 'pt_id', 'foto', 'status', 'ukuran_kaos'];
 
     public function getPesertaWithdPt($pt_id)
     {
@@ -58,7 +58,7 @@ class PesertaModel extends Model
     public function pesertabyjoinsemua($pt_id)
     {
         return $this->select('peserta.*, pt.nama_pt')
-            ->join('pt', 'peserta.pt_id = pt.id')// Join dengan tabel proposal berdasarkan nama_team
+            ->join('pt', 'peserta.pt_id = pt.id') // Join dengan tabel proposal berdasarkan nama_team
             ->where('peserta.pt_id', $pt_id) // Filter based on pt_id from session
             ->get()
             ->getResultArray();
