@@ -24,8 +24,8 @@
         </div>
     <div class="col-md-7">
         <B><ul>
-            <li>Handling Ternak,</li>
-            <li>Survey Pemetaan Lahan</li>
+        <ol>1. Handling Ternak</ol>            
+        <ol>2. Survey Pemetaan Lahan</ol>
         </ul></B>
     </div>
     </div>

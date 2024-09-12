@@ -21,19 +21,6 @@
 <div class="card">
     <div class="card-header">
         <div class="col-md-6">
-
-            <h2 class="card-title"><span style="color: blue;">Informasi Kontes Vokasi Luring (Individu)</span></h2>
-        </div>
-    <div class="col-md-7">
-        <B><ul>
-            
-            <li> Desain Alat dan Mesin Pertanian dengan AutoCAD</li>
-            <li>Teknik Pengambilan Sampel Darah Ayam</li>
-            <li> Packing Benih Ikan</li>
-            <li>Sortasi Biji Kopi</li>
-            <li> Teknik Pembuatan Bakso Ikan</li>
-            
-
             <h2 class="card-title"><span style="color: blue;"> Daftar Cabang Lomba dengan Pelaksanaan Luring (Individu)</span></h2>
         </div>
     <div class="col-md-7">
