@@ -90,7 +90,7 @@ class PendampingkontesVokasiLuring extends BaseController
         $cabang_perlombaan_id = $this->request->getPost('cabang_perlombaan_id');
 
         // Check if this PT has already registered two participants for this category
-        if (in_array($cabang_perlombaan_id, [9, 10, 11, 12, 13, 14, 15])) {
+        if (in_array($cabang_perlombaan_id, [9, 11, 12, 13, 15])) {
             $existingRegistrations = $KntsLuring->where('pt_id', $pt_id)
                 ->where('cabang_perlombaan_id', $cabang_perlombaan_id)
                 ->countAllResults();
@@ -168,14 +168,21 @@ class PendampingkontesVokasiLuring extends BaseController
         $pt_id = $this->request->getPost('pt_id');
         $cabang_perlombaan_id = $this->request->getPost('cabang_perlombaan_id');
 
-        // Check if this PT has already registered two participants for this category
-        if (in_array($cabang_perlombaan_id, [9, 10, 11, 12, 13, 14, 15])) {
-            $existingRegistrations = $KntsLuring->where('pt_id', $pt_id)
-                ->where('cabang_perlombaan_id', $cabang_perlombaan_id)
-                ->countAllResults();
-            // dd($existingRegistrations);
-            if ($existingRegistrations >= 2) {
-                return redirect()->back()->withInput()->with('error', 'Maaf, Anda telah Memenuhi Kuota Maksimal pada Cabang Perlombaan ini.');
+        // Ambil data kontes yang sedang di-edit
+        $existingData = $KntsLuring->find($id);
+
+        // Cek apakah cabang perlombaan diubah
+        if ($existingData['cabang_perlombaan_id'] != $cabang_perlombaan_id) {
+            // Jika cabang perlombaan diubah, lakukan pengecekan kuota
+            if (in_array($cabang_perlombaan_id, [9, 11, 12, 13, 15])) {
+                // Check if this PT has already registered four participants for this category
+                $existingRegistrations = $KntsLuring->where('pt_id', $pt_id)
+                    ->where('cabang_perlombaan_id', $cabang_perlombaan_id)
+                    ->countAllResults();
+
+                if ($existingRegistrations >= 2) {
+                    return redirect()->back()->withInput()->with('error', 'Maaf, Anda telah Memenuhi Kuota Maksimal pada Cabang Perlombaan ini.');
+                }
             }
         }
         $data = [
@@ -279,12 +286,14 @@ class PendampingkontesVokasiLuring extends BaseController
 
     public function addKontesVokasiLuringTimPost()
     {
+        $LuringTim = new KntsLuringModel();
+
         // Define validation rules
         $validationRules = [
             'pt_id' => 'required|is_not_unique[pt.id]',
             'cabang_perlombaan_id' => 'required|is_not_unique[cabang_perlombaan.id]',
             'nama_team' => 'required|min_length[3]|max_length[255]',
-          
+
             'peserta_id' => 'required|permit_empty',
         ];
 
@@ -302,12 +311,24 @@ class PendampingkontesVokasiLuring extends BaseController
                 'min_length' => 'Nama tim harus terdiri dari minimal 3 karakter.',
                 'max_length' => 'Nama tim tidak boleh lebih dari 255 karakter.',
             ],
-          
+
             'peserta_id' => [
                 'required' => 'Peserta harus dipilih.',
             ],
         ];
+        $pt_id = $this->request->getPost('pt_id');
+        $cabang_perlombaan_id = $this->request->getPost('cabang_perlombaan_id');
 
+        // Check if this PT has already registered two participants for this category
+        if (in_array($cabang_perlombaan_id, [10, 14])) {
+            $existingRegistrations = $LuringTim->where('pt_id', $pt_id)
+                ->where('cabang_perlombaan_id', $cabang_perlombaan_id)
+                ->countAllResults();
+
+            if ($existingRegistrations >= 2) {
+                return redirect()->back()->withInput()->with('error', 'Maaf, Anda telah Memenuhi Kuota Maksimal pada Cabang Perlombaan ini.');
+            }
+        }
         // Validate input
         if (!$this->validate($validationRules, $validationMessages)) {
             // Validation failed, redirect back with input and validation errors
@@ -359,7 +380,7 @@ class PendampingkontesVokasiLuring extends BaseController
             'pt_id' => 'required|is_not_unique[pt.id]',
             'cabang_perlombaan_id' => 'required|is_not_unique[cabang_perlombaan.id]',
             'nama_team' => 'required|min_length[3]|max_length[255]',
-           
+
             'peserta_id' => 'required|permit_empty',
         ];
 
@@ -377,7 +398,7 @@ class PendampingkontesVokasiLuring extends BaseController
                 'min_length' => 'Nama tim harus terdiri dari minimal 3 karakter.',
                 'max_length' => 'Nama tim tidak boleh lebih dari 255 karakter.',
             ],
-            
+
             'peserta_id' => [
                 'required' => 'Peserta harus dipilih.',
             ],
@@ -390,6 +411,26 @@ class PendampingkontesVokasiLuring extends BaseController
         }
 
         $proposalModel = new LuringTimModel();
+        $pt_id = $this->request->getPost('pt_id');
+        $cabang_perlombaan_id = $this->request->getPost('cabang_perlombaan_id');
+
+        // Ambil data kontes yang sedang di-edit
+        $existingData = $proposalModel->find($id);
+
+        // Cek apakah cabang perlombaan diubah
+        if ($existingData['cabang_perlombaan_id'] != $cabang_perlombaan_id) {
+            // Jika cabang perlombaan diubah, lakukan pengecekan kuota
+            if (in_array($cabang_perlombaan_id, [10, 14])) {
+                // Check if this PT has already registered four participants for this category
+                $existingRegistrations = $proposalModel->where('pt_id', $pt_id)
+                    ->where('cabang_perlombaan_id', $cabang_perlombaan_id)
+                    ->countAllResults();
+
+                if ($existingRegistrations >= 2) {
+                    return redirect()->back()->withInput()->with('error', 'Maaf, Anda telah Memenuhi Kuota Maksimal pada Cabang Perlombaan ini.');
+                }
+            }
+        }
         $data = [
             'pt_id' => $this->request->getPost('pt_id'),
             'cabang_perlombaan_id' => $this->request->getPost('cabang_perlombaan_id'),
