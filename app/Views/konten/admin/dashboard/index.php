@@ -58,7 +58,19 @@
             </div>
         </div>
     </div>
-
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex align-items-center">
+                    <i class="bi bi-building fs-1 mb-4 me-5"></i> <!-- Ganti dengan icon building -->
+                    <div class="mb-0">
+                        <h3 class="mb-0"><?= $pt ?></h3>
+                        <span>Jumlah Perguruan Tinggi</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="col-md-3">
         <div class="card">
             <div class="card-body">
@@ -73,6 +85,7 @@
         </div>
     </div>
 </div>
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

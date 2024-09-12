@@ -2,32 +2,34 @@
 
 namespace App\Controllers;
 
-use App\Models\Admin\PendampingModel;
-use App\Models\Admin\PesertaModel;
+use App\Models\Pendamping\PendampingModel;
+use App\Models\Pendamping\PesertaModel;
 use App\Models\Admin\CabangLombaModel;
 use App\Models\Admin\PtModel;
 
-class Dashboard extends BaseController
+
+class PendampingDashboard extends BaseController
 {
     public function index(): string
     {
+        $ptId = session()->get('pt_id');
         $pendampingModel = new PendampingModel();
         $pesertaModel = new PesertaModel();
         $cabangLombaModel = new CabangLombaModel();
         $ptModel = new PtModel();
 
         $jumlahCabangKompetisi = count($cabangLombaModel->findAll());
-        $jumlahPendamping = count($pendampingModel->findAll());
-        $jumlahPeserta = count($pesertaModel->findAll());
-        $ptModel = count($ptModel->findAll());
+        $jumlahPendamping = count($pendampingModel->pendampingbyPt($ptId));
+        $jumlahPeserta = count($pesertaModel->pesertabyjoinsemua($ptId));
+        $pt = count($ptModel->findAll());
 
         $data = [
             'jumlahCabangKompetisi' => $jumlahCabangKompetisi,
             'jumlahPendamping' => $jumlahPendamping,
             'jumlahPeserta' => $jumlahPeserta,
-            'pt' => $ptModel,
+            'pt' => $pt,
         ];
 
-        return view('konten/admin/dashboard/index', $data);
+        return view('konten/pendamping/dashboard/index', $data);
     }
 }

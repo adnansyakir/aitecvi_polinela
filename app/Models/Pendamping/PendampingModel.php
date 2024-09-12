@@ -14,10 +14,14 @@ class PendampingModel extends Model
     {
         return $this->findAll();
     }
-    public function pendampingbyPt()
+    public function pendampingbyPt($ptId)
     {
+        // Get pt_id from session
+        
         return $this->select('pendamping.*,  pt.nama_pt')
             ->join('pt', 'pendamping.pt_id = pt.id')
+            ->where('pendamping.pt_id', $ptId) // Filter based on pt_id
+            ->distinct() // Ensure no duplicate data
             ->get()
             ->getResultArray();
     }

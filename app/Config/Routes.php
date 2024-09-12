@@ -213,7 +213,7 @@ $routes->group('juri', ['filter' => 'authenticate'], function ($routes) {
 });
 
 $routes->group('pendamping', ['filter' => 'authenticate'], function ($routes) {
-    $routes->get('dashboard', 'Dashboard::index', ['filter' => 'authenticate']);
+    $routes->get('dashboard', 'PendampingDashboard::index', ['filter' => 'authenticate']);
 
     $routes->get('user', 'PendampingProfil::index');
     $routes->post('user/change-password', 'PendampingProfil::changePassword');
