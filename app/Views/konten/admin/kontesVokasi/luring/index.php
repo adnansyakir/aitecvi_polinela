@@ -3,14 +3,14 @@
 <?= $this->section('content') ?>
 <div class="card">
     <div class="card-header">
-        <div class="col-md-10">
+        <div class="col-md-3">
             <h4 class="card-title"><span style="color: red;">Informasi Penting</span></h4>
         </div>
     
-        <div class="col-md-10">
+        <div class="col-md-11">
         <B><ul>
             <li> Lomba dilaksanakan secara luring (offline) di Politeknik Negeri Lampung.</li>
-            <li> ⁠Setiap Perguruan Tinggi hanya dapat mengirimkan <span style="color: red;">maksimal 2 orang.</span></li>
+            <li> ⁠Setiap Perguruan Tinggi hanya dapat mengirimkan <span style="color: red;">2 orang (kategori lomba individu) </span>sebagai perwakilan.</li>
             <li>Setiap peserta <span style="color: red;">wajib</span> mengikuti Technical Meeting.</li>
         </ul></B>
         </div>
@@ -19,23 +19,21 @@
 
 <div class="card">
     <div class="card-header">
-        <div class="col-md-10">
-            <h2 class="card-title"><span style="color: blue;">Informasi Kontes Vokasi Luring untuk 7 Lomba </span></h2>
+        <div class="col-md-6">
+            <h2 class="card-title"><span style="color: blue;"> Daftar Cabang Lomba dengan Pelaksanaan Luring            </span></h2>
         </div>
-    
     <div class="col-md-7">
         <B><ul>
-            <li>Handling Ternak,</li>
-            <li> Desain Alat dan Mesin Pertanian dengan AutoCAD</li>
-            <li>Teknik Pengambilan Sampel Darah Ayam</li>
-            <li> Packing Benih Ikan</li>
-            <li>Sortasi Biji Kopi</li>
-            <li> Teknik Pembuatan Bakso Ikan</li>
-            <li> Survey Pemetaan Lahan</li>
+            <ol>1. Sortasi Biji Kopi (Individu)            </ol>            
+            <ol>2. Teknik Proses Pengambilan Sampel Darah Ayam (Individu)            </ol>
+            <ol>3. Packing Benih Ikan (Individu)            </ol>
+            <ol>4. Teknik Pembuatan Bakso Ikan (Individu) </ol>
+            <ol>5. Desain Alat dan Mesin Pertanian dengan AutoCaD (Individu)/ol>
         </ul></B>
     </div>
     </div>
 </div>
+
 
 <div class="card">
     <div class="card-header">

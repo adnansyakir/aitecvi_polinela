@@ -18,24 +18,23 @@
                 </ul>
             </B>
         </div>
-        <div class="col-md-3">
-            <h4 class="card-title"><span style="color: green;">Cabang Lomba</span></h4>
+        <div class="col-md-9">
+            <h4 class="card-title"><span style="color: green;">Daftar Cabang Lomba dengan Seleksi Online (Daring)            </span></h4>
         </div>
         <div class="col-md-7">
             <B>
                 <ul>
-                    <li>Formulasi Pakan Ternak</li>
-                    <li>Teknik Proses Fillet Ikan</li>
-                    <li>Formulasi Pakan Ikan</li>
-                    <li>Teknik Proses Karkas Ayam</li>
-                    <li>Teknik Okulasi Tanaman</li>
-                    <li>Penyuluhan Pertanian</li>
+                    <ul>1. Teknik Okulasi Tanaman (Individu)</ul>
+                    <ul>2. Teknik Proses Karkas Ayam (Individu)</ul>
+                    <ul>3. Formulasi Pakan Ternak (Individu)</ul>
+                    <ul>4. Formulasi Pakan Ikan (Individu)</ul>
+                    <ul>5. Teknik Proses Fillet Ikan (Individu)</ul>
+                    <ul>6. Penyuluhah Pertanian (Individu)</ul>
                 </ul>
             </B>
         </div>
     </div>
 </div>
-
 <div class="card">
     <div class="card-header">
         <div class="row">
