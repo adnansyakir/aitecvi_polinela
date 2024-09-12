@@ -67,8 +67,8 @@ class PesertaModel extends Model
     public function pesertabyjoinsemuaid($peserta_id)
     {
         $builder = $this->db->table('peserta');
-        $builder->select('peserta.*, prodi.nama_prodi, pt.nama_pt');
-        $builder->join('prodi', 'peserta.prodi_id = prodi.id', 'left');
+        $builder->select('peserta.*, pt.nama_pt');
+        
         $builder->join('pt', 'peserta.pt_id = pt.id', 'left');
         $builder->where('peserta.id', $peserta_id);
 

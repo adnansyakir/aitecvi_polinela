@@ -53,7 +53,7 @@ class PendampingPeserta extends BaseController
         $data = [
             'peserta' => $this->pesertaModel->getAllpeserta(),
             'pt' => $this->ptModel->getAllPt(),
-            'prodi' => $this->prodiModel->getAllProdi(),
+            
 
             'errors' => session('errors'), // Add validation errors to data
         ];
@@ -159,7 +159,7 @@ class PendampingPeserta extends BaseController
         $data = [
             'peserta' => $this->pesertaModel->getPeserta($id),
             'pt' => $this->ptModel->getAllPt(),
-            'prodi' => $this->prodiModel->getAllProdi(),
+            
 
             'errors' => session('errors'), // Add validation errors to data
         ];

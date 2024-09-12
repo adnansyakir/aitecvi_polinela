@@ -7,13 +7,13 @@
         <div class="card">
             <div class="row">
                 <div class="col-lg-6">
-                    <h5 class="card-header">Daftar Peserta Kontes Vokasi (Luring)</h5>
+                    <h5 class="card-header">Daftar Peserta Kontes Vokasi Luring (Individu)</h5>
                 </div>
                 <div class="col-lg-6 text-end">
-                    <a href="/pendamping/pendaftaran/kontesVokasi/luring" class="btn btn-dark me-3 mt-3"><i class='bx bx-arrow-back'></i> Kembali</a>
+                    <a href="/pendamping/pendaftaran/kontesVokasi/luring/individu" class="btn btn-dark me-3 mt-3"><i class='bx bx-arrow-back'></i> Kembali</a>
                 </div>
                 <div class="col-lg-12 p-5">
-                    <form method="POST" action="/pendamping/pendaftaran/kontesVokasi/luring/add">
+                    <form method="POST" action="/pendamping/pendaftaran/kontesVokasi/luring/individuadd">
                         <?= csrf_field() ?>
                         <div class="row">
 

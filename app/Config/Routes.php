@@ -228,8 +228,7 @@ $routes->group('pendamping', ['filter' => 'authenticate'], function ($routes) {
     $routes->get('pendaftaran/kompetisiInovasi/proposal/edit/(:any)', 'PendampingkompetisiInovasi::editkompetisiInovasiProposal/$1');
     $routes->post('pendaftaran/kompetisiInovasi/proposal/update/(:any)', 'PendampingkompetisiInovasi::editkompetisiInovasiProposalPost/$1');
     $routes->get('pendaftaran/kompetisiInovasi/proposal/delete/(:any)', 'PendampingkompetisiInovasi::deletekompetisiInovasiProposal/$1');
-    $routes->get('pendaftaran/kompetisiInovasi/proposal/updateKeterangan/(:any)/(:any)', 'PendampingkompetisiInovasi::updateStatus/$1/$2');
-    // Kompetisi Inovasi
+
     // Video
     $routes->get('pendaftaran/kompetisiInovasi/video', 'PendampingkompetisiInovasi::kompetisiInovasiVideo');
     $routes->get('pendaftaran/kompetisiInovasi/video/add', 'PendampingkompetisiInovasi::addkompetisiInovasiVideo');
@@ -237,33 +236,34 @@ $routes->group('pendamping', ['filter' => 'authenticate'], function ($routes) {
     $routes->get('pendaftaran/kompetisiInovasi/video/edit/(:any)', 'PendampingkompetisiInovasi::editkompetisiInovasiVideo/$1');
     $routes->post('pendaftaran/kompetisiInovasi/video/update/(:any)', 'PendampingkompetisiInovasi::editkompetisiInovasiVideoPost/$1');
     $routes->get('pendaftaran/kompetisiInovasi/video/delete/(:any)', 'PendampingkompetisiInovasi::deletekompetisiInovasiVideo/$1');
-    $routes->get('pendaftaran/kompetisiInovasi/video/updateKeterangan/(:any)/(:any)', 'PendampingkompetisiInovasi::updateStatusVideo/$1/$2');
 
     // Kontes Vokasi
-    // Daring-daring
+    // Daring
     $routes->get('pendaftaran/kontesVokasi/daring', 'PendampingkontesVokasiDaring::KontesVokasiDaring');
     $routes->get('pendaftaran/kontesVokasi/daring/add', 'PendampingkontesVokasiDaring::addKontesVokasiDaring');
     $routes->post('pendaftaran/kontesVokasi/daring/add', 'PendampingkontesVokasiDaring::addKontesVokasiDaringpost');
     $routes->get('pendaftaran/kontesVokasi/daring/edit/(:any)', 'PendampingkontesVokasiDaring::editKontesVokasiDaring/$1');
     $routes->post('pendaftaran/kontesVokasi/daring/update/(:any)', 'PendampingkontesVokasiDaring::editKontesVokasiDaringPost/$1');
     $routes->get('pendaftaran/kontesVokasi/daring/delete/(:any)', 'PendampingkontesVokasiDaring::deleteKontesVokasiDaring/$1');
-    $routes->get('pendaftaran/kontesVokasi/daring/updateKeterangan/(:any)/(:any)', 'PendampingkontesVokasiDaring::updateStatus/$1/$2');
-    // Daring-Luring
-    $routes->get('pendaftaran/kontesVokasi/daring/luring', 'PendampingkontesVokasiDaring::KontesVokasiLuring');
-    $routes->get('pendaftaran/kontesVokasi/daring/luring/add', 'PendampingkontesVokasiDaring::addKontesVokasiLuring');
-    $routes->post('pendaftaran/kontesVokasi/daring/luring/add', 'PendampingkontesVokasiDaring::addKontesVokasiLuringpost');
-    $routes->get('pendaftaran/kontesVokasi/daring/luring/edit/(:any)', 'PendampingkontesVokasiDaring::editKontesVokasiLuring/$1');
-    $routes->post('pendaftaran/kontesVokasi/daring/luring/update/(:any)', 'PendampingkontesVokasiDaring::editKontesVokasiLuringPost/$1');
-    $routes->get('pendaftaran/kontesVokasi/daring/luring/delete/(:any)', 'PendampingkontesVokasiDaring::deleteKontesVokasiLuring/$1');
-    $routes->get('pendaftaran/kontesVokasi/daring/luring/updateKeterangan/(:any)/(:any)', 'PendampingkontesVokasiDaring::updateStatusLuring/$1/$2');
+
+
     // Luring
-    $routes->get('pendaftaran/kontesVokasi/luring', 'PendampingkontesVokasiLuring::KontesVokasiLuring');
-    $routes->get('pendaftaran/kontesVokasi/luring/add', 'PendampingkontesVokasiLuring::addKontesVokasiLuring');
-    $routes->post('pendaftaran/kontesVokasi/luring/add', 'PendampingkontesVokasiLuring::addKontesVokasiLuringpost');
-    $routes->get('pendaftaran/kontesVokasi/luring/edit/(:any)', 'PendampingkontesVokasiLuring::editKontesVokasiLuring/$1');
-    $routes->post('pendaftaran/kontesVokasi/luring/update/(:any)', 'PendampingkontesVokasiLuring::editKontesVokasiLuringPost/$1');
-    $routes->get('pendaftaran/kontesVokasi/luring/delete/(:any)', 'PendampingkontesVokasiLuring::deleteKontesVokasiLuring/$1');
-    $routes->get('pendaftaran/kontesVokasi/luring/updateKeterangan/(:any)/(:any)', 'PendampingkontesVokasiLuring::updateStatusLuring/$1/$2');
+    // Individu
+    $routes->get('pendaftaran/kontesVokasi/luring/individu', 'PendampingkontesVokasiLuring::kontesVokasiLuring');
+    $routes->get('pendaftaran/kontesVokasi/luring/individu/add', 'PendampingkontesVokasiLuring::addKontesVokasiLuring');
+    $routes->post('pendaftaran/kontesVokasi/luring/individu/add', 'PendampingkontesVokasiLuring::addKontesVokasiLuringpost');
+    $routes->get('pendaftaran/kontesVokasi/luring/individu/edit/(:any)', 'PendampingkontesVokasiLuring::editKontesVokasiLuring/$1');
+    $routes->post('pendaftaran/kontesVokasi/luring/individu/update/(:any)', 'PendampingkontesVokasiLuring::editKontesVokasiLuringPost/$1');
+    $routes->get('pendaftaran/kontesVokasi/luring/individu/delete/(:any)', 'PendampingkontesVokasiLuring::deleteKontesVokasiLuring/$1');
+
+    // Tim
+    $routes->get('pendaftaran/kontesVokasi/luring/tim', 'PendampingkontesVokasiLuring::kontesVokasiLuringTim');
+    $routes->get('pendaftaran/kontesVokasi/luring/tim/add', 'PendampingkontesVokasiLuring::addKontesVokasiLuringTim');
+    $routes->post('pendaftaran/kontesVokasi/luring/tim/add', 'PendampingkontesVokasiLuring::addKontesVokasiLuringTimpost');
+    $routes->get('pendaftaran/kontesVokasi/luring/tim/edit/(:any)', 'PendampingkontesVokasiLuring::editKontesVokasiLuringTim/$1');
+    $routes->post('pendaftaran/kontesVokasi/luring/tim/update/(:any)', 'PendampingkontesVokasiLuring::editKontesVokasiLuringTimPost/$1');
+    $routes->get('pendaftaran/kontesVokasi/luring/tim/delete/(:any)', 'PendampingkontesVokasiLuring::deleteKontesVokasiLuringTim/$1');
+
     //Eksebisi Fotografi
     $routes->get('pendaftaran/eksibisiFotografi', 'PendampingFotografi::index');
     $routes->get('pendaftaran/eksibisiFotografi/add', 'PendampingFotografi::addfoto');
@@ -273,7 +273,7 @@ $routes->group('pendamping', ['filter' => 'authenticate'], function ($routes) {
     $routes->get('pendaftaran/eksibisiFotografi/delete/(:any)', 'PendampingFotografi::deletefoto/$1');
     $routes->get('pendaftaran/eksibisiFotografi/updateKeterangan/(:any)/(:any)', 'PendampingFotografi::updateStatus/$1/$2');
 
-
+    // Peserta
     $routes->get('peserta', 'PendampingPeserta::peserta');
     $routes->get('peserta/add', 'PendampingPeserta::addPeserta');
     $routes->post('peserta/add', 'PendampingPeserta::addPesertaPost');
@@ -282,7 +282,7 @@ $routes->group('pendamping', ['filter' => 'authenticate'], function ($routes) {
     $routes->get('peserta/delete/(:any)', 'PendampingPeserta::deletePeserta/$1');
     $routes->get('peserta/view/(:any)', 'AdminMaster::pesertaview/$1');
 
-    $routes->get('sertifikat', 'PendampingSertifikat::Sertifikat');
+    // $routes->get('sertifikat', 'PendampingSertifikat::Sertifikat');
 });
 
 $routes->group('kampus', ['filter' => 'authenticate'], function ($routes) {
