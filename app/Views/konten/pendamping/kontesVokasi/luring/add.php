@@ -13,7 +13,7 @@
                     <a href="/pendamping/pendaftaran/kontesVokasi/luring/individu" class="btn btn-dark me-3 mt-3"><i class='bx bx-arrow-back'></i> Kembali</a>
                 </div>
                 <div class="col-lg-12 p-5">
-                    <form method="POST" action="/pendamping/pendaftaran/kontesVokasi/luring/individuadd">
+                    <form method="POST" action="/pendamping/pendaftaran/kontesVokasi/luring/individu/add">
                         <?= csrf_field() ?>
                         <div class="row">
 

@@ -19,7 +19,7 @@
             </B>
         </div>
         <div class="col-md-9">
-            <h4 class="card-title"><span style="color: green;">Daftar Cabang Lomba dengan Seleksi Online (Daring)            </span></h4>
+            <h4 class="card-title"><span style="color: green;">Daftar Cabang Lomba dengan Seleksi Online (Daring) </span></h4>
         </div>
         <div class="col-md-7">
             <B>
@@ -78,12 +78,17 @@
                                     }
                                     ?>
                                 </td>
-                                <td>
-                                    <div class="btn-group">
+                                
+                                <td class="text-center">
+                                    <?php if ($row['keterangan'] == 2) : ?>
                                         <a href="/pendamping/pendaftaran/kontesVokasi/daring/edit/<?= $row['id']; ?>" class="btn btn-success btn-sm"><i class="bi bi-pencil-square"></i></a>
                                         <a href="#" onclick="confirmDelete('<?= $row['id']; ?>','/pendamping/pendaftaran/kontesVokasi/daring/delete/')" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></a>
-                                    </div>
+                                    <?php else : ?>
+                                        <button class="btn btn-success btn-sm" disabled><i class="bi bi-pencil-square"></i></button>
+                                        <button class="btn btn-danger btn-sm" disabled><i class="bi bi-trash-fill"></i></button>
+                                    <?php endif; ?>
                                 </td>
+                               
                             </tr> <?php endforeach; ?>
                     </tbody>
                 </table>

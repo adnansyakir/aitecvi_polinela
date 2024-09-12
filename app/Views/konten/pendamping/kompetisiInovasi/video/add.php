@@ -28,6 +28,20 @@
                                 </select>
                             </div>
 
+                            <div class="col-lg-6 mb-3">
+                                <label class="form-label" for="nama_team">Nama Tim</label>
+                                <select class="form-control <?= isset($errors['nama_team']) ? 'is-invalid ' : ''; ?>" name="nama_team" id="nama_team">
+                                    <option value="" disabled selected>Pilih Nama Tim</option>
+                                    <?php foreach ($proposal as $team) : ?>
+                                        <option value="<?= $team['nama_team'] ?>" data-lomba="<?= $team['cabang_perlombaan_id'] ?>" <?= old('nama_team') == $team['nama_team'] ? 'selected' : '' ?>><?= $team['nama_team'] ?></option>
+                                    <?php endforeach; ?>
+                                </select>
+                                <?php if (isset($errors['nama_team'])) : ?>
+                                    <div class="invalid-feedback">
+                                        <?= $errors['nama_team'] ?>
+                                    </div>
+                                <?php endif; ?>
+                            </div>
 
                             <!-- Dropdown Nama Perlombaan -->
                             <div class="col-lg-6 mb-3">
@@ -41,22 +55,6 @@
                                 <?php if (isset($errors['cabang_perlombaan_id'])) : ?>
                                     <div class="invalid-feedback">
                                         <?= $errors['cabang_perlombaan_id'] ?>
-                                    </div>
-                                <?php endif; ?>
-                            </div>
-
-                            <!-- Dropdown Nama Team dari Proposal -->
-                            <div class="col-lg-6 mb-3">
-                                <label class="form-label" for="nama_team">Nama Tim</label>
-                                <select class="form-control <?= isset($errors['nama_team']) ? 'is-invalid ' : ''; ?>" name="nama_team" id="nama_team">
-                                    <option value="" disabled selected>Pilih Nama Tim</option>
-                                    <?php foreach ($proposal as $team) : ?>
-                                        <option value="<?= $team['nama_team'] ?>" <?= old('nama_team') == $team['nama_team'] ? 'selected' : '' ?>><?= $team['nama_team'] ?></option>
-                                    <?php endforeach; ?>
-                                </select>
-                                <?php if (isset($errors['nama_team'])) : ?>
-                                    <div class="invalid-feedback">
-                                        <?= $errors['nama_team'] ?>
                                     </div>
                                 <?php endif; ?>
                             </div>
@@ -84,5 +82,18 @@
         </div>
     </div>
 </div>
+<script>
+    document.getElementById('nama_team').addEventListener('change', function() {
+        var selectedOption = this.options[this.selectedIndex];
+        var cabangPerlombaanId = selectedOption.getAttribute('data-lomba');
 
+        var perlombaanSelect = document.getElementById('nama_perlombaan');
+        for (var i = 0; i < perlombaanSelect.options.length; i++) {
+            if (perlombaanSelect.options[i].value == cabangPerlombaanId) {
+                perlombaanSelect.value = cabangPerlombaanId;
+                break;
+            }
+        }
+    });
+</script>
 <?= $this->endSection() ?>

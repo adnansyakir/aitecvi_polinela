@@ -53,7 +53,15 @@
                                     }
                                     ?>
                                 </td>
-                                <td> <a href="/pendamping/pendaftaran/kompetisiInovasi/proposal/edit/<?= $row['id']; ?>" class="btn btn-success btn-sm"><i class="bi bi-pencil-square"></i></a> <a href="#" onclick="confirmDelete('<?= $row['id']; ?>','/pendamping/pendaftaran/kompetisiInovasi/proposal/delete/')" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></a> </td>
+                                <td class="text-center">
+                                    <?php if ($row['keterangan'] == 2) : ?>
+                                        <a href="/pendamping/pendaftaran/kompetisiInovasi/proposal/edit/<?= $row['id']; ?>" class="btn btn-success btn-sm"><i class="bi bi-pencil-square"></i></a>
+                                        <a href="#" onclick="confirmDelete('<?= $row['id']; ?>','/pendamping/pendaftaran/kompetisiInovasi/proposal/delete/')" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></a>
+                                    <?php else : ?>
+                                        <button class="btn btn-success btn-sm" disabled><i class="bi bi-pencil-square"></i></button>
+                                        <button class="btn btn-danger btn-sm" disabled><i class="bi bi-trash-fill"></i></button>
+                                    <?php endif; ?>
+                                </td>
                             </tr> <?php endforeach; ?>
                     </tbody>
                 </table>

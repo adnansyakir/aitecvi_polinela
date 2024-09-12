@@ -76,7 +76,7 @@ $routes->group('admin', ['filter' => 'authenticate'], function ($routes) {
     $routes->get('pendaftaran/kompetisiInovasi/video/updateKeterangan/(:any)/(:any)', 'AdminkompetisiInovasi::updateStatusVideo/$1/$2');
 
     // Kontes Vokasi
-    // Daring-daring
+    // Daring
     $routes->get('pendaftaran/kontesVokasi/daring', 'AdminkontesVokasiDaring::KontesVokasiDaring');
     $routes->get('pendaftaran/kontesVokasi/daring/add', 'AdminkontesVokasiDaring::addKontesVokasiDaring');
     $routes->post('pendaftaran/kontesVokasi/daring/add', 'AdminkontesVokasiDaring::addKontesVokasiDaringpost');
@@ -93,13 +93,25 @@ $routes->group('admin', ['filter' => 'authenticate'], function ($routes) {
     // $routes->get('pendaftaran/kontesVokasi/daring/luring/delete/(:any)', 'AdminkontesVokasiDaring::deleteKontesVokasiLuring/$1');
     // $routes->get('pendaftaran/kontesVokasi/daring/luring/updateKeterangan/(:any)/(:any)', 'AdminkontesVokasiDaring::updateStatusLuring/$1/$2');
 
-    $routes->get('pendaftaran/kontesVokasi/luring', 'AdminkontesVokasiLuring::KontesVokasiLuring');
-    $routes->get('pendaftaran/kontesVokasi/luring/add', 'AdminkontesVokasiLuring::addKontesVokasiLuring');
-    $routes->post('pendaftaran/kontesVokasi/luring/add', 'AdminkontesVokasiLuring::addKontesVokasiLuringpost');
-    $routes->get('pendaftaran/kontesVokasi/luring/edit/(:any)', 'AdminkontesVokasiLuring::editKontesVokasiLuring/$1');
-    $routes->post('pendaftaran/kontesVokasi/luring/update/(:any)', 'AdminkontesVokasiLuring::editKontesVokasiLuringPost/$1');
-    $routes->get('pendaftaran/kontesVokasi/luring/delete/(:any)', 'AdminkontesVokasiLuring::deleteKontesVokasiLuring/$1');
-    $routes->get('pendaftaran/kontesVokasi/luring/updateKeterangan/(:any)/(:any)', 'AdminkontesVokasiLuring::updateStatusLuring/$1/$2');
+    // Luring 
+    // Individu
+    $routes->get('pendaftaran/kontesVokasi/luring/individu', 'AdminkontesVokasiLuring::KontesVokasiLuring');
+    $routes->get('pendaftaran/kontesVokasi/luring/individu/add', 'AdminkontesVokasiLuring::addKontesVokasiLuring');
+    $routes->post('pendaftaran/kontesVokasi/luring/individu/add', 'AdminkontesVokasiLuring::addKontesVokasiLuringpost');
+    $routes->get('pendaftaran/kontesVokasi/luring/individu/edit/(:any)', 'AdminkontesVokasiLuring::editKontesVokasiLuring/$1');
+    $routes->post('pendaftaran/kontesVokasi/luring/individu/update/(:any)', 'AdminkontesVokasiLuring::editKontesVokasiLuringPost/$1');
+    $routes->get('pendaftaran/kontesVokasi/luring/individu/delete/(:any)', 'AdminkontesVokasiLuring::deleteKontesVokasiLuring/$1');
+    // $routes->get('pendaftaran/kontesVokasi/luring/individu/updateKeterangan/(:any)/(:any)', 'AdminkontesVokasiLuring::updateStatusLuring/$1/$2');
+    
+    // Tim
+    $routes->get('pendaftaran/kontesVokasi/luring/tim', 'AdminkontesVokasiLuring::KontesVokasiLuringTim');
+    $routes->get('pendaftaran/kontesVokasi/luring/tim/add', 'AdminkontesVokasiLuring::addKontesVokasiLuringTim');
+    $routes->post('pendaftaran/kontesVokasi/luring/tim/add', 'AdminkontesVokasiLuring::addKontesVokasiLuringTimpost');
+    $routes->get('pendaftaran/kontesVokasi/luring/tim/edit/(:any)', 'AdminkontesVokasiLuring::editKontesVokasiLuringTim/$1');
+    $routes->post('pendaftaran/kontesVokasi/luring/tim/update/(:any)', 'AdminkontesVokasiLuring::editKontesVokasiLuringTimPost/$1');
+    $routes->get('pendaftaran/kontesVokasi/luring/tim/delete/(:any)', 'AdminkontesVokasiLuring::deleteKontesVokasiLuringTim/$1');
+    // $routes->get('pendaftaran/kontesVokasi/luring/tim/updateKeterangan/(:any)/(:any)', 'AdminkontesVokasiLuring::updateStatusLuringTim/$1/$2');
+    
     //Eksebisi Fotografi
     $routes->get('pendaftaran/eksibisiFotografi', 'AdminFotografi::index');
     $routes->get('pendaftaran/eksibisiFotografi/add', 'AdminFotografi::addfoto');
