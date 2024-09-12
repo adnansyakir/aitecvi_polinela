@@ -8,10 +8,10 @@
             <h4 class="card-title"><span style="color: red;">Informasi Penting</span></h4>
         </div>
     
-        <div class="col-md-9">
+        <div class="col-md-11">
         <B><ul>
             <li> Lomba dilaksanakan secara luring (offline) di Politeknik Negeri Lampung.</li>
-            <li> ⁠Setiap Perguruan Tinggi hanya dapat mengirimkan <span style="color: red;">maksimal 2 orang.</span></li>
+            <li> ⁠Setiap Perguruan Tinggi hanya dapat mengirimkan <span style="color: red;">2 orang (kategori lomba individu) </span>sebagai perwakilan.</li>
             <li>Setiap peserta <span style="color: red;">wajib</span> mengikuti Technical Meeting.</li>
         </ul></B>
         </div>
@@ -21,6 +21,7 @@
 <div class="card">
     <div class="card-header">
         <div class="col-md-6">
+
             <h2 class="card-title"><span style="color: blue;">Informasi Kontes Vokasi Luring (Individu)</span></h2>
         </div>
     <div class="col-md-7">
@@ -32,6 +33,17 @@
             <li>Sortasi Biji Kopi</li>
             <li> Teknik Pembuatan Bakso Ikan</li>
             
+
+            <h2 class="card-title"><span style="color: blue;"> Daftar Cabang Lomba dengan Pelaksanaan Luring (Individu)</span></h2>
+        </div>
+    <div class="col-md-7">
+        <B><ul>
+            <ol>1. Sortasi Biji Kopi</ol>            
+            <ol>2. Teknik Proses Pengambilan Sampel Darah Ayam </ol>
+            <ol>3. Packing Benih Ikan </ol>
+            <ol>4. Teknik Pembuatan Bakso Ikan</ol>
+            <ol>5. Desain Alat dan Mesin Pertanian dengan AutoCaD</ol>
+
         </ul></B>
     </div>
     </div>
@@ -59,7 +71,6 @@
                             <th>Nama Perguruan Tinggi</th>
                             <th>Nama Perlombaan</th>
                             <th>Nama Peserta</th>
-                           
                             <th class="text-center">Aksi</th>
                         </tr>
                     </thead>
