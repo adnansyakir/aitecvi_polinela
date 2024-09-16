@@ -45,7 +45,7 @@ class AdminProfil extends BaseController
             return redirect()->back();
         }
 
-        $userId = $this->session->get('data')->user_id;
+        $userId = $this->session->get('data')->id;
         $affectedRows = $this->user->change($userId, $password);
 
         if ($affectedRows > 0) {
@@ -54,7 +54,7 @@ class AdminProfil extends BaseController
             $this->session->setFlashdata('error', 'Gagal mengubah password.');
         }
 
-        return redirect()->to('/admin/profil');
+        return redirect()->to('/admin/user');
     }
 }
 

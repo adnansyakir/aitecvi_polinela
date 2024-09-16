@@ -24,7 +24,7 @@
             <div class="col-12 col-lg-8">
                 <div class="card">
                     <div class="card-body py-4 px-5">
-                        <form id="passwordForm" class="form form-horizontal" action="/admin/profil/changePassword" method="post">
+                        <form id="passwordForm" class="form form-horizontal" action="/admin/user/change-password" method="post">
                             <div class="form-body">
                                 <div class="row">
                                     <div class="col-md-4">
