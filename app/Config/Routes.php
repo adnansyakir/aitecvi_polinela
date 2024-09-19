@@ -220,7 +220,7 @@ $routes->group('pendamping', ['filter' => 'authenticate'], function ($routes) {
     $routes->get('dashboard', 'PendampingDashboard::index', ['filter' => 'authenticate']);
 
     $routes->get('user', 'PendampingProfil::index');
-    $routes->post('user/change-password', 'PendampingProfil::changePassword');
+    $routes->post('profil/changePassword', 'PendampingProfil::changePassword');
 
     $routes->get('pendaftaran', 'PendampingPendaftaran::index');
     $routes->get('pendaftaran/add', 'PendampingPendaftaran::addPendaftaran');

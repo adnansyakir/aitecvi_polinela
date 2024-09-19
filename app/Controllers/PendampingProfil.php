@@ -59,7 +59,7 @@ class PendampingProfil extends BaseController
             return redirect()->back();
         }
 
-        $userId = session()->get('data')->user_id;
+        $userId = session()->get('data')->id;
         $affectedRows = $this->user->change($userId, $password);
 
         if ($affectedRows > 0) {
@@ -68,6 +68,6 @@ class PendampingProfil extends BaseController
             $this->session->setFlashdata('error', 'Gagal mengubah password.');
         }
 
-        return redirect()->to('/guru/user');
+        return redirect()->to('/pendamping/user');
     }
 }
