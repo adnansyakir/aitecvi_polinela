@@ -23,6 +23,10 @@ $routes->group('auth', ['filter' => 'redirectIfAuthenticated'], function ($route
     $routes->get('/', 'Auth::index');
     $routes->get('logout', 'Auth::logout', ['filter' => null]); // Exclude from filter
     $routes->post('check-auth', 'Auth::checkAuth');
+    $routes->post('forgot', 'Auth::forgot');
+    $routes->post('send-password', 'Auth::sendPassword');
+    $routes->get('reset-password/(:any)', 'Auth::resetPassword/$1');
+    $routes->post('update-password', 'Auth::updatePassword');
 });
 
 
@@ -102,7 +106,7 @@ $routes->group('admin', ['filter' => 'authenticate'], function ($routes) {
     $routes->post('pendaftaran/kontesVokasi/luring/individu/update/(:any)', 'AdminkontesVokasiLuring::editKontesVokasiLuringPost/$1');
     $routes->get('pendaftaran/kontesVokasi/luring/individu/delete/(:any)', 'AdminkontesVokasiLuring::deleteKontesVokasiLuring/$1');
     // $routes->get('pendaftaran/kontesVokasi/luring/individu/updateKeterangan/(:any)/(:any)', 'AdminkontesVokasiLuring::updateStatusLuring/$1/$2');
-    
+
     // Tim
     $routes->get('pendaftaran/kontesVokasi/luring/tim', 'AdminkontesVokasiLuring::KontesVokasiLuringTim');
     $routes->get('pendaftaran/kontesVokasi/luring/tim/add', 'AdminkontesVokasiLuring::addKontesVokasiLuringTim');
@@ -111,7 +115,7 @@ $routes->group('admin', ['filter' => 'authenticate'], function ($routes) {
     $routes->post('pendaftaran/kontesVokasi/luring/tim/update/(:any)', 'AdminkontesVokasiLuring::editKontesVokasiLuringTimPost/$1');
     $routes->get('pendaftaran/kontesVokasi/luring/tim/delete/(:any)', 'AdminkontesVokasiLuring::deleteKontesVokasiLuringTim/$1');
     // $routes->get('pendaftaran/kontesVokasi/luring/tim/updateKeterangan/(:any)/(:any)', 'AdminkontesVokasiLuring::updateStatusLuringTim/$1/$2');
-    
+
     //Eksebisi Fotografi
     $routes->get('pendaftaran/eksibisiFotografi', 'AdminFotografi::index');
     $routes->get('pendaftaran/eksibisiFotografi/add', 'AdminFotografi::addfoto');
@@ -140,7 +144,7 @@ $routes->group('admin', ['filter' => 'authenticate'], function ($routes) {
     $routes->post('master/users/save', 'AdminUsers::save');
     $routes->get('master/users/edit/(:any)', 'AdminUsers::edit/$1');
     $routes->post('master/users/update', 'AdminUsers::update');
-    $routes->get('master/users/delete/(:any)', 'AdminUsers::delete/$1');
+    $routes->get('master/users/delete/(:any)', 'AdminUsers::deleteUsers/$1');
     $routes->get('master/users/updateStatus/(:any)/(:any)', 'AdminUsers::updateStatus/$1/$2');
 
 

@@ -231,4 +231,16 @@ class AdminUsers extends BaseController
 
         return redirect()->to('/admin/master/users');
     }
+    public function deleteUsers($id)
+    {
+        // Check if the record exists
+        $users = $this->users->find($id);
+        if ($users) {
+            // Delete the record
+            $this->users->deleteById($id);
+            return redirect()->to('/admin/master/users')->with('danger', 'deleted successfully');
+        } else {
+            return redirect()->to('/admin/master/users')->with('status', 'Record not found');
+        }
+    }
 }

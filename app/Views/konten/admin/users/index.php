@@ -53,7 +53,7 @@
                                 <td class="text-center">
                                     <div class="btn-group">
                                         <a href="/admin/master/users/edit/<?= $row['id']; ?>" class="btn btn-primary btn-sm"><i class="bi bi-pencil-square"></i></a>
-
+                                        <a href="#" onclick="confirmDelete('<?= $row['id']; ?>','/admin/master/users/delete/')" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></a>
                                         <?php if ($row['status'] == 0) : ?>
                                             <a href="/admin/master/users/updateStatus/1/<?= $row['id']; ?>" class="btn btn-success btn-sm"><i class="bi bi-power"></i></a>
                                         <?php else : ?>

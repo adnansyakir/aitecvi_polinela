@@ -10,11 +10,13 @@
     <link rel="stylesheet" type="text/css" href="login/style.css" />
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
 
+    <!-- Tambahkan Toastify CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
     <!-- Tambahkan jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <style>
-
         p {
             color: white;
         }
@@ -38,12 +40,17 @@
             background-color: #45a049;
         }
 
-        .panel.left-panel  {
-            color: #4CAF50; 
+        .panel.left-panel {
+            color: #4CAF50;
         }
 
         .content h1 span {
             color: rgb(255, 211, 50);
+        }
+
+        /* Ubah warna teks "Lupa Password" menjadi putih */
+        .sign-in-form a {
+            color: white;
         }
     </style>
 </head>
@@ -63,6 +70,8 @@
                         <i class="fas fa-lock"></i>
                         <input type="password" class="form-control form-control-md" placeholder="Password" name="password">
                     </div>
+                    <!-- Ubah warna teks menjadi putih -->
+                    <a href="/auth/forgot"><small>Lupa Password</small></a>
                     <button class="btn btn-primary btn-block btn-lg shadow-lg mt-1 mb-5">Log in</button>
 
                     <p>Belum punya akun? <a href="register" class="btn-link">Sign Up</a></p>
@@ -78,6 +87,33 @@
             </div>
         </div>
     </div>
+
+    <!-- Tambahkan Toastify JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <script>
+        <?php if (session()->getFlashData('success')) : ?>
+            Toastify({
+                text: "<?= session()->getFlashData('success') ?>",
+                duration: 3000,
+                close: true,
+                gravity: "top",
+                position: "center",
+                backgroundColor: "#28a745",
+            }).showToast();
+        <?php endif; ?>
+
+        <?php if (session()->getFlashData('error')) : ?>
+            Toastify({
+                text: "<?= session()->getFlashData('error') ?>",
+                duration: 3000,
+                close: true,
+                gravity: "top",
+                position: "center",
+                backgroundColor: "#dc3545",
+            }).showToast();
+        <?php endif; ?>
+    </script>
 </body>
 
 </html>

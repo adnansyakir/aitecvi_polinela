@@ -99,45 +99,7 @@ class Auth extends BaseController
         return redirect()->to('/verification_pending');
     }
 
-    // public function registerPost()
-    // {
-    //     $validation = \Config\Services::validation();
 
-    //     $validation->setRules([
-    //         'username' => 'required',
-    //         'email' => 'required|valid_email|is_unique[users.email]',
-    //         'password' => 'required|min_length[8]',
-    //         'pt_id' => 'required',
-    //     ]);
-
-    //     if (!$validation->withRequest($this->request)->run()) {
-    //         return redirect()->to('/register')->withInput()->with('error', $validation->listErrors());
-    //     }
-    //     //    dd($validation);
-
-    //     $userModel = new AuthModel();
-
-    //     // Hash the password securely using bcrypt
-    //     $password = hash('sha256', sha1($this->request->getPost('password')));
-    //     if (empty($password)) {
-    //         $password = hash('sha256', sha1('123456'));
-    //     }
-    //     $userData = [
-    //         'id' => Uuid::uuid4()->toString(),
-    //         'username' => $this->request->getPost('username'),
-    //         'email' => $this->request->getPost('email'),
-    //         'password' => $password,
-    //         'pt_id' => $this->request->getPost('pt_id'),
-    //         'role_id' => '3',  // Assuming '1' is a valid role ID
-    //         'status' => '0',  // Assuming '1' means the user is active
-    //     ];
-
-    //     $userModel->save($userData);
-    //     // Save user to the database
-
-    //     // Redirect to verification page with a custom message
-    //     return redirect()->to('/verification_pending')->with('username', $this->request->getPost('username'));
-    // }
 
     public function verification()
     {
@@ -226,5 +188,94 @@ class Auth extends BaseController
     {
         $this->session->destroy();
         return redirect()->to('/loginn');
+    }
+
+
+    public function forgot()
+    {
+        $data = [
+            "title" => "Halaman Lupa Password - Aplikasi AITeC VI"
+        ];
+        return view('auth/forgot', $data);
+    }
+
+    public function sendPassword()
+    {
+        $email = $this->request->getPost('email');
+        $userModel = new UsersModel();
+    
+        // Periksa apakah email terdaftar
+        $user = $userModel->where('email', $email)->first();
+    
+        if ($user) {
+            // Generate token reset password
+            $token = bin2hex(random_bytes(50));
+    
+            // Update token reset password
+            $updateData = ['reset_token' => $token];
+    
+            if (empty($updateData['reset_token'])) {
+                log_message('error', 'Token kosong, tidak dapat memperbarui data.');
+                return redirect()->to('/auth/forgot')->with('error', 'Gagal memperbarui token.');
+            }
+    
+            $userModel->update($user['id'], $updateData);
+    
+            // URL reset password
+            $resetLink = base_url("/auth/reset-password/$token");
+    
+            // Kirim email dengan link reset password
+            $emailService = \Config\Services::email();
+            $emailService->setTo($email);
+            $emailService->setSubject('Reset Password');
+            $emailService->setMessage("Klik link berikut untuk mereset password Anda: <a href='$resetLink'>Reset Password</a>");
+    
+            // Cek apakah email berhasil dikirim
+            if ($emailService->send()) {
+                return redirect()->to('/auth/forgot')->with('success', 'Link reset password telah dikirim ke email Anda.');
+            } else {
+                // Tampilkan pesan kesalahan
+                $data = $emailService->printDebugger(['headers']);
+                return redirect()->to('/auth/forgot')->with('error', 'Gagal mengirim email: ' . $data);
+            }
+        } else {
+            return redirect()->to('/auth/forgot')->with('error', 'Email tidak terdaftar.');
+        }
+    }
+    
+
+
+    // Method untuk menampilkan form reset password
+    public function resetPassword($token)
+    {
+        $data['token'] = $token;
+        return view('auth/reset_password', $data);
+    }
+
+    // Method untuk menangani reset password
+    public function updatePassword()
+    {
+        $token = $this->request->getPost('token');
+        $password = $this->request->getPost('password');
+        $userModel = new UsersModel();
+
+        // Cari user berdasarkan token
+        $user = $userModel->where('reset_token', $token)->first();
+        // dd($validation);
+        $password = hash('sha256', sha1($this->request->getPost('password')));
+        if (empty($password)) {
+            $password = hash('sha256', sha1('123456'));
+        }
+
+        if ($user) {
+            // Update password
+            $userModel->update($user['id'], [
+                'password' => $password,
+                'reset_token' => null
+            ]);
+            return redirect()->to('/loginn')->with('success', 'Password berhasil di ubah. Silahkan login.');
+        } else {
+            return redirect()->to('/auth/forgot')->with('error', 'Token tidak valid.');
+        }
     }
 }
