@@ -23,10 +23,10 @@ $routes->group('auth', ['filter' => 'redirectIfAuthenticated'], function ($route
     $routes->get('/', 'Auth::index');
     $routes->get('logout', 'Auth::logout', ['filter' => null]); // Exclude from filter
     $routes->post('check-auth', 'Auth::checkAuth');
-    $routes->post('forgot', 'Auth::forgot');
-    $routes->post('send-password', 'Auth::sendPassword');
-    $routes->get('reset-password/(:any)', 'Auth::resetPassword/$1');
-    $routes->post('update-password', 'Auth::updatePassword');
+    // $routes->post('forgot', 'Auth::forgot');
+    // $routes->post('send-password', 'Auth::sendPassword');
+    // $routes->get('reset-password/(:any)', 'Auth::resetPassword/$1');
+    // $routes->post('update-password', 'Auth::updatePassword');
 });
 
 

@@ -71,7 +71,7 @@
                         <input type="password" class="form-control form-control-md" placeholder="Password" name="password">
                     </div>
                     <!-- Ubah warna teks menjadi putih -->
-                    <a href="/auth/forgot"><small>Lupa Password</small></a>
+                    <!-- <a href="/auth/forgot"><small>Lupa Password</small></a> -->
                     <button class="btn btn-primary btn-block btn-lg shadow-lg mt-1 mb-5">Log in</button>
 
                     <p>Belum punya akun? <a href="register" class="btn-link">Sign Up</a></p>

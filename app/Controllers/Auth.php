@@ -191,91 +191,91 @@ class Auth extends BaseController
     }
 
 
-    public function forgot()
-    {
-        $data = [
-            "title" => "Halaman Lupa Password - Aplikasi AITeC VI"
-        ];
-        return view('auth/forgot', $data);
-    }
+    // public function forgot()
+    // {
+    //     $data = [
+    //         "title" => "Halaman Lupa Password - Aplikasi AITeC VI"
+    //     ];
+    //     return view('auth/forgot', $data);
+    // }
 
-    public function sendPassword()
-    {
-        $email = $this->request->getPost('email');
-        $userModel = new UsersModel();
+    // public function sendPassword()
+    // {
+    //     $email = $this->request->getPost('email');
+    //     $userModel = new UsersModel();
     
-        // Periksa apakah email terdaftar
-        $user = $userModel->where('email', $email)->first();
+    //     // Periksa apakah email terdaftar
+    //     $user = $userModel->where('email', $email)->first();
     
-        if ($user) {
-            // Generate token reset password
-            $token = bin2hex(random_bytes(50));
+    //     if ($user) {
+    //         // Generate token reset password
+    //         $token = bin2hex(random_bytes(50));
     
-            // Update token reset password
-            $updateData = ['reset_token' => $token];
+    //         // Update token reset password
+    //         $updateData = ['reset_token' => $token];
     
-            if (empty($updateData['reset_token'])) {
-                log_message('error', 'Token kosong, tidak dapat memperbarui data.');
-                return redirect()->to('/auth/forgot')->with('error', 'Gagal memperbarui token.');
-            }
+    //         if (empty($updateData['reset_token'])) {
+    //             log_message('error', 'Token kosong, tidak dapat memperbarui data.');
+    //             return redirect()->to('/auth/forgot')->with('error', 'Gagal memperbarui token.');
+    //         }
     
-            $userModel->update($user['id'], $updateData);
+    //         $userModel->update($user['id'], $updateData);
     
-            // URL reset password
-            $resetLink = base_url("/auth/reset-password/$token");
+    //         // URL reset password
+    //         $resetLink = base_url("/auth/reset-password/$token");
     
-            // Kirim email dengan link reset password
-            $emailService = \Config\Services::email();
-            $emailService->setTo($email);
-            $emailService->setSubject('Reset Password');
-            $emailService->setMessage("Klik link berikut untuk mereset password Anda: <a href='$resetLink'>Reset Password</a>");
+    //         // Kirim email dengan link reset password
+    //         $emailService = \Config\Services::email();
+    //         $emailService->setTo($email);
+    //         $emailService->setSubject('Reset Password');
+    //         $emailService->setMessage("Klik link berikut untuk mereset password Anda: <a href='$resetLink'>Reset Password</a>");
     
-            // Cek apakah email berhasil dikirim
-            if ($emailService->send()) {
-                return redirect()->to('/auth/forgot')->with('success', 'Link reset password telah dikirim ke email Anda.');
-            } else {
-                // Tampilkan pesan kesalahan
-                $data = $emailService->printDebugger(['headers']);
-                return redirect()->to('/auth/forgot')->with('error', 'Gagal mengirim email: ' . $data);
-            }
-        } else {
-            return redirect()->to('/auth/forgot')->with('error', 'Email tidak terdaftar.');
-        }
-    }
+    //         // Cek apakah email berhasil dikirim
+    //         if ($emailService->send()) {
+    //             return redirect()->to('/auth/forgot')->with('success', 'Link reset password telah dikirim ke email Anda.');
+    //         } else {
+    //             // Tampilkan pesan kesalahan
+    //             $data = $emailService->printDebugger(['headers']);
+    //             return redirect()->to('/auth/forgot')->with('error', 'Gagal mengirim email: ' . $data);
+    //         }
+    //     } else {
+    //         return redirect()->to('/auth/forgot')->with('error', 'Email tidak terdaftar.');
+    //     }
+    // }
     
 
 
-    // Method untuk menampilkan form reset password
-    public function resetPassword($token)
-    {
-        $data['token'] = $token;
-        return view('auth/reset_password', $data);
-    }
+    // // Method untuk menampilkan form reset password
+    // public function resetPassword($token)
+    // {
+    //     $data['token'] = $token;
+    //     return view('auth/reset_password', $data);
+    // }
 
-    // Method untuk menangani reset password
-    public function updatePassword()
-    {
-        $token = $this->request->getPost('token');
-        $password = $this->request->getPost('password');
-        $userModel = new UsersModel();
+    // // Method untuk menangani reset password
+    // public function updatePassword()
+    // {
+    //     $token = $this->request->getPost('token');
+    //     $password = $this->request->getPost('password');
+    //     $userModel = new UsersModel();
 
-        // Cari user berdasarkan token
-        $user = $userModel->where('reset_token', $token)->first();
-        // dd($validation);
-        $password = hash('sha256', sha1($this->request->getPost('password')));
-        if (empty($password)) {
-            $password = hash('sha256', sha1('123456'));
-        }
+    //     // Cari user berdasarkan token
+    //     $user = $userModel->where('reset_token', $token)->first();
+    //     // dd($validation);
+    //     $password = hash('sha256', sha1($this->request->getPost('password')));
+    //     if (empty($password)) {
+    //         $password = hash('sha256', sha1('123456'));
+    //     }
 
-        if ($user) {
-            // Update password
-            $userModel->update($user['id'], [
-                'password' => $password,
-                'reset_token' => null
-            ]);
-            return redirect()->to('/loginn')->with('success', 'Password berhasil di ubah. Silahkan login.');
-        } else {
-            return redirect()->to('/auth/forgot')->with('error', 'Token tidak valid.');
-        }
-    }
+    //     if ($user) {
+    //         // Update password
+    //         $userModel->update($user['id'], [
+    //             'password' => $password,
+    //             'reset_token' => null
+    //         ]);
+    //         return redirect()->to('/loginn')->with('success', 'Password berhasil di ubah. Silahkan login.');
+    //     } else {
+    //         return redirect()->to('/auth/forgot')->with('error', 'Token tidak valid.');
+    //     }
+    // }
 }
