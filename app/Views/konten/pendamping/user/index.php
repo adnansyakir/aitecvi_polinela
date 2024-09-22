@@ -12,10 +12,10 @@
                     <div class="card-body py-4 px-5">
                         <div class="d-flex align-items-center">
                             <div class="avatar avatar-xl">
-                                <img src="/templates/assets/images/faces/2.jpg" alt="Face 1">
+                                <img src="/templates/assets/images/faces/2.jpg" alt="Pendamping">
                             </div>
                             <div class="ms-3 name">
-                                <h5 class="font-bold">Pendamping</h5>
+                                <h5 class="font-bold"><?= $user['username'] ?></h5>
                             </div>
                         </div>
                     </div>
@@ -46,7 +46,13 @@
                                         <?= $pt['nama_pt'] ?> <!-- Menampilkan nama PT -->
                                     </div>
                                     <div class="col-md-4">
-                                        <label>Password</label>
+                                        <label>No WhatsApp</label>
+                                    </div>
+                                    <div class="col-md-8 form-group">
+                                        <input type="text" class="form-control" name="no_wa" id="no_wa" placeholder="Nomor WhatsApp" value="<?= old('no_wa', $user['no_wa']) ?>">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label>Change Password</label>
                                     </div>
                                     <div class="col-md-8 form-group">
                                         <input type="password" id="password" class="form-control" name="password" placeholder="Password">
