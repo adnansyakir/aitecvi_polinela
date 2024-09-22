@@ -229,6 +229,15 @@ $routes->group('pendamping', ['filter' => 'authenticate'], function ($routes) {
     $routes->post('pendaftaran/edit/(:any)', 'PendampingPendaftaran::editPendaftaranPost/$1');
     $routes->get('pendaftaran/delete/(:any)', 'PendampingPendaftaran::deletePendaftaran/$1');
 
+    // Pendamping
+    $routes->get('pendamping', 'PendampingPendamping::index');
+    $routes->get('pendamping/add', 'PendampingPendamping::addPendamping');
+    $routes->post('pendamping/add', 'PendampingPendamping::addPendampingPost');
+    $routes->get('pendamping/edit/(:any)', 'PendampingPendamping::editPendamping/$1');
+    $routes->post('pendamping/edit/(:any)', 'PendampingPendamping::editPendampingPost/$1');
+    $routes->get('pendamping/delete/(:any)', 'PendampingPendamping::deletePendamping/$1');
+
+
     $routes->get('finalisasi', 'Pendampingfinalisasi::finalisasi');
     $routes->get('finalisasi/add', 'Pendampingfinalisasi::addfinalisasi');
     $routes->post('finalisasi/add', 'Pendampingfinalisasi::addfinalisasiPost');
@@ -298,7 +307,7 @@ $routes->group('pendamping', ['filter' => 'authenticate'], function ($routes) {
     $routes->get('peserta/delete/(:any)', 'PendampingPeserta::deletePeserta/$1');
     $routes->get('peserta/view/(:any)', 'AdminMaster::pesertaview/$1');
 
-    // $routes->get('sertifikat', 'PendampingSertifikat::Sertifikat');
+    $routes->get('sertifikat', 'PendampingSertifikat::Sertifikat');
 });
 
 $routes->group('kampus', ['filter' => 'authenticate'], function ($routes) {

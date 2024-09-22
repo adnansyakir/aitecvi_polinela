@@ -28,7 +28,7 @@
                             <div class="form-body">
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <label>Nama</label>
+                                        <label>Nama Manager Kontingen</label>
                                     </div>
                                     <div class="col-md-8 form-group">
                                         <?= $user['username'] ?>

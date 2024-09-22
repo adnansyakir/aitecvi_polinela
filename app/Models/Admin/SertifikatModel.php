@@ -8,7 +8,7 @@ class SertifikatModel extends Model
 {
     protected $table      = 'sertifikat';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['id', 'peserta_id', 'kode_peserta', 'prodi_id', 'pt_id', 'file_sertifikat', 'cabang_perlombaan_id'];
+    protected $allowedFields = ['id', 'peserta_id', 'kode_peserta', 'pt_id', 'file_sertifikat', 'cabang_perlombaan_id'];
 
 
 
@@ -40,11 +40,11 @@ class SertifikatModel extends Model
 
     public function sertifikat()
     {
-        return $this->select('sertifikat.*, peserta.nama_peserta,  pt.nama_pt, prodi.nama_prodi, cabang_perlombaan.nama_perlombaan')
+        return $this->select('sertifikat.*, peserta.nama_peserta,  pt.nama_pt, cabang_perlombaan.nama_perlombaan')
             ->join('pt', 'sertifikat.pt_id = pt.id')
             ->join('cabang_perlombaan', 'sertifikat.cabang_perlombaan_id = cabang_perlombaan.id')
             ->join('peserta', 'sertifikat.peserta_id = peserta.id')
-            ->join('prodi', 'sertifikat.prodi_id = prodi.id')
+
             ->get()
             ->getResultArray();
     }
@@ -86,5 +86,5 @@ class SertifikatModel extends Model
     //     return $this->where("id", $id)->get()->getRow();
     // }
 
-    
+
 }

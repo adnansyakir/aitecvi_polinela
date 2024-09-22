@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use App\Models\Admin\PtModel;
 use App\Models\Admin\SertifikatModel;
-use App\Models\Admin\ProdiModel;
+
 use Ramsey\Uuid\Uuid;
 use App\Models\Admin\PesertaModel;
 use App\Models\Admin\CabangLombaModel;
@@ -12,7 +12,7 @@ use App\Models\Admin\CabangLombaModel;
 class PendampingSertifikat extends BaseController
 {
     protected $ptModel;
-    protected $prodiModel;
+
     protected $pesertaModel;
     protected $sertifikatModel;
     protected $cabanglombaModel;
@@ -20,7 +20,7 @@ class PendampingSertifikat extends BaseController
     {
         $this->ptModel = new PtModel();
         $this->sertifikatModel = new SertifikatModel();
-        $this->prodiModel = new ProdiModel();
+
         $this->pesertaModel = new PesertaModel();
         $this->cabanglombaModel = new CabangLombaModel();
     }
@@ -32,6 +32,4 @@ class PendampingSertifikat extends BaseController
         // dd($data);
         echo view('konten/pendamping/sertifikat/index', $data);
     }
-
-    
 }

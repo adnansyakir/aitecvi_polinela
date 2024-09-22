@@ -8,7 +8,7 @@ class PendampingModel extends Model
 {
     protected $table      = 'pendamping';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['id', 'kode_pendamping', 'nama_pendamping', 'pt_id'];
+    protected $allowedFields = ['id', 'kode_pendamping', 'nama_pendamping', 'pt_id','status','jk','uk_kaos','no_wa','foto'];
 
     public function getALlPendamping()
     {

@@ -25,6 +25,13 @@
             </a>
         </li>
 
+        <li class="sidebar-item <?= ($request->uri->getSegment(2) === 'pendamping') ? 'active' : '' ?>">
+            <a href="/pendamping/pendamping" class='sidebar-link'>
+                <i class="bi bi-people-fill"></i>
+                <span>Pendamping</span>
+            </a>
+        </li>
+
         <li class="sidebar-item has-sub <?= ($request->uri->getSegment(2) === 'kompetisiInovasi' || $request->uri->getSegment(2) === 'kontesVokasi' || $request->uri->getSegment(2) === 'eksibisiFotografi') ? 'active open' : '' ?>">
             <a href="#" class="sidebar-link">
                 <i class="bi bi-person-plus-fill"></i>
@@ -90,7 +97,7 @@
                                 <li class="submenu-item <?= ($request->uri->getTotalSegments() >= 5 && $request->uri->getSegment(5) === 'tim') ? 'active' : '' ?>">
                                     <a href="/pendamping/pendaftaran/kontesVokasi/luring/tim">Tim</a>
                                 </li>
-                                
+
                             </ul>
                         </li>
                     </ul>
