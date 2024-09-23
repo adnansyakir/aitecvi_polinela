@@ -27,7 +27,7 @@
 
         <li class="sidebar-item <?= ($request->uri->getSegment(2) === 'pendamping') ? 'active' : '' ?>">
             <a href="/pendamping/pendamping" class='sidebar-link'>
-                <i class="bi bi-people-fill"></i>
+                <i class="bi bi-person-fill"></i>
                 <span>Pendamping</span>
             </a>
         </li>

@@ -95,18 +95,6 @@
                                     </div>
                                 <?php endif; ?>
                             </div>
-
-                            <div class="col-lg-6 mb-3">
-                                <label for="foto" class="form-label">Foto</label>
-                                <input class="form-control <?= isset($errors['foto']) ? 'is-invalid ' : ''; ?>" type="file" name="foto" id="formFile" value="<?= old('foto') ?>" />
-                                <?php if (isset($errors['foto'])) : ?>
-                                    <div class="invalid-feedback">
-                                        <?= $errors['foto'] ?>
-                                    </div>
-                                <?php endif; ?>
-                            </div>
-
-
                             <div class="col-lg-12 mt-4">
                                 <button class="btn btn-primary">Simpan</button>
                             </div>

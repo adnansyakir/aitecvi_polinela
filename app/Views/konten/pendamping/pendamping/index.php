@@ -26,7 +26,7 @@
                             <th>No Whatsapp</th>
                             <th>jenis Kelamin</th>
                             <th>Ukuran Kaos</th>
-                            <th>Foto</th>
+
                             <th class="text-center">Aksi</th>
                         </tr>
                     </thead>
@@ -39,11 +39,29 @@
                                 <td><?= $row['kode_pendamping']; ?></td>
                                 <td><?= $row['nama_pendamping']; ?></td>
                                 <td><?= $row['nama_pt']; ?></td>
-                                <td><?= $row['status']; ?></td>
+                                <td>
+                                    <?php
+                                    if ($row['status'] == 1) {
+                                        echo '<span>Dosen (Manager Pendamping)</span>';
+                                    } else if ($row['status'] == 2) {
+                                        echo '<span>Teknisi / Official</span>';
+                                    } else if ($row['status'] == 3) {
+                                        echo '<span>Pimpinan (Direktur / Wakil Direktur)</span>';
+                                    }
+                                    ?>
+                                </td>
                                 <td><?= $row['no_wa']; ?></td>
-                                <td><?= $row['jk']; ?></td>
+                                <td>
+                                    <?php
+                                    if ($row['jk'] == 1) {
+                                        echo '<span>Perempuan</span>';
+                                    } else if ($row['jk'] == 2) {
+                                        echo '<span>Laki-Laki</span>';
+                                    }
+                                    ?>
+                                </td>
                                 <td><?= $row['uk_kaos']; ?></td>
-                                <td><?= $row['foto']; ?></td>
+
 
                                 <td>
                                     <a href="/pendamping/pendamping/edit/<?= $row['id']; ?>" class="btn btn-success btn-sm"><i class="bi bi-pencil-square"></i></a>

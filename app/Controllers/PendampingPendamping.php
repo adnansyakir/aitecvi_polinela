@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-use App\Models\Admin\PendampingModel;
+use App\Models\Pendamping\PendampingModel;
 use App\Models\Admin\PtModel;
 use App\Models\Admin\CabangLombaModel;
 use Ramsey\Uuid\Uuid;
@@ -22,9 +22,10 @@ class PendampingPendamping extends BaseController
 
     public function index()
     {
+        $pt_id = session()->get('pt_id');
         $data = [
 
-            'pendamping' => $this->pendampingModel->pendampingbypt()
+            'pendamping' => $this->pendampingModel->pendampingbypt($pt_id)
         ];
 
         echo view('konten/pendamping/pendamping/index', $data);
@@ -34,7 +35,6 @@ class PendampingPendamping extends BaseController
     {
         $data = [
             'pendamping' => $this->pendampingModel->getAllPendamping(),
-
             'pt' => $this->ptModel->getAllPt(),
         ];
         return view('konten/pendamping/pendamping/add', $data);
@@ -51,7 +51,7 @@ class PendampingPendamping extends BaseController
             'jk' => 'required',
             'uk_kaos' => 'required',
             'no_wa' => 'required|numeric',
-            'foto' => 'max_size[foto,5120]|ext_in[foto,jpg,jpeg,png]',
+
         ];
 
         $validationMessages = [
@@ -77,10 +77,7 @@ class PendampingPendamping extends BaseController
                 'required' => 'Kolom No. WA harus diisi',
                 'numeric' => 'No. WA harus berupa angka',
             ],
-            'foto' => [
-                'max_size' => 'Ukuran foto tidak boleh lebih dari 5.120 KB',
-                'ext_in' => 'Format foto harus JPG,JPEG, PNG',
-            ],
+
         ];
 
         if (!$this->validate($validationRules, $validationMessages)) {
@@ -100,14 +97,6 @@ class PendampingPendamping extends BaseController
             'uk_kaos' => $this->request->getPost('uk_kaos'),
             'no_wa' => $this->request->getPost('no_wa'),
         ];
-
-        // Upload file foto
-        $Foto = $this->request->getFile('foto');
-        if ($Foto && $Foto->isValid() && !$Foto->hasMoved()) {
-            $namaFoto = $Foto->getRandomName();
-            $Foto->move(FCPATH . '/uploads/pendamping', $namaFoto);
-            $data['foto'] = $namaFoto;
-        }
 
         // Insert data ke database
         $this->pendampingModel->insert($data);
@@ -144,7 +133,10 @@ class PendampingPendamping extends BaseController
             'kode_pendamping' => 'required',
             'nama_pendamping' => 'required',
             'pt_id' => 'required',
-
+            'status' => 'required',
+            'jk' => 'required',
+            'uk_kaos' => 'required',
+            'no_wa' => 'required',
 
         ];
 
@@ -158,26 +150,42 @@ class PendampingPendamping extends BaseController
             'pt_id' => [
                 'required' => 'Kolom Perguruan Tinggi harus diisi',
             ],
-
+            'status' => [
+                'required' => 'Kolom Status harus diisi',
+            ],
+            'jk' => [
+                'required' => 'Kolom Jenis Kelamin harus diisi',
+            ],
+            'uk_kaos' => [
+                'required' => 'Kolom Ukuran Kaos harus diisi',
+            ],
+            'no_wa' => [
+                'required' => 'Kolom Nomor WhatsApp harus diisi',
+            ],
 
         ];
-
+        // dd($validationRules);
         if (!$this->validate($validationRules, $validationMessages)) {
             return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
         }
 
         $data = [
-            'id' => $id,
+            'kode_pendamping' => $this->request->getPost('kode_pendamping'),
             'nama_pendamping' => $this->request->getPost('nama_pendamping'),
             'pt_id' => $this->request->getPost('pt_id'),
-
-
+            'status' => $this->request->getPost('status'),
+            'jk' => $this->request->getPost('jk'),
+            'uk_kaos' => $this->request->getPost('uk_kaos'),
+            'no_wa' => $this->request->getPost('no_wa'),
         ];
+
+
 
         $this->pendampingModel->update($id, $data);
         session()->setFlashdata('primary', 'Data berhasil diupdate.');
-        return redirect()->to('/pendamping/pendamping');
+        return redirect()->to('pendamping/pendamping');
     }
+
     public function deletePendamping($id)
     {
         // Check if the record exists
