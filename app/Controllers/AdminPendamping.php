@@ -24,7 +24,7 @@ class AdminPendamping extends BaseController
     {
         $data = [
 
-            'pendamping' => $this->pendampingModel->pendampingbypt()
+            'pendamping' => $this->pendampingModel->pendampingbyPt()
         ];
 
         echo view('konten/admin/pendamping/index', $data);
@@ -33,7 +33,7 @@ class AdminPendamping extends BaseController
     public function addPendamping()
     {
         $data = [
-            'pendamping' => $this->pendampingModel->getAllPendamping(),
+            'pendamping' => $this->pendampingModel->getALLPendamping(),
 
             'pt' => $this->ptModel->getAllPt(),
         ];

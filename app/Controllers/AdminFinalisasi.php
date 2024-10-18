@@ -3,7 +3,7 @@
 namespace App\Controllers;
 
 
-use App\Models\Pendamping\FinalisasiModel;
+use App\Models\Admin\FinalisasiModel;
 use App\Models\Admin\PtModel;
 use Ramsey\Uuid\Uuid;
 

@@ -10,14 +10,17 @@ class PendampingModel extends Model
     protected $primaryKey = 'id';
     protected $allowedFields = ['id', 'kode_pendamping', 'nama_pendamping', 'pt_id','status','jk','uk_kaos','no_wa'];
 
-    public function getALlPendamping()
+    public function getALLPendamping()
     {
         return $this->findAll();
     }
     public function pendampingbyPt()
     {
+        // Get pt_id from session
+        
         return $this->select('pendamping.*,  pt.nama_pt')
             ->join('pt', 'pendamping.pt_id = pt.id')
+          
             ->get()
             ->getResultArray();
     }

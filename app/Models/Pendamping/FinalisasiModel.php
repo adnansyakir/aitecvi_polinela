@@ -11,17 +11,23 @@ class FinalisasiModel extends Model
     protected $allowedFields = ['id', 'pt_id', 'surat_tugas', 'invoice', 'bukti_transfer', 'keterangan'];
 
     public function getFinalisasiWithKeterangan($keterangan)
-{
-    return $this->where('keterangan', $keterangan)
-                ->findAll();
-}
+    {
+        return $this->where('keterangan', $keterangan)
+            ->findAll();
+    }
+    public function getAllFinalisasiAdmin()
+    {
+        return $this->findAll();
+    }
 
-public function getAllfinalisasi()
-{
-    return $this->select('finalisasi.*, pt.nama_pt')
-                ->join('pt', 'finalisasi.pt_id = pt.id')
-                ->findAll();
-}
+    public function getAllfinalisasi($pt_id)
+    {
+        return $this->select('finalisasi.*, pt.nama_pt')
+            ->join('pt', 'finalisasi.pt_id = pt.id')
+            ->where('finalisasi.pt_id', $pt_id) // Filter based on pt_id from session
+            ->get()
+            ->getResultArray();
+    }
 
 
     public function insertData($data)
@@ -48,9 +54,9 @@ public function getAllfinalisasi()
     public function getPt($id)
     {
         return $this->select('finalisasi.*, pt.nama_pt')
-                        ->join('pt', 'finalisasi.pt_id = pt.id')
-                    ->where('finalisasi.id', $id)
-                    ->get()
-                    ->getRow();
+            ->join('pt', 'finalisasi.pt_id = pt.id')
+            ->where('finalisasi.id', $id)
+            ->get()
+            ->getRow();
     }
 }

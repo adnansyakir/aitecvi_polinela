@@ -21,11 +21,12 @@ class PendampingFinalisasi extends BaseController
     }
     public function finalisasi()
     {
-        // $data = [
-        //     'finalisasi' =>$this->finalisasiModel->getAllfinalisasi(),
-        // ];
+        $pt_id = session()->get('pt_id');
+        $data = [
+            'finalisasi' =>$this->finalisasiModel->getAllfinalisasi($pt_id),
+        ];
         
-        echo view('konten/pendamping/finalisasi/index');
+        echo view('konten/pendamping/finalisasi/index', $data);
     }
 
     public function addFinalisasi()
@@ -34,7 +35,7 @@ class PendampingFinalisasi extends BaseController
     $proposalData = $proposalModel->findAll();
 
     $data = [
-        'finalisasi' => $this->finalisasiModel->getAllfinalisasi(),
+        'finalisasi' => $this->finalisasiModel->getAllFinalisasiAdmin(),
         'pt' => $this->PtModel->getAllPt(),
     ];
     return view('konten/pendamping/finalisasi/add', $data);
