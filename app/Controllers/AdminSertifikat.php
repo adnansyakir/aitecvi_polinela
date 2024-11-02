@@ -38,9 +38,6 @@ class AdminSertifikat extends BaseController
         $data = [
             'sertifikat' => $this->sertifikatModel->getAllSertifikat(),
             'pt' => $this->ptModel->getAllPt(),
-            'prodi' => $this->prodiModel->getAllProdi(),
-            'peserta' => $this->pesertaModel->getAllpeserta(),
-            'cabang_perlombaan' => $this->cabanglombaModel->getAllLomba(),
             'errors' => session('errors'), // Add validation errors to data
         ];
         // dd($data);
@@ -51,25 +48,17 @@ class AdminSertifikat extends BaseController
     public function addSertifikatPost()
     {
         $validationRules = [
-            'peserta_id' => 'required',
-            'kode_peserta' => 'required',
+
             'pt_id' => 'required',
-            'prodi_id' => 'required',
-            'file_sertifikat' => 'uploaded[file_sertifikat]|max_size[file_sertifikat,5120]|ext_in[file_sertifikat,pdf,doc,docx,png]',
-            'cabang_perlombaan_id' => 'required',
+            'file_sertifikat' => 'required',
         ];
 
         $validationMessages = [
-            'peserta_id' => ['required' => 'Kolom Nama Peserta/Pendamping Harus diisi'],
-            'kode_peserta' => ['required' => 'Kolom NIM/NIP Harus diisi'],
             'pt_id' => ['required' => 'Kolom Perguruan Tinggi Harus diisi'],
-            'prodi_id' => ['required' => 'Kolom Nama Program Studi Harus diisi'],
+
             'file_sertifikat' => [
-                'uploaded' => 'Kolom file_sertifikat Harus diisi',
-                'max_size' => 'Ukuran file file_sertifikat tidak boleh lebih dari 5120 KB',
-                'ext_in' => 'Format file file_sertifikat harus PDF, DOC, DOCX, PNG',
+                'required' => 'Kolom file sertifikat Harus diisi',
             ],
-            'cabang_perlombaan_id' => ['required' => 'Kolom Nama Perlombaan Harus diisi'],
         ];
 
         $validation = $this->validate($validationRules, $validationMessages);
@@ -81,20 +70,10 @@ class AdminSertifikat extends BaseController
 
         $data = [
             'id' => Uuid::uuid4()->toString(),
-            'peserta_id' => $this->request->getPost('peserta_id'),
-            'kode_peserta' => $this->request->getPost('kode_peserta'),
             'pt_id' => $this->request->getPost('pt_id'),
-            'prodi_id' => $this->request->getPost('prodi_id'),
-            'cabang_perlombaan_id' => $this->request->getPost('cabang_perlombaan_id'),
-        ];
+            'file_sertifikat' => $this->request->getPost('file_sertifikat'),
 
-        // Handle file uploads
-        $file_sertifikat = $this->request->getFile('file_sertifikat');
-        if ($file_sertifikat && $file_sertifikat->isValid() && !$file_sertifikat->hasMoved()) {
-            $namafile_sertifikat = $file_sertifikat->getRandomName();
-            $file_sertifikat->move(FCPATH . '/uploads/sertifikat', $namafile_sertifikat);
-            $data['file_sertifikat'] = $namafile_sertifikat;
-        }
+        ];
 
         $this->sertifikatModel->insert($data);
         session()->setFlashdata('primary', 'Data berhasil disimpan.');
@@ -102,7 +81,8 @@ class AdminSertifikat extends BaseController
     }
 
     public function editSertifikat($id)
-    {$sertifikat = $this->sertifikatModel->find($id);
+    {
+        $sertifikat = $this->sertifikatModel->find($id);
         if (!$sertifikat) {
             throw new \RuntimeException('Data sertifikat tidak ditemukan');
         }
@@ -110,9 +90,6 @@ class AdminSertifikat extends BaseController
         $data = [
             'sertifikat' => $sertifikat,
             'pt' => $this->ptModel->getAllPt(),
-            'prodi' => $this->prodiModel->getAllProdi(),
-            'peserta' => $this->pesertaModel->getAllpeserta(),
-            'cabang_perlombaan' => $this->cabanglombaModel->getAllLomba(),
             'errors' => session('errors'), // Add validation errors to data
         ];
         // dd($data);
@@ -121,25 +98,19 @@ class AdminSertifikat extends BaseController
     }
     public function editSertifikatPost($id)
     {
+
         $validationRules = [
-            'peserta_id' => 'required',
-            'kode_peserta' => 'required',
+
             'pt_id' => 'required',
-            'prodi_id' => 'required',
-            'file_sertifikat' => 'max_size[file_sertifikat,5120]|ext_in[file_sertifikat,pdf,doc,docx,png]',
-            'cabang_perlombaan_id' => 'required',
+            'file_sertifikat' => 'required',
         ];
 
         $validationMessages = [
-            'peserta_id' => ['required' => 'Kolom Nama Peserta/Pendamping Harus diisi'],
-            'kode_peserta' => ['required' => 'Kolom NIM/NIP Harus diisi'],
             'pt_id' => ['required' => 'Kolom Perguruan Tinggi Harus diisi'],
-            'prodi_id' => ['required' => 'Kolom Nama Program Studi Harus diisi'],
+
             'file_sertifikat' => [
-                'max_size' => 'Ukuran file file_sertifikat tidak boleh lebih dari 5120 KB',
-                'ext_in' => 'Format file file_sertifikat harus PDF, DOC, DOCX, PNG',
+                'required' => 'Kolom file sertifikat Harus diisi',
             ],
-            'cabang_perlombaan_id' => ['required' => 'Kolom Nama Perlombaan Harus diisi'],
         ];
 
         $validation = $this->validate($validationRules, $validationMessages);
@@ -150,21 +121,10 @@ class AdminSertifikat extends BaseController
         }
 
         $data = [
-            'peserta_id' => $this->request->getPost('peserta_id'),
-            'kode_peserta' => $this->request->getPost('kode_peserta'),
             'pt_id' => $this->request->getPost('pt_id'),
-            'prodi_id' => $this->request->getPost('prodi_id'),
-            'cabang_perlombaan_id' => $this->request->getPost('cabang_perlombaan_id'),
+            'file_sertifikat' => $this->request->getPost('file_sertifikat'),
+
         ];
-
-        // Handle file uploads
-        $file_sertifikat = $this->request->getFile('file_sertifikat');
-        if ($file_sertifikat && $file_sertifikat->isValid() && !$file_sertifikat->hasMoved()) {
-            $namafile_sertifikat = $file_sertifikat->getRandomName();
-            $file_sertifikat->move(FCPATH . '/uploads/sertifikat', $namafile_sertifikat);
-            $data['file_sertifikat'] = $namafile_sertifikat;
-        }
-
         $this->sertifikatModel->update($id, $data);
         session()->setFlashdata('primary', 'Data berhasil diupdate.');
         return redirect()->to('/admin/sertifikat');

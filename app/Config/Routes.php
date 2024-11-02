@@ -238,12 +238,12 @@ $routes->group('pendamping', ['filter' => 'authenticate'], function ($routes) {
     $routes->get('pendamping/delete/(:any)', 'PendampingPendamping::deletePendamping/$1');
 
 
-    $routes->get('finalisasi', 'Pendampingfinalisasi::finalisasi');
-    $routes->get('finalisasi/add', 'Pendampingfinalisasi::addfinalisasi');
-    $routes->post('finalisasi/add', 'Pendampingfinalisasi::addfinalisasiPost');
-    $routes->get('finalisasi/edit/(:any)', 'Pendampingfinalisasi::editfinalisasi/$1');
-    $routes->post('finalisasi/edit/(:any)', 'Pendampingfinalisasi::editfinalisasiPost/$1');
-    $routes->get('finalisasi/delete/(:any)', 'Pendampingfinalisasi::deletefinalisasi/$1');
+    $routes->get('finalisasi', 'PendampingFinalisasi::finalisasi');
+    $routes->get('finalisasi/add', 'PendampingFinalisasi::addfinalisasi');
+    $routes->post('finalisasi/add', 'PendampingFinalisasi::addfinalisasiPost');
+    $routes->get('finalisasi/edit/(:any)', 'PendampingFinalisasi::editfinalisasi/$1');
+    $routes->post('finalisasi/edit/(:any)', 'PendampingFinalisasi::editfinalisasiPost/$1');
+    $routes->get('finalisasi/delete/(:any)', 'PendampingFinalisasi::deletefinalisasi/$1');
 
     // Kompetisi Inovasi
     // proposal

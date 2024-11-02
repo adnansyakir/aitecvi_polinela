@@ -19,13 +19,8 @@
                     <thead>
                         <tr>
                             <th>No</th>
-                            <th>Nama Peserta/Pendamping</th>
-                            <th>NIM/NIP</th>
-                            <th>Nama Program Studi</th>
                             <th>Perguruan Tinggi</th>
-                            
                             <th>Sertifikat</th>
-                            <th>Nama Perlombaan</th>
                             <th class="text-center">Aksi</th>
                         </tr>
                     </thead>
@@ -34,12 +29,8 @@
                         foreach ($sertifikat as $row) : ?>
                             <tr>
                                 <td><?= $i++; ?></td>
-                                <td><?= $row['nama_peserta']; ?></td>
-                                <td><?= $row['kode_peserta']; ?></td>
-                                <td><?= $row['nama_prodi']; ?></td>
                                 <td><?= $row['nama_pt']; ?></td>
-                                <td><a href="/uploads/sertifikat/<?= $row['file_sertifikat']; ?>"><i class="bi bi-file-earmark-text"></i></a></td>
-                                <td><?= $row['nama_perlombaan']; ?></a></td>
+                                <td><a href="<?= $row['file_sertifikat']; ?>"><i class="bi bi-file-earmark-text"></i></a></td>
                                 <td>
                                     <a href="/admin/sertifikat/edit/<?= $row['id']; ?>" class="btn btn-success btn-sm"><i class="bi bi-pencil-square"></i></a>
                                     <a href="#" onclick="confirmDelete('<?= $row['id']; ?>','/admin/sertifikat/delete/')" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></a>

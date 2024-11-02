@@ -3,7 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\Admin\PtModel;
-use App\Models\Admin\SertifikatModel;
+use App\Models\Pendamping\SertifikatModel;
 
 use Ramsey\Uuid\Uuid;
 use App\Models\Admin\PesertaModel;
@@ -25,9 +25,9 @@ class PendampingSertifikat extends BaseController
         $this->cabanglombaModel = new CabangLombaModel();
     }
     public function Sertifikat()
-    {
+    { $pt_id = session()->get('pt_id');
         $data = [
-            'sertifikat' => $this->sertifikatModel->sertifikat()
+            'sertifikat' => $this->sertifikatModel->sertifikat($pt_id)
         ];
         // dd($data);
         echo view('konten/pendamping/sertifikat/index', $data);

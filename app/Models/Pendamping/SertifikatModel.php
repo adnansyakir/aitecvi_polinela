@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models\Admin;
+namespace App\Models\Pendamping;
 
 use CodeIgniter\Model;
 
@@ -38,10 +38,11 @@ class SertifikatModel extends Model
         return $this->findAll();
     }
 
-    public function sertifikat()
+    public function sertifikat($pt_id)
     {
         return $this->select('sertifikat.*,  pt.nama_pt')
             ->join('pt', 'sertifikat.pt_id = pt.id')
+            ->where('sertifikat.pt_id', $pt_id)
             ->get()
             ->getResultArray();
     }
